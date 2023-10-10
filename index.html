@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NBA Highlights</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Video player -->
+        <div class="video-container">
+            <iframe id="video-player" src="https://www.youtube-nocookie.com/embed/Mbz-WhQqcSM?start=1&autoplay=1" width="800" height="450" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- Video player and player information container -->
+        <div class="player-info-container">
+            <!-- Player image -->
+            <div class="player-image">
+                <img id="player-image" src = "https://pngimg.com/d/nba_PNG15.png" alt="Player Image">
+            </div>
+            <!-- Player statistics as a table -->
+            <div class="player-stats">
+            <table id="player-stats-table">
+                <!-- Player statistics will be dynamically added here -->
+            </table>
+            </div>      
+
+        </div>
+        
+        <!-- Scrollable grid for player names and images -->
+        <div class="grid-container">
+            <div class="player-grid" id="player-grid">
+                <!-- Player names and images will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
