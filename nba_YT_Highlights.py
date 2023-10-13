@@ -1,9 +1,10 @@
+from __env__ import yt_api
 import pandas as pd
 import csv
 from googleapiclient.discovery import build
 
 # Replace 'YOUR_API_KEY' with your actual API key.
-api_key = 'AIzaSyDgluMhPYXPZWkFh8ky9VkmvopvOwNTjZI'
+api_key = yt_api
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 # List of NBA player names.
