@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORCA — Usage Guide</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #111;
+      color: #e8e8e8;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    .header {
+      padding: 16px 28px;
+      border-bottom: 1px solid #222;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+    .wordmark {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+    .wordmark-icon { color: #4ec9b0; font-size: 22px; }
+    .workflow {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+    .wf-step {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding: 6px 12px;
+      background: #161616;
+      border: 1px solid #222;
+      border-radius: 6px;
+      font-size: 11.5px;
+      color: #888;
+    }
+    .wf-icon {
+      font-size: 14px;
+      color: #4ec9b0;
+      padding: 3px;
+    }
+    .wf-arrow {
+      color: #2a2a2a;
+      font-size: 14px;
+      padding: 0 8px;
+      flex-shrink: 0;
+      align-self: center;
+    }
+
+    /* ── Command grid ── */
+    .section-label {
+      padding: 9px 28px 7px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: #333;
+      border-bottom: 1px solid #1a1a1a;
+      background: #0e0e0e;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-top: 1px solid #1e1e1e;
+    }
+    .card {
+      padding: 12px 20px;
+      border-bottom: 1px solid #1a1a1a;
+      border-right: 1px solid #1a1a1a;
+    }
+    .card:nth-child(even) { border-right: none; }
+    .card-header {
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 5px;
+    }
+    .cmd {
+      font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+      font-size: 12px;
+      font-weight: 700;
+      color: #4ec9b0;
+      background: rgba(78, 201, 176, 0.08);
+      padding: 2px 7px;
+      border-radius: 3px;
+    }
+    .cmd-full {
+      font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+      font-size: 11px;
+      color: #3a3a3a;
+    }
+    .example {
+      font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+      font-size: 11px;
+      color: #999;
+      background: #1a1a1a;
+      border: 1px solid #252525;
+      padding: 3px 8px;
+      border-radius: 3px;
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    .outcome {
+      font-size: 11.5px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    /* ── Plain text auto-routing ── */
+    .auto-row {
+      padding: 12px 20px;
+      border-bottom: 1px solid #1a1a1a;
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+    }
+    .auto-badge {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: #444;
+      background: #181818;
+      border: 1px solid #252525;
+      padding: 3px 8px;
+      border-radius: 3px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .auto-body {
+      font-size: 12px;
+      color: #555;
+      line-height: 1.5;
+    }
+    .auto-body code {
+      font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+      font-size: 11px;
+      color: #888;
+      background: #1a1a1a;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+
+    /* ── AI Answer callout ── */
+    .answer-callout {
+      margin: 0;
+      padding: 16px 28px;
+      background: #0c1e18;
+      border-top: 1px solid #1a3028;
+      border-bottom: 1px solid #1a3028;
+    }
+    .answer-callout-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #4ec9b0;
+      margin-bottom: 7px;
+    }
+    .answer-callout-body {
+      font-size: 12px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+    .answer-callout-body code {
+      font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+      font-size: 11px;
+      color: #4ec9b0;
+      background: rgba(78, 201, 176, 0.08);
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+
+    /* ── Radiopaedia 404 section ── */
+    .rp404-section {
+      padding: 16px 28px;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .rp404-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #b08050;
+      margin-bottom: 10px;
+    }
+    .rp404-steps {
+      display: flex;
+      align-items: flex-start;
+      gap: 0;
+    }
+    .rp404-step {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px 14px;
+      background: #161616;
+      border: 1px solid #1e1e1e;
+      border-radius: 6px;
+      position: relative;
+    }
+    .rp404-step-num {
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #3a3a3a;
+      text-transform: uppercase;
+    }
+    .rp404-step-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: #c08840;
+    }
+    .rp404-step-desc {
+      font-size: 11px;
+      color: #555;
+      line-height: 1.4;
+    }
+    .rp404-arrow {
+      color: #252525;
+      font-size: 16px;
+      padding: 0 10px;
+      align-self: center;
+      flex-shrink: 0;
+    }
+    .rp404-note {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #3a3a3a;
+      line-height: 1.5;
+    }
+    .rp404-note code {
+      font-family: 'SF Mono', 'Consolas', 'Monaco', monospace;
+      font-size: 10.5px;
+      color: #555;
+      background: #1a1a1a;
+      padding: 1px 4px;
+      border-radius: 2px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      padding: 12px 28px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-top: 1px solid #1a1a1a;
+    }
+    .esc-note {
+      font-size: 11px;
+      color: #3a3a3a;
+    }
+
+    @media print {
+      body { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="wordmark">
+      <span class="wordmark-icon">⌕</span>
+      ORCA
+    </div>
+    <div class="workflow">
+      <div class="wf-step"><span class="wf-icon">⌕</span> Press the keyboard shortcut</div>
+      <span class="wf-arrow">→</span>
+      <div class="wf-step"><span class="wf-icon">⌨</span> Type a command or question</div>
+      <span class="wf-arrow">→</span>
+      <div class="wf-step"><span class="wf-icon">↗</span> Navigate to the right resource</div>
+    </div>
+  </div>
+
+  <div class="section-label">Commands</div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/p</span>
+        <span class="cmd-full">/protocol</span>
+      </div>
+      <div class="example">/p TAVR</div>
+      <div class="outcome">Opens the matching CT/MRI protocol page</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/g</span>
+        <span class="cmd-full">/guide</span>
+      </div>
+      <div class="example">/g fleischner 6mm solid low risk</div>
+      <div class="outcome">Opens matching guideline — pre-fills calculator fields if query includes numbers</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/r</span>
+        <span class="cmd-full">/resource</span>
+      </div>
+      <div class="example">/r cardiac sarcoidosis</div>
+      <div class="outcome">Opens local resource page; falls back to Radiopaedia article via AI if no local match</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/rs</span>
+        <span class="cmd-full">/rpsearch</span>
+      </div>
+      <div class="example">/rs cardiac amyloid</div>
+      <div class="outcome">Opens Radiopaedia search results directly — bypasses local resources</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/a</span>
+        <span class="cmd-full">/anatomy</span>
+      </div>
+      <div class="example">/a coronary artery</div>
+      <div class="outcome">Opens IMAIOS e-Anatomy search</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/c</span>
+        <span class="cmd-full">/context</span>
+      </div>
+      <div class="example">/c what are the key findings?</div>
+      <div class="outcome">Reads the current page and answers in the overlay — no navigation</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/cmp</span>
+        <span class="cmd-full">/compare</span>
+      </div>
+      <div class="example">/cmp TAVR and TMVR</div>
+      <div class="outcome">Opens side-by-side protocol comparison — also: vs, versus, &amp;, comma</div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="cmd">/f</span>
+        <span class="cmd-full">/feedback</span>
+      </div>
+      <div class="example">/f the TAVR link was wrong</div>
+      <div class="outcome">Sends feedback to the developer</div>
+    </div>
+
+  </div>
+
+  <div class="auto-row">
+    <div class="auto-badge">Auto-routing</div>
+    <div class="auto-body">
+      No command? Just type naturally — <code>what is the cardiac CT protocol for TAVI?</code> — and Claude
+      classifies your intent and picks the right track automatically. This is a fallback, not a command.
+    </div>
+  </div>
+
+  <div class="answer-callout">
+    <div class="answer-callout-label">AI-generated answers</div>
+    <div class="answer-callout-body">
+      Add <code>?</code> to any navigation query — <code>/p TAVR?</code>, <code>/g fleischner 6mm?</code>,
+      <code>/r cardiac amyloid?</code> — and ORCA opens the target page <strong>and</strong> generates a
+      Claude-powered answer from its content in the overlay. The source page is always open so you can read
+      the full context or verify the answer directly. No extra steps — one query does both.
+    </div>
+  </div>
+
+  <div class="rp404-section">
+    <div class="rp404-label">Radiopaedia 404 correction workflow</div>
+    <div class="rp404-steps">
+      <div class="rp404-step">
+        <div class="rp404-step-num">Step 1</div>
+        <div class="rp404-step-title">ORCA detects a 404</div>
+        <div class="rp404-step-desc">The AI-guessed article slug didn't match a real page. ORCA opens the Radiopaedia search results for your query instead.</div>
+      </div>
+      <span class="rp404-arrow">→</span>
+      <div class="rp404-step">
+        <div class="rp404-step-num">Step 2</div>
+        <div class="rp404-step-title">Find the correct article</div>
+        <div class="rp404-step-desc">Navigate to the correct Radiopaedia article. The overlay will prompt you to paste the URL.</div>
+      </div>
+      <span class="rp404-arrow">→</span>
+      <div class="rp404-step">
+        <div class="rp404-step-num">Step 3</div>
+        <div class="rp404-step-title">Paste the URL</div>
+        <div class="rp404-step-desc">Paste the correct article URL into the overlay and press Enter. ORCA navigates there immediately.</div>
+      </div>
+      <span class="rp404-arrow">→</span>
+      <div class="rp404-step">
+        <div class="rp404-step-num">Step 4</div>
+        <div class="rp404-step-title">Saved and synced</div>
+        <div class="rp404-step-desc">The correction is cached locally and submitted to the team. Future queries go direct — no 404, no prompt.</div>
+      </div>
+    </div>
+    <div class="rp404-note">
+      Corrections sync across the pilot group once approved. Use <code>/rs &lt;query&gt;</code> to search Radiopaedia directly at any time without triggering the correction flow.
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="esc-note">Press Esc to dismiss at any time</div>
+  </div>
+
+</body>
+</html>

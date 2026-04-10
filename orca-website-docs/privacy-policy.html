@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORCA Privacy Policy</title>
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 24px; color: #1a1a1a; line-height: 1.6; }
+    h1 { color: #1e3a5f; border-bottom: 2px solid #7aa8d0; padding-bottom: 8px; }
+    h2 { color: #1e3a5f; margin-top: 36px; }
+    table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+    th, td { border: 1px solid #ccc; padding: 8px 12px; text-align: left; }
+    th { background: #f0f4f8; }
+    .notice { background: #fff8e1; border-left: 4px solid #f0a500; padding: 12px 16px; margin: 16px 0; }
+    footer { margin-top: 48px; font-size: 13px; color: #666; border-top: 1px solid #ddd; padding-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>ORCA Privacy Policy</h1>
+  <p><strong>Effective date:</strong> April 10, 2026<br>
+  <strong>Product:</strong> ORCA — Orchestrated Radiology Clinical Assistant (Chrome Extension)</p>
+
+  <p>This policy describes how the ORCA Chrome extension collects, uses, stores, and shares information when you use it.</p>
+
+  <h2>1. What Data We Collect</h2>
+  <p>ORCA collects the following data during normal use:</p>
+
+  <table>
+    <thead>
+      <tr><th>Data Type</th><th>When Collected</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Pilot access token</strong></td>
+        <td>When you enter it in the Settings page</td>
+        <td>Authenticates your access to the ORCA backend service</td>
+      </tr>
+      <tr>
+        <td><strong>Query text</strong></td>
+        <td>Each time you type a command or question into the overlay</td>
+        <td>Sent to the ORCA server to route your request and generate an answer</td>
+      </tr>
+      <tr>
+        <td><strong>Current page text (up to 4,000 characters)</strong></td>
+        <td>Only when your query contains a question mark (?)</td>
+        <td>Provides context so the server can generate a page-aware answer</td>
+      </tr>
+      <tr>
+        <td><strong>Feedback text</strong></td>
+        <td>Only when you explicitly submit feedback via the feedback button</td>
+        <td>Used to improve ORCA's routing and answers</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="notice">
+    <strong>No patient data:</strong> ORCA does not collect patient names, medical record numbers, dates of birth, diagnostic images, or any other protected health information. Do not use ORCA's context-capture feature (queries with ?) while viewing pages that display patient records.
+  </div>
+
+  <h2>2. How We Use Your Data</h2>
+  <ul>
+    <li><strong>Pilot token:</strong> Verified server-side on each request to confirm you are an authorized pilot user. Not stored in server logs.</li>
+    <li><strong>Query text:</strong> Processed in real time to classify your intent, match against radiology resources, and optionally generate an AI-powered answer via the Anthropic Claude API. Query text may appear in server logs for debugging purposes.</li>
+    <li><strong>Page text context:</strong> Sent as part of the request payload when you ask a question with ?. It is used only to generate the answer for that specific request and is not stored beyond the request lifecycle.</li>
+    <li><strong>Feedback text:</strong> Stored in persistent server-side storage to help improve routing accuracy and answer quality.</li>
+  </ul>
+
+  <h2>3. Data Storage</h2>
+  <ul>
+    <li><strong>Pilot token (local):</strong> Stored in Chrome's built-in sync storage (chrome.storage.sync), which is encrypted by Chrome and may sync across your signed-in Chrome devices. ORCA does not have access to this storage outside of the extension context.</li>
+    <li><strong>Server-side data:</strong> The ORCA backend runs on Fly.io infrastructure. Query logs are retained temporarily for debugging. Feedback submissions are stored in persistent server-side storage.</li>
+    <li><strong>Page context:</strong> Not persisted. Used only within the request that triggered it and discarded immediately after the response is returned.</li>
+  </ul>
+
+  <h2>4. Data Sharing</h2>
+  <p>ORCA does not sell your data. Data is shared only with the following third parties as necessary to operate the service:</p>
+  <table>
+    <thead>
+      <tr><th>Third Party</th><th>Data Shared</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Anthropic (Claude API)</strong></td>
+        <td>Query text; page context (when applicable)</td>
+        <td>AI-powered answer generation for natural-language queries</td>
+      </tr>
+      <tr>
+        <td><strong>Fly.io</strong></td>
+        <td>All server-bound data (see above)</td>
+        <td>Cloud infrastructure and database hosting</td>
+      </tr>
+      <tr>
+        <td><strong>National Library of Medicine (PubMed API)</strong></td>
+        <td>Search terms derived from your query</td>
+        <td>Literature search via the /lit command</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>No data is shared with advertisers, data brokers, or other third parties.</p>
+
+  <h2>5. Data Retention</h2>
+  <ul>
+    <li><strong>Pilot token:</strong> Retained in Chrome sync storage until you clear it via the Settings page or uninstall the extension.</li>
+    <li><strong>Query logs:</strong> Retained on Fly.io servers for a limited period for debugging, then purged automatically.</li>
+    <li><strong>Feedback submissions:</strong> Retained on the ORCA server in persistent storage to support ongoing improvement.</li>
+  </ul>
+
+  <h2>6. Your Rights and Choices</h2>
+  <ul>
+    <li><strong>Delete your token:</strong> You can clear your pilot token at any time from the ORCA Settings page (Cmd+Shift+Space → Settings icon), or by uninstalling the extension.</li>
+    <li><strong>Feedback deletion:</strong> Contact us at the address below to request deletion of any feedback you have submitted.</li>
+  </ul>
+
+  <h2>7. Security</h2>
+  <p>Pilot tokens are stored using Chrome's encrypted sync storage. All communication between the extension and the ORCA backend uses HTTPS. API keys and credentials are stored as server-side environment secrets (not in extension code or the repository).</p>
+
+  <h2>8. Changes to This Policy</h2>
+  <p>If this policy changes materially, the effective date above will be updated. Continued use of the extension after a policy update constitutes acceptance of the revised policy.</p>
+
+  <h2>9. Contact</h2>
+  <p>Questions about this privacy policy or requests regarding your data:<br>
+  <strong>Email:</strong> <a href="mailto:dferguson93@gmail.com">dferguson93@gmail.com</a></p>
+
+  <footer>
+    ORCA — Orchestrated Radiology Clinical Assistant &nbsp;|&nbsp; &copy; 2026
+  </footer>
+</body>
+</html>
