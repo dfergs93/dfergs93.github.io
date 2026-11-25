@@ -257,4 +257,6 @@ export function initFront(root: HTMLElement): void {
   select(keyFromHash());
   // The browser may restore text into the box (back/forward, autofill).
   if (input.value.trim()) runSearch();
+  // Tells the fallback in index.astro that the page script is running.
+  document.documentElement.classList.add('front-ready');
 }

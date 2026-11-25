@@ -170,3 +170,30 @@ test('opening a list from the URL keeps the page at the top (search box in view)
   expect(await page.evaluate(() => window.scrollY)).toBe(0);
   await expect(box(page)).toBeInViewport();
 });
+
+test.describe('when the front-page script is blocked (hospital proxy) or fails', () => {
+  test('the page falls back to every list, stacked, as without JavaScript', async ({ page }) => {
+    await page.route('**/_astro/index.astro*.js', (r) => r.abort());
+    await page.goto('/');
+    await page.waitForLoadState('load');
+    const areaRows = page.locator('section.list:not([data-list="popular"]):not([data-list="favorites"]):not([data-list="results"]) li.row');
+    await expect(areaRows).toHaveCount(34);
+    await expect(areaRows.last()).toBeVisible();
+    await expect(page.locator('#list-popular')).toBeVisible();
+    await expect(page.locator('.search')).toBeHidden();
+  });
+
+  test('before the script runs, Popular is already showing', async ({ page }) => {
+    let release!: () => void;
+    const held = new Promise<void>((r) => (release = r));
+    await page.route('**/_astro/index.astro*.js', async (r) => {
+      await held;
+      await r.continue();
+    });
+    await page.goto('/', { waitUntil: 'commit' });
+    await expect(page.locator('#list-popular li.row').first()).toBeVisible();
+    await expect(page.locator('#list-chest')).toBeHidden();
+    release();
+    await expect(box(page)).toBeVisible();
+  });
+});

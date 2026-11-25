@@ -24,7 +24,7 @@ const popular = popularList(RESOURCES, POPULAR);
       <div class="lists">
         <ResourceSection list="favorites" heading="Favorites" resources={[]} mixed hidden />
         <ResourceSection list="results" heading="Matches" resources={[]} mixed hidden results />
-        <ResourceSection list="popular" heading="Popular" resources={popular} mixed />
+        <ResourceSection list="popular" heading="Popular" resources={popular} mixed current />
         {areas.map((a) => <ResourceSection list={a.id} heading={a.label} resources={areaList(RESOURCES, a.id)} />)}
       </div>
     </div>
@@ -33,6 +33,18 @@ const popular = popularList(RESOURCES, POPULAR);
     </ul>
   </div>
 </Base>
+
+<!--
+  If the page script never ran (blocked by a proxy, or failed), show the page as it is
+  without JavaScript: every list stacked, the rail as jump links. A module script that
+  loads runs before the load event, so by then it has marked the page ready.
+-->
+<script is:inline>
+  window.addEventListener('load', function () {
+    var root = document.documentElement;
+    if (!root.classList.contains('front-ready')) root.classList.remove('js');
+  });
+</script>
 
 <script>
   import { initFront } from '../scripts/front.ts';
