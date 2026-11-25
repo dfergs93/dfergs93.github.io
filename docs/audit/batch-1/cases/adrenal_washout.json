@@ -1,0 +1,124 @@
+{
+  "calculator": "adrenal_washout",
+  "pageUrl": "https://dfergs93.github.io/guidelines_manager/adrenal/adrenal_nodule_acr_2017/",
+  "formId": "adrenal-form",
+  "resultId": "adrenal-results",
+  "params": ["washout_unenhanced_hu", "washout_venous_hu", "washout_delayed_hu"],
+  "cases": [
+    {
+      "id": "acr2017-unenhanced-10",
+      "inputs": { "washout_unenhanced_hu": "10", "washout_venous_hu": "60", "washout_delayed_hu": "50" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p3, Fig 1 (\"Reduced dose NCCT ≤10 HU = benign adenoma, no F/U\"); p4, Masses With Diagnostic Benign Imaging Features (\"density of ≤10 HU on unenhanced CT ... almost always diagnostic of a lipid-rich adenoma\")" },
+        "text": "Unenhanced 10 HU is ≤10 HU: benign (lipid-rich) adenoma, no follow-up; washout not needed."
+      }
+    },
+    {
+      "id": "acr2017-unenhanced-10-1",
+      "inputs": { "washout_unenhanced_hu": "10.1", "washout_venous_hu": "60", "washout_delayed_hu": "50" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p3, Fig 1 (\"NCCT >10 HU\" → \"Adrenal CT washout\" → \"APW/RPW <60/40%\" → \"Imaging F/U, Bx, PET-CT, or resection depending on clinical scenario\")" },
+        "text": "Unenhanced 10.1 HU is >10 HU, so washout decides; APW 20%, RPW 17% are <60/40%: not an adenoma by washout; imaging follow-up, biopsy, PET-CT or resection depending on the clinical scenario."
+      }
+    },
+    {
+      "id": "acr2017-apw-exactly-60",
+      "inputs": { "washout_unenhanced_hu": "40", "washout_venous_hu": "100", "washout_delayed_hu": "64" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5, Adrenal CT Protocol (\"A value of 60% or greater is diagnostic of an adenoma\"); p3, Fig 1 (\"APW/RPW ≥60/40%\" → \"Benign adenoma, no F/U\")" },
+        "text": "APW = (100−64)/(100−40) = 60%, which is ≥60%: benign adenoma, no follow-up."
+      },
+      "note": "RPW is 36% here, so only the APW boundary is tested."
+    },
+    {
+      "id": "acr2017-apw-61-7",
+      "inputs": { "washout_unenhanced_hu": "40", "washout_venous_hu": "100", "washout_delayed_hu": "63" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5, Adrenal CT Protocol (APW ≥60% diagnostic of adenoma); p3, Fig 1" },
+        "text": "APW 61.7% (≥60%): benign adenoma, no follow-up."
+      }
+    },
+    {
+      "id": "acr2017-apw-58-3",
+      "inputs": { "washout_unenhanced_hu": "40", "washout_venous_hu": "100", "washout_delayed_hu": "65" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p3, Fig 1 (\"APW/RPW <60/40%\" → \"Imaging F/U, Bx, PET-CT, or resection depending on clinical scenario\")" },
+        "text": "APW 58.3% (<60%), RPW 35%: not diagnostic of adenoma; imaging follow-up, biopsy, PET-CT or resection depending on the clinical scenario."
+      }
+    },
+    {
+      "id": "acr2017-typical-adenoma",
+      "inputs": { "washout_unenhanced_hu": "25", "washout_venous_hu": "80", "washout_delayed_hu": "40" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5, Adrenal CT Protocol (APW ≥60% diagnostic of adenoma); p3, Fig 1" },
+        "text": "APW 72.7% (≥60%): benign adenoma, no follow-up."
+      }
+    },
+    {
+      "id": "acr2017-rpw-rescues-failed-apw",
+      "inputs": { "washout_unenhanced_hu": "20", "washout_venous_hu": "90", "washout_delayed_hu": "50" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5, Adrenal CT Protocol (\"Relative percent washout is used when an unenhanced CT value is not available\"); p3, Fig 1 (\"APW/RPW <60/40%\")" },
+        "text": "An unenhanced value (20 HU) is available, so APW applies: APW 57.1% (<60%) is not diagnostic; imaging follow-up, biopsy, PET-CT or resection depending on the clinical scenario. RPW (44.4%) is the measure only when no unenhanced value exists (p5)."
+      },
+      "note": "The Fig 1 box reads \"APW/RPW ≥60/40%\" without saying which applies when; the text on p5 restricts RPW to the case without an unenhanced value."
+    },
+    {
+      "id": "acr2017-rpw-exactly-40-apw-50",
+      "inputs": { "washout_unenhanced_hu": "20", "washout_venous_hu": "100", "washout_delayed_hu": "60" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5, Adrenal CT Protocol (RPW \"used when an unenhanced CT value is not available\"; \"a value of 40% or greater is diagnostic\"); p3, Fig 1" },
+        "text": "Unenhanced value available, APW 50% (<60%): not diagnostic of adenoma; imaging follow-up, biopsy, PET-CT or resection depending on the clinical scenario. (Read as either measure sufficing, RPW 40% would be ≥40% = benign adenoma.)"
+      }
+    },
+    {
+      "id": "acr2017-no-unenhanced-rpw-30",
+      "inputs": { "washout_venous_hu": "100", "washout_delayed_hu": "70" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5, Adrenal CT Protocol (RPW used when no unenhanced value; \"a value of 40% or greater is diagnostic for an adenoma\"); p3, Fig 1" },
+        "text": "No unenhanced value: RPW = (100−70)/100 = 30% (<40%): not diagnostic of adenoma; imaging follow-up, biopsy, PET-CT or resection depending on the clinical scenario."
+      },
+      "note": "The unenhanced field is left empty. On the page itself the field is required, so a reader cannot submit it empty; this result is reachable only by filling the form from the address."
+    },
+    {
+      "id": "acr2017-no-enhancement-9-9",
+      "inputs": { "washout_unenhanced_hu": "30", "washout_venous_hu": "39.9", "washout_delayed_hu": "38" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p3, Fig 1 (\"No enhancement (<10 HU) = cyst or hemorrhage\" → \"Benign, no F/U\"); p5, Adrenal CT Protocol (\"<10-HU change between unenhanced and enhanced scan ... cyst or hemorrhage, and no follow-up examination is needed\")" },
+        "text": "Enhancement 9.9 HU (<10 HU change): no enhancement = cyst or hemorrhage; benign, no follow-up."
+      }
+    },
+    {
+      "id": "acr2017-enhancement-10",
+      "inputs": { "washout_unenhanced_hu": "30", "washout_venous_hu": "40", "washout_delayed_hu": "38" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p3, Fig 1 (\"No enhancement (<10 HU)\"; \"APW/RPW <60/40%\" → \"Imaging F/U, Bx, PET-CT, or resection depending on clinical scenario\")" },
+        "text": "Enhancement 10 HU is not <10 HU, so the mass enhances and washout decides: APW 20% (<60%): not diagnostic; imaging follow-up, biopsy, PET-CT or resection depending on the clinical scenario."
+      }
+    },
+    {
+      "id": "acr2017-no-enhancement-high-apw",
+      "inputs": { "washout_unenhanced_hu": "30", "washout_venous_hu": "36", "washout_delayed_hu": "31" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p3, Fig 1 (\"No enhancement (<10 HU) = cyst or hemorrhage\" → \"Benign, no F/U\"); p5, Adrenal CT Protocol" },
+        "text": "Enhancement 6 HU (<10 HU change): cyst or hemorrhage; benign, no follow-up (washout percentages are meaningless on a non-enhancing mass)."
+      }
+    },
+    {
+      "id": "acr2017-avid-enhancement-washes-out",
+      "inputs": { "washout_unenhanced_hu": "35", "washout_venous_hu": "150", "washout_delayed_hu": "60" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5–6, Adrenal CT Protocol (\"when an adrenal mass shows avid enhancement (>110-120 HU), a pheochromocytoma should be considered, and biochemical evaluation with serum catecholamines is recommended\"); p3, Fig 1 (\"APW/RPW ≥60/40%\")" },
+        "text": "APW 78.3% (≥60%) meets the Fig 1 adenoma box, but enhancement to 150 HU is avid (>110–120 HU): consider pheochromocytoma; biochemical evaluation recommended."
+      }
+    },
+    {
+      "id": "acr2017-avid-enhancement-indeterminate",
+      "inputs": { "washout_unenhanced_hu": "35", "washout_venous_hu": "150", "washout_delayed_hu": "100" },
+      "expected": {
+        "source": { "source": "acr-adrenal-2017", "location": "in-press PDF p5–6, Adrenal CT Protocol (avid enhancement >110–120 HU: consider pheochromocytoma, biochemical evaluation); p3, Fig 1 (\"APW/RPW <60/40%\"; footnote 1: exclude pheochromocytoma before biopsy/resection)" },
+        "text": "APW 43.5% (<60%): not diagnostic of adenoma; with avid enhancement (150 HU) consider pheochromocytoma and biochemical evaluation before any biopsy or resection."
+      }
+    }
+  ]
+}
