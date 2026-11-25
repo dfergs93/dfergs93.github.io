@@ -18,7 +18,7 @@
     "year": 2022,
     "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Lung-RADS",
     "access": "open",
-    "reuse": "unknown"
+    "reuse": "restate-and-link"
   },
   {
     "id": "lung-rads-2022-summary",
@@ -28,7 +28,7 @@
     "year": 2022,
     "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Lung-RADS",
     "access": "open",
-    "reuse": "unknown"
+    "reuse": "restate-and-link"
   },
   {
     "id": "lung-rads-1-1",
@@ -60,7 +60,7 @@
     "year": 2017,
     "url": "https://doi.org/10.1016/j.jacr.2017.05.001",
     "access": "open",
-    "reuse": "unknown",
+    "reuse": "restate-and-link",
     "note": "Read from the in-press PDF (copy hosted by the UW Radiology wiki)."
   },
   {
@@ -71,7 +71,7 @@
     "year": 2018,
     "url": "https://doi.org/10.1016/j.jacr.2017.04.028",
     "access": "open",
-    "reuse": "unknown",
+    "reuse": "restate-and-link",
     "note": "Read from the in-press PDF (copy hosted by the UW Radiology wiki)."
   },
   {
@@ -82,7 +82,7 @@
     "year": 2019,
     "url": "https://doi.org/10.1016/j.carj.2019.03.002",
     "access": "open",
-    "reuse": "unknown",
+    "reuse": "restate-and-link",
     "note": "PDF from car.ca."
   },
   {
@@ -93,8 +93,8 @@
     "year": 2019,
     "url": "https://doi.org/10.1148/radiol.2019182646",
     "access": "open",
-    "reuse": "unknown",
-    "note": "Article text read from PMC6677285; its tables could not be reached (owner asked for the PDF, 2026-11-25)."
+    "reuse": "restate-and-link",
+    "note": "Article text read from PMC6677285; Tables 1-4 read as the images PMC serves (no print page numbers, so locations are by section and table)."
   },
   {
     "id": "li-rads-2018-core",
@@ -104,7 +104,7 @@
     "year": 2018,
     "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS",
     "access": "open",
-    "reuse": "unknown",
+    "reuse": "restate-and-link",
     "note": "Still the current CT/MRI diagnostic version on the ACR site (2026-11-25); the 2024 CT/MRI cores are treatment response only."
   },
   {
@@ -126,5 +126,60 @@
     "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS",
     "access": "open",
     "reuse": "unknown"
+  },
+  {
+    "id": "uspstf-lung-2021",
+    "title": "Lung Cancer: Screening. US Preventive Services Task Force Final Recommendation Statement",
+    "citation": "US Preventive Services Task Force. Screening for lung cancer: US Preventive Services Task Force recommendation statement. JAMA. 2021;325(10):962-970.",
+    "version": "2021 (March 9, 2021)",
+    "year": 2021,
+    "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/lung-cancer-screening",
+    "access": "open",
+    "reuse": "reproduce",
+    "note": "Read from the USPSTF web page, saved 2026-11-25 as audit-sources/uspstf-lung-2021.html (text copy .txt); still the final statement on that date. Citation checked against PubMed 33687470."
+  },
+  {
+    "id": "cua-adrenal-2023",
+    "title": "Canadian Urological Association guideline: Diagnosis, management, and followup of the incidentally discovered adrenal mass",
+    "citation": "Rowe NE, Kumar RM, Schieda N, et al. Canadian Urological Association guideline: diagnosis, management, and followup of the incidentally discovered adrenal mass. Can Urol Assoc J. 2023;17(2):12-24.",
+    "version": "2023",
+    "year": 2023,
+    "url": "https://doi.org/10.5489/cuaj.8248",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "PDF downloaded from cuaj.ca (article 8248) to audit-sources/cua-adrenal-2023.pdf with a .txt copy; the earlier audit-sources/cua-adrenal-2023.xml is a Europe PMC 500 error page, not the guideline."
+  },
+  {
+    "id": "cua-cystic-renal-2023",
+    "title": "2023 UPDATE – Canadian Urological Association guideline: Management of cystic renal lesions",
+    "citation": "Richard PO, Violette PD, Bhindi B, et al. 2023 UPDATE – Canadian Urological Association guideline: management of cystic renal lesions. Can Urol Assoc J. 2023;17(6):162–174.",
+    "version": "2023 update",
+    "year": 2023,
+    "url": "https://doi.org/10.5489/cuaj.8389",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "Read from PMC10263289 (HTML saved as audit-sources/cua-cystic-renal-2023.html). A urology guideline; recommends Bosniak v2019 (Recommendation 2)."
+  },
+  {
+    "id": "bclc-2022",
+    "title": "BCLC strategy for prognosis prediction and treatment recommendation: The 2022 update",
+    "citation": "Reig M, Forner A, Rimola J, et al. BCLC strategy for prognosis prediction and treatment recommendation: the 2022 update. J Hepatol. 2022;76(3):681-693.",
+    "version": "2022",
+    "year": 2022,
+    "url": "https://doi.org/10.1016/j.jhep.2021.11.018",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "Published PDF read from the University of Milan repository copy (air.unimi.it). Superseded by the 2026 update, which could not be read."
+  },
+  {
+    "id": "bclc-2026",
+    "title": "BCLC strategy for prognosis prediction and treatment recommendations: The 2026 update",
+    "citation": "Reig M, Sanduzzi-Zamparelli M, Forner A, et al. BCLC strategy for prognosis prediction and treatment recommendations: the 2026 update. J Hepatol. 2026;84(3):631-654.",
+    "version": "2026",
+    "year": 2026,
+    "url": "https://doi.org/10.1016/j.jhep.2025.10.020",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "Journal site returns a bot check (403) and the University of Milan repository copy is restricted access (2026-11-25); not circumvented."
   }
 ]

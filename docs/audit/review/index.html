@@ -1,0 +1,268 @@
+<title>Content Audit Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+/* Layout: one reading column of findings grouped by page; a sticky bar carries progress and filters.
+   Palette follows the reference site's tokens (dark first, one teal accent); verdict colours are semantic. */
+:root {
+  --ground: #0c0f14; --panel: #12161d; --line: #202733; --ink: #e6eaf0; --muted: #8a94a3;
+  --accent: #5fc2b0; --accent-ink: #06231e;
+  --bad: #f2777a; --bad-bg: #2a1416; --warn: #e3b341; --warn-bg: #2a2112; --ok: #7cc48a; --ok-bg: #132317; --info: #8fb4f0; --info-bg: #141d2c;
+  --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) {
+  --ground: #f6f7f9; --panel: #eceef2; --line: #d6dae1; --ink: #161a21; --muted: #4d5664;
+  --accent: #0b6e63; --accent-ink: #ffffff;
+  --bad: #a3262b; --bad-bg: #fbe9ea; --warn: #8a5a00; --warn-bg: #fbf1dc; --ok: #24672f; --ok-bg: #e4f3e6; --info: #2a5596; --info-bg: #e5edf9;
+  color-scheme: light;
+} }
+:root[data-theme="light"] {
+  --ground: #f6f7f9; --panel: #eceef2; --line: #d6dae1; --ink: #161a21; --muted: #4d5664;
+  --accent: #0b6e63; --accent-ink: #ffffff;
+  --bad: #a3262b; --bad-bg: #fbe9ea; --warn: #8a5a00; --warn-bg: #fbf1dc; --ok: #24672f; --ok-bg: #e4f3e6; --info: #2a5596; --info-bg: #e5edf9;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { background: var(--ground); color: var(--ink); font: 15px/1.55 var(--sans); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--panel); }
+.wrap { max-width: 48rem; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.top { padding-block: 28px 12px; display: grid; gap: 8px; }
+h1 { font-size: 1.5rem; font-weight: 600; margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 65ch; }
+.legend { color: var(--muted); margin: 0; font-size: 0.875rem; max-width: 65ch; }
+.legend b { color: var(--ink); font-weight: 600; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding-block: 10px; }
+.progress { font: 0.875rem var(--mono); font-variant-numeric: tabular-nums; color: var(--muted); margin-right: auto; }
+.progress strong { color: var(--ink); font-weight: 400; }
+.filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip-btn { font: inherit; font-size: 0.8125rem; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 3px 11px; cursor: pointer; }
+.chip-btn[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.notice { margin: 16px 0 0; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--panel); color: var(--muted); font-size: 0.875rem; }
+.notice[data-tone="bad"] { color: var(--bad); border-color: var(--bad); background: var(--bad-bg); }
+main { padding-block: 8px 64px; }
+section.page { margin-top: 28px; }
+section.page > h2 { font-size: 1.125rem; font-weight: 600; margin: 0 0 2px; }
+section.page > .url { font: 0.8125rem var(--mono); color: var(--muted); word-break: break-all; }
+section.page > .url a { color: var(--muted); }
+.finding { margin-top: 14px; padding: 14px 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; display: grid; gap: 8px; min-width: 0; }
+.finding[data-ruled="true"] { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.f-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+.f-id { font: 0.8125rem var(--mono); color: var(--muted); }
+.f-piece { font-weight: 600; flex: 1 1 16rem; min-width: 0; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font: 0.75rem var(--mono); letter-spacing: 0.02em; padding: 1px 8px; border-radius: 4px; border: 1px solid currentColor; }
+.tag[data-tone="bad"] { color: var(--bad); background: var(--bad-bg); }
+.tag[data-tone="warn"] { color: var(--warn); background: var(--warn-bg); }
+.tag[data-tone="ok"] { color: var(--ok); background: var(--ok-bg); }
+.tag[data-tone="info"] { color: var(--info); background: var(--info-bg); }
+.tag[data-tone="muted"] { color: var(--muted); }
+.tag.mgmt { color: var(--bad); background: var(--bad-bg); font-weight: 400; }
+dl { margin: 0; display: grid; gap: 6px; }
+dl > div { display: grid; grid-template-columns: 8.5rem 1fr; gap: 2px 12px; min-width: 0; }
+dt { color: var(--muted); font-size: 0.8125rem; padding-top: 2px; }
+dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+dd.says { font-style: normal; }
+dd ul { margin: 0; padding-left: 1.1em; }
+dd a { color: var(--accent); }
+.question { background: var(--warn-bg); border-radius: 6px; padding: 8px 10px; }
+.question dt { color: var(--warn); }
+.recheck { color: var(--muted); font-size: 0.875rem; }
+.ruling { display: grid; gap: 8px; padding-top: 10px; border-top: 1px solid var(--line); }
+.choices { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.choice { font: inherit; font-size: 0.875rem; color: var(--ink); background: var(--ground); border: 1px solid var(--line); border-radius: 6px; padding: 5px 14px; cursor: pointer; min-height: 34px; }
+.choice[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.choice:disabled, textarea:disabled { opacity: 0.55; cursor: not-allowed; }
+.status { font-size: 0.8125rem; color: var(--muted); margin-left: auto; }
+.status[data-tone="bad"] { color: var(--bad); }
+textarea { width: 100%; min-height: 2.6rem; resize: vertical; font: 0.9375rem/1.45 var(--sans); color: var(--ink); background: var(--ground); border: 1px solid var(--line); border-radius: 6px; padding: 7px 9px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.empty { color: var(--muted); margin-top: 24px; }
+@media (max-width: 560px) {
+  dl > div { grid-template-columns: 1fr; }
+  .status { margin-left: 0; width: 100%; }
+}
+@media (prefers-reduced-motion: no-preference) { .choice, .chip-btn { transition: background-color 120ms, border-color 120ms; } }
+</style>
+
+<header class="top wrap">
+  <h1 id="title">Content audit review</h1>
+  <p class="lede" id="lede">Loading the batch…</p>
+  <p class="legend"><b>Keep</b>: the finding and its proposed fix stand. <b>Change</b>: they stand with the change you write in the note. <b>Drop</b>: discard the finding and leave the page as it is. Answers save as you go.</p>
+</header>
+<div class="bar"><div class="wrap">
+  <span class="progress" id="progress">–</span>
+  <div class="filters" role="group" aria-label="Show">
+    <button type="button" class="chip-btn" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="chip-btn" data-filter="management" aria-pressed="false">Management</button>
+    <button type="button" class="chip-btn" data-filter="question" aria-pressed="false">Questions for you</button>
+    <button type="button" class="chip-btn" data-filter="open" aria-pressed="false">Not ruled yet</button>
+  </div>
+</div></div>
+<main class="wrap">
+  <p class="notice" id="notice" hidden></p>
+  <div id="pages"></div>
+  <p class="empty" id="empty" hidden>Nothing matches this filter.</p>
+</main>
+
+<script>
+(() => {
+  const BATCHES = [{ n: 1, file: 'batch-1.json' }];
+  const TONES = { correct: 'ok', outdated: 'warn', wrong: 'bad', 'not-lead': 'warn', unsourced: 'warn', 'local-practice': 'info', duplicate: 'muted', drop: 'muted', 'source-not-readable': 'muted' };
+  const LABELS = { 'not-lead': 'not the lead guideline', 'local-practice': 'local practice', 'source-not-readable': 'source not readable' };
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined) n.textContent = text; return n; };
+
+  const state = { findings: [], rulings: new Map(), cards: new Map(), filter: 'all', db: null, writable: false, batch: null };
+
+  function notice(text, tone) { const n = $('notice'); n.textContent = text; n.hidden = !text; if (tone) n.dataset.tone = tone; else delete n.dataset.tone; }
+
+  function row(label, value, cls) {
+    const d = el('div', cls); d.append(el('dt', '', label));
+    const dd = el('dd'); if (typeof value === 'string') dd.textContent = value; else dd.append(value);
+    d.append(dd); return d;
+  }
+
+  function sourcesList(f) {
+    if (!f.sources.length) return 'None found';
+    const ul = el('ul');
+    for (const s of f.sources) {
+      const li = el('li');
+      if (/^https:\/\//.test(s.url)) { const a = el('a', '', s.citation); a.href = s.url; a.target = '_blank'; a.rel = 'noopener'; li.append(a); }
+      else li.append(document.createTextNode(s.citation));
+      li.append(document.createTextNode(' — ' + s.location));
+      ul.append(li);
+    }
+    return ul;
+  }
+
+  function card(f) {
+    const art = el('article', 'finding'); art.id = f.id;
+    const head = el('div', 'f-head');
+    head.append(el('span', 'f-id', f.id), el('span', 'f-piece', f.piece));
+    const tags = el('div', 'tags');
+    const v = el('span', 'tag', LABELS[f.verdict] || f.verdict); v.dataset.tone = TONES[f.verdict] || 'muted'; tags.append(v);
+    if (f.management) tags.append(el('span', 'tag mgmt', 'management'));
+    tags.append(el('span', 'tag', f.kind)); tags.lastChild.dataset.tone = 'muted';
+    head.append(tags);
+    const dl = el('dl');
+    dl.append(row('The page says', f.says, ''));
+    dl.append(row('Source', sourcesList(f)));
+    if (f.fix) dl.append(row('Proposed fix', f.fix));
+    if (f.question) dl.append(row('Question for you', f.question, 'question'));
+    dl.append(row('Proposed home', f.home));
+    art.append(head, dl);
+    if (f.recheckNote) art.append(el('p', 'recheck', 'Independent re-check: ' + f.recheckNote));
+
+    const ruling = el('div', 'ruling');
+    const choices = el('div', 'choices'); choices.setAttribute('role', 'group'); choices.setAttribute('aria-label', 'Your ruling on ' + f.id);
+    const buttons = {};
+    for (const [value, label] of [['keep', 'Keep'], ['change', 'Change'], ['drop', 'Drop']]) {
+      const b = el('button', 'choice', label); b.type = 'button'; b.setAttribute('aria-pressed', 'false'); b.disabled = !state.writable;
+      b.addEventListener('click', () => { const cur = state.rulings.get(f.id); save(f.id, { decision: value, note: cur ? cur.note : note.value }); });
+      buttons[value] = b; choices.append(b);
+    }
+    const status = el('span', 'status', state.writable ? 'Not ruled yet' : ''); choices.append(status);
+    const note = el('textarea'); note.id = 'note-' + f.id; note.placeholder = 'Note (what to change, or why)'; note.disabled = !state.writable;
+    note.setAttribute('aria-label', 'Note on ' + f.id);
+    let timer;
+    const flush = () => { clearTimeout(timer); const cur = state.rulings.get(f.id); if ((cur ? cur.note : '') !== note.value && (cur || note.value)) save(f.id, { decision: cur ? cur.decision : null, note: note.value }); };
+    note.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(flush, 900); });
+    note.addEventListener('blur', flush);
+    ruling.append(choices, note);
+    art.append(ruling);
+    state.cards.set(f.id, { art, buttons, status, note });
+    return art;
+  }
+
+  const chains = new Map();
+  function save(id, { decision, note }) {
+    if (!state.db || !state.writable) return;
+    const c = state.cards.get(id);
+    const body = { batch: state.batch, decision: decision || null, note: note || '', savedAt: new Date().toISOString() };
+    state.rulings.set(id, body); paint(id);
+    c.status.textContent = 'Saving…'; delete c.status.dataset.tone;
+    const prev = chains.get(id) || Promise.resolve();
+    const next = prev.then(() => state.db.doc('rulings/' + id).set(body)).then(
+      () => { c.status.textContent = body.decision ? 'Saved' : 'Note saved; choose Keep, Change or Drop'; },
+      (e) => { c.status.textContent = 'Not saved: ' + (e && e.code === 'invalid_argument' ? 'you can read this page but not answer on it' : 'try again in a moment'); c.status.dataset.tone = 'bad'; },
+    );
+    chains.set(id, next);
+  }
+
+  function paint(id) {
+    const c = state.cards.get(id); if (!c) return;
+    const r = state.rulings.get(id);
+    for (const [value, b] of Object.entries(c.buttons)) b.setAttribute('aria-pressed', String(!!r && r.decision === value));
+    c.art.dataset.ruled = String(!!(r && r.decision));
+    if (r && document.activeElement !== c.note && c.note.value !== r.note) c.note.value = r.note || '';
+    if (r && r.decision && c.status.dataset.tone !== 'bad' && c.status.textContent !== 'Saving…') c.status.textContent = 'Saved';
+  }
+
+  function applyFilter() {
+    let shown = 0;
+    for (const f of state.findings) {
+      const r = state.rulings.get(f.id);
+      const ok = state.filter === 'all' || (state.filter === 'management' && f.management) || (state.filter === 'question' && !!f.question) || (state.filter === 'open' && !(r && r.decision));
+      state.cards.get(f.id).art.hidden = !ok; if (ok) shown++;
+    }
+    for (const s of document.querySelectorAll('section.page')) s.hidden = !s.querySelector('article.finding:not([hidden])');
+    $('empty').hidden = shown > 0;
+  }
+
+  function progress() {
+    const ruled = state.findings.filter((f) => { const r = state.rulings.get(f.id); return r && r.decision; }).length;
+    const p = $('progress'); p.replaceChildren(el('strong', '', String(ruled)), document.createTextNode(' of ' + state.findings.length + ' ruled'));
+  }
+
+  function render(data) {
+    state.findings = data.findings; state.batch = data.batch;
+    $('title').textContent = 'Batch ' + data.batch + ': ' + data.title;
+    const mgmt = data.findings.filter((f) => f.management).length, qs = data.findings.filter((f) => f.question).length;
+    $('lede').textContent = data.findings.length + ' findings, ' + mgmt + ' that could change management and ' + qs + ' questions only you can answer. Each was checked against its source and then re-checked independently.';
+    const pages = $('pages'); pages.replaceChildren();
+    const groups = new Map();
+    for (const f of data.findings) { if (!groups.has(f.pageTitle)) groups.set(f.pageTitle, []); groups.get(f.pageTitle).push(f); }
+    for (const [title, list] of groups) {
+      const s = el('section', 'page'); s.append(el('h2', '', title));
+      for (const f of list) s.append(card(f));
+      pages.append(s);
+    }
+    progress(); applyFilter();
+  }
+
+  for (const b of document.querySelectorAll('.chip-btn')) b.addEventListener('click', () => {
+    state.filter = b.dataset.filter;
+    for (const o of document.querySelectorAll('.chip-btn')) o.setAttribute('aria-pressed', String(o === b));
+    applyFilter();
+  });
+
+  async function connect() {
+    const db = window.claude && window.claude.use ? await window.claude.use('db').catch(() => null) : null;
+    if (!db) { notice('Answers can’t be saved in this view. Open the page on claude.ai while signed in, or reply in the chat with finding ids and Keep, Change or Drop.'); return; }
+    state.db = db; state.writable = true;
+    for (const c of state.cards.values()) { for (const b of Object.values(c.buttons)) b.disabled = false; c.note.disabled = false; if (!state.rulings.has(c.art.id)) c.status.textContent = 'Not ruled yet'; }
+    const slow = setTimeout(() => notice('Your saved answers haven’t loaded yet; anything shown may be out of date.'), 10000);
+    db.collection('rulings').onSnapshot((snap) => {
+      if (!snap.metadata.fromCache) { clearTimeout(slow); if (!$('notice').dataset.tone) notice(''); }
+      for (const d of snap.docs) {
+        const body = d.data(); if (!body || body.batch !== state.batch) continue;
+        const mine = state.rulings.get(d.id);
+        if (!mine || (body.savedAt || '') >= (mine.savedAt || '')) state.rulings.set(d.id, { decision: body.decision || null, note: body.note || '', savedAt: body.savedAt || '' });
+        paint(d.id);
+      }
+      progress(); applyFilter();
+    }, () => { clearTimeout(slow); notice('Saved answers can’t be reached right now. Reload later; nothing you saved is lost.', 'bad'); });
+  }
+
+  const wanted = Number((location.hash.match(/^#batch-(\d+)$/) || [])[1]);
+  const batch = BATCHES.find((b) => b.n === wanted) || BATCHES[BATCHES.length - 1];
+  fetch(batch.file).then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.json(); }).then((data) => { render(data); connect(); }).catch(() => {
+    $('lede').textContent = 'The batch’s findings could not be loaded.'; notice('The findings file is missing from this page. Tell Claude in the chat.', 'bad');
+  });
+})();
+</script>

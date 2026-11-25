@@ -224,5 +224,145 @@
     "car": "unknown",
     "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/oncology/rectal_cancer_staging/).",
     "home": "Rectal cancer staging topic"
+  },
+  {
+    "id": "bc-cancer-lung-screening-program-reporting-bc-lu",
+    "topic": "BC Cancer Lung Screening Program reporting (BC Lung Screening Protocol v2.0, January 2026)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Program LDCTs in BC are reported with the PanCan risk score at baseline, volumetry and VDT at follow-up and categories 1–5 with different intervals (1: 2 years, 2: 1 year, 3: 3 months, 4–5: referral); the site has nothing on it. Its place depends on the lead choice (B1-lung-rads-01).",
+    "home": "Lung cancer screening"
+  },
+  {
+    "id": "pancan-brock-mcwilliams-nodule-malignancy-risk-c",
+    "topic": "PanCan (Brock / McWilliams) nodule malignancy risk calculator",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Sets the BC program's baseline category (p15) and Lung-RADS v2022 note 13 encourages it for 4B; no calculator on the site.",
+    "home": "Lung cancer screening"
+  },
+  {
+    "id": "incidental-findings-on-screening-ct",
+    "topic": "Incidental findings on screening CT",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Lung-RADS v2022 note 15 points to the ACR incidental-findings guidance and LCS quick guide; the BC program has its own table with thresholds (pp16–17). The page has only four unsourced S examples.",
+    "home": "Lung cancer screening"
+  },
+  {
+    "id": "adrenal-ct-washout-protocol",
+    "topic": "Adrenal CT (washout) protocol",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. ACR (in-press PDF p5) gives the protocol its thresholds depend on: reduced-dose unenhanced CT over the adrenals at 120 kVp read in real time, contrast-enhanced at 60–90 s, 15-minute delay, 3 mm axial and coronal. The page has only a \"10–15 min delay\" label.",
+    "home": "Incidental adrenal mass"
+  },
+  {
+    "id": "bosniak-2019-mri-criteria-and-term-definitions-t",
+    "topic": "Bosniak 2019 MRI criteria and term definitions (Table 3: septum, thin, minimally thickened, thick, irregular thickening, nodule, homogeneous, simple fluid; cystic = <25% enhancing tissue)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page claims CT and MRI but has no MRI criteria and none of the definitions that decide II vs IIF vs III vs IV.",
+    "home": "Cystic renal masses"
+  },
+  {
+    "id": "reporting-phrases-for-each-bosniak-class-bosniak",
+    "topic": "Reporting phrases for each Bosniak class (Bosniak 2019 Table 4)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Ready wording for reports, including the IIF schedule and the urology advice for III/IV; nothing on the page covers reporting.",
+    "home": "Cystic renal masses"
+  },
+  {
+    "id": "ultrasound-for-cystic-renal-masses-car-2019-flow",
+    "topic": "Ultrasound for cystic renal masses (CAR 2019 Flowchart 3 and ultrasound follow-up of IIF)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. CAR leads by the rule and adds ultrasound pathways the page lacks; part of the existing gap renal-mass-car-2019.",
+    "home": "Cystic renal masses"
+  },
+  {
+    "id": "lr-nc-noncategorizable",
+    "topic": "LR-NC (noncategorizable)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. In the v2018 algorithm and management (core p.8, p.14: repeat or alternative imaging in ≤3 months; ch8 p.8-7) but absent from the page and the calculator.",
+    "home": "LI-RADS (liver in patients at risk)"
+  },
+  {
+    "id": "treatment-response-lr-tr-categories",
+    "topic": "Treatment response (LR-TR categories)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page has no treated-observation pathway and wrongly files complete response under LR-1 (core p.11-12, p.14). The current CT/MRI treatment response version is 2024 per the coordinator; not read here.",
+    "home": "LI-RADS (liver in patients at risk)"
+  },
+  {
+    "id": "tiebreaking-rules-and-if-unsure-characterize-a-m",
+    "topic": "Tiebreaking rules and \"if unsure, characterize a major feature as absent\"",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Core p.8 and p.10 (and ch8 \"If unsure\" rows) decide many borderline cases; not on the page.",
+    "home": "LI-RADS (liver in patients at risk)"
+  },
+  {
+    "id": "how-to-measure-size-and-when-threshold-growth-ap",
+    "topic": "How to measure size and when threshold growth applies",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Core p.20: outer edge to outer edge including capsule, not on arterial phase or DWI if margins are clear elsewhere; threshold growth only for a definite mass against prior CT/MRI. Not on the page.",
+    "home": "LI-RADS (liver in patients at risk)"
+  },
+  {
+    "id": "path-proven-observations",
+    "topic": "Path-proven observations",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Core p.6 and p.16, ch8 p.8-6: report the path diagnosis instead of a category (except regenerative or dysplastic nodules). Not on the page.",
+    "home": "LI-RADS (liver in patients at risk)"
+  },
+  {
+    "id": "distinctive-nodules-20-mm-lr-2-vs-lr-3",
+    "topic": "Distinctive nodules <20 mm (LR-2 vs LR-3)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Core p.41 and ch8 p.8-20 define them; the page replaces this with an unsupported \"<10 mm indeterminate = LR-2\".",
+    "home": "LI-RADS (liver in patients at risk)"
+  },
+  {
+    "id": "us-and-ceus-li-rads",
+    "topic": "US and CEUS LI-RADS",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Core p.3 lists surveillance US and CEUS algorithms beside CT/MRI; the site covers only CT/MRI. Owner to decide whether they belong.",
+    "home": "LI-RADS (liver in patients at risk)"
   }
 ]
