@@ -137,3 +137,49 @@ test.describe('without JavaScript', () => {
     await expect(row(page, 'popular', 'ecv').locator('.calc-label')).toBeVisible();
   });
 });
+
+test.describe('Copy', () => {
+  const REPORT = 'T1 Mapping / ECV:\n  Hematocrit: 40%\n  T1 Pre (myocardium) = 1000 ms\n  ECV: 26.7% (Normal)';
+
+  test('appears once ECV has a result and copies the report text', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await page.goto('/');
+    await toggle(page, 'popular', 'ecv').click();
+    const copy = panel(page, 'popular', 'ecv').locator('.quick-copy');
+    await expect(copy).toBeHidden();
+    await fillEcv(page, 'popular', WORKED);
+    await copy.click();
+    await expect(copy).toHaveText('Copied');
+    expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(REPORT);
+  });
+
+  test('Bernoulli has no Copy', async ({ page }) => {
+    await page.goto('/#list-cardiac');
+    await toggle(page, 'cardiac', 'bernoulli').click();
+    await panel(page, 'cardiac', 'bernoulli').locator('input[name="vmax"]').fill('4');
+    await expect(panel(page, 'cardiac', 'bernoulli').locator('.quick-copy')).toBeHidden();
+  });
+
+  test('with the clipboard blocked it says so, keeps the result and raises no error', async ({ page }) => {
+    await page.addInitScript(() => {
+      Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: () => Promise.reject(new DOMException('denied', 'NotAllowedError')) } });
+    });
+    const errors: string[] = [];
+    page.on('pageerror', (e) => errors.push(e.message));
+    await page.goto('/');
+    await toggle(page, 'popular', 'ecv').click();
+    await fillEcv(page, 'popular', WORKED);
+    await panel(page, 'popular', 'ecv').locator('.quick-copy').click();
+    await expect(panel(page, 'popular', 'ecv').locator('.quick-copy')).toHaveText("Couldn't copy");
+    await expect(panel(page, 'popular', 'ecv').locator('.quick-headline')).toHaveText('26.7%');
+    expect(errors).toEqual([]);
+  });
+});
+
+test('nothing typed into a quick view is stored', async ({ page }) => {
+  await page.goto('/');
+  const before = await page.evaluate(() => JSON.stringify({ ...localStorage }));
+  await toggle(page, 'popular', 'ecv').click();
+  await fillEcv(page, 'popular', WORKED);
+  expect(await page.evaluate(() => JSON.stringify({ ...localStorage }))).toBe(before);
+});

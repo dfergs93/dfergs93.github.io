@@ -205,6 +205,17 @@ html.js .list { scroll-margin-top: 100vmax; }
 .quick-details { display: flex; flex-wrap: wrap; gap: 2px 14px; font-family: var(--mono); font-size: 0.75rem; color: var(--dim); font-variant-numeric: tabular-nums; }
 .quick-foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; margin-top: 10px; font-size: 0.8rem; }
 .quick-source { margin: 0; color: var(--dim); font-family: var(--mono); font-size: 0.72rem; }
+.quick-actions { display: inline-flex; align-items: baseline; gap: 14px; }
+.quick-copy {
+  padding: 1px 8px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--ground);
+  color: var(--ink);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.quick-copy:hover { border-color: var(--accent); transition-delay: var(--hover-delay); }
 .quick-full { color: var(--ink); text-decoration-color: var(--line); }
 .quick-full:hover { text-decoration-color: currentColor; }
 .row-area { margin-left: auto; font-size: 0.8rem; color: var(--dim); }

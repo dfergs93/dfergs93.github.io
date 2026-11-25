@@ -58,3 +58,21 @@ test('with the count URL hanging, the click still navigates within a second', as
   await page.locator('#list-popular li.row[data-id="fleischner"] .row-link').click();
   await page.waitForURL(FLEISCHNER, { timeout: 1000 });
 });
+
+test('opening a quick view counts once; typing and copying send nothing more', async ({ page, context }) => {
+  await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+  const sent = await captureCounts(page);
+  await page.goto('/');
+  const ecvRow = page.locator('#list-popular li.row[data-id="ecv"]');
+  await ecvRow.locator('.calc-toggle').click();
+  await expect.poll(() => sent).toEqual([{ method: 'POST', body: 'ecv' }]);
+  for (const [name, value] of Object.entries({ hct: '40', pre_myo: '1000', pre_blood: '1700', post_myo: '450', post_blood: '300' })) {
+    await ecvRow.locator(`input[name="${name}"]`).fill(value);
+  }
+  await ecvRow.locator('.quick-copy').click();
+  await page.waitForTimeout(300);
+  expect(sent).toHaveLength(1);
+  await ecvRow.locator('.calc-toggle').click();
+  await ecvRow.locator('.calc-toggle').click();
+  await expect.poll(() => sent).toHaveLength(2);
+});

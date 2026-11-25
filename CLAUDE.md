@@ -47,6 +47,20 @@ To add a resource:
    it accepts only the ids it was deployed with, so opens of a new resource are
    dropped until then. A push to `main` deploys the site, not the Worker.
 
+### Adding a quick calculator
+
+A calculator with a module in `shared/calculators/` gets a `calc` button on its row
+that opens a quick view under it (`src/scripts/quick-calc.ts` builds it from the
+module's fields). To add one:
+1. Write the module to the contract in `shared/calculators/types.ts`: fields with
+   address-ready keys (`hct`, `pre_myo`), a pure `compute`, `implements`, and a
+   `citation` that is always filled in (say "local practice" where a threshold isn't
+   published). Copy clinical wording from the page it replaces; the owner signs it off.
+2. Register it in `shared/calculators/index.ts`.
+3. Test it with a hand-worked example, every band edge, every invalid case, and a
+   parity table against the page it replaces (`test/unit/calculators/`).
+The guideline calculators wait for the stage 2 audit before they get modules.
+
 Popular is `shared/data/popular.ts`, chosen and ordered by the owner. Within an area,
 entries with `areaRank` come first, then the rest alphabetically. Areas with no entries
 are not shown. Old guideline pages that are empty placeholders are not listed; see

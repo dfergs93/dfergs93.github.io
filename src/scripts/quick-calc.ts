@@ -5,6 +5,18 @@
 import { parseField, type Calculator, type Outcome, type Values } from '../../shared/calculators/types.ts';
 
 let serial = 0;
+const COPY_FEEDBACK_MS = 2000;
+
+/** Copies `text`; true if the browser allowed it. Never throws (locked-down browsers refuse). */
+async function copyText(text: string): Promise<boolean> {
+  try {
+    if (!navigator.clipboard?.writeText) return false;
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch {
+    return false;
+  }
+}
 
 function el<K extends keyof HTMLElementTagNameMap>(tag: K, className: string, text?: string): HTMLElementTagNameMap[K] {
   const node = document.createElement(tag);
@@ -70,10 +82,25 @@ export function createQuickCalc(calc: Calculator, fullUrl: string): HTMLElement 
   result.setAttribute('aria-live', 'polite');
   const source = el('p', 'quick-source', calc.citation.short);
   source.title = calc.citation.full;
+  const copy = el('button', 'quick-copy', 'Copy');
+  copy.type = 'button';
+  copy.hidden = true;
   const full = el('a', 'quick-full', 'Full calculator →');
   full.href = fullUrl;
+  const actions = el('span', 'quick-actions');
+  actions.append(copy, full);
   const foot = el('div', 'quick-foot');
-  foot.append(source, full);
+  foot.append(source, actions);
+
+  let report: string | undefined;
+  let resetCopy: ReturnType<typeof setTimeout> | undefined;
+  copy.addEventListener('click', async () => {
+    if (!report) return;
+    const ok = await copyText(report);
+    copy.textContent = ok ? 'Copied' : "Couldn't copy";
+    clearTimeout(resetCopy);
+    resetCopy = setTimeout(() => (copy.textContent = 'Copy'), COPY_FEEDBACK_MS);
+  });
   root.append(result, foot);
 
   // A number input the browser can't read reports '', which parseField treats as empty.
@@ -88,6 +115,8 @@ export function createQuickCalc(calc: Calculator, fullUrl: string): HTMLElement 
       }
     }
     renderOutcome(result, outcome);
+    report = outcome.status === 'ok' ? outcome.report : undefined;
+    copy.hidden = !report;
   };
 
   root.addEventListener('input', (e) => {
