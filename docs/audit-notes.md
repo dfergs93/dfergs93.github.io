@@ -13,6 +13,8 @@ stage 1: the registry's version labels describe the linked pages as they are.
 - Every guideline page with content says "Last Institutional Review: January 2024".
 - Valve grading draws on three guideline sets (ACC/AHA 2020, ESC/EACTS 2025, ASE 2017); the registry label says ACC/AHA 2020. Decide how the rebuilt page states its sources.
 - The cardiac CT planning pages (LAAO, TAVR, TMVR, TTVR) link to the old "Protocol Manager" site, which the new site does not link to.
+- The ECV and Simplified Bernoulli pages state no source. The quick calculators (pilot) cite Messroghli et al., JCMR 2017;19:75 (ECV formula) and Baumgartner et al., JASE 2017;30:372 (Bernoulli); the ECV bands (30 / 32 / 40 %) are local practice (owner, 2026-11-24). Stage 3's pages should state the same.
+- The aortic stenosis table on the Bernoulli page leaves peak gradients between 10 and 16 mmHg unassigned (Normal <10, Mild 16–36).
 
 ## Placeholder pages left out of the registry
 
