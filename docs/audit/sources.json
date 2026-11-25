@@ -181,5 +181,16 @@
     "access": "not-readable",
     "reuse": "unknown",
     "note": "Journal site returns a bot check (403) and the University of Milan repository copy is restricted access (2026-11-25); not circumvented."
+  },
+  {
+    "id": "lung-rads-1-0",
+    "title": "Lung-RADS Version 1.0 Assessment Categories",
+    "citation": "American College of Radiology. Lung-RADS version 1.0 assessment categories. Released April 28, 2014.",
+    "version": "v1.0",
+    "year": 2014,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Lung-RADS",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "Read to trace the page's C modifier (superseded by v1.1 in 2019)."
   }
 ]
