@@ -12,8 +12,7 @@
     {
       "binding": "DB",
       "database_name": "radref",
-      // Set at launch (stage 1, Task 9) from `npx wrangler d1 create radref`.
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "a8e237ca-ac30-4ebb-aae4-eaf8470fa539",
       "migrations_dir": "migrations"
     }
   ],
