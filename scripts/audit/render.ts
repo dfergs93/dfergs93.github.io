@@ -6,6 +6,8 @@ import { parseBatch, parseGaps, parseSources, VERDICTS, type Batch, type Finding
 
 export const AUDIT_DIR = new URL('../../docs/audit/', import.meta.url);
 
+const cell = (s: string) => s.replaceAll('|', '\\|');
+
 /** Findings on pages outside the batch's list (whole-site findings) are grouped under this. */
 const ACROSS = 'Across the site';
 
@@ -86,12 +88,18 @@ export function renderBatch(b: Batch, sourceList: Source[]): string {
     if (s.url) out.push(s.url, '');
     out.push(s.findings.length ? s.findings.map((f) => renderFinding(f, sources)).join('\n\n') : 'No findings.');
   }
+  if (b.usability.length) {
+    const yn = (v: boolean) => (v ? 'yes' : 'no');
+    out.push('', '## Calculator usability', '');
+    out.push('| Page | Calculator | Words before first input | All options visible | Algorithm visible | Notes |', '|---|---|---|---|---|---|');
+    for (const u of b.usability) {
+      out.push(`| ${[pageTitle(b, u.page), u.calculator, String(u.wordsBeforeFirstInput), yn(u.allOptionsVisible), yn(u.algorithmVisible), u.notes].map(cell).join(' | ')} |`);
+    }
+  }
   out.push('', '## Changed after this batch started', '');
   out.push(b.recheckList.length ? b.recheckList.map((r) => `- ${r}`).join('\n') : 'Nothing yet.');
   return out.join('\n') + '\n';
 }
-
-const cell = (s: string) => s.replaceAll('|', '\\|');
 
 export function renderGaps(gaps: Gap[]): string {
   const rows = gaps.map((g) =>

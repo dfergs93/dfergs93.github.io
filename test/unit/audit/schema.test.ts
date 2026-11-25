@@ -101,6 +101,15 @@ describe('parseBatch', () => {
   });
 });
 
+describe('calculator usability notes', () => {
+  const note = { page: 'fleischner', calculator: 'fleischner', wordsBeforeFirstInput: 120, allOptionsVisible: true, algorithmVisible: false, notes: 'Logic hidden behind Calculate.' };
+
+  it('accepts a note for a page in the batch and rejects one for an unknown page', () => {
+    expect(parseBatch({ ...batch(FINDING), usability: [note] }, sources).usability).toHaveLength(1);
+    expect(() => parseBatch({ ...batch(FINDING), usability: [{ ...note, page: 'nowhere' }] }, sources)).toThrow(/usability.*unknown page "nowhere"/);
+  });
+});
+
 describe('parseSources', () => {
   it('rejects a duplicate source id', () => {
     expect(() => parseSources([SOURCE, SOURCE])).toThrow(/fleischner-2017.*duplicate source id/);

@@ -79,6 +79,15 @@ const findingSchema = z.strictObject({
   ruling: z.strictObject({ decision: z.enum(['keep', 'change', 'drop']), note: z.string(), date: day }).optional(),
 });
 
+const usabilitySchema = z.strictObject({
+  page: text,
+  calculator: text,
+  wordsBeforeFirstInput: z.number().int().nonnegative(),
+  allOptionsVisible: z.boolean(),
+  algorithmVisible: z.boolean(),
+  notes: text,
+});
+
 const batchShellSchema = z.strictObject({
   batch: z.number().int().positive(),
   title: text,
@@ -87,6 +96,8 @@ const batchShellSchema = z.strictObject({
   pages: z.array(z.strictObject({ id: text, url: z.url(), title: text })).min(1),
   findings: z.array(z.unknown()),
   recheckList: z.array(text),
+  // One note per calculator against the owner's complaints: wordy, options hidden, algorithm hidden.
+  usability: z.array(usabilitySchema).default([]),
 });
 
 const gapSchema = z.strictObject({
@@ -106,6 +117,7 @@ export type SourceRef = z.infer<typeof sourceRefSchema>;
 export type Finding = z.infer<typeof findingSchema>;
 export type Batch = Omit<z.infer<typeof batchShellSchema>, 'findings'> & { findings: Finding[] };
 export type Gap = z.infer<typeof gapSchema>;
+export type UsabilityNote = z.infer<typeof usabilitySchema>;
 
 function labelOf(entry: unknown, index: number, kind: string): string {
   return typeof entry === 'object' && entry !== null && 'id' in entry ? String(entry.id) : `${kind} #${index}`;
@@ -184,6 +196,7 @@ export function parseBatch(raw: unknown, sources: Source[]): Batch {
   }
   const b = shell.data;
   for (const page of b.pages) if (!PAGE_IDS.has(page.id)) problems.push(`pages: unknown page "${page.id}"`);
+  for (const u of b.usability) if (!PAGE_IDS.has(u.page)) problems.push(`usability: unknown page "${u.page}"`);
 
   const findings = parseList(b.findings, findingSchema, 'finding', problems);
   const ids = new Set(findings.map((f) => f.id));

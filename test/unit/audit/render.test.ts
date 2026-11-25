@@ -76,6 +76,15 @@ describe('renderBatch', () => {
   });
 });
 
+describe('renderBatch usability', () => {
+  it('renders a usability table when the batch has notes', () => {
+    const withNotes = { ...batch, usability: [{ page: 'lung-rads', calculator: 'lung_rads', wordsBeforeFirstInput: 85, allOptionsVisible: false, algorithmVisible: false, notes: 'Wordy | long.' }] };
+    const md = renderBatch(withNotes, sources);
+    expect(md).toContain('## Calculator usability');
+    expect(md).toContain('| Lung-RADS | lung_rads | 85 | no | no | Wordy \\| long. |');
+  });
+});
+
 describe('reviewData', () => {
   it('resolves source ids to citation, url and location', () => {
     const lung = reviewData(batch, sources).find((f) => f.id === 'B1-lung-rads-01')!;
