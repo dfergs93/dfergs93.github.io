@@ -86,3 +86,59 @@ test('with local storage blocked, no star shows and search still works', async (
   await expect(page.locator('.star:visible')).toHaveCount(0);
   expect(errors).toEqual([]);
 });
+
+test.describe('reordering', () => {
+  const favRow = (page: Page, id: string) => page.locator(`#list-favorites li.row[data-id="${id}"]`);
+
+  async function starThree(page: Page) {
+    await page.goto('/');
+    for (const id of ['fleischner', 'ecv', 'bosniak']) await star(page, 'popular', id).click();
+    await railItem(page, 'favorites').click();
+    expect(await rowIds(page, 'favorites')).toEqual(['fleischner', 'ecv', 'bosniak']);
+  }
+
+  test('Move up moves a favorite up one place and keeps focus on it', async ({ page }) => {
+    await starThree(page);
+    await favRow(page, 'ecv').getByRole('button', { name: 'Move Extracellular volume (ECV) up' }).click();
+    expect(await rowIds(page, 'favorites')).toEqual(['ecv', 'fleischner', 'bosniak']);
+    await expect(favRow(page, 'fleischner').locator('.fav-down')).toBeEnabled();
+    await favRow(page, 'fleischner').locator('.fav-down').click();
+    expect(await rowIds(page, 'favorites')).toEqual(['ecv', 'bosniak', 'fleischner']);
+    await expect(favRow(page, 'fleischner').locator('.fav-up')).toBeFocused();
+    await page.keyboard.press('Enter');
+    expect(await rowIds(page, 'favorites')).toEqual(['ecv', 'fleischner', 'bosniak']);
+    await expect(favRow(page, 'fleischner').locator('.fav-up')).toBeFocused();
+  });
+
+  test('the new order survives a reload', async ({ page }) => {
+    await starThree(page);
+    await favRow(page, 'bosniak').locator('.fav-up').click();
+    await page.reload();
+    await railItem(page, 'favorites').click();
+    expect(await rowIds(page, 'favorites')).toEqual(['fleischner', 'bosniak', 'ecv']);
+  });
+
+  test('the first row cannot move up and the last cannot move down', async ({ page }) => {
+    await starThree(page);
+    await expect(favRow(page, 'fleischner').locator('.fav-up')).toBeDisabled();
+    await expect(favRow(page, 'bosniak').locator('.fav-down')).toBeDisabled();
+    await expect(favRow(page, 'ecv').locator('.fav-up')).toBeEnabled();
+  });
+
+  test('move buttons appear only in Favorites', async ({ page }) => {
+    await starThree(page);
+    await railItem(page, 'popular').click();
+    await expect(page.locator('#list-popular .fav-move:visible')).toHaveCount(0);
+    await page.getByRole('combobox').fill('ecv');
+    await expect(page.locator('#list-results .fav-move:visible')).toHaveCount(0);
+  });
+
+  test('moving sends nothing to the count URL', async ({ page }) => {
+    const sent: string[] = [];
+    await page.route('https://count.test/count', (r) => { sent.push(r.request().postData() ?? ''); return r.fulfill({ status: 204 }); });
+    await starThree(page);
+    await favRow(page, 'ecv').locator('.fav-up').click();
+    await page.waitForTimeout(300);
+    expect(sent).toEqual([]);
+  });
+});

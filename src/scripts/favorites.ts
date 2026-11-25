@@ -29,3 +29,22 @@ export function toggleFavorite(s: Storage | null, id: string, validIds: Readonly
   }
   return readFavorites(s, validIds);
 }
+
+/**
+ * Moves `id` one place up (-1) or down (+1) and returns the list storage now holds.
+ * Does nothing at either end, for an id that isn't a favorite, or if storage refuses.
+ */
+export function moveFavorite(s: Storage | null, id: string, delta: -1 | 1, validIds: ReadonlySet<string>): string[] {
+  if (!s) return [];
+  const list = readFavorites(s, validIds);
+  const from = list.indexOf(id);
+  const to = from + delta;
+  if (from < 0 || to < 0 || to >= list.length) return list;
+  [list[from], list[to]] = [list[to]!, list[from]!];
+  try {
+    s.setItem(KEY, JSON.stringify(list));
+  } catch {
+    // Storage refused the write; the order stays as it was.
+  }
+  return readFavorites(s, validIds);
+}

@@ -155,6 +155,25 @@ html.js .list { scroll-margin-top: 100vmax; }
 .calc-toggle:hover { border-color: var(--accent); transition-delay: var(--hover-delay); }
 .calc-toggle[aria-expanded='true'] { background: var(--panel); border-color: var(--accent); }
 
+/* Reordering: move buttons show only in the Favorites list. */
+.fav-move { display: none; }
+#list-favorites .fav-move { position: relative; z-index: 1; display: inline-flex; gap: 2px; align-self: center; }
+.fav-move button {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius);
+  background: none;
+  color: var(--dim);
+  cursor: pointer;
+}
+.fav-move button:hover:not(:disabled) { color: var(--ink); background: var(--panel); transition-delay: var(--hover-delay); }
+.fav-move button:disabled { color: var(--line); cursor: default; }
+.fav-move svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+
 /* Quick view: opens under its row. */
 .quick-calc {
   grid-column: 2;

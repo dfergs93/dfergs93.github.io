@@ -25,6 +25,10 @@ const quick = CALCULATORS.has(r.id);
       <button class="calc calc-toggle" type="button" aria-expanded="false" aria-label={`Quick calc: ${r.title}`} hidden>calc</button>
     )}
     <span class="row-area">{areaLabel(r.area)}</span>
+    <span class="fav-move">
+      <button class="fav-up" type="button" aria-label={`Move ${r.title} up`}><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 10l4-4 4 4" /></svg></button>
+      <button class="fav-down" type="button" aria-label={`Move ${r.title} down`}><svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 6l4 4 4-4" /></svg></button>
+    </span>
   </div>
   <p class="summary">{r.summary}</p>
 </li>

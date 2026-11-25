@@ -9,7 +9,7 @@
 import { RESOURCE_DATA } from '../../shared/data/resources.ts';
 import { CALCULATORS } from '../../shared/calculators/index.ts';
 import { createSearch } from '../../shared/search.ts';
-import { readFavorites, toggleFavorite } from './favorites.ts';
+import { moveFavorite, readFavorites, toggleFavorite } from './favorites.ts';
 import { createQuickCalc } from './quick-calc.ts';
 import { safeStorage } from './storage.ts';
 
@@ -197,8 +197,26 @@ export function initFront(root: HTMLElement): void {
     }
     if (quick && favoritesList.contains(quick.panel)) closeQuick();
     favoritesList.replaceChildren(...favorites.flatMap((id) => cloneRow(id) ?? []));
+    const rows = [...favoritesList.querySelectorAll<HTMLElement>('li.row')];
+    rows.forEach((row, i) => {
+      row.querySelector<HTMLButtonElement>('.fav-up')!.disabled = i === 0;
+      row.querySelector<HTMLButtonElement>('.fav-down')!.disabled = i === rows.length - 1;
+    });
     railItem('favorites')!.hidden = favorites.length === 0;
     setCounts(currentHits);
+  }
+
+  /** Moves a favorite one place; focus stays on the same button of the moved row (or its other one at an end). */
+  function onMove(button: HTMLButtonElement) {
+    const id = button.closest<HTMLElement>('li.row')?.dataset.id;
+    if (!id) return;
+    const up = button.classList.contains('fav-up');
+    favorites = moveFavorite(storage, id, up ? -1 : 1, validIds);
+    renderFavorites();
+    const row = favoritesList.querySelector<HTMLElement>(`li.row[data-id="${id}"]`);
+    const same = row?.querySelector<HTMLButtonElement>(up ? '.fav-up' : '.fav-down');
+    const other = row?.querySelector<HTMLButtonElement>(up ? '.fav-down' : '.fav-up');
+    (same && !same.disabled ? same : other)?.focus();
   }
 
   function onStar(star: HTMLButtonElement) {
@@ -223,6 +241,8 @@ export function initFront(root: HTMLElement): void {
   root.addEventListener('click', (e) => {
     const star = e.target instanceof Element ? e.target.closest<HTMLButtonElement>('.star[data-id]') : null;
     if (star) onStar(star);
+    const move = e.target instanceof Element ? e.target.closest<HTMLButtonElement>('#list-favorites .fav-up, #list-favorites .fav-down') : null;
+    if (move) onMove(move);
     const toggle = e.target instanceof Element ? e.target.closest<HTMLButtonElement>('.calc-toggle') : null;
     if (toggle) {
       if (quick?.toggle === toggle) closeQuick();

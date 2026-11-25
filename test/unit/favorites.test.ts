@@ -1,5 +1,5 @@
-import { expect, test } from 'vitest';
-import { readFavorites, toggleFavorite } from '../../src/scripts/favorites.ts';
+import { describe, expect, test } from 'vitest';
+import { moveFavorite, readFavorites, toggleFavorite } from '../../src/scripts/favorites.ts';
 
 const KEY = 'radref:favorites';
 const VALID = new Set(['fleischner', 'bosniak', 'ecv']);
@@ -66,4 +66,41 @@ test('a storage that throws on read gives []', () => {
   s.getItem = () => { throw new DOMException('denied', 'SecurityError'); };
   expect(readFavorites(s, VALID)).toEqual([]);
   expect(toggleFavorite(s, 'ecv', VALID)).toEqual([]);
+});
+
+describe('moveFavorite', () => {
+  const stored = (s: Storage) => JSON.parse(s.getItem(KEY)!);
+
+  test('moves a favorite up or down one place and saves the order', () => {
+    const s = memory('["fleischner","bosniak","ecv"]');
+    expect(moveFavorite(s, 'bosniak', -1, VALID)).toEqual(['bosniak', 'fleischner', 'ecv']);
+    expect(stored(s)).toEqual(['bosniak', 'fleischner', 'ecv']);
+    expect(moveFavorite(s, 'bosniak', 1, VALID)).toEqual(['fleischner', 'bosniak', 'ecv']);
+  });
+
+  test('does nothing at either end', () => {
+    const s = memory('["fleischner","bosniak","ecv"]');
+    expect(moveFavorite(s, 'fleischner', -1, VALID)).toEqual(['fleischner', 'bosniak', 'ecv']);
+    expect(moveFavorite(s, 'ecv', 1, VALID)).toEqual(['fleischner', 'bosniak', 'ecv']);
+  });
+
+  test('does nothing for an id that is not a favorite', () => {
+    const s = memory('["fleischner","bosniak"]');
+    expect(moveFavorite(s, 'ecv', -1, VALID)).toEqual(['fleischner', 'bosniak']);
+    expect(moveFavorite(s, 'gone-id', -1, VALID)).toEqual(['fleischner', 'bosniak']);
+  });
+
+  test('a null storage gives [] without throwing', () => expect(moveFavorite(null, 'ecv', 1, VALID)).toEqual([]));
+
+  test('a storage that refuses writes keeps the old order', () => {
+    const s = memory('["fleischner","bosniak"]');
+    s.setItem = () => { throw new DOMException('full', 'QuotaExceededError'); };
+    expect(moveFavorite(s, 'bosniak', -1, VALID)).toEqual(['fleischner', 'bosniak']);
+  });
+
+  test('stale ids are dropped on a move', () => {
+    const s = memory('["gone-id","fleischner","bosniak"]');
+    expect(moveFavorite(s, 'bosniak', -1, VALID)).toEqual(['bosniak', 'fleischner']);
+    expect(stored(s)).toEqual(['bosniak', 'fleischner']);
+  });
 });
