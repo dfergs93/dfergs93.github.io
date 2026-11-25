@@ -3,7 +3,7 @@
 // URL. Usage: npm run audit:calc -- docs/audit/batch-1/cases/lung_rads.json
 // Writes <case file>.results.md beside the case file.
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, writeFileSync } from 'node:fs';
 import { z } from 'zod';
 
 const text = z.string().min(1);
@@ -96,6 +96,20 @@ function summary(results: CaseResult[]): string {
   return `${results.length} cases: ${matched} matched, ${mismatched} mismatched, ${byReading} to compare by reading, ${notAcc} input not accepted, ${noResult} no result`;
 }
 
+/**
+ * Where a case file's results go (`x.json` → `x.results.md`). Refuses to replace an existing
+ * results file unless `force`: it is the evidence of the run that made it, and the old pages
+ * change. Refuses a case file not ending in `.json`, which its results would overwrite.
+ */
+export function resultsPath(casePath: string, exists: (path: string) => boolean, force: boolean): string {
+  if (!casePath.endsWith('.json')) throw new Error(`case file must end in .json: ${casePath}`);
+  const out = casePath.replace(/\.json$/, '.results.md');
+  if (exists(out) && !force) {
+    throw new Error(`${out} already exists; it is the evidence of an earlier run (pass --force to replace it)`);
+  }
+  return out;
+}
+
 export function renderCaseResults(file: CaseFile, results: CaseResult[]): string {
   const byId = new Map(file.cases.map((c) => [c.id, c]));
   const rows = results.map((r) => {
@@ -131,7 +145,8 @@ export function renderCaseResults(file: CaseFile, results: CaseResult[]): string
   ].join('\n') + '\n';
 }
 
-async function run(path: string): Promise<void> {
+async function run(path: string, force: boolean): Promise<void> {
+  const out = resultsPath(path, existsSync, force);
   const { chromium } = await import('@playwright/test');
   const file = parseCaseFile(JSON.parse(readFileSync(path, 'utf8')));
   const browser = await chromium.launch();
@@ -168,16 +183,17 @@ async function run(path: string): Promise<void> {
   } finally {
     await browser.close();
   }
-  const out = path.replace(/\.json$/, '.results.md');
   writeFileSync(out, renderCaseResults(file, results));
   console.log(`${summary(results)}\nwrote ${out}`);
 }
 
 if (import.meta.main) {
-  const path = process.argv[2];
+  const args = process.argv.slice(2);
+  const force = args.includes('--force');
+  const path = args.find((a) => a !== '--force');
   if (!path) {
-    console.error('usage: npm run audit:calc -- <case file>');
+    console.error('usage: npm run audit:calc -- <case file> [--force]');
     process.exit(2);
   }
-  await run(path);
+  await run(path, force);
 }

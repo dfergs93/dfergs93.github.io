@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { caseUrl, categoryOf, notAccepted, parseCaseFile, renderCaseResults, toCaseResult } from '../../../scripts/audit/old-calc.ts';
+import { caseUrl, categoryOf, notAccepted, parseCaseFile, renderCaseResults, resultsPath, toCaseResult } from '../../../scripts/audit/old-calc.ts';
 
 const FILE = {
   calculator: 'lung_rads',
@@ -93,5 +93,28 @@ describe('renderCaseResults', () => {
     expect(row).toContain('Category 2: continue annual screening');
     expect(row).toContain('Lung-RADS 3: 6-month LDCT');
     expect(row).toContain('✗');
+  });
+});
+
+// A results file is the evidence of the run that made it: the old pages change (batch 1's
+// calculators were switched off after the audit), so a re-run must not replace it by accident.
+describe('resultsPath', () => {
+  const none = () => false;
+  const all = () => true;
+
+  it('puts the results beside the case file', () => {
+    expect(resultsPath('docs/audit/batch-1/cases/bosniak.json', none, false)).toBe('docs/audit/batch-1/cases/bosniak.results.md');
+  });
+
+  it('refuses to replace existing results without --force', () => {
+    expect(() => resultsPath('docs/audit/batch-1/cases/bosniak.json', all, false)).toThrow(/bosniak\.results\.md.*--force/);
+  });
+
+  it('replaces them with --force', () => {
+    expect(resultsPath('docs/audit/batch-1/cases/bosniak.json', all, true)).toBe('docs/audit/batch-1/cases/bosniak.results.md');
+  });
+
+  it('refuses a case file that is not .json, which would otherwise be overwritten by its own results', () => {
+    expect(() => resultsPath('docs/audit/batch-1/cases/bosniak.txt', none, true)).toThrow(/\.json/);
   });
 });
