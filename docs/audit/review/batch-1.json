@@ -3123,6 +3123,627 @@
           "location": "Title, \"Lung-RADS v2022\", release date November 2022"
         }
       ]
+    },
+    {
+      "id": "B1-fleischner-01",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Title, heading and reference box: citation and version",
+      "kind": "provenance",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Browser title \"Fleischner Society Guidelines 2017\"; heading \"Fleischner Society Guidelines for Incidental Pulmonary Nodules\"; reference box: \"Full Citation: MacMahon H, Naidich DP, Goo JM, et al. Guidelines for Management of Incidental Pulmonary Nodules Detected on CT Images: From the Fleischner Society 2017. Radiology. 2017;284(1):228-243.\", \"Version: 2017 Update\".",
+      "verdict": "correct",
+      "management": false,
+      "home": "Incidental pulmonary nodules › Background",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Title and author list, journal p228; citation line \"Radiology 2017; 284:228–243\" and DOI, p229; footer \"Volume 284: Number 1—July 2017\"; abstract, p228 (revises the 2005 solid and 2013 subsolid guidelines into one table)"
+        },
+        {
+          "citation": "Hamel C, Avard B, Belanger C, Bourgouin P, Lam S, Manos D, Michaud A, Rowe BH, Sanders K, Bilawich AM. Canadian Association of Radiologists thoracic imaging referral guideline. Can Assoc Radiol J. 2024;75(2):296-303.",
+          "url": "https://doi.org/10.1177/08465371231214699",
+          "location": "TH19 \"Incidental lung nodule\", recommendation 1, PDF p18 (printed p15), and Appendix 3A, PDF p55: CAR recommends following the Fleischner 2017 guidelines (doi 10.1148/radiol.2017161659)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-02",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Calculator: whole-millimetre sizes at the table cut-offs",
+      "kind": "calculator",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Form \"Fleischner Calculator\": Nodule Size (mm), Nodule Type (Solid / Part-Solid / Ground-Glass), Multiplicity (Single / Multiple), Patient Risk (Low / High). Runs at whole millimetres (5, 6, 8, 9 mm and 12 mm ground glass) gave the table cells, e.g. 5 mm solid single low → \"No routine follow-up\", 5 mm solid single high → \"Optional CT at 12 mo\", 6 and 8 mm solid single high → \"CT 6–12 mo and CT 18–24 mo\", 9 mm solid single → \"Consider CT ~3 mo, PET/CT and/or biopsy\", 6 and 8 mm solid multiple low → \"CT 3–6 mo; consider CT 18–24 mo\", 6 mm ground glass single → \"CT 6–12 mo to confirm persistence, then q2y until 5y\", 6 mm part-solid single → \"CT 3–6 mo to confirm persistence; if persistent, annual CT until 5y (manage by solid component)\", multiple subsolid 5 mm → \"CT 3–6 mo; if stable, consider CT at 2 and 4y\", 6 and 8 mm → \"CT 3–6 mo; subsequent management guided by most suspicious nodule\". Risk is ignored for subsolid nodules. 26 of the 40 cases in docs/audit/batch-1/cases/fleischner.results.md matched by reading.",
+      "verdict": "correct",
+      "management": false,
+      "home": "Incidental pulmonary nodules › Calculator",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, A: Solid Nodules (Single and Multiple rows, < 6 mm and 6–8 mm columns; Single > 8 mm) and B: Subsolid Nodules (all cells); p239 (subsolid recommendations independent of the usual risk categories)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-03",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Calculator: fractional sizes are not rounded",
+      "kind": "calculator",
+      "topic": "Incidental pulmonary nodules",
+      "says": "The size field takes tenths (step 0.1, placeholder \"e.g., 6.5\") and bands them as entered (< 6, ≤ 8, else > 8 for solid; < 6 / ≥ 6 for subsolid). Runs: 5.6 mm solid single low → \"No routine follow-up\"; 5.6 mm solid single high → \"Optional CT at 12 mo\"; 5.6 mm solid multiple low → \"No routine follow-up\"; 8.4 mm solid single low or high → \"Consider CT ~3 mo, PET/CT and/or biopsy\"; 8.4 mm solid multiple high → \"CT 3–6 mo ± PET/CT/biopsy\"; 5.6 mm ground glass single → \"No routine follow-up\"; 5.6 mm part-solid single → \"No routine follow-up\"; 5.6 mm multiple ground glass → \"CT 3–6 mo; if stable, consider CT at 2 and 4y\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Round the entered size to the nearest whole millimetre before banding (or take whole millimetres only), say beside the field that it is the average of long and short axes, and drop the \"e.g., 6.5\" placeholder. 5.6 mm is a 6 mm nodule (6–8 mm band) and 8.4 mm an 8 mm one; the calculator puts them in the < 6 and > 8 bands.",
+      "home": "Incidental pulmonary nodules › Calculator",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table footnote *, journal p230 (dimensions are the average of long and short axes, rounded to the nearest millimetre)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "General Recommendations, journal p232: measurements recorded and rounded to the nearest whole millimetre; fractional millimetre measurements not recommended; the < 6 mm threshold corresponds to a rounded 5 mm or less"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-04",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Calculator: multiple solid nodules > 8 mm",
+      "kind": "calculator",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Multiple solid, > 8 mm, low or high risk → \"CT 3–6 mo ± PET/CT/biopsy\" (runs at 9 mm, and at 8.4 mm high risk).",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Give the table cell: low risk \"CT at 3–6 months, then consider CT at 18–24 months\"; high risk \"CT at 3–6 months, then CT at 18–24 months\". If PET/CT or biopsy is kept, word it as Fleischner does: a dominant nodule that is larger or more suspicious is managed as a solitary nodule.",
+      "home": "Incidental pulmonary nodules › Calculator",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, > 8 mm column: low risk \"CT at 3–6 months, then consider CT at 18–24 months\"; high risk \"CT at 3–6 months, then at 18–24 months\""
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 2, journal p234: multiple solid nodules with at least one ≥ 6 mm, follow-up at about 3–6 months then an optional second scan at 18–24 months depending on risk; a larger or more suspicious nodule is managed by the solitary-nodule guidance"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-05",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Calculator: part-solid nodules (one size field, no solid component)",
+      "kind": "calculator",
+      "topic": "Incidental pulmonary nodules",
+      "says": "One \"Nodule Size (mm)\" field for every type; it does not say whether a part-solid nodule is entered by its whole diameter or its solid component, and the page's measuring box says \"Solid component determines management\". Runs: a 12 mm part-solid nodule with a 4 mm solid component entered as 4 → \"No routine follow-up\"; 12 mm with a 7 mm solid component and 15 mm with a 9 mm solid component (entered by whole diameter) → \"CT 3–6 mo to confirm persistence; if persistent, annual CT until 5y (manage by solid component)\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Add a solid-component field (whole diameter and solid component, both average diameters) and give Recommendation 4's branches: solid component < 6 mm → annual CT for 5 years if persistent and unchanged; ≥ 6 mm → highly suspicious, short-term CT at 3–6 months; > 8 mm, growing or suspicious morphology → PET/CT, biopsy or resection. Until then, label the field \"whole nodule\" for part-solid.",
+      "home": "Incidental pulmonary nodules › Calculator",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid: the size columns are the whole nodule; ≥ 6 mm cell (annual CT for 5 years only if unchanged and the solid component stays < 6 mm); Comments (persistent part-solid nodules with solid components ≥ 6 mm highly suspicious)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 4, journal pp236–237: solid component < 6 mm → 3–6 months then annually for at least 5 years; solid component ≥ 6 mm → consider short-term CT at 3–6 months for persistence; suspicious morphology, a growing solid component or a solid component > 8 mm → PET/CT, biopsy or resection"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-06",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Calculator: no statement of whom it does not apply to",
+      "kind": "calculator",
+      "topic": "Incidental pulmonary nodules",
+      "says": "The form gives a recommendation for any input and says nothing about who the guideline excludes; the page's only scope line (\"When to Use Lung-RADS Instead\") is far below the form and names screening only.",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Put one line above the form: not for patients under 35, with known primary cancer or immunosuppression, or for lung cancer screening CTs (BC Lung Screening Program protocol).",
+      "home": "Incidental pulmonary nodules › Applies to",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Introduction, journal p229: incidental nodules in adults at least 35 years old; not for patients with known primary cancer at risk of metastases or immunocompromised patients at risk of infection; not appropriate under 35; \"Implications for Patient Care\" box, p229"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table note, journal p230: the recommendations do not apply to lung cancer screening, patients with immunosuppression, or patients with known primary cancer"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-07",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Quick Reference, Solid nodules table: single nodule cells",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Columns \"<6 mm | 6–8 mm | >8 mm\". Single, Low Risk: \"No routine follow-up\" | \"CT 6–12 mo; consider CT 18–24 mo\" | \"Consider CT ~3 mo, PET/CT and/or biopsy\". Single, High Risk: \"Optional CT at 12 mo\" | \"CT 6–12 mo and CT 18–24 mo\" | \"Consider CT ~3 mo, PET/CT and/or biopsy\".",
+      "verdict": "correct",
+      "management": false,
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk and High risk rows"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 1, journal pp232–233 (single solid noncalcified nodules < 6 mm, 6–8 mm and > 8 mm)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-08",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Quick Reference, Solid nodules table: Comments for single nodules",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Single, Low Risk comment: \"Consider 12 mo FU in selected suspicious nodules\". Single, High Risk comment: \"Higher concern with suspicious morphology / upper lobe, etc.\"",
+      "verdict": "wrong",
+      "management": false,
+      "fix": "Swap the comments to the table's rows: low risk, nodules < 6 mm need no routine follow-up; high risk, a < 6 mm nodule with suspicious morphology and/or upper lobe location may warrant CT at 12 months.",
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, A: Solid Nodules, Comments: low risk, nodules < 6 mm need no routine follow-up (recommendation 1A); high risk, certain patients with suspicious nodule morphology, upper lobe location or both may warrant 12-month follow-up (recommendation 1A)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 1, journal pp232–233: the 12-month option for < 6 mm nodules with suspicious morphology or upper lobe location is given in the high-risk paragraph and in the threshold discussion"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-09",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Quick Reference, Solid nodules table: multiple nodules, < 6 mm and 6–8 mm cells and comments",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Multiple, Low Risk: \"No routine follow-up\" | \"CT 3–6 mo; consider CT 18–24 mo\". Multiple, High Risk: \"Optional CT at 12 mo\" | \"CT 3–6 mo and CT 18–24 mo\". Comments: \"Base management on most suspicious nodule\".",
+      "verdict": "correct",
+      "management": false,
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple rows, < 6 mm and 6–8 mm columns and Comments"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 2, journal p234 (multiple solid noncalcified nodules; the most suspicious nodule, which may not be the largest, guides management)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-10",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Quick Reference, Solid nodules table: multiple nodules, > 8 mm cells",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Multiple, Low Risk and Multiple, High Risk, > 8 mm: \"CT 3–6 mo ± PET/CT/biopsy\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Use the table cells (CT at 3–6 months, then consider CT at 18–24 months for low risk; then CT at 18–24 months for high risk). The 18–24-month scan is missing, and PET/CT or biopsy is not in these cells (see B1-fleischner-04).",
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, > 8 mm column: low risk \"CT at 3–6 months, then consider CT at 18–24 months\"; high risk \"CT at 3–6 months, then at 18–24 months\""
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 2, journal p234"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-11",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Perifissural note",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "\"Perifissural note: If a nodule is perifissural with a polygonal shape (typical intrapulmonary lymph node), no follow-up is required.\"",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Describe the lymph-node morphology as Fleischner does (small solid nodule, triangular or oval, lentiform on reformats, septal extension to the pleura; also other juxtapleural sites) and add its exception: spiculated border, fissure displacement or a history of cancer → consider CT at 6–12 months.",
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Perifissural Nodules, journal p240: small solid nodules by a fissure or other pleural surface, typically triangular or oval on transverse images, flat or lentiform on coronal or sagittal images, with a fine linear septal extension to the pleura; with that morphology no follow-up CT, even if the average dimension exceeds 6 mm; but a spiculated border, displacement of the adjacent fissure or a history of cancer raise the possibility of malignancy, and follow-up at 6–12 months should be considered"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Figure 5 caption, journal p233 (triangular subpleural nodule with a linear extension to the pleura, typical intrapulmonary lymph node, no CT follow-up)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-12",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Quick Reference, Subsolid nodules table: management cells",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Columns \"<6 mm | ≥6 mm\". Single Ground-glass: \"No routine follow-up\" | \"CT 6–12 mo to confirm persistence, then q2y until 5y\". Single Part-solid, < 6 mm: \"No routine follow-up\". Multiple Ground-glass and Multiple Part-solid (two rows, same text): \"CT 3–6 mo; if stable, consider CT at 2 and 4y\" | \"CT 3–6 mo; subsequent management guided by most suspicious nodule\"; comments \"Follow most suspicious nodule\".",
+      "verdict": "correct",
+      "management": false,
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, B: Subsolid Nodules: Single Ground glass row; Single Part solid, < 6 mm; Multiple row (one row for all subsolid types)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendations 3–5, journal pp234–237"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-13",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Quick Reference, Subsolid nodules table: single ground-glass comment",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Single Ground-glass comment: \"Consider longer follow-up if suspicious\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Replace with the table's comment: a suspicious ground-glass nodule < 6 mm may be followed at 2 and 4 years; if a solid component or growth develops, consider resection.",
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Ground glass, Comments: in certain suspicious nodules < 6 mm, consider follow-up at 2 and 4 years; if solid component(s) or growth develops, consider resection (recommendations 3A and 4A)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 3, journal pp234–235"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-14",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Quick Reference, Subsolid nodules table: single part-solid ≥ 6 mm cell and comment",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Single Part-solid, ≥ 6 mm: \"CT 3–6 mo to confirm persistence; if persistent, annual CT until 5y (manage by solid component)\"; comment \"Persistent part-solid often higher risk\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Say \"if unchanged and the solid component remains < 6 mm, annual CT for 5 years\", and replace the comment with Fleischner's: a persistent part-solid nodule with a solid component ≥ 6 mm is highly suspicious (PET/CT, biopsy or resection if suspicious morphology, a growing solid component or a solid component > 8 mm).",
+      "home": "Incidental pulmonary nodules › Management",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid, ≥ 6 mm cell (annual CT for 5 years if unchanged and the solid component remains < 6 mm) and Comments (part-solid nodules cannot be defined as such until ≥ 6 mm; persistent part-solid nodules with solid components ≥ 6 mm should be considered highly suspicious; recommendations 4A–4C)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 4, journal pp236–237 (solid component ≥ 6 mm and > 8 mm branches)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-15",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Risk Criteria cards",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "\"Low Risk Criteria: Minimal or absent smoking history; No other risk factors\". \"High Risk Criteria: Current or former smoker; Family history of lung cancer; Radon or asbestos exposure; Age >50 years; COPD or pulmonary fibrosis\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Restate Fleischner's definition: low risk is an estimated cancer risk < 5% (ACCP), high risk ≥ 5%, judged from smoking (≥ 30 pack-years and quit < 15 years counts as high), other exposures, emphysema or fibrosis, family history, age, and the nodule's size, margins and upper-lobe location; say that risk applies to solid nodules. Fleischner gives no age cut-off and does not make every former smoker high risk.",
+      "question": "\"Age >50 years\" has no source in Fleischner 2017. Is it a local rule you want kept (labelled local practice), or should it go?",
+      "home": "Incidental pulmonary nodules › Categories",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Risk Estimation and Risk Models, journal p239: risk assigned by the ACCP categories; low risk < 5% estimated cancer risk (young age, less smoking, smaller nodule, regular margins, not upper lobe); high risk combines ACCP intermediate (5–65%) and high (> 65%) (older age, heavy smoking, larger nodule, irregular or spiculated margins, upper lobe)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Tobacco and Other Inhaled Carcinogens, journal p239: 30 pack-years or more and quitting within the past 15 years indicate high risk in patients with solid nodules; asbestos, uranium, radon; subsolid recommendations independent of the usual risk categories"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Risk Factors for Malignancy, journal pp237–239 (emphysema, fibrosis, age without a threshold, sex, race, family history); Table footnote †, p230"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-16",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "How to Measure: diameter for solid and ground-glass nodules",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Solid Nodules: \"Measure longest diameter in axial plane\"; \"Average diameter if growth assessment needed\". Ground Glass Nodules: \"Measure longest diameter\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "For every nodule type: average of the long and short axes on the one image (axial, coronal or sagittal) that shows the largest nodule, rounded to the nearest whole millimetre; the table's sizes mean that average.",
+      "home": "Incidental pulmonary nodules › Measurement",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "General Recommendations, journal pp231–232: manual measurements are the average of long- and short-axis diameters, both on the same transverse, coronal or sagittal image, whichever shows the greatest dimensions; recorded to the nearest whole millimetre; the long axis is recorded for staging of larger nodules and masses > 10 mm"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table footnote *, journal p230 (dimensions are the average of long and short axes, rounded to the nearest millimetre)"
+        },
+        {
+          "citation": "Manos D, Green CR, Bor G, Gonzalez AV, Nguyen ET, Patino P, Naidoo RM, Taylor JC, Digby GC. Choosing Wisely in Radiology: reducing unnecessary imaging and intervention for patients with incidental pulmonary nodules. Can Assoc Radiol J. Published online November 21, 2026. doi:10.1177/08465371261499313",
+          "url": "https://doi.org/10.1177/08465371261499313",
+          "location": "Abstract, Results, recommendation 3 (do not use the nodule's longest dimension to guide the next step); abstract only read"
+        },
+        {
+          "citation": "Bankier AA, MacMahon H, Goo JM, Rubin GD, Schaefer-Prokop CM, Naidich DP. Recommendations for measuring pulmonary nodules at CT: a statement from the Fleischner Society. Radiology. 2017;285(2):584-600.",
+          "url": "https://doi.org/10.1148/radiol.2017162894",
+          "location": "Whole statement (not read)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-17",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "How to Measure: window setting",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Solid Nodules: \"Use lung windows (W: 1500, L: -600)\".",
+      "verdict": "unsourced",
+      "management": false,
+      "fix": "Keep \"lung window\" (Fleischner) and either drop the W 1500 / L −600 numbers or label them local practice; add that solid components are judged on a lung window with a sharp filter.",
+      "question": "W 1500 / L −600 is a usual lung window but is not in Fleischner 2017; the Fleischner measurement statement (Bankier 2017) could not be read. Label it local practice, or supply a copy of that statement?",
+      "home": "Incidental pulmonary nodules › Measurement",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Journal p232 (iELCAP measured average diameters on lung windows) and pp237–238 (solid components judged on a lung window with a sharp filter; mediastinal window to call a nodule subsolid); no window width or level is given"
+        },
+        {
+          "citation": "Bankier AA, MacMahon H, Goo JM, Rubin GD, Schaefer-Prokop CM, Naidich DP. Recommendations for measuring pulmonary nodules at CT: a statement from the Fleischner Society. Radiology. 2017;285(2):584-600.",
+          "url": "https://doi.org/10.1148/radiol.2017162894",
+          "location": "Whole statement (not read; may give window settings)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-18",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "How to Measure: part-solid nodules",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Part-Solid Nodules: \"Measure total diameter (entire nodule)\"; \"Measure solid component separately\"; \"Solid component determines management\".",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Say both count: the whole nodule (average diameter) sets the < 6 / ≥ 6 mm row, then the solid component (< 6, ≥ 6, > 8 mm) sets management. \"Solid component determines management\" alone sends a 12 mm nodule with a 4 mm solid component to no follow-up in the calculator (B1-fleischner-05).",
+      "home": "Incidental pulmonary nodules › Measurement",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid: the < 6 / ≥ 6 mm columns are the whole nodule; the solid component (< 6 mm or ≥ 6 mm) decides what follows"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Recommendation 4, journal pp236–237; journal pp237–238 (solid component judged on a lung window with a sharp filter)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-19",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "How to Measure: volumetry and volume doubling time",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Ground Glass Nodules: \"Volume measurement preferred when available\". Preferred Method: \"Semi-automated volumetry when available\"; \"Volume doubling time (VDT) for growth assessment\".",
+      "verdict": "wrong",
+      "management": false,
+      "fix": "Say volumetry may be used instead of diameters (100 and 250 mm³ for 6 and 8 mm) with the same software for growth, while the average diameter remains the standard; give doubling times as background only.",
+      "home": "Incidental pulmonary nodules › Measurement",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "General Recommendations, journal p232: volumetry may be used instead of linear measurement, with 100 and 250 mm³ in place of 6 and 8 mm; results depend on the software, so growth is assessed with identical software versions"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Nodule Growth Rate, journal p238: linear measurement with electronic calipers remains the current standard; volumetry is more sensitive to growth but not widely used; doubling times given as background (solid cancers mostly 100–400 days, subsolid 3–5 years), with no VDT threshold for management"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-20",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "\"When to Use Lung-RADS Instead\": who the guideline applies to",
+      "kind": "teaching",
+      "topic": "Incidental pulmonary nodules",
+      "says": "\"These Fleischner guidelines apply to incidental nodules found on CT performed for other reasons.\"",
+      "verdict": "wrong",
+      "management": true,
+      "fix": "Add Fleischner's exclusions: patients under 35, known primary cancer, immunosuppression (and screening, below).",
+      "home": "Incidental pulmonary nodules › Applies to",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Introduction, journal p229: adults at least 35 years old; not for known primary cancer at risk of metastases, immunocompromised patients at risk of infection, or patients under 35 (case by case, infection more likely); \"Implications for Patient Care\" box, p229"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Table note, journal p230"
+        },
+        {
+          "citation": "Hamel C, Avard B, Belanger C, Bourgouin P, Lam S, Manos D, Michaud A, Rowe BH, Sanders K, Bilawich AM. Canadian Association of Radiologists thoracic imaging referral guideline. Can Assoc Radiol J. 2024;75(2):296-303.",
+          "url": "https://doi.org/10.1177/08465371231214699",
+          "location": "TH19, PDF p18 (printed p15): Fleischner for incidental nodules on chest CT, excluding CT chest as part of lung cancer screening"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-21",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "\"When to Use Lung-RADS Instead\": lung cancer screening",
+      "kind": "guideline-threshold",
+      "topic": "Incidental pulmonary nodules",
+      "says": "\"Use Lung-RADS for Screening Exams\" … \"For lung cancer screening CTs, use Lung-RADS instead.\" (links to the Lung-RADS v1.1 page).",
+      "verdict": "not-lead",
+      "management": true,
+      "fix": "Keep \"Fleischner is not for screening CTs\" but point screening LDCTs to the lung screening page under its lead, the BC Lung Screening Protocol v2.0 (Lung-RADS v2022 as the note on where it differs), not to Lung-RADS v1.1.",
+      "home": "Incidental pulmonary nodules › Applies to",
+      "sources": [
+        {
+          "citation": "BC Cancer. Lung Screening Program standards and protocols. April 2026.",
+          "url": "https://www.bccancer.bc.ca/screening/Documents/Lung-Screening-Standards-Protocols.pdf",
+          "location": "p15, §5.1 and the \"BC Lung Screening Protocol Version 2.0, Assessment Categories Release Date: January 2026\" table (PanCan risk score at baseline, volumetric protocol at follow-up, categories 1–5)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "\"Implications for Patient Care\" box and Introduction, journal p229 (Fleischner recommends ACR Lung-RADS for screening); Table note, p230"
+        },
+        {
+          "citation": "Taylor JL, Adams SJ, Dennie C, Lim R, McInnis M, Manos D. CAR/CSTR practice guideline on CT screening for lung cancer. Can Assoc Radiol J. 2025;76(4):646-658.",
+          "url": "https://doi.org/10.1177/08465371251317179",
+          "location": "p7, \"Standardized Reporting Systems and Nodule Management Protocols\" (Lung-RADS, LU-RADS and the PanCan protocol named); p8, Table 2, recommendation 7 (a standardized report and an evidence-based nodule classification system)"
+        },
+        {
+          "citation": "Hamel C, Avard B, Belanger C, Bourgouin P, Lam S, Manos D, Michaud A, Rowe BH, Sanders K, Bilawich AM. Canadian Association of Radiologists thoracic imaging referral guideline. Can Assoc Radiol J. 2024;75(2):296-303.",
+          "url": "https://doi.org/10.1177/08465371231214699",
+          "location": "TH19, PDF p18 (printed p15): screening CTs excluded from the Fleischner recommendation"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-22",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Related Guidelines list",
+      "kind": "teaching",
+      "topic": "Incidental pulmonary nodules",
+      "says": "\"Lung-RADS v1.1 - For lung cancer screening\" (link to the old Lung-RADS page); \"Brock Model - Nodule malignancy risk calculator\" (no link).",
+      "verdict": "outdated",
+      "management": false,
+      "fix": "Link screening to the lung screening page under its current lead (BC Lung Screening Protocol v2.0) without \"v1.1\"; link the Brock (PanCan, McWilliams) calculator or drop the line until the site has one.",
+      "home": "Incidental pulmonary nodules › Other guidelines differ",
+      "sources": [
+        {
+          "citation": "American College of Radiology. Lung-RADS v2022 (assessment categories and management). Released November 2022.",
+          "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Lung-RADS",
+          "location": "Title, p1 (v2022, November 2022, replaces v1.1); note 13, p2 (points to the McWilliams et al assessment tool at brocku.ca)"
+        },
+        {
+          "citation": "BC Cancer. Lung Screening Program standards and protocols. April 2026.",
+          "url": "https://www.bccancer.bc.ca/screening/Documents/Lung-Screening-Standards-Protocols.pdf",
+          "location": "p15, §5.1 (program LDCTs use the PanCan protocol and BC Lung Screening Protocol v2.0)"
+        },
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Risk Estimation and Risk Models, journal p239 (prediction models in Appendix E1; these guidelines assign risk by the ACCP categories); reference 7 (McWilliams 2013, PanCan)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-23",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "External Resources links",
+      "kind": "teaching",
+      "topic": "Incidental pulmonary nodules",
+      "says": "\"Original Publication (Radiology)\" → https://pubs.rsna.org/doi/10.1148/radiol.2017161659; \"Fleischner Society Website\" → https://www.fleischnersociety.org/.",
+      "verdict": "correct",
+      "management": false,
+      "home": "Incidental pulmonary nodules › Background",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "DOI line, journal p229 (https://doi.org/10.1148/radiol.2017161659)"
+        }
+      ]
+    },
+    {
+      "id": "B1-fleischner-24",
+      "page": "fleischner",
+      "pageTitle": "Fleischner",
+      "piece": "Front-page row (shared/data/resources.ts, id fleischner)",
+      "kind": "listing",
+      "topic": "Incidental pulmonary nodules",
+      "says": "Title \"Fleischner Society\"; version \"2017\"; summary \"Follow-up of incidental pulmonary nodules on CT in adults, outside lung cancer screening.\"; calculator: true.",
+      "verdict": "correct",
+      "management": false,
+      "question": "The summary says \"in adults\"; Fleischner is for adults 35 and over without known cancer or immunosuppression. Add that (e.g. \"Follow-up of incidental lung nodules on CT in adults 35+, outside screening, cancer or immunosuppression.\")? If the old calculator is switched off (B1-fleischner-03 to -06), the row's calculator flag goes too.",
+      "home": "Incidental pulmonary nodules › Background",
+      "sources": [
+        {
+          "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+          "url": "https://doi.org/10.1148/radiol.2017161659",
+          "location": "Title, journal p228; Introduction and \"Implications for Patient Care\", p229; Table note, p230"
+        },
+        {
+          "citation": "Hamel C, Avard B, Belanger C, Bourgouin P, Lam S, Manos D, Michaud A, Rowe BH, Sanders K, Bilawich AM. Canadian Association of Radiologists thoracic imaging referral guideline. Can Assoc Radiol J. 2024;75(2):296-303.",
+          "url": "https://doi.org/10.1177/08465371231214699",
+          "location": "TH19, PDF p18 (printed p15)"
+        }
+      ]
     }
   ]
 }

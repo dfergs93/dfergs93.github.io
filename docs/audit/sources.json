@@ -192,5 +192,49 @@
     "access": "open",
     "reuse": "restate-and-link",
     "note": "Read to trace the page's C modifier (superseded by v1.1 in 2019)."
+  },
+  {
+    "id": "car-thoracic-referral-2024",
+    "title": "Canadian Association of Radiologists Thoracic Imaging Referral Guideline",
+    "citation": "Hamel C, Avard B, Belanger C, Bourgouin P, Lam S, Manos D, Michaud A, Rowe BH, Sanders K, Bilawich AM. Canadian Association of Radiologists thoracic imaging referral guideline. Can Assoc Radiol J. 2024;75(2):296-303.",
+    "version": "2023 (last updated October 2023)",
+    "year": 2024,
+    "url": "https://doi.org/10.1177/08465371231214699",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Full guideline (65 pages) downloaded from car.ca (car.ca/wp-content/uploads/2025/03/CAR_Thoracic-Referral-Guideline.pdf) to audit-sources/car-thoracic-referral-2024.pdf with a .txt copy; TH19 recommends Fleischner 2017 for incidental nodules on chest CT, excluding screening. Referral guidance only: it does not cover follow-up intervals."
+  },
+  {
+    "id": "car-cstr-lcs-2025",
+    "title": "CAR/CSTR Practice Guideline on CT Screening for Lung Cancer",
+    "citation": "Taylor JL, Adams SJ, Dennie C, Lim R, McInnis M, Manos D. CAR/CSTR practice guideline on CT screening for lung cancer. Can Assoc Radiol J. 2025;76(4):646-658.",
+    "version": "2025",
+    "year": 2025,
+    "url": "https://doi.org/10.1177/08465371251317179",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Online-first PDF (pages 1–13) downloaded from car.ca to audit-sources/car-cstr-lcs-2025.pdf with a .txt copy; locations use those page numbers. Europe PMC lists the licence as CC BY-NC; the PDF says only \"© The Author(s) 2025\" and points to SAGE reuse guidelines."
+  },
+  {
+    "id": "cwc-ipn-2026",
+    "title": "Choosing Wisely in Radiology: Reducing Unnecessary Imaging and Intervention for Patients With Incidental Pulmonary Nodules",
+    "citation": "Manos D, Green CR, Bor G, Gonzalez AV, Nguyen ET, Patino P, Naidoo RM, Taylor JC, Digby GC. Choosing Wisely in Radiology: reducing unnecessary imaging and intervention for patients with incidental pulmonary nodules. Can Assoc Radiol J. Published online November 21, 2026. doi:10.1177/08465371261499313",
+    "version": "2026",
+    "year": 2026,
+    "url": "https://doi.org/10.1177/08465371261499313",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "Full text not read: journals.sagepub.com and choosingwiselycanada.org return bot checks (403), not circumvented. Only the abstract was read (PubMed 43066540, Europe PMC record saved as audit-sources/cwc-ipn-2026-abstract.json); it lists the four Choosing Wisely Canada recommendations."
+  },
+  {
+    "id": "fleischner-measurement-2017",
+    "title": "Recommendations for Measuring Pulmonary Nodules at CT: A Statement from the Fleischner Society",
+    "citation": "Bankier AA, MacMahon H, Goo JM, Rubin GD, Schaefer-Prokop CM, Naidich DP. Recommendations for measuring pulmonary nodules at CT: a statement from the Fleischner Society. Radiology. 2017;285(2):584-600.",
+    "version": "2017",
+    "year": 2017,
+    "url": "https://doi.org/10.1148/radiol.2017162894",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "The measurement white paper the 2017 guideline announces (journal p232). pubs.rsna.org returns 403 and there is no open copy on Europe PMC; not circumvented. The owner may have access, as for the guideline."
   }
 ]

@@ -1,0 +1,673 @@
+{
+  "calculator": "fleischner",
+  "pageUrl": "https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/",
+  "formId": "fleischner-form",
+  "resultId": "fleischner-results",
+  "params": [
+    "size_mm",
+    "nodule_type",
+    "patient_risk",
+    "multiplicity"
+  ],
+  "cases": [
+    {
+      "id": "f2017-solid-single-low-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, < 6 mm column; Recommendation 1, p232"
+        },
+        "text": "No routine follow-up"
+      }
+    },
+    {
+      "id": "f2017-solid-single-low-5-4",
+      "inputs": {
+        "size_mm": "5.4",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, < 6 mm column (5.4 rounds to 5 mm)"
+        },
+        "text": "No routine follow-up"
+      },
+      "note": "Fractional input; rounds down to 5 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-single-low-5-6",
+      "inputs": {
+        "size_mm": "5.6",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, 6-8 mm column (5.6 rounds to 6 mm)"
+        },
+        "text": "CT at 6-12 months, then consider CT at 18-24 months"
+      },
+      "note": "Fractional input; rounds up to 6 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-single-low-6-0",
+      "inputs": {
+        "size_mm": "6",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, 6-8 mm column"
+        },
+        "text": "CT at 6-12 months, then consider CT at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-single-low-8-0",
+      "inputs": {
+        "size_mm": "8",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, 6-8 mm column"
+        },
+        "text": "CT at 6-12 months, then consider CT at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-single-low-8-4",
+      "inputs": {
+        "size_mm": "8.4",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, 6-8 mm column (8.4 rounds to 8 mm)"
+        },
+        "text": "CT at 6-12 months, then consider CT at 18-24 months"
+      },
+      "note": "Fractional input; rounds down to 8 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-single-low-8-6",
+      "inputs": {
+        "size_mm": "8.6",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, > 8 mm column (8.6 rounds to 9 mm)"
+        },
+        "text": "Consider CT at 3 months, PET/CT, or tissue sampling"
+      },
+      "note": "Fractional input; rounds up to 9 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-single-low-9-0",
+      "inputs": {
+        "size_mm": "9",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, Low risk, > 8 mm column; p233 (solitary solid nodules larger than 8 mm)"
+        },
+        "text": "Consider CT at 3 months, PET/CT, or tissue sampling"
+      }
+    },
+    {
+      "id": "f2017-solid-single-high-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, High risk, < 6 mm column and Comments (suspicious morphology or upper lobe may warrant 12-month follow-up); p232-233"
+        },
+        "text": "Optional CT at 12 months"
+      }
+    },
+    {
+      "id": "f2017-solid-single-high-5-6",
+      "inputs": {
+        "size_mm": "5.6",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, High risk, 6-8 mm column (5.6 rounds to 6 mm)"
+        },
+        "text": "CT at 6-12 months, then CT at 18-24 months"
+      },
+      "note": "Fractional input; rounds up to 6 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-single-high-6-0",
+      "inputs": {
+        "size_mm": "6",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, High risk, 6-8 mm column; p233"
+        },
+        "text": "CT at 6-12 months, then CT at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-single-high-8-0",
+      "inputs": {
+        "size_mm": "8",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, High risk, 6-8 mm column"
+        },
+        "text": "CT at 6-12 months, then CT at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-single-high-8-4",
+      "inputs": {
+        "size_mm": "8.4",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, High risk, 6-8 mm column (8.4 rounds to 8 mm)"
+        },
+        "text": "CT at 6-12 months, then CT at 18-24 months"
+      },
+      "note": "Fractional input; rounds down to 8 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-single-high-9-0",
+      "inputs": {
+        "size_mm": "9",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Single, High risk, > 8 mm column"
+        },
+        "text": "Consider CT at 3 months, PET/CT, or tissue sampling"
+      }
+    },
+    {
+      "id": "f2017-solid-multiple-low-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, Low risk, < 6 mm column; Recommendation 2, p234"
+        },
+        "text": "No routine follow-up"
+      }
+    },
+    {
+      "id": "f2017-solid-multiple-low-5-6",
+      "inputs": {
+        "size_mm": "5.6",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, Low risk, 6-8 mm column (5.6 rounds to 6 mm)"
+        },
+        "text": "CT at 3-6 months, then consider CT at 18-24 months"
+      },
+      "note": "Fractional input; rounds up to 6 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-multiple-low-6-0",
+      "inputs": {
+        "size_mm": "6",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, Low risk, 6-8 mm column; p234"
+        },
+        "text": "CT at 3-6 months, then consider CT at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-multiple-low-8-0",
+      "inputs": {
+        "size_mm": "8",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, Low risk, 6-8 mm column"
+        },
+        "text": "CT at 3-6 months, then consider CT at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-multiple-low-9-0",
+      "inputs": {
+        "size_mm": "9",
+        "nodule_type": "solid",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, Low risk, > 8 mm column (same cell text as 6-8 mm); Comments: use the most suspicious nodule as guide"
+        },
+        "text": "CT at 3-6 months, then consider CT at 18-24 months"
+      },
+      "note": "The > 8 mm multiple cells have no PET/CT or biopsy; p234 says a larger or more suspicious nodule is managed by the solitary-nodule rules."
+    },
+    {
+      "id": "f2017-solid-multiple-high-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, High risk, < 6 mm column"
+        },
+        "text": "Optional CT at 12 months"
+      }
+    },
+    {
+      "id": "f2017-solid-multiple-high-6-0",
+      "inputs": {
+        "size_mm": "6",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, High risk, 6-8 mm column"
+        },
+        "text": "CT at 3-6 months, then at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-multiple-high-8-0",
+      "inputs": {
+        "size_mm": "8",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, High risk, 6-8 mm column"
+        },
+        "text": "CT at 3-6 months, then at 18-24 months"
+      }
+    },
+    {
+      "id": "f2017-solid-multiple-high-8-4",
+      "inputs": {
+        "size_mm": "8.4",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, High risk, 6-8 mm column (8.4 rounds to 8 mm)"
+        },
+        "text": "CT at 3-6 months, then at 18-24 months"
+      },
+      "note": "Fractional input; rounds down to 8 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-solid-multiple-high-9-0",
+      "inputs": {
+        "size_mm": "9",
+        "nodule_type": "solid",
+        "patient_risk": "high",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, A: Solid Nodules, Multiple, High risk, > 8 mm column (same cell text as 6-8 mm)"
+        },
+        "text": "CT at 3-6 months, then at 18-24 months"
+      },
+      "note": "The > 8 mm multiple cells have no PET/CT or biopsy; p234 says a larger or more suspicious nodule is managed by the solitary-nodule rules."
+    },
+    {
+      "id": "f2017-ggn-single-low-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "ground-glass",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Ground glass, < 6 mm column and Comments; Recommendation 3, p234"
+        },
+        "text": "No routine follow-up (in certain suspicious nodules < 6 mm, consider follow-up at 2 and 4 years)"
+      }
+    },
+    {
+      "id": "f2017-ggn-single-low-5-6",
+      "inputs": {
+        "size_mm": "5.6",
+        "nodule_type": "ground-glass",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Ground glass, >= 6 mm column (5.6 rounds to 6 mm)"
+        },
+        "text": "CT at 6-12 months to confirm persistence, then CT every 2 years until 5 years"
+      },
+      "note": "Fractional input; rounds up to 6 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-ggn-single-low-6-0",
+      "inputs": {
+        "size_mm": "6",
+        "nodule_type": "ground-glass",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Ground glass, >= 6 mm column; p235"
+        },
+        "text": "CT at 6-12 months to confirm persistence, then CT every 2 years until 5 years"
+      }
+    },
+    {
+      "id": "f2017-ggn-single-high-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "ground-glass",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Ground glass, < 6 mm column; p239 (subsolid recommendations are independent of the usual risk categories)"
+        },
+        "text": "No routine follow-up (in certain suspicious nodules < 6 mm, consider follow-up at 2 and 4 years)"
+      },
+      "note": "Risk does not change the subsolid rows."
+    },
+    {
+      "id": "f2017-ggn-single-high-12-0",
+      "inputs": {
+        "size_mm": "12",
+        "nodule_type": "ground-glass",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Ground glass, >= 6 mm column; p236 (initial follow-up at 6 months still recommended for features of progression, including diameter > 10 mm)"
+        },
+        "text": "CT at 6-12 months to confirm persistence, then CT every 2 years until 5 years; p236 favours the 6-month end for a ground-glass nodule > 10 mm"
+      }
+    },
+    {
+      "id": "f2017-partsolid-single-low-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "part-solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid, < 6 mm column and Comments; Recommendation 4, p236"
+        },
+        "text": "No routine follow-up"
+      },
+      "note": "size_mm entered as the total (whole-nodule) diameter."
+    },
+    {
+      "id": "f2017-partsolid-single-low-5-6",
+      "inputs": {
+        "size_mm": "5.6",
+        "nodule_type": "part-solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid, >= 6 mm column (5.6 rounds to 6 mm)"
+        },
+        "text": "CT at 3-6 months to confirm persistence; if unchanged and solid component remains < 6 mm, annual CT for 5 years"
+      },
+      "note": "Total diameter 5.6 mm, solid component < 6 mm. Fractional input; rounds up to 6 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-partsolid-single-low-6-0",
+      "inputs": {
+        "size_mm": "6",
+        "nodule_type": "part-solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid, >= 6 mm column; p236"
+        },
+        "text": "CT at 3-6 months to confirm persistence; if unchanged and solid component remains < 6 mm, annual CT for 5 years"
+      },
+      "note": "Total diameter 6 mm, solid component < 6 mm."
+    },
+    {
+      "id": "f2017-partsolid-single-solid-entered-4",
+      "inputs": {
+        "size_mm": "4",
+        "nodule_type": "part-solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid, >= 6 mm column (the size column is the whole nodule); p236 (part-solid nodules 6 mm or larger with a solid component < 6 mm)"
+        },
+        "text": "CT at 3-6 months to confirm persistence; if unchanged and solid component remains < 6 mm, annual CT for 5 years"
+      },
+      "note": "A 12 mm part-solid nodule with a 4 mm solid component, entered as its solid component, as the page's \"How to Measure\" box says the solid component determines management. The form does not say which diameter to enter."
+    },
+    {
+      "id": "f2017-partsolid-single-solid-7",
+      "inputs": {
+        "size_mm": "12",
+        "nodule_type": "part-solid",
+        "patient_risk": "low",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid, Comments (persistent part-solid nodules with solid components >= 6 mm highly suspicious); p237 (solid component 6 mm or larger)"
+        },
+        "text": "Consider CT at 3-6 months to assess persistence; persistent with a solid component >= 6 mm is highly suspicious (not annual CT); PET/CT, biopsy or resection if suspicious morphology, a growing solid component or a solid component > 8 mm"
+      },
+      "note": "A 12 mm part-solid nodule with a 7 mm solid component; the form has no solid-component input."
+    },
+    {
+      "id": "f2017-partsolid-single-solid-9",
+      "inputs": {
+        "size_mm": "15",
+        "nodule_type": "part-solid",
+        "patient_risk": "high",
+        "multiplicity": "single"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Single, Part solid, Comments; p237 (solid component larger than 8 mm: PET/CT, biopsy or resection recommended)"
+        },
+        "text": "PET/CT, biopsy or resection recommended (solid component > 8 mm)"
+      },
+      "note": "A 15 mm part-solid nodule with a 9 mm solid component; the form has no solid-component input."
+    },
+    {
+      "id": "f2017-subsolid-multiple-ggn-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "ground-glass",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Multiple, < 6 mm column; Recommendation 5, p237"
+        },
+        "text": "CT at 3-6 months; if stable, consider CT at 2 and 4 years"
+      }
+    },
+    {
+      "id": "f2017-subsolid-multiple-ggn-5-6",
+      "inputs": {
+        "size_mm": "5.6",
+        "nodule_type": "ground-glass",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Multiple, >= 6 mm column (5.6 rounds to 6 mm)"
+        },
+        "text": "CT at 3-6 months; subsequent management based on the most suspicious nodule(s)"
+      },
+      "note": "Fractional input; rounds up to 6 mm. Table footnote * (p230): dimensions are the average of long and short axes rounded to the nearest millimetre; p232: fractional millimetre measurements are not recommended, and the < 6 mm threshold corresponds to a rounded 5 mm or less."
+    },
+    {
+      "id": "f2017-subsolid-multiple-ggn-6-0",
+      "inputs": {
+        "size_mm": "6",
+        "nodule_type": "ground-glass",
+        "patient_risk": "high",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Multiple, >= 6 mm column; p237"
+        },
+        "text": "CT at 3-6 months; subsequent management based on the most suspicious nodule(s)"
+      }
+    },
+    {
+      "id": "f2017-subsolid-multiple-partsolid-5-0",
+      "inputs": {
+        "size_mm": "5",
+        "nodule_type": "part-solid",
+        "patient_risk": "high",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Multiple, < 6 mm column"
+        },
+        "text": "CT at 3-6 months; if stable, consider CT at 2 and 4 years"
+      }
+    },
+    {
+      "id": "f2017-subsolid-multiple-partsolid-8-0",
+      "inputs": {
+        "size_mm": "8",
+        "nodule_type": "part-solid",
+        "patient_risk": "low",
+        "multiplicity": "multiple"
+      },
+      "expected": {
+        "source": {
+          "source": "fleischner-2017",
+          "location": "Table, journal p230, B: Subsolid Nodules, Multiple, >= 6 mm column"
+        },
+        "text": "CT at 3-6 months; subsequent management based on the most suspicious nodule(s)"
+      }
+    }
+  ]
+}

@@ -364,5 +364,45 @@
     "car": "unknown",
     "today": "Not on the site. Core p.3 lists surveillance US and CEUS algorithms beside CT/MRI; the site covers only CT/MRI. Owner to decide whether they belong.",
     "home": "LI-RADS (liver in patients at risk)"
+  },
+  {
+    "id": "ct-technique-for-nodules-thin-sections-reformats",
+    "topic": "CT technique for nodules (thin sections, reformats, low-dose follow-up, comparison with the earliest prior)",
+    "raisedBy": "candidate",
+    "lead": "Fleischner 2017",
+    "alternatives": [],
+    "car": "no",
+    "today": "Fleischner 2017 gives graded recommendations (≤ 1.5 mm contiguous sections, typically 1 mm, with coronal and sagittal series; low-dose follow-up, CTDIvol ≤ 3 mGy in a standard-size patient; review priors including the earliest; journal pp230–232); the page has none.",
+    "home": "Incidental pulmonary nodules"
+  },
+  {
+    "id": "nodules-that-need-no-follow-up-benign-calcificat",
+    "topic": "Nodules that need no follow-up (benign calcification, fat, typical intrapulmonary lymph node, apical scarring, 2-year stability)",
+    "raisedBy": "candidate",
+    "lead": "Fleischner 2017",
+    "alternatives": [],
+    "car": "no",
+    "today": "Fleischner Figs 1, 2 and 5 (journal pp231, 233), stopping follow-up of benign-looking solid nodules stable at 12–18 months (p233), apical scarring (p240); the Choosing Wisely Canada 2026 recommendation 1 (abstract) says the same. The page has only the perifissural line and the calculator has no benign exit.",
+    "home": "Incidental pulmonary nodules"
+  },
+  {
+    "id": "nodules-on-incomplete-thoracic-ct-neck-cardiac-a",
+    "topic": "Nodules on incomplete thoracic CT (neck, cardiac, abdominal CT)",
+    "raisedBy": "candidate",
+    "lead": "Fleischner 2017",
+    "alternatives": [],
+    "car": "no",
+    "today": "Fleischner journal p240: < 6 mm, nothing further; 6–8 mm, complete chest CT at 3–12 months; large or very suspicious, complete chest CT now; partial thoracic scans not recommended for follow-up. Common on call; not on the page.",
+    "home": "Incidental pulmonary nodules"
+  },
+  {
+    "id": "reporting-incidental-nodules-always-give-a-recom",
+    "topic": "Reporting incidental nodules (always give a recommendation, compare with the earliest scan)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "no",
+    "today": "Choosing Wisely Canada 2026 recommendations 2 and 4 (abstract only) and the Canadian expert-panel consensus (Digby 2024, CARJ; abstract only) call for standardized reports with follow-up advice for every size band; the page has no reporting guidance.",
+    "home": "Incidental pulmonary nodules"
   }
 ]
