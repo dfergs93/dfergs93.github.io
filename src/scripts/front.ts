@@ -230,13 +230,6 @@ export function initFront(root: HTMLElement): void {
   // From here on CSS (.current) decides which list shows.
   for (const s of sections.values()) s.hidden = false;
   select(keyFromHash());
-  // A #list-… hash names a list, not a place on the page: undo the browser's jump
-  // to that section (it can repeat until load), so the search box stays in view.
-  if (location.hash.startsWith(HASH_PREFIX)) {
-    const toTop = () => window.scrollTo(0, 0);
-    toTop();
-    if (document.readyState !== 'complete') window.addEventListener('load', toTop, { once: true });
-  }
   // The browser may restore text into the box (back/forward, autofill).
   if (input.value.trim()) runSearch();
 }

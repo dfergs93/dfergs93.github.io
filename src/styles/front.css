@@ -76,6 +76,13 @@ html:not(.js) .search { display: none; }
 /* Without JavaScript every list shows, stacked; with it, only the current one. */
 html:not(.js) .list { margin-bottom: 28px; }
 html.js .list:not(.current) { display: none; }
+/*
+ * With JavaScript a #list-… hash names a list, not a place on the page. The browser
+ * still jumps to the section with that id on load (and repeats the jump as fonts and
+ * layout settle); a scroll margin larger than any offset makes that jump land at the
+ * very top, so the search box stays in view. Without JavaScript the jump is the point.
+ */
+html.js .list { scroll-margin-top: 100vmax; }
 
 /* Rows */
 .row {
