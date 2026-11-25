@@ -12,7 +12,9 @@ opens anonymously.
   Work on a branch; merge only what is ready to publish.
 - The repo is public. Never commit secrets, patient information or the owner's email.
 - Stage 1 was built on branch `rebuild`. Until launch, Pages still publishes the old
-  portal from `main` with the legacy (branch) source; rollback is switching back to it:
+  portal from `main` with the legacy (branch) source. `deploy.yml` also runs on pushes to
+  `rebuild` for the launch (the github-pages environment's branch rule holds the deploy
+  until then; see the plan's Task 9). Rollback is switching back to the old portal:
   `gh api -X PUT repos/dfergs93/dfergs93.github.io/pages -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/'`.
 
 ## The ORCA pages are immutable
@@ -40,6 +42,9 @@ To add a resource:
 2. `npm test`; add a search test in `test/unit/search.test.ts` if people will look for it
    by a word that isn't in its title.
 3. Version labels and summaries are clinical statements: the owner signs them off.
+4. Redeploy the Worker (`npm run worker:deploy`, owner's go-ahead) when ids are added:
+   it accepts only the ids it was deployed with, so opens of a new resource are
+   dropped until then. A push to `main` deploys the site, not the Worker.
 
 Popular is `shared/data/popular.ts`, chosen and ordered by the owner. Within an area,
 entries with `areaRank` come first, then the rest alphabetically. Areas with no entries

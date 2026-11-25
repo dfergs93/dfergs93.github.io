@@ -513,12 +513,14 @@ Steps:
   3. If the deploy rejects `ratelimits` (plan availability), remove the block, note it in `CLAUDE.md` and redeploy; the handler runs without a limiter.
   4. Verify that `curl -i -X POST https://radref.dferguson93.workers.dev/count -H 'Origin: https://dfergs93.github.io' --data fleischner` gives 204, that a bad origin gives 403, and that `npm run counts` shows `fleischner` with 1.
   5. Commit the `database_id`.
-- [ ] **Step 3: Push `rebuild`.** The repo is public, so the spec and plan become visible; confirm with the owner first. CI must be green.
+- [ ] **Step 3: Push `rebuild`.** The repo is public, so the spec and plan become visible; confirm with the owner first.
+  1. *(Amended after the final review: GitHub dispatches a workflow only from the default branch, so `gh workflow run deploy.yml --ref rebuild` cannot work while `main` has no workflows. `deploy.yml` therefore also runs on push to `rebuild`.)* Before pushing, make sure that push cannot publish: read `gh api repos/dfergs93/dfergs93.github.io/environments/github-pages` and its `deployment-branch-policies`. The environment must use custom branch policies that do not include `rebuild` (only `main`); create or set that first if needed.
+  2. Push. CI must be green. The Deploy workflow's build job runs, and its deploy job is refused by the environment rule, so nothing is published.
 - [ ] **Step 4: Go live from `rebuild`.**
   1. Read the current Pages config: `gh api repos/dfergs93/dfergs93.github.io/pages`.
   2. Switch the source to GitHub Actions: `gh api -X PUT repos/dfergs93/dfergs93.github.io/pages -f build_type=workflow`.
-  3. Allow `rebuild` to deploy: `gh api -X POST repos/dfergs93/dfergs93.github.io/environments/github-pages/deployment-branch-policies -f name=rebuild`. Read the environment's policy first; if it isn't set to custom branch policies, set that.
-  4. Start the deploy: `gh workflow run deploy.yml --ref rebuild`, then watch it to success.
+  3. Allow `rebuild` to deploy: `gh api -X POST repos/dfergs93/dfergs93.github.io/environments/github-pages/deployment-branch-policies -f name=rebuild`.
+  4. Start the deploy by re-running step 3's Deploy run: `gh run rerun <run-id>` (from `gh run list --workflow deploy.yml --branch rebuild`), then watch it to success.
 - [ ] **Step 5: Verify live.**
   - `https://dfergs93.github.io/` shows the new front page.
   - Both ORCA pages fetched over HTTPS match the pinned sha256.
@@ -528,5 +530,5 @@ Steps:
   Rollback, if anything is wrong: `gh api -X PUT repos/dfergs93/dfergs93.github.io/pages -f build_type=legacy -f 'source[branch]=main' -f 'source[path]=/'`, which restores the old portal straight from `main`.
 - [ ] **Step 6: The owner checks the live site.** After his OK:
   1. Fast-forward `main` to `rebuild` and push. The deploy now runs from `main`.
-  2. Remove the `rebuild` deployment policy.
+  2. Remove the `rebuild` deployment policy, and remove `rebuild` from `deploy.yml`'s push branches (commit on `main`).
   3. Update the owner's memory notes and `~/Code/CLAUDE.md` to say stage 1 is live.
