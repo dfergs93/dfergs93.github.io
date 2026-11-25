@@ -1,0 +1,228 @@
+[
+  {
+    "id": "ob-us-findings",
+    "topic": "Obstetric ultrasound findings",
+    "raisedBy": "owner",
+    "lead": "Perinatal Services BC",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Nothing on the site.",
+    "home": "New obstetric topic(s)"
+  },
+  {
+    "id": "adnexal-nonspecific",
+    "topic": "Nonspecific ovarian and adnexal lesions",
+    "raisedBy": "owner",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "The O-RADS page is an empty placeholder.",
+    "home": "Ovaries and adnexa"
+  },
+  {
+    "id": "uterine-endometrial-cervical",
+    "topic": "Nonspecific uterine, endometrial and cervical findings (myometrial cysts, endometrial thickness, endometrial polyps)",
+    "raisedBy": "owner",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Nothing on the site.",
+    "home": "Uterus, endometrium and cervix"
+  },
+  {
+    "id": "breast-rad-path",
+    "topic": "Breast rad-path correlation and follow-up after biopsy",
+    "raisedBy": "owner",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Only the BI-RADS page.",
+    "home": "Breast"
+  },
+  {
+    "id": "renal-aml-follow-up",
+    "topic": "Renal angiomyolipoma (AML) follow-up",
+    "raisedBy": "owner",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Nothing on the site.",
+    "home": "A section of the incidental renal mass page"
+  },
+  {
+    "id": "superficial-soft-tissue-us",
+    "topic": "Lipomas, ganglion cysts and indeterminate superficial soft-tissue lesions on ultrasound",
+    "raisedBy": "owner",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Nothing on the site (MSK area empty).",
+    "home": "One MSK page on superficial soft-tissue lesions on ultrasound"
+  },
+  {
+    "id": "dvt-svt",
+    "topic": "DVT and superficial vein thrombosis",
+    "raisedBy": "owner",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Nothing on the site.",
+    "home": "A new vascular topic (no vascular area exists yet)"
+  },
+  {
+    "id": "arvc",
+    "topic": "ARVC (2019)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/cardiovascular/arvc_2019/).",
+    "home": "Cardiomyopathy topic (cardiac)"
+  },
+  {
+    "id": "thoracic-aortic-aneurysm",
+    "topic": "Thoracic aortic aneurysm",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/cardiovascular/thoracic_aortic_aneurysm/).",
+    "home": "Thoracic aorta topic"
+  },
+  {
+    "id": "hepatobiliary-car-2020",
+    "topic": "Incidental hepatobiliary lesions (CAR 2020)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/hepatobiliary/hepatobiliary_lesions_car_2020/).",
+    "home": "Incidental liver lesions page"
+  },
+  {
+    "id": "gallbladder-car-2025",
+    "topic": "Incidental gallbladder lesions (CAR 2025)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/hepatobiliary/gallbladder_lesions_car_2025/).",
+    "home": "One gallbladder page (with gallbladder-acr-2017)"
+  },
+  {
+    "id": "gallbladder-acr-2017",
+    "topic": "Gallbladder and biliary tract (ACR 2017)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/hepatobiliary/gallbladder_polyp_acr_2017/).",
+    "home": "One gallbladder page (with gallbladder-car-2025)"
+  },
+  {
+    "id": "pancreatic-cyst-car-2021",
+    "topic": "Incidental pancreatic cysts (CAR 2021)",
+    "raisedBy": "placeholder",
+    "lead": "Kyoto (2023 international guidelines)",
+    "alternatives": [
+      "CAR 2021",
+      "ACR 2017"
+    ],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/pancreatic/pancreatic_cysts_car_2021/).",
+    "home": "One Kyoto-led pancreatic cyst page"
+  },
+  {
+    "id": "pancreatic-cyst-acr-2017",
+    "topic": "Pancreatic cysts (ACR 2017)",
+    "raisedBy": "placeholder",
+    "lead": "Kyoto (2023 international guidelines)",
+    "alternatives": [
+      "CAR 2021",
+      "ACR 2017"
+    ],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/pancreatic/pancreatic_cyst_acr_2017/).",
+    "home": "One Kyoto-led pancreatic cyst page"
+  },
+  {
+    "id": "splenic-car-2025",
+    "topic": "Incidental splenic lesions (CAR 2025)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/spleen/splenic_lesions_car_2025/).",
+    "home": "Incidental splenic lesions page"
+  },
+  {
+    "id": "renal-lesion-acr-2017",
+    "topic": "Incidental renal lesion (ACR 2017)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/genitourinary/renal_lesion_acr_2017/).",
+    "home": "One incidental renal mass page (with renal-mass-car-2019)"
+  },
+  {
+    "id": "renal-mass-car-2019",
+    "topic": "Incidental renal mass (CAR 2019)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/genitourinary/renal_mass_car_2019/).",
+    "home": "One incidental renal mass page (with renal-lesion-acr-2017)"
+  },
+  {
+    "id": "o-rads",
+    "topic": "O-RADS",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/gynecologic/o_rads/).",
+    "home": "Ovaries and adnexa (with adnexal-nonspecific)"
+  },
+  {
+    "id": "pituitary",
+    "topic": "Pituitary",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/neuro/pituitary/).",
+    "home": "Pituitary topic"
+  },
+  {
+    "id": "msk-car-2023",
+    "topic": "Incidental MSK findings (CAR 2023)",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/musculoskeletal/msk_findings_car_2023/).",
+    "home": "Incidental MSK findings page"
+  },
+  {
+    "id": "lung-cancer-staging",
+    "topic": "Lung cancer staging",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/oncology/lung_cancer_staging/).",
+    "home": "Lung cancer staging topic"
+  },
+  {
+    "id": "rectal-cancer-staging",
+    "topic": "Rectal cancer staging",
+    "raisedBy": "placeholder",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Empty placeholder on the old guidelines site (https://dfergs93.github.io/guidelines_manager/oncology/rectal_cancer_staging/).",
+    "home": "Rectal cancer staging topic"
+  }
+]

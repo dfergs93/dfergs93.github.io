@@ -5,3 +5,6 @@ dist/
 test-results/
 playwright-report/
 .dev.vars
+
+# Source documents read for the content audit (copyrighted; never committed)
+audit-sources/
