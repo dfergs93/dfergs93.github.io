@@ -1,1 +1,130 @@
-[]
+[
+  {
+    "id": "fleischner-2017",
+    "title": "Guidelines for Management of Incidental Pulmonary Nodules Detected on CT Images: From the Fleischner Society 2017",
+    "citation": "MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243.",
+    "version": "2017",
+    "year": 2017,
+    "url": "https://doi.org/10.1148/radiol.2017161659",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "The publisher blocks automated download; owner asked for a copy (2026-11-25)."
+  },
+  {
+    "id": "lung-rads-2022",
+    "title": "Lung-RADS v2022",
+    "citation": "American College of Radiology. Lung-RADS v2022 (assessment categories and management). Released November 2022.",
+    "version": "v2022",
+    "year": 2022,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Lung-RADS",
+    "access": "open",
+    "reuse": "unknown"
+  },
+  {
+    "id": "lung-rads-2022-summary",
+    "title": "Lung-RADS v2022 Summary of Changes and Updates",
+    "citation": "American College of Radiology. Lung-RADS v2022: summary of changes and updates. November 2022.",
+    "version": "v2022",
+    "year": 2022,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Lung-RADS",
+    "access": "open",
+    "reuse": "unknown"
+  },
+  {
+    "id": "lung-rads-1-1",
+    "title": "Lung-RADS Version 1.1 Assessment Categories",
+    "citation": "American College of Radiology. Lung-RADS version 1.1 assessment categories. Released 2019.",
+    "version": "v1.1",
+    "year": 2019,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Lung-RADS",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Superseded by v2022; read to check the old page against the version it claims."
+  },
+  {
+    "id": "bc-lung-screening-2026",
+    "title": "BC Cancer Lung Screening Program Standards and Protocols (April 2026)",
+    "citation": "BC Cancer. Lung Screening Program standards and protocols. April 2026.",
+    "version": "April 2026",
+    "year": 2026,
+    "url": "https://www.bccancer.bc.ca/screening/Documents/Lung-Screening-Standards-Protocols.pdf",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Text layer does not extract; read page images."
+  },
+  {
+    "id": "acr-adrenal-2017",
+    "title": "Management of Incidental Adrenal Masses: A White Paper of the ACR Incidental Findings Committee",
+    "citation": "Mayo-Smith WW, Song JH, Boland GL, et al. Management of incidental adrenal masses: a white paper of the ACR Incidental Findings Committee. J Am Coll Radiol. 2017;14(8):1038-1044.",
+    "version": "2017",
+    "year": 2017,
+    "url": "https://doi.org/10.1016/j.jacr.2017.05.001",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Read from the in-press PDF (copy hosted by the UW Radiology wiki)."
+  },
+  {
+    "id": "acr-renal-2017",
+    "title": "Management of the Incidental Renal Mass on CT: A White Paper of the ACR Incidental Findings Committee",
+    "citation": "Herts BR, Silverman SG, Hindman NM, et al. Management of the incidental renal mass on CT: a white paper of the ACR Incidental Findings Committee. J Am Coll Radiol. 2018;15(2):264-273.",
+    "version": "2017",
+    "year": 2018,
+    "url": "https://doi.org/10.1016/j.jacr.2017.04.028",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Read from the in-press PDF (copy hosted by the UW Radiology wiki)."
+  },
+  {
+    "id": "car-renal-2019",
+    "title": "Recommendations for the Management of the Incidental Renal Mass in Adults: Endorsement and Adaptation of the 2017 ACR Incidental Findings Committee White Paper by the Canadian Association of Radiologists Incidental Findings Working Group",
+    "citation": "Kirkpatrick IDC, Brahm GL, Mnatzakanian GN, et al. Recommendations for the management of the incidental renal mass in adults: endorsement and adaptation of the 2017 ACR Incidental Findings Committee white paper by the Canadian Association of Radiologists Incidental Findings Working Group. Can Assoc Radiol J. 2019;70(2):125-133.",
+    "version": "2019",
+    "year": 2019,
+    "url": "https://doi.org/10.1016/j.carj.2019.03.002",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "PDF from car.ca."
+  },
+  {
+    "id": "bosniak-2019",
+    "title": "Bosniak Classification of Cystic Renal Masses, Version 2019: An Update Proposal and Needs Assessment",
+    "citation": "Silverman SG, Pedrosa I, Ellis JH, et al. Bosniak classification of cystic renal masses, version 2019: an update proposal and needs assessment. Radiology. 2019;292(2):475-488.",
+    "version": "2019",
+    "year": 2019,
+    "url": "https://doi.org/10.1148/radiol.2019182646",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Article text read from PMC6677285; its tables could not be reached (owner asked for the PDF, 2026-11-25)."
+  },
+  {
+    "id": "li-rads-2018-core",
+    "title": "LI-RADS CT/MRI v2018 Core",
+    "citation": "American College of Radiology. CT/MRI LI-RADS v2018 core. 2018.",
+    "version": "v2018",
+    "year": 2018,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Still the current CT/MRI diagnostic version on the ACR site (2026-11-25); the 2024 CT/MRI cores are treatment response only."
+  },
+  {
+    "id": "li-rads-2018-manual-ch8",
+    "title": "LI-RADS v2018 CT/MRI Manual, Chapter 8: Diagnostic Categories",
+    "citation": "Sirlin CB, et al. LI-RADS v2018 CT/MRI manual, chapter 8: LI-RADS diagnostic categories. American College of Radiology; 2018.",
+    "version": "v2018",
+    "year": 2018,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS",
+    "access": "open",
+    "reuse": "unknown"
+  },
+  {
+    "id": "li-rads-2018-manual-ch11",
+    "title": "LI-RADS v2018 CT/MRI Manual, Chapter 11: Management",
+    "citation": "Mitchell DG, et al. LI-RADS v2018 CT/MRI manual, chapter 11: management. American College of Radiology; 2018.",
+    "version": "v2018",
+    "year": 2018,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/LI-RADS",
+    "access": "open",
+    "reuse": "unknown"
+  }
+]
