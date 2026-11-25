@@ -1,6 +1,7 @@
 ---
 // The only place row markup is written. Client code clones rows from #all-resources.
 import { areaLabel } from '../../shared/areas.ts';
+import { CALCULATORS } from '../../shared/calculators/index.ts';
 import type { Resource } from '../../shared/schema.ts';
 import StarIcon from './StarIcon.astro';
 
@@ -9,14 +10,21 @@ interface Props {
 }
 
 const { resource: r } = Astro.props;
+// Calculators with a module get a quick-view button (shown by the page script).
+const quick = CALCULATORS.has(r.id);
 ---
 <li class="row" data-id={r.id}>
   <button class="star" type="button" data-id={r.id} aria-pressed="false" aria-label="Add to favorites" hidden><StarIcon /></button>
-  <a class="row-link" href={r.url}>
-    <span class="row-title">{r.title}</span>
-    {r.version !== 'none' && <span class="version">{r.version}</span>}
-    {r.calculator && <span class="calc">calc</span>}
+  <div class="row-line">
+    <a class="row-link" href={r.url}>
+      <span class="row-title">{r.title}</span>
+      {r.version !== 'none' && <span class="version">{r.version}</span>}
+    </a>
+    {r.calculator && <span class="calc calc-label">calc</span>}
+    {quick && (
+      <button class="calc calc-toggle" type="button" aria-expanded="false" aria-label={`Quick calc: ${r.title}`} hidden>calc</button>
+    )}
     <span class="row-area">{areaLabel(r.area)}</span>
-  </a>
+  </div>
   <p class="summary">{r.summary}</p>
 </li>

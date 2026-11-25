@@ -1,14 +1,16 @@
 // The front page's behaviour over server-rendered markup: list selection by
-// URL hash, search with keyboard control, the `/` shortcut, favorites and the
-// anonymous open count. Rows are never built here; they are cloned from
+// URL hash, search with keyboard control, the `/` shortcut, favorites, quick
+// calculators and the anonymous open count. Rows are never built here; they are cloned from
 // #all-resources (written by ResourceRow.astro).
 //
 // The raw registry data is imported (not shared/registry.ts) so the validator
 // and zod stay out of the browser bundle; `astro build` has validated it already.
 
 import { RESOURCE_DATA } from '../../shared/data/resources.ts';
+import { CALCULATORS } from '../../shared/calculators/index.ts';
 import { createSearch } from '../../shared/search.ts';
 import { readFavorites, toggleFavorite } from './favorites.ts';
+import { createQuickCalc } from './quick-calc.ts';
 import { safeStorage } from './storage.ts';
 
 const HASH_PREFIX = '#list-';
@@ -48,6 +50,8 @@ export function initFront(root: HTMLElement): void {
   let currentHits: ReadonlySet<string> | null = null;
   let highlighted = -1;
   let favorites = readFavorites(storage, validIds);
+  /** The one open quick view, if any. */
+  let quick: { toggle: HTMLButtonElement; panel: HTMLElement } | null = null;
 
   const railItem = (key: string) => railItems.find((a) => a.dataset.list === key);
   const rowIdsIn = (key: string) =>
@@ -86,7 +90,34 @@ export function initFront(root: HTMLElement): void {
     }
   }
 
+  function closeQuick(returnFocus = false) {
+    if (!quick) return;
+    const { toggle, panel } = quick;
+    quick = null;
+    panel.remove();
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.removeAttribute('aria-controls');
+    if (returnFocus && toggle.isConnected) toggle.focus();
+  }
+
+  function openQuick(toggle: HTMLButtonElement) {
+    const row = toggle.closest<HTMLElement>('li.row');
+    const id = row?.dataset.id;
+    const calc = id ? CALCULATORS.get(id) : undefined;
+    const link = row?.querySelector<HTMLAnchorElement>('.row-link');
+    if (!row || !id || !calc || !link) return;
+    closeQuick();
+    const panel = createQuickCalc(calc, link.href);
+    row.querySelector('.summary')!.after(panel);
+    toggle.setAttribute('aria-expanded', 'true');
+    toggle.setAttribute('aria-controls', panel.id);
+    quick = { toggle, panel };
+    panel.querySelector('input')?.focus();
+    countOpen(id);
+  }
+
   function select(key: string) {
+    closeQuick();
     selected = key;
     showSection(key);
     markRail(key);
@@ -117,6 +148,7 @@ export function initFront(root: HTMLElement): void {
       return;
     }
     searching = true;
+    closeQuick();
     const hits = search(query);
     const rows = hits.flatMap((r) => {
       const row = cloneRow(r.id);
@@ -138,6 +170,7 @@ export function initFront(root: HTMLElement): void {
   }
 
   function endSearch() {
+    closeQuick();
     searching = false;
     resultsList.replaceChildren();
     noMatches.hidden = true;
@@ -162,6 +195,7 @@ export function initFront(root: HTMLElement): void {
       star.setAttribute('aria-pressed', String(on));
       star.setAttribute('aria-label', on ? 'Remove from favorites' : 'Add to favorites');
     }
+    if (quick && favoritesList.contains(quick.panel)) closeQuick();
     favoritesList.replaceChildren(...favorites.flatMap((id) => cloneRow(id) ?? []));
     railItem('favorites')!.hidden = favorites.length === 0;
     setCounts(currentHits);
@@ -189,6 +223,18 @@ export function initFront(root: HTMLElement): void {
   root.addEventListener('click', (e) => {
     const star = e.target instanceof Element ? e.target.closest<HTMLButtonElement>('.star[data-id]') : null;
     if (star) onStar(star);
+    const toggle = e.target instanceof Element ? e.target.closest<HTMLButtonElement>('.calc-toggle') : null;
+    if (toggle) {
+      if (quick?.toggle === toggle) closeQuick();
+      else openQuick(toggle);
+    }
+  });
+
+  // Esc inside a quick view closes it (the search box's own Esc is separate).
+  root.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape' || !quick || !(e.target instanceof Node) || !quick.panel.contains(e.target)) return;
+    e.preventDefault();
+    closeQuick(true);
   });
 
   // An open is a click on a row's link, or a middle click (new tab).
@@ -251,6 +297,12 @@ export function initFront(root: HTMLElement): void {
   // Stars only when favorites can be kept; then the Favorites list, so a
   // #list-favorites hash can be honoured.
   if (storage) for (const star of root.querySelectorAll<HTMLButtonElement>('.star[data-id]')) star.hidden = false;
+  // Quick-view buttons replace the plain calc label (templates too, so clones match).
+  for (const toggle of root.querySelectorAll<HTMLButtonElement>('.calc-toggle')) {
+    toggle.hidden = false;
+    const label = toggle.closest('li.row')?.querySelector<HTMLElement>('.calc-label');
+    if (label) label.hidden = true;
+  }
   renderFavorites();
   // From here on CSS (.current) decides which list shows.
   for (const s of sections.values()) s.hidden = false;
