@@ -57,10 +57,25 @@ test.each([
   ['fleischner society guidelines 2017', 'fleischner'],
 ])('natural query %j finds %s first', (q, id) => expect(ids(q)[0]).toBe(id));
 
-test('calculator finds every calculator first', () =>
-  expect(ids('calculator').slice(0, 10).sort()).toEqual(
-    ['adrenal', 'bernoulli', 'bosniak', 'ecv', 'fleischner', 'flow-4d', 'li-rads', 'lung-rads', 'pi-rads', 'ti-rads'],
-  ));
+// "calculator" (or "calc", or part of it while typing) puts calculators higher but is not a
+// word every result must hold: a page without a calculator is still found by its name.
+test('calculator alone gives exactly the calculators', () =>
+  expect(ids('calculator').sort()).toEqual(RESOURCES.filter((r) => r.calculator).map((r) => r.id).sort()));
+
+test.each([
+  ['birads calculator', 'bi-rads'],
+  ['bosniak calc', 'bosniak'],
+  ['lirads calcu', 'li-rads'],
+  ['adrenal calculators', 'adrenal'],
+])('a page without a calculator is still found first: %j finds %s', (q, id) => expect(ids(q)[0]).toBe(id));
+
+test('calculator lifts a calculator above a page that matches the other words as well', () => {
+  expect(ids('shunt')[0]).toBe('vsd');
+  expect(ids('shunt calculator')[0]).toBe('flow-4d');
+});
+
+test('a word that only starts like calculator is searched as itself', () =>
+  expect(ids('cal')).not.toEqual(ids('calculator')));
 
 test('words that match nothing at all still give nothing', () => expect(search('zzzz qqqq')).toEqual([]));
 

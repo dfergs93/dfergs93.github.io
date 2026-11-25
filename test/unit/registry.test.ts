@@ -121,10 +121,12 @@ const TABLE: [id: string, area: string, url: string][] = [
 ];
 
 describe('the real registry', () => {
-  test('has 34 entries, 10 calculators and these area counts', () => {
+  // Lung-RADS, adrenal, Bosniak and LI-RADS lost their calculators on the old pages after
+  // the content audit (docs/audit/batch-1.md, 2026-11-25), so their rows carry no calc mark.
+  test('has 34 entries, 6 calculators and these area counts', () => {
     expect(RESOURCES).toHaveLength(34);
     expect(RESOURCES.filter((r) => r.calculator).map((r) => r.id).sort()).toEqual(
-      ['adrenal', 'bernoulli', 'bosniak', 'ecv', 'fleischner', 'flow-4d', 'li-rads', 'lung-rads', 'pi-rads', 'ti-rads'],
+      ['bernoulli', 'ecv', 'fleischner', 'flow-4d', 'pi-rads', 'ti-rads'],
     );
     expect(areaCounts(RESOURCES)).toEqual({
       chest: 2, cardiac: 14, congenital: 11, abdomen: 2, 'gu-pelvis': 2,

@@ -31,7 +31,7 @@ export const RESOURCE_DATA = [
     title: 'Lung-RADS',
     area: 'chest',
     version: 'v1.1',
-    calculator: true,
+    calculator: false, // switched off on the old page after the 2026-11-25 audit
     summary: 'Categories and follow-up for nodules on low-dose CT lung cancer screening.',
     aliases: ['lungrads', 'nodule', 'lung nodule', 'lung cancer screening', 'ldct', 'screening ct'],
     url: `${G}pulmonary/lung_rads/`,
@@ -297,7 +297,7 @@ export const RESOURCE_DATA = [
     title: 'Adrenal nodule',
     area: 'abdomen',
     version: 'ACR 2017',
-    calculator: true,
+    calculator: false, // switched off on the old page after the 2026-11-25 audit
     summary: 'Workup of incidental adrenal masses on CT, with washout and management calculators.',
     aliases: ['adrenal', 'adrenal mass', 'incidentaloma', 'washout', 'nodule', 'adrenal nodule'],
     url: `${G}adrenal/adrenal_nodule_acr_2017/`,
@@ -307,7 +307,7 @@ export const RESOURCE_DATA = [
     title: 'LI-RADS',
     area: 'abdomen',
     version: 'v2018',
-    calculator: true,
+    calculator: false, // switched off on the old page after the 2026-11-25 audit
     summary: 'CT/MRI categories for liver observations in patients at risk of hepatocellular carcinoma.',
     aliases: ['lirads', 'hcc', 'hepatocellular carcinoma', 'liver lesion', 'liver', 'cirrhosis'],
     url: `${G}hepatobiliary/li_rads/`,
@@ -319,7 +319,7 @@ export const RESOURCE_DATA = [
     title: 'Bosniak',
     area: 'gu-pelvis',
     version: 'v2019',
-    calculator: true,
+    calculator: false, // switched off on the old page after the 2026-11-25 audit
     summary: 'Classifies cystic renal masses on CT and MRI, with management for each class.',
     aliases: ['kidney cyst', 'renal cyst', 'cystic renal mass', 'complex cyst', 'renal mass'],
     url: `${G}genitourinary/bosniak/`,
