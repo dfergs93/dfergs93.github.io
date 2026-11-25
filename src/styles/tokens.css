@@ -1,0 +1,42 @@
+/*
+ * Design tokens. The only file where raw colours appear.
+ * Dark is the default for every visitor, whatever the device setting;
+ * light applies only when the header switch sets data-theme="light".
+ * Every text colour keeps at least 4.5:1 against --ground and --panel
+ * (test/unit/style-rules.test.ts checks it).
+ */
+:root {
+  --ground: #0c0f14;
+  --panel: #12161d;
+  --line: #202733;
+  --ink: #e6eaf0;
+  --muted: #8a94a3;
+  --dim: #7a8392;
+  --accent: #5fc2b0;
+  --star: #e3b341;
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --ground: #f6f7f9;
+  --panel: #eceef2;
+  --line: #d6dae1;
+  --ink: #161a21;
+  --muted: #4d5664;
+  --dim: #5c6573;
+  --accent: #0b6e63;
+  --star: #8a5a00;
+  color-scheme: light;
+}
+
+:root {
+  --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --radius: 6px;
+  --gutter: 24px;
+  --hover-delay: 100ms;
+}
+
+@media (max-width: 719px) {
+  :root { --gutter: 16px; }
+}

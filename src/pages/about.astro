@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../../shared/site.ts';
+---
+<Base title={`About · ${SITE.name}`} description={`What ${SITE.name} is, where its content comes from and how to report an error.`}>
+  <article class="prose">
+    <h1>About</h1>
+    <p>
+      <strong>{SITE.name}</strong> is one place to find radiology guidelines, calculators and cardiac
+      imaging references, for residents and radiologists at the workstation. It is written and
+      maintained by {SITE.credit}.
+    </p>
+
+    <h2>Versions and sources</h2>
+    <p>
+      Each page follows the guideline it cites, and the list shows which version that is. Where a
+      newer version of a guideline exists, the label says which one the page follows until the page is
+      updated.
+    </p>
+
+    <h2>Not a substitute for clinical judgement</h2>
+    <p>
+      This is a reference. Check the source guideline and use your own judgement before acting on
+      anything here.
+    </p>
+
+    <h2>Report an error</h2>
+    <p>
+      If something is wrong or out of date, please <a href={SITE.reportErrorUrl}>Report an error</a>
+      (a free GitHub account is needed).
+    </p>
+
+    <h2>Favorites</h2>
+    <p>
+      Stars are saved in this browser only, with no account. On a shared workstation everyone using
+      that browser sees the same favorites, and some hospital browsers clear them at sign-out.
+    </p>
+
+    <h2>Privacy</h2>
+    <p>
+      No cookies, accounts or tracking. When a resource is opened the site counts it anonymously, by
+      resource and day and nothing about the visitor, so the most-used resources can be listed first.
+    </p>
+  </article>
+</Base>

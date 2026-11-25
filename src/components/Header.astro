@@ -1,0 +1,27 @@
+---
+import { SITE } from '../../shared/site.ts';
+import ThemeSwitch from './ThemeSwitch.astro';
+---
+<header class="site-header">
+  <a class="brand" href="/">{SITE.name} <span class="credit">· {SITE.credit}</span></a>
+  <nav class="site-nav" aria-label="Site">
+    <a href="/about/">About</a>
+    <a href="/orca-website-docs/orca-usage-guide.html">ORCA</a>
+    <ThemeSwitch />
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px 24px;
+    padding: 20px 0 16px;
+  }
+  .brand { font-weight: 600; text-decoration: none; }
+  .credit { color: var(--muted); font-weight: 400; }
+  .site-nav { display: flex; align-items: baseline; gap: 18px; font-size: 0.8667rem; color: var(--muted); }
+  .site-nav a:hover { color: var(--ink); transition-delay: var(--hover-delay); }
+</style>

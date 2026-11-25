@@ -1,0 +1,22 @@
+<button type="button" class="theme-switch" aria-pressed="false" data-theme-switch>Light mode</button>
+
+<script>
+  import { initThemeSwitch } from '../scripts/theme.ts';
+  document.querySelectorAll<HTMLButtonElement>('[data-theme-switch]').forEach(initThemeSwitch);
+</script>
+
+<style>
+  .theme-switch {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    color: var(--muted);
+    font-size: 0.8667rem;
+    padding: 1px 10px;
+    cursor: pointer;
+  }
+  .theme-switch:hover { color: var(--ink); transition-delay: var(--hover-delay); }
+  .theme-switch[aria-pressed='true'] { background: var(--panel); color: var(--ink); }
+  /* Without JavaScript the switch can do nothing, so it is not shown. */
+  :global(html:not(.js)) .theme-switch { display: none; }
+</style>

@@ -1,14 +1,8 @@
 ---
 // Placeholder until the front page lands (stage 1, Task 5).
+import Base from '../layouts/Base.astro';
+import { SITE } from '../../shared/site.ts';
 ---
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Radiology reference</title>
-  </head>
-  <body>
-    <h1>Radiology reference</h1>
-  </body>
-</html>
+<Base title={SITE.name} description="Radiology guidelines, calculators and cardiac imaging references.">
+  <h1>{SITE.name}</h1>
+</Base>

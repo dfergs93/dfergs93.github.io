@@ -1,0 +1,11 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../../shared/site.ts';
+---
+<Base title={`Not found · ${SITE.name}`} description="This page does not exist.">
+  <article class="prose">
+    <h1>Page not found</h1>
+    <p>There is nothing at this address. Everything on the site is listed on the front page.</p>
+    <p><a href="/">Back to the front page</a></p>
+  </article>
+</Base>
