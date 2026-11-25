@@ -245,6 +245,8 @@ html.js .list { scroll-margin-top: 100vmax; }
 
 /* Phone: the rail becomes one scrolling row of tabs under the search box. */
 @media (max-width: 719px) {
+  /* iOS Safari zooms the page when focusing a field under 16px. */
+  .search-input, .quick-input { font-size: 16px; }
   .layout { grid-template-columns: minmax(0, 1fr); }
   .rail {
     position: static;

@@ -183,3 +183,12 @@ test('nothing typed into a quick view is stored', async ({ page }) => {
   await fillEcv(page, 'popular', WORKED);
   expect(await page.evaluate(() => JSON.stringify({ ...localStorage }))).toBe(before);
 });
+
+test('on a phone, inputs are at least 16px so iOS does not zoom the page on focus', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'phone', 'phone layout only');
+  await page.goto('/');
+  await toggle(page, 'popular', 'ecv').click();
+  const size = (selector: string) => page.locator(selector).first().evaluate((el) => parseFloat(getComputedStyle(el).fontSize));
+  expect(await size('.quick-input')).toBeGreaterThanOrEqual(16);
+  expect(await size('.search-input')).toBeGreaterThanOrEqual(16);
+});
