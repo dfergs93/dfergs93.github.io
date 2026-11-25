@@ -12,6 +12,9 @@ html {
 
 body { margin: 0; }
 
+/* `hidden` always wins over component display rules. */
+[hidden] { display: none !important; }
+
 .page {
   max-width: 1080px;
   min-height: 100vh;

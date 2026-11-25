@@ -1,8 +1,42 @@
 ---
-// Placeholder until the front page lands (stage 1, Task 5).
+import Rail from '../components/Rail.astro';
+import ResourceRow from '../components/ResourceRow.astro';
+import ResourceSection from '../components/ResourceSection.astro';
+import SearchBox from '../components/SearchBox.astro';
 import Base from '../layouts/Base.astro';
+import '../styles/front.css';
+import { AREAS } from '../../shared/areas.ts';
+import { areaCounts, areaList, popularList } from '../../shared/order.ts';
+import { POPULAR, RESOURCES } from '../../shared/registry.ts';
 import { SITE } from '../../shared/site.ts';
+
+const counts = areaCounts(RESOURCES);
+// Areas with nothing in them yet are not shown (see docs/audit-notes.md).
+const areas = AREAS.filter((a) => counts[a.id] > 0).map((a) => ({ id: a.id, label: a.label, count: counts[a.id] }));
+const popular = popularList(RESOURCES, POPULAR);
 ---
-<Base title={SITE.name} description="Radiology guidelines, calculators and cardiac imaging references.">
-  <h1>{SITE.name}</h1>
+<Base title={SITE.name} description="Radiology guidelines, calculators and cardiac imaging references, found in a click or two.">
+  <div class="front" data-front>
+    <h1 class="visually-hidden">{SITE.name}</h1>
+    <SearchBox />
+    <div class="layout">
+      <Rail popularCount={popular.length} areas={areas} />
+      <div class="lists">
+        <ResourceSection list="favorites" heading="Favorites" resources={[]} mixed hidden />
+        <ResourceSection list="results" heading="Matches" resources={[]} mixed hidden results />
+        <ResourceSection list="popular" heading="Popular" resources={popular} mixed />
+        {areas.map((a) => <ResourceSection list={a.id} heading={a.label} resources={areaList(RESOURCES, a.id)} />)}
+      </div>
+    </div>
+    <ul id="all-resources" hidden>
+      {RESOURCES.map((r) => <ResourceRow resource={r} />)}
+    </ul>
+  </div>
 </Base>
+
+<script>
+  import { initFront } from '../scripts/front.ts';
+
+  const root = document.querySelector<HTMLElement>('[data-front]');
+  if (root) initFront(root);
+</script>

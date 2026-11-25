@@ -1,0 +1,27 @@
+---
+import type { Resource } from '../../shared/schema.ts';
+import ResourceRow from './ResourceRow.astro';
+
+interface Props {
+  list: string;
+  heading: string;
+  resources: readonly Resource[];
+  /** Rows come from several areas, so each shows its area name. */
+  mixed?: boolean;
+  hidden?: boolean;
+  /** The search results list: a listbox driven from the search box. */
+  results?: boolean;
+}
+
+const { list, heading, resources, mixed = false, hidden = false, results = false } = Astro.props;
+const headingId = `list-${list}-heading`;
+---
+<section class="list" id={`list-${list}`} data-list={list} data-mixed={mixed ? '' : undefined} hidden={hidden} aria-labelledby={headingId}>
+  <h2 id={headingId}>{heading}</h2>
+  {results && <p class="no-matches" hidden></p>}
+  {results ? (
+    <ul id="results-listbox" role="listbox" aria-labelledby={headingId}></ul>
+  ) : (
+    <ul>{resources.map((r) => <ResourceRow resource={r} />)}</ul>
+  )}
+</section>

@@ -1,0 +1,24 @@
+---
+import StarIcon from './StarIcon.astro';
+
+interface Props {
+  popularCount: number;
+  areas: readonly { id: string; label: string; count: number }[];
+}
+
+const { popularCount, areas } = Astro.props;
+---
+<nav class="rail" aria-label="Lists">
+  <a class="rail-item" href="#list-favorites" data-list="favorites" hidden>
+    <span class="rail-label"><StarIcon /> Favorites</span><span class="rail-count">0</span>
+  </a>
+  <a class="rail-item" href="#list-popular" data-list="popular">
+    <span class="rail-label">Popular</span><span class="rail-count">{popularCount}</span>
+  </a>
+  <hr class="rail-divider" />
+  {areas.map((a) => (
+    <a class="rail-item" href={`#list-${a.id}`} data-list={a.id}>
+      <span class="rail-label">{a.label}</span><span class="rail-count">{a.count}</span>
+    </a>
+  ))}
+</nav>

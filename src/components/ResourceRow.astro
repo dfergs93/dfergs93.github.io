@@ -1,0 +1,22 @@
+---
+// The only place row markup is written. Client code clones rows from #all-resources.
+import { areaLabel } from '../../shared/areas.ts';
+import type { Resource } from '../../shared/schema.ts';
+import StarIcon from './StarIcon.astro';
+
+interface Props {
+  resource: Resource;
+}
+
+const { resource: r } = Astro.props;
+---
+<li class="row" data-id={r.id}>
+  <button class="star" type="button" data-id={r.id} aria-pressed="false" aria-label="Add to favorites" hidden><StarIcon /></button>
+  <a class="row-link" href={r.url}>
+    <span class="row-title">{r.title}</span>
+    {r.version !== 'none' && <span class="version">{r.version}</span>}
+    {r.calculator && <span class="calc">calc</span>}
+    <span class="row-area">{areaLabel(r.area)}</span>
+  </a>
+  <p class="summary">{r.summary}</p>
+</li>
