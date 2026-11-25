@@ -1,6 +1,10 @@
 // The calculator contract. Each calculator is written once as a module and
 // used by every place that runs it: the front page's quick view now, the
 // calculator pages (stage 3) and the assistant (stage 4) later.
+//
+// Pilot scope: numeric fields only, and results as display strings. Stage 3's
+// first guideline calculator (Fleischner: nodule type, count, risk) adds choice
+// fields, and stage 4 will want machine-readable values; extend the contract then.
 
 /** One numeric input. `key` is also its address parameter (e.g. `?hct=40`). */
 export type Field = {
