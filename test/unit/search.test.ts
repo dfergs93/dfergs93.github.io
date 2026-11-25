@@ -38,3 +38,30 @@ test.each(['', '   ', 'zzzz', 'c++(', 'x'.repeat(500), '/', 'T1/T2'])('odd query
 test('blank query returns nothing', () => expect(search('  ')).toEqual([]));
 
 test('a query with no match returns nothing', () => expect(search('zzzz')).toEqual([]));
+
+// Natural queries add words the registry doesn't hold ("calculator", "criteria", a
+// version or category). AND first; when nothing matches every word, the best partial matches.
+test.each([
+  ['ecv calculator', 'ecv'],
+  ['the ecv calculator', 'ecv'],
+  ['lirads calculator', 'li-rads'],
+  ['fleischner calculator', 'fleischner'],
+  ['4d flow calculator', 'flow-4d'],
+  ['bosniak classification', 'bosniak'],
+  ['fleischner criteria', 'fleischner'],
+  ['bernoulli equation', 'bernoulli'],
+  ['pirads 2.1', 'pi-rads'],
+  ['pi-rads v2.1', 'pi-rads'],
+  ['birads 3', 'bi-rads'],
+  ['lung rads 4a', 'lung-rads'],
+  ['fleischner society guidelines 2017', 'fleischner'],
+])('natural query %j finds %s first', (q, id) => expect(ids(q)[0]).toBe(id));
+
+test('calculator finds every calculator first', () =>
+  expect(ids('calculator').slice(0, 10).sort()).toEqual(
+    ['adrenal', 'bernoulli', 'bosniak', 'ecv', 'fleischner', 'flow-4d', 'li-rads', 'lung-rads', 'pi-rads', 'ti-rads'],
+  ));
+
+test('words that match nothing at all still give nothing', () => expect(search('zzzz qqqq')).toEqual([]));
+
+test('a query of only common words gives nothing', () => expect(search('the of and')).toEqual([]));
