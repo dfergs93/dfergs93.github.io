@@ -1,0 +1,683 @@
+{
+  "calculator": "bosniak",
+  "pageUrl": "https://dfergs93.github.io/guidelines_manager/genitourinary/bosniak/",
+  "formId": "bosniak-form",
+  "resultId": "bosniak-results",
+  "params": [
+    "enhancement",
+    "wall_septa",
+    "septa_count",
+    "calcification",
+    "high_attenuation_non_enhancing",
+    "size_cm"
+  ],
+  "categoryKey": "Bosniak Category",
+  "cases": [
+    {
+      "id": "v2019-i-simple",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class I"
+        },
+        "text": "Bosniak I: well-defined, thin (≤2 mm) smooth wall; homogeneous simple fluid; no septa or calcifications.",
+        "category": "I"
+      }
+    },
+    {
+      "id": "v2019-i-thin-wall-enhancing",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class I (\"the wall may enhance\"); Table 3, Enhancement"
+        },
+        "text": "Bosniak I: a thin smooth wall may enhance; enhancement alone does not raise the class.",
+        "category": "I"
+      }
+    },
+    {
+      "id": "v2019-i-thin-wall-equivocal",
+      "inputs": {
+        "enhancement": "perceived",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class I; Table 3, Enhancement (single combined definition; no separate \"perceived\" class)"
+        },
+        "text": "Bosniak I: equivocal (<20 HU) change is not enhancement under the single definition, and even definite wall enhancement is allowed in class I.",
+        "category": "I"
+      }
+    },
+    {
+      "id": "v2019-ii-fine-calc",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "fine",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"Bosniak II\" (\"calcifications of any morphology now are considered a Bosniak II feature\"); Table 2 (CT column), PMC6677285 (print pages not available), class I (\"no septa or calcifications\")"
+        },
+        "text": "Bosniak II: any calcification makes a simple-appearing cyst class II.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-thick-calc",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "thick_nodular",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"Bosniak II\" (\"calcifications of any morphology now are considered a Bosniak II feature\"); Table 2 footnote dagger (abundant thick or nodular calcification: MRI may help first)"
+        },
+        "text": "Bosniak II (thick or nodular calcification is no longer a IIF feature); MRI may be used first if abundant calcification could hide enhancing elements.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-few-septa",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "1_to_3",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class II type 1"
+        },
+        "text": "Bosniak II: thin (≤2 mm) and few (1-3) septa.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-few-septa-enhancing",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "thin_smooth",
+        "septa_count": "1_to_3",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class II type 1 (\"septa and wall may enhance\")"
+        },
+        "text": "Bosniak II: few thin septa that enhance remain class II.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-few-septa-equivocal",
+      "inputs": {
+        "enhancement": "perceived",
+        "wall_septa": "thin_smooth",
+        "septa_count": "1_to_3",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class II type 1; Table 3, Enhancement"
+        },
+        "text": "Bosniak II: few thin septa, whether or not they enhance.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-hyperdense-3-0",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class II type 3 (homogeneous nonenhancing >20 HU at renal mass protocol CT); section \"Bosniak II\" (size criterion removed)"
+        },
+        "text": "Bosniak II at any size.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-hyperdense-3-1",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "3.1"
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"Bosniak II\" (\"we remove the size criterion for such masses in the Bosniak Classification, version 2019\"); Table 2 (CT column), PMC6677285 (print pages not available), class II type 3"
+        },
+        "text": "Bosniak II: large (>3 cm) homogeneous hyperattenuating nonenhancing masses are no longer IIF.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-hyperdense-no-size",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"Bosniak II\" (size criterion removed); Table 2 (CT column), PMC6677285 (print pages not available), class II type 3"
+        },
+        "text": "Bosniak II; size is not needed.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-ii-hyperdense-thick-calc",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "thick_nodular",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "2"
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class II type 3 (\"may have calcification of any type\")"
+        },
+        "text": "Bosniak II.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "v2019-iif-many-septa-enhancing",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "thin_smooth",
+        "septa_count": "4_plus",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class IIF (\"many (≥4) smooth thin (≤2 mm) enhancing septa\"); section \"Bosniak IIF\""
+        },
+        "text": "Bosniak IIF.",
+        "category": "IIF"
+      }
+    },
+    {
+      "id": "v2019-many-septa-nonenhancing",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "4_plus",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"Bosniak IIF\" (\"the walls or septa of a Bosniak IIF cystic mass must enhance\"); Table 2 footnote dagger; text after Fig 6 (heterogeneous nonenhancing masses at CT are incompletely characterized; MRI recommended)"
+        },
+        "text": "No class at CT: many nonenhancing septa make the mass heterogeneous; MRI before a class is assigned. Not IIF on these inputs."
+      }
+    },
+    {
+      "id": "v2019-many-septa-equivocal",
+      "inputs": {
+        "enhancement": "perceived",
+        "wall_septa": "thin_smooth",
+        "septa_count": "4_plus",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 3, Enhancement (enhancement is unequivocally perceived or measurable at ≥20 HU); section \"Bosniak IIF\"; Table 2 footnote dagger"
+        },
+        "text": "If the change is truly equivocal (<20 HU, not clearly visible) the septa count as nonenhancing: no class at CT, MRI first. If the enhancement is clearly visible, Bosniak IIF."
+      },
+      "note": "The option label \"Perceived — equivocal / <20 HU change\" mixes the old \"perceived\" (visible) with \"equivocal\" (not clearly visible)."
+    },
+    {
+      "id": "v2019-thick-wall-nonenhancing",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "smooth_thick",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 footnote dagger (\"3-mm or larger nonenhancing septa or wall ... might best be visualized at MRI prior to the assignment of a Bosniak class\"); section \"Bosniak IIF\" (must enhance)"
+        },
+        "text": "No class at CT: a nonenhancing thickened wall is a heterogeneous feature; MRI before a class. Not IIF on these inputs."
+      }
+    },
+    {
+      "id": "v2019-iii-thick-wall-enhancing",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "smooth_thick",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class III (\"enhancing thick (≥4 mm width)\"); Table 3, Thick"
+        },
+        "text": "Bosniak III.",
+        "category": "III"
+      }
+    },
+    {
+      "id": "v2019-iii-thick-septa-enhancing",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "smooth_thick",
+        "septa_count": "1_to_3",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class III; section \"Proposed Solutions\" example (\"few thick enhancing septa would be Bosniak III\")"
+        },
+        "text": "Bosniak III (highest class).",
+        "category": "III"
+      }
+    },
+    {
+      "id": "v2019-iii-irregular-enhancing",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "irregular_thick",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class III (\"enhancing irregular (displaying ≤3-mm obtusely margined convex protrusion[s]) walls or septa\"); Table 3, Irregular thickening; Fig 3"
+        },
+        "text": "Bosniak III when the option is used for irregular thickening (≤3 mm obtuse protrusions).",
+        "category": "III"
+      },
+      "note": "Same inputs as v2019-iv-nodule-enhancing: the option \"Irregular / nodular / thick irregular\" cannot tell irregular thickening (III) from a nodule (IV)."
+    },
+    {
+      "id": "v2019-iv-nodule-enhancing",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "irregular_thick",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class IV (\"enhancing nodule(s)\": ≥4-mm obtuse or any-size acute convex protrusion); Table 3, Nodule"
+        },
+        "text": "Bosniak IV when the option is used for an enhancing nodule.",
+        "category": "IV"
+      },
+      "note": "Same inputs as v2019-iii-irregular-enhancing."
+    },
+    {
+      "id": "v2019-hyperdense-with-many-septa",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "4_plus",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "2"
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 2 (CT column), PMC6677285 (print pages not available), class II type 3 (must be homogeneous); Table 3, Homogeneous (\"there can be no septa or calcifications\"); Table 2 footnote dagger"
+        },
+        "text": "Not class II: a hyperattenuating mass with septa is not homogeneous. Nonenhancing many septa: MRI before a class."
+      }
+    },
+    {
+      "id": "car2019-iif-thick-calc",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "thick_nodular",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, IIF (\"calcification that may be thick and nodular\")"
+        },
+        "text": "Bosniak IIF (pre-2019 classification).",
+        "category": "IIF"
+      }
+    },
+    {
+      "id": "car2019-ii-hyperdense-2-9",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "2.9"
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, II (\"uniformly high-attenuating lesions (< 3 cm) ... do not enhance\")"
+        },
+        "text": "Bosniak II.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "car2019-hyperdense-3-0",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Table 1 (the pre-2019 classification, adapted from Silverman 2008): II \"Homogeneously high-attenuating masses ≤ 3 cm\""
+        },
+        "text": "Bosniak II. CAR 2019 Table 1 (p. 131) says \"< 3 cm\" for II and \"> 3 cm\" for IIF, so exactly 3 cm is unassigned there.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "car2019-iif-hyperdense-3-1",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "3.1"
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, IIF (\"non-enhancing high-attenuating renal lesions (> 3 cm)\")"
+        },
+        "text": "Bosniak IIF.",
+        "category": "IIF"
+      }
+    },
+    {
+      "id": "car2019-hyperdense-no-size",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, II (< 3 cm) and IIF (> 3 cm)"
+        },
+        "text": "Cannot be classed without a size: II if < 3 cm, IIF if > 3 cm. The page labels size \"required\" but does not ask for it."
+      }
+    },
+    {
+      "id": "car2019-ii-few-septa-perceived",
+      "inputs": {
+        "enhancement": "perceived",
+        "wall_septa": "thin_smooth",
+        "septa_count": "1_to_3",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, II (\"a few hairline-thin septa in which perceived (not measurable) enhancement may be appreciated\")"
+        },
+        "text": "Bosniak II: perceived enhancement of a few thin septa is allowed in class II.",
+        "category": "II"
+      }
+    },
+    {
+      "id": "car2019-iif-thin-wall-perceived",
+      "inputs": {
+        "enhancement": "perceived",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, I (\"does not enhance\") and IIF (\"perceived (not measurable) enhancement of a hairline-thin smooth septum or wall\")"
+        },
+        "text": "Bosniak IIF as CAR Table 1 is worded.",
+        "category": "IIF"
+      }
+    },
+    {
+      "id": "car2019-iif-many-septa",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "4_plus",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, IIF (\"multiple hairline-thin septa\")"
+        },
+        "text": "Bosniak IIF.",
+        "category": "IIF"
+      }
+    },
+    {
+      "id": "car2019-iif-thick-wall-nonenhancing",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "smooth_thick",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, IIF (\"minimal thickening of wall or septa ... no measurable contrast enhancement\")"
+        },
+        "text": "Bosniak IIF (no measurable enhancement).",
+        "category": "IIF"
+      },
+      "note": "The option is labelled \"≥4 mm\"; CAR Table 1 does not define thickness in millimetres."
+    },
+    {
+      "id": "car2019-iii-measurable-thin-septa",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "thin_smooth",
+        "septa_count": "1_to_3",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"Proposed Solutions ...\" (the current classification \"requires that any measurable enhancement be categorized as Bosniak III or IV\"); CAR 2019 Table 1 p. 131 (II and IIF allow perceived, not measurable, enhancement)"
+        },
+        "text": "Bosniak III under the pre-2019 classification.",
+        "category": "III"
+      }
+    },
+    {
+      "id": "car2019-iii-irregular",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "irregular_thick",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, III (\"thickened irregular or smooth walls or septa and in which measurable enhancement is present\") vs IV (\"distinct enhancing soft-tissue components independent of the wall or septa\")"
+        },
+        "text": "Bosniak III for irregular enhancing walls or septa without a distinct soft-tissue component.",
+        "category": "III"
+      },
+      "note": "Same inputs as car2019-iv-soft-tissue."
+    },
+    {
+      "id": "car2019-iv-soft-tissue",
+      "inputs": {
+        "enhancement": "measurable",
+        "wall_septa": "irregular_thick",
+        "septa_count": "none",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "no",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "car-renal-2019",
+          "location": "Table 1, p. 131, IV"
+        },
+        "text": "Bosniak IV when the option is used for a distinct enhancing soft-tissue component.",
+        "category": "IV"
+      },
+      "note": "Same inputs as car2019-iii-irregular."
+    },
+    {
+      "id": "car2019-hyperdense-with-many-septa",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "4_plus",
+        "calcification": "none",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "2"
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"General Points\" (\"Similar to the current classification, if a mass has features that span multiple Bosniak classes, the highest Bosniak class should be assigned\"); CAR 2019 Table 1 p. 131, IIF (\"multiple hairline-thin septa\")"
+        },
+        "text": "Bosniak IIF (highest class: multiple septa).",
+        "category": "IIF"
+      }
+    },
+    {
+      "id": "car2019-hyperdense-thick-calc",
+      "inputs": {
+        "enhancement": "none",
+        "wall_septa": "thin_smooth",
+        "septa_count": "none",
+        "calcification": "thick_nodular",
+        "high_attenuation_non_enhancing": "yes",
+        "size_cm": "2"
+      },
+      "expected": {
+        "source": {
+          "source": "bosniak-2019",
+          "location": "Section \"General Points\" (highest class assigned); CAR 2019 Table 1 p. 131, IIF (\"calcification that may be thick and nodular\")"
+        },
+        "text": "Bosniak IIF (highest class: thick nodular calcification).",
+        "category": "IIF"
+      }
+    }
+  ]
+}
