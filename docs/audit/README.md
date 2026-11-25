@@ -16,6 +16,10 @@ The owner is the clinical authority on every content change.
 - `gaps.json` (`gaps.md`): what the site lacks, with each topic's lead source and priority.
 - `review/`: the review page's source and the data it shows the owner.
 
+`batch-N.rulings.json` holds the owner's rulings as saved on the review page. Where a note
+described the owner's own department or career it is paraphrased (marked "Paraphrased."), so
+the public record states the ruling, not whose practice it is; the review page keeps the original.
+
 Edit the JSON, then run `npm run audit:render`. The unit tests fail if a record breaks
 the rules below or a generated file is out of date.
 
@@ -64,3 +68,16 @@ of where they differ. Pancreatic cysts: Kyoto. Obstetric ultrasound: Perinatal S
 BC. Otherwise CAR wherever CAR has published guidance; where it hasn't, the established
 system (Fleischner; the ACR's LI-RADS, PI-RADS, BI-RADS, TI-RADS, Lung-RADS, O-RADS).
 Judgement calls go to the owner.
+
+The owner's lead rulings so far (batch 1, 2026-11-25):
+- Lung cancer screening: the BC Lung Screening Protocol (v2.0, January 2026) leads;
+  Lung-RADS v2022 becomes the note on where it differs (B1-lung-rads-01). The window
+  setting and the 4B/4X call-the-clinician line are not local practice (B1-lung-rads-22, -37);
+  up to six nodules are measured, as the program says (B1-lung-rads-26).
+- Cystic renal masses: Bosniak 2019 leads for the classes and for management, ahead of
+  CAR 2019, because it is newer (B1-bosniak-01).
+- Incidental adrenal mass: ACR 2017 leads, with the CUA 2023 guideline as a short
+  "differs" note (B1-adrenal-01); avid enhancement is tested at > 120 HU (B1-adrenal-05) and
+  the delayed phase is 15 minutes (B1-adrenal-07).
+- LI-RADS: no BCLC table, only a link (B1-li-rads-21).
+- None of the old guidelines pages was ever institutionally reviewed (B1-guidelines-site-01).

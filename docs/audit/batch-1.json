@@ -62,6 +62,11 @@
         "agrees": false,
         "note": "Reviewer: outdated. The version, year and publisher are stated correctly for v1.1, but v1.1 was superseded by v2022 in November 2022, so the page presents a retired version as current. (lung-rads-1-1, title, p1; lung-rads-2022, title, p1)",
         "resolution": "Management kept: this is the finding the dated notice hangs on; v2022 changed the stepped management of categories 3 and 4A and added category 0's 1–3 month LDCT, so a reader following v1.1 can get a different interval. The reviewer agrees the page presents a retired version as current."
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(Paraphrased.) Lead: the BC Lung Screening Protocol, ahead of Lung-RADS v2022.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -93,6 +98,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). The five rows match v1.1 and are not contradicted by v2022. Under v2022 they are incomplete: category 0 gained a 1-3 month LDCT for suspected infection/inflammation, intervals run from the date of the current exam, and the 4A row omits the PET/CT option for a solid component of 8 mm or more. (lung-rads-1-1, Assessment Categories table, p1, Management column, categories 0-4A; lung-rads-2022, table p1, Management column)",
         "resolution": "Stands as outdated: the reviewer's own note lists the v2022 changes to these rows (category 0's 1–3 month LDCT for suspected infection or inflammation, intervals counted from the current exam, the 4A PET/CT option), which is what outdated means here."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -119,6 +129,11 @@
       "recheck": {
         "agrees": true,
         "note": "Neither version gives 4B a 3-month interval: 4B is immediate diagnostic work-up (chest CT, PET/CT and/or tissue sampling). The row also contradicts the page's own 4B card. v1.1's only short-interval option is a 1-month LDCT for new large nodules. (lung-rads-1-1, Assessment Categories table, p1, 4B Management cell; lung-rads-2022, table p1, 4B Management cell)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -145,6 +160,11 @@
       "recheck": {
         "agrees": true,
         "note": "4X is managed as 4B (diagnostic work-up), not by the underlying category 3 or 4 management. Following the row, a spiculated category 3 nodule would get a 6-month LDCT instead of work-up. (lung-rads-1-1, Assessment Categories table, p1, 4X row (Management and Risk cells merged with 4B), note 10; lung-rads-2022, note 14)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -171,6 +191,11 @@
       "recheck": {
         "agrees": true,
         "note": "The figures for 0 to 4B match v1.1, but v2022 removed malignancy-risk figures altogether. Two items do not match even v1.1: 4X is \"> 15%\" there (not \"Variable\"), and the calculator's \"3X ... 1-2%\" is not a Lung-RADS result. (lung-rads-1-1, Assessment Categories table, p1, Risk of Malignancy column; lung-rads-2022-summary, IV.A, p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -196,6 +221,11 @@
       "recheck": {
         "agrees": true,
         "note": "Every baseline run lands in the category the v1.1 table gives, and v2022 keeps the same baseline thresholds. Only the malignancy-risk line printed with each result is out of date (see piece 05). (lung-rads-1-1, Assessment Categories table, p1, categories 2-4B baseline size criteria; lung-rads-2022, table p1 (same thresholds))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -222,6 +252,11 @@
       "recheck": {
         "agrees": true,
         "note": "The calculator grades every new nodule one category too high (new solid < 4 mm gives 3 not 2, 4 to < 6 mm gives 4A not 3, 6 to < 8 mm gives 4B not 4A) and ignores nodule type, so a new ground-glass nodule of 10 mm returns 4B where the source gives 2. The expected values in the results file agree with the source; the one arguable case is the new 10 mm part-solid nodule with a 3.9 mm solid component (3 or 4A depending on reading), and 4B is wrong on either reading. (lung-rads-1-1, Assessment Categories table, p1, new-nodule criteria in categories 2, 3, 4A, 4B; lung-rads-2022, table p1 (same thresholds))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -248,6 +283,11 @@
       "recheck": {
         "agrees": true,
         "note": "\"3X\", \"4AX\" and \"4BX\" are not Lung-RADS categories: any category 3 or 4 nodule with such features is 4X and is worked up like 4B, yet the calculator keeps the 6-month or 3-month LDCT. An endobronchial nodule is 4A in its own right (v2022: segmental or more proximal), so the 5 mm endobronchial case returning Lung-RADS 2 is an under-call. (lung-rads-1-1, Assessment Categories table, p1, 4X row, 4A \"Endobronchial nodule\", note 10; lung-rads-2022, notes 11a and 14)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -274,6 +314,11 @@
       "recheck": {
         "agrees": true,
         "note": "The form has no input for growth, perifissural/juxtapleural morphology, benign calcification or fat, airway nodules, cysts, stability or an incomplete exam, and prints a category from size alone with no caveat. A growing 6 mm solid nodule is 4A in the source (calculator: 3) and an 8 mm perifissural nodule is 2 (calculator: 4A). This is a judgement call between \"wrong\" and \"incomplete\"; I chose wrong because the output is a definite category. (lung-rads-1-1, Assessment Categories table, p1, categories 0, 1, 2, 4A and notes 11, 12; lung-rads-2022, table p1, categories 0-4B)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -304,6 +349,11 @@
       "recheck": {
         "agrees": true,
         "note": "The first two reasons match v1.1. v2022 added a third reason (suspected infection or inflammation, with a 1-3 month LDCT) that the card lacks. The card's own third bullet (\"dedicated chest CT for findings on non-screening CT\") is in neither version. (lung-rads-1-1, Assessment Categories table, p1, category 0 Findings; lung-rads-2022, table p1, category 0 and note 10)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -330,6 +380,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Matches both versions as far as it goes. It names only complete calcification and fat; central, popcorn and concentric-ring calcification also belong in category 1 (the page puts central calcification in category 2, see piece 13). The \"<1%\" risk line is covered by piece 05. (lung-rads-1-1, Assessment Categories table, p1, category 1 Findings and Management)",
         "resolution": "Changed to correct on the reviewer's reading: the list is incomplete (central, popcorn and concentric-ring calcification are also benign) but categories 1 and 2 share annual screening, so the omission doesn't change management; the misplaced central calcification is B1-lung-rads-13. Stage 3 lists every benign pattern."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -360,6 +415,11 @@
       "recheck": {
         "agrees": true,
         "note": "\"Perivascular\" is in neither version, and the required features (solid, smooth margin, oval/lentiform/triangular shape) are left out, so an 8 mm perivascular or irregular fissural nodule would be called 2 when its size makes it 4A. v2022 widened the rule from perifissural to all juxtapleural nodules. (lung-rads-1-1, Assessment Categories table, p1, category 2 and note 11; lung-rads-2022, table p1, category 2 Juxtapleural nodule; lung-rads-2022-summary I.B)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -386,6 +446,11 @@
       "recheck": {
         "agrees": true,
         "note": "Completely or centrally calcified and fat-containing nodules are category 1 in both versions, not category 2; the card also contradicts the page's own category 1 card. Management is the same (12-month LDCT), so only the reported category changes. (lung-rads-1-1, Assessment Categories table, p1, category 1 Findings; lung-rads-2022, table p1, category 1)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -412,6 +477,11 @@
       "recheck": {
         "agrees": true,
         "note": "The three thresholds and the management match both versions. Omitted: new solid < 4 mm, GGN >= 30 mm unchanged or slowly growing, and category 3 or 4 nodules that are unchanged; the missing \"at baseline\" on part-solid is judged under piece 16. (lung-rads-1-1, Assessment Categories table, p1, category 2 Findings and Management; lung-rads-2022, table p1, category 2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -438,6 +508,11 @@
       "recheck": {
         "agrees": true,
         "note": "Baseline size criteria and management lines match v1.1, and v2022 keeps the same thresholds. The 4A line omits the PET/CT option for a solid component of 8 mm or more; v2022 adds \"referral for further clinical evaluation\" to 4B management. (lung-rads-1-1, Assessment Categories table, p1, categories 3, 4A, 4B Findings and Management; lung-rads-2022, table p1, same rows)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -464,6 +539,11 @@
       "recheck": {
         "agrees": true,
         "note": "Each new-nodule band on the cards is one category too high: new solid < 4 mm is 2 (page: 3), 4 to < 6 mm is 3 (page: 4A), 6 to < 8 mm is 4A (page: 4B); 4B starts at 8 mm. The bands apply to solid nodules, not to all types. Because \"at baseline\" is missing from part-solid < 6 mm in category 2, a new part-solid nodule under 6 mm (category 3) reads as 2. (lung-rads-1-1, Assessment Categories table, p1, new-nodule criteria in categories 2, 3, 4A, 4B; lung-rads-2022, table p1 (same))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -491,6 +571,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced (management). Neither version has any ground-glass criterion in 4A or 4B, by size or by \"radiologist judgment\". A pure ground-glass nodule tops out at category 3 by size and reaches category 4 only as 4X (for example doubling in a year) or by developing a solid component. Borderline with \"wrong\". (lung-rads-1-1, Assessment Categories table, p1, categories 2, 3, 4A, 4B and note 10; lung-rads-2022, table and note 7)",
         "resolution": "Stands as wrong: the page lets a ground-glass nodule be 4A or 4B by 'radiologist judgment', whereas both versions only ever grade a pure ground-glass nodule 2 or 3 (4X aside); that contradicts the source rather than adding to it. The reviewer called it borderline wrong."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -517,6 +602,11 @@
       "recheck": {
         "agrees": true,
         "note": "The box title offers biopsy, which is not 4A management in either version (tissue sampling belongs to 4B/4X), and it conflicts with the card's own \"3-month LDCT\". The card also leaves out the growing solid nodule under 8 mm, the new or growing solid component under 4 mm, and the endobronchial nodule. (lung-rads-1-1, Assessment Categories table, p1, category 4A Findings and Management)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -543,6 +633,11 @@
       "recheck": {
         "agrees": true,
         "note": "Growth alone does not make a nodule 4B: a growing solid nodule under 8 mm is 4A, a growing solid component under 4 mm is 4A, and a slowly growing ground-glass nodule stays 2. Only growing solid nodules of 8 mm or more and growing solid components of 4 mm or more are 4B. (lung-rads-1-1, Assessment Categories table, p1, categories 2, 4A and 4B; note 4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -569,6 +664,11 @@
       "recheck": {
         "agrees": true,
         "note": "The frame (category 3 or 4 plus suspicious features, then work-up) and the lymph node and spiculation items are right. \"Endobronchial lesion\" is not a 4X feature: an endobronchial nodule is 4A by itself. \"Cavity\" is in neither version (v2022 manages a cavitary nodule as a solid nodule), and the GGN that doubles in a year is missing. The source says CT \"with or without contrast\". Partly right; I called it wrong for the endobronchial item. (lung-rads-1-1, Assessment Categories table, p1, 4X row and note 10, 4A \"Endobronchial nodule\"; lung-rads-2022, notes 12d and 14)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -595,6 +695,11 @@
       "recheck": {
         "agrees": true,
         "note": "The mean of long and short axis is right. Rounding to the nearest whole millimetre contradicts both versions, which report the mean to one decimal point; rounding 5.5 mm up to 6 mm or 7.5 mm up to 8 mm moves a nodule up a category. (lung-rads-1-1, note 2; lung-rads-2022, note 4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -613,6 +718,11 @@
       "recheck": {
         "agrees": true,
         "note": "Measuring on lung windows is ordinary practice, but the specific W 1500 / L -600 setting is not in any Lung-RADS document or the BC protocol supplied. (lung-rads-1-1 and lung-rads-2022, whole documents (no window setting given))"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(Paraphrased.) Not a local standard: remove the window setting.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -640,6 +750,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Measuring total diameter and the solid component separately matches the criteria. \"Solid component determines category\" holds only once total diameter is 6 mm or more; under 6 mm total, the total diameter decides (category 2 at baseline). The sources do not say how the solid component itself is measured. Borderline: correct with an over-simple last line. (lung-rads-1-1, Assessment Categories table, p1, part solid rows in categories 2-4B; note 2)",
         "resolution": "Stands as wrong (management): under 6 mm total diameter the total size decides (category 2 at baseline), so 'solid component determines category' can move a small part-solid nodule from 2 (annual) to 3 (6 months). The reviewer called it correct with an over-simple last line."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -662,6 +777,11 @@
       "recheck": {
         "agrees": true,
         "note": "Mean diameter is right. \"Must obscure vessels\" is supported by none of the supplied documents, and it is the reverse of the standard definition (ground glass does not obscure vessels or bronchial margins; an opacity that obscures them is solid). The defining source (Fleischner glossary) is not in audit-sources, so this cannot be verified here, but the line should not stand: it would have solid nodules graded on the 30 mm ground-glass threshold. (lung-rads-1-1 and lung-rads-2022, whole documents (no definition of a non-solid nodule))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -687,6 +807,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches both versions. (lung-rads-1-1, note 5; lung-rads-2022, note 1)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -710,6 +835,11 @@
       "recheck": {
         "agrees": true,
         "note": "Neither Lung-RADS version limits the number of nodules reported. The BC program's figure is six, not three. (lung-rads-1-1 and lung-rads-2022, whole documents; bc-lung-screening-2026, Radiology Report Guidelines, p16)"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "follow programs 6 ",
+        "date": "2026-11-25"
       }
     },
     {
@@ -744,6 +874,11 @@
         "agrees": false,
         "note": "Reviewer: correct. The definition and the \"2S\" example match both versions. The four example findings are not listed in either Lung-RADS document (v2022 points to the ACR incidental findings guide instead), and v2022's rule that known findings need no repeat S is missing. (lung-rads-1-1, Assessment Categories table, p1, S row and note 6; lung-rads-2022, S row and note 15)",
         "resolution": "Changed to correct on the reviewer's reading: the S modifier's definition and example match both versions; v2022's 'no repeat S for known findings' is a reporting detail that doesn't change management. Stage 3 adds it."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -775,6 +910,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced. Neither v1.1 nor v2022 has a C modifier; S is the only modifier. The stated use (\"reserved for incidental CTs in patients with known cancer\") is supported by nothing supplied. The section should go. (lung-rads-1-1, Assessment Categories table, p1 and notes 6-7; lung-rads-2022, table and notes 15-16)",
         "resolution": "Stands as wrong, now with its source traced: the C modifier comes from Lung-RADS v1.0 (2014), where it marked patients with prior lung cancer who return to screening; the page says it is 'not used in standard lung cancer screening', which contradicts v1.0, and v1.1 and v2022 dropped it. The reviewer called it unsourced (no supplied version had it)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -800,6 +940,11 @@
       "recheck": {
         "agrees": true,
         "note": "The principle is right in both versions: size criteria at baseline, separate criteria for new nodules. The new-nodule criteria the reader is sent to are themselves wrong on this page (piece 16). (lung-rads-1-1, note 3 and the \"at baseline\" / \"new\" criteria in the table)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -830,6 +975,11 @@
       "recheck": {
         "agrees": true,
         "note": "A stable category 3 or 4A nodule does not continue \"as per category\": v1.1 downgrades it to 2, and v2022 steps 4A down to 3 and 3 down to 2 with the interval counted from the current exam. Following the page would repeat short-interval CTs indefinitely. (lung-rads-1-1, category 2 and note 12; lung-rads-2022-summary, III.A)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -856,6 +1006,11 @@
       "recheck": {
         "agrees": true,
         "note": "Two errors: the threshold is more than 1.5 mm, not 1.5 mm or more (v2022 adds within 12 months), and growth does not always mean 4B: a growing solid nodule under 8 mm is 4A, a growing solid component under 4 mm is 4A, and a slowly growing ground-glass nodule is 2. (lung-rads-1-1, note 4 and categories 4A/4B; lung-rads-2022, note 6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -884,6 +1039,11 @@
         "agrees": false,
         "note": "Reviewer: not-lead (management). Volume doubling time is not used anywhere in Lung-RADS v1.1 or v2022. The 400-day threshold is the BC Cancer protocol's line for category 4 (diagnostic referral) on existing nodules, so on a page that says it follows Lung-RADS unmodified it is another program's rule. If the owner makes BC the lead it becomes correct, with the 400-600 and > 600 day bands added. Borderline with \"unsourced\". (bc-lung-screening-2026, BC Lung Screening Protocol Version 2.0 table, p15; Lung-RADS v1.1 and v2022 (no volume doubling time))",
         "resolution": "Management flag added on the reviewer's reading: the 400-day doubling-time line is the BC program's referral threshold for existing nodules, so applying it on a Lung-RADS page changes referral."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -911,6 +1071,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Age, pack-years, quit window and shared decision-making match USPSTF 2021. The stop list omits USPSTF's \"once a person has not smoked for 15 years\". Not an error but relevant to the owner: the BC program's eligibility is different (ages 55 to 74, PLCOm2012 6-year risk of 1.5% or more). (uspstf-lung-2021 (.txt lines 96, 112, 197-198, 279); bc-lung-screening-2026, 2.1 and 2.1.2, p9)",
         "resolution": "Stands as not-lead pending the owner's lead choice (B1-lung-rads-01): the content matches USPSTF 2021 (the reviewer agrees), but USPSTF is US guidance and the BC program sets eligibility here (ages 55–74, PLCOm2012 6-year risk ≥1.5%)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -937,6 +1102,11 @@
       "recheck": {
         "agrees": true,
         "note": "References 2 and 3 are cited correctly (NLST as listed in the USPSTF statement; USPSTF as JAMA 2021;325(10):962-970). Reference 1 cites the superseded v1.1. The USPSTF and NCCN links go only to home pages; the Fleischner link could not be checked against a source. (lung-rads-2022, title; docs/audit/sources.json (uspstf-lung-2021 citation); uspstf-lung-2021 reference list (.txt line 294))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -958,7 +1128,12 @@
       ],
       "verdict": "correct",
       "management": false,
-      "home": "Lung cancer screening › Reporting"
+      "home": "Lung cancer screening › Reporting",
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
+      }
     },
     {
       "id": "B1-lung-rads-36",
@@ -985,6 +1160,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). v1.1 does not prescribe a plane, so \"use axial\" was never from the version the page claims, and v2022 states the opposite: measure in whichever plane shows the true size. (lung-rads-2022, note 4; lung-rads-1-1, note 2 (silent on plane))",
         "resolution": "Changed to wrong on the reviewer's reading: v1.1 prescribes no plane, so 'use axial' never came from the version the page claims, and v2022 says to measure in the plane that shows the true size."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1008,6 +1188,11 @@
       "recheck": {
         "agrees": true,
         "note": "Neither instruction is in a Lung-RADS document. Both are sensible reporting practice and have loose parallels in the BC program document, which words them differently (current smoking status; direct notification is optional and goes to the diagnostic site, with results otherwise sent by the program). (lung-rads-1-1 and lung-rads-2022, whole documents; bc-lung-screening-2026, 2.2.1 p11 and 5.8 p19)"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(Paraphrased.) Not local practice: no convention to keep.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1034,6 +1219,11 @@
       "recheck": {
         "agrees": true,
         "note": "The 2019 v1.1 row is right. The table stops there and omits v2022 (November 2022). The 2014 date for v1.0 cannot be checked: no v1.0 document is in audit-sources. (lung-rads-1-1, title; lung-rads-2022, title)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1052,6 +1242,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced. The page did not exist before 2026-02-28, so an \"initial implementation at institution\" on 2024-01-15 and a \"last updated\" of the same date cannot be true. \"Radiology QI Committee\" and radiology_qi@institution.edu are template placeholders (no institution is named). Remove. (~/Code/_archive/guidelines_manager git history; docs/pulmonary/lung_rads.md lines 346, 360)",
         "resolution": "Stands as drop: the reviewer calls the placeholder history row and footer unsourced and also says remove; drop is the action."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1074,6 +1269,11 @@
       "recheck": {
         "agrees": true,
         "note": "The quotation is faithful and the label truthfully describes the linked page, but it advertises a superseded version; the summary is accurate. It should read v2022 once the page is rebuilt (or the BC protocol's name if the owner chooses that as lead). (shared/data/resources.ts, id lung-rads (lines 30-38); lung-rads-2022, title)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1096,6 +1296,11 @@
       "recheck": {
         "agrees": true,
         "note": "The title and the overview sentence name the right document and year; the paper is the 2017 update of the adrenal part of the 2010 white paper. No newer ACR version is among the audit sources. (acr-adrenal-2017, title page (p1) and abstract)"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "Yes i'd like to see these CUA guidelines",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1117,6 +1322,11 @@
       "recheck": {
         "agrees": true,
         "note": "Both formulas and the ≤10 HU first step match the source, and the arithmetic of the four runs is right (37/60 = 61.7%, 37/100 = 37%, 40/55 = 72.7%; 10 HU benign, 10.1 HU goes on). (acr-adrenal-2017, Adrenal CT Protocol, p5; Masses With Diagnostic Benign Imaging Features, p4; Fig 1, p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1143,6 +1353,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source's cut-offs are inclusive (≥60%, ≥40%); the calculator tests >60 and >40, so APW exactly 60% (40/100/64) is called indeterminate when the source calls it a benign adenoma. The strict > wording is what the CUA 2023 text uses ('relative washout >40% and an absolute washout >60%'), but the page claims ACR 2017. (acr-adrenal-2017, Adrenal CT Protocol, p5; Fig 1, p3 (box 'APW/RPW ≥60/40%'))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1166,6 +1381,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source uses RPW only when there is no unenhanced value; the calculator demands an unenhanced value yet lets RPW >40% overrule an APW below 60% (20/90/50, APW 57.1%, called adenoma), and offers no RPW-only route. An empty unenhanced value read as 0 HU and reported as a lipid-rich adenoma is plainly wrong, though only reachable from the address. Fig 1's 'APW/RPW ≥60/40%' box does not itself say which measure applies, so the 'rescue' part rests on the p5 sentence. (acr-adrenal-2017, Adrenal CT Protocol, p5; Fig 1, p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1189,6 +1409,11 @@
       "recheck": {
         "agrees": true,
         "note": "The washout step in Fig 1 has three outcomes and the calculator has only two: a mass rising 9.9 HU is sent to the metastasis/pheochromocytoma/carcinoma wording and one rising 6 HU is called a lipid-poor adenoma, where the source says cyst or hemorrhage, no follow-up. The avid-enhancement caution (150 HU) is also absent. (acr-adrenal-2017, Fig 1, p3 ('No enhancement (<10 HU) = cyst or hemorrhage' → 'Benign, no F/U'); Adrenal CT Protocol, p5–6)"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "use > 120 HU",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1211,6 +1436,11 @@
       "recheck": {
         "agrees": true,
         "note": "Nothing in the wording contradicts the source, but it is incomplete: the adenoma results omit 'no follow-up', and the failed-washout result gives a differential instead of the source's next step (imaging follow-up, biopsy, PET-CT or resection depending on the scenario). 'Lipid-rich adenoma' is the source's term; 'lipid-poor adenoma' is not used in the ACR paper (it says 'benign adenoma'). Borderline between correct and incomplete. (acr-adrenal-2017, Fig 1, p3; Masses With Diagnostic Benign Imaging Features, p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1234,6 +1464,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source's delayed scan is at 15 minutes and its 60%/40% cut-offs are stated for 15-minute values; a 10-minute delay is not in ACR 2017 (nor in CUA 2023, which also says 15 minutes). 'Portal venous phase' is a fair label for the 60–90 second acquisition, though the source just calls it enhanced. (acr-adrenal-2017, Adrenal CT Protocol, p5)"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "use 15min",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1257,6 +1492,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced (management). The no-cancer result agrees in effect (the source says 'need not be pursued', not 'benign'), but the size is the short axis and the field does not say so. The 'with known malignancy ... consider follow-up' result has no basis in the source, which makes no cancer exception under 1 cm. (acr-adrenal-2017, Five Common Principles, item 1, p4; Fig 1 entry box '(≥1 cm)', p3)",
         "resolution": "Stands as wrong: ACR 2017 principle 1 (p4) says a mass under 1 cm in short axis need not be pursued and makes no cancer exception, so the page's 'consider follow-up if known malignancy' contradicts it; the reviewer agrees on the substance and calls it unsourced."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1279,6 +1519,11 @@
       "recheck": {
         "agrees": true,
         "note": "≤10 HU inclusive is the source's cut-off, and in Fig 1 the diagnostic-features branch comes before any cancer-history split, so 2.0 cm/10 HU with cancer is rightly an adenoma. A blank HU going to the indeterminate branch is consistent with the source (adrenal CT starts with an unenhanced scan). (acr-adrenal-2017, Fig 1, p3 (Diagnostic Benign Imaging Features box); p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1305,6 +1550,11 @@
       "recheck": {
         "agrees": true,
         "note": "In the source ≤10 HU is diagnostic at any size and sits before the size split; the calculator sends a 5 cm, 5 HU mass to resection. CUA 2023 differs here (rec 14.1: radiologically benign <10 HU but >4 cm, repeat imaging in 6–12 months), but neither source supports resection. (acr-adrenal-2017, Masses With Diagnostic Benign Imaging Features, p4; Fig 1, p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1327,6 +1577,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source's bands are ≥1 to <4 cm and ≥4 cm; the calculator puts exactly 4.0 cm in the lower band, so a 4.0 cm indeterminate mass gets washout/follow-up advice instead of 'consider resection'. (acr-adrenal-2017, Fig 1, p3 (boxes '≥1-<4 cm' and '≥4 cm'); Masses Without Diagnostic Features (≥4 cm), p5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1349,6 +1604,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source splits this group by size: 1–2 cm is 'probably benign, consider 12 month F/U adrenal CT' (no immediate washout study), and only >2 to <4 cm goes to adrenal CT now. The calculator gives the >2 cm pathway to every size from 1.0 to 4.0 cm, and drops resection as an alternative to the 6–12-month follow-up. (acr-adrenal-2017, Fig 1, p3 (No Prior imaging, No Cancer Hx); p5, first paragraph)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1372,6 +1632,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Broadly matches: adrenal CT (footnote 4 allows chemical-shift MRI), then biopsy, PET-CT or resection if not an adenoma. Simplifications: the source recommends adrenal CT first and reserves PET/CT or biopsy up front for central necrosis rather than listing PET/CT as an equal first choice, applies the branch to an isolated mass (no other metastases), and also lists imaging follow-up after a failed washout. (acr-adrenal-2017, Fig 1, p3 (No Prior imaging, + Cancer Hx & isolated adrenal mass); p5, second paragraph; PET/CT, p6)",
         "resolution": "Stands as wrong (management): ACR 2017 p4 recommends a dedicated adrenal CT for a 1 to <4 cm mass without benign features in a patient with cancer, and keeps biopsy or PET/CT for central necrosis; the page offers PET/CT as an equal first test, which changes the test ordered. The reviewer called it a simplification."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1393,6 +1658,11 @@
       "recheck": {
         "agrees": true,
         "note": "For a 4.1 cm indeterminate mass with no cancer history the result matches the source: resection without biopsy, biochemical evaluation first. (The '> 4 cm' label against the source's ≥4 cm is the boundary error in piece 11.) (acr-adrenal-2017, Fig 1, p3 ('≥4 cm' → 'No Cancer Hx: Consider resection', footnote 1); Masses Without Diagnostic Features (≥4 cm), p5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1415,6 +1685,11 @@
       "recheck": {
         "agrees": true,
         "note": "With a cancer history the source says biopsy or PET-CT; the calculator ignores the history above 4 cm and says resection and 'Do NOT biopsy', the opposite of the source for this group. (acr-adrenal-2017, Fig 1, p3 ('≥4 cm' → '+ Cancer Hx: Consider Bx or PET-CT'); PET/CT, p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1437,6 +1712,11 @@
       "recheck": {
         "agrees": true,
         "note": "Prior imaging is the first split for an indeterminate 1 to <4 cm mass in the source and the calculator has no way to enter it: a mass stable for 3 years is told to have washout CT/MRI (source: benign, no follow-up) and an enlarging one gets the same routine advice (source: biochemical evaluation and follow-up adrenal CT or resection). (acr-adrenal-2017, Fig 1, p3 (Prior imaging branch); Masses Without Diagnostic Features (≥1 to <4 cm), p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1455,7 +1735,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Optional: add ACR's scope (adults ≥18, asymptomatic, imaged for an unrelated reason; each mass of a bilateral pair assessed separately).",
-      "home": "Incidental adrenal mass › Applies to"
+      "home": "Incidental adrenal mass › Applies to",
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
+      }
     },
     {
       "id": "B1-adrenal-18",
@@ -1478,6 +1763,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced (management). 'No follow-up' agrees in effect with the source (which says 'need not be pursued', short axis, not 'benign'). The exception for known malignancy is not in the source. (acr-adrenal-2017, Five Common Principles, item 1, p4)",
         "resolution": "Stands as wrong, for the same reason as B1-adrenal-08 (ACR 2017 principle 1, p4: no cancer exception under 1 cm)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1500,6 +1790,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source's bands are ≥1 to <4 cm and ≥4 cm; the page's '1 - 4 cm' and '> 4 cm' put a 4.0 cm mass in the wrong band (or neither). (acr-adrenal-2017, Fig 1, p3; section headings p4–5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1526,6 +1821,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source's benign cut-off is ≤10 HU and indeterminate is >10 HU; the page text says <10 and >10, leaving exactly 10 HU unclassified, and disagrees with the page's own calculators (≤10). CUA 2023 does write '<10 HU' / '≥10 HU', but the page claims ACR 2017. (acr-adrenal-2017, Fig 1, p3; Reporting Considerations, p3; p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1548,6 +1848,11 @@
       "recheck": {
         "agrees": true,
         "note": "The source lists macroscopic fat (myelolipoma), no enhancement (cyst or hemorrhage), calcification, ≤10 HU and signal loss on chemical-shift MRI as diagnostic benign features, applied before the size split and at any size. The page gives only the HU criterion, only for 1–4 cm, so a benign-featured mass over 4 cm reads as 'resection'. (acr-adrenal-2017, Fig 1, p3 (Diagnostic Benign Imaging Features box); Masses With Diagnostic Benign Imaging Features, p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1570,6 +1875,11 @@
       "recheck": {
         "agrees": true,
         "note": "Same fault as the calculator (piece 12): the source's 1–2 cm versus >2 to <4 cm split is missing, so a 1–2 cm mass is sent to immediate washout CT/MRI instead of a 12-month follow-up adrenal CT; resection as the alternative to 6–12-month follow-up is omitted. The >2 to <4 cm pathway itself is right. (acr-adrenal-2017, Fig 1, p3 (No Prior imaging, No Cancer Hx); p5, first paragraph)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1592,6 +1902,11 @@
       "recheck": {
         "agrees": true,
         "note": "The statement matches the source. Its placement under 'No history of cancer' only is narrower than the source, where stability ≥1 year on prior imaging is not split by cancer history. (acr-adrenal-2017, Fig 1, p3 ('Stable ≥1 year' → 'Benign, no F/U'); Masses Without Diagnostic Features (≥1 to <4 cm), p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1615,6 +1930,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Broadly matches the source, with the same simplifications as piece 13: adrenal CT is the recommended first test (PET/CT or biopsy up front for central necrosis, or after an indeterminate adrenal CT), the branch is for an isolated mass, and imaging follow-up is also an option after a failed washout. (acr-adrenal-2017, Fig 1, p3; p5, second paragraph; PET/CT, p6)",
         "resolution": "Stands as wrong (management), for the same reason as B1-adrenal-13."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1637,6 +1957,11 @@
       "recheck": {
         "agrees": true,
         "note": "Right for a patient with no cancer history, but stated for every mass over 4 cm: with a cancer history the source says biopsy or PET-CT, not resection. Also ≥4 cm, not >4 cm, and only when there are no diagnostic benign features. (acr-adrenal-2017, Fig 1, p3 ('≥4 cm' box); Masses Without Diagnostic Features (≥4 cm), p5; PET/CT, p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1662,6 +1987,11 @@
       "recheck": {
         "agrees": true,
         "note": "Both statements match the source. The stated reason '(risk of seeding)' is not in ACR 2017; CUA 2023 gives it ('potential risk of tumor seeding the needle tract'). Read with piece 25, the no-biopsy rule applies to the no-cancer-history group. (acr-adrenal-2017, Fig 1 footnote 1, p3; Masses Without Diagnostic Features (≥4 cm), p5; Adrenal Mass Biopsy, p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1688,6 +2018,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches the source's hedged position (it advises 'consideration' for 'most' masses and cites endocrine societies recommending it for all). 'Especially if > 1 cm' is not the source's wording; its algorithm simply starts at ≥1 cm. (acr-adrenal-2017, Endocrine Evaluation, p6–7)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1713,6 +2048,11 @@
       "recheck": {
         "agrees": true,
         "note": "The two tests are the ones the source names, though it presents them as 'one approach', not a standard, and does not give the 1 mg overnight dose (that is in CUA 2023, rec 6.2). Renin/aldosterone for hypertensive patients is left out. Difference note: CUA 2023 suggests against pheochromocytoma screening for an unequivocal adenoma <10 HU without symptoms (rec 8.1). (acr-adrenal-2017, Endocrine Evaluation, p7)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1734,6 +2074,11 @@
       "recheck": {
         "agrees": true,
         "note": "Authors, title, journal and year match the document. The audit copy is the in-press PDF ('Volume - Number - Month 2017'), so volume 14(8) and pages 1038-1044 cannot be confirmed from the primary document itself; they agree with the citation recorded in sources.json. (acr-adrenal-2017, title page p1 (in-press PDF); docs/audit/sources.json)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1756,6 +2101,11 @@
       "recheck": {
         "agrees": true,
         "note": "The row is quoted faithfully and describes the page: ACR 2017 is the version the page states, and it has the two calculators. The summary says 'on CT' where the source covers masses found on CT or MRI; a minor narrowing. The calculators it advertises have the errors in pieces 03–05, 08, 10–12, 15 and 16. (shared/data/resources.ts, id adrenal; acr-adrenal-2017, abstract p1)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1783,6 +2133,11 @@
       "recheck": {
         "agrees": true,
         "note": "The citation (Radiology 2019;292(2):475-488) and 'CT and MRI' describe the paper correctly, but 'Modifications: None - following published v2019 criteria' is false: the page's criteria (perceived enhancement, 3 cm cut-off for hyperattenuating cysts, thick calcification as IIF, measurable enhancement = III/IV) are the pre-2019 classification of the paper's Table 1, which is also what CAR 2019 Table 1 prints. The page has no MRI criteria at all. Management flag left false because the harm arrives through the content pieces, not the label itself. (bosniak-2019, Table 1 (current classification) vs Table 2 (version 2019); sections 'Bosniak II' and 'Bosniak IIF')"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "I'd use the. bosniak 2019 criteria and management to supercede CAR since bosniak is newer.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1801,7 +2156,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Optional: drop \"incidentally detected\" (the classification applies to any cystic renal mass once infectious, inflammatory and vascular causes and necrotic solid masses are excluded, Table 2 footnote *); the incidental-mass scope belongs to the CAR/ACR management.",
-      "home": "Cystic renal masses › Background"
+      "home": "Cystic renal masses › Background",
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
+      }
     },
     {
       "id": "B1-bosniak-03",
@@ -1827,6 +2187,11 @@
       "recheck": {
         "agrees": true,
         "note": "In v2019 enhancement alone never sets the class; wall/septal thickness, number and nodules do. The calculator sends any measurable enhancement to III/IV (thin enhancing wall should be I, 1-3 thin enhancing septa II, >=4 thin enhancing septa IIF) and any 'perceived' enhancement to IIF (should be I or II for a thin wall or few thin septa); v2019 also has no separate 'perceived/equivocal <20 HU' state (not clearly visible and not measurable = nonenhancing). I checked the expected column for the six quoted runs against Table 2 and agree. Under CAR 2019's pre-2019 table, measurable enhancement = III/IV does match, but 'perceived -> IIF whatever else' is still wrong for a few hairline-thin septa (II), and the option equates 'perceived' with CAR's 'equivocal' (>10 to <20 HU), which CAR does not. (bosniak-2019, Table 3 'Enhancement'; Table 2 classes I, II, IIF; section 'Proposed Solutions...'. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1853,6 +2218,11 @@
       "recheck": {
         "agrees": true,
         "note": "Fine calcification -> II is right. Thick/nodular calcification with no enhancement -> IIF with 5 years of follow-up contradicts v2019, where it is class II (no follow-up), with MRI suggested first only if abundant calcification could hide enhancing elements. CAR 2019 Table 1 (pre-2019) would give IIF (\"calcification that may be thick and nodular\"), so the calculator matches CAR's table, not the version the page claims. (bosniak-2019, section 'Bosniak II'; Table 2 class II type 1 and dagger footnote. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1879,6 +2249,11 @@
       "recheck": {
         "agrees": true,
         "note": "v2019 has no size cut-off: a homogeneous nonenhancing >20 HU mass at renal mass protocol CT is class II at any size (MRI may be used first when >3 cm, dagger footnote), so the >3 cm -> IIF branch and the 'size required' label contradict the claimed version; the <=3 cm and blank-size results are II and so happen to agree. Under CAR 2019 Table 1 the cut-off stands (II '< 3 cm', IIF '> 3 cm'; exactly 3.0 cm is unassigned in CAR, '<= 3 cm' in Bosniak 2019 Table 1), and a blank size silently treated as 0 -> II is then not supportable. Minor: the label's '>20 HU on unenhanced CT' is the pre-2019 hyperdense-cyst wording; v2019's unenhanced-only class II type is >=70 HU. (bosniak-2019, section 'Bosniak II'; Table 2 class II types 2-3 and dagger footnote. car-renal-2019, Table 1, p. 131; bosniak-2019 Table 1)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1905,6 +2280,11 @@
       "recheck": {
         "agrees": true,
         "note": "Code confirmed: with no enhancement and high attenuation = yes, the class comes from size alone and septa, wall and calcification are never read. Under v2019 a hyperattenuating mass with >=4 septa is not homogeneous, so it is not class II type 3 and should go to MRI, not 'II, no follow-up'; with thick calcification v2019 Table 2 does allow II ('may have calcification of any type'), so that run is acceptable for v2019. Under CAR 2019's table both runs should be IIF (multiple septa; thick nodular calcification) by the highest-class rule; note that rule is stated in Bosniak 2019 ('similar to the current classification'), not in CAR itself. A thickened or irregular wall is ignored in the same way. (bosniak-2019, Table 3 'Homogeneous'; Table 2 class II type 3, asterisk and dagger footnotes; section 'General Points'. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1931,6 +2311,11 @@
       "recheck": {
         "agrees": true,
         "note": "One option merges irregular thickening (class III in v2019 and in CAR 2019's table) with nodules/soft tissue (class IV), and the calculator returns IV with 'surgical excision or ablation ... malignant until proven otherwise' for all of them. An enhancing irregular wall or septum without a nodule is III in both sources, so the class and the stated risk (>75% vs about 50%) are overstated. CAR gives the same answer as v2019 here (III). (bosniak-2019, Table 2 classes III and IV; Table 3 'Irregular thickening' and 'Nodule'; Fig 3. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1957,6 +2342,11 @@
       "recheck": {
         "agrees": true,
         "note": "Against v2019: 'thin' is <=2 mm (the option says <2 mm), there is no option for the 3 mm 'minimally thickened' wall that defines IIF, and '>=4 mm' is v2019's 'thick' (class III when enhancing). The septa count is labelled for non-enhancing lesions and ignored when enhancement is measurable, whereas v2019 counts enhancing septa. Nonenhancing >=4 septa or a nonenhancing thickened wall is returned as IIF, but v2019 requires IIF walls/septa to enhance and treats such CT appearances as heterogeneous, to be seen at MRI before a class is given (the source words this as 'might best be', and its asterisk footnote lets undefined combinations 'warrant inclusion into Bosniak IIF', so IIF is a tolerable fallback rather than a dangerous answer). Under CAR 2019's table these runs are IIF and match ('multiple hairline-thin septa'; 'minimal thickening of wall or septa ... no measurable contrast enhancement'), though CAR gives no millimetre values and >=4 mm is not 'minimal'. (bosniak-2019, section 'Bosniak IIF'; Table 2 classes I-III and dagger footnote; Table 3 'Thin', 'Minimally thickened', 'Thick'. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -1979,6 +2369,11 @@
       "recheck": {
         "agrees": true,
         "note": "Confirmed on the page and in the form: the page says 'Modality: CT and MRI' and 'following published v2019 criteria', but the form has six CT-style inputs and nothing for T2/T1 signal or for the four attenuation-only class II types that v2019 added. The MRI-only IIF type (heterogeneous T1 hyperintensity, added because some papillary cancers look like this) cannot be entered; described with the inputs available it comes out as I or II with 'no follow-up'. This is an omission against the claimed version rather than a false statement. CAR 2019's Table 1 has no MRI or attenuation-only classes either (it handles -10 to 20 HU and >=70 HU masses in its flowcharts), so under CAR this is not a gap in the classification. (bosniak-2019, Table 2 (CT class II types 2, 4, 5, 6; MRI column, class II types 2-3 and class IIF type 2); section 'Bosniak IIF')"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2009,6 +2404,11 @@
       "recheck": {
         "agrees": true,
         "note": "Features and 'No follow-up' agree with v2019 and with CAR 2019. The wording is the pre-2019 one: v2019 replaces 'hairline-thin' with 'thin (<=2 mm)', defines water density as -9 to 20 HU and allows the thin wall to enhance; worth updating but not a contradiction. Risk figure judged under B1-bosniak-18. (bosniak-2019, Table 2 class I; section 'Bosniak I'; Table 4. car-renal-2019, Table 1 and Flowchart 4, pp. 128, 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2035,6 +2435,11 @@
       "recheck": {
         "agrees": true,
         "note": "'<=3 thin septa' and 'No follow-up' are right, but the row is the pre-2019 class II: v2019 allows calcification of any type (not only fine), has no 3 cm limit on homogeneous nonenhancing hyperattenuating masses, lets the septa and wall enhance, and adds the attenuation-only and MRI types. Read with the IIF rows, the row sends thick calcification and >3 cm hyperdense cysts to 5 years of imaging that v2019 does not ask for. CAR 2019 Table 1 agrees with the row as written (CAR says '< 3 cm' where the page says '<=3 cm'). (bosniak-2019, Table 2 class II (six CT types, three MRI types); section 'Bosniak II'. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2061,6 +2466,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Both rows name real v2019 IIF features ('>=4' is v2019's own definition of 'many'), and CAR 2019's table also puts them in IIF. They are incomplete rather than wrong: v2019 defines 'minimally thickened' as 3 mm and requires the wall or septa to enhance (nonenhancing ones at CT go to MRI first), and neither qualifier is given; the page's own calculator treats these as non-enhancing features (see B1-bosniak-08). Borderline between correct and wrong; I judged the rows as written. Risk and follow-up columns are judged under 18 and 15. (bosniak-2019, Table 2 class IIF; section 'Bosniak IIF'; Table 3 'Many', 'Minimally thickened'. car-renal-2019, Table 1, p. 131)",
         "resolution": "Changed to correct on the reviewer's reading: '≥4 thin septa' and 'minimally thickened septa or wall' are real IIF features in v2019 and in CAR's table; the missing qualifiers (3 mm; must enhance, nonenhancing ones to MRI first) are covered by the calculator findings B1-bosniak-03 and -08 and go into stage 3's table."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2087,6 +2497,11 @@
       "recheck": {
         "agrees": true,
         "note": "Both are pre-2019 IIF criteria that v2019 explicitly moved to class II (no follow-up; MRI may be done first to exclude hidden enhancement). On a page that claims v2019 they produce 5 years of imaging the cited paper does not call for. CAR 2019 Table 1 gives IIF for both ('calcification that may be thick and nodular'; 'non-enhancing high-attenuating renal lesions (> 3 cm)'), so they are right under CAR's table and wrong under the claimed version. (bosniak-2019, section 'Bosniak II'; Table 2 class II types 1 and 3, dagger footnote. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2117,6 +2532,11 @@
       "recheck": {
         "agrees": true,
         "note": "v2019 abolished 'perceived' enhancement as a class feature: a feature either enhances (clearly visible, or >=20 HU / >=15% signal) or does not, and enhancement of a thin wall or few thin septa is still class I/II. So 'perceived (equivocal) enhancement = IIF' is not a v2019 criterion. It is also wrong as a blanket rule under CAR 2019's pre-2019 table, where perceived enhancement of a few hairline-thin septa is class II, and it contradicts the page's own class II card ('no enhancement, or perceived'). The page also equates 'perceived' (visibly enhancing but not measurable) with 'equivocal, <20 HU' (CAR's >10 to <20 HU), which are different ideas in both sources. (bosniak-2019, Table 3 'Enhancement'; section 'Proposed Solutions...'. car-renal-2019, Table 1, p. 131 and 'Background', p. 126)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2152,6 +2572,11 @@
         "agrees": false,
         "note": "Reviewer: not-lead (management). The page's wording tracks the ACR 2017 text (CT/MRI, 'first semiannually then annually'). The lead, CAR 2019, differs: ultrasound is the preferred follow-up modality when the mass can be seen well (alternating with CT/MRI for more complex IIF), studies are at 6 AND 12 months and then yearly to 5 years, no morphologic change at 5 years ends workup, and morphologic change goes to urology. The page never states the 12-month study ('6 mo, then annually' can be read as 6, 18, 30 months), although CAR, ACR Fig 3 and Bosniak 2019 Table 4 all say 6 and 12 months, and it gives no end-point or action on change. (car-renal-2019, Flowchart 4, p. 128, and text pp. 130-131. acr-renal-2017, Fig 3, p. 3, and 'Flowchart 3' text. bosniak-2019, Table 4)",
         "resolution": "Stands as wrong (management): '6 mo, then annually' omits the 12-month study that CAR Flowchart 4, ACR Fig 3 and Bosniak 2019 Table 4 all state, and leaves out CAR's ultrasound option and end-point. The reviewer called it not-lead because the wording tracks ACR 2017's text."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2178,6 +2603,11 @@
       "recheck": {
         "agrees": true,
         "note": "The III row's 'smooth thick (>=4 mm) enhancing wall or septa' is correct for v2019 but leaves out the other half of class III, enhancing irregular walls or septa. The IV row then places 'enhancing irregular ... wall or septa' in class IV, which contradicts v2019 (irregular thickening = III; only nodules = IV) and also CAR 2019's table (III = 'thickened irregular or smooth walls or septa'; IV = 'distinct enhancing soft-tissue components independent of the wall or septa'). 'Nodular' and 'enhancing solid tissue' in IV are fine. CAR gives the same answer as v2019. (bosniak-2019, Table 2 classes III and IV; Table 3 'Irregular thickening', 'Nodule'; sections 'Bosniak III', 'Bosniak IV'. car-renal-2019, Table 1, p. 131)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2213,6 +2643,11 @@
         "agrees": false,
         "note": "Reviewer: not-lead (management). Urology referral for III and IV is what the lead (CAR 2019) says, and it says no more than that. The page goes further and names the treatment: tab title '(Surgical)', III 'surgical excision or nephron-sparing surgery generally recommended', IV 'surgical excision or ablation'. That is the older treat-all approach closest to ACR 2017 ('referred for treatment'); it is not in CAR, it is not in the cited Bosniak 2019 paper (which only says 'consider urology consultation' and argues that cystic masses are overtreated), and CUA 2023 now prefers active surveillance for III/IV <=2 cm with ablation only 'in select cases'. 'Malignant until proven otherwise' for IV does appear in CUA 2023. Ablation as a co-equal option for IV is not supported by any of the four documents. The card heading 'Bosniak IV - Malignant' overstates (about 90%; 'some Bosniak IV masses are benign'). (car-renal-2019, Flowchart 4, p. 128, and p. 131. acr-renal-2017, 'Flowchart 3' text. bosniak-2019, Table 4 and Introduction. cua-cystic-renal-2023, Table 1 and active-surveillance recommendations)",
         "resolution": "Management flag added on the reviewer's reading: the page names surgery or ablation as the default for III and IV, where the lead (CAR 2019) says refer to urology (and CUA 2023 prefers active surveillance for small III/IV), so it can change the next step."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2244,6 +2679,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced. Only 'III ~50%' matches the cited paper. 'II ~2%' is in none of the documents (Bosniak 2019 <1%; CAR 6%; CUA <5%), 'IIF ~5-15%' is in none (Bosniak 2019: unknown; CAR 6.7%; CUA about 7%, 28% of operated), and 'IV >75%' understates what every document gives (about 90%; CAR 91%; CUA 80-90%). 'I <1%' is consistent with the paper's view that class I cysts are benign, though CAR's table prints 3.2%. The footnote 'pooled surgical series' fits CAR's column (its reference 41), but the page's numbers are not CAR's. The set as printed has no single published source among those supplied. (bosniak-2019, section 'Variable Reported Malignancy Rates' and sections 'Bosniak IIF/III/IV'. car-renal-2019, Table 1, p. 131. cua-cystic-renal-2023, Table 2 text)",
         "resolution": "Stands as wrong: 'IV >75%' understates the ~90% every document gives, which contradicts them; 'II ~2%' and 'IIF ~5–15%' appear in none (the reviewer calls the set unsourced; only 'III ~50%' matches)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2267,6 +2707,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). The quotation is faithful. The cards mostly repeat the summary table (they could be treated as a duplicate of pieces 10-17) and carry the same pre-2019 content, plus points of their own: class I 'No enhancement' (v2019: the thin wall may enhance); class II limited to fine calcification and <=3 cm; IIF listing thick calcification, >3 cm hyperdense cysts and perceived enhancement (all class II or not a criterion in v2019); irregular walls/septa under IV instead of III; '5 years' follow-up without the 12-month study. The II card allows 'perceived' enhancement while the IIF card and the enhancement box make perceived enhancement IIF, so the page contradicts itself. Under CAR 2019's table the I, II and IIF cards are close to correct (apart from the blanket 'perceived = IIF'); the IV card's 'irregular' is wrong under CAR as well. (bosniak-2019, Table 2 classes I-IV; sections 'Bosniak I', 'Bosniak II', 'Bosniak IV'. car-renal-2019, Table 1, p. 131)",
         "resolution": "Changed from duplicate to wrong (management) on the reviewer's reading: the cards repeat the table but add errors of their own (class I 'No enhancement'; class II allowing perceived enhancement while IIF makes it IIF)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2297,6 +2742,11 @@
       "recheck": {
         "agrees": true,
         "note": "The >=20 HU threshold for measurable enhancement is right in both Bosniak 2019 and CAR 2019. Two things to add when rewriting, neither a contradiction of the number: v2019 also counts enhancement that is clearly visible without measurement, so '>=20 HU' is not the whole definition; and CAR adds bands the page does not give (<=10 HU nonenhancing, >10 to <20 HU equivocal). (bosniak-2019, section 'Proposed Solutions...' and Table 3 'Enhancement'. car-renal-2019, 'Background', p. 126)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2323,7 +2773,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Optional: add \"intrarenal, <1.5 cm\" and that MRI is not subject to pseudoenhancement (ACR 2017 p. 10).",
-      "home": "Cystic renal masses › Measurement"
+      "home": "Cystic renal masses › Measurement",
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
+      }
     },
     {
       "id": "B1-bosniak-22",
@@ -2354,6 +2809,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). Half right: clearly visible enhancement on subtraction or post-contrast images does count as enhancement in both documents. But MRI is not assessed only qualitatively: both Bosniak 2019 and CAR 2019 give a quantitative criterion (>=15% signal-intensity increase, same technique), and Bosniak 2019's Fig 5 is a papillary RCC whose enhancement was not visible and was found only by measurement. The page omits this, and calls visible enhancement 'measurable', which reverses the sources' terms (visible = perceived; ROI-confirmed = measurable). Borderline wrong/incomplete; CAR and v2019 agree with each other here. (bosniak-2019, section 'Proposed Solutions...'; Fig 5 legend. car-renal-2019, 'Background', p. 126)",
         "resolution": "Management flag added on the reviewer's reading: assessing MRI enhancement only by eye misses the ≥15% signal-intensity criterion both Bosniak 2019 and CAR 2019 give, which can change the class."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2384,6 +2844,11 @@
       "recheck": {
         "agrees": true,
         "note": "Supported in substance. 'Incidental' is the scope of the CAR/ACR management algorithms rather than of the Bosniak classification itself (which applies to any cystic renal mass), and tuberous sclerosis is not named in any of the documents but falls under ACR's 'genetic syndromes that predispose'. Missing and worth adding: the classification applies only after infectious, inflammatory and vascular causes and necrotic solid masses are excluded (Bosniak 2019 Table 2 footnote), and ACR also excludes patients with a primary cancer that could metastasise to the kidney. (acr-renal-2017, 'Inclusion and exclusion criteria for use of the algorithm', p. 6; section 5. bosniak-2019, 'Variable Reported Malignancy Rates'; Table 2 asterisk footnote; Table 4 note. car-renal-2019 (title, Flowchart 4))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2420,6 +2885,11 @@
         "agrees": false,
         "note": "Reviewer: not-lead (management). The first bullet (elderly/frail, high surgical risk) and 'discuss with urology' restate ACR 2017, a non-lead document; the lead, CAR 2019, says only to refer III and IV to urology and gives no surveillance criteria. 'Bilateral lesions or solitary kidney' and 'lesion stability on serial imaging' are not in any of the four documents as indications. The framing (surgery the default, surveillance the exception for III only) is also behind CUA 2023, which makes active surveillance the preferred option for III and IV <=2 cm and an equal option at 2-4 cm. (acr-renal-2017, 'Flowchart 3: Cystic Renal Masses' text. car-renal-2019, p. 131. cua-cystic-renal-2023, active-surveillance recommendations)",
         "resolution": "Stands as unsourced, now with the management flag: the two criteria the owner is asked about ('bilateral lesions or solitary kidney', 'lesion stability') are in none of the four documents; the first bullet restates ACR 2017, a non-lead document (the reviewer's not-lead reading)."
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "drop them.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2437,6 +2907,11 @@
       "recheck": {
         "agrees": true,
         "note": "None of the four documents gives pathology by Bosniak class, so the column has no source here. Where the documents do speak it is partly at odds with them: class III lists only cancers although about half of resected class III masses are benign; 'multilocular cystic RCC' is the old name (now multilocular cystic renal neoplasm of low malignant potential, per CUA); and nothing supports assigning clear cell vs papillary RCC to particular classes. 'Simple cyst', 'Benign cyst' and 'Benign or low-grade' for IIF ('large majority benign; when malignant nearly all indolent', Table 4) are reasonable. (bosniak-2019 (sections 'High Prevalence of Benignity among Bosniak III Cystic Masses', 'Bosniak IIF'); cua-cystic-renal-2023, section on Bosniak III/IV management)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2455,7 +2930,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Add CAR 2019 (doi:10.1016/j.carj.2019.03.002) and the ACR renal white paper (doi:10.1016/j.jacr.2017.04.028); the ACR link opens the general Incidental Findings page, not a kidney page (checked 2026-11-25; the RSNA link answers 403 to scripts but its DOI is right).",
-      "home": "Cystic renal masses › Background"
+      "home": "Cystic renal masses › Background",
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
+      }
     },
     {
       "id": "B1-bosniak-27",
@@ -2481,6 +2961,11 @@
       "recheck": {
         "agrees": true,
         "note": "The row repeats what the old page says about itself, so it is faithful to the page's label, but the label is not true of the page: the calculator and tables apply the pre-2019 classification (3 cm cut-off, thick calcification and perceived enhancement as IIF, measurable enhancement = III/IV), which is what CAR 2019 Table 1 prints, and there are no MRI criteria. 'v2019' and 'on CT and MRI' should not stand until the page is rebuilt; 'with management for each class' is true as a description, though the management text follows neither CAR 2019 nor the cited paper for III/IV (see B1-bosniak-17). (shared/data/resources.ts (id bosniak) against the page; bosniak-2019, Table 1 vs Table 2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2502,6 +2987,11 @@
       "recheck": {
         "agrees": true,
         "note": "Title, citation and version label match the document the page follows; the quotation is faithful. (The same box also says \"Last Institutional Review: January 2024\", which is not in this piece; the repo's history starts 2026-02-28.) (li-rads-2018-core, cover and page footers)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2524,6 +3014,11 @@
       "recheck": {
         "agrees": true,
         "note": "The claim is false: the page's own table and calculator depart from the published table in the 10-19 mm rows (see -04 and -12), and the threshold-growth, ancillary-feature and protocol text also differ from v2018. (li-rads-2018-core, p.8 CT/MRI Diagnostic Table)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2554,6 +3049,11 @@
       "recheck": {
         "agrees": true,
         "note": "The three risk groups are right, but the warning's \"cirrhosis (any cause)\" contradicts the source, which excludes cirrhosis from congenital hepatic fibrosis and from vascular disorders, and patients under 18. \"Standard reporting categories apply\" for other patients is not in the source. (li-rads-2018-core, p.6 Getting Started)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2580,6 +3080,11 @@
       "recheck": {
         "agrees": true,
         "note": "Three over-calls at 10-19 mm, confirmed in the code (the 10-19 branch is identical to the ≥20 branch): no APHE + one feature gives LR-4 (source LR-3); nonrim APHE alone gives LR-4 (source LR-3); nonrim APHE + capsule only gives LR-5 (source LR-4). The other auditor's expected values match the source. The last error turns a probable HCC into a definite one with 'proceed with treatment'. (li-rads-2018-core, p.8 CT/MRI Diagnostic Table; li-rads-2018-manual-ch8, pp.8-10 to 8-12 (LR-3, LR-4, LR-5 criteria))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2606,6 +3111,11 @@
       "recheck": {
         "agrees": true,
         "note": "Several departures: (1) benign is tested before tumor in vein, the reverse of the source (only matters for contradictory inputs); (2) the option \"No / Absent / Rim APHE\" sends rim APHE down the no-APHE column, though rim APHE is an LR-M criterion; (3) one LR-M switch overrides LR-5 even for nontargetoid features such as infiltrative appearance, which the source makes LR-M only when LR-5 criteria are not met (p.28: ill-defined observation meeting LR-5 is LR-5); (4) an empty size is read as 0 and categorised as <10 mm; (5) no LR-NC. (li-rads-2018-core, p.8 Step 1 algorithm; p.20 Nonrim APHE; p.22 LR-M Criteria; p.28)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2636,6 +3146,11 @@
       "recheck": {
         "agrees": true,
         "note": "LR-1 ~0%, LR-3 ~38% and LR-4 ~74% match. Wrong: LR-2 \"<10%\" (source 13-16%); LR-M risk \"N/A (non-HCC malignancy)\" (about a third of LR-M are HCC); LR-3 text says \"Continue HCC surveillance\" and only \"consider\" imaging in 3-6 months, where the source's management is repeat or alternative diagnostic imaging in 3-6 months. LR-5 \"≥95%\" slightly overstates 94-95%; \"Biopsy recommended\" for LR-M is firmer than the source (MDD, biopsy considered / often included). (li-rads-2018-core, p.14 management and p.35 FAQ; li-rads-2018-manual-ch8, pp.8-9 to 8-14; li-rads-2018-manual-ch11, pp.11-4, 11-5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2657,6 +3172,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches. The source adds \"unequivocally\" and \"in whole or in part\". (li-rads-2018-core, p.20 Major Imaging Features)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2679,6 +3199,11 @@
       "recheck": {
         "agrees": true,
         "note": "The definition drops two limits that change the category: washout must be nonperipheral (peripheral washout is an LR-M feature), and with gadoxetate it counts only in the portal venous phase (later-phase hypointensity is an ancillary feature, not the major feature). It also describes plain hypointensity rather than a fall in enhancement to hypoenhancement. A judgement call: the wording is an incomplete summary rather than a flat contradiction. (li-rads-2018-core, p.20 Major Imaging Features)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2701,6 +3226,11 @@
       "recheck": {
         "agrees": true,
         "note": "A fair short form. The source also allows the transitional phase and requires the rim to be thicker or more conspicuous than fibrosis around background nodules. (li-rads-2018-core, p.20 Major Imaging Features)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2727,6 +3257,11 @@
       "recheck": {
         "agrees": true,
         "note": "The first half is right. \"or ≥50% increase when interval uncertain\" is not in v2018 and contradicts it: growth outside a documented ≤6 months is subthreshold growth (an ancillary feature), not a major feature. Counting it can lift a 10-19 mm APHE observation to LR-5. (li-rads-2018-core, p.20 Threshold growth; p.4 What's New)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2748,6 +3283,11 @@
       "recheck": {
         "agrees": true,
         "note": "All nine quoted rows match the table. The footnote names the three additional major features (the source says nonperipheral washout). \"APHE\" in the column head should read nonrim APHE. (li-rads-2018-core, p.8 CT/MRI Diagnostic Table)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2774,6 +3314,11 @@
       "recheck": {
         "agrees": true,
         "note": "All three rows are wrong in part: 10-19 mm, no APHE, exactly one feature is LR-3 (page LR-4; LR-4 needs two); 10-19 mm with nonrim APHE alone is LR-3 (page LR-4); 10-19 mm with nonrim APHE and capsule as the only feature is LR-4 (page LR-5). Only washout or threshold growth, or two or more features, give LR-5. (li-rads-2018-core, p.8 CT/MRI Diagnostic Table; li-rads-2018-manual-ch8, pp.8-10 to 8-12)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2800,6 +3345,11 @@
       "recheck": {
         "agrees": true,
         "note": "Examples, ~0% and return to routine surveillance match. One item is wrong: \"post-treatment … complete response\" is not LR-1. Treated observations are outside the diagnostic categories and get LR-TR Nonviable, with monitoring in ≤3 months rather than routine surveillance. (li-rads-2018-core, p.27 Examples of LR-1 and LR-2 Entities; p.8, p.11, p.14; li-rads-2018-manual-ch8, p.8-8)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2826,6 +3376,11 @@
       "recheck": {
         "agrees": true,
         "note": "\"<10% HCC risk\" contradicts the source (13-16%). The size limit for a distinctive nodule without malignant features is <20 mm, not <10 mm, and \"small indeterminate\" is not an LR-2 criterion (in the table a <10 mm observation with no features is LR-3). \"Surveillance only / no additional workup\" leaves out the source's option of repeat diagnostic imaging in ≤6 months. (li-rads-2018-core, p.27 and p.35 FAQ, p.14; li-rads-2018-manual-ch8, p.8-9)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2852,6 +3407,11 @@
       "recheck": {
         "agrees": true,
         "note": "Criterion and management match. Worth adding from the source: not every tumor in vein is HCC, the report should give the likely cause, and the workup may include biopsy. (li-rads-2018-core, p.21 Tumor in Vein, p.14; li-rads-2018-manual-ch8, p.8-13; li-rads-2018-manual-ch11, p.11-5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2883,6 +3443,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). The table row's criteria are right, but the card heading \"Non-HCC Malignancy\" misstates the category: LR-M is malignant but not HCC-specific, and about a third are HCC. Management in the source is multidisciplinary discussion with biopsy considered (often included), not a bare biopsy recommendation. (li-rads-2018-core, p.7, p.16, p.22-23, p.14; li-rads-2018-manual-ch8, p.8-14; li-rads-2018-manual-ch11, p.11-5)",
         "resolution": "Management flag added on the reviewer's reading: LR-M management in v2018 is multidisciplinary discussion with biopsy considered, and about a third of LR-M are HCC, so the heading 'Non-HCC Malignancy' can change the next step."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2913,6 +3478,11 @@
       "recheck": {
         "agrees": true,
         "note": "~38%, the 3-6 month interval and the MDD option match. \"Continue routine HCC surveillance\" does not: the source returns only LR-1 and LR-2 to surveillance, and LR-3 gets repeat or alternative diagnostic (multiphase) imaging. Borderline, since the next sentence gives the right interval; the risk is a reader taking routine ultrasound as sufficient. (li-rads-2018-core, p.14; li-rads-2018-manual-ch8, p.8-10; li-rads-2018-manual-ch11, p.11-4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2939,6 +3509,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches. The source adds the interval (≤3 months) if neither biopsy nor treatment is planned; \"MRI if CT\" is the page's example. (li-rads-2018-core, p.14; li-rads-2018-manual-ch8, p.8-11; li-rads-2018-manual-ch11, p.11-4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2965,6 +3540,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Definite HCC, no biopsy and referral for treatment match. Two small points: the source figure is about 94-95%, so \"≥95%\" slightly overstates it; the treatment list is not from LI-RADS (it says MDD for staging and individualised treatment) and leaves out systemic therapy. (li-rads-2018-core, p.14, p.35 FAQ; li-rads-2018-manual-ch8, p.8-12; li-rads-2018-manual-ch11, p.11-4)",
         "resolution": "Withdrawn as an error: '≥95%' sits within the source's figure (Core ~95%; chapter 8 ~94%, 92–96%). Stage 3 says '~95%' and notes that the treatment list is not from LI-RADS."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -2991,6 +3571,11 @@
       "recheck": {
         "agrees": true,
         "note": "The targetoid line matches (it omits targetoid TP/HBP appearance). The rest adds wording the source does not have: \"geographic shape\", \"disproportionate to T2 signal\", \"satellite nodules\", \"biliary obstruction\" and \"vascular invasion without TIV\". It also drops the condition that nontargetoid features make LR-M only when there is no tumor in vein and LR-5 criteria are not met, and presents infiltrative appearance as suggesting non-HCC malignancy when the source says it probably represents HCC. (li-rads-2018-core, p.22 LR-M Criteria, p.23, p.28; li-rads-2018-manual-ch8, p.8-14)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3018,6 +3603,11 @@
       "recheck": {
         "agrees": true,
         "note": "The page names no BCLC version. Tumour column and first-line drugs agree with 2022, but the liver-function column uses Child-Pugh classes that BCLC had already abandoned (2022: preserved liver function for 0-C, end-stage for D; Child-Pugh B is not 'preserved'), stage B is given as TACE only where 2022 splits it into transplant, TACE and systemic therapy, performance status is missing from the table, and durvalumab-tremelimumab is absent. BCLC 2022 is itself superseded by the 2026 update, which could not be read. (bclc-2022, Fig. 1 (BCLC staging and treatment strategy in 2022) and \"Prognosis prediction and patient characterisation\")"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "just a link, dont need BCLC.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3040,6 +3630,11 @@
       "recheck": {
         "agrees": true,
         "note": "Wrong in several ways. Blood products and intralesional fat are listed as downgrade features but the source lists both as favouring HCC (the page even lists \"fat in mass\" on both sides); \"intralesional gas\" and \"T1 hypointensity\" are not ancillary features at all. The one-category rule omits that upgrading stops at LR-4 and that conflicting features mean no adjustment. Only stability ≥2 years is right on the benign side. (li-rads-2018-core, p.9 Step 2 and pp.24-25)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3063,6 +3658,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). Unenhanced CT is not a required phase (suggested only after locoregional treatment). On MRI, diffusion-weighted imaging is suggested/optional, not required; in/opposed-phase T1 is required and not mentioned; with gadoxetate the required late phases are transitional and hepatobiliary (no delayed phase), and for gadobenate the hepatobiliary phase is optional. Calling a study inadequate on the page's list could lead to LR-NC and repeat imaging. (li-rads-2018-core, p.13 Technical Recommendations)",
         "resolution": "Management flag added on the reviewer's reading: a study judged inadequate against the page's protocol (unenhanced CT and DWI as required; no transitional or hepatobiliary phases) leads to repeat imaging the source doesn't call for, and the reverse."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3085,6 +3685,11 @@
       "recheck": {
         "agrees": true,
         "note": "Not a guideline statement; checked by fetching. The first link returned 404 (the ACR page now sits under /Clinical-Resources/Clinical-Tools-and-Reference/…), and the PDF link redirected to a content-system sign-in page instead of the PDF. Both need replacing; one automated fetch each, so worth a browser check. (docs/audit/sources.json (li-rads-2018-core url); live check of both links 2026-11-25)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3106,6 +3711,11 @@
       "recheck": {
         "agrees": true,
         "note": "The registry row reads as quoted, and title, version and summary agree with the source. \"calculator: true\" is factually so, but the calculator it points to gives wrong categories at 10-19 mm (see -04). (li-rads-2018-core, cover, p.3 and p.6; shared/data/resources.ts (id li-rads))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3125,6 +3735,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced. Confirmed on the eight pages named (not on the adrenal page). The repo's history starts 2026-02-28, two years after the claimed January 2024 review, and no institution or reviewer is identified, so the line is template text with nothing behind it. Remove from all eight pages. (~/Code/_archive/guidelines_manager git history; reference boxes of 8 pages under docs/)",
         "resolution": "Stands as drop: the reviewer confirmed the line on the eight pages and the 2026-02-28 start of the history, calls it unsourced, and says remove."
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "no.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3143,6 +3758,11 @@
         "agrees": false,
         "note": "Reviewer: wrong. The quotation and counts are faithful (4 plain \"None\", 2 \"following published guidelines exactly\", 1 each for LI-RADS and Bosniak). For the Lung-RADS page the claim is false: the page departs from v1.1 on new-nodule thresholds, rounding, stable and growing nodules, 4X, the C modifier and more. I checked only the Lung-RADS page against its source; the other seven depend on their own audits. (docs/pulmonary/lung_rads.md line 13 against lung-rads-1-1, Assessment Categories table and notes, p1)",
         "resolution": "Stands as drop: the line is untrue wherever a page departs from its source (the reviewer confirmed it for Lung-RADS and calls it wrong); removing it is the fix either way."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3165,6 +3785,11 @@
       "recheck": {
         "agrees": true,
         "note": "The home page says \"LI-RADS v2023\" in the feature card and the guideline table, but the page it links to is titled, cited and built on CT/MRI v2018, and none of the audit sources is a CT/MRI diagnostic v2023. The label should read v2018. (li-rads-2018-core, cover; old site docs/index.md lines 30 and 98; docs/hepatobiliary/li_rads.md)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3187,11 +3812,17 @@
       "recheck": {
         "agrees": true,
         "note": "The home page does list \"LUNG-RADS v1.1\" in the feature card and the table. It matches the page it links to but names a version superseded in November 2022. (~/Code/_archive/guidelines_manager/docs/index.md lines 44 and 103; lung-rads-2022, title)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     }
   ],
   "recheckList": [
-    "Fleischner (part of batch 1) waits for the owner's copy of the 2017 paper; its findings will be added to this batch."
+    "Fleischner (part of batch 1) waits for the owner's copy of the 2017 paper; its findings will be added to this batch.",
+    "2026-11-25, after the rulings, fix-now edits went live on the batch 1 pages: guidelines_manager b29e6ab (dated notices and calculators removed on Lung-RADS, adrenal, Bosniak and LI-RADS; LI-RADS BCLC table replaced by a link; \"Last Institutional Review\" and \"Modifications\" lines removed from eight pages; home LI-RADS label to CT/MRI v2018) and this site's 5c844c9 (no calc mark on those four rows). The audited content is otherwise unchanged; stage 3 rewrites the pages."
   ],
   "usability": [
     {
