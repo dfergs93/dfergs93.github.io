@@ -5,7 +5,9 @@
   "main": "src/index.ts",
   "compatibility_date": "2026-11-01",
   "preview_urls": false,
-  "observability": { "enabled": true },
+  // Off on purpose: Workers Logs would keep each request's headers and address,
+  // and the site promises nothing about the visitor is kept.
+  "observability": { "enabled": false },
   "d1_databases": [
     {
       "binding": "DB",
