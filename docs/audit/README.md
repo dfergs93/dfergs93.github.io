@@ -22,7 +22,7 @@ the rules below or a generated file is out of date.
 ## How a page is audited
 
 Each page is split into pieces (a table, a set of thresholds, a protocol, normal values,
-a teaching passage, a calculator, a troubleshooting list or checklist; and the page's
+a teaching passage, a calculator, a troubleshooting list or checklist, the reference box with its citation and version (provenance); and the page's
 row on this site's front page). Each piece is a finding with its kind, topic, what the
 page says (numbers verbatim), its source with the exact location, a verdict, a short
 proposed fix, any question for the owner, and its proposed home in the topic layout.

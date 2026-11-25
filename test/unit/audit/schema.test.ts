@@ -44,6 +44,10 @@ describe('parseBatch', () => {
     expect(parse(FINDING).findings).toHaveLength(1);
   });
 
+  it('accepts the provenance kind (a page\'s reference box: citation, version, review date)', () => {
+    expect(parse({ ...FINDING, kind: 'provenance' }).findings[0]!.kind).toBe('provenance');
+  });
+
   it('rejects a duplicate finding id', () => {
     expect(() => parse(FINDING, FINDING)).toThrow(/B1-fleischner-01.*duplicate finding id/);
   });

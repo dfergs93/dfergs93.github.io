@@ -12,7 +12,8 @@ export const KINDS = [
   'teaching',
   'calculator',
   'troubleshooting',
-  'listing', // the new site's front-page row: version label and summary
+  'listing', // a front-page row: version label and summary (the new site's, or the old home page's)
+  'provenance', // a page's reference box: citation, version, review date, modifications
 ] as const;
 
 export const VERDICTS = [
