@@ -1,12 +1,15 @@
 // The front page's behaviour over server-rendered markup: list selection by
-// URL hash, search with keyboard control, and the `/` shortcut. Rows are never
-// built here; they are cloned from #all-resources (written by ResourceRow.astro).
+// URL hash, search with keyboard control, the `/` shortcut and favorites. Rows
+// are never built here; they are cloned from #all-resources (written by
+// ResourceRow.astro).
 //
 // The raw registry data is imported (not shared/registry.ts) so the validator
 // and zod stay out of the browser bundle; `astro build` has validated it already.
 
 import { RESOURCE_DATA } from '../../shared/data/resources.ts';
 import { createSearch } from '../../shared/search.ts';
+import { readFavorites, toggleFavorite } from './favorites.ts';
+import { safeStorage } from './storage.ts';
 
 const HASH_PREFIX = '#list-';
 const SHOWN_QUERY_MAX = 80;
@@ -20,11 +23,16 @@ export function initFront(root: HTMLElement): void {
   for (const li of root.querySelectorAll<HTMLLIElement>('#all-resources > li.row')) templates.set(li.dataset.id!, li);
   const resultsList = sections.get('results')!.querySelector('ul')!;
   const noMatches = sections.get('results')!.querySelector<HTMLElement>('.no-matches')!;
+  const favoritesList = sections.get('favorites')!.querySelector('ul')!;
   const search = createSearch(RESOURCE_DATA);
+  const storage = safeStorage();
+  const validIds: ReadonlySet<string> = new Set(templates.keys());
 
   let selected = 'popular';
   let searching = false;
+  let currentHits: ReadonlySet<string> | null = null;
   let highlighted = -1;
+  let favorites = readFavorites(storage, validIds);
 
   const railItem = (key: string) => railItems.find((a) => a.dataset.list === key);
   const rowIdsIn = (key: string) =>
@@ -108,7 +116,8 @@ export function initFront(root: HTMLElement): void {
     noMatches.hidden = rows.length > 0;
     showSection('results');
     markRail(null);
-    setCounts(new Set(hits.map((r) => r.id)));
+    currentHits = new Set(hits.map((r) => r.id));
+    setCounts(currentHits);
     input.setAttribute('aria-expanded', 'true');
     highlight(0);
   }
@@ -120,6 +129,7 @@ export function initFront(root: HTMLElement): void {
     highlighted = -1;
     input.setAttribute('aria-expanded', 'false');
     input.removeAttribute('aria-activedescendant');
+    currentHits = null;
     setCounts(null);
     select(selected);
   }
@@ -129,7 +139,42 @@ export function initFront(root: HTMLElement): void {
     endSearch();
   }
 
+  /** Brings every star (templates included, so later clones match) and the Favorites list in step. */
+  function renderFavorites() {
+    const starred = new Set(favorites);
+    for (const star of root.querySelectorAll<HTMLButtonElement>('.star[data-id]')) {
+      const on = starred.has(star.dataset.id!);
+      star.setAttribute('aria-pressed', String(on));
+      star.setAttribute('aria-label', on ? 'Remove from favorites' : 'Add to favorites');
+    }
+    favoritesList.replaceChildren(...favorites.flatMap((id) => cloneRow(id) ?? []));
+    railItem('favorites')!.hidden = favorites.length === 0;
+    setCounts(currentHits);
+  }
+
+  function onStar(star: HTMLButtonElement) {
+    const inFavorites = favoritesList.contains(star);
+    const index = [...favoritesList.querySelectorAll('.star')].indexOf(star);
+    favorites = toggleFavorite(storage, star.dataset.id!, validIds);
+    renderFavorites();
+    if (favorites.length === 0 && selected === 'favorites') {
+      history.replaceState(null, '', location.pathname + location.search);
+      if (!searching) select('popular');
+      else selected = 'popular';
+    }
+    // Unstarring in Favorites removes the row: keep keyboard focus nearby.
+    if (inFavorites && !star.isConnected) {
+      const stars = favoritesList.querySelectorAll<HTMLButtonElement>('.star');
+      (stars[Math.min(index, stars.length - 1)] ?? railItem('popular'))?.focus();
+    }
+  }
+
   input.addEventListener('input', runSearch);
+
+  root.addEventListener('click', (e) => {
+    const star = e.target instanceof Element ? e.target.closest<HTMLButtonElement>('.star[data-id]') : null;
+    if (star) onStar(star);
+  });
 
   input.addEventListener('keydown', (e) => {
     if (e.isComposing) return;
@@ -178,6 +223,10 @@ export function initFront(root: HTMLElement): void {
   window.addEventListener('popstate', followHash);
   window.addEventListener('hashchange', followHash);
 
+  // Stars only when favorites can be kept; then the Favorites list, so a
+  // #list-favorites hash can be honoured.
+  if (storage) for (const star of root.querySelectorAll<HTMLButtonElement>('.star[data-id]')) star.hidden = false;
+  renderFavorites();
   // From here on CSS (.current) decides which list shows.
   for (const s of sections.values()) s.hidden = false;
   select(keyFromHash());
