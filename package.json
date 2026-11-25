@@ -21,7 +21,8 @@
     "worker:deploy": "wrangler deploy -c worker/wrangler.jsonc",
     "db:migrate:local": "wrangler d1 migrations apply radref --local -c worker/wrangler.jsonc",
     "db:migrate:remote": "wrangler d1 migrations apply radref --remote -c worker/wrangler.jsonc",
-    "counts": "wrangler d1 execute radref --remote -c worker/wrangler.jsonc --command \"$(grep -v \"^--\" worker/sql/counts.sql)\""
+    "counts": "wrangler d1 execute radref --remote -c worker/wrangler.jsonc --command \"$(grep -v \"^--\" worker/sql/counts.sql)\"",
+    "audit:render": "node scripts/audit/render.ts"
   },
   "dependencies": {
     "@fontsource/ibm-plex-mono": "5.3.0",
