@@ -1,6 +1,6 @@
 # Stage 2: content audit — design
 
-Date: 2026-11-25. Status: draft for the owner's review.
+Date: 2026-11-25. Status: for the owner's approval (builder check done; the two questions it raised answered by the owner).
 Builds on: `2026-11-24-radiology-reference-site-design.md` ("Stage 2: content audit"),
 and `docs/audit-notes.md` (issues found while building stage 1). Stage 1 and the quick
 calculators pilot are live.
@@ -149,10 +149,27 @@ algorithm is visible, and the path-by-path check below.
 
 ### How thoroughness is ensured
 
-- **Primary sources only.** The current version of the guideline document itself (the
-  society paper, the ACR manual or lexicon, the CAR paper, the Perinatal Services BC
-  document). Summaries, Radiopaedia and memory may help find a source; they never
-  verify one.
+- **What verifies (owner, 2026-11-25).** Always the current version, read at the
+  relevant section:
+  - guideline documents and society consensus or expert statements (the society
+    paper, the ACR manual or lexicon, the CAR paper, the Perinatal Services BC
+    document, SCCT and SCMR statements, SCMR reference-value papers);
+  - original research papers, for the specific numbers they report (e.g. outcome
+    thresholds such as TOF's RV volume and QRS cut-offs);
+  - a named textbook edition, for teaching content only (anatomy, physiology,
+    classification), never for a threshold;
+  - review articles (JACC state-of-the-art reviews, RadioGraphics) may be cited for
+    teaching, but any threshold they give is traced to the paper they cite, and that
+    paper is what verifies it.
+  Websites (Radiopaedia included), summaries and memory may help find a source; they
+  never verify one.
+- **The congenital pages' origin.** At least some were generated with Claude from
+  chapters of *Diagnosis and Management of Adult Congenital Heart Disease* (Gatzoulis,
+  Webb, Daubeney; edition to confirm) by `scripts/generate_lesion_page.py` in the
+  cardiac repo (commit 13dec0a, 2026-03-07). Batch 5 checks them against the book
+  (the owner is asked for the edition and the chapters) and against the guidelines
+  and papers for any threshold; stage 3's text must not closely paraphrase the
+  chapters, since the site is public.
 - **Every number is compared**: each threshold, size cut-off, interval, category and
   criterion on the page against the source, with its location recorded.
 - **Unreadable sources stop the verdict.** If a document is paywalled or unavailable,
@@ -179,13 +196,32 @@ algorithm is visible, and the path-by-path check below.
 - Every topic where the lead is a judgement call (e.g. CAR guidance and an ACR system
   both cover it) is listed for the owner.
 
-### Fix now (my call)
+### Fix now (owner, 2026-11-25)
 
-A finding ruled *wrong* with the management flag is corrected on the old live page
-during that batch, with the owner's OK on each fix, because stage 3 may be months
-away. Batch 1 also proposes removing the "Last Institutional Review: January 2024"
-line from every guideline page: the pages were written in February–March 2026, so the
-line reads as a sign-off that did not happen. Everything else waits for stage 3.
+Stage 3 may be months away, so anything that could change management is fixed on the
+live pages during its batch, whatever its verdict: *wrong*, *outdated* (a page that
+faithfully follows a superseded version, like Lung-RADS v1.1), or a non-lead guideline
+whose advice differs from the lead's. These findings carry the **management** flag.
+The fix is the smallest safe one:
+- a wrong line or table cell: corrected in place;
+- a page on a superseded version: a dated notice at the top naming the current
+  version, with a link to it;
+- a calculator that gives wrong management: switched off and replaced by that notice.
+
+The new site's live copies follow the same rule: the ECV and Bernoulli quick-calculator
+modules, and the registry's version labels and summaries. Each fix is made on a branch,
+passes the tests, and goes live only with the owner's OK (on the new site a merge to
+`main` deploys; the old sites deploy from their own repos). Everything that doesn't
+change management waits for stage 3.
+
+Batch 1 also proposes removing the "Last Institutional Review: January 2024" line from
+every guideline page (my call): the pages were written in February–March 2026, so the
+line reads as a sign-off that did not happen.
+
+A lead to verify first in batch 1 (from reading the code, not yet checked against the
+document): the Lung-RADS calculator may grade new nodules differently from v1.1 itself
+(new nodules under 4 mm as 3, 4–6 mm as 4A, over 6 mm as 4B) and produce "3X", "4AX"
+and "4BX" categories.
 
 ### The gap list
 
@@ -239,13 +275,20 @@ common resident needs, marked as candidates for the owner to cut.
 - One lead guideline per topic, shown first or most prominently; others as differences.
 - Kyoto for pancreatic cysts; Perinatal Services BC for obstetric ultrasound; otherwise CAR.
 - The gaps listed above.
+- Fix now covers anything that could change management, whatever its verdict, with the
+  smallest safe fix (correct in place / dated notice / calculator switched off), on the
+  old pages and the new site's copies, each with the owner's OK.
+- What verifies: guidelines and society statements, research papers for their own
+  numbers, named textbook editions for teaching only; reviews for teaching, with
+  thresholds traced to the papers they cite; never websites or memory.
+- The congenital chapters came from *Diagnosis and Management of Adult Congenital
+  Heart Disease*.
 
 ## My calls (for checking)
 
 - Batch boundaries and order; the 15 placeholders handled in the gap list.
-- The verdict set and the management flag.
-- Fix now: management-changing errors corrected on the old pages during the audit,
-  with the owner's OK each time; removing the "Last Institutional Review" line.
+- The verdict set.
+- Proposing removal of the "Last Institutional Review" line in batch 1.
 - The phone-friendly review page with Keep / Change / Drop.
 - Recording each source's reuse terms.
 - The cut-off rule for cardiac edits.
