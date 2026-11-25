@@ -2,11 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    # `rebuild` is for the stage 1 launch only: GitHub dispatches a workflow only from
-    # the default branch, so the first deploy comes from a push (or a re-run of one).
-    # The github-pages environment's branch rule holds the deploy job until launch.
-    # Remove `rebuild` once main has been fast-forwarded to it.
-    branches: [main, rebuild]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
