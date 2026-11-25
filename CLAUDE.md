@@ -11,6 +11,9 @@ opens anonymously.
 - `main` is live: every push to `main` deploys (`.github/workflows/deploy.yml`).
   Work on a branch; merge only what is ready to publish.
 - The repo is public. Never commit secrets, patient information or the owner's email.
+- **Do not push `main` until the Pages source is GitHub Actions** (stage 1 Task 9 step 4).
+  While Pages still builds `main` the old way, a push would publish the raw repo: the
+  README as the home page and the ORCA pages gone from `/orca-website-docs/`.
 - Stage 1 was built on branch `rebuild`. Until launch, Pages still publishes the old
   portal from `main` with the legacy (branch) source. `deploy.yml` also runs on pushes to
   `rebuild` for the launch (the github-pages environment's branch rule holds the deploy
