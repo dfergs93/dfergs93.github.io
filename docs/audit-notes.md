@@ -15,6 +15,7 @@ stage 1: the registry's version labels describe the linked pages as they are.
 - The cardiac CT planning pages (LAAO, TAVR, TMVR, TTVR) link to the old "Protocol Manager" site, which the new site does not link to.
 - The ECV and Simplified Bernoulli pages state no source. The quick calculators (pilot) cite Messroghli et al., JCMR 2017;19:75 (ECV formula) and Baumgartner et al., JASE 2017;30:372 (Bernoulli); the ECV bands (30 / 32 / 40 %) are local practice (owner, 2026-11-24). Stage 3's pages should state the same.
 - ECV bands use the unrounded value, so an ECV of 29.97 shows "30.0%" and Normal while the table puts 30% in Borderline (current page behaviour, kept in the quick calculator).
+- The current ECV page accepts a hematocrit typed as a fraction (0.42 gives "44.3% Markedly elevated") and T1 values of zero or below (giving Infinity% or 0.0% Normal). The quick calculator refuses both; stage 3's ECV page should too.
 - The aortic stenosis table on the Bernoulli page leaves peak gradients between 10 and 16 mmHg unassigned (Normal <10, Mild 16–36).
 
 ## Placeholder pages left out of the registry
