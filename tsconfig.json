@@ -5,5 +5,5 @@
     "types": ["node"]
   },
   "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist", "worker"]
+  "exclude": ["dist", "worker", "test/worker", "vitest.worker.config.ts"]
 }

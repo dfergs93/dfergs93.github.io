@@ -1,0 +1,21 @@
+// The site's one backend: anonymous open counts (stage 1); the assistant joins it in stage 4.
+{
+  "$schema": "../node_modules/wrangler/config-schema.json",
+  "name": "radref",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-01",
+  "preview_urls": false,
+  "observability": { "enabled": true },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "radref",
+      // Set at launch (stage 1, Task 9) from `npx wrangler d1 create radref`.
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Generous: hospitals put many readers behind one address, and a limited request only drops a count.
+  "ratelimits": [{ "name": "COUNT_LIMITER", "namespace_id": "4301", "simple": { "limit": 60, "period": 60 } }],
+  "vars": { "ALLOWED_ORIGINS": "https://dfergs93.github.io" }
+}

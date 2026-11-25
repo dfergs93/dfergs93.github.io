@@ -1,7 +1,7 @@
 // The front page's behaviour over server-rendered markup: list selection by
-// URL hash, search with keyboard control, the `/` shortcut and favorites. Rows
-// are never built here; they are cloned from #all-resources (written by
-// ResourceRow.astro).
+// URL hash, search with keyboard control, the `/` shortcut, favorites and the
+// anonymous open count. Rows are never built here; they are cloned from
+// #all-resources (written by ResourceRow.astro).
 //
 // The raw registry data is imported (not shared/registry.ts) so the validator
 // and zod stay out of the browser bundle; `astro build` has validated it already.
@@ -13,6 +13,21 @@ import { safeStorage } from './storage.ts';
 
 const HASH_PREFIX = '#list-';
 const SHOWN_QUERY_MAX = 80;
+const COUNT_URL = import.meta.env.PUBLIC_COUNT_URL;
+
+/**
+ * Reports one open in the background. Never delays or blocks the navigation:
+ * no preventDefault, nothing awaited, every failure ignored.
+ */
+function countOpen(id: string): void {
+  if (!COUNT_URL) return;
+  try {
+    if (typeof navigator.sendBeacon === 'function') navigator.sendBeacon(COUNT_URL, id);
+    else void fetch(COUNT_URL, { method: 'POST', body: id, keepalive: true, mode: 'no-cors' }).catch(() => {});
+  } catch {
+    // Counting is best effort.
+  }
+}
 
 export function initFront(root: HTMLElement): void {
   const input = root.querySelector<HTMLInputElement>('.search-input')!;
@@ -175,6 +190,16 @@ export function initFront(root: HTMLElement): void {
     const star = e.target instanceof Element ? e.target.closest<HTMLButtonElement>('.star[data-id]') : null;
     if (star) onStar(star);
   });
+
+  // An open is a click on a row's link, or a middle click (new tab).
+  const onOpen = (e: MouseEvent) => {
+    if (e.type === 'auxclick' && e.button !== 1) return;
+    const link = e.target instanceof Element ? e.target.closest('.row-link') : null;
+    const id = link?.closest<HTMLElement>('li.row')?.dataset.id;
+    if (id) countOpen(id);
+  };
+  root.addEventListener('click', onOpen);
+  root.addEventListener('auxclick', onOpen);
 
   input.addEventListener('keydown', (e) => {
     if (e.isComposing) return;
