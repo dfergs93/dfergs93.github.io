@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Let a reader open ECV or Simplified Bernoulli under its row on the front page, type values, read (and copy) the answer, and still reach the full page in one click.
+**Goal:** Let a reader open ECV or Simplified Bernoulli under its row on the front page, type values, read (and copy) the answer, and still reach the full page in one click; and let readers reorder their favorites (folded in 2026-11-24, `docs/superpowers/specs/2026-11-24-favorites-reorder-design.md`).
 
 **Architecture:** Each calculator is a pure TypeScript module in `shared/calculators/` (declared fields, `compute`, citation), the contract stages 3 and 4 reuse. `ResourceRow.astro` renders a hidden `calc` button next to the plain `calc` label; `front.ts` un-hides it when the page script runs and opens a quick view built by `src/scripts/quick-calc.ts` from the module's fields. Nothing typed is stored or sent.
 
@@ -12,7 +12,7 @@
 
 ## Global Constraints
 
-- Starts only after the stage 1 launch (stage 1 plan, Task 9). Work on branch `quick-calc` from `main`; `main` is live, so nothing merges until Task 5's owner go-ahead.
+- Starts only after the stage 1 launch (stage 1 plan, Task 9). Work on branch `quick-calc` from `main`; `main` is live, so nothing merges until Task 6's owner go-ahead.
 - Every rule in the repo `CLAUDE.md` "Look and behaviour rules" holds: tokens only (raw colours only in `src/styles/tokens.css`), one accent (calculator mark, selected item, focus), hover delay, no gradients/shadows/emoji, IBM Plex, tabular numerals on numbers.
 - Row markup is written only by `ResourceRow.astro`; the page script clones rows and never builds them. Quick-view panels are built from a calculator's declared fields by `quick-calc.ts`.
 - Clinical text is copied from the current pages, not rewritten (labels, notes, prompts, report lines), minus emoji. The owner reviews it in Task 5.
@@ -186,12 +186,39 @@
 
 ---
 
-### Task 5: Owner review and ship (each step needs the owner's go-ahead)
+### Task 5: Reorder favorites
+
+**Files:**
+- Modify: `src/scripts/favorites.ts`, `src/components/ResourceRow.astro`, `src/scripts/front.ts`, `src/styles/front.css`
+- Test: `test/unit/favorites.test.ts`, `e2e/favorites.spec.ts`
+
+**Interfaces:**
+- Consumes: `readFavorites`, `toggleFavorite` (stage 1); the row contract after Task 3.
+- Produces: `moveFavorite(s: Storage | null, id: string, delta: -1 | 1, validIds: ReadonlySet<string>): string[]` in `favorites.ts`. It returns the list storage now holds, never throws, and is a no-op at either end or for an id that isn't a favorite.
+- Row markup: `<span class="fav-move"><button class="fav-up" type="button" aria-label="Move {title} up">…</button><button class="fav-down" type="button" aria-label="Move {title} down">…</button></span>` in every row, shown by CSS only inside `#list-favorites` (`.fav-move { display: none }`, `#list-favorites .fav-move { display: inline-flex }`). The icons are inline SVG chevrons using `currentColor`.
+
+- [ ] **Step 1: Write failing tests.**
+  - `favorites.test.ts`: `['a','b','c']` with `moveFavorite(s,'b',-1)` → `['b','a','c']` (and stored); `'a'` with −1 and `'c'` with +1 → unchanged; an unknown or unstarred id → unchanged; `null` storage → `[]`; a storage that refuses writes → the unchanged list; stale ids are dropped on a move.
+  - `favorites.spec.ts`:
+    - Star Fleischner, ECV, Bosniak in that order, then open Favorites. Pressing ECV's "Move up" gives `['ecv','fleischner','bosniak']`, and focus stays on ECV's "Move up".
+    - The order survives a reload.
+    - The first row's up and the last row's down are disabled.
+    - No `.fav-move` is visible in Popular or in search results.
+    - Moving sends no request to the count URL.
+- [ ] **Step 2: Run** `npm run test:unit -- favorites && npm run e2e -- favorites`. Expected: FAIL.
+- [ ] **Step 3: Implement** `moveFavorite`, the markup, the wiring (`front.ts` re-renders Favorites, then re-focuses the moved row's button) and the styles (tap targets at least 32 px).
+- [ ] **Step 4: Run** `npm test && npm run e2e && npm run typecheck`. Expected: PASS.
+- [ ] **Step 5: Commit** `feat: reorder favorites with move up and move down`.
+
+---
+
+### Task 6: Owner review and ship (each step needs the owner's go-ahead)
 
 - [ ] **Step 1: Owner review** on `npm run build && npm run preview`. The owner checks:
   - both quick views on desktop and phone;
   - the clinical text (labels, notes, prompts, report lines);
-  - the citations and the source line wording.
+  - the citations and the source line wording;
+  - reordering favorites.
 
   Apply edits, re-run `npm test && npm run e2e`, and commit `content: owner's review of the quick calculators`.
 - [ ] **Step 2: Push** `quick-calc` (public repo); CI must be green.
