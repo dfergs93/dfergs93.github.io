@@ -41,6 +41,20 @@ describe('ECV', () => {
     });
   });
 
+  test.each([0.42, 0.99])('a hematocrit of %d (a fraction, as some labs report it) is refused, not banded', (hct) => {
+    expect(ecv.compute({ ...WORKED, hct })).toEqual({ status: 'invalid', message: 'Enter hematocrit as a percentage (e.g. 42, not 0.42).' });
+  });
+
+  test.each([
+    { post_blood: 0 },
+    { post_myo: 0 },
+    { post_myo: 0, post_blood: 0 },
+    { post_myo: -450 },
+    { pre_myo: 0 },
+  ])('a T1 of zero or below is refused, never banded (%o)', (change) => {
+    expect(ecv.compute({ ...WORKED, ...change })).toEqual({ status: 'invalid', message: 'T1 values must be greater than 0 ms.' });
+  });
+
   test.each([0, 100, -5])('hematocrit %d is refused', (hct) => {
     expect(ecv.compute({ ...WORKED, hct })).toEqual({ status: 'invalid', message: 'Hematocrit must be between 1–99%.' });
   });

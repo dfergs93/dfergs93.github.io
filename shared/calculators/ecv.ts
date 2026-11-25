@@ -27,6 +27,12 @@ function compute(v: Values): Outcome {
     return { status: 'incomplete', message: 'Enter all T1 values and hematocrit to calculate ECV.' };
   }
   if (hct <= 0 || hct >= 100) return { status: 'invalid', message: 'Hematocrit must be between 1–99%.' };
+  // Beyond the current page: some labs report hematocrit as a fraction (0.42), which
+  // would otherwise give a confident, wrong band.
+  if (hct < 1) return { status: 'invalid', message: 'Enter hematocrit as a percentage (e.g. 42, not 0.42).' };
+  if (pre_myo <= 0 || pre_blood <= 0 || post_myo <= 0 || post_blood <= 0) {
+    return { status: 'invalid', message: 'T1 values must be greater than 0 ms.' };
+  }
   if (post_myo >= pre_myo || post_blood >= pre_blood) {
     return { status: 'invalid', message: 'Post-contrast T1 must be shorter than pre-contrast T1.' };
   }
