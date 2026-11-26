@@ -2,7 +2,7 @@
 
 Started 2026-11-25 · old guidelines site at 34cf4eb. Generated from `batch-2.json`; do not edit.
 
-122 findings: 40 correct, 2 outdated, 58 wrong, 9 not-lead, 5 unsourced, 5 drop, 3 source-not-readable. 50 flagged management.
+122 findings: 44 correct, 2 outdated, 54 wrong, 8 not-lead, 6 unsourced, 5 drop, 3 source-not-readable. 54 flagged management.
 
 ## PI-RADS
 
@@ -10,12 +10,12 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 
 ### B2-pi-rads-01 · Page title and reference box (name, version, publisher, application)
 
-- **Verdict:** wrong
+- **Verdict:** correct
 - **Kind:** provenance · **Topic:** Prostate MRI (PI-RADS)
 - **The page says:** Title "PI-RADS v2.1 — Prostate MRI Reporting & Data System". Collapsed box: "Full Name: Prostate Imaging Reporting and Data System", "Version: 2.1 (2019)", "Publisher: American College of Radiology (ACR) / European Society of Urogenital Radiology (ESUR)", "Application: Multiparametric MRI (mpMRI) of the prostate". The box has no citation; the References list at the foot of the page has three (B2-pi-rads-36).
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Cover, p. i ("Prostate Imaging – Reporting and Data System", 2019, Version 2.1); Introduction, pp. 1–2 (PDF pp. 8–9): Steering Committee of the ACR, ESUR and the AdMeTech Foundation; p. 3 (PDF p. 10): designed for "patients with suspected cancer in treatment naïve prostate glands"; does not address recurrence after therapy or progression during surveillance; American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Major Revisions in PI-RADS v2.1" (DWI scores 2–3, TZ T2W scores 1–2, TZ overall category, DCE negatives, sector map)
-- **Proposed fix:** The version and full name are right, but the page is not v2.1 throughout: its DWI 2–3 and TZ T2W 1–2 definitions are v2's and its TZ rule matches neither version (B2-pi-rads-04, -11, -15, -17). Fix those, add "treatment-naïve prostate" to Application, name the AdMeTech Foundation beside ACR and ESUR, and use the document's name ("Prostate Imaging – Reporting and Data System") in the title.
 - **Proposed home:** Prostate MRI (PI-RADS) › Applies to
+- **Re-check:** disagreed — Reviewer: correct. Name, version, year and mpMRI application match. Small omission: the AdMeTech Foundation is the third sponsoring body alongside ACR and ESUR. The box itself carries no citation. (pirads-2-1, title page and Introduction, p. 1 (PDF p. 8)) Resolution: Changed to correct: the box's own claims (name, version 2.1, 2019, ACR/ESUR, mpMRI) match the document; the v2 content elsewhere is already its own findings (-04, -11, -15, -17).
 
 ### B2-pi-rads-02 · Purpose box: definition of clinically significant cancer
 
@@ -25,6 +25,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, p. 10 (PDF p. 17): "Gleason score ≥7 (including 3+4 with prominent but not predominant Gleason 4 component), and/or volume ≥0.5cc, and/or extraprostatic extension (EPE)"; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Background and Rationale, p. 2: most widely adopted criterion Gleason ≥3+4, ISUP Grade Group ≥2
 - **Proposed fix:** Add "and/or extraprostatic extension (EPE)" (p. 10); the Gleason, Grade Group and volume figures are right.
 - **Proposed home:** Prostate MRI (PI-RADS) › Background
+- **Re-check:** agrees — The two limbs quoted are right (the PDF shows ≥; the .txt renders it as >), but the page's definition drops the third limb, extraprostatic extension, and the 3+4 qualifier. "Grade Group ≥ 2" is the page's gloss; the document does not use Grade Groups. Incomplete rather than contradictory. (pirads-2-1, Section III, p. 10 (PDF p. 17))
 
 ### B2-pi-rads-03 · Calculator: peripheral zone path
 
@@ -33,6 +34,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **The page says:** Zone "Peripheral Zone (PZ) — DWI dominant": the result is the DWI score, except DWI 3 with "DCE Positive? Yes" gives 4. Runs (docs/audit/batch-2/cases/pirads.results.md): all 7 PZ cases match v2.1 — DWI 1 with T2W 5 and DCE+ → 1; DWI 2 with DCE+ → 2; DWI 3 DCE− → 3; DWI 3 DCE+ → 4; DWI 4 with T2W 2 → 4; DWI 4 with DCE+ → 4; DWI 5 with T2W 1 → 5.
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18); Caveats for Overall Assessment, p. 14 (PDF p. 21) (DWI 4 with T2W 2 is 4); bpMRI commentary, p. 24 (PDF p. 31) (PZ DWI 3 is not upgraded without DCE)
 - **Proposed home:** Prostate MRI (PI-RADS) › Calculator
+- **Re-check:** agrees — All seven PZ runs match the v2.1 PZ table, and the expected values in the case file are right. The code (dwi 3 → 4 only if DCE positive, else the DWI score) is the v2.1 PZ rule. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18))
 
 ### B2-pi-rads-04 · Calculator: transition zone path
 
@@ -40,8 +42,9 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Kind:** calculator · **Topic:** Prostate MRI (PI-RADS)
 - **The page says:** Zone "Transition Zone (TZ) — T2WI dominant": the result is the T2W score, except T2W 3 with DWI ≥4 gives 4; T2W 2 stays 2 whatever the DWI. Runs (docs/audit/batch-2/cases/pirads.results.md): v21-tz-t2w3-dwi4 → "PI-RADS 4 … Targeted biopsy recommended" (expected 3); v21-tz-t2w2-dwi4 → "PI-RADS 2 … No biopsy recommended" (expected 3); v21-tz-t2w2-dwi5 → 2 (expected 3). v2-tz-t2w3-dwi4 → 4, though v2 also gives 3, so the rule follows neither version. The other 9 TZ cases match (T2W 1 with DWI 5 → 1; T2W 2 with DWI 1 or 3 → 2; T2W 3 with DWI 1, or DWI 3 and DCE+ → 3; T2W 3 with DWI 5 → 4; T2W 4 with DWI 2 → 4; T2W 5 → 5).
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18): T2W 2 with DWI ≤3 → 2, ≥4 → 3; T2W 3 with DWI ≤4 → 3, 5 → 4; Evaluation of the TZ, pp. 13–14 (PDF pp. 20–21) (atypical nodules upgraded to 3 with DWI 4 or more; no upgrade on DWI 3); American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Image Interpretation: Transition Zone" (v2 and v2.1 tables side by side: both give T2W 3 with DWI ≤4 → 3; "The only change in deriving the overall PI-RADS assessment category, compared to PI-RADS v2, concerns TZ lesions with a T2W score of 2")
-- **Proposed fix:** Apply the v2.1 TZ table: T2W 2 → 3 when DWI is 4 or 5 (otherwise 2); T2W 3 → 4 only when DWI is 5 (otherwise 3).
+- **Proposed fix:** Apply the v2.1 TZ table: T2W 2 → 3 when DWI is 4 or 5 (otherwise 2); T2W 3 → 4 only when DWI is 5 (otherwise 3). Fix now: switch the calculator off on the old page (dated notice) and turn off the front-page row's calculator mark, until it is rebuilt.
 - **Proposed home:** Prostate MRI (PI-RADS) › Calculator
+- **Re-check:** agrees — Two errors in the code (`t2wi_score === 3 ? (dwi_score >= 4 ? 4 : 3) : t2wi_score`): T2W 3 + DWI 4 gives 4 (should be 3, in v2 and v2.1 alike), an overcall that prints "Targeted biopsy recommended"; and T2W 2 + DWI 4 or 5 stays 2 (v2.1: 3), an undercall that prints "No biopsy recommended". The case file's expected values are correct against the table; the other TZ runs match. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18); p. 13 (PDF p. 20); pirads-2-1-revisions, slide "Image Interpretation: Transition Zone")
 
 ### B2-pi-rads-05 · Calculator: option labels, and no input for an inadequate sequence
 
@@ -51,6 +54,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — DWI table, p. 20 (PDF p. 27): 2 "Linear/wedge shaped hypointense on ADC and/or linear/wedge shaped hyperintense on high b-value DWI"; 3 "Focal (discrete and different from the background) hypointense on ADC and/or focal hyperintense on high b-value DWI; may be markedly hypointense on ADC or markedly hyperintense on high b-value DWI, but not both" (no size limit); TZ T2W table, p. 18 (PDF p. 25): 1 "round, completely encapsulated nodule", 2 "mostly encapsulated nodule OR a homogeneous circumscribed nodule without encapsulation … OR a homogeneous mildly hypointense area between nodules"; DCE table, p. 22 (PDF p. 29) (positive must correspond to a suspicious T2W and/or DWI finding); category X, p. 15, and the tables for assessment without adequate DWI or DCE, p. 16 (PDF pp. 22–23); American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slides "Image Interpretation: DWI" and "Assessment of T2W" (v2 wording on the left, v2.1 on the right)
 - **Proposed fix:** Relabel the options with v2.1's wording (DWI 3 has no size limit in either version; a T2W 1 nodule is completely encapsulated, whatever its signal; DCE+ must match a T2W/DWI finding). Add "inadequate / not done" for DWI and DCE that applies the p. 16 tables (without adequate DWI, PZ and TZ are scored on T2W, with DCE+ raising 3 to 4).
 - **Proposed home:** Prostate MRI (PI-RADS) › Calculator
+- **Re-check:** agrees — The DWI 2 and 3 labels are the v2 wording that v2.1 replaced, and "<1.5 cm" on DWI 3 is in neither version (size appears only at scores 4 and 5). T2W 2 is the v2 wording; T2W 1 "round well-defined BPH nodule" drops v2.1's "completely encapsulated" (a circumscribed nodule without a capsule is score 2). There is no "X" option, so the v2.1 tables for inadequate DWI or DCE cannot be applied; in those tables T2W does score the PZ and DCE does act in the TZ (T2W 3, DWI X), so the hints "not used for PZ scoring" and "PZ only" hold only when all sequences are adequate. The DCE label omits that the enhancement must correspond to a suspicious T2W/DWI finding. (pirads-2-1, Section IV B.2 DWI table, p. 20 (PDF p. 27); Section IV A.2 T2W TZ table, p. 18; Caveats and "Assessment Without Adequate DWI / DCE" tables, pp. 15–16; pirads-2-1-revisions, slides "Image Interpretation: DWI" and "Assessment of T2W")
 
 ### B2-pi-rads-06 · Quick Reference: categories and probability
 
@@ -60,6 +64,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, PI-RADS v2.1 Assessment Categories, p. 10 (PDF p. 17); repeated in Appendix I, p. 29 (PDF p. 36)
 - **Proposed fix:** Optional: for 1, use the document's words ("clinically significant cancer is highly unlikely to be present") rather than "essentially no csPCa".
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — The five labels (very low, low, intermediate, high, very high) match. "Essentially no csPCa" for category 1 is stronger than the document's "highly unlikely to be present". (pirads-2-1, Section III, PI-RADS v2.1 Assessment Categories, p. 10 (PDF p. 17))
 
 ### B2-pi-rads-07 · Quick Reference: action for PI-RADS 1–3 (and the calculator's results for 1–3)
 
@@ -68,16 +73,18 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **The page says:** "PI-RADS 1 … No biopsy"; "PI-RADS 2 … No biopsy (consider in context)"; "PI-RADS 3 … Biopsy at clinician discretion (consider PSA density, clinical risk)". The calculator's results for 1–3 say the same.
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, p. 10 (PDF p. 17): biopsy "should be considered for PI-RADS 4 or 5, but not for PI-RADS 1 or 2"; for category 3 "biopsy may or may not be appropriate, depending on factors other than mpMRI alone"; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Reporting, Findings, p. 7 (PSA density used in PI-RADS 3 biopsy decisions)
 - **Proposed home:** Prostate MRI (PI-RADS) › Management
+- **Re-check:** agrees — The content agrees with the one sentence PI-RADS gives (not for 1 or 2; 3 depends on other factors), and CAR supports using PSA density for PI-RADS 3. But it is laid out as an "Action" column although PI-RADS v2.1 says it makes no management recommendations; and CUA words a negative MRI as "consider forgoing any biopsy after discussion ... shared decision-making" (8–24% of csPCa missed), softer than a flat "No biopsy". Borderline with `unsourced`. (pirads-2-1, Section III, p. 10 (PDF p. 17); car-prostate-mri-2022, Reporting, Findings, p. 7; cua-prostate-early-diagnosis-2022, rec. 5a, p. E188)
 
 ### B2-pi-rads-08 · Quick Reference: action for PI-RADS 4 and 5 (and the calculator's results for 4 and 5)
 
-- **Verdict:** wrong
+- **Verdict:** unsourced · **management**
 - **Kind:** guideline-threshold · **Topic:** Prostate MRI (PI-RADS)
 - **The page says:** "PI-RADS 4 | High | Targeted biopsy recommended"; "PI-RADS 5 | Very high | Targeted biopsy strongly recommended". The calculator's results: "Targeted biopsy recommended." and "Targeted biopsy strongly recommended."
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, p. 10 (PDF p. 17): "biopsy should be considered for PI-RADS 4 or 5" … "PI-RADS v2.1 does not include recommendations for management"; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Targeted Biopsy Considerations, p. 8: targeted biopsy "either in addition to or instead of" systematic biopsy; at least 3 cores from index lesions; Mason RJ, Marzouk K, Finelli A, et al. UPDATE – 2022 Canadian Urological Association recommendations on prostate cancer screening and early diagnosis: Endorsement of the 2021 Cancer Care Ontario guidelines on prostate multiparametric magnetic resonance imaging. Can Urol Assoc J. 2022;16(4):E184-E196. doi:10.5489/cuaj.7851 — Recommendation 5a, p. E188: "If the mpMRI is positive, mpMRI-targeted biopsy (TB) and TRUS-guided systematic biopsy (TRUS-SB) should be performed together"
 - **Proposed fix:** Say what PI-RADS says: biopsy should be considered for 4 and 5 (p. 10). Drop the "recommended" / "strongly recommended" grading, which no source gives, and "targeted" alone unless the page adopts a biopsy pathway.
 - **Question for the owner:** PI-RADS v2.1 makes no management recommendation, and CAR gives none by category. Should the page (and the calculator's results) keep an Action column at all? If so: PI-RADS's "biopsy should be considered for 4–5, not for 1–2", or the urology pathway CAR supports (CUA 2022 endorsing CCO 2021: targeted plus systematic biopsy when mpMRI is positive)?
 - **Proposed home:** Prostate MRI (PI-RADS) › Management
+- **Re-check:** disagreed — Reviewer: unsourced (management). PI-RADS says only that biopsy "should be considered" for 4 or 5 and expressly makes no management recommendation; the graded "recommended" / "strongly recommended" wording is in none of the sources. "Targeted biopsy" alone also differs from CUA, which asks for targeted plus systematic biopsy together after a positive MRI. The direction (biopsy for 4 and 5) is right; the attribution and strength are not sourced. (pirads-2-1, Section III, p. 10 (PDF p. 17); cua-prostate-early-diagnosis-2022, rec. 5a, p. E188) Resolution: Changed to unsourced with management, as the reviewer has it: the graded "recommended / strongly recommended" wording is in no source, and "targeted biopsy" alone differs from the CUA pathway CAR points to (targeted plus systematic).
 
 ### B2-pi-rads-09 · Dominant sequence table: peripheral and transition zone rows
 
@@ -86,6 +93,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **The page says:** "Peripheral Zone (PZ) | DWI | DCE"; "Transition Zone (TZ) | T2WI | DWI" (dominant, then secondary sequence).
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Caveats for Overall Assessment, p. 14 (PDF p. 21) ("For the PZ, DWI is the primary determining sequence"; "For the TZ, T2W is the primary determining sequence"); Section III, p. 10 (DCE may upgrade a PZ DWI 3); TZ table, p. 11
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — Dominant and secondary sequences for PZ and TZ are as the document states. (pirads-2-1, Caveats for Overall Assessment, p. 14 (PDF p. 21); Section III, p. 10)
 
 ### B2-pi-rads-10 · Dominant sequence table: central zone row
 
@@ -95,6 +103,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Normal Anatomy, p. 7 (PDF p. 14): calling the TZ and CZ together the "central gland" "is discouraged"; Evaluation of the central zone, p. 14 (PDF p. 21): cancer starting in the CZ is uncommon, "most of these arise in either the adjacent PZ or TZ and extend into the CZ"; asymmetry or focal early enhancement may indicate cancer; Caveats, p. 15 (PDF p. 22): zonal location is vital, especially at "the interface of the CZ and PZ at the base"; Appendix II sector map, p. 31 (PDF p. 38): the CZ is its own zone; American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Major Revisions": "Further description of assessment of lesions in CZ and AFMS"
 - **Proposed fix:** Replace with v2.1's text: the CZ is a separate zone, not part of the TZ; cancers there usually arise in the adjacent PZ or TZ, so the lesion's zone of origin decides the scoring table (as v2.1 states outright for the AFMS, p. 14); look for asymmetry and focal early enhancement.
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — v2.1 does not say the central zone is assessed as part of the TZ. It gives the CZ its own evaluation (asymmetry and focal early enhancement) and notes most cancers there extend from the adjacent PZ or TZ; it discourages lumping CZ with TZ. The "apply PZ or TZ criteria by zone of origin" rule is stated for the AFMS, not the CZ. (pirads-2-1, Evaluation of the central zone and of the AFMS, p. 14 (PDF p. 21); Section II A, p. 7)
 
 ### B2-pi-rads-11 · Peripheral zone DWI table: scores 1–3
 
@@ -104,6 +113,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — PI-RADS Assessment of DWI, p. 20 (PDF p. 27): one table for PZ or TZ; 1 "No abnormality (i.e., normal) on ADC and high b-value DWI"; 2 "Linear/wedge shaped …"; 3 "Focal … may be markedly hypointense on ADC or markedly hyperintense on high b-value DWI, but not both" (no size); American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Image Interpretation: DWI" (v2: 2 "Indistinct hypointense on ADC", 3 "Focal mildly/moderately hypointense on ADC and isointense/mildly hyperintense on high b-value DWI", no size)
 - **Proposed fix:** Use v2.1's rows: 1 without the added parenthesis; 2 "Linear/wedge shaped hypointense on ADC and/or linear/wedge shaped hyperintense on high b-value DWI"; 3 "Focal hypointense on ADC and/or focal hyperintense on high b-value DWI; may be markedly one but not both", with no size limit (rows 2–3 are v2's wording, and "<1.5 cm" on 3 is in neither version). The table applies to both zones.
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — Scores 2 and 3 are the v2.0 definitions, which v2.1 replaced (the revision summary lists "Revisions in criteria for DWI scores of 2 and 3"). "<1.5 cm" on score 3 is in neither version. The parenthesis on score 1 ("homogeneous hyperintense on ADC and iso/hyperintense on high b-value") is not the document's wording. (pirads-2-1, Section IV B.2 PI-RADS Assessment of DWI, p. 20 (PDF p. 27); pirads-2-1-revisions, slide "Image Interpretation: DWI")
 
 ### B2-pi-rads-12 · Peripheral zone DWI table: scores 4 and 5
 
@@ -113,6 +123,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — PI-RADS Assessment of DWI, p. 20 (PDF p. 27), scores 4 and 5 ("<1.5cm in greatest dimension"; "≥1.5cm in greatest dimension or definite extraprostatic extension/invasive behavior")
 - **Proposed fix:** Optional: add "in greatest dimension" and the caveat that "markedly" means more than any other focus in the same zone (p. 21).
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — Matches v2.1 (unchanged from v2). (pirads-2-1, Section IV B.2 PI-RADS Assessment of DWI, p. 20 (PDF p. 27))
 
 ### B2-pi-rads-13 · DCE role (PZ): what counts as positive and negative
 
@@ -122,6 +133,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — DCE section, pp. 21–22 (PDF pp. 28–29): positive is focal, earlier than or contemporaneous with adjacent normal tissue, "and corresponds to a finding on T2W and/or DWI"; DCE table, p. 22: negative includes diffuse multifocal enhancement not matching a focal finding and "focal enhancement corresponding to a lesion demonstrating features of BPH on T2WI (including features of extruded BPH in the PZ)"; American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Image Interpretation: DCE" (v2.1 modified the negative criteria; positive unchanged)
 - **Proposed fix:** Define a positive DCE by all three conditions (focal; earlier than or with adjacent normal tissue; matching a suspicious T2W/DWI finding) and list v2.1's negatives, including focal enhancement of a BPH-type nodule extruded into the PZ, which must not upgrade a DWI 3.
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** disagreed — Reviewer: correct (management). Focal, earlier than or contemporaneous, and the 3 → 4 upgrade in the PZ are right; a negative DCE leaves the DWI score. The page leaves out the third condition (the enhancement must correspond to a suspicious T2W and/or DWI finding) and that focal enhancement in a lesion with BPH features counts as negative. (pirads-2-1, Section IV C, p. 22 (PDF p. 29) and C.2 table; Section III, p. 10) Resolution: Stands as wrong with management: the omitted third condition (enhancement matching a suspicious T2W/DWI finding) and v2.1's negatives (a BPH-type nodule extruded into the PZ) are what stop a false DWI 3 → 4 upgrade, so the gap changes the category (DCE section, pp. 21–22).
 
 ### B2-pi-rads-14 · DCE upgrade rule (PZ tip)
 
@@ -130,6 +142,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **The page says:** "PZ DWI 3 + DCE positive → PI-RADS 4"; "PZ DWI 3 + DCE negative → PI-RADS 3".
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, Peripheral Zone table, p. 11 (PDF p. 18)
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — Matches the PZ table. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18))
 
 ### B2-pi-rads-15 · Transition zone T2W table: scores 1 and 2
 
@@ -139,6 +152,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — PI-RADS Assessment for T2W, TZ, p. 18 (PDF p. 25): 1 "Normal appearing TZ (rare) or a round, completely encapsulated nodule (\"typical nodule\")"; 2 "A mostly encapsulated nodule OR a homogeneous circumscribed nodule without encapsulation (\"atypical nodule\") OR a homogeneous mildly hypointense area between nodules"; Evaluation of the TZ, p. 13 (PDF p. 20) (typical BPH is T2W 1; incompletely or almost completely encapsulated nodules are T2W 2); Lexicon "Encapsulated", p. 33 (PDF p. 40) (completely encapsulated = in at least two planes); American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Assessment of T2W" (v2: 1 "Homogeneous intermediate signal intensity (normal)", 2 "Circumscribed hypointense or heterogeneous encapsulated nodule(s) (BPH)")
 - **Proposed fix:** Use v2.1's rows. Encapsulation, not hypointensity, separates them: a round, completely encapsulated nodule of any signal is 1; a mostly encapsulated nodule, a homogeneous circumscribed unencapsulated nodule, or a homogeneous mildly hypointense area between nodules is 2 (and becomes 3 with DWI 4 or 5).
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — Both rows are built on the v2.0 text; v2.1 revised T2W 1 and 2 in the TZ. Score 1 in v2.1 needs a completely encapsulated nodule: the page's "round/well-defined hypointense nodule" without a capsule is a v2.1 score 2. Score 2 is missing v2.1's mostly encapsulated nodule, circumscribed nodule without capsule, and mildly hypointense area between nodules. The 1/2 split matters because a 2 with DWI ≥4 becomes PI-RADS 3. (pirads-2-1, Section IV A.2 T2W, Transition Zone table, p. 18 (PDF p. 25); pirads-2-1-revisions, slide "Assessment of T2W")
 
 ### B2-pi-rads-16 · Transition zone T2W table: scores 3–5
 
@@ -147,6 +161,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **The page says:** "3 | Heterogeneous signal intensity with obscured margins (includes others not qualifying as 2, 4, or 5)"; "4 | Lenticular or non-circumscribed, homogeneous, moderately hypointense; <1.5 cm"; "5 | As per 4 but ≥1.5 cm, or definite extraprostatic extension/invasive behavior".
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — PI-RADS Assessment for T2W, TZ, p. 18 (PDF p. 25), scores 3–5
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — Matches v2.1. (pirads-2-1, Section IV A.2 T2W, Transition Zone table, p. 18 (PDF p. 25))
 
 ### B2-pi-rads-17 · DWI role (TZ) and DWI upgrade rule (TZ tip)
 
@@ -156,6 +171,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, Transition Zone table, p. 11 (PDF p. 18) (T2W 3: DWI ≤4 → 3, DWI 5 → 4; T2W 2: DWI ≥4 → 3); Evaluation of the TZ, pp. 13–14 (PDF pp. 20–21); American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Image Interpretation: Transition Zone" (v2 and v2.1 tables)
 - **Proposed fix:** Replace with v2.1: T2W 3 becomes 4 only with DWI 5 (DWI 4 stays 3); T2W 2 becomes 3 with DWI 4 or 5 (DWI ≤3 stays 2); DWI does not change T2W 1, 4 or 5.
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — Only a DWI score of 5 upgrades T2W 3 to PI-RADS 4; DWI 4 leaves it at 3 (true in v2 as well). And DWI 4 or 5 does change a T2W 2 (to PI-RADS 3 in v2.1), which the page's "DWI role" omits. The page would send T2W 3 / DWI 4 lesions to category 4. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18); pp. 13–14 (PDF pp. 20–21))
 
 ### B2-pi-rads-18 · Flowchart: overall score assignment
 
@@ -165,6 +181,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, Peripheral and Transition Zone tables, p. 11 (PDF p. 18); American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Image Interpretation: Transition Zone"
 - **Proposed fix:** Keep the PZ branch. TZ: T2W 2 → "DWI ≥4?" → 3 / else 2; T2W 3 → "DWI = 5?" → 4 / else 3; T2W 1, 4, 5 → that score. Optionally add the "DWI inadequate" branch (p. 16).
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** agrees — The PZ arm is right. The TZ arm is wrong twice: "T2WI = 3 → DWI ≥ 4? → PI-RADS 4" (should be DWI 5 only) and "T2WI = 1, 2, 4, or 5 → PI-RADS = T2WI score" (T2W 2 with DWI ≥4 is PI-RADS 3). (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18))
 
 ### B2-pi-rads-19 · Anatomic zones table
 
@@ -174,6 +191,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Normal Anatomy, p. 7 (PDF p. 14): TZ "contains 5% of the glandular tissue", CZ "about 20%", PZ "70%–80%" (the TZ grows with BPH); "Approximately 70-75% of prostate cancers originate in the PZ and 20-30% in the TZ"; CZ cancers uncommon, usually invasion by PZ tumours; "central gland" discouraged; AFMS "contains no glandular tissue"; p. 14 (PDF p. 21): "PCa does not originate in the AFMS"
 - **Proposed fix:** Glandular tissue: PZ 70–80%, CZ about 20%, TZ 5% (more with BPH); cancer origin: PZ 70–75%, TZ 20–30%, CZ uncommon; AFMS has no glands and no cancer starts there. Drop "central gland".
 - **Proposed home:** Prostate MRI (PI-RADS) › Background
+- **Re-check:** agrees — The gland proportions for TZ and CZ are the wrong way round: the document gives TZ 5% and CZ about 20% of glandular tissue (the page says TZ ~20–30%, CZ ~5%), and it discourages the term "central gland". The page seems to have copied the TZ's share of cancers into its share of the gland. PZ figures and the cancer-origin column are right, except AFMS "Rare": the document says cancer does not originate there. (pirads-2-1, Section II A Normal Anatomy, p. 7 (PDF p. 14); AFMS, p. 14)
 
 ### B2-pi-rads-20 · Extraprostatic extension indicators table
 
@@ -183,6 +201,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section V Staging, p. 25 (PDF p. 32): asymmetry or invasion of the neurovascular bundles, bulging contour, irregular or spiculated margin, obliteration of the rectoprostatic angle, "a tumor-capsule interface of greater than 1.0 cm", breach of the capsule with direct tumour extension, bladder wall invasion; Lexicon, Staging terms, p. 38 (PDF p. 45): "Tumor-capsule abutment of greater than 1 cm"; broad base of contact "at least 25% of tumor contact with the capsule"
 - **Proposed fix:** Make the contact length ">1 cm" (not ≥), add breach of the capsule with direct extension and bladder wall invasion, and replace "tumor abutting seminal vesicle" with the source's obliteration of the prostate–seminal vesicle angle or direct extension into the seminal vesicle.
 - **Proposed home:** Prostate MRI (PI-RADS) › Reporting
+- **Re-check:** disagreed — Reviewer: correct (management). Four rows match. Details: the document says contact "greater than 1.0 cm" (page: ≥1 cm), and it does not list "tumor abutting seminal vesicle"; its seminal vesicle signs are low T2 signal, restricted diffusion, obliteration of the prostate–seminal vesicle angle and direct extension. Breach of the capsule/direct extension and bladder wall invasion are not on the page. (pirads-2-1, Section V Staging, p. 25 (PDF p. 32); Appendix III Staging Terms, p. 38) Resolution: Stands as wrong, without management: re-read p. 25 — the source lists contact "greater than 1.0 cm" and does not give "tumor abutting seminal vesicle"; breach of the capsule and bladder wall invasion are missing. Minor; stage 3 rewrites the table.
 
 ### B2-pi-rads-21 · Seminal vesicle invasion box
 
@@ -192,6 +211,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section V Staging, p. 25 (PDF p. 32): SVI features are focal or diffuse low T2W signal and/or abnormal enhancement within or along the seminal vesicle, restricted diffusion, obliteration of the prostate–seminal vesicle angle, and direct tumour extension; Lexicon, p. 39 (PDF p. 46): three types (spread along the ejaculatory ducts, direct extraglandular extension, a separate metachronous deposit); p. 25: MRI separates ≤T2 from ≥T3 (T3b is not named)
 - **Proposed fix:** List the p. 25 features and the three lexicon types instead of a two-feature rule (a separate deposit without direct extension is still SVI). "T3b" is TNM's stage, which PI-RADS does not give; keep it only with a TNM citation.
 - **Proposed home:** Prostate MRI (PI-RADS) › Reporting
+- **Re-check:** disagreed — Reviewer: correct (management). The imaging signs match. The "T3b" label is standard staging but is not stated in any of the audit sources (PI-RADS says only "≥T3 disease"). (pirads-2-1, Section V Staging, p. 25 (PDF p. 32)) Resolution: Stands as wrong: re-read p. 25 (PDF p. 32) — the features of seminal vesicle invasion are listed as alternatives ("and/or": low T2W signal or abnormal enhancement, restricted diffusion, obliteration of the angle, direct extension); the page requires low signal AND direct extension, which under-calls invasion. "T3b" is not in the audit sources.
 
 ### B2-pi-rads-22 · PSA density formula
 
@@ -200,15 +220,18 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **The page says:** "PSAD = PSA (ng/mL) / Prostate Volume (cc)".
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III A, Measurement of the Prostate Gland, p. 12 (PDF p. 19) ("PSAD=PSA/prostate volume"); Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Reporting, Findings, p. 7 ("PSA divided by prostate volume")
 - **Proposed home:** Prostate MRI (PI-RADS) › Measurement
+- **Re-check:** agrees — Formula is right. (pirads-2-1, Section III A, Measurement of the Prostate Gland, p. 12 (PDF p. 19); car-prostate-mri-2022, Reporting, p. 7)
 
 ### B2-pi-rads-23 · PSA density bands for PI-RADS 3
 
-- **Verdict:** correct
+- **Verdict:** unsourced · **management**
 - **Kind:** guideline-threshold · **Topic:** Prostate MRI (PI-RADS)
 - **The page says:** "<0.10 | Low risk; biopsy may be deferred in PI-RADS 3"; "0.10–0.15 | Intermediate; shared decision-making for PI-RADS 3"; "≥0.15 | Higher risk; supports biopsy recommendation for PI-RADS 3".
 - **Source:** Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Reporting, Findings, p. 7: "in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy" (no reference given for the sentence); American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III, p. 10 (PDF p. 17) (for category 3, biopsy depends on factors other than MRI); PI-RADS gives no PSA density threshold; Mason RJ, Marzouk K, Finelli A, et al. UPDATE – 2022 Canadian Urological Association recommendations on prostate cancer screening and early diagnosis: Endorsement of the 2021 Cancer Care Ontario guidelines on prostate multiparametric magnetic resonance imaging. Can Urol Assoc J. 2022;16(4):E184-E196. doi:10.5489/cuaj.7851 — PSA density, p. E189: "A PSAD threshold of >0.15 ng/ml/cm3 has been suggested"; "the use of PSAD alone for clinical decision-making is discouraged; however, use of PSAD can be considered adjunctively in men with known prostate volumes"
-- **Proposed fix:** Optional: cite CAR (p. 7) and present 0.10–0.15 as CAR does, a range of suggested biopsy thresholds for PI-RADS 3, rather than as named risk bands; add CUA 2022 (>0.15, not to be used alone) under "Other guidelines differ".
+- **Proposed fix:** Restate CAR (p. 7): a PSA density of about 0.10–0.15 is suggested as a biopsy threshold for PI-RADS 3; put CUA 2022 (>0.15, not to be used alone) under "Other guidelines differ"; drop the named bands unless they are local practice.
+- **Question for the owner:** The page's PSA-density bands for PI-RADS 3 (<0.10 "biopsy may be deferred", 0.10–0.15 shared decision, ≥0.15 supports biopsy) are in no published source. Are they your local practice, or should the page restate CAR's "about 0.10–0.15" threshold?
 - **Proposed home:** Prostate MRI (PI-RADS) › Management
+- **Re-check:** disagreed — Reviewer: unsourced (management). PI-RADS v2.1 gives no PSA density bands. The cut-points 0.10 and 0.15 echo CAR's "approximately 0.1 to 0.15 ... suggested for biopsy", but CAR gives them as a range of biopsy thresholds, not three bands; "biopsy may be deferred" below 0.10 and "shared decision-making" between are the page's own. CUA discourages using PSAD alone and writes its threshold as >0.15 (page: ≥0.15). (car-prostate-mri-2022, Reporting, Findings, p. 7; cua-prostate-early-diagnosis-2022, PSA density, p. E189; pirads-2-1, p. 12 (formula only)) Resolution: Changed to unsourced with management, as the reviewer has it: the three named bands and their actions ("biopsy may be deferred" below 0.10) are in no source; CAR gives "approximately 0.1 to 0.15" as suggested biopsy thresholds for PI-RADS 3 and CUA >0.15, not to be used alone.
 
 ### B2-pi-rads-24 · Prostate volume measurement tip
 
@@ -218,15 +241,17 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III A, Measurement of the Prostate Gland, p. 12 (PDF p. 19): maximum AP and longitudinal dimensions on the mid-sagittal T2W image, maximum transverse on the axial T2W image, × 0.52; manual or automated segmentation also acceptable; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Reporting, Findings, p. 7 (AP and CC off the mid-sagittal image, transverse off the axial; state whether ellipsoid or volumetric)
 - **Proposed fix:** Optional: add where each diameter is measured (AP and CC on the mid-sagittal T2W image, transverse on the axial T2W image) and that segmentation is acceptable (state which was used).
 - **Proposed home:** Prostate MRI (PI-RADS) › Measurement
+- **Re-check:** agrees — Formula is right. v2.1 also fixes where to measure (AP and longitudinal on mid-sagittal T2W, transverse on axial T2W), which the page omits. Feeds PSA density, but the formula itself is correct. (pirads-2-1, Section III A, Measurement of the Prostate Gland, p. 12 (PDF p. 19); pirads-2-1-revisions, slide "Prostate Volume Measurement")
 
 ### B2-pi-rads-25 · PSA density calculator
 
-- **Verdict:** wrong
+- **Verdict:** wrong · **management**
 - **Kind:** calculator · **Topic:** Prostate MRI (PI-RADS)
 - **The page says:** Fields "PSA (ng/mL)" and "Prostate Volume (cc)"; result "PSA Density: <value> ng/mL/cc — <band>", the value rounded to three decimals. Runs (docs/audit/batch-2/cases/psa_density.results.md): 0.099 → Low; 0.100 → Intermediate; 0.149 → Intermediate; 0.150 and 0.151 → Higher; the document's example (PSA 12.1, 42 cc) → 0.288 (document: 0.29). Rounding moves edge values: PSA 4.99 / 50 cc (0.0998) → "0.1 … Intermediate risk"; PSA 7.49 / 50 cc (0.1498) → "0.15 … Higher risk". Volume 0, blank or negative → "Error: Prostate volume must be greater than 0." A blank, zero or negative PSA returns a density (0, 0, −0.02) with "Low risk. Biopsy may be deferred in PI-RADS 3 lesions."
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section III A, p. 12 (PDF p. 19) (PSAD = PSA / volume); Appendix I example, p. 28 (PDF p. 35) ("42 cubic cm, PSA density 0.29 ng/mL/mL"); Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Reporting, Findings, p. 7 (0.1 to 0.15 for PI-RADS 3)
 - **Proposed fix:** Compare the unrounded value with the bands (or round to two decimals and say the bands apply to that), and refuse a missing, zero or negative PSA instead of returning "Low risk".
 - **Proposed home:** Prostate MRI (PI-RADS) › Calculator
+- **Re-check:** agrees — The division is right (12.1/42 = 0.288, the document's 0.29). Faults: (1) it bands the rounded value, so 0.0998 is called Intermediate and 0.1498 Higher, against the page's own table; (2) a blank, zero or negative PSA is not rejected (`Number('')` is 0) and returns "Low risk. Biopsy may be deferred in PI-RADS 3 lesions", a false reassurance; only volume is validated; (3) the bands themselves are unsourced (see 23). The case file's expected readings are fair; its band labels are the page's, not a source's. (pirads-2-1, p. 12 (PDF p. 19) and Appendix I example, p. 28; car-prostate-mri-2022, Reporting, p. 7; code: guideline_calculators.js psa_density_calculator)
 
 ### B2-pi-rads-26 · Technique: T2W minimum standard
 
@@ -236,6 +261,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — T2W Technical Specifications, pp. 17–18 (PDF pp. 24–25): axial plus at least one orthogonal plane; "Slice thickness: 3mm, no gap"; FOV 12–20 cm; "In plane dimension: ≤0.7mm (phase) x ≤0.4mm (frequency)"; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Imaging Acquisition Parameters, p. 6: T2W "in the axial plane and both sagittal and coronal planes" (sagittal may be a rapid sequence); "maximum recommended slice thickness of 3 mm"
 - **Proposed fix:** Keep three planes (CAR p. 6; PI-RADS's minimum is two) and 3 mm with no gap; make the in-plane limit ≤0.7 mm (phase) × ≤0.4 mm (frequency).
 - **Proposed home:** Prostate MRI (PI-RADS) › Technique
+- **Re-check:** agrees — As a PI-RADS v2.1 minimum, "≥3 planes" is wrong: v2.1 requires axial plus at least one other plane (a listed v2.1 revision). Three planes is CAR's recommendation, so that part is defensible under the CAR-leads rule but should be attributed. In-plane resolution is incomplete: ≤0.7 mm is the phase direction only; frequency is ≤0.4 mm. Slice thickness 3 mm (no gap) is right. Borderline; the in-plane figure is the clear fault. (pirads-2-1, Section IV A.1 Technical Specifications T2W, pp. 17–18 (PDF pp. 24–25); pirads-2-1-revisions, "Major Revisions"; car-prostate-mri-2022, MRI protocol, p. 5)
 
 ### B2-pi-rads-27 · Technique: DWI minimum standard
 
@@ -245,6 +271,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — DWI Technical Specifications, p. 19 (PDF p. 26): for the ADC map, a low b of 0–100 (preferably 50–100) and an intermediate b of 800–1000, maximum b for ADC ≤1000; "a high b-value (≥1,400 sec/mm2) image set is also mandatory" (acquired or calculated); TE ≤90 ms, TR ≥3000 ms, slice ≤4 mm no gap, FOV 16–22 cm, in-plane ≤2.5 mm; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Imaging Acquisition Parameters, p. 6: low b 50–100 and intermediate b 800–1000; "a high b-value image of > 1400 s/mm2 is required"; American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Image Acquisition: DWI"
 - **Proposed fix:** High b-value images (≥1400 s/mm², acquired or calculated) are mandatory, not optional; build the ADC map from a low b of 50–100 (CAR; PI-RADS allows 0–100) and an intermediate b of 800–1000, with no b above 1000 in the ADC fit.
 - **Proposed home:** Prostate MRI (PI-RADS) › Technique
+- **Re-check:** disagreed — Reviewer: wrong. The high b-value set (≥1400) is mandatory in v2.1 (acquired or calculated), not optional. The ADC b-values should be a low value of 0–100 (preferably 50–100, not 0) and an intermediate 800–1000, capped at 1000; "b ≥ 800" has no upper limit. (pirads-2-1, Section IV B.1 Technical Specifications, p. 19 (PDF p. 26); pirads-2-1-revisions, slide "Image Acquisition: DWI") Resolution: Stands with management: high b-value images (≥1400, acquired or calculated) are mandatory in v2.1 (p. 19) and CAR (p. 6); a protocol built from the page would omit them, and they matter most for anterior and TZ tumours, so detection and the category can change.
 
 ### B2-pi-rads-28 · Technique: DCE minimum standard
 
@@ -254,6 +281,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — DCE Technical Specifications, p. 22 (PDF p. 29): temporal resolution ≤15 s; FOV encompassing the prostate and seminal vesicles; 3D T1W GRE preferred; slice 3 mm; in-plane ≤2 × 2 mm; observation >2 min; fat suppression and/or subtraction; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Imaging Acquisition Parameters, p. 6: 3D T1-weighted GRE; temporal resolution ≤15 s
 - **Proposed fix:** Optional: cover the seminal vesicles too and add 3D GRE, observation over 2 minutes and fat suppression or subtraction (p. 22).
 - **Proposed home:** Prostate MRI (PI-RADS) › Technique
+- **Re-check:** agrees — Matches. The document's coverage includes the seminal vesicles as well as the prostate. (pirads-2-1, Section IV C.1 Technical Specifications, p. 22 (PDF p. 29))
 
 ### B2-pi-rads-29 · Technique: field strength and endorectal coil
 
@@ -263,6 +291,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section I B, Magnetic Field Strength and Endorectal Coil, pp. 5–6 (PDF pp. 12–13); Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Hardware Considerations, p. 4: 3T "whenever possible"; 1.5T for devices conditional only at 1.5T or degrading artefact (hip prosthesis); below 1.5T not recommended; endorectal coils "not necessary", may help large patients
 - **Proposed fix:** Optional: use CAR's wording (3T unless contraindicated, nothing below 1.5T, endorectal coil not necessary at either strength).
 - **Proposed home:** Prostate MRI (PI-RADS) › Technique
+- **Re-check:** agrees — Consistent with PI-RADS and with CAR (3T whenever possible; endorectal coil not necessary). PI-RADS gives "increased SNR" as the 3T advantage. (pirads-2-1, Section I B.1–2, pp. 5–6 (PDF pp. 12–13); car-prostate-mri-2022, Technical considerations, p. 4)
 
 ### B2-pi-rads-30 · Reporting template elements
 
@@ -272,6 +301,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Reporting, pp. 6–7: indication with patient age, date and PSA level, prior biopsies and therapies; technique stating PI-RADS v2.1 compliance, field strength, coil, enough to tell biparametric from multiparametric, the high b-value and image quality; size L × W × H with volume method and PSA density; haemorrhage and nodular hyperplasia; up to four lesions in order with the v2.1 sector map and series/image numbers, PZ size on ADC and TZ on T2W; T2W, DWI, DCE and overall scores; capsule, seminal vesicles, bladder neck and neurovascular bundles; nodes and bones with pertinent negatives; impression lists every lesion PI-RADS ≥3 and disease outside the capsule; Table 1, p. 3, recommendations 1 and 3 (image quality reported; PSA, age and indication in all reports); Appendix E template; American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Mapping and measurement of lesions, pp. 12–13 (PDF pp. 19–20) (up to four lesions of category 3–5, index lesion, sequence and image number of the measurement); Appendix I, pp. 26–27 (PDF pp. 33–34) (state PI-RADS compliance; PSA and prior biopsy; dates of prior exams)
 - **Proposed fix:** Follow CAR's list: add the indication with PSA and age, a PI-RADS v2.1-compliance and image-quality statement, haemorrhage, the measuring sequence and series/image numbers, up to four lesions with the index lesion, bladder neck and bones; use the 41-sector map (B2-pi-rads-31). A management recommendation is not part of either template.
 - **Proposed home:** Prostate MRI (PI-RADS) › Reporting
+- **Re-check:** agrees — Most listed elements are in the PI-RADS and CAR templates, but the location line cites a "27-sector map": v2.1 uses a 41-sector map. "Clinical management recommendation" in the impression is not a PI-RADS element (the document makes no management recommendations). Missing against the templates under a "Required" heading: indication with PSA and prior biopsy/therapy, comparison, image quality, hemorrhage, neurovascular bundles, bones, series/image numbers; lesions are capped at four. (pirads-2-1, Appendix I Report Template, pp. 26–27 (PDF pp. 33–34); Appendix II Sector Map, p. 29; car-prostate-mri-2022, Reporting, p. 7 and Appendix E)
 
 ### B2-pi-rads-31 · Sector map
 
@@ -281,6 +311,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Section II B, p. 7 (PDF p. 14); Appendix II, pp. 30–31 (PDF pp. 37–38): 41 sectors (38 prostate, 2 seminal vesicle, 1 external urethral sphincter); PZ anterior, medial posterior and lateral posterior at base, mid and apex on each side (18); TZ anterior and posterior at base, mid and apex (12); AFMS right and left at base, mid and apex (6); CZ right and left at the base (2); American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Revisions in the Sector Map" ("Now 41 sectors total"); Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Reporting, p. 6 ("the PI-RADS V2.1 lexicon and sector map should be considered mandatory")
 - **Proposed fix:** Replace with the v2.1 map: 41 sectors — PZ 18 (a, pm, pl), TZ 12 (a, p at base, mid and apex), AFMS 6, CZ 2 at the base, seminal vesicles 2, urethral sphincter 1 — and link the ACR diagram.
 - **Proposed home:** Prostate MRI (PI-RADS) › Reporting
+- **Re-check:** agrees — v2.1 has 41 sectors (38 prostate, 2 seminal vesicles, 1 external urethral sphincter), not 27. The TZ is right/left × base/mid/apex × anterior/posterior (the page: 4 sectors, no apex); the AFMS is right/left at three levels (the page: 1). PZ subdivisions are anterior, medial posterior and lateral posterior. The page's own counts add to 25, not 27, and it omits the urethral sphincter. (pirads-2-1, Appendix II Sector Map, p. 29 (PDF p. 36); Section II B, p. 8; pirads-2-1-revisions, slide "Revisions in the Sector Map")
 
 ### B2-pi-rads-32 · Common pitfalls: the "Don't" list
 
@@ -290,6 +321,7 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Caveats for Overall Assessment, pp. 14–15 (PDF pp. 21–22): DWI dominant in the PZ, T2W in the TZ ("if the DWI score is 4 and T2W score is 2, PIRADS Assessment Category should be 4"); zonal location vital; encapsulated TZ nodules, "homogeneous or heterogeneous", are BPH; DWI section, p. 19 (PDF p. 26): high b-value images improve conspicuity of tumours next to the AFMS; Appendix I, p. 27 (prostate margin reported for every lesion)
 - **Proposed fix:** Reword the first item: score every sequence, but the category comes from the dominant one (DWI in the PZ, T2W in the TZ), with only the defined DCE and DWI upgrades (a PZ DWI 4 with T2W 2 is 4, p. 14). Typical BPH nodules can be homogeneous or heterogeneous; for anterior tumours, check the high b-value images (p. 19).
 - **Proposed home:** Prostate MRI (PI-RADS) › Categories
+- **Re-check:** disagreed — Reviewer: unsourced. Mixed list. Supported: keep PZ and TZ apart (zonal location is "vital"); do not overcall encapsulated BPH nodules; assess the prostate margin/EPE per lesion. Not supported: "anterior TZ tumors ... can be subtle on DWI" (the document says high b-value DWI helps most for anterior tumours); and "don't assign PI-RADS based on a single sequence" sits badly with the dominant-sequence rule, under which most categories come from one sequence (e.g. PZ DWI 4 with T2W 2 is 4). (pirads-2-1, Caveats for Overall Assessment, pp. 14–15 (PDF pp. 21–22); Section IV B, p. 19; Appendix I template) Resolution: Stands as wrong: the list is mixed, but "don't assign PI-RADS based on a single sequence" contradicts the dominant-sequence rule (pp. 14–15: the category comes from DWI in the PZ, T2W in the TZ), and the anterior-tumour line inverts the document's advice on high b-value DWI (p. 19).
 
 ### B2-pi-rads-33 · Common pitfalls: "Do" — volume and PSA density, sector, prior MRI
 
@@ -307,15 +339,16 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Introduction, p. 3 (PDF p. 10): v2.1 is designed for "treatment naïve prostate glands" and does not address suspected recurrence after therapy; bpMRI commentary, p. 24 (PDF p. 31): local recurrence after treatment is "a setting in which current PI-RADS assessment criteria do not apply"; p. 24 item 3: men with prior interventions (TRUS/TURP/BPH therapy, radiotherapy, focal therapy or embolization) or morphology-changing drugs should have mpMRI rather than bpMRI "for disease detection and localization"; Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — Bi-Parametric MRI, p. 6 (after treatment, mpMRI with contrast; contrast critical for recurrent disease)
 - **Proposed fix:** Say that v2.1 is written for treatment-naïve glands and its criteria do not apply to suspected local recurrence after prostate cancer treatment (pp. 3, 24), so recurrence needs another system (see gaps); keep "record prior treatment", and note that after interventions or drugs that change the gland, PI-RADS prefers full mpMRI (p. 24).
 - **Proposed home:** Prostate MRI (PI-RADS) › Applies to
+- **Re-check:** agrees — Recording prior therapy is right (the template's indication line asks for it). But "may alter assessment" understates the document: after treatment the PI-RADS assessment criteria do not apply at all, so a PI-RADS category should not be assigned by these rules. CAR adds that contrast (mpMRI) should be used after treatment. Borderline between `wrong` and an incomplete `correct`. (pirads-2-1, Introduction, p. 2 (PDF p. 9); Section IV D, p. 24 (PDF p. 31); Appendix I template)
 
 ### B2-pi-rads-35 · Version history rows about guideline versions
 
-- **Verdict:** wrong
+- **Verdict:** correct
 - **Kind:** provenance · **Topic:** Prostate MRI (PI-RADS)
 - **The page says:** "2019 | v2.1 | Updated DWI scoring and DCE role; replaced v2.0"; "2015 | v2.0 | Major revision from v1.0".
 - **Source:** American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019. — Slide "Major Revisions in PI-RADS v2.1"; slide "Image Interpretation: Transition Zone" ("The only change in deriving the overall PI-RADS assessment category, compared to PI-RADS v2, concerns TZ lesions with a T2W score of 2"); slide "Image Interpretation: DCE" ("Criteria for a positive score on DCE remains unchanged"); American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Introduction, pp. 1–2 (PDF pp. 8–9) (v1 by ESUR in 2012, then v2, then v2.1)
-- **Proposed fix:** Describe v2.1 as ACR does: new DWI 2–3 and TZ T2W 1–2 definitions, TZ T2W 2 with DWI ≥4 → 3 (the only change to the overall category), clarified DCE negatives (positive unchanged), technique, CZ and AFMS guidance, the 41-sector map and the bpMRI discussion. The v2.0 row is right.
 - **Proposed home:** Prostate MRI (PI-RADS) › Background
+- **Re-check:** disagreed — Reviewer: correct. Dates and versions are right. The v2.1 summary is thin: it leaves out the changes that matter most for scoring (TZ T2W 1 and 2 criteria and the TZ overall-category rule, sector map, volume measurement), which are exactly the ones the page failed to apply. (pirads-2-1, title page and Introduction, pp. 1–2; pirads-2-1-revisions, "Major Revisions in PI-RADS v2.1"; pirads-2-1 ref. 17) Resolution: Changed to correct: dates and versions are right; the v2.1 summary is thin but not false.
 
 ### B2-pi-rads-36 · References list
 
@@ -325,15 +358,16 @@ https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Cover, p. i; Introduction, pp. 1–2 (ACR, ESUR and AdMeTech Steering Committee); Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532 — References 9 and 10, p. 9 (Weinreb 2016, Eur Urol 69:16-40; Turkbey 2019, Eur Urol 76:340-351)
 - **Proposed fix:** Optional: cite the ACR document as the ACR's (with ESUR and the AdMeTech Foundation) and link it; add the CAR white paper.
 - **Proposed home:** Prostate MRI (PI-RADS) › Background
+- **Re-check:** agrees — All three citations match (authors, titles, journal, year, volume, pages). The issue numbers (3 and 1) are not given in the audit sources, so those alone are unchecked. Reference 3 is the v2 paper, which fits the v2 wording found on the page. (docs/audit/sources.json (pirads-2-1); car-prostate-mri-2022, refs 9 and 10; pirads-2-1, ref. 17)
 
 ### B2-pi-rads-37 · Front-page row (shared/data/resources.ts, id pi-rads)
 
-- **Verdict:** wrong
+- **Verdict:** correct
 - **Kind:** listing · **Topic:** Prostate MRI (PI-RADS)
 - **The page says:** Title "PI-RADS", version "v2.1", summary "Prostate MRI scoring by zone (DWI peripheral, T2 transition) to an overall PI-RADS category."
 - **Source:** American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Cover, p. i (Version 2.1, 2019); Caveats, p. 14 (DWI dominant in the PZ, T2W in the TZ)
-- **Proposed fix:** The summary is accurate. Keep "v2.1" only once the page's DWI and TZ T2W definitions and its TZ rule are brought to v2.1 (B2-pi-rads-04, -11, -15, -17); until then the label overstates the page.
 - **Proposed home:** Front page row: PI-RADS
+- **Re-check:** disagreed — Reviewer: correct. Title, version and summary are accurate as a description of PI-RADS v2.1. Note the row also sets `calculator: true`, and the linked calculator is wrong in the transition zone (piece 04). (pirads-2-1, title page; Caveats for Overall Assessment, p. 14 (PDF p. 21)) Resolution: Changed to correct: title, "v2.1" and summary describe the guideline accurately; the row's calculator mark goes off with the calculator (-04's fix).
 
 ## TI-RADS
 
@@ -347,6 +381,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p1: title "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee", authors Tessler, Middleton, Grant et al., doi 10.1016/j.jacr.2017.01.046 (Crossref gives volume 14, issue 5, pages 587-595); American College of Radiology. ACR TI-RADS [chart]. Originally published as Fig 1 of Tessler FN et al., J Am Coll Radiol 2017;14(5):587-595. — the one-page chart ACR's TI-RADS web page links today is the 2017 Fig 1, footed "Originally published in JACR at: https://www.jacr.org/article/S1546-1440(17)30186-2/fulltext"; no later ACR TI-RADS version was found
 - **Proposed fix:** Optional: give the DOI (10.1016/j.jacr.2017.01.046) with the citation, and say the system applies to adults (in-press PDF p2).
 - **Proposed home:** Thyroid nodules › Background
+- **Re-check:** agrees — Authors, title, journal, year and version match the white paper. The audit copy is the article-in-press PDF, which prints no volume or pages, so 14(5):587-595 could not be confirmed from the PDF itself (it matches the citation recorded in sources.json). (tirads-2017, title page, PDF p1 (DOI line); docs/audit/sources.json citation)
 
 ### B2-ti-rads-02 · Calculator: TI-RADS level from the point total
 
@@ -356,6 +391,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: option points and "0 Points" TR1, "2 Points" TR2, "3 Points" TR3, "4 to 6 Points" TR4, "7 Points or More" TR5 (runs in docs/audit/batch-2/cases/tirads.results.md, cases level-*: 7 of 7 matched); Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p2, Overview of ACR TI-RADS: "although it is possible for a nodule to be awarded zero points and hence be characterized as TR1, all other nodules merit at least two points" (case level-1pt-cystic-macrocalc, read)
 - **Question for the owner:** The white paper gives no level for a 1-point total (it says it cannot occur, but a cystic anechoic nodule with a macrocalcification scores 1). The old calculator calls it TR2; both TR1 and TR2 mean no FNA. Should the rebuilt calculator label 1 point TR1, TR2, or flag the combination?
 - **Proposed home:** Thyroid nodules › Calculator
+- **Re-check:** agrees — Option points and the 0/2/3/4-6/7+ mapping match the chart. One gap: a total of 1 (cystic, anechoic, macrocalcification) is called TR2, a total the chart gives no level for (the paper says all nodules other than 0-point ones merit at least two points); no FNA either way, so management is not changed. (tirads-2017, Fig 1 (chart), PDF p3)
 
 ### B2-ti-rads-03 · Calculator: FNA and follow-up size thresholds for TR3–TR5
 
@@ -364,6 +400,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **The page says:** Runs on each side of every cut-off: TR3 1.4 cm → "No FNA, no follow-up needed (< 1.5 cm)", 1.5 and 2.4 → follow-up, 2.5 → "Consider FNA (≥ 2.5 cm)"; TR4 0.9 → none, 1.0 and 1.4 → follow-up, 1.5 → FNA; TR5 0.4 → none, 0.5 and 0.9 → follow-up, 1.0 → "FNA recommended (≥ 1.0 cm)"; TR2 at 5.0 cm → no FNA.
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: TR3 "FNA if ≥ 2.5 cm, Follow if ≥ 1.5 cm"; TR4 "FNA if ≥ 1.5 cm, Follow if ≥ 1 cm"; TR5 "FNA if ≥ 1 cm, Follow if ≥ 0.5 cm*"; TR1–TR2 "No FNA" (runs in docs/audit/batch-2/cases/tirads.results.md, cases tr2-*, tr3-*, tr4-*, tr5-*: 13 of 13 matched, the FNA/follow-up/none split read at each size)
 - **Proposed home:** Thyroid nodules › Calculator
+- **Re-check:** agrees — Every cut-off sits on the right side in the runs (thresholds are 'at or above'), and TR2 has no size threshold. The cases file's expected values agree with the chart. (tirads-2017, Fig 1 (chart), PDF p3)
 
 ### B2-ti-rads-04 · Calculator: recommendation wording (follow-up after FNA, TR5 interval, 5–9 mm TR5)
 
@@ -373,6 +410,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Timing of Follow-Up Sonograms: follow-up is "for nodules that do not meet size criteria for FNA"; "For a TR5 lesion, we recommend scans every year for up to 5 years. For a TR4 lesion, scans should be done at 1, 2, 3, and 5 years. For a TR3 lesion, follow-up imaging may be performed at 1, 3, and 5 years"; p6, Measurement and Documentation: "The committee did not address follow-up for previously sampled nodules" (Bethesda-guided); Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p2: "a size threshold at or above which FNA should be recommended"; Fig 1 footnote "*Refer to discussion of papillary microcarcinomas for 5-9 mm TR5 nodules"; p5, Papillary Thyroid Microcarcinomas ("biopsy of 5- to 9-mm TR5 nodules may be appropriate under certain circumstances", shared decision making) (cases tr3-size-2-5, tr4-size-1-5, tr5-size-0-5, tr5-size-0-9, tr5-size-1-0, read)
 - **Proposed fix:** At or above the FNA threshold say "FNA recommended" and drop the follow-up schedule (cytology decides what follows). Give TR5 follow-up as every year for up to 5 years, and add to 5–9 mm TR5 results that FNA may be appropriate by shared decision (Fig 1 footnote).
 - **Proposed home:** Thyroid nodules › Calculator
+- **Re-check:** agrees — Three faults: TR5 follow-up is printed as 1, 2, 3 and 5 years (the paper says every year for up to 5 years, so year 4 is dropped); a follow-up schedule is attached to nodules that meet the FNA threshold, which the paper does not give (the schedule is for nodules below the FNA size; sampled nodules are not addressed); and the 5-9 mm TR5 output omits that FNA may be appropriate by shared decision. 'Consider FNA' for TR3/TR4 is also softer than the paper's 'FNA should be recommended' at or above the threshold. (tirads-2017, Timing of Follow-Up Sonograms and Measurement and Documentation, PDF p6; Papillary Thyroid Microcarcinomas, PDF p5; Overview, PDF p2)
 
 ### B2-ti-rads-05 · Calculator: echogenic foci is a single choice
 
@@ -380,8 +418,9 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Kind:** calculator · **Topic:** Thyroid nodules
 - **The page says:** "Echogenic Foci" is one drop-down ("None or large comet-tail artifacts — 0 pts", "Macrocalcifications — 1 pt", "Peripheral (rim) calcifications — 2 pts", "Punctate echogenic foci — 3 pts"), so only one kind can be scored. Runs: totals of two foci (4 = macro + punctate, 5 = rim + punctate) are not accepted; a 1.2 cm solid isoechoic nodule with macrocalcifications and punctate foci, entered with punctate only, gives "TR4 (6 pts): Consider follow-up ultrasound" where ACR gives 7 points, TR5, FNA.
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: ECHOGENIC FOCI "(Choose All That Apply)"; in-press PDF p2, Overview: "the reader selects one feature from each of the first four categories and all the features that apply from the final category and sums the points"; p5, Echogenic Foci ("Peripheral calcifications … adds another two points") (runs in docs/audit/batch-2/cases/tirads.results.md: foci-macro-plus-punctate and foci-rim-plus-punctate input not accepted; foci-one-choice-only mismatched); American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018). — PDF p3, ACR TI-RADS Categories: "Echogenic foci - Choose all that apply"
-- **Proposed fix:** Make echogenic foci four check boxes (macrocalcifications, peripheral, punctate; none) whose points add. Until then switch the calculator off or say above it that only the highest focus is counted, so totals can be one to three points low.
+- **Proposed fix:** Make echogenic foci four check boxes (macrocalcifications, peripheral, punctate; none) whose points add. Fix now: switch the calculator off on the old page (dated notice) and turn off the front-page row's calculator mark, until it is rebuilt (with -04, -06 and -07's fixes).
 - **Proposed home:** Thyroid nodules › Calculator
+- **Re-check:** agrees — Echogenic foci are additive in ACR TI-RADS; a single drop-down cannot score two kinds. The worked case is right: solid (2) + isoechoic (1) + macrocalcifications (1) + punctate foci (3) = 7, TR5, FNA at 1.2 cm, but the calculator can only reach 6, TR4, follow-up. (tirads-2017, Fig 1 (chart), PDF p3; Overview, PDF p2)
 
 ### B2-ti-rads-06 · Calculator: spongiform nodules and impossible combinations
 
@@ -391,6 +430,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1 explanatory notes: "Spongiform: … Do not add further points for other categories"; "Anechoic: Applies to cystic or almost completely cystic nodules"; "Mixed cystic and solid: Assign points for predominant solid component"; "Assign 1 point if echogenicity cannot be determined"; Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p4, Composition (spongiform "highly correlated with benign cytology, regardless of its relative echogenicity or other features") and Echogenicity; p5, Echogenic Foci (small echogenic foci in spongiform nodules "should not add to the point total"); p2, Overview (a mixed nodule gains at least one point for the echogenicity of its solid component) ({RES}: spongiform-adds-points mismatched; anechoic-with-solid and anechoic-with-mixed read); American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018). — PDF p6: spongiform "is a benign finding. If there is concern for irregular margins or suspicious echogenic foci, reconsider your choice of spongiform"; PDF p9: anechoic "Without soft tissue component"
 - **Proposed fix:** Give spongiform its own value and return 0 points (TR1) whatever else is chosen, with the atlas's prompt to reconsider spongiform if margins or foci are suspicious; allow anechoic only with a cystic or almost completely cystic nodule.
 - **Proposed home:** Thyroid nodules › Calculator
+- **Re-check:** agrees — A spongiform nodule is 0 points, TR1, whatever else is chosen; the calculator adds the other drop-downs and reached TR4 with 'Consider FNA'. Anechoic with a solid or mixed nodule is not a valid ACR combination (echogenicity is scored on the solid component, 1 point if it cannot be determined), yet it is accepted and turns a 3-point solid nodule into a 2-point TR2 with no FNA at 3 cm. (tirads-2017, Fig 1 (chart), PDF p3 explanatory notes; Composition and Echogenicity, PDF p4; Echogenic Foci, PDF p5)
 
 ### B2-ti-rads-07 · Calculator: missing or impossible size
 
@@ -400,6 +440,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p2, Overview: "recommendations for FNA or ultrasound follow-up are based on a nodule's ACR TI-RADS level and its maximum diameter"; p6, Measurement and Documentation (runs in docs/audit/batch-2/cases/tirads.results.md: invalid-size-blank, -zero, -negative read; invalid-size-text and invalid-composition-value input not accepted)
 - **Proposed fix:** Refuse a blank, zero or negative size instead of returning "No FNA, no follow-up".
 - **Proposed home:** Thyroid nodules › Calculator
+- **Re-check:** agrees — With no size (or 0 or a negative one) the code treats the size as 0 and prints 'No FNA, no follow-up needed (< 1.0 cm)' for a TR4 nodule; no recommendation can be given without a real diameter. Confirmed in the code (Number('') is 0, no validity check); typed in the form only 0 gets through, so the exposure is mainly links that fill the form. (tirads-2017, Overview, PDF p2; Measurement and Documentation, PDF p6)
 
 ### B2-ti-rads-08 · Quick Reference table: points, FNA and follow-up thresholds
 
@@ -409,6 +450,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: point bands and "FNA if ≥ 2.5 cm / Follow if ≥ 1.5 cm" (TR3), "≥ 1.5 / ≥ 1 cm" (TR4), "≥ 1 / ≥ 0.5 cm*" (TR5), TR1–TR2 "No FNA"; in-press PDF p2 (follow-up limits defined for TR3–TR5 only)
 - **Proposed fix:** Optional: carry the chart's asterisk on TR5's 0.5 cm (5–9 mm TR5 nodules: see papillary microcarcinomas, p5).
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — Points, FNA thresholds and follow-up thresholds all match the chart. The table leaves out the chart's asterisk on TR5 (5-9 mm nodules, see the microcarcinoma discussion). (tirads-2017, Fig 1 (chart), PDF p3)
 
 ### B2-ti-rads-09 · Quick Reference table: follow-up interval column
 
@@ -418,6 +460,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Timing of Follow-Up Sonograms: "For a TR5 lesion, we recommend scans every year for up to 5 years. For a TR4 lesion, scans should be done at 1, 2, 3, and 5 years. For a TR3 lesion, follow-up imaging may be performed at 1, 3, and 5 years. Imaging can stop at 5 years if there is no change in size"; "If a nodule's ACR TI-RADS level increases on follow-up, the next sonogram should be done in 1 year, regardless of its initial level"
 - **Proposed fix:** TR5: every year for up to 5 years (1, 2, 3, 4 and 5). TR3 and TR4 are right. Add that imaging stops at 5 years if the size is unchanged and that a nodule whose level rises is rescanned in 1 year.
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — TR3 and TR4 intervals are right. TR5 is wrong: the paper says every year for up to 5 years (1, 2, 3, 4, 5); the page gives TR5 the TR4 schedule and drops year 4. (tirads-2017, Timing of Follow-Up Sonograms, PDF p6)
 
 ### B2-ti-rads-10 · Malignancy-risk figures: Quick Reference column, the five cards and the calculator output
 
@@ -428,6 +471,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Proposed fix:** Replace with the white paper's levels (TR1–TR2 ≤ 2%, TR3 about 5%, TR4 5–20%, TR5 ≥ 20%), or keep point figures only with a citation to the study they come from once it is read; take them out of the calculator result.
 - **Question for the owner:** Nothing read gives ~0.3/1.5/4.8/9.1/35%; the white paper gives ranges. Show the white paper's ranges, the study's figures (if you can supply Middleton et al. 2017), or no risk at all?
 - **Proposed home:** Thyroid nodules › Background
+- **Re-check:** agrees — The exact figures (0.3, 1.5, 4.8, 9.1, 35%) are not in the white paper the page cites, the atlas or the chart; the paper gives only the ranges quoted. The figures fall inside those ranges and probably come from the paper's reference 29 (Middleton et al, AJR, 'in press'), which is not among the audit sources, so they could not be verified. The '~1.5%' printed for a 1-point total belongs to a level the chart does not define. (tirads-2017, Size Thresholds for FNA, PDF p4)
 
 ### B2-ti-rads-11 · TR1 card
 
@@ -436,6 +480,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **The page says:** "TR1: Benign"; "No sonographic features of malignancy. Essentially benign nodule."; "Typical findings: Simple cysts (completely anechoic, no solid component); Spongiform nodules (>50% microcystic composition)"; "Management: No FNA, no follow-up"; "Points: 0".
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: TR1 "0 Points", "Benign", "No FNA"; cystic or almost completely cystic 0, spongiform 0 ("Do not add further points for other categories"), anechoic 0; in-press PDF p2 (follow-up limits only for TR3–TR5); p4, Composition
 - **Proposed home:** Thyroid nodules › Categories
+- **Re-check:** agrees — Name, 0 points, no FNA and the two typical appearances match. 'No follow-up' is implied rather than printed: the chart defines follow-up sizes only for TR3 to TR5. (tirads-2017, Fig 1 (chart), PDF p3; Composition, PDF p4; Overview, PDF p2)
 
 ### B2-ti-rads-12 · TR2 card: typical findings
 
@@ -445,6 +490,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: TR2 "2 Points", "No FNA"; solid or almost completely solid 2 + hyperechoic or isoechoic 1 = 3 points (TR3); mixed cystic and solid 1 + isoechoic solid component 1 = 2 (TR2); large comet-tail artifacts 0; in-press PDF p5, Echogenic Foci (large comet-tail artifacts "strongly indicative of benignity when found within the cystic components")
 - **Proposed fix:** Remove "Isoechoic or hyperechoic nodules without suspicious features": a solid iso- or hyperechoic nodule scores 3 (TR3, FNA at ≥ 2.5 cm). If examples stay, use ones that add to 2 (e.g. mixed cystic and solid with an iso- or hyperechoic solid part); "thin internal septa" is not in ACR's terms, and a cystic nodule with large comet-tail artifacts scores 0 (TR1).
 - **Proposed home:** Thyroid nodules › Categories
+- **Re-check:** agrees — Name, 2 points and no FNA are right, but the 'typical findings' are not: a solid isoechoic or hyperechoic nodule with no other feature scores 2 + 1 = 3 and is TR3 (follow at 1.5 cm, FNA at 2.5 cm), not TR2; only a mixed cystic and solid one scores 2. 'Predominantly cystic with thin internal septa' is not a TI-RADS description, and large comet-tail artifacts score 0, so a cystic colloid nodule is TR1. (tirads-2017, Fig 1 (chart), PDF p3; Overview, PDF p2)
 
 ### B2-ti-rads-13 · TR3 card
 
@@ -453,6 +499,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **The page says:** "TR3: Mildly Suspicious"; "FNA if: ≥2.5 cm"; "Follow-up if: ≥1.5 cm (at 1, 3, 5 years)"; "No action if: <1.5 cm"; "Management: Observation or FNA based on size"; "Points: 3".
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: TR3 "3 Points", "Mildly Suspicious", "FNA if ≥ 2.5 cm", "Follow if ≥ 1.5 cm"; in-press PDF p6, Timing of Follow-Up Sonograms (TR3 "may be performed at 1, 3, and 5 years")
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — Name, points, both thresholds and the interval match. (tirads-2017, Fig 1 (chart), PDF p3; Timing of Follow-Up Sonograms, PDF p6)
 
 ### B2-ti-rads-14 · TR4 card
 
@@ -461,6 +508,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **The page says:** "TR4: Moderately Suspicious"; "Lower size thresholds than TR3."; "FNA if: ≥1.5 cm"; "Follow-up if: ≥1.0 cm (at 1, 2, 3, 5 years)"; "No action if: <1.0 cm"; "Points: 4–6".
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: TR4 "4 to 6 Points", "Moderately Suspicious", "FNA if ≥ 1.5 cm", "Follow if ≥ 1 cm"; in-press PDF p6, Timing of Follow-Up Sonograms (TR4 "at 1, 2, 3, and 5 years")
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — Name, points, both thresholds and the interval match. (tirads-2017, Fig 1 (chart), PDF p3; Timing of Follow-Up Sonograms, PDF p6)
 
 ### B2-ti-rads-15 · TR5 card: interval, 5–9 mm nodules and the management line
 
@@ -470,6 +518,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: TR5 "7 Points or More", "FNA if ≥ 1 cm", "Follow if ≥ 0.5 cm*", footnote "*Refer to discussion of papillary microcarcinomas for 5-9 mm TR5 nodules"; in-press PDF p6, Timing of Follow-Up Sonograms ("For a TR5 lesion, we recommend scans every year for up to 5 years"); p5, Papillary Thyroid Microcarcinomas
 - **Proposed fix:** Follow-up every year for up to 5 years; add that FNA of a 5–9 mm TR5 nodule may be appropriate by shared decision, and that the report should say whether it can be measured reproducibly and whether it abuts the trachea or lies by the tracheoesophageal groove (p5). Make the management line "FNA if ≥ 1 cm; follow if 0.5–0.9 cm", not "FNA recommended".
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — Name, points (≥7) and both size thresholds are right. The follow-up interval is wrong (every year for up to 5 years, not 1, 2, 3, 5), and the card omits the chart's footnote that FNA of a 5-9 mm TR5 nodule may be appropriate by shared decision. 'Management: FNA recommended' is true only at 1 cm or more. (tirads-2017, Timing of Follow-Up Sonograms, PDF p6; Fig 1 footnote, PDF p3; Papillary Thyroid Microcarcinomas, PDF p5)
 
 ### B2-ti-rads-16 · Feature Scoring Reference: composition rows
 
@@ -479,6 +528,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p4, Composition: "'Mixed cystic and solid' combines two features from the lexicon, predominately solid and predominately cystic"; Fig 1 (p3) notes: "Spongiform: … Do not add further points for other categories", "Assign 2 points if composition cannot be determined because of calcification"; American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018). — PDF p7: solid or almost completely solid "Composed entirely or nearly entirely of soft tissue, with only a few tiny cystic spaces"; PDF p8: mixed cystic solid "Composed of soft tissue and cystic spaces. Base all other lexicon nodule characteristics on the solid component"; PDF p5: cystic "Entirely or nearly entirely cystic"
 - **Proposed fix:** Mixed cystic and solid (1 point) covers both predominantly cystic and predominantly solid nodules; solid (2 points) is entirely or nearly entirely soft tissue. Add: spongiform scores 0 and no other points are added; score 2 if calcification hides the composition. As written a 70% solid nodule gets 2 points instead of 1, which can move TR3 to TR4.
 - **Proposed home:** Thyroid nodules › Categories
+- **Re-check:** agrees — Points are right; two descriptions are not. Mixed cystic and solid is not 'solid component <50%' (it covers both predominantly cystic and predominantly solid nodules), and solid or almost completely solid is not 'solid component ≥50%' (it means entirely or nearly entirely solid). By the page's wording a 60% solid nodule would score 2 instead of 1. The cystic and spongiform rows are acceptable. (tirads-2017, Composition, PDF p4; acr-tirads-atlas, Composition slides)
 
 ### B2-ti-rads-17 · Feature Scoring Reference: echogenicity rows
 
@@ -488,6 +538,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: anechoic 0, hyperechoic or isoechoic 1, hypoechoic 2, very hypoechoic 3; notes "Anechoic: Applies to cystic or almost completely cystic nodules", "Compared to adjacent parenchyma", "Very hypoechoic: More hypoechoic than strap muscles", "Assign 1 point if echogenicity cannot be determined"; in-press PDF p4, Echogenicity
 - **Proposed fix:** Optional: add that anechoic is only for cystic or almost completely cystic nodules, that a mixed nodule is scored on its solid part, and 1 point when echogenicity cannot be determined.
 - **Proposed home:** Thyroid nodules › Categories
+- **Re-check:** agrees — Points and descriptions match the chart. (tirads-2017, Fig 1 (chart), PDF p3 explanatory notes; Echogenicity, PDF p4)
 
 ### B2-ti-rads-18 · Feature Scoring Reference and calculator: shape (taller-than-wide at equal dimensions)
 
@@ -497,6 +548,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018). — PDF p14: "A taller-than-wide shape is defined as a ratio of >1 in the anteroposterior diameter to the horizontal diameter when measured in the transverse plane"; PDF p15: wider-than-tall is "a ratio of ≤1"; Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1 note: "Taller-than-wide: Should be assessed on a transverse image with measurements parallel to sound beam for height and perpendicular to sound beam for width"; in-press PDF p4, Shape
 - **Proposed fix:** Taller-than-wide is height greater than width (ratio > 1); equal height and width is wider-than-tall (0 points). Measure height parallel to the beam and width perpendicular to it on a transverse image.
 - **Proposed home:** Thyroid nodules › Categories
+- **Re-check:** agrees — Points (0 and 3) and the transverse-image rule are right, but the cut is misplaced: the ACR atlas makes taller-than-wide a ratio above 1 and wider-than-tall a ratio of 1 or less. The page (table and calculator option) gives a nodule with equal dimensions 3 points; ACR gives it 0. The white paper itself states no ratio. (acr-tirads-atlas, Shape slides; tirads-2017, Fig 1 note and Shape, PDF p3-4)
 
 ### B2-ti-rads-19 · Feature Scoring Reference: margin rows
 
@@ -506,6 +558,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: smooth 0, ill-defined 0, lobulated or irregular 2, extra-thyroidal extension 3; notes "Extrathyroidal extension: Obvious invasion = malignancy", "Assign 0 points if margin cannot be determined"; in-press PDF p5, Margin ("We use the term border because the thyroid gland lacks a true fibrous capsule"; caution in reporting minimal ETE); American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018). — PDF p3: "Margin - If more than one type, choose the most suspicious"; PDF p17–20 definitions
 - **Proposed fix:** Optional: "extends through the thyroid border" rather than "capsule"; add that obvious invasion is what counts (be cautious calling minimal ETE), and to choose the most suspicious margin when there is more than one.
 - **Proposed home:** Thyroid nodules › Categories
+- **Re-check:** agrees — Points and descriptions agree. Two nuances the page loses: the 3 points are for obvious invasion (the paper urges caution with minimal extension), and the paper says 'border', not capsule, because the gland has no true fibrous capsule. (tirads-2017, Fig 1 (chart), PDF p3 explanatory notes; Margin, PDF p5; acr-tirads-atlas, Margin slides)
 
 ### B2-ti-rads-20 · Feature Scoring Reference: echogenic foci rows
 
@@ -515,6 +568,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p5, Echogenic Foci: "Punctate echogenic foci are smaller than macrocalcifications and are nonshadowing"; macrocalcifications are "coarse echogenic foci accompanied by acoustic shadowing"; Fig 1 (p3): ECHOGENIC FOCI "(Choose All That Apply)", "Large comet-tail artifacts: V-shaped, >1 mm, in cystic components", "Punctate echogenic foci: May have small comet-tail artifacts"; American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018). — PDF p24: punctate echogenic foci "'Dot-like' foci less than 1 mm in diameter. Occasionally can have small comet tail artifacts"; PDF p22: macrocalcifications "large enough to result in posterior acoustic shadowing"
 - **Proposed fix:** Punctate echogenic foci do not shadow (a shadowing focus is a macrocalcification, 1 point, not 3); they may have small comet-tail artifacts. Add that the points for every type present are added.
 - **Proposed home:** Thyroid nodules › Categories
+- **Re-check:** agrees — The four point values are right. 'Punctate echogenic foci: ± shadowing' contradicts the paper (they are nonshadowing; small comet-tail artifacts are allowed), which blurs the line with macrocalcifications (1 point vs 3). The table also never says that all foci types present are added. (tirads-2017, Echogenic Foci, PDF p5; Fig 1, PDF p3)
 
 ### B2-ti-rads-21 · Measurement Guidelines: size measurement
 
@@ -524,6 +578,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Measurement and Documentation: "the maximum dimension determines whether a given lesion should be biopsied or followed"; "Nodules should be measured in three axes: (1) maximum dimension on an axial image, (2) maximum dimension perpendicular to the previous measurement on the same image, and (3) maximum longitudinal dimension on a sagittal image"; "Measurements should also include the nodule's halo, if present"; Fig 1 (p3): TR1–TR2 "No FNA" with no size limit
 - **Proposed fix:** Optional: replace "any plane"/"document plane" with ACR's three axes, and add that the halo is included. "To one decimal" is not in the white paper.
 - **Proposed home:** Thyroid nodules › Measurement
+- **Re-check:** agrees — Maximum diameter and no size threshold for TR1-TR2 match the paper. 'To one decimal', 'include solid and cystic components' and 'document plane of measurement' are not in the paper (not contradicted either); the paper's own instruction, three axes (two on the axial image, one sagittal), is missing. (tirads-2017, Measurement and Documentation, PDF p6; Overview, PDF p2)
 
 ### B2-ti-rads-22 · Measurement Guidelines: definition of significant growth
 
@@ -533,6 +588,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Definition of Growth: "significant enlargement is defined as a 20% increase in at least two nodule dimensions and a minimal increase of 2 mm, or a 50% or greater increase in volume"; "it is important to also review measurements from earlier scans"; Timing of Follow-Up Sonograms: imaging stops at 5 years only "if there is no change in size"; nodules that enlarge but stay below the FNA threshold at 5 years: "continued follow-up is probably warranted"
 - **Proposed fix:** "A 20% increase in at least two dimensions with a minimum increase of 2 mm, or a 50% or greater increase in volume"; compare with the earliest available scan, not only the last. The missing volume criterion can make a growing nodule look stable and end follow-up at 5 years.
 - **Proposed home:** Thyroid nodules › Measurement
+- **Re-check:** agrees — Close but not exact: the paper's bar is a 20% increase with a minimum of 2 mm (at least, not more than), and the page omits the alternative criterion, a 50% or greater increase in volume. Growth decides whether follow-up can stop at 5 years. (tirads-2017, Definition of Growth, PDF p6)
 
 ### B2-ti-rads-23 · Measurement Guidelines: "Minimum interval: 6 months"
 
@@ -542,6 +598,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Timing of Follow-Up Sonograms: "The committee believes that scanning intervals of less than 1 year are not warranted, except for proven cancers under active surveillance, which may require more frequent follow-up at the discretion of the referring physician"
 - **Proposed fix:** Follow-up scans are at least 1 year apart (except proven cancers under active surveillance, at the referring physician's discretion).
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — The paper's minimum interval between follow-up scans is 1 year, not 6 months; nothing in it supports 6 months. (tirads-2017, Timing of Follow-Up Sonograms, PDF p6)
 
 ### B2-ti-rads-24 · When NOT to use TI-RADS: age
 
@@ -552,16 +609,18 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Proposed fix:** ACR TI-RADS is for adults: say it does not apply to children and adolescents, rather than "under 14".
 - **Question for the owner:** Is 14 a local cut-off you want kept as local practice? ACR's white paper speaks only of adults.
 - **Proposed home:** Thyroid nodules › Applies to
+- **Re-check:** agrees — The paper is for adult patients and gives no age of 14; '<14' implies it applies at 14 to 17, which the paper does not support. (tirads-2017, Project Rationale and Consensus Process, PDF p2)
 
 ### B2-ti-rads-25 · When NOT to use TI-RADS: known thyroid cancer
 
-- **Verdict:** unsourced
+- **Verdict:** unsourced · **management**
 - **Kind:** guideline-threshold · **Topic:** Thyroid nodules
 - **The page says:** "Do NOT apply TI-RADS to: … Nodules with known history of thyroid cancer".
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p2 and p6: no exclusion for a history of thyroid cancer; p6 mentions only "proven cancers under active surveillance" (follow-up at the referring physician's discretion)
 - **Proposed fix:** Remove, or label as local practice; the white paper excludes no patient group other than non-adults.
 - **Question for the owner:** Should a new nodule in a patient with a past thyroid cancer (e.g. after lobectomy) be scored with TI-RADS, or is excluding them your local practice?
 - **Proposed home:** Thyroid nodules › Applies to
+- **Re-check:** agrees — The paper states no exclusion for patients with a history of thyroid cancer; its only related remarks are that proven cancers under surveillance may need more frequent scans and that the patient's risk factors should be weighed. Reasonable practice, but not from the cited source. (tirads-2017, whole paper (searched); nearest text: Timing of Follow-Up Sonograms, PDF p6)
 
 ### B2-ti-rads-26 · When NOT to use TI-RADS: lymph nodes and nodules already sampled
 
@@ -570,6 +629,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **The page says:** "Do NOT apply TI-RADS to: … Lymph nodes; Nodules already biopsied or with known cytology"; Pitfalls: "Don't apply to cervical lymph nodes".
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Measurement and Documentation: "The committee did not address follow-up for previously sampled nodules … guided by management recommendations based on prior FNA results based on the Bethesda System"; p4: prior FNA or ethanol ablation "may lead to a suspicious appearance"; p7, Assessment of Cervical Lymph Nodes (nodes are judged by their own features)
 - **Proposed home:** Thyroid nodules › Applies to
+- **Re-check:** agrees — Supported: sampled nodules are outside the paper's scope (cytology guides them), and lymph nodes are assessed by their own criteria, not by TI-RADS points. The paper says this by scope rather than as a 'do not apply' rule. (tirads-2017, Measurement and Documentation, PDF p6; Assessment of Cervical Lymph Nodes, PDF p7; Feature Categories, PDF p4)
 
 ### B2-ti-rads-27 · When NOT to use TI-RADS: "Purely cystic nodules (TR1)"
 
@@ -579,6 +639,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p3, Fig 1: "Cystic or almost completely cystic" 0 points, "Anechoic" 0 points → "0 Points" TR1; in-press PDF p4, Composition (cystic nodules "merit no points because they are almost universally benign")
 - **Proposed fix:** Remove from the exclusions: cystic nodules are scored (0 points, TR1, no FNA). The outcome for the patient is the same.
 - **Proposed home:** Thyroid nodules › Applies to
+- **Re-check:** agrees — Self-contradictory: TI-RADS does apply to purely cystic nodules, which it scores 0 points, TR1 (as the page's own label admits). It does not belong in a 'do not apply' list; management is unchanged (no FNA). (tirads-2017, Fig 1 (chart), PDF p3; Composition, PDF p4; Project Rationale, PDF p2)
 
 ### B2-ti-rads-28 · Clinical correlation: suspicious lymphadenopathy
 
@@ -588,6 +649,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p7, Assessment of Cervical Lymph Nodes: "Evaluation of cervical lymph nodes is a vital part of every thyroid sonographic examination"; suspicious features: globular shape, loss of the echogenic hilum, peripheral rather than hilar flow, heterogeneity with cystic components, punctate echogenic foci; "We recommend FNA of suspicious nodes, in addition to up to two nodules that warrant biopsy on the basis of the ACR TI-RADS"
 - **Proposed fix:** Assess the cervical nodes at every thyroid ultrasound and recommend FNA of suspicious nodes (listing ACR's features), in addition to up to two nodules that meet TI-RADS criteria.
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — The paper is more definite than 'clinical correlation': suspicious cervical nodes should be sampled (FNA). The page understates the recommendation rather than contradicting it; judged wrong because a reader would not learn that FNA is advised. (tirads-2017, Assessment of Cervical Lymph Nodes, PDF p7)
 
 ### B2-ti-rads-29 · Clinical correlation: growth, symptoms, thyroglobulin, PET
 
@@ -598,6 +660,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Proposed fix:** Replace with the white paper's sentence on clinical factors (p2), or label the list as local practice; "elevated thyroglobulin" and "PET-avid" need a source if kept.
 - **Question for the owner:** Keep this list as local practice, or replace it with ACR's general line on clinical factors?
 - **Proposed home:** Thyroid nodules › Applies to
+- **Re-check:** agrees — Rapid growth, compressive symptoms, thyroglobulin and PET avidity are not mentioned in the white paper, atlas or chart; only the general call for clinical judgment is. Sensible teaching, but not from the cited source. (tirads-2017, whole paper (searched); nearest text: Project Rationale, PDF p2)
 
 ### B2-ti-rads-30 · Reporting Tips: structured report contents
 
@@ -607,6 +670,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Measurement and Documentation: three-axis size; location "right, left, isthmus, upper, mid, lower, and, if necessary, lateral, medial, anterior, or posterior"; "no more than four nodules with the highest ACR TI-RADS point scores that fall below the size threshold for FNA should be followed"; Number of Nodules to Biopsy (p6–7): "targeting no more than two nodules with the highest ACR TI-RADS point totals that meet criteria for FNA. Size should not be the primary criterion"
 - **Proposed fix:** Add ACR's limits: number and label each followed nodule, follow at most four (highest points) below the FNA threshold, and biopsy at most two (highest points, not the largest). Gland size and echogenicity are not in the white paper.
 - **Proposed home:** Thyroid nodules › Reporting
+- **Re-check:** agrees — Location, three dimensions, the five scored features, total and level, and a size-based recommendation all follow the paper. Gland size and echogenicity and nodule count are not in the paper; missing from the list are the paper's limits (report no more than four nodules for follow-up, biopsy no more than two) and, for 5-9 mm TR5 nodules, whether the nodule is reproducibly measurable and abuts the trachea or tracheoesophageal groove. (tirads-2017, Measurement and Documentation, PDF p6; Overview, PDF p2; Fig 1, PDF p3)
 
 ### B2-ti-rads-31 · Reporting Tips: example report
 
@@ -624,6 +688,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p2, Overview: "the reader selects one feature from each of the first four categories and all the features that apply from the final category and sums the points"; in-press PDF p3, Fig 1: ECHOGENIC FOCI "(Choose All That Apply)"; p5, Echogenic Foci
 - **Proposed fix:** "Choose one feature in each of the first four categories; for echogenic foci, add the points of every type present." The other two lines are consistent with the white paper.
 - **Proposed home:** Thyroid nodules › Reporting
+- **Re-check:** agrees — 'Don't add multiple features from same category' is wrong for echogenic foci, where every type present is added (true only for the first four categories). The other two lines are fine: size does not change the level, and macrocalcifications (shadowing, 1 point) differ from punctate foci (nonshadowing, 3 points). (tirads-2017, Fig 1 (chart), PDF p3; Overview, PDF p2)
 
 ### B2-ti-rads-33 · Common Pitfalls: measurement errors
 
@@ -633,6 +698,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p6, Measurement and Documentation: "Measurements should also include the nodule's halo, if present"; three axes, the third "maximum longitudinal dimension on a sagittal image"
 - **Proposed fix:** Include the halo in the measurement. The second line is right; the third is not from the white paper.
 - **Proposed home:** Thyroid nodules › Measurement
+- **Re-check:** agrees — 'Don't include halo in measurement' is the opposite of the paper. 'Don't measure only transverse plane' agrees with the three-axis rule; 'don't round up aggressively' is not in the paper. (tirads-2017, Measurement and Documentation, PDF p6)
 
 ### B2-ti-rads-34 · Common Pitfalls: management errors
 
@@ -642,6 +708,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p5, Papillary Thyroid Microcarcinomas: "recommending against routine biopsy of nodules smaller than 1 cm", but "biopsy of 5- to 9-mm TR5 nodules may be appropriate under certain circumstances"; p2 (clinical factors in the FNA decision); p6–7, Number of Nodules to Biopsy; p7, cervical lymph nodes
 - **Proposed fix:** Optional: "Don't routinely FNA nodules below the threshold (5–9 mm TR5: shared decision)"; add "Don't biopsy more than two nodules, and choose them by points, not size".
 - **Proposed home:** Thyroid nodules › Management
+- **Re-check:** agrees — The three lines follow the paper's general rules. The first is stated more absolutely than the paper, which allows FNA of 5-9 mm TR5 nodules by shared decision and leaves room for referrer preference and patient risk factors; that exception is what is missing (see the TR5 card). (tirads-2017, Papillary Thyroid Microcarcinomas, PDF p5; Number of Nodules to Biopsy, PDF p6-7; Assessment of Cervical Lymph Nodes, PDF p7)
 
 ### B2-ti-rads-35 · Related Guidelines list
 
@@ -660,6 +727,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** American College of Radiology. ACR TI-RADS [chart]. Originally published as Fig 1 of Tessler FN et al., J Am Coll Radiol 2017;14(5):587-595. — footer: the white paper is "https://www.jacr.org/article/S1546-1440(17)30186-2/fulltext" (Crossref: DOI 10.1016/j.jacr.2017.01.046, PII S1546144017301862); Elsevier's link resolver answers "Article Not Recognized" for the page's PII S1546144017302428; American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018). — fetched 2026-11-25 from ACR's current TI-RADS page (acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/TI-RADS); the page's acr.org TI-RADS link answered 404 and its atlas link redirects to a site root, not the PDF
 - **Proposed fix:** Link the white paper by its DOI (https://doi.org/10.1016/j.jacr.2017.01.046) and ACR's current TI-RADS page, which hosts the chart and the atlas.
 - **Proposed home:** Thyroid nodules › Background
+- **Re-check:** agrees — The white paper link uses article number S1546-1440(17)30242-8, but ACR's chart gives the paper's JACR address as S1546-1440(17)30186-2 (the DOI also resolved to that number when checked 2026-11-25), so the link appears to point at a different article. On the same check the ACR calculator link returned 404 and the atlas link redirected to a sign-in page instead of the PDF. Link checks are live-web observations, not source verification; jacr.org refuses automated requests, so the 30242-8 page itself was not opened. (acr-tirads-chart, footer; tirads-2017, PDF p1 (DOI 10.1016/j.jacr.2017.01.046))
 
 ### B2-ti-rads-37 · Empty headings "Visual Reference Guide" and "US Reference Images"
 
@@ -669,6 +737,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **Source:** none found
 - **Proposed fix:** Remove both headings (or add images with permission; ACR's atlas has them).
 - **Proposed home:** Not kept: empty headings
+- **Re-check:** agrees — Two empty headings with nothing under them; nothing to verify and nothing useful to a reader. (tirads.md, last two headings (no source applies))
 
 ### B2-ti-rads-38 · Front-page row (shared/data/resources.ts)
 
@@ -677,6 +746,7 @@ https://dfergs93.github.io/guidelines_manager/thyroid/tirads/
 - **The page says:** Title "TI-RADS", version "ACR 2017", summary "Scores thyroid nodules on ultrasound, with size thresholds for FNA and follow-up."
 - **Source:** Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — in-press PDF p1 (2017 white paper); in-press PDF p3, Fig 1 (points, levels, FNA and follow-up thresholds); American College of Radiology. ACR TI-RADS [chart]. Originally published as Fig 1 of Tessler FN et al., J Am Coll Radiol 2017;14(5):587-595. — ACR's TI-RADS page still links the 2017 chart
 - **Proposed home:** Front page row: TI-RADS
+- **Re-check:** agrees — Title, version (ACR, 2017) and summary describe the white paper accurately. (tirads-2017, title page, PDF p1; Overview, PDF p2)
 
 ## Contrast safety
 
@@ -684,13 +754,14 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 
 ### B2-contrast-safety-01 · Title, heading and reference box (name, version, publisher, application) and the References list
 
-- **Verdict:** outdated · **management**
+- **Verdict:** outdated
 - **Kind:** provenance · **Topic:** Contrast safety
 - **The page says:** Title "ACR Contrast Safety"; heading "ACR Contrast Safety — Iodinated & Gadolinium Contrast Agents"; reference box: "Full Name: ACR Manual on Contrast Media", "Version: 2023 (v11)", "Publisher: American College of Radiology (ACR) Committee on Drugs and Contrast Media", "Application: All contrast-enhanced CT, MRI, and fluoroscopic studies". References: "1. American College of Radiology Committee on Drugs and Contrast Media. ACR Manual on Contrast Media. Version 2023. Reston, VA"; "2. Wang CL, Cohan RH, Ellis JH, et al. … AJR Am J Roentgenol. 2008;191(2):409-415"; "3. Thomsen HS, Marckmann P, Logager VB. Update on nephrogenic systemic fibrosis. Magn Reson Imaging Clin N Am. 2008;16(4):551-560"; "4. McDonald JS, McDonald RJ, Comin J, et al. Frequency of acute kidney injury following intravenous contrast medium administration. Radiology. 2013;267(1):119-128".
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Cover (PDF p2); Version History, pp2–3 (PDF pp5–6): "Version 2024 of the ACR Manual on Contrast Media was published in July 2024"; 2024 changes: GBCA Table 1 ("Eovist Update"), Chapter 12 (children), Chapter 13 (GI), Chapter 20 (breast-feeding). Preface, p1 (PDF p4): "This edition … replaces all earlier editions". Editions are named by year; no "v11". Reference 2 matches the Patient Selection chapter's ref 1 (p11, PDF p14); reference 4 matches the PC-AKI chapter's ref 8 (p40, PDF p43). Table 3 gives adult doses (children: Table 2, pp97–103, PDF pp100–106); ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2025. Reston, VA: American College of Radiology; 2025. — The 2025 edition (not readable): per the source record it changed only the NSF chapter (GBCA group clarification); Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — Recommendations 2–10, pp9–11, and Figures 1–2, p10: the CAR lead for hypersensitivity and premedication, which differs from the ACR manual the page follows; Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 3, 8–10, 16–17: the CAR lead for contrast-associated AKI and metformin
 - **Proposed fix:** Name the current edition (ACR Manual on Contrast Media 2025; 2024 read) and say the page is for adults (its doses are ACR Table 3's adult doses). Until rebuilt, a dated notice that the 2023 edition was replaced and that CAR guidance (CAR/CSACI 2025, CAR 2022 CA-AKI, CAR 2018/2019 gadolinium) leads several topics. "v11" matches no edition label. References 2 and 4 match the ACR's citations; reference 3 was not checked.
 - **Question for the owner:** Which should lead each contrast topic? By the audit rule: CAR/CSACI 2025 for hypersensitivity and premedication, CAR 2022 for contrast-associated AKI and metformin, CAR 2018/2019 for gadolinium in kidney disease (copies requested from you), and the ACR Manual for reaction treatment, extravasation, pregnancy, breast-feeding and the thyroid. The page follows the ACR throughout.
 - **Proposed home:** Contrast safety › Applies to
+- **Re-check:** disagreed — Reviewer: outdated. Name and publisher are right and a 2023 edition existed, but the manual has since been reissued (2024 readable here, 2025 current), and its version history names editions by year: nothing in it supports the label 'v11'. References 2 (Wang 2008) and 4 (McDonald 2013) appear in the manual's reference lists; reference 3 (Thomsen 2008) does not appear in the 2024 manual. Much of the page's content is not from the ACR manual at all (see other pieces). (acr-contrast-2024, title page and Version History, printed p 2-3 (PDF p 5-6)) Resolution: Management flag removed, as the reviewer has it: the version label itself changes nothing a patient gets; the page's errors are their own findings, and the dated notice comes with them.
 
 ### B2-contrast-safety-02 · Adverse Reaction Classification, "Acute Reactions (within 1 hour)" tab: timing and severity grades (Severity and Symptoms columns)
 
@@ -700,6 +771,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — p2: "Acute or immediate HRs occur within 1 hour of exposure"; p3: the severity grades are the ACR's, reproduced in Appendix A, p11 (allergic-like and physiologic columns); Recommendation 2, p9: "It is important to distinguish between a true hypersensitivity reaction and a physiological reaction"; Figure 1, p10: mild–moderate and severe reactions take different paths; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Table 1, Categories of Acute Reactions, pp95–96 (PDF pp98–99): mild allergic-like — limited urticaria/pruritis, cutaneous edema, limited "itchy"/"scratchy" throat, nasal congestion, sneezing/conjunctivitis/rhinorrhea; mild physiologic — limited nausea/vomiting, transient flushing/warmth/chills, headache/dizziness/anxiety/altered taste, mild hypertension, vasovagal reaction that resolves spontaneously. Moderate allergic-like — diffuse urticaria/pruritis, diffuse erythema with stable vital signs, facial edema without dyspnea, throat tightness or hoarseness without dyspnea, wheezing/bronchospasm with mild or no hypoxia; moderate physiologic — protracted nausea/vomiting, hypertensive urgency, isolated chest pain, vasovagal reaction that requires and is responsive to treatment. Severe allergic-like — diffuse edema or facial edema with dyspnea, diffuse erythema with hypotension, laryngeal edema with stridor and/or hypoxia, wheezing/bronchospasm with significant hypoxia, anaphylactic shock (hypotension + tachycardia); severe physiologic — vasovagal reaction resistant to treatment, arrhythmia, convulsions/seizures, hypertensive emergency; cardiopulmonary arrest a nonspecific end stage
 - **Proposed fix:** Use the ACR grades as CAR/CSACI reproduce them, with allergic-like and physiologic reactions apart: facial edema is moderate only without dyspnea (with dyspnea, severe); bronchospasm is graded by hypoxia; "pallor/diaphoresis" and "tachycardia/bradycardia" are not grades in the source (hypotension with bradycardia is vasovagal, with tachycardia anaphylactic shock). The 1-hour window is right.
 - **Proposed home:** Contrast reactions › Categories
+- **Re-check:** disagreed — Reviewer: wrong. The 1-hour window (CAR/CSACI: 'Acute or immediate HRs occur within 1 hour') and most entries match, but 'pallor/diaphoresis' (mild) and 'tachycardia/bradycardia' (moderate) are not in ACR Table 1, which CAR/CSACI reproduces as Appendix A. The page also drops the allergic-like versus physiologic split and the qualifiers that set the grade (facial edema 'without dyspnea', bronchospasm graded by hypoxia). (acr-contrast-2024, Table 1 Categories of Acute Reactions, printed p 95-96 (PDF p 98-99); car-csaci-hypersensitivity-2025, Physiology and Classification, p 2, and Appendix A) Resolution: Stands with management: the grade decides the treatment, and the page drops the qualifiers that set it (facial edema "without dyspnea", bronchospasm graded by hypoxia) — ACR Table 1, reproduced as CAR/CSACI Appendix A.
 
 ### B2-contrast-safety-03 · Adverse Reaction Classification, "Acute Reactions" tab: Treatment column
 
@@ -709,6 +781,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Treatment of Contrast Reactions, p86 (PDF p89): mild reactions typically need no treatment; observe a mild allergic-like reaction "for a minimum of 20 to 30 minutes"; an antihistamine may be given for symptomatic urticaria. Table 3, pp104–108 (PDF pp107–111): mild hives — diphenhydramine 25–50 mg PO or fexofenadine 180 mg PO; bronchospasm (mild and moderate) — beta-agonist inhaler first, moderate "Consider adding epinephrine"; severe reactions — epinephrine IV 0.1 mg (1 mL of 0.1 mg/mL) or IM 0.3 mg; note on each epinephrine row: "in hypotensive patients, the preferred route of epinephrine delivery is IV"; Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — p3: management "usually including second generation antihistamines for mild reactions, and intramuscular epinephrine and cardiorespiratory support for more severe reactions"; Appendix B, p12: the CSACI no longer recommends first-generation antihistamines such as diphenhydramine
 - **Proposed fix:** Moderate bronchospasm starts with a beta-agonist inhaler (albuterol), adding epinephrine if needed; severe reactions with hypotension take IV epinephrine (0.1 mg of 0.1 mg/mL) when there is IV access, IM 0.3 mg otherwise. Mild: observe 20–30 minutes; an oral antihistamine if symptomatic (CAR/CSACI: second-generation).
 - **Proposed home:** Contrast reactions › Management
+- **Re-check:** disagreed — Reviewer: correct (management). A fair but thin summary. It leaves out the beta-agonist inhaler, which the ACR gives first for moderate bronchospasm before considering epinephrine, and for hypotensive patients the ACR prefers IV epinephrine (IM if no IV access). (acr-contrast-2024, Table 3 (hives p 104, bronchospasm p 106, hypotension p 108; PDF p 107, 109, 111) and Treatment of Contrast Reactions p 86 (PDF p 89)) Resolution: Stands as wrong with management: re-read ACR Table 3 — for anaphylaxis with hypotension the ACR's first choice is epinephrine IV (IM only without IV access), and moderate bronchospasm starts with the beta-agonist inhaler; the page's quick-reference column, the part read mid-reaction, gives severe reactions IM only and skips the inhaler.
 
 ### B2-contrast-safety-04 · "Delayed Reactions (1–72 hours)" tab
 
@@ -718,6 +791,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — p3: delayed HRs "occur hours to days after exposure", are usually mild isolated skin reactions, maculopapular exanthem the most common, with rare severe cutaneous reactions (AGEP, DRESS, SJS/TEN); Frequency, p3: 5725 delayed HRs in 11 712 796 LOCM administrations (0.05%); p6: "premedication for delayed HRs is not recommended"; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Delayed Adverse Events, pp28–29 (PDF pp31–32): reactions "may develop from 30 to 60 minutes to up to one week following contrast material exposure, with the majority occurring between three hours and two days"; incidence of delayed allergic-like reactions "0.5% to 14%"; treatment supportive, "antihistamines and/or corticosteroids used for cutaneous symptoms"
 - **Proposed fix:** The window is hours to days (ACR: 30–60 minutes up to a week, most between 3 hours and 2 days), not 1–72 hours. Drop the ionic/non-ionic incidence (no source; CAR/CSACI give 0.05% for LOCM). The skin and treatment lines are right; add that severe cutaneous reactions are rare and premedication for delayed reactions is not recommended (CAR/CSACI p6).
 - **Proposed home:** Contrast reactions › Categories
+- **Re-check:** agrees — Skin-predominant and self-limited, treated with antihistamines or steroids, is right. The '1-72 hours' window is not the source's (ACR: up to one week; CAR/CSACI: 'hours to days'), and the incidence '~2% after ionic, ~1% after non-ionic' is in neither document (ACR 0.5% to 14%; CAR/CSACI 0.05% of LOCM administrations). (acr-contrast-2024, Delayed Adverse Events to Iodinated Contrast Media, printed p 28-29 (PDF p 31-32); car-csaci-hypersensitivity-2025, Frequency of Contrast Reactions, p 3)
 
 ### B2-contrast-safety-05 · "Late Reactions (>72 hours)" tab
 
@@ -727,6 +801,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — No ">72 hours" category: delayed reactions run up to one week (pp28–29, PDF pp31–32); thyrotoxicosis after iodinated contrast in patients with a history of hyperthyroidism is "rare" (Patient Selection, p6, PDF p9); metformin is not a reaction — contrast is "a concern only if post-contrast acute kidney injury (AKI) should develop" (Metformin, p44, PDF p47); Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — pp2–3: hypersensitivity reactions are immediate (within 1 hour) or delayed (hours to days); no later category
 - **Proposed fix:** Drop the tab: neither source has a >72-hour category; the thyroid belongs in the thyroid section and metformin in the metformin section.
 - **Proposed home:** Contrast reactions › Categories
+- **Re-check:** agrees — Neither the ACR manual nor CAR/CSACI has a 'late reaction (>72 hours)' category. The manual treats thyrotoxicosis and metformin-associated lactic acidosis as separate considerations, not as contrast reactions with a time window. (acr-contrast-2024, Patient Selection chapter, Hyperthyroidism, printed p 6 (PDF p 9); Metformin chapter p 44 (PDF p 47))
 
 ### B2-contrast-safety-06 · Acute Contrast Reaction Treatment, "Urticaria (Mild)" tab
 
@@ -736,6 +811,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Table 3, Hives, p104 (PDF p107): mild (scattered and/or transient) — "No treatment often needed; however, if symptomatic, can consider: Diphenhydramine (Benadryl®) 25–50 mg PO or Fexofenadine (Allegra®) 180 mg PO"; moderate — the same oral options or diphenhydramine 25–50 mg IM or IV ("administer IV dose slowly over 1–2 min"); severe (widespread and/or progressive) — diphenhydramine 25–50 mg IM or IV; footnote: "IM/IV form may cause or worsen hypotension". Treatment of Contrast Reactions, p86 (PDF p89): observe mild allergic-like reactions at least 20 to 30 minutes; Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — p3: second-generation antihistamines for mild reactions; Appendix B, p12: first-generation antihistamines no longer recommended; the only IV antihistamine available in Canada is first-generation (p4)
 - **Proposed fix:** Mild hives take an oral antihistamine, not IV/IM: diphenhydramine 25–50 mg PO or fexofenadine 180 mg PO (CAR/CSACI prefer a second-generation one such as fexofenadine). IM/IV diphenhydramine 25–50 mg (IV over 1–2 minutes) is for moderate or severe hives. Observe at least 20–30 minutes.
 - **Proposed home:** Contrast reactions › Management
+- **Re-check:** agrees — Dose is right, route is not: for mild hives the ACR gives diphenhydramine 25-50 mg by mouth (or fexofenadine 180 mg PO); IM/IV is listed only for moderate or severe hives and carries a hypotension warning. CAR/CSACI also favours second-generation antihistamines for mild reactions. (acr-contrast-2024, Table 3 Hives (Urticaria), printed p 104 (PDF p 107))
 
 ### B2-contrast-safety-07 · Acute Contrast Reaction Treatment, "Bronchospasm" tab
 
@@ -745,6 +821,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Table 3, Bronchospasm, p106 (PDF p109): O2 by mask 6–10 L/min; beta-agonist inhaler (Albuterol®) "2 puffs (90 mcg/puff) for a total of 180 mcg; can repeat up to 3 times"; moderate — "Consider adding epinephrine (IM)": 0.3 mL of 1.0 mg/mL (1:1,000) (0.3 mg), "can repeat every 5-15 minutes up to 1 mL (1 mg) total", or IV 1 mL of 0.1 mg/mL (1:10,000) (0.1 mg), repeat every few minutes up to 10 mL (1 mg) total; severe — epinephrine IV (listed first) or IM, AND the inhaler, and "Call emergency response team or 911". No injection site is given
 - **Proposed fix:** Albuterol is 2 puffs (90 mcg each, 180 mcg), repeatable up to 3 times, not 2–3 puffs (a small difference). Add the IM epinephrine limit (every 5–15 minutes, up to 1 mg total) and the IV option (0.1 mg of 0.1 mg/mL slowly, up to 1 mg). Oxygen and the 0.3 mg IM dose are right.
 - **Proposed home:** Contrast reactions › Management
+- **Re-check:** agrees — Oxygen flow and epinephrine 0.3 mg IM of 1:1,000 match. The albuterol dose does not: the ACR gives 2 puffs, repeatable up to 3 times, not '2-3 puffs'. The page also omits the epinephrine repeat interval and 1 mg ceiling and the IV option (0.1 mg of 1:10,000); 'anterolateral thigh' is not in the manual. (acr-contrast-2024, Table 3 Bronchospasm, printed p 106 (PDF p 109))
 
 ### B2-contrast-safety-08 · Acute Contrast Reaction Treatment, "Laryngeal Edema" tab
 
@@ -754,6 +831,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Table 3, Laryngeal Edema, p107 (PDF p110): O2 by mask 6–10 L/min; epinephrine IV 1 mL of 0.1 mg/mL (1:10,000) (0.1 mg), repeat every few minutes up to 1 mg total, or IM 0.3 mL of 1.0 mg/mL (1:1,000) (0.3 mg), "can repeat every 5-15 minutes up to 1 mL (1 mg) total", or auto-injector 0.3 mg up to three times; "Consider calling emergency response team or 911 based upon the severity of the reaction and the completeness of the response"
 - **Proposed fix:** The IM dose, concentration and interval are right. Add oxygen 6–10 L/min, the 1 mg total limit and the IV option; "prepare for possible intubation" is not in the ACR table.
 - **Proposed home:** Contrast reactions › Management
+- **Re-check:** agrees — Drug, dose, concentration, route and repeat interval match. Missing: the 1 mg total ceiling, the 6-10 L/min flow and the IV alternative (0.1 mg of 1:10,000). 'Prepare for possible intubation' is not in Table 3. (acr-contrast-2024, Table 3 Laryngeal Edema, printed p 107 (PDF p 110))
 
 ### B2-contrast-safety-09 · Acute Contrast Reaction Treatment, "Anaphylaxis / Anaphylactic Shock" tab
 
@@ -764,15 +842,16 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Proposed fix:** Per ACR Table 3: epinephrine IM 0.3 mg (not 0.3–0.5 mg), every 5–15 minutes to 1 mg total, or IV 0.1 mg (1 mL of 0.1 mg/mL) slowly, repeated to 1 mg, preferred when hypotensive with IV access; oxygen 6–10 L/min (not 10–15); 1,000 mL saline or lactated Ringer's rapidly (not 1–2 L); legs raised at least 60 degrees. IV diphenhydramine is not in the ACR's shock treatment, which warns it can worsen hypotension.
 - **Question for the owner:** If your practice uses a local anaphylaxis protocol (for example epinephrine 0.5 mg IM), should the page give it, labelled local practice, instead of the ACR dose?
 - **Proposed home:** Contrast reactions › Management
+- **Re-check:** agrees — Several numbers differ from the ACR: epinephrine IM is 0.3 mg (not 0.3-0.5 mg) with a 1 mg ceiling, and IV is the preferred route in hypotension; oxygen is 6-10 L/min (not 10-15); saline is 1,000 mL rapidly (not 1-2 L). Diphenhydramine is not part of the ACR's hypotension treatment, and the manual warns the IM/IV form 'may cause or worsen hypotension'. Epinephrine infusion and vasopressors are not in the manual. (acr-contrast-2024, Table 3 Hypotension (anaphylactoid reaction), printed p 108 (PDF p 111), and Hives footnote p 104 (PDF p 107))
 
 ### B2-contrast-safety-10 · Acute Contrast Reaction Treatment, "Vasovagal Reaction" tab
 
-- **Verdict:** wrong
+- **Verdict:** correct
 - **Kind:** guideline-threshold · **Topic:** Contrast reactions
 - **The page says:** "1. Elevate legs (Trendelenburg position)"; "2. Oxygen if needed"; "3. IV fluids for hypotension"; "4. Atropine 0.6–1 mg IV if persistent bradycardia".
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Table 3, Hypotension, p108 (PDF p111): all forms — O2 by mask 6–10 L/min, "Elevate legs at least 60 degrees", 0.9% saline or lactated Ringer's 1,000 mL rapidly; hypotension with bradycardia (pulse < 60 bpm) (vasovagal): mild — no other treatment usually necessary; severe (symptomatic despite the above) — atropine IV "0.6–1.0 mg; administer into a running IV infusion of fluids; can repeat up to 3 mg total"; consider calling the emergency response team
-- **Proposed fix:** Raise the legs at least 60 degrees; Trendelenburg (head-down tilt) is not what the ACR says. The atropine dose is right; add "into a running IV infusion, repeat up to 3 mg total, if symptomatic despite legs, oxygen 6–10 L/min and 1,000 mL fluid".
 - **Proposed home:** Contrast reactions › Management
+- **Re-check:** disagreed — Reviewer: correct (management). Atropine 0.6-1 mg IV, leg elevation and fluids match. The ACR says 'elevate legs at least 60 degrees' (it does not use 'Trendelenburg'), gives oxygen 6-10 L/min for all forms rather than 'if needed', and adds the 3 mg atropine ceiling and the 1,000 mL fluid volume. (acr-contrast-2024, Table 3 Hypotension with bradycardia (vasovagal reaction), printed p 108 (PDF p 111)) Resolution: Changed to correct, as the reviewer has it: atropine dose, leg elevation and fluids match; "Trendelenburg" for "legs elevated at least 60 degrees" and oxygen "if needed" are wording, not a different treatment.
 
 ### B2-contrast-safety-11 · Premedication for High-Risk Patients: "Who Needs Premedication?" — prior-reaction indications and the no-guarantee note
 
@@ -783,6 +862,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Proposed fix:** Under the CAR/CSACI lead: after a reaction of any severity, switch to a chemically different agent; no steroid premedication; an optional second-generation antihistamine (oral, at least 1 hour before) after mild or moderate reactions; after severe reactions, consider another modality or an allergist. The ACR's indication is any prior allergic-like or unknown-type reaction to the same class (not only moderate/severe; "multiple mild" is not an ACR criterion). The no-guarantee note is right in both.
 - **Question for the owner:** For patients with a prior contrast reaction, does your practice follow CAR/CSACI 2025 (switch agent, no steroids) or the ACR's premedication? The unknown-agent part of CAR/CSACI was updated in 2025 (copy requested from you).
 - **Proposed home:** Prior contrast reaction › Other guidelines differ
+- **Re-check:** agrees — CAR/CSACI (the lead) recommends contrast switching and against steroid premedication for prior reactions of any severity; only an optional second-generation antihistamine for a prior mild reaction. The page follows the ACR approach, and loosely: the ACR's indication is any prior allergic-like or unknown-type reaction to the same class, with no 'moderate or severe' or 'multiple mild' rule. The note that no premedication eliminates risk agrees with both. (car-csaci-hypersensitivity-2025, Recommendations 3, 5, 6, 7 and 10, p 9-11; acr-contrast-2024, Indications for Premedication, printed p 9 (PDF p 12))
 
 ### B2-contrast-safety-12 · Premedication indications: "History of asthma"
 
@@ -792,6 +872,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Patient Selection, p5 (PDF p8): "Due to the modest increased risk, restricting contrast medium use or premedicating solely on the basis of a history of asthma is not recommended"; p9 (PDF p12): routine premedication for asthma "is not recommended"; Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — Recommendation 2, p9: patients are at risk only after a previous hypersensitivity reaction to the same type of agent; "There is insufficient evidence to support routine screening of other risk factors"
 - **Proposed fix:** Remove asthma as an indication: the ACR and CAR/CSACI both advise against premedicating for asthma alone.
 - **Proposed home:** Prior contrast reaction › Applies to
+- **Re-check:** agrees — Contradicts both bodies. The ACR says not to premedicate for asthma alone; CAR/CSACI says a patient is at risk only after a previous hypersensitivity reaction to the same type of contrast agent, with insufficient evidence to screen for other risk factors. (acr-contrast-2024, Patient Selection chapter, Asthma, printed p 5 (PDF p 8) and Indications for Premedication p 9 (PDF p 12); car-csaci-hypersensitivity-2025, Recommendation 2, p 9)
 
 ### B2-contrast-safety-13 · Standard Premedication Regimens, "Elective (13-hour)" tab (methylprednisolone)
 
@@ -802,6 +883,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Proposed fix:** The ACR's methylprednisolone regimen is 32 mg PO at 12 and 2 hours before (not 13 and 1), and it is the 12-hour regimen. Under the CAR/CSACI lead it moves to "Other guidelines differ".
 - **Question for the owner:** Follows the lead choice asked on B2-contrast-safety-11.
 - **Proposed home:** Prior contrast reaction › Other guidelines differ
+- **Re-check:** agrees — Dose is right but the timing is not the ACR's: methylprednisolone 32 mg is given 12 hours and 2 hours before contrast, not 13 hours and 1 hour (those are the prednisone timings). It also departs from the lead: CAR/CSACI says routine steroid premedication should be discontinued. (acr-contrast-2024, Specific Recommended Premedication Regimens, printed p 9-10 (PDF p 12-13); car-csaci-hypersensitivity-2025, Recommendation 5, p 10)
 
 ### B2-contrast-safety-14 · Standard Premedication Regimens, "Alternative (12-hour)" tab (prednisone)
 
@@ -812,16 +894,18 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Proposed fix:** Matches the ACR's prednisone regimen, which is the 13-hour one (the "12-hour" label belongs to methylprednisolone); diphenhydramine may be IV, IM or PO. Under the CAR/CSACI lead it moves to "Other guidelines differ".
 - **Question for the owner:** Follows the lead choice asked on B2-contrast-safety-11.
 - **Proposed home:** Prior contrast reaction › Other guidelines differ
+- **Re-check:** agrees — The doses and times match the ACR's prednisone regimen (50 mg at 13, 7 and 1 hours; diphenhydramine 50 mg IV, IM or PO at 1 hour, optional), but CAR/CSACI, the lead, recommends against steroid premedication and prefers contrast switching, with second-generation rather than first-generation antihistamines. Minor: the tab is titled '12-hour' though this is the 13-hour regimen, and the page lists diphenhydramine as PO only. (car-csaci-hypersensitivity-2025, Recommendations 5 and 7, p 10-11; acr-contrast-2024, Specific Recommended Premedication Regimens, printed p 9-10 (PDF p 12-13))
 
 ### B2-contrast-safety-15 · Standard Premedication Regimens, "Accelerated (3–5 hour)" tab and its warning
 
-- **Verdict:** wrong · **management**
+- **Verdict:** not-lead · **management**
 - **Kind:** guideline-threshold · **Topic:** Prior contrast reaction
 - **The page says:** "Methylprednisolone | 40 mg IV | Every 4 hours until contrast"; "Diphenhydramine | 50 mg IV | 1 hour before"; warning "Accelerated regimens are less effective — use only when 12-hour regimen is not feasible".
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Accelerated IV Premedication, p10 (PDF p13): methylprednisolone sodium succinate 40 mg IV or hydrocortisone sodium succinate 200 mg IV "immediately, and then every 4 hours until contrast medium administration, plus diphenhydramine 50 mg IV 1 hour before"; "This regimen usually is 4-5 hours in duration"; dexamethasone 7.5 mg IV for methylprednisolone allergy; "Premedication regimens less than 4-5 hours in duration (oral or IV) have not been shown to be effective". Indications, p9 (PDF p12): accelerated IV when 12- or 13-hour premedication would delay care, or an outpatient arrives unpremedicated; Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — p4: a 5-hour IV regimen had a breakthrough rate (2.5%) non-inferior to the 13-hour oral regimen (2.1%); Recommendations 5 and 6, pp10–11: steroid premedication not recommended
 - **Proposed fix:** The duration is 4–5 hours ("3–5 hour" includes regimens with no evidence); the first dose is given immediately; hydrocortisone 200 mg IV is an alternative (dexamethasone 7.5 mg IV for methylprednisolone allergy). "Less effective" is not in the ACR; the 5-hour IV regimen was non-inferior in the study CAR/CSACI cite. Under the CAR/CSACI lead it moves to "Other guidelines differ".
 - **Question for the owner:** Follows the lead choice asked on B2-contrast-safety-11.
 - **Proposed home:** Prior contrast reaction › Other guidelines differ
+- **Re-check:** disagreed — Reviewer: not-lead (management). Drug, dose and interval match the ACR's accelerated option 1, but CAR/CSACI (the lead) recommends against steroid premedication. Two details also differ from the ACR: the regimen is 4-5 hours, not '3-5' (the ACR says regimens shorter than 4-5 hours have no evidence of efficacy), and 'less effective' is not what either source says (CAR/CSACI cites the 5-hour IV regimen as non-inferior to the 13-hour oral one). (car-csaci-hypersensitivity-2025, Recommendation 5, p 10-11, and Efficacy and Risks of ICM Premedication, p 4; acr-contrast-2024, Accelerated IV Premedication, printed p 10 (PDF p 13)) Resolution: Changed to not-lead with management, as the reviewer has it: the drug, dose and interval are the ACR's accelerated option, and the lead (CAR/CSACI) recommends against steroid premedication; the "3–5 hour" label and "less effective" also depart from the ACR (4–5 hours).
 
 ### B2-contrast-safety-16 · Contrast and Renal Function: "Risk Stratification for CI-AKI" note and the eGFR ≥45 row
 
@@ -831,6 +915,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Chronic Kidney Disease section: "Only those with severe CKD (eGFR ≤30 mL/min/1.73 m2), and those with preexisting AKI are at risk of CA-AKI"; Summary of recommendations 3a (eGFR >30 and no AKI: proceed) and 8 (no oral or IV hydration for eGFR >30); Table 1: CA-AKI is the general term, CI-AKI only where contrast is the proven cause; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — PC-AKI chapter, p37 (PDF p40): "very little evidence that IV iodinated contrast material is an independent risk factor for AKI in patients with eGFR ≥30"; p40 (PDF p43): prophylaxis "not indicated for the general population of patients with stable eGFR greater than or equal to 30"
 - **Proposed fix:** Correct; CAR 2022 uses "contrast-associated AKI (CA-AKI)" for this risk, keeping CI-AKI for proven causation.
 - **Proposed home:** Contrast-associated AKI › Management
+- **Re-check:** agrees — Agrees with CAR 2022 and with the ACR: true contrast-induced AKI is rare and the risk sits in severely reduced kidney function; at eGFR 45 or above contrast is given with no precautions. (car-ca-aki-2022, Summary of recommendations, recommendations 3a and 8; acr-contrast-2024, PC-AKI chapter, Risk Thresholds, printed p 37 (PDF p 40))
 
 ### B2-contrast-safety-17 · Contrast and Renal Function: the eGFR 30–44 row
 
@@ -840,16 +925,18 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 3a (eGFR >30 and no AKI: "proceed with an indicated contrast imaging study") and 8 ("We do not recommend oral or IV hydration for patients with eGFR >30 mL/min/1.73 m2, receiving IV ICM or IA ICM"); Table 2: CAR 2012's bands (30–44 "moderate risk", preventive measures below 45) were replaced in 2022; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — PC-AKI chapter, p40 (PDF p43): prophylaxis "is not indicated for the general population of patients with stable eGFR greater than or equal to 30"; it "may also be considered on an individual basis for high-risk circumstances (e.g. numerous risk factors, recent AKI, borderline eGFR) in patients with an eGFR of 30-44 … at the discretion of the ordering provider"
 - **Proposed fix:** Under CAR 2022, eGFR >30 with no AKI: proceed, with no hydration and no risk band. (The ACR allows hydration at 30–44 only case by case in high-risk circumstances; the "moderate" band is CAR's 2012 scheme.)
 - **Proposed home:** Contrast-associated AKI › Management
+- **Re-check:** agrees — CAR 2022 (the lead) treats eGFR above 30 as proceed, with no hydration. The row is nearer the ACR, which lets prophylaxis be 'considered on an individual basis for high-risk circumstances' at eGFR 30-44, but even the ACR says prophylaxis is not indicated for the general population at eGFR 30 or above, so 'IV hydration if feasible' as the default overstates it. (car-ca-aki-2022, Summary of recommendations, recommendations 3a and 8; acr-contrast-2024, PC-AKI chapter, Volume Expansion, printed p 40 (PDF p 43))
 
 ### B2-contrast-safety-18 · Contrast and Renal Function: the eGFR <30 (not on dialysis) row
 
-- **Verdict:** not-lead
+- **Verdict:** not-lead · **management**
 - **Kind:** guideline-threshold · **Topic:** Contrast-associated AKI
 - **The page says:** "<30 (not on dialysis) | Elevated | Use with caution; discuss with ordering physician; IV hydration".
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 3a: eGFR ≤30 or suspected AKI — "an individual patient decision involving the caring team or patient/patient decision maker"; 2a: emergent studies proceed without delay; 9: IV ICM at eGFR ≤30 — "the working group makes no recommendation" on volume expansion, "institutions may choose practices best suited to their local environments"; 10: IA ICM at eGFR ≤30 — hydration (0.9% saline or 1.26% sodium bicarbonate IV, or oral salt and water) left to the practitioner; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — PC-AKI chapter, pp39–40 (PDF pp42–43): "Prophylaxis is indicated for patients who have AKI or severe CKD with an eGFR less than 30"; isotonic saline preferred
 - **Proposed fix:** Use CAR's cut-off (≤30, or suspected AKI) and its individual decision with the care team; for IV contrast say hydration is a local choice (CAR makes no recommendation); emergent studies are not delayed.
 - **Question for the owner:** For eGFR ≤30 with IV contrast, does your practice give IV hydration? CAR leaves it to each institution; if it does, the page labels it local practice.
 - **Proposed home:** Contrast-associated AKI › Management
+- **Re-check:** agrees — Caution and a shared decision with the care team match CAR. Hydration as a standing instruction follows the ACR ('Prophylaxis is indicated for patients who have AKI or severe CKD with an eGFR less than 30'); CAR makes no recommendation for IV contrast and leaves it to the institution (some members endorsed it for intra-arterial contrast). CAR's cut-off is 30 or below, not below 30. (car-ca-aki-2022, Summary of recommendations, recommendations 3a and 9; acr-contrast-2024, PC-AKI chapter, Volume Expansion, printed p 39 (PDF p 42))
 
 ### B2-contrast-safety-19 · Contrast and Renal Function: the "Dialysis-dependent" row
 
@@ -859,16 +946,18 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Chronic dialysis patients section and Summary of recommendations 3b: "Imaging with ICM can be performed in patients on peritoneal or hemodialysis regardless of residual urine output and no change in dialysis schedule is required"; 12: no post-contrast dialysis; Table 2: the 2012 guidance also called coordination with hemodialysis "unnecessary"; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — PC-AKI chapter, p40 (PDF p43): patients should not have dialysis initiated or "alter their schedule solely based on iodinated contrast media administration"; dialysis patients making more than 1–2 cups (100 mL) of urine a day are treated as high-risk
 - **Proposed fix:** Contrast may be given with no change to the dialysis schedule (CAR and ACR). The ACR's high-risk handling of non-anuric dialysis patients differs from CAR, for whom residual urine output does not change the decision.
 - **Proposed home:** Contrast-associated AKI › Management
+- **Re-check:** agrees — Contrast may be given: right. 'Coordinate dialysis timing if possible' contradicts both CAR (no change in dialysis schedule) and the ACR (patients should not have dialysis initiated or their schedule altered because of iodinated contrast). (car-ca-aki-2022, Summary of recommendations, recommendation 3b, and section Chronic dialysis patients; acr-contrast-2024, PC-AKI chapter, Renal Dialysis Patients, printed p 40 (PDF p 43))
 
 ### B2-contrast-safety-20 · Contrast and Renal Function: "IV Hydration Protocol" tab
 
-- **Verdict:** not-lead · **management**
+- **Verdict:** wrong · **management**
 - **Kind:** guideline-threshold · **Topic:** Contrast-associated AKI
 - **The page says:** "For patients at risk (eGFR 30–44 or risk factors)": "Normal saline 100 mL/hr IV — 6 hours before and 6 hours after contrast, OR"; "Sodium bicarbonate 1.26% solution 3 mL/kg/hr × 1 hour before, then 1 mL/kg/hr × 6 hours after (alternative)".
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 8–10; Hydration or Volume Expansion section: bicarbonate "does not provide any added benefit" over normal saline, which "would be the preferable option"; oral or IV hydration may be used; Table 4: the Merten bicarbonate protocol ran "over 1 hour pre-procedure and 4 hours post-procedure"; PRESERVE found bicarbonate no better than saline; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — PC-AKI chapter, p39 (PDF p42): "Typical prophylaxis regiments begin 1 hour prior to the exam and continue 3-12 hours after"; fixed volume (e.g. 500 mL NS) before and after, or 1–3 mL/kg per hour; Solomon et al: 100 mL/h from 12 hours before to 12 hours after; p40 (PDF p43): bicarbonate "not preferred"
 - **Proposed fix:** Under CAR 2022 there is no hydration for eGFR >30; at ≤30 hydration is a local choice (IV contrast) or the practitioner's (IA), normal saline preferred, oral acceptable. The page's rates and durations (6 hours before and after; bicarbonate for 6 hours after) are in neither source; if kept, label them local practice.
 - **Question for the owner:** Follows the hydration question on B2-contrast-safety-18.
 - **Proposed home:** Contrast-associated AKI › Management
+- **Re-check:** disagreed — Reviewer: wrong (management). The target group is wrong for both bodies: CAR recommends no hydration above eGFR 30, and the ACR indicates it for AKI or eGFR under 30 (30-44 only case by case). The saline regimen (100 mL/hr for 6 hours before and after) is in neither document; the ACR describes starting 1 hour before and continuing 3-12 hours after. Both say bicarbonate adds nothing over saline, and neither gives the bicarbonate rates the page lists. (car-ca-aki-2022, Summary of recommendations, recommendations 8-10, and the prophylaxis section; acr-contrast-2024, PC-AKI chapter, Volume Expansion and Sodium bicarbonate, printed p 39-40 (PDF p 42-43)) Resolution: Changed to wrong, as the reviewer has it: the target group (eGFR 30–44) is wrong for both bodies (CAR: no hydration above 30; ACR: AKI or eGFR under 30, 30–44 case by case), and the saline regimen is in neither.
 
 ### B2-contrast-safety-21 · Contrast and Renal Function: "N-Acetylcysteine" tab
 
@@ -877,6 +966,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **The page says:** "Not recommended — evidence does not support use for CI-AKI prevention."
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 13: "We do not recommend NAC use for the prophylaxis of CA-AKI"; N-acetylcysteine section: "strong evidence against prophylactic use of NAC"; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — PC-AKI chapter, p40 (PDF p43): N-acetylcysteine "is therefore not recommended for intravenous contrast media prophylaxis"
 - **Proposed home:** Contrast-associated AKI › Management
+- **Re-check:** agrees — Matches CAR 2022 and the ACR. (car-ca-aki-2022, Summary of recommendations, recommendation 13; acr-contrast-2024, PC-AKI chapter, N-acetylcysteine, printed p 40 (PDF p 43))
 
 ### B2-contrast-safety-22 · Metformin Guidelines table: the "≥30" and "<30 OR acute kidney injury expected" rows
 
@@ -886,6 +976,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 16 ("We do not recommend stopping metformin before contrast injection, and/or retesting kidney function afterward, for patients with eGFR >30 mL/min/1.73 m2") and 17 (eGFR ≤30 or AKI: held "at the time of, or prior to" ICM, "not restarted for at least 48 hours and only then if kidney function remains stable (<25% increase compared with baseline creatinine) and the ongoing use of metformin has been reassessed by the patient's clinical team"); Drug Interactions section: no route distinction; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Metformin chapter, pp44–45 (PDF pp47–48): Category I — no AKI and eGFR ≥30, intravenous contrast: no need to discontinue; Category II — AKI, eGFR < 30, or "arterial catheter studies that might result in emboli (atheromatous or other) to the renal arteries": discontinue at or before the procedure, withhold 48 hours, reinstitute "only after renal function has been re-evaluated and found to be normal"
 - **Proposed fix:** CAR continues metformin at eGFR >30 and holds it at ≤30 or with AKI (not "AKI expected"), so at eGFR 30 it is held; restart after at least 48 hours only if creatinine has risen <25% from baseline and the clinical team has reassessed. "Hemodynamically stable" is in neither source; the ACR holds metformin for arterial studies that might embolise to the kidneys whatever the eGFR.
 - **Proposed home:** Metformin and iodinated contrast › Management
+- **Re-check:** agrees — Substantively the same as CAR, with small differences: the page uses the ACR's cut-off (no hold at 30 or above, hold below 30) where CAR holds at 30 or below; CAR and the ACR say AKI present, not 'expected'; CAR adds reassessment by the clinical team before restarting. Labelling the first row 'ACR guidance' for intra-arterial contrast is also inexact: the ACR's no-hold category is for intravenous contrast, and arterial catheter studies that might send emboli to the renal arteries are in its hold category. (car-ca-aki-2022, Summary of recommendations, recommendations 16-17; acr-contrast-2024, Metformin chapter, Category I and II, printed p 44-45 (PDF p 47-48))
 
 ### B2-contrast-safety-23 · Metformin Guidelines table: the "Intra-arterial contrast with eGFR 30–60" row
 
@@ -895,6 +986,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Metformin chapter, pp44–45 (PDF pp47–48): no eGFR 30–60 band; Category II covers "arterial catheter studies that might result in emboli … to the renal arteries" at any eGFR (hold 48 hours, then re-evaluate); Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 16: no stopping of metformin at eGFR >30, with no route distinction
 - **Proposed fix:** Remove the row: neither source has an eGFR 30–60 band, and it contradicts the page's own first row. CAR continues metformin at eGFR >30 by any route; the ACR's exception is arterial studies with possible renal emboli (hold 48 hours, then reassess).
 - **Proposed home:** Metformin and iodinated contrast › Management
+- **Re-check:** agrees — No eGFR 30-60 intra-arterial rule exists in CAR 2022 or the ACR manual, and the row contradicts the page's own first row. CAR does not stop metformin or retest above eGFR 30 by any route (it asks for a 48-72 hour creatinine after intra-arterial contrast only at eGFR 30 or below). The ACR's arterial rule is not banded by eGFR: hold for arterial catheter studies that might cause emboli to the renal arteries. (car-ca-aki-2022, Summary of recommendations, recommendations 16 and 20; acr-contrast-2024, Metformin chapter, Category II, printed p 45 (PDF p 48))
 
 ### B2-contrast-safety-24 · Gadolinium-Based Contrast Agents: NSF note, "NSF Risk Grouping" table and "Preferred Agents" tip
 
@@ -905,6 +997,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Proposed fix:** Against ACR 2024 the grouping is wrong: Group II is gadobenate, gadobutrol, gadoteric acid (gadoterate), gadoteridol, gadopiclenol and gadoxetate; Group III is empty; gadofosveset is not listed; Group II is preferred in at-risk patients. Group I and the NSF note are right. The verdict waits for CAR 2018/2019 and the ACR 2025 NSF chapter.
 - **Question for the owner:** CAR 2018 and its 2019 update lead here and copies have been requested from you (the publisher blocks download). Until they are read, should the page carry the ACR 2024 grouping?
 - **Proposed home:** Gadolinium in kidney disease › Categories
+- **Re-check:** agrees — The lead (CAR 2018/2019) could not be read. Against the ACR manual the table is wrong: Group I matches, but the ACR's Group II is the lowest-risk group (gadobenate, gadobutrol, gadoterate, gadoteridol, gadopiclenol, gadoxetate) and Group III is empty. The page puts the macrocyclics in a 'Group III (Lowest)' and calls Group II 'moderate', so its group numbers mean the opposite of the ACR's for the agents in use. The ACR does not list gadofosveset. The 2025 ACR edition changed this chapter and was not readable either. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter Table 1, printed p 80 (PDF p 83))
 
 ### B2-contrast-safety-25 · "GBCA and Renal Function" table
 
@@ -915,6 +1008,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Proposed fix:** Against ACR 2024: Group II (which includes the macrocyclics) is the agent for eGFR <30, dialysis and AKI, at the lowest diagnostic dose; "avoid Group I/II" on dialysis and "avoid GBCA if possible" in AKI contradict it, and no Group III agent exists. On dialysis, time elective scans just before a scheduled session without changing the schedule. The verdict waits for CAR 2018/2019.
 - **Question for the owner:** Follows the question on B2-contrast-safety-24.
 - **Proposed home:** Gadolinium in kidney disease › Management
+- **Re-check:** agrees — The lead (CAR 2018/2019) could not be read. Against the ACR manual the table is wrong: for dialysis, eGFR under 30 and AKI the ACR says Group I is contraindicated or avoided and a Group II agent should be used, so 'avoid Group I/II' and 'Group III only' point away from the recommended agents (the ACR's Group III is empty). The ACR does not ask for a documented risk discussion with Group II agents, and has no 15-29 versus under-15 split; at eGFR 30-59 it says no special precautions. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter, General Recommendations and Specific Groups of Patients, printed p 78-79 (PDF p 81-82))
 
 ### B2-contrast-safety-26 · GBCA and Special Populations, "Pregnancy" tab
 
@@ -924,6 +1018,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Pregnancy chapter, pp88–89 (PDF pp91–92): a GBCA crosses the placenta (primates); a Canadian birth-database study found more stillbirth or neonatal death and rheumatological, inflammatory or infiltrative conditions; GBCAs "should only be used if their usage is considered critical and the potential benefits justify the potential unknown risk"; one of the agents at low risk for NSF "at the lowest possible dose"; confer with the referrer and document that the information cannot be obtained without contrast or by other modalities, affects care, and cannot wait; informed consent recommended. Gadolinium Pregnancy Screening Statement, p74 (PDF p77): avoid routine GBCA in pregnancy; screen for unsuspected pregnancy
 - **Proposed fix:** Correct; add that a Group II (low NSF risk) agent is used and that the ACR recommends screening for unsuspected pregnancy before GBCA. "Avoid repeated exposure" is not stated in the ACR.
 - **Proposed home:** Contrast in pregnancy and breast-feeding › Management
+- **Re-check:** agrees — Matches the ACR: placental passage, the association reported in a retrospective study, use only when benefit outweighs risk, consent and lowest dose. 'Avoid repeated exposure' is not stated in the manual. (acr-contrast-2024, Pregnancy chapter, Gadolinium-Based Contrast Agents, printed p 89 (PDF p 92), and Gadolinium Pregnancy Screening Statement p 74 (PDF p 77))
 
 ### B2-contrast-safety-27 · GBCA and Special Populations, "Lactation" tab
 
@@ -933,6 +1028,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Breast-Feeding chapter, pp93–94 (PDF pp96–97): "Less than 0.04% of the intravascular dose given to the mother is excreted into the breast milk in the first 24 hours"; "less than 1% of the contrast medium ingested by the infant is absorbed" (systemic dose < 0.0004%); safe to continue; a concerned mother may abstain "for a period of 12 to 24 hours", expressing and discarding milk. Summary, Question 2, p92 (PDF p95)
 - **Proposed fix:** Correct; the ACR's optional pause is 12 to 24 hours and is the mother's informed decision.
 - **Proposed home:** Contrast in pregnancy and breast-feeding › Management
+- **Re-check:** agrees — Figures and advice match the ACR (safe to continue; a concerned mother may express and discard for 12 to 24 hours). (acr-contrast-2024, Breast-feeding chapter, Gadolinium-Based Contrast Agents, printed p 93-94 (PDF p 96-97))
 
 ### B2-contrast-safety-28 · GBCA and Special Populations, "Iodinated Contrast in Pregnancy" tab
 
@@ -942,6 +1038,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Pregnancy chapter, p88 (PDF p91): IV iodinated contrast "does not affect short-term neonatal thyroid stimulating hormone (TSH)"; "no documented case of neonatal hypothyroidism from the maternal intravascular injection of water-soluble iodinated contrast agents"; with routine newborn TSH screening "no extra attention is felt to be necessary"; no routine pregnancy screening before iodinated contrast; "We do not recommend withholding the use of iodinated contrast agents in pregnant or potentially pregnant patients when it is needed for diagnostic purposes". Patient Selection, p6 (PDF p9): a single maternal dose "has no effect on neonatal thyroid function"
 - **Proposed fix:** Remove the neonatal thyroid check and the suppression claim: the ACR finds no effect on neonatal TSH and relies on routine newborn screening. Keep: it crosses the placenta and is given when needed for diagnosis.
 - **Proposed home:** Contrast in pregnancy and breast-feeding › Management
+- **Re-check:** agrees — Placental passage is right. The ACR says IV iodinated contrast does not affect short-term neonatal TSH, reports no documented case of neonatal hypothyroidism from maternal intravascular water-soluble contrast, and says no extra thyroid check is needed beyond routine newborn screening. It also says not to withhold iodinated contrast in pregnancy when it is needed diagnostically. (acr-contrast-2024, Pregnancy chapter, Effect of iodinated contrast media on fetal thyroid function and Recommendations, printed p 88 (PDF p 91))
 
 ### B2-contrast-safety-29 · GBCA and Special Populations, "Iodinated Contrast During Breastfeeding" tab
 
@@ -950,6 +1047,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **The page says:** "<1% of dose enters breast milk; <1% of that is absorbed"; "ACR guidance: Continue breastfeeding after iodinated contrast without interruption".
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Breast-Feeding chapter, p93 (PDF p96): "less than 1% of the administered maternal dose of iodinated contrast medium is excreted into the breast milk in the first 24 hours"; "less than 1% of the contrast medium ingested by the infant is absorbed" (systemic dose < 0.01%); safe to continue; an optional 12–24-hour pause is the mother's informed decision; no routine infant thyroid testing. Summary, Questions 1 and 3, p92 (PDF p95)
 - **Proposed home:** Contrast in pregnancy and breast-feeding › Management
+- **Re-check:** agrees — Figures and advice match the ACR. The manual adds that the decision rests with the mother, who may abstain for 12 to 24 hours if concerned. (acr-contrast-2024, Breast-feeding chapter, Iodinated X-ray Contrast Media, printed p 93 (PDF p 96))
 
 ### B2-contrast-safety-30 · Contrast Extravasation: "Extravasation Management" table
 
@@ -959,6 +1057,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Extravasation summary, pp17–20 (PDF pp20–23): examine for tenderness, swelling, erythema, paresthesia, finger range of motion and perfusion; elevate above the heart; "Cold compresses or ice packs should initially be applied" (Question 4, Rec 2); no hyaluronidase, steroid injection or aspiration (Rec 3); "Surgical consultation should not be routinely requested based on volume alone" (Question 5, Rec 1, strength Strong); consult for severe pain, progressive swelling or pain, decreased capillary refill, change in sensation, worsening range of motion, or skin ulceration or blistering (Rec 2). Treatment, p22 (PDF p25): the volume thresholds some have used are 100 or 150 mL; consultation by signs and symptoms
 - **Proposed fix:** Drop the volume bands (no source gives 10 mL or 2 mL; the ACR advises against volume triggers) and "hypo-osmolar agents". Elevate above the heart, cold compresses first, examine; urgent surgical consultation for severe or progressive pain or swelling, poor capillary refill, altered sensation, worsening range of motion, or blistering or ulceration. "15–20 min several times/day" and imaging are not in the ACR.
 - **Proposed home:** Contrast extravasation › Management
+- **Re-check:** agrees — The volume thresholds (10 mL iso-osmolar, 2 mL high-osmolar, 'hypo-osmolar agents') appear nowhere in the manual, and grading by volume is what the ACR advises against: consult surgery on signs and symptoms (severe or progressive pain or swelling, reduced capillary refill, altered sensation, reduced range of motion, ulceration or blistering). Elevation above the heart, cold compresses and return instructions agree; the '15-20 min several times/day' schedule is not in the manual. (acr-contrast-2024, Extravasation chapter, Question 5 and Surgical Consultation, printed p 19-22 (PDF p 22-25))
 
 ### B2-contrast-safety-31 · Contrast Extravasation: "Follow-up contact" line
 
@@ -971,13 +1070,14 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 
 ### B2-contrast-safety-32 · Thyroid and Iodinated Contrast: thyrotoxicosis precautions (first three bullets)
 
-- **Verdict:** unsourced · **management**
+- **Verdict:** wrong · **management**
 - **Kind:** guideline-threshold · **Topic:** Iodinated contrast and the thyroid
 - **The page says:** "Large doses of iodinated contrast can cause contrast-induced thyrotoxicosis in susceptible patients (autonomous nodules, Graves' disease)"; "Patients with known hyperthyroidism or autonomous nodules: discuss with ordering physician and endocrinology prior to administering high-dose iodinated contrast"; "Routine patients without known thyroid disease: no special precautions needed".
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Patient Selection, p6 (PDF p9): thyrotoxicosis after iodinated contrast in patients with a history of hyperthyroidism is "rare"; "restricting contrast medium use or premedicating solely on the basis of a history of hyperthyroidism is not recommended"; in acute thyroid storm iodinated contrast "should be avoided"; with normal thyroid function, contrast does not affect thyroid function tests
 - **Proposed fix:** The ACR asks for no endocrinology discussion: hyperthyroidism alone is no reason to restrict contrast, but acute thyroid storm is a reason to avoid it (missing here). "Large doses", "autonomous nodules" and "Graves'" are not in the ACR; the no-precautions line is right.
 - **Question for the owner:** Is a discussion with endocrinology before high-dose contrast in hyperthyroid patients your local practice, to keep and label?
 - **Proposed home:** Iodinated contrast and the thyroid › Management
+- **Re-check:** disagreed — Reviewer: wrong (management). First and third bullets agree (thyrotoxicosis possible but rare; no effect with a normal thyroid). The second does not: the ACR says not to restrict contrast for a history of hyperthyroidism and requires no endocrinology discussion; its one exception, avoiding contrast in acute thyroid storm, is missing from the page. 'Large doses' and 'autonomous nodules, Graves' disease' are not the manual's wording. (acr-contrast-2024, Patient Selection chapter, Hyperthyroidism and Normal Thyroid Function, printed p 6 (PDF p 9)) Resolution: Changed to wrong, as the reviewer has it: the ACR says not to restrict contrast for a history of hyperthyroidism and requires no endocrinology discussion; its one exception, acute thyroid storm, is missing. The owner question (local practice?) stays.
 
 ### B2-contrast-safety-33 · Thyroid and Iodinated Contrast: radioactive iodine bullet
 
@@ -987,15 +1087,17 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Patient Selection, p6 (PDF p9): iodinated contrast "can interfere with uptake of the treatment and diagnostic dose"; "The washout period is ideally 3-4 weeks for patients with hyperthyroidism, and 6 weeks for patients with hypothyroidism"
 - **Proposed fix:** The washout before radioactive iodine therapy or imaging is ideally 3–4 weeks in hyperthyroidism and 6 weeks in hypothyroidism, not 2–6 months, after any iodinated contrast dose.
 - **Proposed home:** Iodinated contrast and the thyroid › Management
+- **Re-check:** agrees — The interference is real but the interval is not the ACR's: 3-4 weeks (hyperthyroid) or 6 weeks (hypothyroid), not 2-6 months. The ACR applies it to radioactive iodine imaging as well as therapy. (acr-contrast-2024, Patient Selection chapter, Hyperthyroidism item 2, printed p 6 (PDF p 9))
 
 ### B2-contrast-safety-34 · Contrast Reaction Risk Factors table
 
-- **Verdict:** not-lead
+- **Verdict:** wrong
 - **Kind:** guideline-threshold · **Topic:** Prior contrast reaction
 - **The page says:** "Prior reaction (same class) | Yes — major risk factor | Yes"; "Asthma | 2–3× increased risk | Slightly increased"; "Multiple allergies/atopy | Yes | Yes"; "Cardiac disease | For severe reactions | No"; "Renal impairment | CI-AKI risk | NSF risk"; "Anxiety | Yes (idiosyncratic) | No"; "Beta-blocker use | May worsen reaction, impairs epinephrine response | No".
 - **Source:** Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — Recommendation 2, p9: only a previous hypersensitivity reaction to the same type of agent (LOCM–LOCM, GBCA–GBCA) marks a patient at risk; "There is insufficient evidence to support routine screening of other risk factors"; p3: a prior contrast reaction or asthma raises GBCA reaction risk 1.5 to 3 times; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Patient Selection, pp5–6 (PDF pp8–9): a prior allergic-like reaction to the same class is about a 5-fold risk and the greatest risk factor; unrelated allergies 2- to 3-fold; asthma increases the likelihood (no figure); severe cardiac disease, anxiety and beta-blockers are discussed for contrast media generally; none is a reason to premedicate or restrict; no cross-reactivity between classes. GBCM chapter, p71 (PDF p74): asthma and other allergies a mild increased risk for GBCA
 - **Proposed fix:** Under CAR/CSACI only a prior reaction to the same type of agent is screened; the rest can stay as background. The 2–3× figure is the ACR's for unrelated allergies, not asthma (for GBCA, CAR/CSACI give 1.5–3× for asthma); the "No" entries for GBCA (cardiac disease, anxiety, beta-blockers) have no source.
 - **Proposed home:** Prior contrast reaction › Background
+- **Re-check:** disagreed — Reviewer: wrong. The rows for prior reaction, atopy, renal impairment and beta-blockers are supported. The '2-3x' figure for asthma is misplaced: the ACR gives 2- to 3-fold for unrelated allergies and no number for asthma (CAR/CSACI gives 1.5 to 3 times for GBCA). The 'No' entries for GBCA under cardiac disease, anxiety and beta-blockers have no support: the ACR lists these for intravenous contrast in general. CAR/CSACI adds that only a prior reaction to the same type of agent should mark a patient as at risk. (acr-contrast-2024, Patient Selection chapter, Risk Factors, printed p 5-6 (PDF p 8-9) and Adverse Reactions to GBCM, Risk Factors, p 71 (PDF p 74); car-csaci-hypersensitivity-2025, Risk Factors, p 3, and Recommendation 2) Resolution: Changed to wrong, as the reviewer has it: the "2–3×" figure belongs to unrelated allergies, not asthma, and the "No" entries for gadolinium under cardiac disease, anxiety and beta-blockers have no support.
 
 ### B2-contrast-safety-35 · Common Pitfalls: reaction-treatment items
 
@@ -1015,6 +1117,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Proposed fix:** Against ACR 2024, Group II is the recommended group at eGFR <30, so "don't use Group I/II" is wrong (Group I alone is right) and the choice is Group II rather than "macrocyclic". The verdict waits for CAR 2018/2019.
 - **Question for the owner:** Follows the question on B2-contrast-safety-24.
 - **Proposed home:** Gadolinium in kidney disease › Management
+- **Re-check:** agrees — The lead (CAR 2018/2019) could not be read. In the ACR's terms the 'Don't' is wrong as written: Group II agents are the ones to use at eGFR under 30, and only Group I is contraindicated. The 'Do' is close but not the ACR's rule: it prefers Group II agents, which include the linear agents gadobenate and gadoxetate, rather than 'macrocyclic' as such. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter, Specific Groups of Patients and Table 1, printed p 78-80 (PDF p 81-83))
 
 ### B2-contrast-safety-37 · Common Pitfalls: renal function and metformin items
 
@@ -1024,6 +1127,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Summary of recommendations 1 (outpatients with no current eGFR and no kidney history: two screening questions; if both no, proceed without eGFR), 2 (inpatients: eGFR within 7 days; emergent: do not delay or withhold contrast for eGFR), 16 (no stopping metformin at eGFR >30), 18–19 (no routine stopping of ACE inhibitors, ARBs or diuretics); ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — PC-AKI chapter, p38 (PDF p41): renal function assessment only for patients with risk factors; "Patients … who do not have one of the above risk factors do not require a baseline serum creatinine"
 - **Proposed fix:** Replace "check eGFR before contrast" with CAR's screen: eGFR for inpatients (within 7 days) or when the screening questions are positive, never delaying emergent studies; metformin is the only drug held (eGFR ≤30 or AKI), and it continues at eGFR >30, not ≥30.
 - **Proposed home:** Contrast-associated AKI › Management
+- **Re-check:** disagreed — Reviewer: correct (management). Not routinely holding metformin above eGFR 30 matches CAR (which holds at exactly 30) and the ACR. 'Check eGFR before contrast' is broader than either source: CAR screens stable outpatients with a two-question questionnaire and proceeds without an eGFR when the answers are no, and says emergent imaging should not wait for one. (car-ca-aki-2022, Summary of recommendations, recommendations 1 and 16; acr-contrast-2024, PC-AKI chapter, Screening, printed p 38 (PDF p 41)) Resolution: Stands as not-lead with management: CAR 2022 screens stable outpatients with a two-question questionnaire and says emergent imaging should not wait for an eGFR; a blanket "check eGFR before contrast" can delay emergency studies.
 
 ### B2-contrast-safety-38 · Common Pitfalls: general "Do" items (preparedness, documentation, training)
 
@@ -1036,12 +1140,12 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 
 ### B2-contrast-safety-39 · Emergency Equipment Checklist ("Required Emergency Supplies (Contrast Area)")
 
-- **Verdict:** wrong
+- **Verdict:** correct
 - **Kind:** troubleshooting · **Topic:** Contrast reactions
 - **The page says:** "Epinephrine 1:1,000 (1 mg/mL) for IM injection"; "Oxygen supply and face masks"; "IV access supplies"; "Normal saline (1 L bags)"; "Diphenhydramine (IV/IM)"; "Atropine"; "Albuterol inhaler"; "Blood pressure cuff and pulse oximeter"; "Crash cart accessible within minutes".
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Table 4, pp112–113 (PDF pp115–116): minimum equipment — access to oxygen (non-rebreather masks preferred), "Defibrillator or automated external defibrillator (AED)", blood pressure and pulse monitor, pulse oximeter, stethoscope; minimum medications — epinephrine IM 1 mg/1 mL, inhaled short-acting beta-agonist, an antihistamine; discretionary — suction, bag-valve-mask, normal saline and tubing, syringes and IV cannulas, epinephrine IV 1 mg/10 mL, atropine IV 1 mg/10 mL, IV corticosteroid, nitroglycerin 0.4 mg SL, aspirin 325 mg, furosemide 20–40 mg IV, labetalol 20 mg IV, dextrose 50%; post the emergency response number
-- **Proposed fix:** Add the ACR's minimum items the "required" list lacks — a defibrillator or AED and a stethoscope — and mark atropine, saline and IV supplies as discretionary; "crash cart accessible within minutes" is not the ACR's standard. The other items are in Table 4.
 - **Proposed home:** Contrast reactions › Management
+- **Re-check:** disagreed — Reviewer: correct (management). Every item listed is in ACR Table 4. Two gaps: the ACR's minimum list also has a defibrillator or AED and a stethoscope (the page has only 'crash cart accessible'), and saline, IV supplies and atropine are discretionary in the ACR, not 'required'. (acr-contrast-2024, Table 4 Equipment for Contrast Reaction Kits, printed p 112-113 (PDF p 115-116)) Resolution: Changed to correct, as the reviewer has it: every item listed is in ACR Table 4; the AED/stethoscope gap and "required" for discretionary items go to stage 3.
 
 ### B2-contrast-safety-40 · Front-page row (shared/data/resources.ts)
 
@@ -1051,6 +1155,7 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Source:** ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024. — Version History, p2 (PDF p5): "Version 2024 … was published in July 2024"; ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2025. Reston, VA: American College of Radiology; 2025. — The 2025 edition, current (not readable)
 - **Proposed fix:** "2023" labels the page honestly until it is rebuilt; then the title and version follow the leads (CAR for hypersensitivity, CA-AKI, metformin and gadolinium; the ACR for treatment). The summary is accurate.
 - **Proposed home:** Front page row: ACR contrast safety
+- **Re-check:** agrees — Version '2023' is behind the manual (2024 readable here; 2025 current). The title also overstates the source: under the owner's rule CAR leads for premedication, kidney injury, metformin and gadolinium in kidney disease, and several parts of the page are not from the ACR manual at all. (acr-contrast-2024, title page and Version History, printed p 2-3 (PDF p 5-6); car-csaci-hypersensitivity-2025, Recommendation 5; car-ca-aki-2022, Summary of recommendations)
 
 ## Guidelines home page
 
@@ -1064,6 +1169,7 @@ https://dfergs93.github.io/guidelines_manager/
 - **Source:** none found
 - **Proposed fix:** Remove the box, or replace it with "Summaries of published imaging guidelines; each page names its source." The pages were never adopted or reviewed by an institution, and the footers it points to are false (B2-guidelines-site-01).
 - **Proposed home:** Front page
+- **Re-check:** agrees — Quotation is faithful. Neither statement holds: no institution is named anywhere in the repo, and only 4 of the 24 guideline pages have a footer at all (BI-RADS, contrast safety, PI-RADS, Lung-RADS), each carrying the placeholder date 2024-01-15, two years before the repo's first commit. Removing the box is right; nothing in it is worth carrying over. (old repo: docs/index.md lines 9-11; grep of docs/**/*.md; git log (first commit 2026-02-28))
 
 ### B2-guidelines-home-02 · BI-RADS version label on the old home page
 
@@ -1073,15 +1179,17 @@ https://dfergs93.github.io/guidelines_manager/
 - **Source:** Fleming et al. CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451252 — References: "ACR BI-RADS® v2025 Manual" — the current edition CAR cites; there is no 2023 edition (the 5th edition, 2013, was followed by v2025)
 - **Proposed fix:** Label it as the BI-RADS page is settled in this batch: "BI-RADS 5th ed. (2013)" while the page follows it, "BI-RADS v2025" once it does.
 - **Proposed home:** Front page row: BI-RADS
+- **Re-check:** agrees — Quotation is faithful ("BI-RADS v2023" on the card and in the table, "ACR BI-RADS v2023" in the search list). No BI-RADS v2023 appears in any source: the page itself claims the 5th edition (2013) and the edition CAR's 2026 breast guidelines cite is the v2025 Manual, so the label contradicts both its own page and the current edition. (old repo: docs/index.md lines 68 and 106, guidelines_search.js ("ACR BI-RADS v2023"), docs/breast/bi_rads.md line 9; car-breast-1-2026 reference list (txt line 548); sources.json ids bi-rads-2013, bi-rads-2025)
 
 ### B2-guidelines-home-03 · "Guideline Assistant" search on the old home page
 
 - **Verdict:** drop
 - **Kind:** listing · **Topic:** Site
-- **The page says:** A keyword search over 24 entries ("Analyzing query and guidelines…" while it runs). Two of its links are dead (msk/msk_findings_car_2023/ and gyn/o_rads/ return 404); 15 entries are empty placeholder pages offered as guidelines; it still marks LI-RADS, adrenal, Bosniak, Fleischner and Lung-RADS as having calculators, all switched off on 2026-11-25; and it repeats the "LI-RADS v2023", "ACR BI-RADS v2023", "O-RADS v2023" and "LUNG-RADS v1.1" labels.
+- **The page says:** A keyword search over 24 entries. Two of its links are dead (msk/msk_findings_car_2023/ and gyn/o_rads/ return 404); 15 entries are empty placeholder pages offered as guidelines; it still marks LI-RADS, adrenal, Bosniak, Fleischner and Lung-RADS as having calculators, all switched off on 2026-11-25; and it repeats the "LI-RADS v2023", "ACR BI-RADS v2023", "O-RADS v2023" and "LUNG-RADS v1.1" labels.
 - **Source:** none found
 - **Proposed fix:** Remove the search section from the old home page: the new front page searches every listed resource, and fixing this one would mean maintaining a second list.
 - **Proposed home:** Front page
+- **Re-check:** disagreed — Reviewer: wrong. All checked and confirmed: 24 entries; 2 links return 404 (wrong folder names; the other 22 return 200); 15 entries are for pages that hold only a title or an "Under Development" box (13 reachable, plus the 2 dead ones); 7 entries carry the Calculator badge and 5 of them (LI-RADS, adrenal, Bosniak, Fleischner, Lung-RADS) were switched off on 2026-11-25, leaving only PI-RADS and TI-RADS true. "LI-RADS v2023" contradicts its own page and the source (CT/MRI v2018); "ACR BI-RADS v2023" matches no edition; "LUNG-RADS v1.1" matches the page but is superseded by v2022; "O-RADS v2023" cannot be checked (no O-RADS document in audit-sources and the page is empty). One small point on the quotation: the "Analyzing query and guidelines..." line is in the page's HTML but is hidden (display:none) and the script never shows it, so a reader does not see it. Not worth carrying over as it stands. (old repo: docs/javascripts/guidelines_search.js (live copy identical, checked with curl 2026-11-25); docs/**/*.md sizes; git log 2026-11-25 (two switch-off commits); li-rads-2018-core title; lung-rads-2022 title; bi_rads.md line 9) Resolution: Stands as drop: the reviewer confirmed every defect (2 dead links, 15 placeholder entries, 5 switched-off calculators still badged, the stale labels) and that removing the search is right; wrong or drop lead to the same fix. Quotation corrected: the "Analyzing…" text is hidden and never shown.
 
 ### B2-guidelines-home-04 · Contrast safety label on the old home page
 
@@ -1091,6 +1199,7 @@ https://dfergs93.github.io/guidelines_manager/
 - **Source:** Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253 — Whole document: CAR guidance on contrast hypersensitivity and premedication; Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514). — Whole document: CAR guidance on contrast-associated AKI and metformin
 - **Proposed fix:** Retitle "Contrast safety" (no single body) once the contrast page's lead questions are answered (B2-contrast-safety findings).
 - **Proposed home:** Front page row: Contrast safety
+- **Re-check:** agrees — Quotation is faithful, and the label describes the page truthfully: the page is built on the ACR manual alone. But under the owner's rule CAR leads for hypersensitivity/premedication (CAR/CSACI 2025), contrast-associated AKI and metformin (CAR 2022) and gadolinium in kidney disease (CAR 2018/2019), so presenting contrast safety as simply the ACR manual names a non-lead body for those topics; the version the page claims (2023) is also behind the 2024 manual. A label only, so no direct patient effect. (old repo: docs/index.md lines 84-85 and 108, guidelines_search.js ("ACR Contrast Safety"), docs/contrast/contrast_safety.md lines 8-9 and 305; acr-contrast-2024 Version History p. 2; batch lead rule in the brief)
 
 ### B2-guidelines-home-05 · Other version labels on the old home page
 
@@ -1099,6 +1208,7 @@ https://dfergs93.github.io/guidelines_manager/
 - **The page says:** "LI-RADS CT/MRI v2018", "Fleischner Society 2017", "PI-RADS v2.1", "Bosniak v2019", "Adrenal Nodule ACR 2017", "ACR TI-RADS" (feature cards and the guideline table).
 - **Source:** American College of Radiology. CT/MRI LI-RADS v2018 core. 2018. — Title page, CT/MRI v2018 core; MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Title; American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019. — Title page, Version 2.1 (2019); still current; Silverman SG, Pedrosa I, Ellis JH, et al. Bosniak classification of cystic renal masses, version 2019: an update proposal and needs assessment. Radiology. 2019;292(2):475-488. — Title; Mayo-Smith WW, Song JH, Boland GL, et al. Management of incidental adrenal masses: a white paper of the ACR Incidental Findings Committee. J Am Coll Radiol. 2017;14(8):1038-1044. — Title; Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046 — Title
 - **Proposed home:** Front page
+- **Re-check:** agrees — Quotation is faithful and each label names a real version that matches the source document and what the linked page claims; sources.json records CT/MRI v2018 as still the current LI-RADS diagnostic version. "ACR TI-RADS" carries no year (the page says 2017), which is incomplete rather than wrong. Note that the search list labels the same LI-RADS page "v2023" (see home-03), and the Bosniak page's own notice says most of its content follows the earlier classification, so that label is right about the version aimed at, not about the content. (old repo: docs/index.md lines 30, 39, 53, 58, 77, 100-107; titles of li-rads-2018-core, fleischner-2017, pirads-2-1, bosniak-2019, acr-adrenal-2017, tirads-2017)
 
 ## Across the site
 
@@ -1110,6 +1220,7 @@ https://dfergs93.github.io/guidelines_manager/
 - **Source:** none found
 - **Proposed fix:** Remove the footer line from the four pages (with this batch's fix-now push, as batch 1 did for the other false reference-box lines).
 - **Proposed home:** Each topic page › Background (source and date)
+- **Re-check:** agrees — Quotation is faithful and the grep finds the footer on exactly these four pages. The date is false: the Lung-RADS page first appears on 2026-02-28 and the other three on 2026-03-06, and all four were last changed on 2026-11-25. No committee is named anywhere else in the repo and the address is a placeholder domain. Removing the footer is right. (old repo: docs/breast/bi_rads.md:293, docs/contrast/contrast_safety.md:312, docs/genitourinary/pi_rads.md:315, docs/pulmonary/lung_rads.md:320; git log)
 
 ### B2-guidelines-site-02 · "Version History" rows about an internal implementation
 
@@ -1119,6 +1230,7 @@ https://dfergs93.github.io/guidelines_manager/
 - **Source:** none found
 - **Proposed fix:** Remove the row from both tables; keep the rows that record guideline versions.
 - **Proposed home:** Each topic page › Background (source and date)
+- **Re-check:** agrees — Quotation is faithful and the row is on exactly these two pages. It records an event that did not happen: the pages were first written in 2026 (Lung-RADS 2026-02-28, PI-RADS 2026-03-06) and there is no institution behind the site. Removing the rows is right; the rows of the same tables that give the guidelines' own release dates are a separate matter and were not part of this piece. (old repo: docs/genitourinary/pi_rads.md:301, docs/pulmonary/lung_rads.md:306; git log)
 
 ## Calculator usability
 
