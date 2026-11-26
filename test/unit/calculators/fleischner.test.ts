@@ -118,9 +118,9 @@ describe('Fleischner 2017', () => {
   });
 
   test('what is still needed', () => {
-    expect(run({}, {})).toEqual({ status: 'incomplete', message: 'Still needed: nodule type, number, size.' });
-    expect(run({ type: 'solid' }, {})).toEqual({ status: 'incomplete', message: 'Still needed: number, risk, size.' });
-    expect(run({ type: 'solid', count: 'single', risk: 'low' }, {})).toEqual({ status: 'incomplete', message: 'Still needed: size.' });
+    expect(run({}, {})).toEqual({ status: 'incomplete', message: 'Still needed: nodule type, number, average diameter.' });
+    expect(run({ type: 'solid' }, {})).toEqual({ status: 'incomplete', message: 'Still needed: number, risk, average diameter.' });
+    expect(run({ type: 'solid', count: 'single', risk: 'low' }, {})).toEqual({ status: 'incomplete', message: 'Still needed: average diameter.' });
     expect(run({ type: 'nodular', count: 'single' }, { size: 7 })).toEqual({ status: 'incomplete', message: 'Still needed: nodule type.' });
   });
 
@@ -147,6 +147,11 @@ describe('Fleischner 2017', () => {
   test('for multiple nodules the size is the largest; the most suspicious guides management', () => {
     const count = fleischner.groups.flatMap((g) => g.fields).find((f) => f.key === 'count');
     expect(count?.hint).toBe('For multiple nodules, enter the largest. The most suspicious one (which may not be the largest) guides management.');
+  });
+
+  test('the size label says how to measure, since the quick view shows no hints (owner, 2026-11-25)', () => {
+    const size = fleischner.groups.flatMap((g) => g.fields).find((f) => f.key === 'size');
+    expect(size?.label).toBe('Average diameter');
   });
 
   test('solid component must be smaller than the whole nodule', () => {
@@ -220,22 +225,20 @@ describe('Fleischner 2017', () => {
     });
   });
 
-  test('details show the size counted', () => {
-    expect(ok(run({ type: 'solid', count: 'single', risk: 'low' }, { size: 5.6 })).details).toEqual(['Counted as 6 mm (5.6 rounded)']);
-    expect(ok(run({ type: 'solid', count: 'single', risk: 'low' }, { size: 7 })).details).toEqual(['Counted as 7 mm']);
-    expect(ok(run({ type: 'part-solid', count: 'single' }, { size: 12, solid: 4 })).details).toEqual([
-      'Counted as 12 mm',
-      'Solid component counted as 4 mm',
-    ]);
+  test('no working lines: the subject carries the size counted (owner, 2026-11-25)', () => {
+    expect(ok(run({ type: 'solid', count: 'single', risk: 'low' }, { size: 5.6 })).details).toEqual([]);
+    expect(ok(run({ type: 'part-solid', count: 'single' }, { size: 12, solid: 4 })).details).toEqual([]);
   });
 
-  test('the result says what it is for, so a wrong tap shows (owner, 2026-11-25)', () => {
+  test('the result says what it is for and the size counted, so a wrong tap or entry shows (owner, 2026-11-25)', () => {
     const subject = (choices: Choices, values: Values) => ok(run(choices, values)).subject;
-    expect(subject({ type: 'solid', count: 'single', risk: 'low' }, { size: 7 })).toBe('Single solid nodule, low risk');
-    expect(subject({ type: 'solid', count: 'multiple', risk: 'high' }, { size: 7 })).toBe('Multiple solid nodules, high risk');
-    expect(subject({ type: 'ground-glass', count: 'single', risk: 'high' }, { size: 7 })).toBe('Single ground-glass nodule');
-    expect(subject({ type: 'part-solid', count: 'single' }, { size: 12, solid: 4 })).toBe('Single part-solid nodule');
-    expect(subject({ type: 'part-solid', count: 'multiple' }, { size: 8 })).toBe('Multiple part-solid nodules');
+    expect(subject({ type: 'solid', count: 'single', risk: 'low' }, { size: 7 })).toBe('Single solid nodule, 7 mm, low risk');
+    expect(subject({ type: 'solid', count: 'single', risk: 'low' }, { size: 5.6 })).toBe('Single solid nodule, 6 mm, low risk');
+    expect(subject({ type: 'solid', count: 'multiple', risk: 'high' }, { size: 7 })).toBe('Multiple solid nodules, largest 7 mm, high risk');
+    expect(subject({ type: 'ground-glass', count: 'single', risk: 'high' }, { size: 7 })).toBe('Single ground-glass nodule, 7 mm');
+    expect(subject({ type: 'part-solid', count: 'single' }, { size: 12, solid: 4.4 })).toBe('Single part-solid nodule, 12 mm, solid component 4 mm');
+    expect(subject({ type: 'part-solid', count: 'single' }, { size: 5 })).toBe('Single part-solid nodule, 5 mm');
+    expect(subject({ type: 'part-solid', count: 'multiple' }, { size: 8 })).toBe('Multiple part-solid nodules, largest 8 mm');
   });
 
   test('the report line', () => {
@@ -257,11 +260,10 @@ describe('Fleischner 2017', () => {
     );
   });
 
-  test('says what it is, whom it is not for, and links the paper', () => {
+  test('says what it is and links the paper; the row summary names the exclusions', () => {
     expect(fleischner).toMatchObject({
       id: 'fleischner',
       implements: 'Fleischner Society 2017',
-      intro: 'Not for patients under 35, with known cancer or immunosuppression, or for lung cancer screening CTs.',
       link: { text: 'Guideline →', href: 'https://doi.org/10.1148/radiol.2017161659' },
       citation: { short: 'MacMahon et al., Radiology 2017' },
     });

@@ -47,7 +47,8 @@ const risk: ChoiceField = {
 
 const size: NumberField = {
   key: 'size',
-  label: 'Size',
+  // The label says how to measure: the quick view shows no hints (owner, 2026-11-25).
+  label: 'Average diameter',
   unit: 'mm',
   min: 1,
   max: 100,
@@ -163,10 +164,6 @@ const inMillimetres = (what: string, raw: number): Outcome => ({
   message: `Enter the ${what} in millimetres (e.g. ${Math.round(raw * 10)}, not ${raw}).`,
 });
 
-function counted(label: string, raw: number, mm: number): string {
-  return mm === raw ? `${label} ${mm} mm` : `${label} ${mm} mm (${raw} rounded)`;
-}
-
 function compute(values: Values, _changed?: string, choices: Choices = {}): Outcome {
   const picked: Choices = { type: chosen(type, choices), count: chosen(count, choices), risk: chosen(risk, choices) };
   const sizeMm = values.size === undefined ? undefined : countedMm(values.size);
@@ -203,9 +200,6 @@ function compute(values: Values, _changed?: string, choices: Choices = {}): Outc
   else if (picked.type === 'ground-glass') advice = groundGlassAdvice(mm);
   else advice = partSolidAdvice(mm, componentMm);
 
-  const details = [counted('Counted as', rawSize, mm)];
-  if (componentMm !== undefined) details.push(counted('Solid component counted as', rawSolid!, componentMm));
-
   const kind = picked.type === 'solid' ? 'solid' : picked.type === 'ground-glass' ? 'ground-glass' : 'part-solid';
   const described = single
     ? `single ${kind} nodule, ${mm} mm average diameter`
@@ -213,15 +207,17 @@ function compute(values: Values, _changed?: string, choices: Choices = {}): Outc
   const withComponent = componentMm === undefined ? '' : ` with a ${componentMm} mm solid component`;
   const withRisk = picked.type === 'solid' ? `, ${picked.risk} risk` : '';
   const sentence = advice.headline.endsWith('.') ? advice.headline : `${advice.headline}.`;
-  const nodules = single ? `Single ${kind} nodule` : `Multiple ${kind} nodules`;
+  // The sizes counted (after rounding) sit in the subject, so a mistyped or rounded size shows.
+  const nodules = single ? `Single ${kind} nodule, ${mm} mm` : `Multiple ${kind} nodules, largest ${mm} mm`;
+  const component = componentMm === undefined ? '' : `, solid component ${componentMm} mm`;
 
   return {
     status: 'ok',
-    subject: `${nodules}${withRisk}`,
+    subject: `${nodules}${component}${withRisk}`,
     headline: advice.headline,
     textHeadline: true,
     notes: advice.notes,
-    details,
+    details: [],
     report: `Fleischner 2017 (${described}${withComponent}${withRisk}): ${sentence}`,
   };
 }
@@ -234,7 +230,6 @@ export const fleischner: Calculator = {
     full: 'MacMahon H et al. Guidelines for Management of Incidental Pulmonary Nodules Detected on CT Images: From the Fleischner Society 2017. Radiology 2017;284:228–243.',
     short: 'MacMahon et al., Radiology 2017',
   },
-  intro: 'Not for patients under 35, with known cancer or immunosuppression, or for lung cancer screening CTs.',
   link: { text: 'Guideline →', href: 'https://doi.org/10.1148/radiol.2017161659' },
   groups: [{ fields: FIELDS }],
   compute,

@@ -211,35 +211,76 @@ test.describe('Fleischner', () => {
     await open(page);
     await expect(radio(page, 'Nodule type', 'Solid')).toBeFocused();
     await expect(fl(page).locator('input[type="radio"]:checked')).toHaveCount(0);
-    await expect(fl(page).locator('.quick-result')).toHaveText('Still needed: nodule type, number, size.');
-    await expect(fl(page).locator('.quick-intro')).toHaveText(
-      'Not for patients under 35, with known cancer or immunosuppression, or for lung cancer screening CTs.',
-    );
+    await expect(fl(page).locator('.quick-result')).toHaveText('Still needed: nodule type, number, average diameter.');
     await choose(page, { 'Nodule type': 'Solid', Number: 'Single', Risk: 'Low' });
-    await fl(page).locator('input[name="size"]').fill('5.6');
+    await fl(page).getByRole('spinbutton', { name: 'Average diameter' }).fill('5.6');
     await expect(fl(page).locator('.quick-headline')).toHaveText('CT at 6–12 months, then consider CT at 18–24 months');
-    await expect(fl(page).locator('.quick-subject')).toHaveText('Single solid nodule, low risk');
-    await expect(fl(page).locator('.quick-details')).toContainText('Counted as 6 mm (5.6 rounded)');
-    await expect(fl(page).locator('input[name="size"]')).toHaveAccessibleDescription('Average of long and short axes (whole nodule)');
-    await expect(group(page, 'Number')).toHaveAccessibleDescription(/^For multiple nodules, enter the largest\./);
+    await expect(fl(page).locator('.quick-subject')).toHaveText('Single solid nodule, 6 mm, low risk');
     await expect(fl(page).locator('.quick-full')).toHaveText('Guideline →');
     await expect(fl(page).locator('.quick-full')).toHaveAttribute('href', DOI);
   });
 
-  test('risk shows only for solid; the solid component only for a single part-solid nodule', async ({ page }) => {
+  test('no explanatory text: no intro, hints, notes or working lines (owner, 2026-11-25)', async ({ page }) => {
+    await open(page);
+    // 7 mm solid and 12 mm ground glass both carry notes in the module.
+    await choose(page, { 'Nodule type': 'Solid', Number: 'Single', Risk: 'Low' });
+    await fl(page).locator('input[name="size"]').fill('7');
+    await expect(fl(page).locator('.quick-headline')).toHaveText('CT at 6–12 months, then consider CT at 18–24 months');
+    await expect(fl(page).locator('.quick-intro, .quick-hint, .quick-note, .quick-details')).toHaveCount(0);
+    await choose(page, { 'Nodule type': 'Ground glass' });
+    await fl(page).locator('input[name="size"]').fill('12');
+    await expect(fl(page).locator('.quick-subject')).toHaveText('Single ground-glass nodule, 12 mm');
+    await expect(fl(page).locator('.quick-intro, .quick-hint, .quick-note, .quick-details')).toHaveCount(0);
+    await expect(fl(page).locator('[aria-describedby]')).toHaveCount(0);
+  });
+
+  test('risk applies only to solid, the solid component only to a single part-solid nodule; both stay in place', async ({ page }) => {
     await open(page);
     const solidBox = fl(page).locator('input[name="solid"]');
-    await expect(group(page, 'Risk')).toBeHidden();
-    await expect(solidBox).toBeHidden();
-    await choose(page, { 'Nodule type': 'Solid' });
+    const riskLow = radio(page, 'Risk', 'Low');
     await expect(group(page, 'Risk')).toBeVisible();
-    await choose(page, { 'Nodule type': 'Part solid' });
-    await expect(group(page, 'Risk')).toBeHidden();
-    await expect(solidBox).toBeHidden();
-    await choose(page, { Number: 'Single' });
+    await expect(riskLow).toBeDisabled();
     await expect(solidBox).toBeVisible();
+    await expect(solidBox).toBeDisabled();
+    await choose(page, { 'Nodule type': 'Solid' });
+    await expect(riskLow).toBeEnabled();
+    await choose(page, { 'Nodule type': 'Part solid' });
+    await expect(riskLow).toBeDisabled();
+    await expect(solidBox).toBeDisabled();
+    await choose(page, { Number: 'Single' });
+    await expect(solidBox).toBeEnabled();
     await choose(page, { Number: 'Multiple' });
-    await expect(solidBox).toBeHidden();
+    await expect(solidBox).toBeDisabled();
+  });
+
+  test('nothing moves as you use it (owner, 2026-11-25)', async ({ page }) => {
+    await open(page);
+    // Every field's position and the quick view's height.
+    const layout = () =>
+      fl(page).evaluate((view) => {
+        const fields = [...view.querySelectorAll('.quick-item')].map((item) => Math.round(item.getBoundingClientRect().top));
+        return { fields, height: Math.round(view.getBoundingClientRect().height) };
+      });
+    const start = await layout();
+    const steps: [string, () => Promise<void>][] = [
+      ['solid', () => choose(page, { 'Nodule type': 'Solid' })],
+      ['single, low', () => choose(page, { Number: 'Single', Risk: 'Low' })],
+      ['7 mm', () => fl(page).locator('input[name="size"]').fill('7')],
+      ['high risk', () => choose(page, { Risk: 'High' })],
+      ['ground glass', () => choose(page, { 'Nodule type': 'Ground glass' })],
+      ['multiple', () => choose(page, { Number: 'Multiple' })],
+      ['part solid, single', () => choose(page, { 'Nodule type': 'Part solid', Number: 'Single' })],
+      ['12 mm', () => fl(page).locator('input[name="size"]').fill('12')],
+      ['solid component 9 mm', () => fl(page).locator('input[name="solid"]').fill('9')],
+    ];
+    for (const [step, act] of steps) {
+      await act();
+      expect(await layout(), `after ${step}`).toEqual(start);
+    }
+    // The two longest advice sentences may add a line; the fields still don't move.
+    await fl(page).locator('input[name="solid"]').fill('4');
+    await expect(fl(page).locator('.quick-headline')).toContainText('annual CT');
+    expect((await layout()).fields).toEqual(start.fields);
   });
 
   test('switching type clears what no longer applies', async ({ page }) => {

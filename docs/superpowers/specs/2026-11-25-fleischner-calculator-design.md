@@ -1,6 +1,6 @@
 # Fleischner calculator, rebuilt: design
 
-Date: 2026-11-25. Status: approved by the owner 2026-11-25; the multiple-nodule hint corrected after the final review (below).
+Date: 2026-11-25. Status: approved by the owner 2026-11-25; the multiple-nodule hint corrected after the final review (below); the quick view shortened and steadied on the owner's follow-up (end).
 Builds on: `2026-11-24-quick-calculators-pilot-design.md` (the quick view and the
 calculator contract) and the stage 2 audit (`docs/audit/batch-1.md`, Fleischner
 findings B1-fleischner-01 to -24, ruled 2026-11-25).
@@ -196,6 +196,25 @@ to merge. The advice wording is clinical text the owner signs off.
 How the contract represents choice fields and "applies when"; the radio-button markup
 and styles within the look rules; how the module points the foot link at the paper;
 the exact incomplete-prompt wording.
+
+## Owner's follow-up after the preview (2026-11-25)
+
+"Do 1 and 3": the result names what it is for (subject line), and a part-solid nodule
+under 6 mm gets the ground-glass "if suspicious, CT at 2 and 4 years" note.
+
+Then: "I don't love the amount of grey filler text within the calculator. That's all info
+that should be explained in the page not the calculator. Also the calculator grows in size
+as you use it, which gets disorienting." So the quick view is the short form:
+- No intro (the row's summary right above it names the exclusions; `intro` left the
+  contract), no field hints, no notes under the advice, no "Counted as" line. Hints and
+  notes stay in the module for the stage 3 page and the assistant; the size label says
+  how to measure instead ("Average diameter"), and the subject carries the sizes counted
+  ("Single solid nodule, 6 mm, low risk"; "Multiple … nodules, largest 7 mm";
+  "… 12 mm, solid component 4 mm"). ECV's one-line band note still shows.
+- It keeps its shape: a field that doesn't apply is disabled in place (dimmed, cleared),
+  not hidden; the result area reserves a subject line and three lines of advice from the
+  start; Copy keeps its place while there's nothing to copy. On a desktop nothing moves
+  for any input; on a phone the two longest advices may add lines below the fields.
 
 ## After it is live (owner's OK at the time)
 

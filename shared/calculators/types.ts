@@ -23,7 +23,7 @@ export type NumberField = {
   max: number;
   step: number;
   placeholder: string;
-  /** One line under the field. */
+  /** How to measure or choose, for the full page and the assistant; the quick view leaves it out. */
   hint?: string;
   when?: When;
 };
@@ -36,6 +36,7 @@ export type ChoiceField = {
   key: string;
   label: string;
   options: readonly ChoiceOption[];
+  /** As for a number field: for the full page and the assistant, not the quick view. */
   hint?: string;
   when?: When;
 };
@@ -59,8 +60,12 @@ export type Outcome =
       subject?: string;
       headline: string;
       label?: string;
+      /** One short line under the result, in the quick view too (e.g. what an ECV band means). */
       note?: string;
-      /** Further notes, shown after `note`. */
+      /**
+       * Comments that qualify the advice, for the full page and the assistant. The quick view
+       * leaves them out: explanations belong on the page (owner, 2026-11-25).
+       */
       notes?: readonly string[];
       /** The headline is a sentence (advice), not a number: it wraps at reading size. */
       textHeadline?: boolean;
@@ -79,8 +84,6 @@ export type Calculator = {
   implements: string;
   /** Where the formula and any thresholds come from; local practice says so. */
   citation: { full: string; short: string };
-  /** One line shown above the fields (e.g. whom the guideline does not apply to). */
-  intro?: string;
   /** Replaces the quick view's "Full calculator →" link, e.g. when the resource's page has none. */
   link?: { text: string; href: string };
   groups: readonly FieldGroup[];
