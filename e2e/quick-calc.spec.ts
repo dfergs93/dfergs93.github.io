@@ -18,6 +18,7 @@ test.beforeEach(async ({ page }) => {
 test('calculators with a module get a quick-view button; the rest keep the plain label', async ({ page }) => {
   await page.goto('/');
   await expect(toggle(page, 'popular', 'ecv')).toBeVisible();
+  await expect(toggle(page, 'popular', 'fleischner')).toBeVisible();
   await expect(row(page, 'popular', 'ecv').locator('.calc-label')).toBeHidden();
   await expect(row(page, 'popular', 'ti-rads').locator('.calc-label')).toBeVisible();
   await expect(toggle(page, 'popular', 'ti-rads')).toHaveCount(0);
@@ -191,4 +192,103 @@ test('on a phone, inputs are at least 16px so iOS does not zoom the page on focu
   const size = (selector: string) => page.locator(selector).first().evaluate((el) => parseFloat(getComputedStyle(el).fontSize));
   expect(await size('.quick-input')).toBeGreaterThanOrEqual(16);
   expect(await size('.search-input')).toBeGreaterThanOrEqual(16);
+});
+
+test.describe('Fleischner', () => {
+  const DOI = 'https://doi.org/10.1148/radiol.2017161659';
+  const fl = (page: Page) => panel(page, 'popular', 'fleischner');
+  const group = (page: Page, name: string) => fl(page).getByRole('group', { name, exact: true });
+  const radio = (page: Page, name: string, option: string) => group(page, name).getByRole('radio', { name: option, exact: true });
+  async function open(page: Page) {
+    await page.goto('/');
+    await toggle(page, 'popular', 'fleischner').click();
+  }
+  async function choose(page: Page, picks: Record<string, string>) {
+    for (const [name, option] of Object.entries(picks)) await radio(page, name, option).check();
+  }
+
+  test('solid, single, low, 5.6 mm gives the 6–8 mm advice', async ({ page }) => {
+    await open(page);
+    await expect(radio(page, 'Nodule type', 'Solid')).toBeFocused();
+    await expect(fl(page).locator('input[type="radio"]:checked')).toHaveCount(0);
+    await expect(fl(page).locator('.quick-result')).toHaveText('Still needed: nodule type, number, size.');
+    await expect(fl(page).locator('.quick-intro')).toHaveText(
+      'Not for patients under 35, with known cancer or immunosuppression, or for lung cancer screening CTs.',
+    );
+    await choose(page, { 'Nodule type': 'Solid', Number: 'Single', Risk: 'Low' });
+    await fl(page).locator('input[name="size"]').fill('5.6');
+    await expect(fl(page).locator('.quick-headline')).toHaveText('CT at 6–12 months, then consider CT at 18–24 months');
+    await expect(fl(page).locator('.quick-details')).toContainText('Counted as 6 mm (5.6 rounded)');
+    await expect(fl(page).locator('.quick-full')).toHaveText('Guideline →');
+    await expect(fl(page).locator('.quick-full')).toHaveAttribute('href', DOI);
+  });
+
+  test('risk shows only for solid; the solid component only for a single part-solid nodule', async ({ page }) => {
+    await open(page);
+    const solidBox = fl(page).locator('input[name="solid"]');
+    await expect(group(page, 'Risk')).toBeHidden();
+    await expect(solidBox).toBeHidden();
+    await choose(page, { 'Nodule type': 'Solid' });
+    await expect(group(page, 'Risk')).toBeVisible();
+    await choose(page, { 'Nodule type': 'Part solid' });
+    await expect(group(page, 'Risk')).toBeHidden();
+    await expect(solidBox).toBeHidden();
+    await choose(page, { Number: 'Single' });
+    await expect(solidBox).toBeVisible();
+    await choose(page, { Number: 'Multiple' });
+    await expect(solidBox).toBeHidden();
+  });
+
+  test('switching type clears what no longer applies', async ({ page }) => {
+    await open(page);
+    await choose(page, { 'Nodule type': 'Part solid', Number: 'Single' });
+    await fl(page).locator('input[name="size"]').fill('12');
+    await fl(page).locator('input[name="solid"]').fill('7');
+    await expect(fl(page).locator('.quick-headline')).toContainText('highly suspicious');
+    await choose(page, { 'Nodule type': 'Ground glass' });
+    await choose(page, { 'Nodule type': 'Part solid' });
+    await expect(fl(page).locator('input[name="solid"]')).toHaveValue('');
+    await expect(fl(page).locator('.quick-result')).toHaveText('Still needed: solid component.');
+    await choose(page, { 'Nodule type': 'Solid', Risk: 'High' });
+    await choose(page, { 'Nodule type': 'Ground glass' });
+    await choose(page, { 'Nodule type': 'Solid' });
+    await expect(group(page, 'Risk').locator('input:checked')).toHaveCount(0);
+    await expect(fl(page).locator('.quick-result')).toHaveText('Still needed: risk.');
+  });
+
+  test('keyboard through the groups; Esc from a radio closes', async ({ page }) => {
+    await open(page);
+    await expect(radio(page, 'Nodule type', 'Solid')).toBeFocused();
+    await page.keyboard.press('ArrowRight');
+    await expect(radio(page, 'Nodule type', 'Ground glass')).toBeChecked();
+    await page.keyboard.press('Tab');
+    await expect(radio(page, 'Number', 'Single')).toBeFocused();
+    await page.keyboard.press('Escape');
+    await expect(fl(page)).toHaveCount(0);
+    await expect(toggle(page, 'popular', 'fleischner')).toBeFocused();
+  });
+
+  test('Copy gives the report line', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await open(page);
+    await choose(page, { 'Nodule type': 'Solid', Number: 'Single', Risk: 'Low' });
+    await fl(page).locator('input[name="size"]').fill('7');
+    await fl(page).locator('.quick-copy').click();
+    await expect(fl(page).locator('.quick-copy')).toHaveText('Copied');
+    expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
+      'Fleischner 2017 (single solid nodule, 7 mm average diameter, low risk): CT at 6–12 months, then consider CT at 18–24 months.',
+    );
+  });
+
+  test('on a phone it fits without sideways scrolling, with tap-sized options', async ({ page }, testInfo) => {
+    test.skip(testInfo.project.name !== 'phone', 'phone layout only');
+    await open(page);
+    await choose(page, { 'Nodule type': 'Part solid', Number: 'Single' });
+    await fl(page).locator('input[name="size"]').fill('12');
+    await fl(page).locator('input[name="solid"]').fill('4');
+    await expect(fl(page).locator('.quick-headline')).toContainText('annual CT');
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(360);
+    const heights = await fl(page).locator('label.quick-option:visible').evaluateAll((els) => els.map((el) => el.getBoundingClientRect().height));
+    expect(Math.min(...heights)).toBeGreaterThanOrEqual(32);
+  });
 });

@@ -2,7 +2,7 @@ import { expect, test } from 'vitest';
 import { CALCULATORS } from '../../../shared/calculators/index.ts';
 import { byId } from '../../../shared/registry.ts';
 
-test('the pilot has ECV and Simplified Bernoulli', () => expect([...CALCULATORS.keys()]).toEqual(['ecv', 'bernoulli']));
+test('ECV, Simplified Bernoulli and Fleischner have modules', () => expect([...CALCULATORS.keys()]).toEqual(['ecv', 'bernoulli', 'fleischner']));
 
 test.each([...CALCULATORS.entries()])('%s belongs to a calculator in the registry', (key, calc) => {
   expect(calc.id).toBe(key);
