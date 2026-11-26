@@ -55,6 +55,7 @@ export function createQuickCalc(calc: Calculator, fullUrl: string): HTMLElement 
     const block = el('div', 'quick-group');
     if (group.label) block.append(el('p', 'quick-group-label', group.label));
     for (const field of group.fields) {
+      if (field.kind === 'choice') continue; // drawn from the next change on; no module has one yet
       const id = `${root.id}-${field.key}`;
       const label = el('label', 'quick-field-label', field.label);
       label.htmlFor = id;

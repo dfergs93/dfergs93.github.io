@@ -2,12 +2,19 @@
 // used by every place that runs it: the front page's quick view now, the
 // calculator pages (stage 3) and the assistant (stage 4) later.
 //
-// Pilot scope: numeric fields only, and results as display strings. Stage 3's
-// first guideline calculator (Fleischner: nodule type, count, risk) adds choice
-// fields, and stage 4 will want machine-readable values; extend the contract then.
+// Fields are numbers or choices (Fleischner added choices: nodule type, number,
+// risk), and a field may apply only when certain choices hold. Results are still
+// display strings; stage 4 will want machine-readable values, so extend it then.
+
+/**
+ * When a field applies: every named choice field holds one of the listed values.
+ * Plain data, so a page or the assistant can read it without running code.
+ */
+export type When = Readonly<Record<string, readonly string[]>>;
 
 /** One numeric input. `key` is also its address parameter (e.g. `?hct=40`). */
-export type Field = {
+export type NumberField = {
+  kind?: 'number';
   key: string;
   label: string;
   unit: string;
@@ -16,12 +23,32 @@ export type Field = {
   max: number;
   step: number;
   placeholder: string;
+  /** One line under the field. */
+  hint?: string;
+  when?: When;
 };
+
+export type ChoiceOption = { value: string; label: string };
+
+/** Pick one of a few options (shown as a radio group). `key` is its address parameter. */
+export type ChoiceField = {
+  kind: 'choice';
+  key: string;
+  label: string;
+  options: readonly ChoiceOption[];
+  hint?: string;
+  when?: When;
+};
+
+export type Field = NumberField | ChoiceField;
 
 export type FieldGroup = { label?: string; fields: readonly Field[] };
 
-/** Parsed field values; an empty or unreadable field is `undefined`. */
+/** Parsed number fields; an empty or unreadable field, or one that doesn't apply, is `undefined`. */
 export type Values = Readonly<Record<string, number | undefined>>;
+
+/** Chosen options by field key; nothing chosen, or a field that doesn't apply, is `undefined`. */
+export type Choices = Readonly<Record<string, string | undefined>>;
 
 export type Outcome =
   | { status: 'incomplete'; message: string }
@@ -31,6 +58,10 @@ export type Outcome =
       headline: string;
       label?: string;
       note?: string;
+      /** Further notes, shown after `note`. */
+      notes?: readonly string[];
+      /** The headline is a sentence (advice), not a number: it wraps at reading size. */
+      textHeadline?: boolean;
       details: readonly string[];
       /** Text the Copy button puts on the clipboard, for the report. */
       report?: string;
@@ -46,10 +77,25 @@ export type Calculator = {
   implements: string;
   /** Where the formula and any thresholds come from; local practice says so. */
   citation: { full: string; short: string };
+  /** One line shown above the fields (e.g. whom the guideline does not apply to). */
+  intro?: string;
+  /** Replaces the quick view's "Full calculator →" link, e.g. when the resource's page has none. */
+  link?: { text: string; href: string };
   groups: readonly FieldGroup[];
-  /** Pure: no DOM. `changed` is the key of the field just typed in, when it matters. */
-  compute(values: Values, changed?: string): Outcome;
+  /**
+   * Pure: no DOM. `changed` is the key of the field just changed, when it matters.
+   * `choices` comes last so number-only calculators can ignore it.
+   */
+  compute(values: Values, changed?: string, choices?: Choices): Outcome;
 };
+
+/** Whether `field` applies, given the choices made so far. */
+export function applies(field: Field, choices: Choices): boolean {
+  return Object.entries(field.when ?? {}).every(([key, allowed]) => {
+    const chosen = choices[key];
+    return chosen !== undefined && allowed.includes(chosen);
+  });
+}
 
 /** A field's text as a number; blank or anything that isn't a finite number is `undefined`. */
 export function parseField(raw: string): number | undefined {
