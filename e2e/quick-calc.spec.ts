@@ -253,14 +253,17 @@ test.describe('Fleischner', () => {
     await expect(solidBox).toBeDisabled();
   });
 
-  test('nothing moves as you use it (owner, 2026-11-25)', async ({ page }) => {
+  test('nothing moves as you use it (owner, 2026-11-25)', async ({ page }, testInfo) => {
     await open(page);
-    // Every field's position and the quick view's height.
+    // Every field's position and, on a desktop, the quick view's height. On a phone a
+    // longer result can add a line below the fields (where it wraps depends on the
+    // platform's text rendering: CI's Linux wraps a subject that fits on a Mac).
+    const phone = testInfo.project.name === 'phone';
     const layout = () =>
-      fl(page).evaluate((view) => {
+      fl(page).evaluate((view, phone) => {
         const fields = [...view.querySelectorAll('.quick-item')].map((item) => Math.round(item.getBoundingClientRect().top));
-        return { fields, height: Math.round(view.getBoundingClientRect().height) };
-      });
+        return phone ? { fields } : { fields, height: Math.round(view.getBoundingClientRect().height) };
+      }, phone);
     const start = await layout();
     const steps: [string, () => Promise<void>][] = [
       ['solid', () => choose(page, { 'Nodule type': 'Solid' })],
