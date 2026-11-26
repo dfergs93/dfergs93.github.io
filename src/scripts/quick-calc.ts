@@ -33,7 +33,7 @@ function renderOutcome(result: HTMLElement, outcome: Outcome): void {
   const line = el('span', 'quick-line');
   line.append(el('span', outcome.textHeadline ? 'quick-headline quick-headline-text' : 'quick-headline', outcome.headline));
   if (outcome.label) line.append(el('span', 'quick-label', outcome.label));
-  const parts: HTMLElement[] = [line];
+  const parts: HTMLElement[] = outcome.subject ? [el('span', 'quick-subject', outcome.subject), line] : [line];
   for (const note of [outcome.note, ...(outcome.notes ?? [])]) if (note) parts.push(el('span', 'quick-note', note));
   if (outcome.details.length) {
     const details = el('span', 'quick-details');

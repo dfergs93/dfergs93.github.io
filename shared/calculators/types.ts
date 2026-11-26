@@ -55,6 +55,8 @@ export type Outcome =
   | { status: 'invalid'; message: string }
   | {
       status: 'ok';
+      /** What the result is for, shown above it (e.g. the choices made), so a wrong tap shows. */
+      subject?: string;
       headline: string;
       label?: string;
       note?: string;

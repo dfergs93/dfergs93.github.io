@@ -240,6 +240,7 @@ html.js .list { scroll-margin-top: 100vmax; }
   padding-top: 8px;
   border-top: 1px solid var(--line);
 }
+.quick-subject { color: var(--muted); font-size: 0.85rem; }
 .quick-line { display: flex; align-items: baseline; gap: 10px; }
 .quick-headline { font-size: 1.15rem; font-weight: 600; font-variant-numeric: tabular-nums; }
 /* Advice rather than a number: reading size, wraps. */

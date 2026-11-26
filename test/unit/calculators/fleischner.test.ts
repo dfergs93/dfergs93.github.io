@@ -206,6 +206,12 @@ describe('Fleischner 2017', () => {
         'A CT at 3–6 months to confirm it persists may be considered first; large solid components are also seen in nodules that clear up.',
       ]);
     });
+    test('single part solid under 6 mm: managed like ground glass of that size (owner, 2026-11-25)', () => {
+      expect(notes({ type: 'part-solid', count: 'single' }, { size: 5 })).toEqual([
+        "Part-solid nodules can't be defined as such until 6 mm.",
+        'Managed like a ground-glass nodule of the same size: if suspicious, consider CT at 2 and 4 years.',
+      ]);
+    });
     test('multiple subsolid under 6 mm: usually benign', () => {
       expect(notes({ type: 'ground-glass', count: 'multiple' }, { size: 4 })).toEqual([
         'Usually benign; in selected high-risk patients consider CT at 2 and 4 years.',
@@ -221,6 +227,15 @@ describe('Fleischner 2017', () => {
       'Counted as 12 mm',
       'Solid component counted as 4 mm',
     ]);
+  });
+
+  test('the result says what it is for, so a wrong tap shows (owner, 2026-11-25)', () => {
+    const subject = (choices: Choices, values: Values) => ok(run(choices, values)).subject;
+    expect(subject({ type: 'solid', count: 'single', risk: 'low' }, { size: 7 })).toBe('Single solid nodule, low risk');
+    expect(subject({ type: 'solid', count: 'multiple', risk: 'high' }, { size: 7 })).toBe('Multiple solid nodules, high risk');
+    expect(subject({ type: 'ground-glass', count: 'single', risk: 'high' }, { size: 7 })).toBe('Single ground-glass nodule');
+    expect(subject({ type: 'part-solid', count: 'single' }, { size: 12, solid: 4 })).toBe('Single part-solid nodule');
+    expect(subject({ type: 'part-solid', count: 'multiple' }, { size: 8 })).toBe('Multiple part-solid nodules');
   });
 
   test('the report line', () => {

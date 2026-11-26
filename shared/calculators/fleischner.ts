@@ -90,6 +90,8 @@ const NOTE = {
   partSolidLargeComponent:
     'A CT at 3–6 months to confirm it persists may be considered first; large solid components are also seen in nodules that clear up.',
   partSolidSmall: "Part-solid nodules can't be defined as such until 6 mm.",
+  // Recommendation 4 (p236): treated like pure ground-glass nodules of that size (owner, 2026-11-25).
+  partSolidSmallLikeGroundGlass: 'Managed like a ground-glass nodule of the same size: if suspicious, consider CT at 2 and 4 years.',
   subsolidMultipleSmall: 'Usually benign; in selected high-risk patients consider CT at 2 and 4 years.',
 } as const;
 
@@ -118,7 +120,9 @@ function groundGlassAdvice(mm: number): Advice {
 }
 
 function partSolidAdvice(mm: number, componentMm: number | undefined): Advice {
-  if (mm < 6 || componentMm === undefined) return { headline: 'No routine follow-up', notes: [NOTE.partSolidSmall] };
+  if (mm < 6 || componentMm === undefined) {
+    return { headline: 'No routine follow-up', notes: [NOTE.partSolidSmall, NOTE.partSolidSmallLikeGroundGlass] };
+  }
   if (componentMm < 6) {
     return {
       headline: 'CT at 3–6 months to confirm persistence. If unchanged and solid component remains < 6 mm, annual CT should be performed for 5 years.',
@@ -209,9 +213,11 @@ function compute(values: Values, _changed?: string, choices: Choices = {}): Outc
   const withComponent = componentMm === undefined ? '' : ` with a ${componentMm} mm solid component`;
   const withRisk = picked.type === 'solid' ? `, ${picked.risk} risk` : '';
   const sentence = advice.headline.endsWith('.') ? advice.headline : `${advice.headline}.`;
+  const nodules = single ? `Single ${kind} nodule` : `Multiple ${kind} nodules`;
 
   return {
     status: 'ok',
+    subject: `${nodules}${withRisk}`,
     headline: advice.headline,
     textHeadline: true,
     notes: advice.notes,
