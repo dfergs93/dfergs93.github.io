@@ -1,0 +1,628 @@
+{
+  "calculator": "tirads",
+  "pageUrl": "https://dfergs93.github.io/guidelines_manager/thyroid/tirads/",
+  "formId": "tirads-form",
+  "resultId": "tirads-results",
+  "params": [
+    "composition_pts",
+    "echogenicity_pts",
+    "shape_pts",
+    "margin_pts",
+    "echogenic_foci_pts",
+    "size_cm"
+  ],
+  "categoryKey": "TI-RADS level",
+  "cases": [
+    {
+      "id": "level-0pts-tr1",
+      "inputs": {
+        "composition_pts": "0",
+        "echogenicity_pts": "0",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): \"0 Points\" → TR1 \"Benign, No FNA\""
+        },
+        "text": "0 points: TR1, benign, no FNA (whatever the size).",
+        "category": "TR1"
+      },
+      "note": "Cystic or almost completely cystic, anechoic."
+    },
+    {
+      "id": "level-1pt-cystic-macrocalc",
+      "inputs": {
+        "composition_pts": "0",
+        "echogenicity_pts": "0",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "1",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589); p2, Overview of ACR TI-RADS (\"all other nodules merit at least two points\")"
+        },
+        "text": "1 point: the chart has no level for it (TR1 is 0 points, TR2 is 2); the paper says every nodule other than a 0-point one merits at least 2 points. Either way no FNA (TR1 and TR2 are both \"No FNA\")."
+      },
+      "note": "Cystic, anechoic, with a macrocalcification: the one combination of valid choices that totals 1."
+    },
+    {
+      "id": "level-2pts-tr2",
+      "inputs": {
+        "composition_pts": "1",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): \"2 Points\" → TR2 \"Not Suspicious, No FNA\""
+        },
+        "text": "2 points: TR2, not suspicious, no FNA.",
+        "category": "TR2"
+      },
+      "note": "Mixed cystic and solid, isoechoic solid component."
+    },
+    {
+      "id": "level-3pts-tr3",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): \"3 Points\" → TR3 \"FNA if ≥ 2.5 cm\""
+        },
+        "text": "3 points: TR3; 3.0 cm ≥ 2.5 cm → FNA.",
+        "category": "TR3"
+      },
+      "note": "Solid, isoechoic."
+    },
+    {
+      "id": "level-4pts-tr4",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.5"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): \"4 to 6 Points\" → TR4 \"FNA if ≥ 1.5 cm\""
+        },
+        "text": "4 points: TR4; 1.5 cm ≥ 1.5 cm → FNA.",
+        "category": "TR4"
+      }
+    },
+    {
+      "id": "level-6pts-tr4",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "2",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.2"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): \"4 to 6 Points\" → TR4 \"Follow if ≥ 1 cm\"; p6, Timing of Follow-Up Sonograms"
+        },
+        "text": "6 points: TR4; 1.2 cm → follow-up (≥ 1 cm, < 1.5 cm) at 1, 2, 3 and 5 years.",
+        "category": "TR4"
+      }
+    },
+    {
+      "id": "level-7pts-tr5",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "3",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.2"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): \"7 Points or More\" → TR5 \"FNA if ≥ 1 cm\""
+        },
+        "text": "7 points: TR5; 1.2 cm ≥ 1 cm → FNA.",
+        "category": "TR5"
+      }
+    },
+    {
+      "id": "level-14pts-tr5-small",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "3",
+        "shape_pts": "3",
+        "margin_pts": "3",
+        "echogenic_foci_pts": "3",
+        "size_cm": "0.4"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR5 \"Follow if ≥ 0.5 cm\""
+        },
+        "text": "14 points (the most the form allows): TR5; 0.4 cm < 0.5 cm → neither FNA nor follow-up.",
+        "category": "TR5"
+      }
+    },
+    {
+      "id": "tr2-large-no-fna",
+      "inputs": {
+        "composition_pts": "1",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "5.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR2 \"No FNA\"; p2 (\"For risk levels TR3 through TR5, the chart presents a size threshold\")"
+        },
+        "text": "TR2 at 5.0 cm: no FNA; the chart sets no size threshold for TR1–TR2.",
+        "category": "TR2"
+      }
+    },
+    {
+      "id": "tr3-size-1-4",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.4"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR3 \"Follow if ≥ 1.5 cm\""
+        },
+        "text": "TR3, 1.4 cm < 1.5 cm: neither FNA nor follow-up.",
+        "category": "TR3"
+      }
+    },
+    {
+      "id": "tr3-size-1-5",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.5"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR3 \"Follow if ≥ 1.5 cm\"; p6, Timing of Follow-Up Sonograms (\"For a TR3 lesion, follow-up imaging may be performed at 1, 3, and 5 years\")"
+        },
+        "text": "TR3, 1.5 cm: follow-up ultrasound (may be at 1, 3 and 5 years); no FNA.",
+        "category": "TR3"
+      }
+    },
+    {
+      "id": "tr3-size-2-4",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "2.4"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR3 \"FNA if ≥ 2.5 cm\"; p6, Timing of Follow-Up Sonograms"
+        },
+        "text": "TR3, 2.4 cm < 2.5 cm: follow-up at 1, 3 and 5 years; no FNA.",
+        "category": "TR3"
+      }
+    },
+    {
+      "id": "tr3-size-2-5",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "2.5"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR3 \"FNA if ≥ 2.5 cm\"; p6, Timing of Follow-Up Sonograms (\"for nodules that do not meet size criteria for FNA\"); p6, Measurement and Documentation (\"The committee did not address follow-up for previously sampled nodules\")"
+        },
+        "text": "TR3, 2.5 cm: FNA. The follow-up schedule is for nodules that do not meet FNA criteria; the paper sets no imaging follow-up for sampled nodules (cytology decides).",
+        "category": "TR3"
+      }
+    },
+    {
+      "id": "tr4-size-0-9",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "0.9"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR4 \"Follow if ≥ 1 cm\""
+        },
+        "text": "TR4, 0.9 cm < 1 cm: neither FNA nor follow-up.",
+        "category": "TR4"
+      }
+    },
+    {
+      "id": "tr4-size-1-0",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR4 \"Follow if ≥ 1 cm\"; p6, Timing of Follow-Up Sonograms (\"For a TR4 lesion, scans should be done at 1, 2, 3, and 5 years\")"
+        },
+        "text": "TR4, 1.0 cm: follow-up at 1, 2, 3 and 5 years; no FNA.",
+        "category": "TR4"
+      }
+    },
+    {
+      "id": "tr4-size-1-4",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.4"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR4 \"FNA if ≥ 1.5 cm\"; p6, Timing of Follow-Up Sonograms"
+        },
+        "text": "TR4, 1.4 cm < 1.5 cm: follow-up at 1, 2, 3 and 5 years; no FNA.",
+        "category": "TR4"
+      }
+    },
+    {
+      "id": "tr4-size-1-5",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.5"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR4 \"FNA if ≥ 1.5 cm\"; p6, Timing of Follow-Up Sonograms; p6 (previously sampled nodules not addressed)"
+        },
+        "text": "TR4, 1.5 cm: FNA (no follow-up schedule for sampled nodules).",
+        "category": "TR4"
+      }
+    },
+    {
+      "id": "tr5-size-0-4",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "3",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "0.4"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR5 \"Follow if ≥ 0.5 cm*\""
+        },
+        "text": "TR5, 0.4 cm < 0.5 cm: neither FNA nor follow-up.",
+        "category": "TR5"
+      }
+    },
+    {
+      "id": "tr5-size-0-5",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "3",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "0.5"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR5 \"Follow if ≥ 0.5 cm*\" and footnote \"*Refer to discussion of papillary microcarcinomas for 5-9 mm TR5 nodules\"; p6, Timing of Follow-Up Sonograms (\"For a TR5 lesion, we recommend scans every year for up to 5 years\"); p5, Papillary Thyroid Microcarcinomas"
+        },
+        "text": "TR5, 0.5 cm: follow-up every year for up to 5 years; no routine FNA, though FNA of a 5–9 mm TR5 nodule may be appropriate in some circumstances (shared decision).",
+        "category": "TR5"
+      }
+    },
+    {
+      "id": "tr5-size-0-9",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "3",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "0.9"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR5 \"FNA if ≥ 1 cm\"; p6, Timing of Follow-Up Sonograms; p5, Papillary Thyroid Microcarcinomas"
+        },
+        "text": "TR5, 0.9 cm < 1 cm: follow-up every year for up to 5 years; FNA only by shared decision (5–9 mm TR5).",
+        "category": "TR5"
+      }
+    },
+    {
+      "id": "tr5-size-1-0",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "3",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "1.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): TR5 \"FNA if ≥ 1 cm\"; p6, Timing of Follow-Up Sonograms; p6 (previously sampled nodules not addressed)"
+        },
+        "text": "TR5, 1.0 cm: FNA (no follow-up schedule for sampled nodules).",
+        "category": "TR5"
+      }
+    },
+    {
+      "id": "foci-macro-plus-punctate",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "4",
+        "size_cm": "1.2"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): ECHOGENIC FOCI \"(Choose All That Apply)\"; p2, Overview (\"all the features that apply from the final category\")"
+        },
+        "text": "Macrocalcifications (1) + punctate echogenic foci (3) = 4 for echogenic foci; total 2+1+0+0+4 = 7: TR5; 1.2 cm → FNA.",
+        "category": "TR5"
+      },
+      "note": "4 is the sum of two foci options; the form's single drop-down has no option worth 4."
+    },
+    {
+      "id": "foci-rim-plus-punctate",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "5",
+        "size_cm": "1.2"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): ECHOGENIC FOCI \"(Choose All That Apply)\"; p2, Overview"
+        },
+        "text": "Peripheral (rim) calcifications (2) + punctate echogenic foci (3) = 5; total 2+2+0+0+5 = 9: TR5; 1.2 cm → FNA.",
+        "category": "TR5"
+      },
+      "note": "5 is the sum of two foci options; no single option is worth 5."
+    },
+    {
+      "id": "foci-one-choice-only",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "1",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "3",
+        "size_cm": "1.2"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): ECHOGENIC FOCI \"(Choose All That Apply)\"; TR5 \"FNA if ≥ 1 cm\""
+        },
+        "text": "The nodule of case foci-macro-plus-punctate, entered the only way the form allows (punctate foci picked, macrocalcifications left out): its true total is 7, TR5, FNA at 1.2 cm.",
+        "category": "TR5"
+      },
+      "note": "Inputs are what a reader can enter for a solid isoechoic 1.2 cm nodule with both macrocalcifications and punctate foci; expected is for that nodule."
+    },
+    {
+      "id": "spongiform-adds-points",
+      "inputs": {
+        "composition_pts": "0",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "3",
+        "size_cm": "2.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589), explanatory note COMPOSITION (\"Spongiform: … Do not add further points for other categories\"); p4, Composition (\"regardless of its relative echogenicity or other features\"); p5, Echogenic Foci (\"should not add to the point total of spongiform nodules\")"
+        },
+        "text": "Spongiform nodule (hypoechoic, small echogenic foci): spongiform scores 0 and no further points are added; small echogenic foci in spongiform nodules do not add points → 0: TR1, no FNA.",
+        "category": "TR1"
+      },
+      "note": "The spongiform option has value 0, the same as the cystic option, so the address cannot pick it; this run is what the page computes when spongiform is chosen with these other answers."
+    },
+    {
+      "id": "anechoic-with-solid",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "0",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589), explanatory note ECHOGENICITY (\"Anechoic: Applies to cystic or almost completely cystic nodules\"; \"Assign 1 point if echogenicity cannot be determined\"); p4, Echogenicity"
+        },
+        "text": "Not a valid combination: anechoic applies only to cystic or almost completely cystic nodules. The form should refuse it (if echogenicity cannot be determined, 1 point; a solid nodule with 1 point for echogenicity is TR3, FNA at 3.0 cm)."
+      }
+    },
+    {
+      "id": "anechoic-with-mixed",
+      "inputs": {
+        "composition_pts": "1",
+        "echogenicity_pts": "0",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "3.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589), explanatory note COMPOSITION (\"Mixed cystic and solid: Assign points for predominant solid component\"); p2, Overview (\"a nodule that has a mixed cystic and solid composition (one point) will also gain at least one more point for the echogenicity of its solid component\")"
+        },
+        "text": "Not a valid combination: a mixed cystic and solid nodule takes the echogenicity of its solid component, so it gets at least one more point. The form should refuse it."
+      }
+    },
+    {
+      "id": "invalid-size-blank",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": ""
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "p2, Overview (\"recommendations for FNA or ultrasound follow-up are based on a nodule's ACR TI-RADS level and its maximum diameter\")"
+        },
+        "text": "No size: the recommendation cannot be given (size decides FNA or follow-up for TR3–TR5); the form should ask for it."
+      },
+      "note": "Filled from the address; the field is marked required, which the browser enforces only when the button is pressed."
+    },
+    {
+      "id": "invalid-size-zero",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "p6, Measurement and Documentation (the maximum dimension determines biopsy or follow-up)"
+        },
+        "text": "Size 0 cm is not a nodule measurement; the form should refuse it."
+      },
+      "note": "min=\"0\" in the markup lets 0 through."
+    },
+    {
+      "id": "invalid-size-negative",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "-1"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "p6, Measurement and Documentation"
+        },
+        "text": "Negative size; the form should refuse it."
+      },
+      "note": "Filled from the address; min=\"0\" is enforced by the browser only when the button is pressed."
+    },
+    {
+      "id": "invalid-size-text",
+      "inputs": {
+        "composition_pts": "2",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "abc"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "p6, Measurement and Documentation"
+        },
+        "text": "Not a number; the form should refuse it."
+      }
+    },
+    {
+      "id": "invalid-composition-value",
+      "inputs": {
+        "composition_pts": "5",
+        "echogenicity_pts": "2",
+        "shape_pts": "0",
+        "margin_pts": "0",
+        "echogenic_foci_pts": "0",
+        "size_cm": "2.0"
+      },
+      "expected": {
+        "source": {
+          "source": "tirads-2017",
+          "location": "Fig 1, PDF p3 (J Am Coll Radiol 2017;14:589): COMPOSITION options 0, 0, 1, 2 points"
+        },
+        "text": "No composition option is worth 5; the form should refuse it."
+      }
+    }
+  ]
+}

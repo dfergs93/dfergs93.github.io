@@ -311,8 +311,8 @@
     "year": 2022,
     "url": "https://doi.org/10.1177/20543581221097455",
     "access": "open",
-    "reuse": "restate-and-link",
-    "note": "Full text from Europe PMC (PMC9134018). Open access (CC BY-NC 4.0 per the article); restate and link."
+    "reuse": "reproduce",
+    "note": "Full text from Europe PMC (PMC9134018). CC BY-NC 4.0: may be reproduced non-commercially with attribution."
   },
   {
     "id": "car-gbca-2018",
@@ -423,5 +423,49 @@
     "access": "open",
     "reuse": "restate-and-link",
     "note": "CAR guideline, part 5 of 5 (replaces the 2016 consolidated guidelines); read from car.ca."
+  },
+  {
+    "id": "cua-prostate-early-diagnosis-2022",
+    "title": "UPDATE – 2022 Canadian Urological Association recommendations on prostate cancer screening and early diagnosis: Endorsement of the 2021 Cancer Care Ontario guidelines on prostate multiparametric magnetic resonance imaging",
+    "citation": "Mason RJ, Marzouk K, Finelli A, et al. UPDATE – 2022 Canadian Urological Association recommendations on prostate cancer screening and early diagnosis: Endorsement of the 2021 Cancer Care Ontario guidelines on prostate multiparametric magnetic resonance imaging. Can Urol Assoc J. 2022;16(4):E184-E196. doi:10.5489/cuaj.7851",
+    "version": "2022 update",
+    "year": 2022,
+    "url": "https://doi.org/10.5489/cuaj.7851",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "PDF downloaded from cuaj.ca (article 7851) to audit-sources/cua-prostate-early-diagnosis-2022.pdf with a .txt copy. Cited by the CAR prostate MRI white paper (ref 41). A urology guideline: used here only for PSA density (p. E189) and the biopsy pathway after mpMRI (recommendation 5a, p. E188)."
+  },
+  {
+    "id": "acr-tirads-atlas",
+    "title": "ACR TI-RADS Atlas: ACR Thyroid Imaging, Reporting and Data System Lexicon Directory",
+    "citation": "American College of Radiology. ACR TI-RADS Atlas (ACR Thyroid Imaging, Reporting and Data System Lexicon Directory). Compiled by Hoang JK; images from Teefey SA. Reston, VA: American College of Radiology; 2017 (file revised February 2018).",
+    "version": "2017 (PDF modified 2018-02-19)",
+    "year": 2017,
+    "url": "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/TI-RADS/TI-RADS-Atlas.pdf",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "26-page PDF linked from ACR's TI-RADS page (https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/TI-RADS), fetched 2026-11-25. Page 2 is the 2017 chart; pp3–4 the choose/assumption rules; pp5–24 one definition per feature, restating the 2015 lexicon (Grant et al., JACR 2015;12:1272-9). Page numbers are PDF pages."
+  },
+  {
+    "id": "acr-tirads-chart",
+    "title": "ACR TI-RADS chart (TI-RADS Assessment Categories)",
+    "citation": "American College of Radiology. ACR TI-RADS [chart]. Originally published as Fig 1 of Tessler FN et al., J Am Coll Radiol 2017;14(5):587-595.",
+    "version": "2017 chart (PDF made 2019-08-14)",
+    "year": 2017,
+    "url": "https://edge.sitecorecloud.io/americancoldf5f-acrorgf92a-productioncb02-3650/media/ACR/Files/RADS/TI-RADS/TI-RADS-Assessment-Categories.pdf",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "One-page image of the white paper's Fig 1, linked from ACR's TI-RADS page on 2026-11-25; footer \"Originally published in JACR at: https://www.jacr.org/article/S1546-1440(17)30186-2/fulltext\". Shows ACR still publishes the 2017 chart; no text layer."
+  },
+  {
+    "id": "middleton-2017",
+    "title": "Multiinstitutional Analysis of Thyroid Nodule Risk Stratification Using the American College of Radiology Thyroid Imaging Reporting and Data System",
+    "citation": "Middleton WD, Teefey SA, Reading CC, et al. Multiinstitutional analysis of thyroid nodule risk stratification using the American College of Radiology Thyroid Imaging Reporting and Data System. AJR Am J Roentgenol. 2017;208(6):1331-1341. doi:10.2214/AJR.16.17613",
+    "version": "2017",
+    "year": 2017,
+    "url": "https://doi.org/10.2214/AJR.16.17613",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "Cited by the white paper (ref 29) for its risk levels. ajronline.org answered 403 behind a bot check (not circumvented); the PubMed abstract (PMID 28402167) has no per-level rates. Owner asked for a copy."
   }
 ]

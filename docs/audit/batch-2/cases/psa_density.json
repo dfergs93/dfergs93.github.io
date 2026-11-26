@@ -1,0 +1,210 @@
+{
+  "calculator": "psa_density",
+  "pageUrl": "https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/",
+  "formId": "psa-density-form",
+  "resultId": "psa-density-results",
+  "params": [
+    "psa",
+    "prostate_volume_cc"
+  ],
+  "cases": [
+    {
+      "id": "psad-0-099",
+      "inputs": {
+        "psa": "4.95",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "car-prostate-mri-2022",
+          "location": "Reporting, Findings, p. 7 (\"in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy\")"
+        },
+        "text": "PSAD 0.099: below 0.10, the low end of the range CAR cites for PI-RADS 3 biopsy (the page's own band: <0.10, low)."
+      }
+    },
+    {
+      "id": "psad-0-0998-rounding",
+      "inputs": {
+        "psa": "4.99",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "car-prostate-mri-2022",
+          "location": "Reporting, Findings, p. 7 (\"in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy\")"
+        },
+        "text": "PSAD 0.0998: still below 0.10 (page band <0.10, low)."
+      },
+      "note": "Tests the calculator's rounding at the 0.10 edge."
+    },
+    {
+      "id": "psad-0-100",
+      "inputs": {
+        "psa": "5",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "car-prostate-mri-2022",
+          "location": "Reporting, Findings, p. 7 (\"in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy\")"
+        },
+        "text": "PSAD 0.100: at 0.10 (page band 0.10–0.15, intermediate)."
+      }
+    },
+    {
+      "id": "psad-0-149",
+      "inputs": {
+        "psa": "7.45",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "car-prostate-mri-2022",
+          "location": "Reporting, Findings, p. 7 (\"in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy\")"
+        },
+        "text": "PSAD 0.149: below 0.15 (page band 0.10–0.15, intermediate)."
+      }
+    },
+    {
+      "id": "psad-0-1498-rounding",
+      "inputs": {
+        "psa": "7.49",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "car-prostate-mri-2022",
+          "location": "Reporting, Findings, p. 7 (\"in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy\")"
+        },
+        "text": "PSAD 0.1498: still below 0.15 (page band 0.10–0.15, intermediate)."
+      },
+      "note": "Tests the calculator's rounding at the 0.15 edge."
+    },
+    {
+      "id": "psad-0-150",
+      "inputs": {
+        "psa": "7.5",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "car-prostate-mri-2022",
+          "location": "Reporting, Findings, p. 7 (\"in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy\")"
+        },
+        "text": "PSAD 0.150: at 0.15 (page band ≥0.15, higher)."
+      }
+    },
+    {
+      "id": "psad-0-151",
+      "inputs": {
+        "psa": "7.55",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "car-prostate-mri-2022",
+          "location": "Reporting, Findings, p. 7 (\"in patients with PI-RADS 3 lesions, PSA density thresholds of approximately 0.1 to 0.15 have been suggested for biopsy\")"
+        },
+        "text": "PSAD 0.151: above 0.15 (page band ≥0.15, higher)."
+      }
+    },
+    {
+      "id": "psad-source-example",
+      "inputs": {
+        "psa": "12.1",
+        "prostate_volume_cc": "42"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Appendix I, report example, pp. 27–28 (PDF pp. 34–35) (\"42 cubic cm, PSA density 0.29 ng/mL/mL\")"
+        },
+        "text": "PSAD 0.29 ng/mL/mL, the document's own worked example (PSA 12.1 ng/mL, 42 cc)."
+      }
+    },
+    {
+      "id": "invalid-volume-0",
+      "inputs": {
+        "psa": "5",
+        "prostate_volume_cc": "0"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III A, Reporting, Measurement of the Prostate Gland, p. 12 (PDF p. 19) (PSAD = PSA / prostate volume)"
+        },
+        "text": "No density: volume must be greater than zero (division by zero)."
+      }
+    },
+    {
+      "id": "invalid-volume-blank",
+      "inputs": {
+        "psa": "5",
+        "prostate_volume_cc": ""
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III A, Reporting, Measurement of the Prostate Gland, p. 12 (PDF p. 19) (PSAD = PSA / prostate volume)"
+        },
+        "text": "No density: volume missing."
+      }
+    },
+    {
+      "id": "invalid-volume-negative",
+      "inputs": {
+        "psa": "5",
+        "prostate_volume_cc": "-10"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III A, Reporting, Measurement of the Prostate Gland, p. 12 (PDF p. 19) (PSAD = PSA / prostate volume)"
+        },
+        "text": "No density: a negative volume is not a measurement."
+      }
+    },
+    {
+      "id": "invalid-psa-blank",
+      "inputs": {
+        "psa": "",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III A, Reporting, Measurement of the Prostate Gland, p. 12 (PDF p. 19) (PSAD = PSA / prostate volume)"
+        },
+        "text": "No density: PSA missing (a blank must not be read as 0)."
+      }
+    },
+    {
+      "id": "invalid-psa-0",
+      "inputs": {
+        "psa": "0",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III A, Reporting, Measurement of the Prostate Gland, p. 12 (PDF p. 19) (PSAD = PSA / prostate volume)"
+        },
+        "text": "PSAD would be 0; a PSA of 0 is not a plausible measured value, so the form should query it rather than give a band."
+      }
+    },
+    {
+      "id": "invalid-psa-negative",
+      "inputs": {
+        "psa": "-1",
+        "prostate_volume_cc": "50"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III A, Reporting, Measurement of the Prostate Gland, p. 12 (PDF p. 19) (PSAD = PSA / prostate volume)"
+        },
+        "text": "No density: a negative PSA is not a measurement."
+      }
+    }
+  ]
+}

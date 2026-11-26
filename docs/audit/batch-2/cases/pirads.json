@@ -1,0 +1,357 @@
+{
+  "calculator": "pirads",
+  "pageUrl": "https://dfergs93.github.io/guidelines_manager/genitourinary/pi_rads/",
+  "formId": "pirads-form",
+  "resultId": "pirads-results",
+  "params": [
+    "zone",
+    "dwi_score",
+    "t2wi_score",
+    "dce_positive"
+  ],
+  "categoryKey": "PI-RADS score",
+  "cases": [
+    {
+      "id": "v21-pz-dwi1-any",
+      "inputs": {
+        "zone": "peripheral",
+        "dwi_score": "1",
+        "t2wi_score": "5",
+        "dce_positive": "yes"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 1: PZ DWI 1 gives 1 whatever T2W and DCE.",
+        "category": "1"
+      }
+    },
+    {
+      "id": "v21-pz-dwi2-dce-pos",
+      "inputs": {
+        "zone": "peripheral",
+        "dwi_score": "2",
+        "t2wi_score": "4",
+        "dce_positive": "yes"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18); p. 10 (\"DCE does not contribute ... when the finding has a low (PI-RADS 1 or 2) ... likelihood\")"
+        },
+        "text": "PI-RADS 2: DCE does not upgrade a PZ DWI 2.",
+        "category": "2"
+      }
+    },
+    {
+      "id": "v21-pz-dwi3-dce-neg",
+      "inputs": {
+        "zone": "peripheral",
+        "dwi_score": "3",
+        "t2wi_score": "1",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18); p. 24 (bpMRI: PZ DWI 3 not upgraded)"
+        },
+        "text": "PI-RADS 3: PZ DWI 3 with negative (or absent, bpMRI) DCE stays 3.",
+        "category": "3"
+      }
+    },
+    {
+      "id": "v21-pz-dwi3-dce-pos",
+      "inputs": {
+        "zone": "peripheral",
+        "dwi_score": "3",
+        "t2wi_score": "1",
+        "dce_positive": "yes"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 4: PZ DWI 3 with positive DCE is upgraded to 4.",
+        "category": "4"
+      }
+    },
+    {
+      "id": "v21-pz-dwi4-t2w2",
+      "inputs": {
+        "zone": "peripheral",
+        "dwi_score": "4",
+        "t2wi_score": "2",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18); Caveats for Overall Assessment, p. 14 (\"if the DWI score is 4 and T2W score is 2, PIRADS Assessment Category should be 4\")"
+        },
+        "text": "PI-RADS 4: PZ DWI 4 with T2W 2 is 4 (DWI dominant).",
+        "category": "4"
+      }
+    },
+    {
+      "id": "v21-pz-dwi4-dce-pos",
+      "inputs": {
+        "zone": "peripheral",
+        "dwi_score": "4",
+        "t2wi_score": "5",
+        "dce_positive": "yes"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 4: DCE does not raise a PZ DWI 4 to 5.",
+        "category": "4"
+      }
+    },
+    {
+      "id": "v21-pz-dwi5-t2w1",
+      "inputs": {
+        "zone": "peripheral",
+        "dwi_score": "5",
+        "t2wi_score": "1",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Peripheral Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 5: PZ DWI 5 gives 5 whatever T2W and DCE.",
+        "category": "5"
+      }
+    },
+    {
+      "id": "v21-tz-t2w1-dwi5",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "5",
+        "t2wi_score": "1",
+        "dce_positive": "yes"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 1: TZ T2W 1 gives 1 whatever DWI and DCE.",
+        "category": "1"
+      }
+    },
+    {
+      "id": "v21-tz-t2w2-dwi1",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "1",
+        "t2wi_score": "2",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 2: TZ T2W 2 with DWI 1.",
+        "category": "2"
+      }
+    },
+    {
+      "id": "v21-tz-t2w2-dwi3",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "3",
+        "t2wi_score": "2",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18); p. 14 (T2W 1 or 2 not upgraded on a DWI score of 3)"
+        },
+        "text": "PI-RADS 2: TZ T2W 2 with DWI 3 is not upgraded.",
+        "category": "2"
+      }
+    },
+    {
+      "id": "v21-tz-t2w2-dwi4",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "4",
+        "t2wi_score": "2",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18); p. 13 (atypical TZ nodules upgraded to 3 with DWI score of 4 or more)"
+        },
+        "text": "PI-RADS 3: TZ T2W 2 (atypical nodule) with DWI 4 is upgraded to 3 (the v2.1 change).",
+        "category": "3"
+      }
+    },
+    {
+      "id": "v21-tz-t2w2-dwi5",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "5",
+        "t2wi_score": "2",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 3: TZ T2W 2 with DWI 5 is upgraded to 3.",
+        "category": "3"
+      }
+    },
+    {
+      "id": "v21-tz-t2w3-dwi1",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "1",
+        "t2wi_score": "3",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 3: TZ T2W 3 with DWI 1.",
+        "category": "3"
+      }
+    },
+    {
+      "id": "v21-tz-t2w3-dwi3-dce-pos",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "3",
+        "t2wi_score": "3",
+        "dce_positive": "yes"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18) (DCE column \"Any\")"
+        },
+        "text": "PI-RADS 3: DCE plays no part in the TZ.",
+        "category": "3"
+      }
+    },
+    {
+      "id": "v21-tz-t2w3-dwi4",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "4",
+        "t2wi_score": "3",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18) (T2W 3, DWI ≤4 → 3)"
+        },
+        "text": "PI-RADS 3: TZ T2W 3 with DWI 4 stays 3 (only DWI 5 upgrades).",
+        "category": "3"
+      }
+    },
+    {
+      "id": "v21-tz-t2w3-dwi5",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "5",
+        "t2wi_score": "3",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 4: TZ T2W 3 with DWI 5 is upgraded to 4.",
+        "category": "4"
+      }
+    },
+    {
+      "id": "v21-tz-t2w4-dwi2",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "2",
+        "t2wi_score": "4",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18); Caveats for Overall Assessment, p. 14 (\"if the T2W score is 4 and DWI score is 2, PIRADS Assessment Category should be 4\")"
+        },
+        "text": "PI-RADS 4: TZ T2W 4 with DWI 2 is 4 (T2W dominant).",
+        "category": "4"
+      }
+    },
+    {
+      "id": "v21-tz-t2w5-dwi1",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "1",
+        "t2wi_score": "5",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1",
+          "location": "Section III, PI-RADS Assessment, Transition Zone table, p. 11 (PDF p. 18)"
+        },
+        "text": "PI-RADS 5: TZ T2W 5 gives 5 whatever DWI.",
+        "category": "5"
+      }
+    },
+    {
+      "id": "v2-tz-t2w2-dwi4",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "4",
+        "t2wi_score": "2",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1-revisions",
+          "location": "Slide \"Image Interpretation: Transition Zone\" (PI-RADS v2 vs v2.1 tables)"
+        },
+        "text": "PI-RADS 2 under v2 (T2W 2, any DWI → 2); v2.1 gives 3.",
+        "category": "2"
+      },
+      "note": "Run to show which version the calculator follows."
+    },
+    {
+      "id": "v2-tz-t2w3-dwi4",
+      "inputs": {
+        "zone": "transition",
+        "dwi_score": "4",
+        "t2wi_score": "3",
+        "dce_positive": "no"
+      },
+      "expected": {
+        "source": {
+          "source": "pirads-2-1-revisions",
+          "location": "Slide \"Image Interpretation: Transition Zone\" (PI-RADS v2 vs v2.1 tables)"
+        },
+        "text": "PI-RADS 3 under v2 as well (T2W 3, DWI ≤4 → 3).",
+        "category": "3"
+      },
+      "note": "Run to show which version the calculator follows."
+    }
+  ]
+}
