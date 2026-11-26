@@ -4587,7 +4587,8 @@
   ],
   "recheckList": [
     "Fleischner was audited on 2026-11-25 from the owner's copy of the paper, against the old site at b29e6ab (its page differs from 03cc237 only by the two reference-box lines removed site-wide that day).",
-    "2026-11-25, after the rulings, fix-now edits went live on the batch 1 pages: guidelines_manager b29e6ab (dated notices and calculators removed on Lung-RADS, adrenal, Bosniak and LI-RADS; LI-RADS BCLC table replaced by a link; \"Last Institutional Review\" and \"Modifications\" lines removed from eight pages; home LI-RADS label to CT/MRI v2018) and this site's 5c844c9 (no calc mark on those four rows). The audited content is otherwise unchanged; stage 3 rewrites the pages."
+    "2026-11-25, after the rulings, fix-now edits went live on the batch 1 pages: guidelines_manager b29e6ab (dated notices and calculators removed on Lung-RADS, adrenal, Bosniak and LI-RADS; LI-RADS BCLC table replaced by a link; \"Last Institutional Review\" and \"Modifications\" lines removed from eight pages; home LI-RADS label to CT/MRI v2018) and this site's 5c844c9 (no calc mark on those four rows). The audited content is otherwise unchanged; stage 3 rewrites the pages.",
+    "2026-11-25, after the Fleischner rulings, fix-now edits went live: guidelines_manager 34cf4eb (a dated notice on the Fleischner page naming its errors and the exclusions, its calculator removed, no sitemap pre-fill) and this site's c980b68 (no calc mark on the Fleischner row; its summary names the exclusions, B1-fleischner-24). The owner wants the calculator back once rebuilt with B1-fleischner-03 to -06's fixes."
   ],
   "usability": [
     {

@@ -58,8 +58,9 @@ Websites (Radiopaedia included), summaries and memory may help find a source; th
 verify one. Every number is compared with the source and its location recorded. Calculators
 are run through their live forms (`npm run audit:calc -- <case file>`), not read. A results
 file is the evidence of its run and is not replaced unless `--force` is given. Batch 1's
-results were run on 2026-11-25 against the old guidelines site at 03cc237; four of its
-calculators were switched off afterwards (b29e6ab), so those results stand as recorded.
+results were run on 2026-11-25 against the old guidelines site at 03cc237 (Fleischner's at
+b29e6ab); all five calculators were switched off afterwards (b29e6ab, and 34cf4eb for
+Fleischner), so those results stand as recorded.
 
 Before the owner sees a batch, an independent reviewer re-checks against the sources
 every finding other than *correct*, and every threshold marked *correct*.
