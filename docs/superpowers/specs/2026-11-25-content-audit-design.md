@@ -247,9 +247,13 @@ common resident needs, marked as candidates for the owner to cut.
 
 ### Review and record
 
-- Each batch is reviewed on a private claude.ai page that works on a phone: findings
-  grouped by page, each with Keep / Change / Drop and a note box. The owner's answers
-  are saved and read back (answering in chat also works). (My call.)
+- Batch 1 was reviewed on a private claude.ai page that works on a phone: findings
+  grouped by page, each with Keep / Change / Drop and a note box. (My call.)
+- From batch 2 (owner, 2026-11-25: "I mostly make rulings on the questions you ask and
+  keep the other changes once the questions are sorted"): the owner is asked only the
+  questions, in chat or on a short page, most important first. Once they are answered,
+  every other finding is recorded as kept, with its proposed fix, and the owner is told
+  how many and where the full record is, so anything can still be raised.
 - The record lives in this repo under `docs/audit/`: the method and verdict definitions,
   one file per batch (findings and the owner's rulings), `gaps.md`, `sources.md` (every
   source with version, link and its reuse terms: whether its tables may be reproduced or
@@ -275,6 +279,7 @@ common resident needs, marked as candidates for the owner to cut.
 - One lead guideline per topic, shown first or most prominently; others as differences.
 - Kyoto for pancreatic cysts; Perinatal Services BC for obstetric ultrasound; otherwise CAR.
 - The gaps listed above.
+- From batch 2, the owner rules on the questions only; the other proposed changes are kept.
 - Fix now covers anything that could change management, whatever its verdict, with the
   smallest safe fix (correct in place / dated notice / calculator switched off), on the
   old pages and the new site's copies, each with the owner's OK.
@@ -289,7 +294,7 @@ common resident needs, marked as candidates for the owner to cut.
 - Batch boundaries and order; the 15 placeholders handled in the gap list.
 - The verdict set.
 - Proposing removal of the "Last Institutional Review" line in batch 1.
-- The phone-friendly review page with Keep / Change / Drop.
+- The phone-friendly review page with Keep / Change / Drop (batch 1; questions only from batch 2, the owner's rule).
 - Recording each source's reuse terms.
 - The cut-off rule for cardiac edits.
 - Not naming the department on the public site.

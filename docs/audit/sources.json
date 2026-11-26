@@ -236,5 +236,192 @@
     "access": "not-readable",
     "reuse": "unknown",
     "note": "The measurement white paper the 2017 guideline announces (journal p232). pubs.rsna.org returns 403 and there is no open copy on Europe PMC; not circumvented. The owner may have access, as for the guideline."
+  },
+  {
+    "id": "pirads-2-1",
+    "title": "PI-RADS Prostate Imaging – Reporting and Data System, Version 2.1",
+    "citation": "American College of Radiology. PI-RADS® Prostate Imaging – Reporting and Data System, Version 2.1. Reston, VA: ACR; 2019.",
+    "version": "v2.1",
+    "year": 2019,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "ACR's 2019 document (copy hosted by the UW Radiology wiki; acr.org serves a script shell to automated download). Still current: no v2.2 or v3 published by 2026-11."
+  },
+  {
+    "id": "pirads-2-1-revisions",
+    "title": "PI-RADS v2.1 revisions (ACR summary of changes from v2)",
+    "citation": "American College of Radiology. PI-RADS v2.1 Revisions. Reston, VA: ACR; 2019.",
+    "version": "v2.1",
+    "year": 2019,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/PI-RADS",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "ACR slide summary, read from ACR's own file host."
+  },
+  {
+    "id": "car-prostate-mri-2022",
+    "title": "Canadian Association of Radiologists Prostate MRI White Paper",
+    "citation": "Chang SD, Reinhold C, Kirkpatrick IDC, et al. Canadian Association of Radiologists Prostate MRI White Paper. Can Assoc Radiol J. 2022;73(4):626-638. doi:10.1177/08465371221105532",
+    "version": "2022 (reaffirmed June 2026, with supplement)",
+    "year": 2022,
+    "url": "https://car.ca/wp-content/uploads/2026/06/Prostate-MRI_withSupplement_2026.pdf",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "CAR guidance; adopts PI-RADS v2.1 for technique, interpretation and reporting."
+  },
+  {
+    "id": "tirads-2017",
+    "title": "ACR Thyroid Imaging, Reporting and Data System (TI-RADS): White Paper of the ACR TI-RADS Committee",
+    "citation": "Tessler FN, Middleton WD, Grant EG, et al. ACR Thyroid Imaging, Reporting and Data System (TI-RADS): white paper of the ACR TI-RADS Committee. J Am Coll Radiol. 2017;14(5):587-595. doi:10.1016/j.jacr.2017.01.046",
+    "version": "2017",
+    "year": 2017,
+    "url": "https://doi.org/10.1016/j.jacr.2017.01.046",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "Publisher PDF (copy hosted by the UW Radiology wiki). No CAR thyroid nodule guideline found."
+  },
+  {
+    "id": "car-csaci-hypersensitivity-2025",
+    "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity",
+    "citation": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253",
+    "version": "2025",
+    "year": 2025,
+    "url": "https://car.ca/wp-content/uploads/2025/05/CAR_CSACI-Practice-Guidance-for-Contrast-Media-Hypersensitivity_2025.pdf",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "CAR guidance (with the Canadian Society of Allergy and Clinical Immunology)."
+  },
+  {
+    "id": "car-csaci-unknown-2025",
+    "title": "CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity: Update for Unknown Contrast Agents",
+    "citation": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity: Update for Unknown Contrast Agents. Can Assoc Radiol J. 2025. doi:10.1177/08465371251401551",
+    "version": "2025 update",
+    "year": 2025,
+    "url": "https://doi.org/10.1177/08465371251401551",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "SAGE refuses automated download (403); owner asked for a copy."
+  },
+  {
+    "id": "car-ca-aki-2022",
+    "title": "Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury",
+    "citation": "Macdonald DB, Hurrell C, Costa AF, et al. Canadian Association of Radiologists Guidance on Contrast Associated Acute Kidney Injury. Can J Kidney Health Dis. 2022;9:20543581221097455 (also Can Assoc Radiol J. 2022;73(3):499-514).",
+    "version": "2022",
+    "year": 2022,
+    "url": "https://doi.org/10.1177/20543581221097455",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "Full text from Europe PMC (PMC9134018). Open access (CC BY-NC 4.0 per the article); restate and link."
+  },
+  {
+    "id": "car-gbca-2018",
+    "title": "Gadolinium-Based Contrast Agents in Kidney Disease: A Comprehensive Review and Clinical Practice Guideline Issued by the Canadian Association of Radiologists",
+    "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002",
+    "version": "2018",
+    "year": 2018,
+    "url": "https://doi.org/10.1016/j.carj.2017.11.002",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "SAGE refuses automated download (403); owner asked for a copy."
+  },
+  {
+    "id": "car-gbca-2019",
+    "title": "Updated Clinical Practice Guideline on Use of Gadolinium-Based Contrast Agents in Kidney Disease Issued by the Canadian Association of Radiologists",
+    "citation": "Schieda N, Maralani PJ, Hurrell C, Tsampalieros AK, Hiremath S. Updated clinical practice guideline on use of gadolinium-based contrast agents in kidney disease issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2019;70(3):226-232. doi:10.1016/j.carj.2019.04.001",
+    "version": "2019",
+    "year": 2019,
+    "url": "https://doi.org/10.1016/j.carj.2019.04.001",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "SAGE refuses automated download (403); owner asked for a copy."
+  },
+  {
+    "id": "acr-contrast-2024",
+    "title": "ACR Manual on Contrast Media",
+    "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024.",
+    "version": "2024",
+    "year": 2024,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "ACR's PDF (copy hosted by Dartmouth radiology). The 2025 edition changed only the NSF chapter (GBCA group clarification); the manual forbids reproduction."
+  },
+  {
+    "id": "acr-contrast-2025",
+    "title": "ACR Manual on Contrast Media (2025 edition)",
+    "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2025. Reston, VA: American College of Radiology; 2025.",
+    "version": "2025",
+    "year": 2025,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
+    "access": "not-readable",
+    "reuse": "restate-and-link",
+    "note": "acr.org serves a script shell to automated download; the 2025 NSF chapter is needed from the owner."
+  },
+  {
+    "id": "bi-rads-2013",
+    "title": "ACR BI-RADS Atlas, 5th edition",
+    "citation": "D’Orsi CJ, Sickles EA, Mendelson EB, Morris EA, et al. ACR BI-RADS® Atlas, Breast Imaging Reporting and Data System. 5th ed. Reston, VA: American College of Radiology; 2013.",
+    "version": "5th edition",
+    "year": 2013,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Bi-Rads",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "Sold by the ACR; replaced by BI-RADS v2025 in December 2025."
+  },
+  {
+    "id": "bi-rads-2025",
+    "title": "ACR BI-RADS Manual, v2025",
+    "citation": "American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025.",
+    "version": "v2025",
+    "year": 2025,
+    "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Reporting-and-Data-Systems/Bi-Rads",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "Released December 2025 (replaces the 2013 5th edition); sold by the ACR; owner asked for access."
+  },
+  {
+    "id": "car-breast-1-2026",
+    "title": "CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis",
+    "citation": "Fleming et al. CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451252",
+    "version": "2026",
+    "year": 2026,
+    "url": "https://doi.org/10.1177/08465371261451252",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "CAR guideline, part 1 of 5 (replaces the 2016 consolidated guidelines); read from car.ca."
+  },
+  {
+    "id": "car-breast-3-2026",
+    "title": "CAR Practice Guidelines on Breast Imaging and Interventions: Breast Ultrasound",
+    "citation": "Fienberg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Ultrasound. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451256",
+    "version": "2026",
+    "year": 2026,
+    "url": "https://doi.org/10.1177/08465371261451256",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "CAR guideline, part 3 of 5 (replaces the 2016 consolidated guidelines); read from car.ca."
+  },
+  {
+    "id": "car-breast-4-2026",
+    "title": "CAR Practice Guidelines on Breast Imaging and Interventions: Breast Magnetic Resonance Imaging",
+    "citation": "Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Magnetic Resonance Imaging. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451249",
+    "version": "2026",
+    "year": 2026,
+    "url": "https://doi.org/10.1177/08465371261451249",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "CAR guideline, part 4 of 5 (replaces the 2016 consolidated guidelines); read from car.ca."
+  },
+  {
+    "id": "car-breast-5-2026",
+    "title": "CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures",
+    "citation": "Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451254",
+    "version": "2026",
+    "year": 2026,
+    "url": "https://doi.org/10.1177/08465371261451254",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "CAR guideline, part 5 of 5 (replaces the 2016 consolidated guidelines); read from car.ca."
   }
 ]
