@@ -20,8 +20,10 @@ test('calculators with a module get a quick-view button; the rest keep the plain
   await expect(toggle(page, 'popular', 'ecv')).toBeVisible();
   await expect(toggle(page, 'popular', 'fleischner')).toBeVisible();
   await expect(row(page, 'popular', 'ecv').locator('.calc-label')).toBeHidden();
-  await expect(row(page, 'popular', 'ti-rads').locator('.calc-label')).toBeVisible();
-  await expect(toggle(page, 'popular', 'ti-rads')).toHaveCount(0);
+  // 4D flow's calculator is on its own page, with no module yet.
+  await page.locator('.rail-item[data-list="cardiac"]').click();
+  await expect(row(page, 'cardiac', 'flow-4d').locator('.calc-label')).toBeVisible();
+  await expect(toggle(page, 'cardiac', 'flow-4d')).toHaveCount(0);
 });
 
 test('opening ECV focuses its first field and prompts for values', async ({ page }) => {

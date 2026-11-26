@@ -329,7 +329,7 @@ export const RESOURCE_DATA = [
     title: 'PI-RADS',
     area: 'gu-pelvis',
     version: 'v2.1',
-    calculator: true,
+    calculator: false, // switched off on the old page after the 2026-11-26 audit
     summary: 'Prostate MRI scoring by zone (DWI peripheral, T2 transition) to an overall PI-RADS category.',
     aliases: ['pirads', 'prostate', 'prostate mri', 'prostate cancer'],
     url: `${G}genitourinary/pi_rads/`,
@@ -341,7 +341,7 @@ export const RESOURCE_DATA = [
     title: 'TI-RADS',
     area: 'head-neck-neuro',
     version: 'ACR 2017',
-    calculator: true,
+    calculator: false, // switched off on the old page after the 2026-11-26 audit
     summary: 'Scores thyroid nodules on ultrasound, with size thresholds for FNA and follow-up.',
     aliases: ['tirads', 'thyroid', 'thyroid nodule', 'nodule', 'fna'],
     url: `${G}thyroid/tirads/`,
@@ -362,7 +362,7 @@ export const RESOURCE_DATA = [
   // Contrast
   {
     id: 'contrast-safety',
-    title: 'ACR contrast safety',
+    title: 'Contrast safety',
     area: 'contrast',
     version: '2023',
     calculator: false,

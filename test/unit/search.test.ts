@@ -19,6 +19,7 @@ test.each([
   ['tof', 'tof'],
   ['Bosniak', 'bosniak'],
   ['thyroid', 'ti-rads'],
+  ['acr contrast', 'contrast-safety'],
 ])('%s finds %s first', (q, id) => expect(ids(q)[0]).toBe(id));
 
 test('qp qs finds the 4D flow calculator and the congenital flow protocol first', () =>

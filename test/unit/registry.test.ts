@@ -122,18 +122,24 @@ const TABLE: [id: string, area: string, url: string][] = [
 
 describe('the real registry', () => {
   // The owner ruled that the row names whom Fleischner does not apply to (B1-fleischner-24).
+  // The page follows CAR or the ACR topic by topic (docs/audit/batch-2.md, B2-guidelines-home-04).
+  test("contrast safety is not titled as one body's", () => {
+    expect(byId('contrast-safety').title).toBe('Contrast safety');
+  });
+
   test("Fleischner's summary names its exclusions", () => {
     const summary = RESOURCES.find((r) => r.id === 'fleischner')?.summary ?? '';
     for (const word of ['35+', 'screening', 'known cancer', 'immunosuppression']) expect(summary).toContain(word);
   });
 
   // Lung-RADS, adrenal, Bosniak and LI-RADS lost their calculators on the old pages after
-  // the content audit (docs/audit/batch-1.md, 2026-11-25), so their rows carry no calc mark.
+  // the content audit (docs/audit/batch-1.md, 2026-11-25), and PI-RADS and TI-RADS after
+  // batch 2 (docs/audit/batch-2.md, 2026-11-26), so their rows carry no calc mark.
   // Fleischner's was rebuilt as a module (the front page's quick view).
-  test('has 34 entries, 6 calculators and these area counts', () => {
+  test('has 34 entries, 4 calculators and these area counts', () => {
     expect(RESOURCES).toHaveLength(34);
     expect(RESOURCES.filter((r) => r.calculator).map((r) => r.id).sort()).toEqual(
-      ['bernoulli', 'ecv', 'fleischner', 'flow-4d', 'pi-rads', 'ti-rads'],
+      ['bernoulli', 'ecv', 'fleischner', 'flow-4d'],
     );
     expect(areaCounts(RESOURCES)).toEqual({
       chest: 2, cardiac: 14, congenital: 11, abdomen: 2, 'gu-pelvis': 2,
