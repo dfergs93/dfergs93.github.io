@@ -209,16 +209,53 @@ html.js .list { scroll-margin-top: 100vmax; }
   font-variant-numeric: tabular-nums;
 }
 .quick-unit { width: 3em; color: var(--dim); font-size: 0.8rem; }
+/* A field that doesn't apply stays in place, disabled, so nothing moves as you choose. */
+.quick-input:disabled { background: transparent; color: var(--dim); }
+.quick-input:disabled::placeholder { color: transparent; }
+.quick-item.is-off .quick-field-label, .quick-item.is-off legend { color: var(--dim); }
+/* Choice fields: a radio group drawn as segments; the radio covers its segment so it takes the tap. */
+.quick-choice { min-width: 0; margin: 0; padding: 8px 0 2px; border: 0; }
+.quick-choice legend { padding: 0; margin-bottom: 4px; font-size: 0.9rem; }
+.quick-options { display: flex; flex-wrap: wrap; gap: 6px; }
+.quick-option { position: relative; display: inline-flex; }
+.quick-option input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+.quick-option span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--ground);
+  color: var(--ink);
+  font-size: 0.9rem;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+.quick-option:hover input:enabled + span { border-color: var(--muted); transition-delay: var(--hover-delay); }
+.quick-option input:disabled { cursor: default; }
+.quick-option input:disabled + span { background: transparent; color: var(--dim); }
+.quick-option input:checked + span { border-color: var(--accent); color: var(--accent); }
+.quick-option input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
 .quick-result {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  /*
+   * Room from the start for the tallest usual result, so the view keeps its size as you
+   * fill it in: padding, border and gap (11px), a subject line (0.85rem) and three lines
+   * of advice (1rem), at the body's 1.45 line height. Fits every Fleischner advice and
+   * ECV's full result on a desktop; on a phone the longest advice may add lines.
+   */
+  min-height: calc(11px + 1.45 * (0.85rem + 3rem));
   margin-top: 10px;
   padding-top: 8px;
   border-top: 1px solid var(--line);
 }
+.quick-subject { color: var(--muted); font-size: 0.85rem; }
 .quick-line { display: flex; align-items: baseline; gap: 10px; }
 .quick-headline { font-size: 1.15rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+/* Advice rather than a number: reading size, wraps. */
+.quick-headline-text { font-size: 1rem; font-variant-numeric: normal; }
 .quick-label { font-weight: 600; }
 .quick-note, .quick-message { color: var(--muted); font-size: 0.9rem; }
 .quick-details { display: flex; flex-wrap: wrap; gap: 2px 14px; font-family: var(--mono); font-size: 0.75rem; color: var(--dim); font-variant-numeric: tabular-nums; }
@@ -234,6 +271,8 @@ html.js .list { scroll-margin-top: 100vmax; }
   font-size: 0.8rem;
   cursor: pointer;
 }
+/* Copy keeps its place while there's nothing to copy, so the foot doesn't reflow. */
+.quick-copy.is-idle { visibility: hidden; }
 .quick-copy:hover { border-color: var(--accent); transition-delay: var(--hover-delay); }
 .quick-full { color: var(--ink); text-decoration-color: var(--line); }
 .quick-full:hover { text-decoration-color: currentColor; }

@@ -21,7 +21,7 @@ export const RESOURCE_DATA = [
     title: 'Fleischner Society',
     area: 'chest',
     version: '2017',
-    calculator: false, // switched off on the old page after the 2026-11-25 audit
+    calculator: true, // the front page's quick view (shared/calculators/fleischner.ts); the old page's is off
     summary: 'Follow-up of incidental lung nodules on CT, age 35+; not for screening, known cancer or immunosuppression.',
     aliases: ['nodule', 'lung nodule', 'pulmonary nodule', 'incidental nodule', 'fleishner', 'fleischer'],
     url: `${G}pulmonary/fleischner/`,

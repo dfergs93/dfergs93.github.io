@@ -28,8 +28,8 @@ test('a row shows its title, version, calc mark, area and summary', async ({ pag
   await expect(row.locator('.version')).toHaveText('2017');
   await expect(row.locator('.row-area')).toHaveText('Chest');
   await expect(row.locator('.summary')).toContainText('lung nodules');
-  // Fleischner's calculator was switched off after the 2026-11-25 audit; TI-RADS keeps its mark.
-  await expect(row.locator('.calc')).toHaveCount(0);
+  // Fleischner's calculator is a module, so its mark is the quick-view button; TI-RADS keeps the plain mark.
+  await expect(row.locator('.calc-toggle')).toBeVisible();
   await expect(page.locator('#list-popular li.row[data-id="ti-rads"] .calc')).toHaveText('calc');
   await expect(page.locator('#list-popular li.row[data-id="ecv"] .version')).toHaveCount(0);
 });
