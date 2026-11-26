@@ -52,6 +52,11 @@
         "agrees": false,
         "note": "Reviewer: correct. Name, version, year and mpMRI application match. Small omission: the AdMeTech Foundation is the third sponsoring body alongside ACR and ESUR. The box itself carries no citation. (pirads-2-1, title page and Introduction, p. 1 (PDF p. 8))",
         "resolution": "Changed to correct: the box's own claims (name, version 2.1, 2019, ACR/ESUR, mpMRI) match the document; the v2 content elsewhere is already its own findings (-04, -11, -15, -17)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -78,6 +83,11 @@
       "recheck": {
         "agrees": true,
         "note": "The two limbs quoted are right (the PDF shows ≥; the .txt renders it as >), but the page's definition drops the third limb, extraprostatic extension, and the 3+4 qualifier. \"Grade Group ≥ 2\" is the page's gloss; the document does not use Grade Groups. Incomplete rather than contradictory. (pirads-2-1, Section III, p. 10 (PDF p. 17))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -99,6 +109,11 @@
       "recheck": {
         "agrees": true,
         "note": "All seven PZ runs match the v2.1 PZ table, and the expected values in the case file are right. The code (dwi 3 → 4 only if DCE positive, else the DWI score) is the v2.1 PZ rule. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -125,6 +140,11 @@
       "recheck": {
         "agrees": true,
         "note": "Two errors in the code (`t2wi_score === 3 ? (dwi_score >= 4 ? 4 : 3) : t2wi_score`): T2W 3 + DWI 4 gives 4 (should be 3, in v2 and v2.1 alike), an overcall that prints \"Targeted biopsy recommended\"; and T2W 2 + DWI 4 or 5 stays 2 (v2.1: 3), an undercall that prints \"No biopsy recommended\". The case file's expected values are correct against the table; the other TZ runs match. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18); p. 13 (PDF p. 20); pirads-2-1-revisions, slide \"Image Interpretation: Transition Zone\")"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -151,6 +171,11 @@
       "recheck": {
         "agrees": true,
         "note": "The DWI 2 and 3 labels are the v2 wording that v2.1 replaced, and \"<1.5 cm\" on DWI 3 is in neither version (size appears only at scores 4 and 5). T2W 2 is the v2 wording; T2W 1 \"round well-defined BPH nodule\" drops v2.1's \"completely encapsulated\" (a circumscribed nodule without a capsule is score 2). There is no \"X\" option, so the v2.1 tables for inadequate DWI or DCE cannot be applied; in those tables T2W does score the PZ and DCE does act in the TZ (T2W 3, DWI X), so the hints \"not used for PZ scoring\" and \"PZ only\" hold only when all sequences are adequate. The DCE label omits that the enhancement must correspond to a suspicious T2W/DWI finding. (pirads-2-1, Section IV B.2 DWI table, p. 20 (PDF p. 27); Section IV A.2 T2W TZ table, p. 18; Caveats and \"Assessment Without Adequate DWI / DCE\" tables, pp. 15–16; pirads-2-1-revisions, slides \"Image Interpretation: DWI\" and \"Assessment of T2W\")"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -173,6 +198,11 @@
       "recheck": {
         "agrees": true,
         "note": "The five labels (very low, low, intermediate, high, very high) match. \"Essentially no csPCa\" for category 1 is stronger than the document's \"highly unlikely to be present\". (pirads-2-1, Section III, PI-RADS v2.1 Assessment Categories, p. 10 (PDF p. 17))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -198,6 +228,11 @@
       "recheck": {
         "agrees": true,
         "note": "The content agrees with the one sentence PI-RADS gives (not for 1 or 2; 3 depends on other factors), and CAR supports using PSA density for PI-RADS 3. But it is laid out as an \"Action\" column although PI-RADS v2.1 says it makes no management recommendations; and CUA words a negative MRI as \"consider forgoing any biopsy after discussion ... shared decision-making\" (8–24% of csPCa missed), softer than a flat \"No biopsy\". Borderline with `unsourced`. (pirads-2-1, Section III, p. 10 (PDF p. 17); car-prostate-mri-2022, Reporting, Findings, p. 7; cua-prostate-early-diagnosis-2022, rec. 5a, p. E188)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -230,6 +265,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced (management). PI-RADS says only that biopsy \"should be considered\" for 4 or 5 and expressly makes no management recommendation; the graded \"recommended\" / \"strongly recommended\" wording is in none of the sources. \"Targeted biopsy\" alone also differs from CUA, which asks for targeted plus systematic biopsy together after a positive MRI. The direction (biopsy for 4 and 5) is right; the attribution and strength are not sourced. (pirads-2-1, Section III, p. 10 (PDF p. 17); cua-prostate-early-diagnosis-2022, rec. 5a, p. E188)",
         "resolution": "Changed to unsourced with management, as the reviewer has it: the graded \"recommended / strongly recommended\" wording is in no source, and \"targeted biopsy\" alone differs from the CUA pathway CAR points to (targeted plus systematic)."
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(In chat.) The Action column gives PI-RADS v2.1's line (p. 10): biopsy should be considered for 4 or 5, not for 1 or 2; for 3 it depends on factors other than the MRI. The urology pathway CAR supports (CUA 2022 endorsing CCO 2021: targeted plus systematic biopsy) goes under \"Other guidelines differ\".",
+        "date": "2026-11-26"
       }
     },
     {
@@ -251,6 +291,11 @@
       "recheck": {
         "agrees": true,
         "note": "Dominant and secondary sequences for PZ and TZ are as the document states. (pirads-2-1, Caveats for Overall Assessment, p. 14 (PDF p. 21); Section III, p. 10)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -277,6 +322,11 @@
       "recheck": {
         "agrees": true,
         "note": "v2.1 does not say the central zone is assessed as part of the TZ. It gives the CZ its own evaluation (asymmetry and focal early enhancement) and notes most cancers there extend from the adjacent PZ or TZ; it discourages lumping CZ with TZ. The \"apply PZ or TZ criteria by zone of origin\" rule is stated for the AFMS, not the CZ. (pirads-2-1, Evaluation of the central zone and of the AFMS, p. 14 (PDF p. 21); Section II A, p. 7)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -303,6 +353,11 @@
       "recheck": {
         "agrees": true,
         "note": "Scores 2 and 3 are the v2.0 definitions, which v2.1 replaced (the revision summary lists \"Revisions in criteria for DWI scores of 2 and 3\"). \"<1.5 cm\" on score 3 is in neither version. The parenthesis on score 1 (\"homogeneous hyperintense on ADC and iso/hyperintense on high b-value\") is not the document's wording. (pirads-2-1, Section IV B.2 PI-RADS Assessment of DWI, p. 20 (PDF p. 27); pirads-2-1-revisions, slide \"Image Interpretation: DWI\")"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -325,6 +380,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches v2.1 (unchanged from v2). (pirads-2-1, Section IV B.2 PI-RADS Assessment of DWI, p. 20 (PDF p. 27))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -352,6 +412,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Focal, earlier than or contemporaneous, and the 3 → 4 upgrade in the PZ are right; a negative DCE leaves the DWI score. The page leaves out the third condition (the enhancement must correspond to a suspicious T2W and/or DWI finding) and that focal enhancement in a lesion with BPH features counts as negative. (pirads-2-1, Section IV C, p. 22 (PDF p. 29) and C.2 table; Section III, p. 10)",
         "resolution": "Stands as wrong with management: the omitted third condition (enhancement matching a suspicious T2W/DWI finding) and v2.1's negatives (a BPH-type nodule extruded into the PZ) are what stop a false DWI 3 → 4 upgrade, so the gap changes the category (DCE section, pp. 21–22)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -373,6 +438,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches the PZ table. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -399,6 +469,11 @@
       "recheck": {
         "agrees": true,
         "note": "Both rows are built on the v2.0 text; v2.1 revised T2W 1 and 2 in the TZ. Score 1 in v2.1 needs a completely encapsulated nodule: the page's \"round/well-defined hypointense nodule\" without a capsule is a v2.1 score 2. Score 2 is missing v2.1's mostly encapsulated nodule, circumscribed nodule without capsule, and mildly hypointense area between nodules. The 1/2 split matters because a 2 with DWI ≥4 becomes PI-RADS 3. (pirads-2-1, Section IV A.2 T2W, Transition Zone table, p. 18 (PDF p. 25); pirads-2-1-revisions, slide \"Assessment of T2W\")"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -420,6 +495,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches v2.1. (pirads-2-1, Section IV A.2 T2W, Transition Zone table, p. 18 (PDF p. 25))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -446,6 +526,11 @@
       "recheck": {
         "agrees": true,
         "note": "Only a DWI score of 5 upgrades T2W 3 to PI-RADS 4; DWI 4 leaves it at 3 (true in v2 as well). And DWI 4 or 5 does change a T2W 2 (to PI-RADS 3 in v2.1), which the page's \"DWI role\" omits. The page would send T2W 3 / DWI 4 lesions to category 4. (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18); pp. 13–14 (PDF pp. 20–21))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -472,6 +557,11 @@
       "recheck": {
         "agrees": true,
         "note": "The PZ arm is right. The TZ arm is wrong twice: \"T2WI = 3 → DWI ≥ 4? → PI-RADS 4\" (should be DWI 5 only) and \"T2WI = 1, 2, 4, or 5 → PI-RADS = T2WI score\" (T2W 2 with DWI ≥4 is PI-RADS 3). (pirads-2-1, Section III, PI-RADS Assessment tables, p. 11 (PDF p. 18))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -494,6 +584,11 @@
       "recheck": {
         "agrees": true,
         "note": "The gland proportions for TZ and CZ are the wrong way round: the document gives TZ 5% and CZ about 20% of glandular tissue (the page says TZ ~20–30%, CZ ~5%), and it discourages the term \"central gland\". The page seems to have copied the TZ's share of cancers into its share of the gland. PZ figures and the cancer-origin column are right, except AFMS \"Rare\": the document says cancer does not originate there. (pirads-2-1, Section II A Normal Anatomy, p. 7 (PDF p. 14); AFMS, p. 14)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -517,6 +612,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Four rows match. Details: the document says contact \"greater than 1.0 cm\" (page: ≥1 cm), and it does not list \"tumor abutting seminal vesicle\"; its seminal vesicle signs are low T2 signal, restricted diffusion, obliteration of the prostate–seminal vesicle angle and direct extension. Breach of the capsule/direct extension and bladder wall invasion are not on the page. (pirads-2-1, Section V Staging, p. 25 (PDF p. 32); Appendix III Staging Terms, p. 38)",
         "resolution": "Stands as wrong, without management: re-read p. 25 — the source lists contact \"greater than 1.0 cm\" and does not give \"tumor abutting seminal vesicle\"; breach of the capsule and bladder wall invasion are missing. Minor; stage 3 rewrites the table."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -540,6 +640,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). The imaging signs match. The \"T3b\" label is standard staging but is not stated in any of the audit sources (PI-RADS says only \"≥T3 disease\"). (pirads-2-1, Section V Staging, p. 25 (PDF p. 32))",
         "resolution": "Stands as wrong: re-read p. 25 (PDF p. 32) — the features of seminal vesicle invasion are listed as alternatives (\"and/or\": low T2W signal or abnormal enhancement, restricted diffusion, obliteration of the angle, direct extension); the page requires low signal AND direct extension, which under-calls invasion. \"T3b\" is not in the audit sources."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -565,6 +670,11 @@
       "recheck": {
         "agrees": true,
         "note": "Formula is right. (pirads-2-1, Section III A, Measurement of the Prostate Gland, p. 12 (PDF p. 19); car-prostate-mri-2022, Reporting, p. 7)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -597,7 +707,12 @@
         "note": "Reviewer: unsourced (management). PI-RADS v2.1 gives no PSA density bands. The cut-points 0.10 and 0.15 echo CAR's \"approximately 0.1 to 0.15 ... suggested for biopsy\", but CAR gives them as a range of biopsy thresholds, not three bands; \"biopsy may be deferred\" below 0.10 and \"shared decision-making\" between are the page's own. CUA discourages using PSAD alone and writes its threshold as >0.15 (page: ≥0.15). (car-prostate-mri-2022, Reporting, Findings, p. 7; cua-prostate-early-diagnosis-2022, PSA density, p. E189; pirads-2-1, p. 12 (formula only))",
         "resolution": "Changed to unsourced with management, as the reviewer has it: the three named bands and their actions (\"biopsy may be deferred\" below 0.10) are in no source; CAR gives \"approximately 0.1 to 0.15\" as suggested biopsy thresholds for PI-RADS 3 and CUA >0.15, not to be used alone."
       },
-      "question": "The page's PSA-density bands for PI-RADS 3 (<0.10 \"biopsy may be deferred\", 0.10–0.15 shared decision, ≥0.15 supports biopsy) are in no published source. Are they your local practice, or should the page restate CAR's \"about 0.10–0.15\" threshold?"
+      "question": "The page's PSA-density bands for PI-RADS 3 (<0.10 \"biopsy may be deferred\", 0.10–0.15 shared decision, ≥0.15 supports biopsy) are in no published source. Are they your local practice, or should the page restate CAR's \"about 0.10–0.15\" threshold?",
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Not local practice: restate CAR's PSA density of about 0.10–0.15; the named bands go.",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-pi-rads-24",
@@ -623,6 +738,11 @@
       "recheck": {
         "agrees": true,
         "note": "Formula is right. v2.1 also fixes where to measure (AP and longitudinal on mid-sagittal T2W, transverse on axial T2W), which the page omits. Feeds PSA density, but the formula itself is correct. (pirads-2-1, Section III A, Measurement of the Prostate Gland, p. 12 (PDF p. 19); pirads-2-1-revisions, slide \"Prostate Volume Measurement\")"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -649,6 +769,11 @@
       "recheck": {
         "agrees": true,
         "note": "The division is right (12.1/42 = 0.288, the document's 0.29). Faults: (1) it bands the rounded value, so 0.0998 is called Intermediate and 0.1498 Higher, against the page's own table; (2) a blank, zero or negative PSA is not rejected (`Number('')` is 0) and returns \"Low risk. Biopsy may be deferred in PI-RADS 3 lesions\", a false reassurance; only volume is validated; (3) the bands themselves are unsourced (see 23). The case file's expected readings are fair; its band labels are the page's, not a source's. (pirads-2-1, p. 12 (PDF p. 19) and Appendix I example, p. 28; car-prostate-mri-2022, Reporting, p. 7; code: guideline_calculators.js psa_density_calculator)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -675,6 +800,11 @@
       "recheck": {
         "agrees": true,
         "note": "As a PI-RADS v2.1 minimum, \"≥3 planes\" is wrong: v2.1 requires axial plus at least one other plane (a listed v2.1 revision). Three planes is CAR's recommendation, so that part is defensible under the CAR-leads rule but should be attributed. In-plane resolution is incomplete: ≤0.7 mm is the phase direction only; frequency is ≤0.4 mm. Slice thickness 3 mm (no gap) is right. Borderline; the in-plane figure is the clear fault. (pirads-2-1, Section IV A.1 Technical Specifications T2W, pp. 17–18 (PDF pp. 24–25); pirads-2-1-revisions, \"Major Revisions\"; car-prostate-mri-2022, MRI protocol, p. 5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -706,6 +836,11 @@
         "agrees": false,
         "note": "Reviewer: wrong. The high b-value set (≥1400) is mandatory in v2.1 (acquired or calculated), not optional. The ADC b-values should be a low value of 0–100 (preferably 50–100, not 0) and an intermediate 800–1000, capped at 1000; \"b ≥ 800\" has no upper limit. (pirads-2-1, Section IV B.1 Technical Specifications, p. 19 (PDF p. 26); pirads-2-1-revisions, slide \"Image Acquisition: DWI\")",
         "resolution": "Stands with management: high b-value images (≥1400, acquired or calculated) are mandatory in v2.1 (p. 19) and CAR (p. 6); a protocol built from the page would omit them, and they matter most for anterior and TZ tumours, so detection and the category can change."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -732,6 +867,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches. The document's coverage includes the seminal vesicles as well as the prostate. (pirads-2-1, Section IV C.1 Technical Specifications, p. 22 (PDF p. 29))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -758,6 +898,11 @@
       "recheck": {
         "agrees": true,
         "note": "Consistent with PI-RADS and with CAR (3T whenever possible; endorectal coil not necessary). PI-RADS gives \"increased SNR\" as the 3T advantage. (pirads-2-1, Section I B.1–2, pp. 5–6 (PDF pp. 12–13); car-prostate-mri-2022, Technical considerations, p. 4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -784,6 +929,11 @@
       "recheck": {
         "agrees": true,
         "note": "Most listed elements are in the PI-RADS and CAR templates, but the location line cites a \"27-sector map\": v2.1 uses a 41-sector map. \"Clinical management recommendation\" in the impression is not a PI-RADS element (the document makes no management recommendations). Missing against the templates under a \"Required\" heading: indication with PSA and prior biopsy/therapy, comparison, image quality, hemorrhage, neurovascular bundles, bones, series/image numbers; lesions are capped at four. (pirads-2-1, Appendix I Report Template, pp. 26–27 (PDF pp. 33–34); Appendix II Sector Map, p. 29; car-prostate-mri-2022, Reporting, p. 7 and Appendix E)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -814,6 +964,11 @@
       "recheck": {
         "agrees": true,
         "note": "v2.1 has 41 sectors (38 prostate, 2 seminal vesicles, 1 external urethral sphincter), not 27. The TZ is right/left × base/mid/apex × anterior/posterior (the page: 4 sectors, no apex); the AFMS is right/left at three levels (the page: 1). PZ subdivisions are anterior, medial posterior and lateral posterior. The page's own counts add to 25, not 27, and it omits the urethral sphincter. (pirads-2-1, Appendix II Sector Map, p. 29 (PDF p. 36); Section II B, p. 8; pirads-2-1-revisions, slide \"Revisions in the Sector Map\")"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -837,6 +992,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced. Mixed list. Supported: keep PZ and TZ apart (zonal location is \"vital\"); do not overcall encapsulated BPH nodules; assess the prostate margin/EPE per lesion. Not supported: \"anterior TZ tumors ... can be subtle on DWI\" (the document says high b-value DWI helps most for anterior tumours); and \"don't assign PI-RADS based on a single sequence\" sits badly with the dominant-sequence rule, under which most categories come from one sequence (e.g. PZ DWI 4 with T2W 2 is 4). (pirads-2-1, Caveats for Overall Assessment, pp. 14–15 (PDF pp. 21–22); Section IV B, p. 19; Appendix I template)",
         "resolution": "Stands as wrong: the list is mixed, but \"don't assign PI-RADS based on a single sequence\" contradicts the dominant-sequence rule (pp. 14–15: the category comes from DWI in the PZ, T2W in the TZ), and the anterior-tumour line inverts the document's advice on high b-value DWI (p. 19)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -858,7 +1018,12 @@
       ],
       "verdict": "correct",
       "management": false,
-      "home": "Prostate MRI (PI-RADS) › Reporting"
+      "home": "Prostate MRI (PI-RADS) › Reporting",
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-pi-rads-34",
@@ -884,6 +1049,11 @@
       "recheck": {
         "agrees": true,
         "note": "Recording prior therapy is right (the template's indication line asks for it). But \"may alter assessment\" understates the document: after treatment the PI-RADS assessment criteria do not apply at all, so a PI-RADS category should not be assigned by these rules. CAR adds that contrast (mpMRI) should be used after treatment. Borderline between `wrong` and an incomplete `correct`. (pirads-2-1, Introduction, p. 2 (PDF p. 9); Section IV D, p. 24 (PDF p. 31); Appendix I template)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -910,6 +1080,11 @@
         "agrees": false,
         "note": "Reviewer: correct. Dates and versions are right. The v2.1 summary is thin: it leaves out the changes that matter most for scoring (TZ T2W 1 and 2 criteria and the TZ overall-category rule, sector map, volume measurement), which are exactly the ones the page failed to apply. (pirads-2-1, title page and Introduction, pp. 1–2; pirads-2-1-revisions, \"Major Revisions in PI-RADS v2.1\"; pirads-2-1 ref. 17)",
         "resolution": "Changed to correct: dates and versions are right; the v2.1 summary is thin but not false."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -936,6 +1111,11 @@
       "recheck": {
         "agrees": true,
         "note": "All three citations match (authors, titles, journal, year, volume, pages). The issue numbers (3 and 1) are not given in the audit sources, so those alone are unchecked. Reference 3 is the v2 paper, which fits the v2 wording found on the page. (docs/audit/sources.json (pirads-2-1); car-prostate-mri-2022, refs 9 and 10; pirads-2-1, ref. 17)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -958,6 +1138,11 @@
         "agrees": false,
         "note": "Reviewer: correct. Title, version and summary are accurate as a description of PI-RADS v2.1. Note the row also sets `calculator: true`, and the linked calculator is wrong in the transition zone (piece 04). (pirads-2-1, title page; Caveats for Overall Assessment, p. 14 (PDF p. 21))",
         "resolution": "Changed to correct: title, \"v2.1\" and summary describe the guideline accurately; the row's calculator mark goes off with the calculator (-04's fix)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -984,6 +1169,11 @@
       "recheck": {
         "agrees": true,
         "note": "Authors, title, journal, year and version match the white paper. The audit copy is the article-in-press PDF, which prints no volume or pages, so 14(5):587-595 could not be confirmed from the PDF itself (it matches the citation recorded in sources.json). (tirads-2017, title page, PDF p1 (DOI line); docs/audit/sources.json citation)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1010,6 +1200,11 @@
       "recheck": {
         "agrees": true,
         "note": "Option points and the 0/2/3/4-6/7+ mapping match the chart. One gap: a total of 1 (cystic, anechoic, macrocalcification) is called TR2, a total the chart gives no level for (the paper says all nodules other than 0-point ones merit at least two points); no FNA either way, so management is not changed. (tirads-2017, Fig 1 (chart), PDF p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) The rebuilt calculator labels a 1-point total TR2.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1031,6 +1226,11 @@
       "recheck": {
         "agrees": true,
         "note": "Every cut-off sits on the right side in the runs (thresholds are 'at or above'), and TR2 has no size threshold. The cases file's expected values agree with the chart. (tirads-2017, Fig 1 (chart), PDF p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1057,6 +1257,11 @@
       "recheck": {
         "agrees": true,
         "note": "Three faults: TR5 follow-up is printed as 1, 2, 3 and 5 years (the paper says every year for up to 5 years, so year 4 is dropped); a follow-up schedule is attached to nodules that meet the FNA threshold, which the paper does not give (the schedule is for nodules below the FNA size; sampled nodules are not addressed); and the 5-9 mm TR5 output omits that FNA may be appropriate by shared decision. 'Consider FNA' for TR3/TR4 is also softer than the paper's 'FNA should be recommended' at or above the threshold. (tirads-2017, Timing of Follow-Up Sonograms and Measurement and Documentation, PDF p6; Papillary Thyroid Microcarcinomas, PDF p5; Overview, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1083,6 +1288,11 @@
       "recheck": {
         "agrees": true,
         "note": "Echogenic foci are additive in ACR TI-RADS; a single drop-down cannot score two kinds. The worked case is right: solid (2) + isoechoic (1) + macrocalcifications (1) + punctate foci (3) = 7, TR5, FNA at 1.2 cm, but the calculator can only reach 6, TR4, follow-up. (tirads-2017, Fig 1 (chart), PDF p3; Overview, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1113,6 +1323,11 @@
       "recheck": {
         "agrees": true,
         "note": "A spongiform nodule is 0 points, TR1, whatever else is chosen; the calculator adds the other drop-downs and reached TR4 with 'Consider FNA'. Anechoic with a solid or mixed nodule is not a valid ACR combination (echogenicity is scored on the solid component, 1 point if it cannot be determined), yet it is accepted and turns a 3-point solid nodule into a 2-point TR2 with no FNA at 3 cm. (tirads-2017, Fig 1 (chart), PDF p3 explanatory notes; Composition and Echogenicity, PDF p4; Echogenic Foci, PDF p5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1135,6 +1350,11 @@
       "recheck": {
         "agrees": true,
         "note": "With no size (or 0 or a negative one) the code treats the size as 0 and prints 'No FNA, no follow-up needed (< 1.0 cm)' for a TR4 nodule; no recommendation can be given without a real diameter. Confirmed in the code (Number('') is 0, no validity check); typed in the form only 0 gets through, so the exposure is mainly links that fill the form. (tirads-2017, Overview, PDF p2; Measurement and Documentation, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1157,6 +1377,11 @@
       "recheck": {
         "agrees": true,
         "note": "Points, FNA thresholds and follow-up thresholds all match the chart. The table leaves out the chart's asterisk on TR5 (5-9 mm nodules, see the microcarcinoma discussion). (tirads-2017, Fig 1 (chart), PDF p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1179,6 +1404,11 @@
       "recheck": {
         "agrees": true,
         "note": "TR3 and TR4 intervals are right. TR5 is wrong: the paper says every year for up to 5 years (1, 2, 3, 4, 5); the page gives TR5 the TR4 schedule and drops year 4. (tirads-2017, Timing of Follow-Up Sonograms, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1206,6 +1436,11 @@
       "recheck": {
         "agrees": true,
         "note": "The exact figures (0.3, 1.5, 4.8, 9.1, 35%) are not in the white paper the page cites, the atlas or the chart; the paper gives only the ranges quoted. The figures fall inside those ranges and probably come from the paper's reference 29 (Middleton et al, AJR, 'in press'), which is not among the audit sources, so they could not be verified. The '~1.5%' printed for a 1-point total belongs to a level the chart does not define. (tirads-2017, Size Thresholds for FNA, PDF p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Use the white paper's ranges.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1227,6 +1462,11 @@
       "recheck": {
         "agrees": true,
         "note": "Name, 0 points, no FNA and the two typical appearances match. 'No follow-up' is implied rather than printed: the chart defines follow-up sizes only for TR3 to TR5. (tirads-2017, Fig 1 (chart), PDF p3; Composition, PDF p4; Overview, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1249,6 +1489,11 @@
       "recheck": {
         "agrees": true,
         "note": "Name, 2 points and no FNA are right, but the 'typical findings' are not: a solid isoechoic or hyperechoic nodule with no other feature scores 2 + 1 = 3 and is TR3 (follow at 1.5 cm, FNA at 2.5 cm), not TR2; only a mixed cystic and solid one scores 2. 'Predominantly cystic with thin internal septa' is not a TI-RADS description, and large comet-tail artifacts score 0, so a cystic colloid nodule is TR1. (tirads-2017, Fig 1 (chart), PDF p3; Overview, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1270,6 +1515,11 @@
       "recheck": {
         "agrees": true,
         "note": "Name, points, both thresholds and the interval match. (tirads-2017, Fig 1 (chart), PDF p3; Timing of Follow-Up Sonograms, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1291,6 +1541,11 @@
       "recheck": {
         "agrees": true,
         "note": "Name, points, both thresholds and the interval match. (tirads-2017, Fig 1 (chart), PDF p3; Timing of Follow-Up Sonograms, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1313,6 +1568,11 @@
       "recheck": {
         "agrees": true,
         "note": "Name, points (≥7) and both size thresholds are right. The follow-up interval is wrong (every year for up to 5 years, not 1, 2, 3, 5), and the card omits the chart's footnote that FNA of a 5-9 mm TR5 nodule may be appropriate by shared decision. 'Management: FNA recommended' is true only at 1 cm or more. (tirads-2017, Timing of Follow-Up Sonograms, PDF p6; Fig 1 footnote, PDF p3; Papillary Thyroid Microcarcinomas, PDF p5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1339,6 +1599,11 @@
       "recheck": {
         "agrees": true,
         "note": "Points are right; two descriptions are not. Mixed cystic and solid is not 'solid component <50%' (it covers both predominantly cystic and predominantly solid nodules), and solid or almost completely solid is not 'solid component ≥50%' (it means entirely or nearly entirely solid). By the page's wording a 60% solid nodule would score 2 instead of 1. The cystic and spongiform rows are acceptable. (tirads-2017, Composition, PDF p4; acr-tirads-atlas, Composition slides)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1361,6 +1626,11 @@
       "recheck": {
         "agrees": true,
         "note": "Points and descriptions match the chart. (tirads-2017, Fig 1 (chart), PDF p3 explanatory notes; Echogenicity, PDF p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1387,6 +1657,11 @@
       "recheck": {
         "agrees": true,
         "note": "Points (0 and 3) and the transverse-image rule are right, but the cut is misplaced: the ACR atlas makes taller-than-wide a ratio above 1 and wider-than-tall a ratio of 1 or less. The page (table and calculator option) gives a nodule with equal dimensions 3 points; ACR gives it 0. The white paper itself states no ratio. (acr-tirads-atlas, Shape slides; tirads-2017, Fig 1 note and Shape, PDF p3-4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1413,6 +1688,11 @@
       "recheck": {
         "agrees": true,
         "note": "Points and descriptions agree. Two nuances the page loses: the 3 points are for obvious invasion (the paper urges caution with minimal extension), and the paper says 'border', not capsule, because the gland has no true fibrous capsule. (tirads-2017, Fig 1 (chart), PDF p3 explanatory notes; Margin, PDF p5; acr-tirads-atlas, Margin slides)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1439,6 +1719,11 @@
       "recheck": {
         "agrees": true,
         "note": "The four point values are right. 'Punctate echogenic foci: ± shadowing' contradicts the paper (they are nonshadowing; small comet-tail artifacts are allowed), which blurs the line with macrocalcifications (1 point vs 3). The table also never says that all foci types present are added. (tirads-2017, Echogenic Foci, PDF p5; Fig 1, PDF p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1461,6 +1746,11 @@
       "recheck": {
         "agrees": true,
         "note": "Maximum diameter and no size threshold for TR1-TR2 match the paper. 'To one decimal', 'include solid and cystic components' and 'document plane of measurement' are not in the paper (not contradicted either); the paper's own instruction, three axes (two on the axial image, one sagittal), is missing. (tirads-2017, Measurement and Documentation, PDF p6; Overview, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1483,6 +1773,11 @@
       "recheck": {
         "agrees": true,
         "note": "Close but not exact: the paper's bar is a 20% increase with a minimum of 2 mm (at least, not more than), and the page omits the alternative criterion, a 50% or greater increase in volume. Growth decides whether follow-up can stop at 5 years. (tirads-2017, Definition of Growth, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1505,6 +1800,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper's minimum interval between follow-up scans is 1 year, not 6 months; nothing in it supports 6 months. (tirads-2017, Timing of Follow-Up Sonograms, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1528,6 +1828,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper is for adult patients and gives no age of 14; '<14' implies it applies at 14 to 17, which the paper does not support. (tirads-2017, Project Rationale and Consensus Process, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Adults only; children and adolescents stay on the gap list.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1551,6 +1856,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper states no exclusion for patients with a history of thyroid cancer; its only related remarks are that proven cancers under surveillance may need more frequent scans and that the patient's risk factors should be weighed. Reasonable practice, but not from the cited source. (tirads-2017, whole paper (searched); nearest text: Timing of Follow-Up Sonograms, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Not local practice: remove.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1572,6 +1882,11 @@
       "recheck": {
         "agrees": true,
         "note": "Supported: sampled nodules are outside the paper's scope (cytology guides them), and lymph nodes are assessed by their own criteria, not by TI-RADS points. The paper says this by scope rather than as a 'do not apply' rule. (tirads-2017, Measurement and Documentation, PDF p6; Assessment of Cervical Lymph Nodes, PDF p7; Feature Categories, PDF p4)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1594,6 +1909,11 @@
       "recheck": {
         "agrees": true,
         "note": "Self-contradictory: TI-RADS does apply to purely cystic nodules, which it scores 0 points, TR1 (as the page's own label admits). It does not belong in a 'do not apply' list; management is unchanged (no FNA). (tirads-2017, Fig 1 (chart), PDF p3; Composition, PDF p4; Project Rationale, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1616,6 +1936,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper is more definite than 'clinical correlation': suspicious cervical nodes should be sampled (FNA). The page understates the recommendation rather than contradicting it; judged wrong because a reader would not learn that FNA is advised. (tirads-2017, Assessment of Cervical Lymph Nodes, PDF p7)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1639,6 +1964,11 @@
       "recheck": {
         "agrees": true,
         "note": "Rapid growth, compressive symptoms, thyroglobulin and PET avidity are not mentioned in the white paper, atlas or chart; only the general call for clinical judgment is. Sensible teaching, but not from the cited source. (tirads-2017, whole paper (searched); nearest text: Project Rationale, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Replace the list with the ACR's general line on clinical factors.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1661,6 +1991,11 @@
       "recheck": {
         "agrees": true,
         "note": "Location, three dimensions, the five scored features, total and level, and a size-based recommendation all follow the paper. Gland size and echogenicity and nodule count are not in the paper; missing from the list are the paper's limits (report no more than four nodules for follow-up, biopsy no more than two) and, for 5-9 mm TR5 nodules, whether the nodule is reproducibly measurable and abuts the trachea or tracheoesophageal groove. (tirads-2017, Measurement and Documentation, PDF p6; Overview, PDF p2; Fig 1, PDF p3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1678,7 +2013,12 @@
       ],
       "verdict": "correct",
       "management": false,
-      "home": "Thyroid nodules › Reporting"
+      "home": "Thyroid nodules › Reporting",
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-ti-rads-32",
@@ -1700,6 +2040,11 @@
       "recheck": {
         "agrees": true,
         "note": "'Don't add multiple features from same category' is wrong for echogenic foci, where every type present is added (true only for the first four categories). The other two lines are fine: size does not change the level, and macrocalcifications (shadowing, 1 point) differ from punctate foci (nonshadowing, 3 points). (tirads-2017, Fig 1 (chart), PDF p3; Overview, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1722,6 +2067,11 @@
       "recheck": {
         "agrees": true,
         "note": "'Don't include halo in measurement' is the opposite of the paper. 'Don't measure only transverse plane' agrees with the three-axis rule; 'don't round up aggressively' is not in the paper. (tirads-2017, Measurement and Documentation, PDF p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1744,6 +2094,11 @@
       "recheck": {
         "agrees": true,
         "note": "The three lines follow the paper's general rules. The first is stated more absolutely than the paper, which allows FNA of 5-9 mm TR5 nodules by shared decision and leaves room for referrer preference and patient risk factors; that exception is what is missing (see the TR5 card). (tirads-2017, Papillary Thyroid Microcarcinomas, PDF p5; Number of Nodules to Biopsy, PDF p6-7; Assessment of Cervical Lymph Nodes, PDF p7)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1762,7 +2117,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Optional: turn into a short \"other guidelines differ\" note giving versions (ATA 2015) and that ATA and the Korean system biopsy mildly and moderately suspicious nodules at smaller sizes.",
-      "home": "Thyroid nodules › Other guidelines differ"
+      "home": "Thyroid nodules › Other guidelines differ",
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-ti-rads-36",
@@ -1788,6 +2148,11 @@
       "recheck": {
         "agrees": true,
         "note": "The white paper link uses article number S1546-1440(17)30242-8, but ACR's chart gives the paper's JACR address as S1546-1440(17)30186-2 (the DOI also resolved to that number when checked 2026-11-25), so the link appears to point at a different article. On the same check the ACR calculator link returned 404 and the atlas link redirected to a sign-in page instead of the PDF. Link checks are live-web observations, not source verification; jacr.org refuses automated requests, so the 30242-8 page itself was not opened. (acr-tirads-chart, footer; tirads-2017, PDF p1 (DOI 10.1016/j.jacr.2017.01.046))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1805,6 +2170,11 @@
       "recheck": {
         "agrees": true,
         "note": "Two empty headings with nothing under them; nothing to verify and nothing useful to a reader. (tirads.md, last two headings (no source applies))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1830,6 +2200,11 @@
       "recheck": {
         "agrees": true,
         "note": "Title, version (ACR, 2017) and summary describe the white paper accurately. (tirads-2017, title page, PDF p1; Overview, PDF p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1866,6 +2241,11 @@
         "agrees": false,
         "note": "Reviewer: outdated. Name and publisher are right and a 2023 edition existed, but the manual has since been reissued (2024 readable here, 2025 current), and its version history names editions by year: nothing in it supports the label 'v11'. References 2 (Wang 2008) and 4 (McDonald 2013) appear in the manual's reference lists; reference 3 (Thomsen 2008) does not appear in the 2024 manual. Much of the page's content is not from the ACR manual at all (see other pieces). (acr-contrast-2024, title page and Version History, printed p 2-3 (PDF p 5-6))",
         "resolution": "Management flag removed, as the reviewer has it: the version label itself changes nothing a patient gets; the page's errors are their own findings, and the dated notice comes with them."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Leads confirmed per topic: CAR/CSACI 2025 for hypersensitivity and premedication; CAR 2022 for contrast-associated AKI and metformin; CAR 2018/2019 for gadolinium in kidney disease; the ACR Manual for reaction treatment, extravasation, pregnancy, breast-feeding and the thyroid.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1893,6 +2273,11 @@
         "agrees": false,
         "note": "Reviewer: wrong. The 1-hour window (CAR/CSACI: 'Acute or immediate HRs occur within 1 hour') and most entries match, but 'pallor/diaphoresis' (mild) and 'tachycardia/bradycardia' (moderate) are not in ACR Table 1, which CAR/CSACI reproduces as Appendix A. The page also drops the allergic-like versus physiologic split and the qualifiers that set the grade (facial edema 'without dyspnea', bronchospasm graded by hypoxia). (acr-contrast-2024, Table 1 Categories of Acute Reactions, printed p 95-96 (PDF p 98-99); car-csaci-hypersensitivity-2025, Physiology and Classification, p 2, and Appendix A)",
         "resolution": "Stands with management: the grade decides the treatment, and the page drops the qualifiers that set it (facial edema \"without dyspnea\", bronchospasm graded by hypoxia) — ACR Table 1, reproduced as CAR/CSACI Appendix A."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1920,6 +2305,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). A fair but thin summary. It leaves out the beta-agonist inhaler, which the ACR gives first for moderate bronchospasm before considering epinephrine, and for hypotensive patients the ACR prefers IV epinephrine (IM if no IV access). (acr-contrast-2024, Table 3 (hives p 104, bronchospasm p 106, hypotension p 108; PDF p 107, 109, 111) and Treatment of Contrast Reactions p 86 (PDF p 89))",
         "resolution": "Stands as wrong with management: re-read ACR Table 3 — for anaphylaxis with hypotension the ACR's first choice is epinephrine IV (IM only without IV access), and moderate bronchospasm starts with the beta-agonist inhaler; the page's quick-reference column, the part read mid-reaction, gives severe reactions IM only and skips the inhaler."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1946,6 +2336,11 @@
       "recheck": {
         "agrees": true,
         "note": "Skin-predominant and self-limited, treated with antihistamines or steroids, is right. The '1-72 hours' window is not the source's (ACR: up to one week; CAR/CSACI: 'hours to days'), and the incidence '~2% after ionic, ~1% after non-ionic' is in neither document (ACR 0.5% to 14%; CAR/CSACI 0.05% of LOCM administrations). (acr-contrast-2024, Delayed Adverse Events to Iodinated Contrast Media, printed p 28-29 (PDF p 31-32); car-csaci-hypersensitivity-2025, Frequency of Contrast Reactions, p 3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1972,6 +2367,11 @@
       "recheck": {
         "agrees": true,
         "note": "Neither the ACR manual nor CAR/CSACI has a 'late reaction (>72 hours)' category. The manual treats thyrotoxicosis and metformin-associated lactic acidosis as separate considerations, not as contrast reactions with a time window. (acr-contrast-2024, Patient Selection chapter, Hyperthyroidism, printed p 6 (PDF p 9); Metformin chapter p 44 (PDF p 47))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -1998,6 +2398,11 @@
       "recheck": {
         "agrees": true,
         "note": "Dose is right, route is not: for mild hives the ACR gives diphenhydramine 25-50 mg by mouth (or fexofenadine 180 mg PO); IM/IV is listed only for moderate or severe hives and carries a hypotension warning. CAR/CSACI also favours second-generation antihistamines for mild reactions. (acr-contrast-2024, Table 3 Hives (Urticaria), printed p 104 (PDF p 107))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2020,6 +2425,11 @@
       "recheck": {
         "agrees": true,
         "note": "Oxygen flow and epinephrine 0.3 mg IM of 1:1,000 match. The albuterol dose does not: the ACR gives 2 puffs, repeatable up to 3 times, not '2-3 puffs'. The page also omits the epinephrine repeat interval and 1 mg ceiling and the IV option (0.1 mg of 1:10,000); 'anterolateral thigh' is not in the manual. (acr-contrast-2024, Table 3 Bronchospasm, printed p 106 (PDF p 109))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2042,6 +2452,11 @@
       "recheck": {
         "agrees": true,
         "note": "Drug, dose, concentration, route and repeat interval match. Missing: the 1 mg total ceiling, the 6-10 L/min flow and the IV alternative (0.1 mg of 1:10,000). 'Prepare for possible intubation' is not in Table 3. (acr-contrast-2024, Table 3 Laryngeal Edema, printed p 107 (PDF p 110))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2069,6 +2484,11 @@
       "recheck": {
         "agrees": true,
         "note": "Several numbers differ from the ACR: epinephrine IM is 0.3 mg (not 0.3-0.5 mg) with a 1 mg ceiling, and IV is the preferred route in hypotension; oxygen is 6-10 L/min (not 10-15); saline is 1,000 mL rapidly (not 1-2 L). Diphenhydramine is not part of the ACR's hypotension treatment, and the manual warns the IM/IV form 'may cause or worsen hypotension'. Epinephrine infusion and vasopressors are not in the manual. (acr-contrast-2024, Table 3 Hypotension (anaphylactoid reaction), printed p 108 (PDF p 111), and Hives footnote p 104 (PDF p 107))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) No local anaphylaxis protocol: the page gives the ACR's doses.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2091,6 +2511,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Atropine 0.6-1 mg IV, leg elevation and fluids match. The ACR says 'elevate legs at least 60 degrees' (it does not use 'Trendelenburg'), gives oxygen 6-10 L/min for all forms rather than 'if needed', and adds the 3 mg atropine ceiling and the 1,000 mL fluid volume. (acr-contrast-2024, Table 3 Hypotension with bradycardia (vasovagal reaction), printed p 108 (PDF p 111))",
         "resolution": "Changed to correct, as the reviewer has it: atropine dose, leg elevation and fluids match; \"Trendelenburg\" for \"legs elevated at least 60 degrees\" and oxygen \"if needed\" are wording, not a different treatment."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2122,6 +2547,11 @@
       "recheck": {
         "agrees": true,
         "note": "CAR/CSACI (the lead) recommends contrast switching and against steroid premedication for prior reactions of any severity; only an optional second-generation antihistamine for a prior mild reaction. The page follows the ACR approach, and loosely: the ACR's indication is any prior allergic-like or unknown-type reaction to the same class, with no 'moderate or severe' or 'multiple mild' rule. The note that no premedication eliminates risk agrees with both. (car-csaci-hypersensitivity-2025, Recommendations 3, 5, 6, 7 and 10, p 9-11; acr-contrast-2024, Indications for Premedication, printed p 9 (PDF p 12))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) CAR/CSACI 2025 leads: after a reaction, switch to a different agent; no steroid premedication.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2148,6 +2578,11 @@
       "recheck": {
         "agrees": true,
         "note": "Contradicts both bodies. The ACR says not to premedicate for asthma alone; CAR/CSACI says a patient is at risk only after a previous hypersensitivity reaction to the same type of contrast agent, with insufficient evidence to screen for other risk factors. (acr-contrast-2024, Patient Selection chapter, Asthma, printed p 5 (PDF p 8) and Indications for Premedication p 9 (PDF p 12); car-csaci-hypersensitivity-2025, Recommendation 2, p 9)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2175,6 +2610,11 @@
       "recheck": {
         "agrees": true,
         "note": "Dose is right but the timing is not the ACR's: methylprednisolone 32 mg is given 12 hours and 2 hours before contrast, not 13 hours and 1 hour (those are the prednisone timings). It also departs from the lead: CAR/CSACI says routine steroid premedication should be discontinued. (acr-contrast-2024, Specific Recommended Premedication Regimens, printed p 9-10 (PDF p 12-13); car-csaci-hypersensitivity-2025, Recommendation 5, p 10)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Follows B2-contrast-safety-11: the ACR regimen moves to \"Other guidelines differ\".",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2202,6 +2642,11 @@
       "recheck": {
         "agrees": true,
         "note": "The doses and times match the ACR's prednisone regimen (50 mg at 13, 7 and 1 hours; diphenhydramine 50 mg IV, IM or PO at 1 hour, optional), but CAR/CSACI, the lead, recommends against steroid premedication and prefers contrast switching, with second-generation rather than first-generation antihistamines. Minor: the tab is titled '12-hour' though this is the 13-hour regimen, and the page lists diphenhydramine as PO only. (car-csaci-hypersensitivity-2025, Recommendations 5 and 7, p 10-11; acr-contrast-2024, Specific Recommended Premedication Regimens, printed p 9-10 (PDF p 12-13))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Follows B2-contrast-safety-11: the ACR regimen moves to \"Other guidelines differ\".",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2230,6 +2675,11 @@
         "agrees": false,
         "note": "Reviewer: not-lead (management). Drug, dose and interval match the ACR's accelerated option 1, but CAR/CSACI (the lead) recommends against steroid premedication. Two details also differ from the ACR: the regimen is 4-5 hours, not '3-5' (the ACR says regimens shorter than 4-5 hours have no evidence of efficacy), and 'less effective' is not what either source says (CAR/CSACI cites the 5-hour IV regimen as non-inferior to the 13-hour oral one). (car-csaci-hypersensitivity-2025, Recommendation 5, p 10-11, and Efficacy and Risks of ICM Premedication, p 4; acr-contrast-2024, Accelerated IV Premedication, printed p 10 (PDF p 13))",
         "resolution": "Changed to not-lead with management, as the reviewer has it: the drug, dose and interval are the ACR's accelerated option, and the lead (CAR/CSACI) recommends against steroid premedication; the \"3–5 hour\" label and \"less effective\" also depart from the ACR (4–5 hours)."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Follows B2-contrast-safety-11: the ACR regimen moves to \"Other guidelines differ\".",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2256,6 +2706,11 @@
       "recheck": {
         "agrees": true,
         "note": "Agrees with CAR 2022 and with the ACR: true contrast-induced AKI is rare and the risk sits in severely reduced kidney function; at eGFR 45 or above contrast is given with no precautions. (car-ca-aki-2022, Summary of recommendations, recommendations 3a and 8; acr-contrast-2024, PC-AKI chapter, Risk Thresholds, printed p 37 (PDF p 40))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2282,6 +2737,11 @@
       "recheck": {
         "agrees": true,
         "note": "CAR 2022 (the lead) treats eGFR above 30 as proceed, with no hydration. The row is nearer the ACR, which lets prophylaxis be 'considered on an individual basis for high-risk circumstances' at eGFR 30-44, but even the ACR says prophylaxis is not indicated for the general population at eGFR 30 or above, so 'IV hydration if feasible' as the default overstates it. (car-ca-aki-2022, Summary of recommendations, recommendations 3a and 8; acr-contrast-2024, PC-AKI chapter, Volume Expansion, printed p 40 (PDF p 43))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2309,6 +2769,11 @@
       "recheck": {
         "agrees": true,
         "note": "Caution and a shared decision with the care team match CAR. Hydration as a standing instruction follows the ACR ('Prophylaxis is indicated for patients who have AKI or severe CKD with an eGFR less than 30'); CAR makes no recommendation for IV contrast and leaves it to the institution (some members endorsed it for intra-arterial contrast). CAR's cut-off is 30 or below, not below 30. (car-ca-aki-2022, Summary of recommendations, recommendations 3a and 9; acr-contrast-2024, PC-AKI chapter, Volume Expansion, printed p 39 (PDF p 42))"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(In chat, paraphrased.) Local practice: IV hydration is not routinely given, including at eGFR ≤ 30 with IV contrast. The page says so, labelled local practice; CAR 2022 (Rec 9) makes no recommendation there and leaves it to each institution.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2335,6 +2800,11 @@
       "recheck": {
         "agrees": true,
         "note": "Contrast may be given: right. 'Coordinate dialysis timing if possible' contradicts both CAR (no change in dialysis schedule) and the ACR (patients should not have dialysis initiated or their schedule altered because of iodinated contrast). (car-ca-aki-2022, Summary of recommendations, recommendation 3b, and section Chronic dialysis patients; acr-contrast-2024, PC-AKI chapter, Renal Dialysis Patients, printed p 40 (PDF p 43))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2363,6 +2833,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). The target group is wrong for both bodies: CAR recommends no hydration above eGFR 30, and the ACR indicates it for AKI or eGFR under 30 (30-44 only case by case). The saline regimen (100 mL/hr for 6 hours before and after) is in neither document; the ACR describes starting 1 hour before and continuing 3-12 hours after. Both say bicarbonate adds nothing over saline, and neither gives the bicarbonate rates the page lists. (car-ca-aki-2022, Summary of recommendations, recommendations 8-10, and the prophylaxis section; acr-contrast-2024, PC-AKI chapter, Volume Expansion and Sodium bicarbonate, printed p 39-40 (PDF p 42-43))",
         "resolution": "Changed to wrong, as the reviewer has it: the target group (eGFR 30–44) is wrong for both bodies (CAR: no hydration above 30; ACR: AKI or eGFR under 30, 30–44 case by case), and the saline regimen is in neither."
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(In chat.) Follows B2-contrast-safety-18: the hydration regimens go. No hydration above eGFR 30 (CAR 2022 Rec 8); none routinely at ≤ 30 with IV contrast (local practice); with intra-arterial contrast at ≤ 30 it is the practitioner's decision (CAR 2022 Rec 10).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2388,6 +2863,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches CAR 2022 and the ACR. (car-ca-aki-2022, Summary of recommendations, recommendation 13; acr-contrast-2024, PC-AKI chapter, N-acetylcysteine, printed p 40 (PDF p 43))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2414,6 +2894,11 @@
       "recheck": {
         "agrees": true,
         "note": "Substantively the same as CAR, with small differences: the page uses the ACR's cut-off (no hold at 30 or above, hold below 30) where CAR holds at 30 or below; CAR and the ACR say AKI present, not 'expected'; CAR adds reassessment by the clinical team before restarting. Labelling the first row 'ACR guidance' for intra-arterial contrast is also inexact: the ACR's no-hold category is for intravenous contrast, and arterial catheter studies that might send emboli to the renal arteries are in its hold category. (car-ca-aki-2022, Summary of recommendations, recommendations 16-17; acr-contrast-2024, Metformin chapter, Category I and II, printed p 44-45 (PDF p 47-48))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2440,6 +2925,11 @@
       "recheck": {
         "agrees": true,
         "note": "No eGFR 30-60 intra-arterial rule exists in CAR 2022 or the ACR manual, and the row contradicts the page's own first row. CAR does not stop metformin or retest above eGFR 30 by any route (it asks for a 48-72 hour creatinine after intra-arterial contrast only at eGFR 30 or below). The ACR's arterial rule is not banded by eGFR: hold for arterial catheter studies that might cause emboli to the renal arteries. (car-ca-aki-2022, Summary of recommendations, recommendations 16 and 20; acr-contrast-2024, Metformin chapter, Category II, printed p 45 (PDF p 48))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2475,6 +2965,11 @@
       "recheck": {
         "agrees": true,
         "note": "The lead (CAR 2018/2019) could not be read. Against the ACR manual the table is wrong: Group I matches, but the ACR's Group II is the lowest-risk group (gadobenate, gadobutrol, gadoterate, gadoteridol, gadopiclenol, gadoxetate) and Group III is empty. The page puts the macrocyclics in a 'Group III (Lowest)' and calls Group II 'moderate', so its group numbers mean the opposite of the ACR's for the agents in use. The ACR does not list gadofosveset. The 2025 ACR edition changed this chapter and was not readable either. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter Table 1, printed p 80 (PDF p 83))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Until CAR 2018/2019 are read, the page carries the ACR 2024 grouping, labelled as the ACR's, and is checked against CAR when they are.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2510,6 +3005,11 @@
       "recheck": {
         "agrees": true,
         "note": "The lead (CAR 2018/2019) could not be read. Against the ACR manual the table is wrong: for dialysis, eGFR under 30 and AKI the ACR says Group I is contraindicated or avoided and a Group II agent should be used, so 'avoid Group I/II' and 'Group III only' point away from the recommended agents (the ACR's Group III is empty). The ACR does not ask for a documented risk discussion with Group II agents, and has no 15-29 versus under-15 split; at eGFR 30-59 it says no special precautions. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter, General Recommendations and Specific Groups of Patients, printed p 78-79 (PDF p 81-82))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Follows B2-contrast-safety-24: the ACR 2024 advice until CAR 2018/2019 are read.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2532,6 +3032,11 @@
       "recheck": {
         "agrees": true,
         "note": "Matches the ACR: placental passage, the association reported in a retrospective study, use only when benefit outweighs risk, consent and lowest dose. 'Avoid repeated exposure' is not stated in the manual. (acr-contrast-2024, Pregnancy chapter, Gadolinium-Based Contrast Agents, printed p 89 (PDF p 92), and Gadolinium Pregnancy Screening Statement p 74 (PDF p 77))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2554,6 +3059,11 @@
       "recheck": {
         "agrees": true,
         "note": "Figures and advice match the ACR (safe to continue; a concerned mother may express and discard for 12 to 24 hours). (acr-contrast-2024, Breast-feeding chapter, Gadolinium-Based Contrast Agents, printed p 93-94 (PDF p 96-97))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2576,6 +3086,11 @@
       "recheck": {
         "agrees": true,
         "note": "Placental passage is right. The ACR says IV iodinated contrast does not affect short-term neonatal TSH, reports no documented case of neonatal hypothyroidism from maternal intravascular water-soluble contrast, and says no extra thyroid check is needed beyond routine newborn screening. It also says not to withhold iodinated contrast in pregnancy when it is needed diagnostically. (acr-contrast-2024, Pregnancy chapter, Effect of iodinated contrast media on fetal thyroid function and Recommendations, printed p 88 (PDF p 91))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2597,6 +3112,11 @@
       "recheck": {
         "agrees": true,
         "note": "Figures and advice match the ACR. The manual adds that the decision rests with the mother, who may abstain for 12 to 24 hours if concerned. (acr-contrast-2024, Breast-feeding chapter, Iodinated X-ray Contrast Media, printed p 93 (PDF p 96))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2619,6 +3139,11 @@
       "recheck": {
         "agrees": true,
         "note": "The volume thresholds (10 mL iso-osmolar, 2 mL high-osmolar, 'hypo-osmolar agents') appear nowhere in the manual, and grading by volume is what the ACR advises against: consult surgery on signs and symptoms (severe or progressive pain or swelling, reduced capillary refill, altered sensation, reduced range of motion, ulceration or blistering). Elevation above the heart, cold compresses and return instructions agree; the '15-20 min several times/day' schedule is not in the manual. (acr-contrast-2024, Extravasation chapter, Question 5 and Surgical Consultation, printed p 19-22 (PDF p 22-25))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2637,7 +3162,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Correct; the ACR also asks for an observation period before discharge, documentation, and notice to the referrer after a symptomatic extravasation.",
-      "home": "Contrast extravasation › Management"
+      "home": "Contrast extravasation › Management",
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-contrast-safety-32",
@@ -2661,6 +3191,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). First and third bullets agree (thyrotoxicosis possible but rare; no effect with a normal thyroid). The second does not: the ACR says not to restrict contrast for a history of hyperthyroidism and requires no endocrinology discussion; its one exception, avoiding contrast in acute thyroid storm, is missing from the page. 'Large doses' and 'autonomous nodules, Graves' disease' are not the manual's wording. (acr-contrast-2024, Patient Selection chapter, Hyperthyroidism and Normal Thyroid Function, printed p 6 (PDF p 9))",
         "resolution": "Changed to wrong, as the reviewer has it: the ACR says not to restrict contrast for a history of hyperthyroidism and requires no endocrinology discussion; its one exception, acute thyroid storm, is missing. The owner question (local practice?) stays."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Not local practice: the endocrinology discussion goes, and the thyroid-storm exception is added.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2683,6 +3218,11 @@
       "recheck": {
         "agrees": true,
         "note": "The interference is real but the interval is not the ACR's: 3-4 weeks (hyperthyroid) or 6 weeks (hypothyroid), not 2-6 months. The ACR applies it to radioactive iodine imaging as well as therapy. (acr-contrast-2024, Patient Selection chapter, Hyperthyroidism item 2, printed p 6 (PDF p 9))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2710,6 +3250,11 @@
         "agrees": false,
         "note": "Reviewer: wrong. The rows for prior reaction, atopy, renal impairment and beta-blockers are supported. The '2-3x' figure for asthma is misplaced: the ACR gives 2- to 3-fold for unrelated allergies and no number for asthma (CAR/CSACI gives 1.5 to 3 times for GBCA). The 'No' entries for GBCA under cardiac disease, anxiety and beta-blockers have no support: the ACR lists these for intravenous contrast in general. CAR/CSACI adds that only a prior reaction to the same type of agent should mark a patient as at risk. (acr-contrast-2024, Patient Selection chapter, Risk Factors, printed p 5-6 (PDF p 8-9) and Adverse Reactions to GBCM, Risk Factors, p 71 (PDF p 74); car-csaci-hypersensitivity-2025, Risk Factors, p 3, and Recommendation 2)",
         "resolution": "Changed to wrong, as the reviewer has it: the \"2–3×\" figure belongs to unrelated allergies, not asthma, and the \"No\" entries for gadolinium under cardiac disease, anxiety and beta-blockers have no support."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2732,7 +3277,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Correct; add that when IV access is in place, IV epinephrine is preferred in hypotension (ACR Table 3 note).",
-      "home": "Contrast reactions › Management"
+      "home": "Contrast reactions › Management",
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-contrast-safety-36",
@@ -2763,6 +3313,11 @@
       "recheck": {
         "agrees": true,
         "note": "The lead (CAR 2018/2019) could not be read. In the ACR's terms the 'Don't' is wrong as written: Group II agents are the ones to use at eGFR under 30, and only Group I is contraindicated. The 'Do' is close but not the ACR's rule: it prefers Group II agents, which include the linear agents gadobenate and gadoxetate, rather than 'macrocyclic' as such. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter, Specific Groups of Patients and Table 1, printed p 78-80 (PDF p 81-83))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Follows B2-contrast-safety-24: the ACR 2024 advice until CAR 2018/2019 are read.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2790,6 +3345,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Not routinely holding metformin above eGFR 30 matches CAR (which holds at exactly 30) and the ACR. 'Check eGFR before contrast' is broader than either source: CAR screens stable outpatients with a two-question questionnaire and proceeds without an eGFR when the answers are no, and says emergent imaging should not wait for one. (car-ca-aki-2022, Summary of recommendations, recommendations 1 and 16; acr-contrast-2024, PC-AKI chapter, Screening, printed p 38 (PDF p 41))",
         "resolution": "Stands as not-lead with management: CAR 2022 screens stable outpatients with a two-question questionnaire and says emergent imaging should not wait for an eGFR; a blanket \"check eGFR before contrast\" can delay emergency studies."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2812,7 +3372,12 @@
       "verdict": "correct",
       "management": false,
       "fix": "Correct; add CAR/CSACI's detail: the precise agent name and dose, and for a reaction its onset, nature and treatment, also in the radiology report. Lot number is in neither source.",
-      "home": "Contrast reactions › Management"
+      "home": "Contrast reactions › Management",
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-contrast-safety-39",
@@ -2834,6 +3399,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Every item listed is in ACR Table 4. Two gaps: the ACR's minimum list also has a defibrillator or AED and a stethoscope (the page has only 'crash cart accessible'), and saline, IV supplies and atropine are discretionary in the ACR, not 'required'. (acr-contrast-2024, Table 4 Equipment for Contrast Reaction Kits, printed p 112-113 (PDF p 115-116))",
         "resolution": "Changed to correct, as the reviewer has it: every item listed is in ACR Table 4; the AED/stethoscope gap and \"required\" for discretionary items go to stage 3."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2860,6 +3430,11 @@
       "recheck": {
         "agrees": true,
         "note": "Version '2023' is behind the manual (2024 readable here; 2025 current). The title also overstates the source: under the owner's rule CAR leads for premedication, kidney injury, metformin and gadolinium in kidney disease, and several parts of the page are not from the ACR manual at all. (acr-contrast-2024, title page and Version History, printed p 2-3 (PDF p 5-6); car-csaci-hypersensitivity-2025, Recommendation 5; car-ca-aki-2022, Summary of recommendations)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2877,6 +3452,11 @@
       "recheck": {
         "agrees": true,
         "note": "Quotation is faithful. Neither statement holds: no institution is named anywhere in the repo, and only 4 of the 24 guideline pages have a footer at all (BI-RADS, contrast safety, PI-RADS, Lung-RADS), each carrying the placeholder date 2024-01-15, two years before the repo's first commit. Removing the box is right; nothing in it is worth carrying over. (old repo: docs/index.md lines 9-11; grep of docs/**/*.md; git log (first commit 2026-02-28))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2899,6 +3479,11 @@
       "recheck": {
         "agrees": true,
         "note": "Quotation is faithful (\"BI-RADS v2023\" on the card and in the table, \"ACR BI-RADS v2023\" in the search list). No BI-RADS v2023 appears in any source: the page itself claims the 5th edition (2013) and the edition CAR's 2026 breast guidelines cite is the v2025 Manual, so the label contradicts both its own page and the current edition. (old repo: docs/index.md lines 68 and 106, guidelines_search.js (\"ACR BI-RADS v2023\"), docs/breast/bi_rads.md line 9; car-breast-1-2026 reference list (txt line 548); sources.json ids bi-rads-2013, bi-rads-2025)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2917,6 +3502,11 @@
         "agrees": false,
         "note": "Reviewer: wrong. All checked and confirmed: 24 entries; 2 links return 404 (wrong folder names; the other 22 return 200); 15 entries are for pages that hold only a title or an \"Under Development\" box (13 reachable, plus the 2 dead ones); 7 entries carry the Calculator badge and 5 of them (LI-RADS, adrenal, Bosniak, Fleischner, Lung-RADS) were switched off on 2026-11-25, leaving only PI-RADS and TI-RADS true. \"LI-RADS v2023\" contradicts its own page and the source (CT/MRI v2018); \"ACR BI-RADS v2023\" matches no edition; \"LUNG-RADS v1.1\" matches the page but is superseded by v2022; \"O-RADS v2023\" cannot be checked (no O-RADS document in audit-sources and the page is empty). One small point on the quotation: the \"Analyzing query and guidelines...\" line is in the page's HTML but is hidden (display:none) and the script never shows it, so a reader does not see it. Not worth carrying over as it stands. (old repo: docs/javascripts/guidelines_search.js (live copy identical, checked with curl 2026-11-25); docs/**/*.md sizes; git log 2026-11-25 (two switch-off commits); li-rads-2018-core title; lung-rads-2022 title; bi_rads.md line 9)",
         "resolution": "Stands as drop: the reviewer confirmed every defect (2 dead links, 15 placeholder entries, 5 switched-off calculators still badged, the stale labels) and that removing the search is right; wrong or drop lead to the same fix. Quotation corrected: the \"Analyzing…\" text is hidden and never shown."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2943,6 +3533,11 @@
       "recheck": {
         "agrees": true,
         "note": "Quotation is faithful, and the label describes the page truthfully: the page is built on the ACR manual alone. But under the owner's rule CAR leads for hypersensitivity/premedication (CAR/CSACI 2025), contrast-associated AKI and metformin (CAR 2022) and gadolinium in kidney disease (CAR 2018/2019), so presenting contrast safety as simply the ACR manual names a non-lead body for those topics; the version the page claims (2023) is also behind the 2024 manual. A label only, so no direct patient effect. (old repo: docs/index.md lines 84-85 and 108, guidelines_search.js (\"ACR Contrast Safety\"), docs/contrast/contrast_safety.md lines 8-9 and 305; acr-contrast-2024 Version History p. 2; batch lead rule in the brief)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2984,6 +3579,11 @@
       "recheck": {
         "agrees": true,
         "note": "Quotation is faithful and each label names a real version that matches the source document and what the linked page claims; sources.json records CT/MRI v2018 as still the current LI-RADS diagnostic version. \"ACR TI-RADS\" carries no year (the page says 2017), which is incomplete rather than wrong. Note that the search list labels the same LI-RADS page \"v2023\" (see home-03), and the Bosniak page's own notice says most of its content follows the earlier classification, so that label is right about the version aimed at, not about the content. (old repo: docs/index.md lines 30, 39, 53, 58, 77, 100-107; titles of li-rads-2018-core, fleischner-2017, pirads-2-1, bosniak-2019, acr-adrenal-2017, tirads-2017)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3001,6 +3601,11 @@
       "recheck": {
         "agrees": true,
         "note": "Quotation is faithful and the grep finds the footer on exactly these four pages. The date is false: the Lung-RADS page first appears on 2026-02-28 and the other three on 2026-03-06, and all four were last changed on 2026-11-25. No committee is named anywhere else in the repo and the address is a placeholder domain. Removing the footer is right. (old repo: docs/breast/bi_rads.md:293, docs/contrast/contrast_safety.md:312, docs/genitourinary/pi_rads.md:315, docs/pulmonary/lung_rads.md:320; git log)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3018,6 +3623,11 @@
       "recheck": {
         "agrees": true,
         "note": "Quotation is faithful and the row is on exactly these two pages. It records an event that did not happen: the pages were first written in 2026 (Lung-RADS 2026-02-28, PI-RADS 2026-03-06) and there is no institution behind the site. Removing the rows is right; the rows of the same tables that give the guidelines' own release dates are a separate matter and were not part of this piece. (old repo: docs/genitourinary/pi_rads.md:301, docs/pulmonary/lung_rads.md:306; git log)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     }
   ],
