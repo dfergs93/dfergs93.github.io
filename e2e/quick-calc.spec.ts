@@ -19,8 +19,8 @@ test('calculators with a module get a quick-view button; the rest keep the plain
   await page.goto('/');
   await expect(toggle(page, 'popular', 'ecv')).toBeVisible();
   await expect(row(page, 'popular', 'ecv').locator('.calc-label')).toBeHidden();
-  await expect(row(page, 'popular', 'fleischner').locator('.calc-label')).toBeVisible();
-  await expect(toggle(page, 'popular', 'fleischner')).toHaveCount(0);
+  await expect(row(page, 'popular', 'ti-rads').locator('.calc-label')).toBeVisible();
+  await expect(toggle(page, 'popular', 'ti-rads')).toHaveCount(0);
 });
 
 test('opening ECV focuses its first field and prompts for values', async ({ page }) => {

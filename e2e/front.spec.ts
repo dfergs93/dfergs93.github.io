@@ -26,9 +26,11 @@ test('a row shows its title, version, calc mark, area and summary', async ({ pag
   const row = page.locator('#list-popular li.row[data-id="fleischner"]');
   await expect(row.locator('.row-link')).toHaveAttribute('href', 'https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/');
   await expect(row.locator('.version')).toHaveText('2017');
-  await expect(row.locator('.calc')).toHaveText('calc');
   await expect(row.locator('.row-area')).toHaveText('Chest');
-  await expect(row.locator('.summary')).toContainText('pulmonary nodules');
+  await expect(row.locator('.summary')).toContainText('lung nodules');
+  // Fleischner's calculator was switched off after the 2026-11-25 audit; TI-RADS keeps its mark.
+  await expect(row.locator('.calc')).toHaveCount(0);
+  await expect(page.locator('#list-popular li.row[data-id="ti-rads"] .calc')).toHaveText('calc');
   await expect(page.locator('#list-popular li.row[data-id="ecv"] .version')).toHaveCount(0);
 });
 

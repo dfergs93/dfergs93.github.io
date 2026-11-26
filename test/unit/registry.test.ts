@@ -121,12 +121,19 @@ const TABLE: [id: string, area: string, url: string][] = [
 ];
 
 describe('the real registry', () => {
-  // Lung-RADS, adrenal, Bosniak and LI-RADS lost their calculators on the old pages after
-  // the content audit (docs/audit/batch-1.md, 2026-11-25), so their rows carry no calc mark.
-  test('has 34 entries, 6 calculators and these area counts', () => {
+  // Lung-RADS, adrenal, Bosniak, LI-RADS and Fleischner lost their calculators on the old
+  // pages after the content audit (docs/audit/batch-1.md, 2026-11-25), so their rows carry
+  // no calc mark.
+  // The owner ruled that the row names whom Fleischner does not apply to (B1-fleischner-24).
+  test("Fleischner's summary names its exclusions", () => {
+    const summary = RESOURCES.find((r) => r.id === 'fleischner')?.summary ?? '';
+    for (const word of ['35+', 'screening', 'known cancer', 'immunosuppression']) expect(summary).toContain(word);
+  });
+
+  test('has 34 entries, 5 calculators and these area counts', () => {
     expect(RESOURCES).toHaveLength(34);
     expect(RESOURCES.filter((r) => r.calculator).map((r) => r.id).sort()).toEqual(
-      ['bernoulli', 'ecv', 'fleischner', 'flow-4d', 'pi-rads', 'ti-rads'],
+      ['bernoulli', 'ecv', 'flow-4d', 'pi-rads', 'ti-rads'],
     );
     expect(areaCounts(RESOURCES)).toEqual({
       chest: 2, cardiac: 14, congenital: 11, abdomen: 2, 'gu-pelvis': 2,
