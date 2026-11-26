@@ -219,6 +219,8 @@ test.describe('Fleischner', () => {
     await fl(page).locator('input[name="size"]').fill('5.6');
     await expect(fl(page).locator('.quick-headline')).toHaveText('CT at 6–12 months, then consider CT at 18–24 months');
     await expect(fl(page).locator('.quick-details')).toContainText('Counted as 6 mm (5.6 rounded)');
+    await expect(fl(page).locator('input[name="size"]')).toHaveAccessibleDescription('Average of long and short axes (whole nodule)');
+    await expect(group(page, 'Number')).toHaveAccessibleDescription(/^For multiple nodules, enter the largest\./);
     await expect(fl(page).locator('.quick-full')).toHaveText('Guideline →');
     await expect(fl(page).locator('.quick-full')).toHaveAttribute('href', DOI);
   });

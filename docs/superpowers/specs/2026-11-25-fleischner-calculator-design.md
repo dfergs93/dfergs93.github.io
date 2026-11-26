@@ -1,6 +1,6 @@
 # Fleischner calculator, rebuilt: design
 
-Date: 2026-11-25. Status: draft for the owner's review.
+Date: 2026-11-25. Status: approved by the owner 2026-11-25; the multiple-nodule hint corrected after the final review (below).
 Builds on: `2026-11-24-quick-calculators-pilot-design.md` (the quick view and the
 calculator contract) and the stage 2 audit (`docs/audit/batch-1.md`, Fleischner
 findings B1-fleischner-01 to -24, ruled 2026-11-25).
@@ -95,7 +95,9 @@ immunosuppression, or for lung cancer screening CTs."
 
 Fields, in order (keys are the site design's address names):
 1. `type` Nodule: Solid · Ground glass · Part solid
-2. `count` Number: Single · Multiple (hint for multiple: "enter the most suspicious nodule")
+2. `count` Number: Single · Multiple (hint: "For multiple nodules, enter the largest. The most suspicious one
+   (which may not be the largest) guides management." The column is set by whether any nodule is 6 mm or
+   more, Recommendations 2 and 5; corrected from "enter the most suspicious" after the final review)
 3. `risk` Risk (solid only): Low · High. Hint: "High: estimated cancer risk ≥ 5%
    (smoking, other exposures, emphysema or fibrosis, family history, age, and the
    nodule's size, margins and upper-lobe location)." No age cut-off (B1-fleischner-15).

@@ -26,7 +26,9 @@ const count: ChoiceField = {
     { value: 'single', label: 'Single' },
     { value: 'multiple', label: 'Multiple' },
   ],
-  hint: 'For multiple nodules, enter the most suspicious one.',
+  // The column is set by whether any nodule is 6 mm or more (Recommendations 2 and 5,
+  // pp234 and 237), so the largest is entered; the most suspicious guides management.
+  hint: 'For multiple nodules, enter the largest. The most suspicious one (which may not be the largest) guides management.',
 };
 
 // Risk applies to solid nodules only: the paper's subsolid advice is independent of
@@ -143,6 +145,20 @@ function chosen(field: ChoiceField, choices: Choices): string | undefined {
   return field.options.some((o) => o.value === value) ? value : undefined;
 }
 
+/**
+ * A fractional entry under 3 is far likelier centimetres than a fractional millimetre
+ * (the paper advises against fractional millimetres, p232), and read as millimetres it
+ * would fall in the smallest column. Whole numbers can't be told apart, so they pass.
+ */
+function looksLikeCentimetres(raw: number): boolean {
+  return raw > 0 && raw < 3 && !Number.isInteger(raw);
+}
+
+const inMillimetres = (what: string, raw: number): Outcome => ({
+  status: 'invalid',
+  message: `Enter the ${what} in millimetres (e.g. ${Math.round(raw * 10)}, not ${raw}).`,
+});
+
 function counted(label: string, raw: number, mm: number): string {
   return mm === raw ? `${label} ${mm} mm` : `${label} ${mm} mm (${raw} rounded)`;
 }
@@ -164,9 +180,10 @@ function compute(values: Values, _changed?: string, choices: Choices = {}): Outc
 
   const rawSize = values.size!;
   if (rawSize <= 0) return { status: 'invalid', message: 'Size must be greater than 0 mm.' };
-  if (rawSize < 1) return { status: 'invalid', message: 'Enter the size in millimetres (e.g. 6, not 0.6).' };
+  if (looksLikeCentimetres(rawSize)) return inMillimetres('size', rawSize);
   const rawSolid = applies(solid, picked) ? values.solid : undefined;
   if (rawSolid !== undefined && rawSolid <= 0) return { status: 'invalid', message: 'Solid component must be greater than 0 mm.' };
+  if (rawSolid !== undefined && looksLikeCentimetres(rawSolid)) return inMillimetres('solid component', rawSolid);
   if (rawSolid !== undefined && rawSolid >= rawSize) {
     return { status: 'invalid', message: 'The solid component must be smaller than the whole nodule.' };
   }
@@ -188,7 +205,7 @@ function compute(values: Values, _changed?: string, choices: Choices = {}): Outc
   const kind = picked.type === 'solid' ? 'solid' : picked.type === 'ground-glass' ? 'ground-glass' : 'part-solid';
   const described = single
     ? `single ${kind} nodule, ${mm} mm average diameter`
-    : `multiple ${kind} nodules, most suspicious ${mm} mm average diameter`;
+    : `multiple ${kind} nodules, largest ${mm} mm average diameter`;
   const withComponent = componentMm === undefined ? '' : ` with a ${componentMm} mm solid component`;
   const withRisk = picked.type === 'solid' ? `, ${picked.risk} risk` : '';
   const sentence = advice.headline.endsWith('.') ? advice.headline : `${advice.headline}.`;

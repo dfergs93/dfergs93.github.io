@@ -44,7 +44,7 @@ function renderOutcome(result: HTMLElement, outcome: Outcome): void {
 }
 
 /** A number field: label, input (named by its key) and unit. */
-function numberField(rootId: string, field: NumberField): { row: HTMLElement; input: HTMLInputElement } {
+function numberField(rootId: string, field: NumberField): { row: HTMLElement; input: HTMLInputElement; described: HTMLElement } {
   const id = `${rootId}-${field.key}`;
   const label = el('label', 'quick-field-label', field.label);
   label.htmlFor = id;
@@ -63,11 +63,11 @@ function numberField(rootId: string, field: NumberField): { row: HTMLElement; in
   input.dataset.key = field.key;
   const row = el('div', 'quick-field');
   row.append(label, input, el('span', 'quick-unit', field.unit));
-  return { row, input };
+  return { row, input, described: input };
 }
 
 /** A choice field: a fieldset of radio buttons drawn as segments; nothing preselected. */
-function choiceField(rootId: string, field: ChoiceField): { row: HTMLElement; radios: HTMLInputElement[] } {
+function choiceField(rootId: string, field: ChoiceField): { row: HTMLElement; radios: HTMLInputElement[]; described: HTMLElement } {
   const row = el('fieldset', 'quick-choice');
   row.append(el('legend', 'quick-field-label', field.label));
   const options = el('div', 'quick-options');
@@ -81,7 +81,7 @@ function choiceField(rootId: string, field: ChoiceField): { row: HTMLElement; ra
     return radio;
   });
   row.append(options);
-  return { row, radios };
+  return { row, radios, described: row };
 }
 
 /** A quick view for `calc`; `fullUrl` is the resource's full page. */
@@ -101,19 +101,23 @@ export function createQuickCalc(calc: Calculator, fullUrl: string): HTMLElement 
     if (group.label) block.append(el('p', 'quick-group-label', group.label));
     for (const field of group.fields) {
       const wrapper = el('div', 'quick-item');
+      // The hint describes the input (number) or the whole group (choice).
+      let described: HTMLElement;
       if (field.kind === 'choice') {
         const built = choiceField(root.id, field);
         wrapper.append(built.row);
         radios.set(field.key, built.radios);
+        described = built.described;
       } else {
         const built = numberField(root.id, field);
         wrapper.append(built.row);
         inputs.set(field.key, built.input);
+        described = built.described;
       }
       if (field.hint) {
         const hint = el('p', 'quick-hint', field.hint);
         hint.id = `${root.id}-${field.key}-hint`;
-        wrapper.firstElementChild!.setAttribute('aria-describedby', hint.id);
+        described.setAttribute('aria-describedby', hint.id);
         wrapper.append(hint);
       }
       block.append(wrapper);

@@ -131,6 +131,24 @@ describe('Fleischner 2017', () => {
     expect(run(solid, { size: -2 })).toEqual({ status: 'invalid', message: 'Size must be greater than 0 mm.' });
   });
 
+  test('a size or solid component typed in centimetres is refused', () => {
+    const solid = { type: 'solid', count: 'single', risk: 'low' };
+    expect(run(solid, { size: 1.2 })).toEqual({ status: 'invalid', message: 'Enter the size in millimetres (e.g. 12, not 1.2).' });
+    expect(run(solid, { size: 1.5 })).toEqual({ status: 'invalid', message: 'Enter the size in millimetres (e.g. 15, not 1.5).' });
+    expect(run(solid, { size: 2.9 })).toEqual({ status: 'invalid', message: 'Enter the size in millimetres (e.g. 29, not 2.9).' });
+    expect(headline(solid, { size: 3.5 })).toBe(NONE);
+    expect(headline(solid, { size: 2 })).toBe(NONE);
+    const partSolid = { type: 'part-solid', count: 'single' };
+    expect(run(partSolid, { size: 12, solid: 0.7 })).toEqual({ status: 'invalid', message: 'Enter the solid component in millimetres (e.g. 7, not 0.7).' });
+    expect(run(partSolid, { size: 12, solid: 0.4 })).toEqual({ status: 'invalid', message: 'Enter the solid component in millimetres (e.g. 4, not 0.4).' });
+    expect(run(partSolid, { size: 15, solid: 1.2 })).toEqual({ status: 'invalid', message: 'Enter the solid component in millimetres (e.g. 12, not 1.2).' });
+  });
+
+  test('for multiple nodules the size is the largest; the most suspicious guides management', () => {
+    const count = fleischner.groups.flatMap((g) => g.fields).find((f) => f.key === 'count');
+    expect(count?.hint).toBe('For multiple nodules, enter the largest. The most suspicious one (which may not be the largest) guides management.');
+  });
+
   test('solid component must be smaller than the whole nodule', () => {
     const partSolid = { type: 'part-solid', count: 'single' };
     const message = 'The solid component must be smaller than the whole nodule.';
@@ -211,7 +229,7 @@ describe('Fleischner 2017', () => {
       'Fleischner 2017 (single solid nodule, 7 mm average diameter, low risk): CT at 6–12 months, then consider CT at 18–24 months.',
     );
     expect(report({ type: 'solid', count: 'multiple', risk: 'high' }, { size: 6.6 })).toBe(
-      'Fleischner 2017 (multiple solid nodules, most suspicious 7 mm average diameter, high risk): CT at 3–6 months, then at 18–24 months.',
+      'Fleischner 2017 (multiple solid nodules, largest 7 mm average diameter, high risk): CT at 3–6 months, then at 18–24 months.',
     );
     expect(report({ type: 'ground-glass', count: 'single' }, { size: 7 })).toBe(
       'Fleischner 2017 (single ground-glass nodule, 7 mm average diameter): CT at 6–12 months to confirm persistence, then CT every 2 years until 5 years.',
@@ -220,7 +238,7 @@ describe('Fleischner 2017', () => {
       `Fleischner 2017 (single part-solid nodule, 12 mm average diameter with a 4 mm solid component): ${PART_SOLID_COMPONENT_UNDER_6}`,
     );
     expect(report({ type: 'part-solid', count: 'multiple' }, { size: 8 })).toBe(
-      `Fleischner 2017 (multiple part-solid nodules, most suspicious 8 mm average diameter): ${SUBSOLID_MULTIPLE_6_UP}`,
+      `Fleischner 2017 (multiple part-solid nodules, largest 8 mm average diameter): ${SUBSOLID_MULTIPLE_6_UP}`,
     );
   });
 
