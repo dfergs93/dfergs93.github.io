@@ -58,8 +58,9 @@ Websites (Radiopaedia included), summaries and memory may help find a source; th
 verify one. Every number is compared with the source and its location recorded. Calculators
 are run through their live forms (`npm run audit:calc -- <case file>`), not read. A results
 file is the evidence of its run and is not replaced unless `--force` is given. Batch 1's
-results were run on 2026-11-25 against the old guidelines site at 03cc237; four of its
-calculators were switched off afterwards (b29e6ab), so those results stand as recorded.
+results were run on 2026-11-25 against the old guidelines site at 03cc237 (Fleischner's at
+b29e6ab); all five calculators were switched off afterwards (b29e6ab, and 34cf4eb for
+Fleischner), so those results stand as recorded.
 
 Before the owner sees a batch, an independent reviewer re-checks against the sources
 every finding other than *correct*, and every threshold marked *correct*.
@@ -83,4 +84,9 @@ The owner's lead rulings so far (batch 1, 2026-11-25):
   "differs" note (B1-adrenal-01); avid enhancement is tested at > 120 HU (B1-adrenal-05) and
   the delayed phase is 15 minutes (B1-adrenal-07).
 - LI-RADS: no BCLC table, only a link (B1-li-rads-21).
+- Incidental pulmonary nodules: Fleischner 2017 stays the lead (CAR's thoracic referral
+  guideline points to it). No age cut-off for risk (B1-fleischner-15); no window numbers,
+  just "lung window" (B1-fleischner-17); the front-page summary names who it does not apply
+  to (B1-fleischner-24). The owner wants the calculator back, rebuilt with the fixes in
+  B1-fleischner-03 to -06 (B1-fleischner-03).
 - None of the old guidelines pages was ever institutionally reviewed (B1-guidelines-site-01).
