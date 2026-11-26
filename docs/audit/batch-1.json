@@ -3847,6 +3847,11 @@
       "recheck": {
         "agrees": true,
         "note": "Title, authors, journal, volume, issue and pages match the paper. \"2017 Update\" is a fair label: the paper revises the 2005 and 2013 statements. (fleischner-2017, title page, journal p228; citation block p229)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3868,6 +3873,11 @@
       "recheck": {
         "agrees": true,
         "note": "At whole millimetres the listed outputs restate the table cells for single solid, multiple solid < 6 and 6-8 mm, single ground glass, and multiple subsolid nodules, and ignoring risk for subsolid nodules follows p239. I recounted the results file: 26 of 40 agree with the paper (the 14 that do not are fractional sizes, multiple solid > 8 mm and part-solid solid-component cases, judged in pieces 03-05). (fleischner-2017, Table (A: Solid Nodules, B: Subsolid Nodules), journal p230; p239 (Tobacco and Other Inhaled Carcinogens))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3894,6 +3904,11 @@
       "recheck": {
         "agrees": true,
         "note": "The form invites tenths (placeholder 6.5) and bands them unrounded. 5.6 mm rounds to 6 mm and belongs in the 6-8 mm / >= 6 mm cells (follow-up CT), but the calculator gives no routine follow-up or optional CT; 8.4 mm rounds to 8 mm and belongs in 6-8 mm, but the calculator gives the > 8 mm answer (PET/CT, biopsy). (fleischner-2017, Table footnote *, journal p230; General Recommendations, p232)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand. In chat: \"I'd like to use the calculator at some point\", so it is rebuilt with the fixes in B1-fleischner-03 to -06.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3920,6 +3935,11 @@
       "recheck": {
         "agrees": true,
         "note": "The > 8 mm multiple cells are the same as the 6-8 mm cells: a second CT at 18-24 months (optional in low risk), which the calculator drops, and they do not name PET/CT or biopsy. PET/CT or biopsy is reachable only through the p234 text (manage the dominant nodule as a solitary one), so the +/- wording is not baseless, but the output is not the table cell and loses the second scan and the low/high-risk difference. (fleischner-2017, Table A: Solid Nodules, Multiple, > 8 mm column, journal p230; Recommendation 2, p234)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3946,6 +3966,11 @@
       "recheck": {
         "agrees": true,
         "note": "The table's size columns are the whole nodule, and the solid component then decides between annual CT (< 6 mm) and highly suspicious / PET-CT, biopsy or resection (>= 6 mm, > 8 mm). The form has one unlabelled size field and no solid-component input: a 12 mm nodule entered by its 4 mm solid part gets no follow-up (should be CT 3-6 months then annual), and nodules with 7 mm and 9 mm solid components get annual CT for 5 years instead of the suspicious pathway. (fleischner-2017, Table B, Single, Part solid row and Comments, journal p230; Recommendation 4, p236-237)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3972,6 +3997,11 @@
       "recheck": {
         "agrees": true,
         "note": "The page text confirms the description: the only scope statement is the screening box far below the form. Age under 35, immunocompromise and known primary cancer are not mentioned anywhere, so the form returns a Fleischner interval for patients the guideline excludes. This is an omission rather than a false sentence; I judged it wrong because the table's own Note is missing. (fleischner-2017, Table Note, journal p230; introduction and Implications for Patient Care, p229)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -3997,6 +4027,11 @@
       "recheck": {
         "agrees": true,
         "note": "All six cells and the column cut-offs match the table as read from the page image. \"and/or biopsy\" agrees with p233 (\"tissue sampling, or a combination thereof\"). (fleischner-2017, Table A: Solid Nodules, Single, journal p230; Recommendation 1, p232-233)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4024,6 +4059,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). The 12-month follow-up for suspicious nodules is the high-risk comment; the page puts it on the low-risk row, where the paper's comment is the opposite (no routine follow-up), and the high-risk row loses the 12-month interval and becomes a vague \"higher concern\". For low-risk patients the text offers an extra study only for suspicious or uncertain 6-8 mm nodules (p233), not a 12-month scan under 6 mm. (fleischner-2017, Table A, Single, Comments column, journal p230; Recommendation 1, p232-233)",
         "resolution": "Management flag added on the reviewer's reading: recommendation 1 (journal p232) and the table's comments (p230) give the 12-month option to high-risk patients with suspicious morphology or upper lobe location; the p233 sentence continues that high-risk paragraph. On the low-risk row the page can add a CT that Fleischner says is not needed."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4049,6 +4089,11 @@
       "recheck": {
         "agrees": true,
         "note": "The four cells and the comment match the table. The page's comment drops \"follow-up intervals may vary according to size and risk\", which does not change the advice. (fleischner-2017, Table A: Solid Nodules, Multiple, < 6 mm and 6-8 mm columns and Comments, journal p230; Recommendation 2, p234)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4075,6 +4120,11 @@
       "recheck": {
         "agrees": true,
         "note": "Read from the page image, the > 8 mm multiple cells repeat the 6-8 mm cells; they contain no PET/CT or biopsy. The page's cell omits the 18-24 month CT and the low/high-risk difference and adds PET/CT/biopsy, which the paper reaches only by managing a dominant nodule under the solitary rules (p234). (fleischner-2017, Table A: Solid Nodules, Multiple, > 8 mm column, journal p230; Recommendation 2, p234)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4102,6 +4152,11 @@
         "agrees": false,
         "note": "Reviewer: correct. The rule matches. The paper's shape words are \"triangular or oval\" on transverse and \"flat or lentiform\" on reformats with a fine septal extension, not \"polygonal\", and the page leaves out the paper's caveats (a spiculated border, displacement of the fissure or a history of cancer: consider CT in 6-12 months). (fleischner-2017, Additional Considerations, Perifissural Nodules, journal p240)",
         "resolution": "Stands as wrong (management): p240 ends the perifissural section with \"A spiculated border, displacement of the adjacent fissure, or a history of cancer increase the possibility of malignancy, and a follow-up examination in 6–12 months should be considered in these patients.\" The page's unconditional \"no follow-up is required\" drops that, so such a nodule gets no follow-up. The reviewer called the rule correct but incomplete."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4127,6 +4182,11 @@
       "recheck": {
         "agrees": true,
         "note": "The cells and the < 6 / >= 6 mm columns match. The paper has one \"Multiple\" row; the page's two identical rows (ground glass, part solid) agree with p237, which covers both morphologies. (fleischner-2017, Table B: Subsolid Nodules, journal p230; Recommendations 3-5, p234-237)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4153,6 +4213,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper's comment says something specific: a suspicious ground-glass nodule under 6 mm may get CT at 2 and 4 years despite the \"no routine follow-up\" cell, and growth or a new solid component means considering resection. \"Consider longer follow-up if suspicious\" states neither, and read against the >= 6 mm cell it suggests going past 5 years, which the table does not say. Borderline: it is a lossy paraphrase more than a contradiction. (fleischner-2017, Table B, Single, Ground glass, Comments, journal p230; Recommendation 3, p234-236)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4179,6 +4244,11 @@
       "recheck": {
         "agrees": true,
         "note": "The page drops the condition that makes annual CT appropriate (unchanged, solid component still < 6 mm) and the 6 mm threshold in the comment; \"manage by solid component\" and \"often higher risk\" do not tell the reader that a persistent solid component >= 6 mm is highly suspicious or that PET/CT, biopsy or resection is recommended for suspicious morphology, a growing solid component or one > 8 mm (p237). (fleischner-2017, Table B, Single, Part solid, >= 6 mm cell and Comments, journal p230; Recommendation 4, p236-237)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4210,6 +4280,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper assigns risk by the ACCP categories and gives no age cut-off: \"Age >50 years\" has no source in it (it mentions 35 and 40 only). \"Current or former smoker\" is broader than \"heavy smoking\" (30 pack-years, quit within 15 years as indicative), the paper names emphysema rather than COPD, and the cards omit nodule margins and upper lobe location, which the paper counts. Family history, asbestos/radon and fibrosis are supported. A light ex-smoker aged 51 would be put in the high-risk rows. (fleischner-2017, Risk Estimation and Risk Models, journal p239 (also Age, Sex, Race, and Family History; Tobacco and Other Inhaled Carcinogens, p239; Emphysema and Fibrosis, p238-239))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) Age over 50 can be deleted.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4244,6 +4319,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper's size is the average of long and short axes, rounded to the nearest millimetre, on whichever plane shows the nodule largest, for every nodule type and not only for growth assessment; the long axis is recorded as well only above 10 mm. \"Longest diameter in axial plane\" (solid) and \"longest diameter\" (ground glass) overstate size and can move a nodule across the 6 and 8 mm cut-offs. (fleischner-2017, Table footnote *, journal p230; General Recommendations, p231-232)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4271,6 +4351,11 @@
       "recheck": {
         "agrees": true,
         "note": "Measuring on lung windows agrees with the paper, but it gives no window width or level, so \"W: 1500, L: -600\" is not from the cited source. The Fleischner measurement statement the paper announces (fleischner-measurement-2017) is listed as not readable, so I could not check whether the numbers come from there. (fleischner-2017, General Recommendations, journal p232; Nodule Size and Morphology, p237-238 (no window values anywhere in the paper))"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(In chat.) \"There's no window local practice\": drop the W 1500 / L −600 numbers; \"lung window\" stays.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4298,6 +4383,11 @@
         "agrees": false,
         "note": "Reviewer: correct. Both diameters are needed and the paper uses both, so the first two lines are right. \"Solid component determines management\" is true once the nodule is 6 mm or larger overall, but incomplete: the first cut-off (< 6 mm, no routine follow-up) is the whole nodule's size, which is how the calculator comes to be misused (piece 05). (fleischner-2017, Table B, Single, Part solid row, journal p230; Recommendation 4, p236-237)",
         "resolution": "Stands as wrong (management): in the table (p230, B) the whole nodule's size sets the first branch (< 6 mm: no routine follow-up; ≥ 6 mm: CT at 3–6 months, then by the solid component), so \"Solid component determines management\" read on its own sends a 12 mm nodule with a 4 mm solid component to no follow-up, the same error as the calculator (B1-fleischner-05). The reviewer judged the text incomplete rather than wrong."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4324,6 +4414,11 @@
       "recheck": {
         "agrees": true,
         "note": "The paper offers volumetry as an alternative (thresholds 100 and 250 mm3) with better sensitivity for growth, not as the preferred method, and says nothing that prefers it for ground-glass nodules. It describes volume doubling times as background (p238) but does not recommend VDT for growth assessment or give a VDT threshold. Overstated rather than dangerous. (fleischner-2017, General Recommendations, journal p232; Nodule Growth Rate, p238)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4354,6 +4449,11 @@
         "agrees": false,
         "note": "Reviewer: correct. Matches the paper's scope. It leaves out the age and the other exclusions (immunocompromise, known cancer), which piece 06 covers. (fleischner-2017, introduction and Implications for Patient Care, journal p229)",
         "resolution": "Changed to correct on the reviewer's reading: the sentence is true (incidental nodules on CT done for other reasons). The exclusions it leaves out (under 35, known primary cancer, immunosuppression) are carried by B1-fleischner-06, whose fix states them, and go into the rebuilt page's Applies to section."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4388,6 +4488,11 @@
       "recheck": {
         "agrees": true,
         "note": "Sending screening CTs away from Fleischner is right, and Lung-RADS is what the Fleischner paper itself names. But the owner's lead for screening is the BC protocol v2.0, whose categories (nodule risk score at baseline, volume and volume doubling time at follow-up, biennial return for category 1) differ from Lung-RADS, and the link goes to the old site's Lung-RADS v1.1 page, which v2022 has replaced. (bc-lung-screening-2026, section 5.1, BC Lung Screening Protocol Version 2.0 assessment categories (January 2026), p15; fleischner-2017, p229; lung-rads-2022, p1)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4419,6 +4524,11 @@
         "agrees": false,
         "note": "Reviewer: outdated (management). The list points screening to Lung-RADS v1.1, which v2022 superseded and which is not the owner's lead (BC protocol v2.0). The Brock model line has no link and no content; the Fleischner paper cites the PanCan data behind it but assigns risk by ACCP categories, not by that calculator, so the entry adds nothing as it stands. (lung-rads-2022, p1 (header); bc-lung-screening-2026, section 5.1, p15; fleischner-2017, Risk Estimation and Risk Models, p239)",
         "resolution": "Stands as outdated without the management flag: the screening consequence is carried by B1-fleischner-21, and the linked Lung-RADS page has carried the dated notice pointing to the BC Lung Screening Protocol since 2026-11-25."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
       }
     },
     {
@@ -4436,7 +4546,12 @@
       ],
       "verdict": "correct",
       "management": false,
-      "home": "Incidental pulmonary nodules › Background"
+      "home": "Incidental pulmonary nodules › Background",
+      "ruling": {
+        "decision": "keep",
+        "note": "Not ruled on the review page; the owner said findings left unruled stand.",
+        "date": "2026-11-25"
+      }
     },
     {
       "id": "B1-fleischner-24",
@@ -4462,6 +4577,11 @@
       "recheck": {
         "agrees": true,
         "note": "Title, version 2017 and the summary (incidental nodules on CT, adults, outside screening) match the paper, and the page does have a calculator. \"Adults\" in the paper means 35 and over. (fleischner-2017, title page p228; introduction p229; Table title and Note, p230)"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(In chat.) Name the exclusions.",
+        "date": "2026-11-25"
       }
     }
   ],

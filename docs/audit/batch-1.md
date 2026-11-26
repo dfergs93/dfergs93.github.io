@@ -1363,6 +1363,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Source:** MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Title and author list, journal p228; citation line "Radiology 2017; 284:228–243" and DOI, p229; footer "Volume 284: Number 1—July 2017"; abstract, p228 (revises the 2005 solid and 2013 subsolid guidelines into one table); Hamel C, Avard B, Belanger C, Bourgouin P, Lam S, Manos D, Michaud A, Rowe BH, Sanders K, Bilawich AM. Canadian Association of Radiologists thoracic imaging referral guideline. Can Assoc Radiol J. 2024;75(2):296-303. — TH19 "Incidental lung nodule", recommendation 1, PDF p18 (printed p15), and Appendix 3A, PDF p55: CAR recommends following the Fleischner 2017 guidelines (doi 10.1148/radiol.2017161659)
 - **Proposed home:** Incidental pulmonary nodules › Background
 - **Re-check:** agrees — Title, authors, journal, volume, issue and pages match the paper. "2017 Update" is a fair label: the paper revises the 2005 and 2013 statements. (fleischner-2017, title page, journal p228; citation block p229)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-02 · Calculator: whole-millimetre sizes at the table cut-offs
 
@@ -1372,6 +1373,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Source:** MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Table, journal p230, A: Solid Nodules (Single and Multiple rows, < 6 mm and 6–8 mm columns; Single > 8 mm) and B: Subsolid Nodules (all cells); p239 (subsolid recommendations independent of the usual risk categories)
 - **Proposed home:** Incidental pulmonary nodules › Calculator
 - **Re-check:** agrees — At whole millimetres the listed outputs restate the table cells for single solid, multiple solid < 6 and 6-8 mm, single ground glass, and multiple subsolid nodules, and ignoring risk for subsolid nodules follows p239. I recounted the results file: 26 of 40 agree with the paper (the 14 that do not are fractional sizes, multiple solid > 8 mm and part-solid solid-component cases, judged in pieces 03-05). (fleischner-2017, Table (A: Solid Nodules, B: Subsolid Nodules), journal p230; p239 (Tobacco and Other Inhaled Carcinogens))
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-03 · Calculator: fractional sizes are not rounded
 
@@ -1382,6 +1384,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Round the entered size to the nearest whole millimetre before banding (or take whole millimetres only), say beside the field that it is the average of long and short axes, and drop the "e.g., 6.5" placeholder. 5.6 mm is a 6 mm nodule (6–8 mm band) and 8.4 mm an 8 mm one; the calculator puts them in the < 6 and > 8 bands.
 - **Proposed home:** Incidental pulmonary nodules › Calculator
 - **Re-check:** agrees — The form invites tenths (placeholder 6.5) and bands them unrounded. 5.6 mm rounds to 6 mm and belongs in the 6-8 mm / >= 6 mm cells (follow-up CT), but the calculator gives no routine follow-up or optional CT; 8.4 mm rounds to 8 mm and belongs in 6-8 mm, but the calculator gives the > 8 mm answer (PET/CT, biopsy). (fleischner-2017, Table footnote *, journal p230; General Recommendations, p232)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand. In chat: "I'd like to use the calculator at some point", so it is rebuilt with the fixes in B1-fleischner-03 to -06.
 
 ### B1-fleischner-04 · Calculator: multiple solid nodules > 8 mm
 
@@ -1392,6 +1395,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Give the table cell: low risk "CT at 3–6 months, then consider CT at 18–24 months"; high risk "CT at 3–6 months, then CT at 18–24 months". If PET/CT or biopsy is kept, word it as Fleischner does: a dominant nodule that is larger or more suspicious is managed as a solitary nodule.
 - **Proposed home:** Incidental pulmonary nodules › Calculator
 - **Re-check:** agrees — The > 8 mm multiple cells are the same as the 6-8 mm cells: a second CT at 18-24 months (optional in low risk), which the calculator drops, and they do not name PET/CT or biopsy. PET/CT or biopsy is reachable only through the p234 text (manage the dominant nodule as a solitary one), so the +/- wording is not baseless, but the output is not the table cell and loses the second scan and the low/high-risk difference. (fleischner-2017, Table A: Solid Nodules, Multiple, > 8 mm column, journal p230; Recommendation 2, p234)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-05 · Calculator: part-solid nodules (one size field, no solid component)
 
@@ -1402,6 +1406,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Add a solid-component field (whole diameter and solid component, both average diameters) and give Recommendation 4's branches: solid component < 6 mm → annual CT for 5 years if persistent and unchanged; ≥ 6 mm → highly suspicious, short-term CT at 3–6 months; > 8 mm, growing or suspicious morphology → PET/CT, biopsy or resection. Until then, label the field "whole nodule" for part-solid.
 - **Proposed home:** Incidental pulmonary nodules › Calculator
 - **Re-check:** agrees — The table's size columns are the whole nodule, and the solid component then decides between annual CT (< 6 mm) and highly suspicious / PET-CT, biopsy or resection (>= 6 mm, > 8 mm). The form has one unlabelled size field and no solid-component input: a 12 mm nodule entered by its 4 mm solid part gets no follow-up (should be CT 3-6 months then annual), and nodules with 7 mm and 9 mm solid components get annual CT for 5 years instead of the suspicious pathway. (fleischner-2017, Table B, Single, Part solid row and Comments, journal p230; Recommendation 4, p236-237)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-06 · Calculator: no statement of whom it does not apply to
 
@@ -1412,6 +1417,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Put one line above the form: not for patients under 35, with known primary cancer or immunosuppression, or for lung cancer screening CTs (BC Lung Screening Program protocol).
 - **Proposed home:** Incidental pulmonary nodules › Applies to
 - **Re-check:** agrees — The page text confirms the description: the only scope statement is the screening box far below the form. Age under 35, immunocompromise and known primary cancer are not mentioned anywhere, so the form returns a Fleischner interval for patients the guideline excludes. This is an omission rather than a false sentence; I judged it wrong because the table's own Note is missing. (fleischner-2017, Table Note, journal p230; introduction and Implications for Patient Care, p229)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-07 · Quick Reference, Solid nodules table: single nodule cells
 
@@ -1421,6 +1427,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Source:** MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Table, journal p230, A: Solid Nodules, Single, Low risk and High risk rows; MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Recommendation 1, journal pp232–233 (single solid noncalcified nodules < 6 mm, 6–8 mm and > 8 mm)
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** agrees — All six cells and the column cut-offs match the table as read from the page image. "and/or biopsy" agrees with p233 ("tissue sampling, or a combination thereof"). (fleischner-2017, Table A: Solid Nodules, Single, journal p230; Recommendation 1, p232-233)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-08 · Quick Reference, Solid nodules table: Comments for single nodules
 
@@ -1431,6 +1438,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Swap the comments to the table's rows: low risk, nodules < 6 mm need no routine follow-up; high risk, a < 6 mm nodule with suspicious morphology and/or upper lobe location may warrant CT at 12 months.
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** disagreed — Reviewer: wrong (management). The 12-month follow-up for suspicious nodules is the high-risk comment; the page puts it on the low-risk row, where the paper's comment is the opposite (no routine follow-up), and the high-risk row loses the 12-month interval and becomes a vague "higher concern". For low-risk patients the text offers an extra study only for suspicious or uncertain 6-8 mm nodules (p233), not a 12-month scan under 6 mm. (fleischner-2017, Table A, Single, Comments column, journal p230; Recommendation 1, p232-233) Resolution: Management flag added on the reviewer's reading: recommendation 1 (journal p232) and the table's comments (p230) give the 12-month option to high-risk patients with suspicious morphology or upper lobe location; the p233 sentence continues that high-risk paragraph. On the low-risk row the page can add a CT that Fleischner says is not needed.
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-09 · Quick Reference, Solid nodules table: multiple nodules, < 6 mm and 6–8 mm cells and comments
 
@@ -1440,6 +1448,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Source:** MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Table, journal p230, A: Solid Nodules, Multiple rows, < 6 mm and 6–8 mm columns and Comments; MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Recommendation 2, journal p234 (multiple solid noncalcified nodules; the most suspicious nodule, which may not be the largest, guides management)
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** agrees — The four cells and the comment match the table. The page's comment drops "follow-up intervals may vary according to size and risk", which does not change the advice. (fleischner-2017, Table A: Solid Nodules, Multiple, < 6 mm and 6-8 mm columns and Comments, journal p230; Recommendation 2, p234)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-10 · Quick Reference, Solid nodules table: multiple nodules, > 8 mm cells
 
@@ -1450,6 +1459,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Use the table cells (CT at 3–6 months, then consider CT at 18–24 months for low risk; then CT at 18–24 months for high risk). The 18–24-month scan is missing, and PET/CT or biopsy is not in these cells (see B1-fleischner-04).
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** agrees — Read from the page image, the > 8 mm multiple cells repeat the 6-8 mm cells; they contain no PET/CT or biopsy. The page's cell omits the 18-24 month CT and the low/high-risk difference and adds PET/CT/biopsy, which the paper reaches only by managing a dominant nodule under the solitary rules (p234). (fleischner-2017, Table A: Solid Nodules, Multiple, > 8 mm column, journal p230; Recommendation 2, p234)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-11 · Perifissural note
 
@@ -1460,6 +1470,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Describe the lymph-node morphology as Fleischner does (small solid nodule, triangular or oval, lentiform on reformats, septal extension to the pleura; also other juxtapleural sites) and add its exception: spiculated border, fissure displacement or a history of cancer → consider CT at 6–12 months.
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** disagreed — Reviewer: correct. The rule matches. The paper's shape words are "triangular or oval" on transverse and "flat or lentiform" on reformats with a fine septal extension, not "polygonal", and the page leaves out the paper's caveats (a spiculated border, displacement of the fissure or a history of cancer: consider CT in 6-12 months). (fleischner-2017, Additional Considerations, Perifissural Nodules, journal p240) Resolution: Stands as wrong (management): p240 ends the perifissural section with "A spiculated border, displacement of the adjacent fissure, or a history of cancer increase the possibility of malignancy, and a follow-up examination in 6–12 months should be considered in these patients." The page's unconditional "no follow-up is required" drops that, so such a nodule gets no follow-up. The reviewer called the rule correct but incomplete.
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-12 · Quick Reference, Subsolid nodules table: management cells
 
@@ -1469,6 +1480,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Source:** MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Table, journal p230, B: Subsolid Nodules: Single Ground glass row; Single Part solid, < 6 mm; Multiple row (one row for all subsolid types); MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Recommendations 3–5, journal pp234–237
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** agrees — The cells and the < 6 / >= 6 mm columns match. The paper has one "Multiple" row; the page's two identical rows (ground glass, part solid) agree with p237, which covers both morphologies. (fleischner-2017, Table B: Subsolid Nodules, journal p230; Recommendations 3-5, p234-237)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-13 · Quick Reference, Subsolid nodules table: single ground-glass comment
 
@@ -1479,6 +1491,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Replace with the table's comment: a suspicious ground-glass nodule < 6 mm may be followed at 2 and 4 years; if a solid component or growth develops, consider resection.
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** agrees — The paper's comment says something specific: a suspicious ground-glass nodule under 6 mm may get CT at 2 and 4 years despite the "no routine follow-up" cell, and growth or a new solid component means considering resection. "Consider longer follow-up if suspicious" states neither, and read against the >= 6 mm cell it suggests going past 5 years, which the table does not say. Borderline: it is a lossy paraphrase more than a contradiction. (fleischner-2017, Table B, Single, Ground glass, Comments, journal p230; Recommendation 3, p234-236)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-14 · Quick Reference, Subsolid nodules table: single part-solid ≥ 6 mm cell and comment
 
@@ -1489,6 +1502,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Say "if unchanged and the solid component remains < 6 mm, annual CT for 5 years", and replace the comment with Fleischner's: a persistent part-solid nodule with a solid component ≥ 6 mm is highly suspicious (PET/CT, biopsy or resection if suspicious morphology, a growing solid component or a solid component > 8 mm).
 - **Proposed home:** Incidental pulmonary nodules › Management
 - **Re-check:** agrees — The page drops the condition that makes annual CT appropriate (unchanged, solid component still < 6 mm) and the 6 mm threshold in the comment; "manage by solid component" and "often higher risk" do not tell the reader that a persistent solid component >= 6 mm is highly suspicious or that PET/CT, biopsy or resection is recommended for suspicious morphology, a growing solid component or one > 8 mm (p237). (fleischner-2017, Table B, Single, Part solid, >= 6 mm cell and Comments, journal p230; Recommendation 4, p236-237)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-15 · Risk Criteria cards
 
@@ -1500,6 +1514,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Question for the owner:** "Age >50 years" has no source in Fleischner 2017. Is it a local rule you want kept (labelled local practice), or should it go?
 - **Proposed home:** Incidental pulmonary nodules › Categories
 - **Re-check:** agrees — The paper assigns risk by the ACCP categories and gives no age cut-off: "Age >50 years" has no source in it (it mentions 35 and 40 only). "Current or former smoker" is broader than "heavy smoking" (30 pack-years, quit within 15 years as indicative), the paper names emphysema rather than COPD, and the cards omit nodule margins and upper lobe location, which the paper counts. Family history, asbestos/radon and fibrosis are supported. A light ex-smoker aged 51 would be put in the high-risk rows. (fleischner-2017, Risk Estimation and Risk Models, journal p239 (also Age, Sex, Race, and Family History; Tobacco and Other Inhaled Carcinogens, p239; Emphysema and Fibrosis, p238-239))
+- **Ruling:** keep (2026-11-25) — (In chat.) Age over 50 can be deleted.
 
 ### B1-fleischner-16 · How to Measure: diameter for solid and ground-glass nodules
 
@@ -1510,6 +1525,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** For every nodule type: average of the long and short axes on the one image (axial, coronal or sagittal) that shows the largest nodule, rounded to the nearest whole millimetre; the table's sizes mean that average.
 - **Proposed home:** Incidental pulmonary nodules › Measurement
 - **Re-check:** agrees — The paper's size is the average of long and short axes, rounded to the nearest millimetre, on whichever plane shows the nodule largest, for every nodule type and not only for growth assessment; the long axis is recorded as well only above 10 mm. "Longest diameter in axial plane" (solid) and "longest diameter" (ground glass) overstate size and can move a nodule across the 6 and 8 mm cut-offs. (fleischner-2017, Table footnote *, journal p230; General Recommendations, p231-232)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-17 · How to Measure: window setting
 
@@ -1521,6 +1537,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Question for the owner:** W 1500 / L −600 is a usual lung window but is not in Fleischner 2017; the Fleischner measurement statement (Bankier 2017) could not be read. Label it local practice, or supply a copy of that statement?
 - **Proposed home:** Incidental pulmonary nodules › Measurement
 - **Re-check:** agrees — Measuring on lung windows agrees with the paper, but it gives no window width or level, so "W: 1500, L: -600" is not from the cited source. The Fleischner measurement statement the paper announces (fleischner-measurement-2017) is listed as not readable, so I could not check whether the numbers come from there. (fleischner-2017, General Recommendations, journal p232; Nodule Size and Morphology, p237-238 (no window values anywhere in the paper))
+- **Ruling:** change (2026-11-25) — (In chat.) "There's no window local practice": drop the W 1500 / L −600 numbers; "lung window" stays.
 
 ### B1-fleischner-18 · How to Measure: part-solid nodules
 
@@ -1531,6 +1548,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Say both count: the whole nodule (average diameter) sets the < 6 / ≥ 6 mm row, then the solid component (< 6, ≥ 6, > 8 mm) sets management. "Solid component determines management" alone sends a 12 mm nodule with a 4 mm solid component to no follow-up in the calculator (B1-fleischner-05).
 - **Proposed home:** Incidental pulmonary nodules › Measurement
 - **Re-check:** disagreed — Reviewer: correct. Both diameters are needed and the paper uses both, so the first two lines are right. "Solid component determines management" is true once the nodule is 6 mm or larger overall, but incomplete: the first cut-off (< 6 mm, no routine follow-up) is the whole nodule's size, which is how the calculator comes to be misused (piece 05). (fleischner-2017, Table B, Single, Part solid row, journal p230; Recommendation 4, p236-237) Resolution: Stands as wrong (management): in the table (p230, B) the whole nodule's size sets the first branch (< 6 mm: no routine follow-up; ≥ 6 mm: CT at 3–6 months, then by the solid component), so "Solid component determines management" read on its own sends a 12 mm nodule with a 4 mm solid component to no follow-up, the same error as the calculator (B1-fleischner-05). The reviewer judged the text incomplete rather than wrong.
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-19 · How to Measure: volumetry and volume doubling time
 
@@ -1541,6 +1559,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Say volumetry may be used instead of diameters (100 and 250 mm³ for 6 and 8 mm) with the same software for growth, while the average diameter remains the standard; give doubling times as background only.
 - **Proposed home:** Incidental pulmonary nodules › Measurement
 - **Re-check:** agrees — The paper offers volumetry as an alternative (thresholds 100 and 250 mm3) with better sensitivity for growth, not as the preferred method, and says nothing that prefers it for ground-glass nodules. It describes volume doubling times as background (p238) but does not recommend VDT for growth assessment or give a VDT threshold. Overstated rather than dangerous. (fleischner-2017, General Recommendations, journal p232; Nodule Growth Rate, p238)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-20 · "When to Use Lung-RADS Instead": who the guideline applies to
 
@@ -1550,6 +1569,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Source:** MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Introduction, journal p229: adults at least 35 years old; not for known primary cancer at risk of metastases, immunocompromised patients at risk of infection, or patients under 35 (case by case, infection more likely); "Implications for Patient Care" box, p229; MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — Table note, journal p230; Hamel C, Avard B, Belanger C, Bourgouin P, Lam S, Manos D, Michaud A, Rowe BH, Sanders K, Bilawich AM. Canadian Association of Radiologists thoracic imaging referral guideline. Can Assoc Radiol J. 2024;75(2):296-303. — TH19, PDF p18 (printed p15): Fleischner for incidental nodules on chest CT, excluding CT chest as part of lung cancer screening
 - **Proposed home:** Incidental pulmonary nodules › Applies to
 - **Re-check:** disagreed — Reviewer: correct. Matches the paper's scope. It leaves out the age and the other exclusions (immunocompromise, known cancer), which piece 06 covers. (fleischner-2017, introduction and Implications for Patient Care, journal p229) Resolution: Changed to correct on the reviewer's reading: the sentence is true (incidental nodules on CT done for other reasons). The exclusions it leaves out (under 35, known primary cancer, immunosuppression) are carried by B1-fleischner-06, whose fix states them, and go into the rebuilt page's Applies to section.
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-21 · "When to Use Lung-RADS Instead": lung cancer screening
 
@@ -1560,6 +1580,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Keep "Fleischner is not for screening CTs" but point screening LDCTs to the lung screening page under its lead, the BC Lung Screening Protocol v2.0 (Lung-RADS v2022 as the note on where it differs), not to Lung-RADS v1.1.
 - **Proposed home:** Incidental pulmonary nodules › Applies to
 - **Re-check:** agrees — Sending screening CTs away from Fleischner is right, and Lung-RADS is what the Fleischner paper itself names. But the owner's lead for screening is the BC protocol v2.0, whose categories (nodule risk score at baseline, volume and volume doubling time at follow-up, biennial return for category 1) differ from Lung-RADS, and the link goes to the old site's Lung-RADS v1.1 page, which v2022 has replaced. (bc-lung-screening-2026, section 5.1, BC Lung Screening Protocol Version 2.0 assessment categories (January 2026), p15; fleischner-2017, p229; lung-rads-2022, p1)
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-22 · Related Guidelines list
 
@@ -1570,6 +1591,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Proposed fix:** Link screening to the lung screening page under its current lead (BC Lung Screening Protocol v2.0) without "v1.1"; link the Brock (PanCan, McWilliams) calculator or drop the line until the site has one.
 - **Proposed home:** Incidental pulmonary nodules › Other guidelines differ
 - **Re-check:** disagreed — Reviewer: outdated (management). The list points screening to Lung-RADS v1.1, which v2022 superseded and which is not the owner's lead (BC protocol v2.0). The Brock model line has no link and no content; the Fleischner paper cites the PanCan data behind it but assigns risk by ACCP categories, not by that calculator, so the entry adds nothing as it stands. (lung-rads-2022, p1 (header); bc-lung-screening-2026, section 5.1, p15; fleischner-2017, Risk Estimation and Risk Models, p239) Resolution: Stands as outdated without the management flag: the screening consequence is carried by B1-fleischner-21, and the linked Lung-RADS page has carried the dated notice pointing to the BC Lung Screening Protocol since 2026-11-25.
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-23 · External Resources links
 
@@ -1578,6 +1600,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **The page says:** "Original Publication (Radiology)" → https://pubs.rsna.org/doi/10.1148/radiol.2017161659; "Fleischner Society Website" → https://www.fleischnersociety.org/.
 - **Source:** MacMahon H, Naidich DP, Goo JM, et al. Guidelines for management of incidental pulmonary nodules detected on CT images: from the Fleischner Society 2017. Radiology. 2017;284(1):228-243. — DOI line, journal p229 (https://doi.org/10.1148/radiol.2017161659)
 - **Proposed home:** Incidental pulmonary nodules › Background
+- **Ruling:** keep (2026-11-25) — Not ruled on the review page; the owner said findings left unruled stand.
 
 ### B1-fleischner-24 · Front-page row (shared/data/resources.ts, id fleischner)
 
@@ -1588,6 +1611,7 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/fleischner/
 - **Question for the owner:** The summary says "in adults"; Fleischner is for adults 35 and over without known cancer or immunosuppression. Add that (e.g. "Follow-up of incidental lung nodules on CT in adults 35+, outside screening, cancer or immunosuppression.")? If the old calculator is switched off (B1-fleischner-03 to -06), the row's calculator flag goes too.
 - **Proposed home:** Incidental pulmonary nodules › Background
 - **Re-check:** agrees — Title, version 2017 and the summary (incidental nodules on CT, adults, outside screening) match the paper, and the page does have a calculator. "Adults" in the paper means 35 and over. (fleischner-2017, title page p228; introduction p229; Table title and Note, p230)
+- **Ruling:** change (2026-11-25) — (In chat.) Name the exclusions.
 
 ## Across the site
 

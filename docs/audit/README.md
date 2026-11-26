@@ -83,4 +83,9 @@ The owner's lead rulings so far (batch 1, 2026-11-25):
   "differs" note (B1-adrenal-01); avid enhancement is tested at > 120 HU (B1-adrenal-05) and
   the delayed phase is 15 minutes (B1-adrenal-07).
 - LI-RADS: no BCLC table, only a link (B1-li-rads-21).
+- Incidental pulmonary nodules: Fleischner 2017 stays the lead (CAR's thoracic referral
+  guideline points to it). No age cut-off for risk (B1-fleischner-15); no window numbers,
+  just "lung window" (B1-fleischner-17); the front-page summary names who it does not apply
+  to (B1-fleischner-24). The owner wants the calculator back, rebuilt with the fixes in
+  B1-fleischner-03 to -06 (B1-fleischner-03).
 - None of the old guidelines pages was ever institutionally reviewed (B1-guidelines-site-01).
