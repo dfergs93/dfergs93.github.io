@@ -124,7 +124,7 @@ describe('the real registry', () => {
   // The owner ruled that the row names whom Fleischner does not apply to (B1-fleischner-24).
   // The page follows CAR or the ACR topic by topic (docs/audit/batch-2.md, B2-guidelines-home-04).
   test("contrast safety is not titled as one body's", () => {
-    expect(byId('contrast-safety').title).toBe('Contrast safety');
+    expect(byId('contrast-safety')?.title).toBe('Contrast safety');
   });
 
   test("Fleischner's summary names its exclusions", () => {
