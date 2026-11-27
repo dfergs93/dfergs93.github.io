@@ -428,11 +428,11 @@ https://dfergs93.github.io/guidelines_manager/pulmonary/lung_rads/
 
 - **Verdict:** drop
 - **Kind:** provenance · **Topic:** Lung cancer screening
-- **The page says:** Version history "2024-01-15 | Internal | Initial implementation at institution"; footer "Last updated: 2024-01-15 | Maintained by: Radiology QI Committee | Contact: radiology_qi@institution.edu".
+- **The page says:** Version history "2024-01-15 | Internal | Initial implementation at institution"; footer "Last updated: 2024-01-15 | Maintained by: Radiology QI Committee | Contact: <a placeholder address>".
 - **Source:** none found
 - **Proposed fix:** Remove both: like the "Last Institutional Review" line (B1-guidelines-site-01) they describe an implementation, a committee and a contact that do not exist (placeholder e-mail). The same footer is on the BI-RADS, PI-RADS and contrast safety pages.
 - **Proposed home:** Not kept: each topic page states its sources and its sign-off date
-- **Re-check:** disagreed — Reviewer: unsourced. The page did not exist before 2026-02-28, so an "initial implementation at institution" on 2024-01-15 and a "last updated" of the same date cannot be true. "Radiology QI Committee" and radiology_qi@institution.edu are template placeholders (no institution is named). Remove. (~/Code/_archive/guidelines_manager git history; docs/pulmonary/lung_rads.md lines 346, 360) Resolution: Stands as drop: the reviewer calls the placeholder history row and footer unsourced and also says remove; drop is the action.
+- **Re-check:** disagreed — Reviewer: unsourced. The page did not exist before 2026-02-28, so an "initial implementation at institution" on 2024-01-15 and a "last updated" of the same date cannot be true. "Radiology QI Committee" and <a placeholder address> are template placeholders (no institution is named). Remove. (~/Code/_archive/guidelines_manager git history; docs/pulmonary/lung_rads.md lines 346, 360) Resolution: Stands as drop: the reviewer calls the placeholder history row and footer unsourced and also says remove; drop is the action.
 - **Ruling:** keep (2026-11-25)
 
 ### B1-lung-rads-40 · Front-page row (shared/data/resources.ts)

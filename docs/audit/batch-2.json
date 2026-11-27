@@ -1,6 +1,6 @@
 {
   "batch": 2,
-  "title": "Prostate, thyroid, contrast and the home page",
+  "title": "Prostate, thyroid, breast, contrast and the home page",
   "startedOn": "2026-11-25",
   "oldRepoCommits": {
     "guidelines": "34cf4eb"
@@ -2598,7 +2598,7 @@
       ],
       "verdict": "wrong",
       "management": true,
-      "fix": "Take clustered microcysts off the category 3 list: v2025 makes them typically category 2, and category 4 if the margin is indistinct or a solid component is present. Complicated cyst and the benign-looking solid mass as category 3 are not covered by the summaries and need the manual.",
+      "fix": "Take clustered microcysts off the category 3 list: v2025 makes them typically category 2, and category 4 if the margin is indistinct or a solid component is present. Complicated cyst and the benign-looking solid mass as category 3 are not covered by the summaries and need the manual. Whether the 5th edition said this can't be checked (it can't be read), so this may be outdated rather than wrong; the fix is the same.",
       "home": "Breast imaging (BI-RADS) › Categories",
       "recheck": {
         "agrees": true,
@@ -2732,7 +2732,7 @@
       ],
       "verdict": "wrong",
       "management": false,
-      "fix": "Fine pleomorphic calcifications are typically 4B in v2025; use fine linear or fine-linear branching calcifications as the 4C calcification example. The three mass examples are not covered by the summaries and need the manual.",
+      "fix": "Fine pleomorphic calcifications are typically 4B in v2025; use fine linear or fine-linear branching calcifications as the 4C calcification example. The three mass examples are not covered by the summaries and need the manual. Whether the 5th edition said this can't be checked (it can't be read), so this may be outdated rather than wrong; the fix is the same.",
       "home": "Breast imaging (BI-RADS) › Categories",
       "recheck": {
         "agrees": false,
@@ -2953,14 +2953,14 @@
           "location": "Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Typically benign calcifications’: \"Skin calcifications: Round or oval, lucent-centered (due to dermal location), superficial, and frequently clustered. No further intervention required.\""
         }
       ],
-      "verdict": "wrong",
+      "verdict": "correct",
       "management": false,
-      "fix": "Describe them as round or oval, lucent-centred, superficial and often clustered; BI-RADS 2 is right.",
+      "fix": "At the rebuild, use the summary's description: round or oval, lucent-centred, superficial and often clustered. The lucent centre and BI-RADS 2 are right.",
       "home": "Breast imaging (BI-RADS) › Reporting",
       "recheck": {
         "agrees": false,
         "note": "Reviewer: correct. Lucent centre and a benign (category 2) assessment match. 'Polygonal' is not in the summary, which describes them as round or oval; the manual's own wording could not be read, so I did not call the row wrong on that word alone. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Typically benign calcifications (image mammo-1tab-calcifications-benign-2))",
-        "resolution": "Stands as wrong, without management: the summary describes skin calcifications as \"round or oval, lucent-centered\"; \"polygonal\" contradicts that shape. The lucent centre and the category 2 assessment are right."
+        "resolution": "Changed to correct after the final review, as the blind reviewer had it: the lucent centre and the category 2 assessment match; \"polygonal\" against a summary's \"round or oval\" is too thin a basis for wrong when the manual can't be read."
       },
       "ruling": {
         "decision": "keep",
@@ -3116,7 +3116,7 @@
       ],
       "verdict": "wrong",
       "management": true,
-      "fix": "Typical assessments per v2025: amorphous, coarse heterogeneous and fine pleomorphic 4B; fine linear or fine-linear branching 4C (5 only with other suspicious features, e.g. new and segmental). The descriptions and sizes are right.",
+      "fix": "Typical assessments per v2025: amorphous, coarse heterogeneous and fine pleomorphic 4B; fine linear or fine-linear branching 4C (5 only with other suspicious features, e.g. new and segmental). The descriptions and sizes are right. Whether the 5th edition said this can't be checked (it can't be read), so this may be outdated rather than wrong; the fix is the same.",
       "home": "Breast imaging (BI-RADS) › Reporting",
       "recheck": {
         "agrees": false,
@@ -3148,7 +3148,7 @@
       ],
       "verdict": "wrong",
       "management": false,
-      "fix": "Most to least suspicious: segmental → linear → grouped → regional → diffuse; \"clustered\" is the historical name for grouped.",
+      "fix": "Most to least suspicious: segmental → linear → grouped → regional → diffuse; \"clustered\" is the historical name for grouped. Whether the 5th edition said this can't be checked (it can't be read), so this may be outdated rather than wrong; the fix is the same.",
       "home": "Breast imaging (BI-RADS) › Reporting",
       "recheck": {
         "agrees": false,
@@ -4628,8 +4628,8 @@
       "home": "Gadolinium in kidney disease › Categories",
       "ruling": {
         "decision": "keep",
-        "note": "(In chat.) Until CAR 2018/2019 are read, the page carries the ACR 2024 grouping, labelled as the ACR's, and is checked against CAR when they are.",
-        "date": "2026-11-26"
+        "note": "(In chat.) CAR 2019 now read: the fix follows it, as the earlier ruling anticipated (CAR leads gadolinium in kidney disease, B2-contrast-safety-01); the owner approved the live notice that says so.",
+        "date": "2026-11-27"
       },
       "recheck": {
         "agrees": true,
@@ -4664,8 +4664,8 @@
       "home": "Gadolinium in kidney disease › Management",
       "ruling": {
         "decision": "keep",
-        "note": "(In chat.) Follows B2-contrast-safety-24: the ACR 2024 advice until CAR 2018/2019 are read.",
-        "date": "2026-11-26"
+        "note": "(In chat.) CAR 2019 now read: the fix follows it, as the earlier ruling anticipated (CAR leads gadolinium in kidney disease, B2-contrast-safety-01); the owner approved the live notice that says so.",
+        "date": "2026-11-27"
       },
       "recheck": {
         "agrees": true,
@@ -4968,8 +4968,8 @@
       "home": "Gadolinium in kidney disease › Management",
       "ruling": {
         "decision": "keep",
-        "note": "(In chat.) Follows B2-contrast-safety-24: the ACR 2024 advice until CAR 2018/2019 are read.",
-        "date": "2026-11-26"
+        "note": "(In chat.) CAR 2019 now read: the fix follows it, as the earlier ruling anticipated (CAR leads gadolinium in kidney disease, B2-contrast-safety-01); the owner approved the live notice that says so.",
+        "date": "2026-11-27"
       },
       "recheck": {
         "agrees": true,
@@ -5248,7 +5248,7 @@
       "piece": "Footer \"Last updated … Maintained by … Contact …\"",
       "kind": "provenance",
       "topic": "Site",
-      "says": "Four pages (PI-RADS, BI-RADS, contrast safety, Lung-RADS) end with \"Last updated: 2024-01-15 | Maintained by: Radiology QI Committee | Contact: radiology_qi@institution.edu\". The pages were written in 2026, no committee maintains them, and the address is a placeholder.",
+      "says": "Four pages (PI-RADS, BI-RADS, contrast safety, Lung-RADS) end with \"Last updated: 2024-01-15 | Maintained by: Radiology QI Committee | Contact: <a placeholder address>\". The pages were written in 2026, no committee maintains them, and the address is a placeholder.",
       "sources": [],
       "verdict": "drop",
       "management": false,
@@ -5288,7 +5288,10 @@
     }
   ],
   "recheckList": [
-    "BI-RADS joined on 2026-11-26: the v2025 manual can't be had, so by the owner's ruling it was audited against the ACR's summary of v2025 changes and Radiology Assistant's v2025 mammography and ultrasound summaries, with CAR's 2026 breast guidelines for practice (page at old-site commit 85da968, which differs from 34cf4eb only by the removed footer)."
+    "BI-RADS joined on 2026-11-26: the v2025 manual can't be had, so by the owner's ruling it was audited against the ACR's summary of v2025 changes and Radiology Assistant's v2025 mammography and ultrasound summaries, with CAR's 2026 breast guidelines for practice (page at old-site commit 85da968, which differs from 34cf4eb only by the removed footer).",
+    "The ACR-led contrast findings cite the 2024 edition's pages; the 2026 edition (acr-contrast-2026) was compared with it sentence by sentence and changes nothing they rely on except the NSF chapter, whose findings (-24, -25, -36) cite 2026.",
+    "Fix-now: old guidelines site 85da968 (dated notices on PI-RADS, TI-RADS and contrast safety; the PI-RADS, PSA density and TI-RADS calculators switched off, so their case results can't be re-run; false footers and history rows removed) and ec9b147 (the gadolinium notice follows CAR 2019; the BI-RADS notice); this site ed53cb1 and 71160ac (calculator marks off for PI-RADS and TI-RADS; \"Contrast safety\" title).",
+    "Still unread: the CAR/CSACI 2025 update for unknown contrast agents (car-csaci-unknown-2025); B2-contrast-safety-11 stands on the readable sources."
   ],
   "usability": [
     {
