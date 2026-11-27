@@ -17,5 +17,7 @@
   { "id": "B2-ti-rads-25", "decision": "keep", "note": "(In chat.) Not local practice: remove.", "date": "2026-11-26", "savedAt": "2026-11-26T00:00:16.000Z" },
   { "id": "B2-ti-rads-29", "decision": "keep", "note": "(In chat.) Replace the list with the ACR's general line on clinical factors.", "date": "2026-11-26", "savedAt": "2026-11-26T00:00:17.000Z" },
   { "id": "B2-ti-rads-10", "decision": "keep", "note": "(In chat.) Use the white paper's ranges.", "date": "2026-11-26", "savedAt": "2026-11-26T00:00:18.000Z" },
-  { "id": "B2-ti-rads-02", "decision": "keep", "note": "(In chat.) The rebuilt calculator labels a 1-point total TR2.", "date": "2026-11-26", "savedAt": "2026-11-26T00:00:19.000Z" }
+  { "id": "B2-ti-rads-02", "decision": "keep", "note": "(In chat.) The rebuilt calculator labels a 1-point total TR2.", "date": "2026-11-26", "savedAt": "2026-11-26T00:00:19.000Z" },
+  { "id": "B2-bi-rads-37", "decision": "keep", "note": "(In chat.) The MRI pieces (B2-bi-rads-13, -37, -39 to -42) stay on the page marked not checked against v2025.", "date": "2026-11-26", "savedAt": "2026-11-26T23:00:01.000Z" },
+  { "id": "B2-bi-rads-45", "decision": "change", "note": "(In chat, paraphrased.) Local practice: breast density is stated in every report. The US notification-letter note goes; the page says density is reported in every report, labelled local practice.", "date": "2026-11-26", "savedAt": "2026-11-26T23:00:02.000Z" }
 ]

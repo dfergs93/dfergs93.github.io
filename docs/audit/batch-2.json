@@ -2236,6 +2236,11 @@
       "recheck": {
         "agrees": true,
         "note": "Full name and publisher are right, but the page (and the front-page row's version '5th ed.') names the 2013 5th edition, which the ACR replaced with the v2025 Manual. The application list (mammography, ultrasound, MRI) also now lacks contrast-enhanced mammography, a full section in v2025. (bi-rads-2025-whats-new, General rows, p1)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2267,6 +2272,11 @@
         "agrees": false,
         "note": "Reviewer: outdated (management). Name and N/A likelihood are right. The action 'Additional imaging needed' gives only one of the two category 0 outcomes; v2025 splits category 0 into need-additional-imaging and need-prior-imaging-for-comparison (the 5th edition already had 'and/or prior imaging for comparison' in one category). Quotation is faithful. (bi-rads-2025-whats-new, General rows, p1; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories))",
         "resolution": "Stands without management, as the auditor has it: the card already lists comparison with prior examinations as a reason for category 0, so v2025's split into two named forms changes the wording, not what is done."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2297,6 +2307,11 @@
       "recheck": {
         "agrees": true,
         "note": "Names, bands and actions match the ultrasound summary's table row for row (4B 'moderate' as there; the mammography summary's table says 'intermediate'). Small looseness only: the category 4 row's '2–95%' should read >2% to <95%, and category 3 is strictly >0% to ≤2%. Checked against the summaries, not the manual. (ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories); ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), table 'Assessment Categories' (image mammo-1tab-assessment-category))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2328,6 +2343,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). The page's edges (exactly 2% is category 3, exactly 95% is category 5) match the ultrasound summary's table, which carries explicit inequality signs. The mammography summary's table is looser and differs at the edges ('<2%', '2-10%', '50-95%', '> 95%', and its text says 'a >95% likelihood'); I took the signed table as the faithful copy of the manual. The two summaries disagree with each other here; the manual itself could not be read. (ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories); compare ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), table 'Assessment Categories' (image mammo-1tab-assessment-category))",
         "resolution": "Changed to correct, as the reviewer has it: the page matches the ultrasound summary's signed bands exactly; the mammography summary prints the same bands without the boundary signs rather than a different rule."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2359,6 +2379,11 @@
         "agrees": false,
         "note": "Reviewer: outdated (management). Name and N/A are right. The action 'Surgical management' follows the 5th edition ('Surgical excision when clinically appropriate'); v2025 changed it to clinical follow-up with surgeon and/or oncologist and definitive local therapy, usually but not always surgery. (bi-rads-2025-whats-new, General rows, p1; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories))",
         "resolution": "Stands without management: the radiologist's step is unchanged (refer to the treating team); v2025 only widens who gives definitive local therapy."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2390,6 +2415,11 @@
         "agrees": false,
         "note": "Reviewer: outdated (management). The definition and the reasons (recall from screening, extra views, prior comparison) agree with the sources in substance, but the card presents one category 0 titled 'Additional Imaging Needed'; v2025 makes two separate category 0 assessments (additional imaging; prior imaging for comparison). 'Ultrasound or MRI correlation required' as a reason is not addressed by any readable source (ultrasound is plainly additional imaging; MRI as a reason for category 0 could not be checked). (bi-rads-2025-whats-new, General rows, p1; ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories))",
         "resolution": "Stands without management, as for B2-bi-rads-02."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2415,6 +2445,11 @@
       "recheck": {
         "agrees": true,
         "note": "Negative, routine screening, 0% all match. The sentence about symmetric breasts and no masses, distortion or suspicious calcifications is consistent with 'no findings' but its exact wording could not be checked without the manual. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2441,6 +2476,11 @@
       "recheck": {
         "agrees": true,
         "note": "Definition, routine screening and 0% match; calcified fibroadenoma and the fat-containing masses are the summary's own examples, and simple cyst and implants sit among the ultrasound/mammography special cases. Not individually verifiable from the summaries: galactocele, implants as a category 2 example, and the sentence about describing a benign finding. 'Secretory calcifications' is not a current lexicon term (the lexicon term is 'large rod-like'). (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories and Masses/Density; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories); ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), Special cases)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2466,6 +2506,11 @@
       "recheck": {
         "agrees": true,
         "note": "Definition and the ≤2% ceiling match (strictly >0% to ≤2%). The sentence 'not expected to change … prefer to establish stability' is not in the summaries and could not be checked; nothing contradicts it. The card omits that category 3 is given only after a complete diagnostic work-up. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), table 'Assessment Categories' (image mammo-1tab-assessment-category); ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories); ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2496,6 +2541,11 @@
       "recheck": {
         "agrees": true,
         "note": "The quick-reference '6-month short-interval follow-up' is right. The card's 'Initial 6-month follow-up, then 12-month × 2 years' does not state the source's schedule of 6, 12 and 24 months: read literally (6 months, then 12-monthly for 2 years) it gives 6, 18 and 30 months and drops the 12-month examination. If the author meant 'then at 12 and 24 months' the intent is right but the wording does not say it; nothing in the what's-new table marks a change, so this is wording error, not an old edition. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2522,6 +2572,11 @@
       "recheck": {
         "agrees": true,
         "note": "The three lesion types are the right ones. 'Punctate' is a 5th-edition term that v2025 removed (now 'round'), and the focal asymmetry qualifies only without an ultrasound correlate, which the card leaves out. The category itself is unchanged; the fault is terminology and a missing qualifier. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories; bi-rads-2025-whats-new, Mammography rows, p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2548,6 +2603,11 @@
       "recheck": {
         "agrees": true,
         "note": "The only item the ultrasound summary gives a category for is clustered microcysts, and it says typically category 2 (category 4 if indistinct margin or a solid component), not category 3 as the card lists. The what's-new table marks no change here, hence 'wrong' rather than 'outdated', though that table omits minor changes. Complicated cyst and circumscribed solid mass with benign features as category 3 are not stated anywhere in the readable sources (the summary describes them without a category), so those two could not be verified either way. (ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), Special cases: Clustered microcysts; Complicated cyst)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2579,6 +2639,11 @@
         "agrees": false,
         "note": "Reviewer: source-not-readable (management). Neither the what's-new MRI rows nor CAR's breast MRI guideline says which MRI findings qualify for category 3, so the claim that non-mass enhancement with benign-type kinetics qualifies cannot be checked. The only related change marked is terminology ('Kinetic curve assessment' is now 'Enhancement kinetics'). (bi-rads-2025-whats-new, Magnetic Resonance Imaging rows, pp6-8; car-breast-4-2026)",
         "resolution": "Stands without management: nothing readable says what MRI findings qualify for category 3, and nothing shows the page wrong; the owner's question on B2-bi-rads-37 decides what the page does with its MRI pieces."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2610,6 +2675,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Management (biopsy), the box title and the three likelihood bands match. One sentence is softer than the sources: 'Biopsy should be considered', where both summaries give 'needs tissue diagnosis' / 'Tissue diagnosis' as the management; the card's own Management line says Biopsy, so the card as a whole agrees. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), table 'Assessment Categories' (image mammo-1tab-assessment-category); ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories); ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories)",
         "resolution": "Changed to correct, as the reviewer has it: the card's box title (\"Tissue Sampling Recommended\") and management line (\"Biopsy\") match the summary's \"sufficient to warrant tissue diagnosis\"; \"should be considered\" is soft wording, kept as the fix."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2636,6 +2706,11 @@
       "recheck": {
         "agrees": true,
         "note": "Listing a single dilated duct as a 4A (biopsy) example is the 5th-edition position. v2025 treats an isolated solitary dilated duct in an asymptomatic patient as benign, with further work-up only if on a baseline exam, symptomatic or with other suspicious features. Following the page could lead to an unnecessary biopsy. (bi-rads-2025-whats-new, Mammography rows, p3; ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Dilated ducts)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2663,6 +2738,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). The 4C example 'new cluster of fine pleomorphic calcifications' contradicts the mammography summary, which puts fine pleomorphic calcifications in 4B and reserves 4C for fine linear / fine-linear branching; nothing marks this as a change from the 5th edition. 'Cluster' is also the historical word for 'grouped'. The mass examples (4A palpable well-defined solid mass on ultrasound, 4B partially circumscribed mass with an ill-defined margin, 4C irregular hypoechoic mass with angular margins) are not given by subcategory in any readable source and could not be verified. All of these are biopsied either way; the subcategory matters for judging whether a benign result is concordant. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Suspicious calcifications: Risk Stratification; Distribution of calcifications)",
         "resolution": "Changed to wrong, as the reviewer has it (no readable source marks fine pleomorphic calcifications as moved from 4C to 4B, so by the round-2 rule this is wrong, not outdated); no management, since 4B and 4C both lead to biopsy."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2697,6 +2777,11 @@
       "recheck": {
         "agrees": true,
         "note": "Both summaries list 4A/4B/4C, so the subdivision is part of v2025, but neither they nor the what's-new table nor the CAR guidelines say that subcategorising is 'recommended' or that its purpose is managing expectations of the biopsy result. The claim and the matching pitfall cannot be checked without the manual. (ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories); ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), table 'Assessment Categories' (image mammo-1tab-assessment-category); bi-rads-2025-whats-new)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2727,6 +2812,11 @@
       "recheck": {
         "agrees": true,
         "note": "≥95%, tissue diagnosis and the mammographic examples match the summary's; each feature the card lists is already a combination of suspicious descriptors, as the summary requires. The card would be safer saying outright that no single feature earns category 5. 'Casting' is not a lexicon term, and the ultrasound example is not listed in the ultrasound summary (not contradicted). (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2754,6 +2844,11 @@
         "agrees": false,
         "note": "Reviewer: correct (management). Definition, the use cases and 'Surgical/oncologic management' agree with the v2025 wording (unlike the quick-reference row, which says surgical only). Missing, not wrong: v2025's new MRI rule that category 6 may also cover suspicious additional close findings within 2 cm of the proven cancer under three conditions. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment Categories; bi-rads-2025-whats-new, General p1 and MRI p8; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), table 'BiRads Assessment Categories' (image us-1-tab-assessment-categories))",
         "resolution": "Stands as outdated: the management wording is compatible with v2025, but the card lacks v2025's conditions for category 6 (no other suspicious findings, and the MRI rule for additional nearby findings), which the mammography summary's category 6 text states; no management."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2780,6 +2875,11 @@
       "recheck": {
         "agrees": true,
         "note": "Round and oval as the benign shapes and irregular as suspicious are right, but the row is the 5th-edition list of three; v2025 has four shapes, adding 'lobulated' (usually benign, slightly more suspicious than oval). (bi-rads-2025-whats-new, Mammography rows, p2; ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Masses: Shape (image mammo-1tab-lexicon))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2806,6 +2906,11 @@
       "recheck": {
         "agrees": true,
         "note": "Circumscribed, obscured, indistinct and spiculated are right; 'microlobulated' was a 5th-edition mammographic margin that v2025 removed (describe as indistinct). The summary treats 'obscured' as needing further evaluation, not as suspicious in itself, so its place in the suspicious column is a simplification. (bi-rads-2025-whats-new, Mammography rows, p2; ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Masses: Margin (image mammo-1tab-lexicon))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2828,6 +2933,11 @@
       "recheck": {
         "agrees": true,
         "note": "The descriptors and their direction match. The row omits 'equal density', the fourth descriptor, and the summary says nothing on low density being a benign sign (it is neither confirmed nor contradicted). (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Masses: Density (images mammo-1tab-lexicon, mammo-1tab-mass-density))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2851,6 +2961,11 @@
         "agrees": false,
         "note": "Reviewer: correct. Lucent centre and a benign (category 2) assessment match. 'Polygonal' is not in the summary, which describes them as round or oval; the manual's own wording could not be read, so I did not call the row wrong on that word alone. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Typically benign calcifications (image mammo-1tab-calcifications-benign-2))",
         "resolution": "Stands as wrong, without management: the summary describes skin calcifications as \"round or oval, lucent-centered\"; \"polygonal\" contradicts that shape. The lucent centre and the category 2 assessment are right."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2877,6 +2992,11 @@
       "recheck": {
         "agrees": true,
         "note": "Parallel tracks and typically benign both match. v2025 adds a note (not on the page) that vascular calcifications are associated with increased cardiovascular risk. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Typically benign calcifications and 'Example Vascular calcifications'; bi-rads-2025-whats-new, p2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2903,6 +3023,11 @@
       "recheck": {
         "agrees": true,
         "note": "Large coarse calcifications are typically benign, so the description and category 2 stand, but 'coarse or popcorn' is the 5th-edition name: v2025 dropped 'popcorn-like' and folded it, with 'dystrophic', into 'coarse'. (bi-rads-2025-whats-new, Mammography rows, p2; ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Typically benign calcifications)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2929,6 +3054,11 @@
       "recheck": {
         "agrees": true,
         "note": "v2025 dropped 'punctate'; the term is now 'round' only. The 2-3 assessment still fits the summary (round is typically benign; 'a solitary group of round calcifications' is a category 3 example). Quotation is faithful. (bi-rads-2025-whats-new, Mammography rows, p2; ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Calcifications/typically benign and Category 3)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2960,6 +3090,11 @@
         "agrees": false,
         "note": "Reviewer: outdated. The page's '<1 mm' does not match the summary's '<0.5 mm', and the ACR says the round/punctate row changed because sizes near 0.5 mm cannot practically be measured. AMBIGUOUS: the ACR table gives no size for 'round', and the summary's '<0.5 mm' may itself be a carry-over of the old punctate size; the 5th edition cannot be read to say what it gave. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Calcifications/typically benign; bi-rads-2025-whats-new p2)",
         "resolution": "Stands as source-not-readable: the two verifying sources conflict (the summary gives <0.5 mm; the ACR's table gives no size and dropped \"punctate\" because sizes near 0.5 mm can't be measured), so by the owner's rule neither is picked; the page's \"<1 mm\" matches neither and the fix leaves the size out."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -2987,6 +3122,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). Descriptions and sizes match (indistinct/hazy; 0.5-1.0 mm; <0.5 mm; thin lines, branching). The assessment column does not: the summary puts amorphous in 4B (page 4A), fine pleomorphic in 4B (page 4B-4C) and fine linear in 4C (page 4C-5). Nothing in the what's-new table marks these assignments as changed (it says only that the PPV table was updated with newer literature), so 'wrong' rather than 'outdated'; amorphous as 4A is the one that understates suspicion. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Calcifications/suspicious morphology; bi-rads-2025-whats-new p3 (Table 3 PPV by morphology 'updated'))",
         "resolution": "Changed to wrong with management, as the reviewer has it: no source marks the assessments as changed (only the PPV table's literature), and the page's fine linear \"4C–5\" contradicts the summary's note that no single mammographic feature gives category 5 — a benign biopsy of category 5 calcifications is treated as discordant — while amorphous 4A understates them."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3014,6 +3154,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). v2025 lists the distributions least to most suspicious as diffuse, regional, grouped, linear, segmental, so most-to-least is segmental, linear, grouped, regional, diffuse. The page puts regional above grouped. 'Clustered' is a historical term. The order is read from the lexicon list order (the ACR says terms are ordered by suspicion 'where practical'), not from a stated ranking; nothing marks the ranking as changed from the 5th edition. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), lexicon table image mammo-1tab-lexicon and Calcifications/distribution text; bi-rads-2025-whats-new p1 (terms reordered least to most suspicious) and p3 (distribution likelihood table removed))",
         "resolution": "Changed to wrong, as the reviewer has it (nothing marks the ranking as changed); no management: the distribution descriptor does not set the category by itself."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3041,6 +3186,11 @@
         "agrees": false,
         "note": "Reviewer: wrong. Of the page's six items only trabecular thickening is a v2025 associated feature. Asymmetries, intramammary lymph node and skin lesion are separate findings, and by the ACR's own account were not associated features in the 5th edition either (wrong, not merely outdated). Architectural distortion and axillary adenopathy were associated features in the 5th edition and were moved out in v2025 (outdated); 'developing asymmetry' is discontinued in v2025. Skin retraction, nipple retraction and skin thickening are missing. (bi-rads-2025-whats-new, Mammography rows, p3; ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), lexicon table image mammo-1tab-lexicon)",
         "resolution": "Changed to wrong, as the reviewer has it: by the ACR's own account of the 5th edition, asymmetry, intramammary lymph node and skin lesion were never associated features; architectural distortion and axillary adenopathy moved out in v2025. No management."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3067,6 +3217,11 @@
       "recheck": {
         "agrees": true,
         "note": "Descriptors and their sense match (parallel = wider than tall; margin sub-terms indistinct, angular, microlobulated, spiculated), but v2025 adds the shape 'lobulated' and renames 'not parallel' and 'not circumscribed' to 'non-parallel' and 'non-circumscribed'. Note: the summary says round masses should be biopsied regardless of a pseudocapsule, so 'round' in the benign column is not supported by it. The Radiology Assistant table itself still prints 'not parallel' and 'Uncircumscribed'; the ACR table is followed for the terms. (bi-rads-2025-whats-new, Ultrasound rows, p4; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), Masses (shape, margin, orientation) and lexicon image us-1-tab-masses-2)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3093,6 +3248,11 @@
       "recheck": {
         "agrees": true,
         "note": "'Complex' (v2025: mixed solid and cystic) sits in the page's benign column, but the summary says such masses usually need biopsy of the solid part. Heterogeneous as benign and hypoechoic as the suspicious pattern are not supported either (hypoechoic covers both; echogenicity alone 'has limited specificity'); isoechoic is missing. The term 'complex' is also outdated. (ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), Masses/echo pattern; bi-rads-2025-whats-new p5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3119,6 +3279,11 @@
       "recheck": {
         "agrees": true,
         "note": "Listing enhancement as a benign descriptor contradicts the summary, which says it reassures only as a cyst criterion. Shadowing as suspicious is roughly right. 'No posterior features' is missing; v2025 removed 'combined pattern' (the page never listed it). A judgement call: the page's two-column simplification is the error, not the terms. (ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), Masses/posterior features; bi-rads-2025-whats-new p5)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3146,6 +3311,11 @@
         "agrees": false,
         "note": "Reviewer: wrong (management). 'Marked internal' is not a descriptor in either edition as the ACR lists them, rim/peripheral vascularity is missing, and the benign/suspicious split is contradicted by the summary (internal vascularity is not a benign sign; no pattern is specific). 'Absent' is also renamed 'avascular' in v2025. (bi-rads-2025-whats-new, Ultrasound rows, p5; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), Associated features/vascularity and image us-1-tab-associated-features)",
         "resolution": "Takes the reviewer's management flag, consistent with B2-bi-rads-33: calling internal vascularity a benign sign could lower the assessment of a solid mass, and the summary says no vascular pattern is specific."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3177,6 +3347,11 @@
         "agrees": false,
         "note": "Reviewer: source-not-readable (management). Partly verified only: the summary supports anechoic and posterior enhancement and lists simple cyst as a special case, but it has no simple-cyst entry, so 'circumscribed', 'imperceptible wall' and the category 2 / no-biopsy statement cannot be checked against any readable source. Nothing contradicts the tip. UNDECIDED between correct and source-not-readable. (ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual), Masses/echo pattern (anechoic), posterior features, special cases image us-1-tab-special-cases)",
         "resolution": "Stands without management: anechoic and posterior enhancement are confirmed and nothing contradicts the rest; the remainder needs the manual."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3199,6 +3374,11 @@
       "recheck": {
         "agrees": true,
         "note": "The page uses the 5th edition terms 'Kinetic Curves' and 'Initial Phase'; v2025 calls them 'enhancement kinetics' and 'early phase'. 'Delayed phase' is not mentioned as changed. (bi-rads-2025-whats-new, MRI rows, p6)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3231,6 +3411,11 @@
         "agrees": false,
         "note": "Reviewer: source-not-readable (management). Neither the what's-new MRI rows nor CAR's MRI guideline describes the curve types, the Type 1/2/3 numbering, the early-phase rates or what each curve signifies, so none of it can be verified. Internally the 'Initial Phase' column mixes 'moderate' and 'medium' for the same step. (bi-rads-2025-whats-new, MRI rows, p6 (terminology only); car-breast-4-2026, Basic Requirements (kinetic data acquisition only))",
         "resolution": "Stands without management: none of it can be checked and nothing shows it wrong; the owner's question decides what the page does with its MRI pieces."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "(In chat.) The MRI pieces (B2-bi-rads-13, -37, -39 to -42) stay on the page marked not checked against v2025.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3254,6 +3439,11 @@
         "agrees": false,
         "note": "Reviewer: outdated (management). v2025 removed 'focus' from the MRI lexicon, so the page's entry (and its <5 mm definition, which cannot be checked) follows the 5th edition only. (bi-rads-2025-whats-new, MRI rows, p6)",
         "resolution": "Stands without management: v2025 removed \"focus\", but what replaces it for small enhancing findings needs the manual, so no change of management can be shown."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3280,6 +3470,11 @@
       "recheck": {
         "agrees": true,
         "note": "The what's-new MRI rows name masses and NME only to record descriptor changes, and CAR's MRI guideline gives no lexicon definitions, so the two definitions cannot be verified. (The ultrasound summary defines a mass as '3D, space-occupying', but that is ultrasound.) The page's 'with or without margin, shape features' reads as garbled. (bi-rads-2025-whats-new, MRI rows, pp6-7; car-breast-4-2026)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3311,6 +3506,11 @@
         "agrees": false,
         "note": "Reviewer: source-not-readable (management). The only NME distribution change the ACR lists is the removal of 'multiple regions', which the page does not list, so nothing contradicts it; but the suspicion levels and the term 'ductal' beside 'linear' are covered by neither source. (bi-rads-2025-whats-new, MRI rows, p6; car-breast-4-2026)",
         "resolution": "Stands without management, as for B2-bi-rads-37."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3341,6 +3541,11 @@
       "recheck": {
         "agrees": true,
         "note": "The four category names agree with what the ACR table shows (it names 'minimal'), and v2025 adds that minimal includes no enhancement. The percentage cut-offs (<25, 25-50, 50-75, >75%) appear in neither the what's-new rows nor CAR's guideline and cannot be verified; the same percentages appear in the ultrasound summary for the glandular tissue component, a different thing. Flag for the owner: unverified numbers. (bi-rads-2025-whats-new, MRI rows, p6; car-breast-4-2026, Reporting)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3368,6 +3573,11 @@
         "agrees": false,
         "note": "Reviewer: source-not-readable (management). Neither CAR's breast MRI guideline nor the what's-new MRI rows says that moderate/marked BPE obscures lesions or gives days 7-14 of the cycle, so the scheduling advice cannot be verified. (car-breast-4-2026 (whole text searched: no menstrual-cycle timing); bi-rads-2025-whats-new MRI rows)",
         "resolution": "Stands without management, as for B2-bi-rads-37."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3398,6 +3608,11 @@
       "recheck": {
         "agrees": true,
         "note": "The four categories and their descriptions match, and the heading already uses v2025's 'breast density' (the 5th edition said 'breast composition'). The sensitivity wording for A, B and D is the page's paraphrase but is in line with the summary. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Breast density and image mammo-1-density; bi-rads-2025-whats-new p4 and p8)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3424,6 +3639,11 @@
       "recheck": {
         "agrees": true,
         "note": "Direction matches CAR for both categories. Two caveats: CAR's wording for D is a conditional 'we suggest', weaker than the page's 'recommended', and the statement is a CAR practice recommendation, not something the page's cited BI-RADS atlas can be shown to say. (car-breast-referral-2024, B01 screening recommendations 4 and 4.1, PDF p9)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3455,6 +3675,11 @@
       "recheck": {
         "agrees": true,
         "note": "'Many states require' describes the US before the 2024 FDA (MQSA) density reporting requirements that v2025 incorporates; it is now a federal rule. The ACR table names the requirement without spelling out its content, so the detail is inferred. It is also US-only: none of CAR's 2026 parts or the referral guideline has a notification statement, so for a Canadian page the box is a candidate to drop. (bi-rads-2025-whats-new, Mammography rows p2 and Appendix p10; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual) introduction)"
+      },
+      "ruling": {
+        "decision": "change",
+        "note": "(In chat, paraphrased.) Local practice: breast density is stated in every report. The US notification-letter note goes; the page says density is reported in every report, labelled local practice.",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3484,6 +3709,11 @@
       "recheck": {
         "agrees": true,
         "note": "All four items match. v2025 adds one nuance the page lacks: category 6 may also cover suspicious additional close findings within 2 cm of a biopsy-proven cancer; this does not contradict the page. (ra-bi-rads-2025-mammography (Radiology Assistant summary, not the manual), Assessment categories (0, 3, 6) and image mammo-1tab-assessment-category; ra-bi-rads-2025-ultrasound (Radiology Assistant summary, not the manual) image us-1-tab-assessment-categories; bi-rads-2025-whats-new p8)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3509,7 +3739,12 @@
       ],
       "verdict": "correct",
       "management": false,
-      "home": "Breast imaging (BI-RADS) › Reporting"
+      "home": "Breast imaging (BI-RADS) › Reporting",
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
+      }
     },
     {
       "id": "B2-bi-rads-48",
@@ -3540,6 +3775,11 @@
         "agrees": false,
         "note": "Reviewer: unsourced. No source says to describe the most suspicious lesion. The sources say to describe all important findings and to base the final assessment on the most suspicious one; the page's line looks like a garbled version of the second rule. UNDECIDED between unsourced and wrong: read as 'describe only the most suspicious' it contradicts CAR, but it does not say 'only'. (bi-rads-2025-whats-new, report organization rows; car-breast-1-2026, Reporting; car-breast-3-2026, AWBUS reporting)",
         "resolution": "Stands as wrong: read as written it tells the reader to describe one lesion, where CAR (\"all areas of concern should be described\") and the summary (describe all important findings) say otherwise; no management."
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3566,6 +3806,11 @@
       "recheck": {
         "agrees": true,
         "note": "Both links point to '#' and the pages were never written; nothing to verify. Quotation is faithful. (page, 'Related Guidelines' section (lines 277-280))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3592,6 +3837,11 @@
       "recheck": {
         "agrees": true,
         "note": "All four references are the 2013 5th edition Atlas and its chapters, replaced by the v2025 Manual (December 2025). The chapter author lists cannot be checked because the 5th edition is not readable. (bi-rads-2025-whats-new, General rows, p1; docs/audit/sources.json (bi-rads-2013, bi-rads-2025))"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
@@ -3618,6 +3868,11 @@
       "recheck": {
         "agrees": true,
         "note": "The row is quoted faithfully and matches what the page itself states ('Version: 5th Edition (2013)'), but the 5th edition has been replaced by v2025. The summary line is accurate as a description of the page. (shared/data/resources.ts, id bi-rads; bi-rads-2025-whats-new, General rows, p1)"
+      },
+      "ruling": {
+        "decision": "keep",
+        "note": "Kept with the questions answered (owner's rule from batch 2).",
+        "date": "2026-11-26"
       }
     },
     {
