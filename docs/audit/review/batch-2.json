@@ -1783,7 +1783,7 @@
       "says": "Title \"ACR Contrast Safety\"; heading \"ACR Contrast Safety — Iodinated & Gadolinium Contrast Agents\"; reference box: \"Full Name: ACR Manual on Contrast Media\", \"Version: 2023 (v11)\", \"Publisher: American College of Radiology (ACR) Committee on Drugs and Contrast Media\", \"Application: All contrast-enhanced CT, MRI, and fluoroscopic studies\". References: \"1. American College of Radiology Committee on Drugs and Contrast Media. ACR Manual on Contrast Media. Version 2023. Reston, VA\"; \"2. Wang CL, Cohan RH, Ellis JH, et al. … AJR Am J Roentgenol. 2008;191(2):409-415\"; \"3. Thomsen HS, Marckmann P, Logager VB. Update on nephrogenic systemic fibrosis. Magn Reson Imaging Clin N Am. 2008;16(4):551-560\"; \"4. McDonald JS, McDonald RJ, Comin J, et al. Frequency of acute kidney injury following intravenous contrast medium administration. Radiology. 2013;267(1):119-128\".",
       "verdict": "outdated",
       "management": false,
-      "fix": "Name the current edition (ACR Manual on Contrast Media 2025; 2024 read) and say the page is for adults (its doses are ACR Table 3's adult doses). Until rebuilt, a dated notice that the 2023 edition was replaced and that CAR guidance (CAR/CSACI 2025, CAR 2022 CA-AKI, CAR 2018/2019 gadolinium) leads several topics. \"v11\" matches no edition label. References 2 and 4 match the ACR's citations; reference 3 was not checked.",
+      "fix": "Name the current edition (ACR Manual on Contrast Media 2026, read) and say the page is for adults (its doses are ACR Table 3's adult doses). Until rebuilt, a dated notice that the 2023 edition was replaced and that CAR guidance (CAR/CSACI 2025, CAR 2022 CA-AKI, CAR 2018/2019 gadolinium) leads several topics. \"v11\" matches no edition label. References 2 and 4 match the ACR's citations; reference 3 was not checked.",
       "question": "Which should lead each contrast topic? By the audit rule: CAR/CSACI 2025 for hypersensitivity and premedication, CAR 2022 for contrast-associated AKI and metformin, CAR 2018/2019 for gadolinium in kidney disease (copies requested from you), and the ACR Manual for reaction treatment, extravasation, pregnancy, breast-feeding and the thyroid. The page follows the ACR throughout.",
       "home": "Contrast safety › Applies to",
       "recheckNote": "disagreed — Reviewer: outdated. Name and publisher are right and a 2023 edition existed, but the manual has since been reissued (2024 readable here, 2025 current), and its version history names editions by year: nothing in it supports the label 'v11'. References 2 (Wang 2008) and 4 (McDonald 2013) appear in the manual's reference lists; reference 3 (Thomsen 2008) does not appear in the 2024 manual. Much of the page's content is not from the ACR manual at all (see other pieces). (acr-contrast-2024, title page and Version History, printed p 2-3 (PDF p 5-6)) Resolution: Management flag removed, as the reviewer has it: the version label itself changes nothing a patient gets; the page's errors are their own findings, and the dated notice comes with them.",
@@ -1794,9 +1794,9 @@
           "location": "Cover (PDF p2); Version History, pp2–3 (PDF pp5–6): \"Version 2024 of the ACR Manual on Contrast Media was published in July 2024\"; 2024 changes: GBCA Table 1 (\"Eovist Update\"), Chapter 12 (children), Chapter 13 (GI), Chapter 20 (breast-feeding). Preface, p1 (PDF p4): \"This edition … replaces all earlier editions\". Editions are named by year; no \"v11\". Reference 2 matches the Patient Selection chapter's ref 1 (p11, PDF p14); reference 4 matches the PC-AKI chapter's ref 8 (p40, PDF p43). Table 3 gives adult doses (children: Table 2, pp97–103, PDF pp100–106)"
         },
         {
-          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2025. Reston, VA: American College of Radiology; 2025.",
+          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2026. Reston, VA: American College of Radiology; 2026.",
           "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
-          "location": "The 2025 edition (not readable): per the source record it changed only the NSF chapter (GBCA group clarification)"
+          "location": "Cover (PDF p1) and Version History, pp2–3 (PDF pp5–6): the 2026 edition, which \"replaces all earlier editions\"; changes since 2024: NSF chapter GBCA groups (January 2025) and Contrast Media Warming (2026). Table 3 (adult doses) p110 onward"
         },
         {
           "citation": "Byrne A, Macdonald DB, Kirkpatrick IDC, et al. CAR/CSACI Practice Guidance for Contrast Media Hypersensitivity. Can Assoc Radiol J. 2025;76(3):400-416. doi:10.1177/08465371241311253",
@@ -2385,32 +2385,26 @@
       "kind": "guideline-threshold",
       "topic": "Gadolinium in kidney disease",
       "says": "\"Nephrogenic Systemic Fibrosis (NSF) is a rare but serious fibrosing disorder in patients with severely reduced renal function.\"; \"Group I (Highest) | Gadodiamide (Omniscan), gadoversetamide (OptiMARK), gadopentetate dimeglumine (Magnevist) | High — avoid in eGFR <30 or AKI\"; \"Group II (Moderate) | Gadobenate dimeglumine (MultiHance), gadofosveset (Ablavar) | Intermediate — caution in eGFR <30\"; \"Group III (Lowest) | Gadobutrol (Gadavist), gadoteridol (ProHance), gadoterate meglumine (Dotarem), gadoterate macrocyclic agents | Negligible — preferred in at-risk patients\"; tip: \"Use macrocyclic ionic or non-ionic agents (Group III) when GBCA is required in patients with eGFR <30.\"",
-      "verdict": "source-not-readable",
+      "verdict": "wrong",
       "management": true,
-      "fix": "Against ACR 2024 the grouping is wrong: Group II is gadobenate, gadobutrol, gadoteric acid (gadoterate), gadoteridol, gadopiclenol and gadoxetate; Group III is empty; gadofosveset is not listed; Group II is preferred in at-risk patients. Group I and the NSF note are right. The verdict waits for CAR 2018/2019 and the ACR 2025 NSF chapter.",
+      "fix": "Under CAR 2019 (the lead): Group I (gadodiamide, gadopentetate, gadoversetamide) is absolutely contraindicated in AKI, at eGFR <30 and on dialysis; when contrast MRI is needed there, use a macrocyclic agent (gadobutrol, gadoterate, gadoteridol) or a newer linear agent (gadobenate, gadoxetate). CAR found no evidence that any of these is safer than another, so the macrocyclic-preferred tip goes, and gadobenate is not a \"moderate, caution\" agent. Name the agents, not only the groups: CAR 2019 puts gadoxetate in Group III (the ACR's grouping of its day), while the ACR has had it in Group II since 2024 and now lists no Group III agent. Gadofosveset is in neither. Gadopiclenol postdates CAR 2019; the ACR calls it provisional Group II and leaves local practice to treat it as Group II or III. The NSF note is right.",
       "question": "CAR 2018 and its 2019 update lead here and copies have been requested from you (the publisher blocks download). Until they are read, should the page carry the ACR 2024 grouping?",
       "home": "Gadolinium in kidney disease › Categories",
-      "recheckNote": "agrees — The lead (CAR 2018/2019) could not be read. Against the ACR manual the table is wrong: Group I matches, but the ACR's Group II is the lowest-risk group (gadobenate, gadobutrol, gadoterate, gadoteridol, gadopiclenol, gadoxetate) and Group III is empty. The page puts the macrocyclics in a 'Group III (Lowest)' and calls Group II 'moderate', so its group numbers mean the opposite of the ACR's for the agents in use. The ACR does not list gadofosveset. The 2025 ACR edition changed this chapter and was not readable either. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter Table 1, printed p 80 (PDF p 83))",
       "sources": [
-        {
-          "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002 (also Can J Kidney Health Dis. 2018;5:2054358118778573).",
-          "url": "https://doi.org/10.1016/j.carj.2017.11.002",
-          "location": "Not readable (copy requested from the owner)"
-        },
         {
           "citation": "Schieda N, Maralani PJ, Hurrell C, Tsampalieros AK, Hiremath S. Updated clinical practice guideline on use of gadolinium-based contrast agents in kidney disease issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2019;70(3):226-232. doi:10.1016/j.carj.2019.04.001",
           "url": "https://doi.org/10.1016/j.carj.2019.04.001",
-          "location": "Not readable (copy requested from the owner)"
+          "location": "Table 1, p228: the ACR classification of the day — gadobenate II, gadoxetic acid III, gadoteridol, gadobutrol and gadoteric acid II. Appendix 1, statement 3, p230: at eGFR <30 or on dialysis, case by case, alternatives considered first; when MRI is necessary, \"Group II GBCAs (namely macrocyclic GBCA and gadobenate dimeglumine) or the Group III agent gadoxetic acid may be performed without any patient informed consent\"; gadopentetate, gadodiamide and gadoversetamide \"are considered absolutely contraindicated\". p231: \"insufficient evidence to support the use of macrocyclic ionic GBCA compared to macrocyclic non-ionic GBCA or macrocyclic GBCA versus gadobenate dimeglumine or gadoxetic acid to reduce the risk of NSF\"; p227: NSF is \"a debilitating and feared systemic sclerosing condition with no known effective treatment and linked to the use of GBCA in patients with renal impairment\""
         },
         {
-          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024.",
-          "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
-          "location": "NSF chapter, Table 1, p80 (PDF p83): Group I — gadodiamide, gadopentetate dimeglumine, gadoversetamide; Group II (\"few, if any, unconfounded cases of NSF\") — gadobenate dimeglumine, gadobutrol, gadoteric acid (Dotarem, Clariscan), gadoteridol, gadopiclenol, gadoxetate disodium; Group III — \"No agents currently in this category (as of April 2024)\". pp76, 78–79 (PDF pp79, 81–82): Group I contraindicated on dialysis and in CKD 4–5 and avoided in AKI; \"Group II agents are strongly preferred in patients at risk for NSF\""
+          "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002 (also Can J Kidney Health Dis. 2018;5:2054358118778573).",
+          "url": "https://doi.org/10.1016/j.carj.2017.11.002",
+          "location": "Recommendations restated, as updated, in car-gbca-2019 Appendix 1 (pp230–232)"
         },
         {
-          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2025. Reston, VA: American College of Radiology; 2025.",
+          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2026. Reston, VA: American College of Radiology; 2026.",
           "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
-          "location": "The 2025 NSF chapter (GBCA group clarification; not readable)"
+          "location": "NSF chapter, Table 1, p84 (PDF p87): Group I — gadodiamide, gadopentetate dimeglumine, gadoversetamide; Group II — gadobenate, gadobutrol, gadoteric acid, gadoteridol, gadoxetate, and gadopiclenol as Group II* (provisional: \"at the discretion of local practices whether to treat this as a group II or group III agent\"); Group III — \"No agents currently in this category\". January 2025 clarification, p87 (PDF p90): gadoxetic acid moved from Group III to Group II in 2024; p82 (PDF p85): \"Group II agents are strongly preferred in patients at risk for NSF\""
         }
       ]
     },
@@ -2422,32 +2416,26 @@
       "kind": "guideline-threshold",
       "topic": "Gadolinium in kidney disease",
       "says": "\"≥30 | Standard doses of any GBCA are acceptable; Group III preferred\"; \"15–29 | Group III preferred; use lowest effective dose; document risk discussion\"; \"<15 or dialysis-dependent | Risk vs. benefit discussion required; Group III agents; avoid Group I/II\"; \"AKI | Avoid GBCA if possible; if necessary, Group III only\".",
-      "verdict": "source-not-readable",
+      "verdict": "wrong",
       "management": true,
-      "fix": "Against ACR 2024: Group II (which includes the macrocyclics) is the agent for eGFR <30, dialysis and AKI, at the lowest diagnostic dose; \"avoid Group I/II\" on dialysis and \"avoid GBCA if possible\" in AKI contradict it, and no Group III agent exists. On dialysis, time elective scans just before a scheduled session without changing the schedule. The verdict waits for CAR 2018/2019.",
+      "fix": "Under CAR 2019: eGFR ≥30 — any GBCA at the standard dose, no special precautions and no preferred group. eGFR <30 or dialysis (no 15–29 versus <15 split) — case by case, an alternative test considered first; if contrast MRI is needed, a macrocyclic or newer linear agent (gadobenate, gadoxetate) at the standard dose, never double or triple, repeat doses spaced; no NSF consent or risk discussion (dropped in 2019). Dialysis — continue it, with haemodialysis the same day, ideally within 2–3 hours of the MRI, arranged with the dialysis service; don't start dialysis or switch from peritoneal dialysis to haemodialysis. AKI — as eGFR <30, delayed until kidney function settles if the scan can wait. Outpatients need no kidney-function screening before these agents, except to identify those on haemodialysis. The ACR differs: lowest diagnostic dose, and elective scans timed just before a scheduled haemodialysis session.",
       "question": "Follows the question on B2-contrast-safety-24.",
       "home": "Gadolinium in kidney disease › Management",
-      "recheckNote": "agrees — The lead (CAR 2018/2019) could not be read. Against the ACR manual the table is wrong: for dialysis, eGFR under 30 and AKI the ACR says Group I is contraindicated or avoided and a Group II agent should be used, so 'avoid Group I/II' and 'Group III only' point away from the recommended agents (the ACR's Group III is empty). The ACR does not ask for a documented risk discussion with Group II agents, and has no 15-29 versus under-15 split; at eGFR 30-59 it says no special precautions. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter, General Recommendations and Specific Groups of Patients, printed p 78-79 (PDF p 81-82))",
       "sources": [
-        {
-          "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002 (also Can J Kidney Health Dis. 2018;5:2054358118778573).",
-          "url": "https://doi.org/10.1016/j.carj.2017.11.002",
-          "location": "Not readable (copy requested from the owner)"
-        },
         {
           "citation": "Schieda N, Maralani PJ, Hurrell C, Tsampalieros AK, Hiremath S. Updated clinical practice guideline on use of gadolinium-based contrast agents in kidney disease issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2019;70(3):226-232. doi:10.1016/j.carj.2019.04.001",
           "url": "https://doi.org/10.1016/j.carj.2019.04.001",
-          "location": "Not readable (copy requested from the owner)"
+          "location": "Appendix 1, pp230–232: statement 1 (eGFR 60–90, no special precautions); statement 2 (eGFR 30–60: GBCA \"can be administered safely\", no consent; regular vendor dosing, \"half- or quarter-dosing is not considered necessary and double or triple dosing is not recommended\"; sites using Group I agents \"may optionally consider a macrocyclic or newer linear GBCA when renal function approaches 30\"); statement 3 (eGFR <30 or dialysis: case by case, alternatives first, then Group II or gadoxetic acid without informed consent; no double or triple dosing; insufficient evidence that dosing below the standard dose lowers the risk; repeat doses only after sufficient time for excretion); statement 4 (dialysis continues; \"HD should be performed the same day as GBCA administration, ideally within 2-3 hours of MRI\"; no evidence for starting dialysis, switching from PD to HD or altering the prescription; contact the dialysis service to coordinate); statement 5 (AKI managed as eGFR <30, delayed until kidney function stabilizes if it can wait); statement 7 (no outpatient screening before Group II agents or gadoxetic acid, except identifying patients on haemodialysis). p228: informed consent about NSF no longer recommended (it was in the 2018 guideline)"
         },
         {
-          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024.",
-          "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
-          "location": "NSF chapter, pp78–79 (PDF pp81–82): CKD 3 (eGFR 30–59) \"No special precautions are necessary\"; CKD 1–2 \"Any GBCA can be administered safely\"; CKD 4–5 not on dialysis — Group I contraindicated, \"a group II agent should be used\"; chronic dialysis — Group I contraindicated, a Group II agent recommended, consider CT in anuric patients, elective GBCA MRI \"as closely before a regularly scheduled hemodialysis as is possible\", dialysis not initiated or altered; AKI — avoid Group I, \"a group II agent is preferred\"; informed consent not recommended before Group II; lowest dose, not above the single recommended dose (p78, PDF p81). Table 2, p80 (PDF p83): eGFR checks are for Group I or III agents"
+          "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002 (also Can J Kidney Health Dis. 2018;5:2054358118778573).",
+          "url": "https://doi.org/10.1016/j.carj.2017.11.002",
+          "location": "Recommendations restated, as updated, in car-gbca-2019 Appendix 1; the 2018 informed-consent and outpatient-screening advice was dropped in 2019"
         },
         {
-          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2025. Reston, VA: American College of Radiology; 2025.",
+          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2026. Reston, VA: American College of Radiology; 2026.",
           "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
-          "location": "The 2025 NSF chapter (not readable)"
+          "location": "NSF chapter, pp80–83 (PDF pp83–86): group II agents at \"the lowest dose needed for diagnosis\"; at CKD 4–5 and on dialysis Group I contraindicated and a group II agent used; elective GBCA MRI \"as closely before a regularly scheduled hemodialysis as is possible\", dialysis not initiated or altered"
         }
       ]
     },
@@ -2677,27 +2665,21 @@
       "kind": "troubleshooting",
       "topic": "Gadolinium in kidney disease",
       "says": "Don't: \"Use Group I/II GBCA agents in patients with eGFR <30 when alternatives exist\"; Do: \"Choose macrocyclic GBCA when renal function is compromised\".",
-      "verdict": "source-not-readable",
+      "verdict": "wrong",
       "management": true,
-      "fix": "Against ACR 2024, Group II is the recommended group at eGFR <30, so \"don't use Group I/II\" is wrong (Group I alone is right) and the choice is Group II rather than \"macrocyclic\". The verdict waits for CAR 2018/2019.",
+      "fix": "Under CAR 2019: only Group I is contraindicated at eGFR <30, on dialysis and in AKI, and absolutely, not \"when alternatives exist\"; Group II agents (the macrocyclics and gadobenate) and gadoxetate are the ones to use when contrast MRI is needed, so \"Don't use Group I/II\" is wrong. \"Choose macrocyclic\" is too narrow: gadobenate and gadoxetate are equally acceptable.",
       "question": "Follows the question on B2-contrast-safety-24.",
       "home": "Gadolinium in kidney disease › Management",
-      "recheckNote": "agrees — The lead (CAR 2018/2019) could not be read. In the ACR's terms the 'Don't' is wrong as written: Group II agents are the ones to use at eGFR under 30, and only Group I is contraindicated. The 'Do' is close but not the ACR's rule: it prefers Group II agents, which include the linear agents gadobenate and gadoxetate, rather than 'macrocyclic' as such. (car-gbca-2018 / car-gbca-2019 not readable; acr-contrast-2024, NSF chapter, Specific Groups of Patients and Table 1, printed p 78-80 (PDF p 81-83))",
       "sources": [
-        {
-          "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002 (also Can J Kidney Health Dis. 2018;5:2054358118778573).",
-          "url": "https://doi.org/10.1016/j.carj.2017.11.002",
-          "location": "Not readable (copy requested from the owner)"
-        },
         {
           "citation": "Schieda N, Maralani PJ, Hurrell C, Tsampalieros AK, Hiremath S. Updated clinical practice guideline on use of gadolinium-based contrast agents in kidney disease issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2019;70(3):226-232. doi:10.1016/j.carj.2019.04.001",
           "url": "https://doi.org/10.1016/j.carj.2019.04.001",
-          "location": "Not readable (copy requested from the owner)"
+          "location": "Appendix 1, statement 3, p230: Group I agents \"absolutely contraindicated\" at eGFR <30 or on dialysis; Group II (macrocyclic GBCA and gadobenate) or gadoxetic acid when MRI is necessary; p231: no evidence that macrocyclic agents carry less NSF risk than gadobenate or gadoxetic acid"
         },
         {
-          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2024. Reston, VA: American College of Radiology; 2024.",
+          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2026. Reston, VA: American College of Radiology; 2026.",
           "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
-          "location": "NSF chapter, pp78–80 (PDF pp81–83): a Group II agent (gadobenate, gadobutrol, gadoteric acid, gadoteridol, gadopiclenol, gadoxetate) is recommended at eGFR <30, on dialysis and in AKI; Group I contraindicated"
+          "location": "NSF chapter, Table 1, p84 (PDF p87), and pp82–83 (PDF pp85–86): a group II agent at eGFR <30, on dialysis and in AKI; Group I contraindicated"
         }
       ]
     },
@@ -2792,9 +2774,9 @@
           "location": "Version History, p2 (PDF p5): \"Version 2024 … was published in July 2024\""
         },
         {
-          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2025. Reston, VA: American College of Radiology; 2025.",
+          "citation": "ACR Committee on Drugs and Contrast Media. ACR Manual on Contrast Media 2026. Reston, VA: American College of Radiology; 2026.",
           "url": "https://www.acr.org/Clinical-Resources/Clinical-Tools-and-Reference/Contrast-Manual",
-          "location": "The 2025 edition, current (not readable)"
+          "location": "Version History, pp2–3 (PDF pp5–6): the 2026 edition is current"
         }
       ]
     },

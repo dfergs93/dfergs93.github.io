@@ -53,6 +53,10 @@ switched off), each with the owner's OK.
 - Original research papers, for the specific numbers they report.
 - A named textbook edition, for teaching only, never for a threshold.
 - Review articles for teaching; any threshold they give is traced to the paper they cite.
+- One exception, the owner's ruling of 2026-11-26: the BI-RADS v2025 manual can't be had, so
+  the BI-RADS page is checked against the ACR's own summary of the changes and Radiology
+  Assistant's v2025 summaries for mammography and ultrasound. Each such finding names the
+  summary it was checked against.
 
 Websites (Radiopaedia included), summaries and memory may help find a source; they never
 verify one. Every number is compared with the source and its location recorded. Calculators
