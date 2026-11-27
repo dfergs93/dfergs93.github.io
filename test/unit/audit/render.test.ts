@@ -143,4 +143,11 @@ describe('keepUnquestioned (owner, from batch 2: questions only; the rest kept)'
   it('refuses while a question is unanswered, naming the finding', () => {
     expect(() => keepUnquestioned(asked, '2026-11-27')).toThrow(/B1-lung-rads-01/);
   });
+
+  it('refuses a question added after a finding was kept by default', () => {
+    // A re-check or a reopened batch can put a question on a finding the default already kept.
+    const kept = keepUnquestioned(answered, '2026-11-27');
+    const reopened = { ...kept, findings: kept.findings.map((f) => (f.id === 'B1-guidelines-site-01' ? { ...f, question: 'Local practice?' } : f)) };
+    expect(() => keepUnquestioned(reopened, '2026-11-28')).toThrow(/B1-guidelines-site-01/);
+  });
 });

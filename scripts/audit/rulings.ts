@@ -32,10 +32,11 @@ export const KEPT_NOTE = "Kept with the questions answered (owner's rule from ba
 /**
  * From batch 2 the owner rules on the questions only (2026-11-25): once every finding
  * with a question has the owner's ruling, every finding still without one is kept with
- * its proposed fix. Throws, naming them, while any question is unanswered.
+ * its proposed fix. Throws, naming them, while any question is unanswered — including a
+ * question added after the finding was kept by default, since that keep answered nothing.
  */
 export function keepUnquestioned(b: Batch, date: string): Batch {
-  const open = b.findings.filter((f) => f.question && !f.ruling).map((f) => f.id);
+  const open = b.findings.filter((f) => f.question && (!f.ruling || f.ruling.note === KEPT_NOTE)).map((f) => f.id);
   if (open.length) throw new Error(`unanswered question(s): ${open.join(', ')}`);
   return { ...b, findings: b.findings.map((f) => (f.ruling ? f : { ...f, ruling: { decision: 'keep', note: KEPT_NOTE, date } })) };
 }
