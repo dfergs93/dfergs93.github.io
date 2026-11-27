@@ -317,13 +317,13 @@
   {
     "id": "car-gbca-2018",
     "title": "Gadolinium-Based Contrast Agents in Kidney Disease: A Comprehensive Review and Clinical Practice Guideline Issued by the Canadian Association of Radiologists",
-    "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002",
+    "citation": "Schieda N, Blaichman JI, Costa AF, et al. Gadolinium-based contrast agents in kidney disease: a comprehensive review and clinical practice guideline issued by the Canadian Association of Radiologists. Can Assoc Radiol J. 2018;69(2):136-150. doi:10.1016/j.carj.2017.11.002 (also Can J Kidney Health Dis. 2018;5:2054358118778573).",
     "version": "2018",
     "year": 2018,
     "url": "https://doi.org/10.1016/j.carj.2017.11.002",
-    "access": "not-readable",
-    "reuse": "unknown",
-    "note": "SAGE refuses automated download (403); owner asked for a copy."
+    "access": "open",
+    "reuse": "reproduce",
+    "note": "Full text from Europe PMC (PMC6024496), the Canadian Journal of Kidney Health and Disease co-publication (read 2026-11-26). CC BY-NC 4.0: may be reproduced non-commercially with attribution. Its recommendations were revised by car-gbca-2019, so verdicts wait for that."
   },
   {
     "id": "car-gbca-2019",
@@ -466,6 +466,6 @@
     "url": "https://doi.org/10.2214/AJR.16.17613",
     "access": "not-readable",
     "reuse": "unknown",
-    "note": "Cited by the white paper (ref 29) for its risk levels. ajronline.org answered 403 behind a bot check (not circumvented); the PubMed abstract (PMID 28402167) has no per-level rates. Owner asked for a copy."
+    "note": "Cited by the white paper (ref 29) for its risk levels. ajronline.org answered 403 behind a bot check (not circumvented); the PubMed abstract (PMID 28402167) has no per-level rates. Owner asked for a copy. No longer needed: the owner chose the white paper's ranges (B2-ti-rads-10, 2026-11-26)."
   }
 ]
