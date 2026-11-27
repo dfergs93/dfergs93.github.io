@@ -227,8 +227,10 @@ async function run(path: string, force: boolean): Promise<void> {
         await page.goto(file.pageUrl, { waitUntil: 'load' });
         for (const [name, value] of Object.entries(c.inputs)) {
           const field = page.locator(`#${file.fields[name]}`);
-          await field.fill(value); // fires input
-          await field.dispatchEvent('change');
+          // A field that refuses the value (text into a number input) leaves it as it was,
+          // and the read-back below reports it as not accepted; the run goes on.
+          const typed = await field.fill(value, { timeout: 5000 }).then(() => true, () => false); // fires input
+          if (typed) await field.dispatchEvent('change');
         }
         const seen: Observed = await page.evaluate(
           ({ fields, outputs, asked }) => {
