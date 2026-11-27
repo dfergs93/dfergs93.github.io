@@ -2962,6 +2962,10 @@
         "decision": "keep",
         "note": "(In chat.) Until CAR 2018/2019 are read, the page carries the ACR 2024 grouping, labelled as the ACR's, and is checked against CAR when they are.",
         "date": "2026-11-26"
+      },
+      "recheck": {
+        "agrees": true,
+        "note": "The NSF sentence and the Group I agent list are right, but the grouping is not the one CAR or the ACR uses: the macrocyclics (gadobutrol, gadoteridol, gadoterate) are Group II with gadobenate, not Group III, and Group III is the limited-data group (gadoxetic acid in CAR 2019; empty in ACR 2026), not the lowest-risk one. Gadobenate is not an 'intermediate, caution' agent (CAR and ACR treat it like the macrocyclics), Group I is absolutely contraindicated at eGFR <30/AKI/dialysis rather than 'avoid', gadoxetate and gadopiclenol are missing, and gadofosveset appears in neither source's table. The page's own cited source (ACR manual) never placed the macrocyclics in Group III, so this is wrong rather than outdated; the agents the tip names are acceptable ones, but the group labels would mislead anyone reading them against a CAR or ACR protocol. (car-gbca-2019, Table 1 (p228, PDF p3) and Appendix 1 guideline 3 (pp230-231, PDF pp5-6); acr-contrast-2026, NSF chapter Table 1 (printed p84, PDF p87))"
       }
     },
     {
@@ -2994,6 +2998,10 @@
         "decision": "keep",
         "note": "(In chat.) Follows B2-contrast-safety-24: the ACR 2024 advice until CAR 2018/2019 are read.",
         "date": "2026-11-26"
+      },
+      "recheck": {
+        "agrees": true,
+        "note": "The >=30 row is right in substance (CAR: no special precautions at eGFR 30-60, regular dosing) apart from its 'Group III preferred' label. The rows for 15-29, <15/dialysis and AKI are wrong: 'avoid Group I/II' and 'Group III only' steer away from the very agents CAR and the ACR say to use (Group II; in CAR also gadoxetic acid), Group I is absolutely contraindicated rather than 'not preferred', and CAR 2019 no longer recommends informed consent/risk discussion for NSF with these agents (the ACR likewise does not recommend consent for Group II). CAR does not split 15-29 from <15 and does not support dosing below the vendor's standard dose (the ACR does say lowest dose needed, not above a single dose); the AKI row's 'avoid if possible' matches CAR's advice to delay until renal function stabilises. The table also omits CAR's same-day haemodialysis (ideally within 2-3 hours) for patients already on HD. (car-gbca-2019, Appendix 1 guidelines 2, 3 and 5 (pp230-231, PDF pp5-6); acr-contrast-2026, NSF chapter 'General Recommendations' and 'Additional Specific Recommendations' (printed pp82-83, PDF pp85-86))"
       }
     },
     {
@@ -3294,6 +3302,10 @@
         "decision": "keep",
         "note": "(In chat.) Follows B2-contrast-safety-24: the ACR 2024 advice until CAR 2018/2019 are read.",
         "date": "2026-11-26"
+      },
+      "recheck": {
+        "agrees": true,
+        "note": "The 'Don't' is wrong on both halves: Group II is the group to use at eGFR <30, not one to avoid, and Group I is absolutely contraindicated there, not merely avoided 'when alternatives exist'. The 'Do' (choose a macrocyclic when renal function is compromised) is an acceptable choice and not contradicted, but CAR finds insufficient evidence to prefer a macrocyclic over gadobenate or gadoxetic acid, so it is narrower than the guidance. (car-gbca-2019, Appendix 1 guideline 3 and its qualifying statements (pp230-231, PDF pp5-6); acr-contrast-2026, NSF chapter 'Patients with CKD 4 or 5' (printed p83, PDF p86))"
       }
     },
     {
