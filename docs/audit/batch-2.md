@@ -2,7 +2,7 @@
 
 Started 2026-11-25 · old guidelines site at 34cf4eb. Generated from `batch-2.json`; do not edit.
 
-122 findings: 44 correct, 2 outdated, 57 wrong, 8 not-lead, 6 unsourced, 5 drop. 54 flagged management.
+173 findings: 55 correct, 23 outdated, 65 wrong, 8 not-lead, 6 unsourced, 6 drop, 10 source-not-readable. 60 flagged management.
 
 ## PI-RADS
 
@@ -1272,6 +1272,467 @@ https://dfergs93.github.io/guidelines_manager/contrast/contrast_safety/
 - **Re-check:** agrees — Version '2023' is behind the manual (2024 readable here; 2025 current). The title also overstates the source: under the owner's rule CAR leads for premedication, kidney injury, metformin and gadolinium in kidney disease, and several parts of the page are not from the ACR manual at all. (acr-contrast-2024, title page and Version History, printed p 2-3 (PDF p 5-6); car-csaci-hypersensitivity-2025, Recommendation 5; car-ca-aki-2022, Summary of recommendations)
 - **Ruling:** keep (2026-11-26) — Kept with the questions answered (owner's rule from batch 2).
 
+## BI-RADS
+
+https://dfergs93.github.io/guidelines_manager/breast/bi_rads/
+
+### B2-bi-rads-01 · Page title and reference box (full name, version, publisher, application)
+
+- **Verdict:** outdated
+- **Kind:** provenance · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Title "ACR BI-RADS — Breast Imaging Reporting & Data System". Collapsed box: "Full Name: Breast Imaging Reporting and Data System", "Version: 5th Edition (2013)", "Publisher: American College of Radiology (ACR)", "Application: Mammography, Breast Ultrasound, Breast MRI".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1, General rows: "5th Edition" → "v2025. Versioning system changed from edition numbering to year of publication"; "BIRADS® Atlas" → "BIRADS® Manual"; introduction, p. 1: v2025 keeps Mammography, Ultrasound, MRI and Audit and Outcomes Monitoring and "now includes Contrast Enhanced Mammography (CEM) as an intrinsic section rather than a supplement"; Fleming et al. CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451252 — Reference 30, p. 9: "Newell MS, Destounis SV, Leung JWT, DeMartini WB, Lee CH, Eby PR. ACR BI-RADS® v2025 Manual. Reston, VA, American College of Radiology; 2025." (the edition CAR 2026 reports by)
+- **Proposed fix:** Version: "v2025 (ACR BI-RADS® Manual, 2025), which replaced the 5th edition Atlas (2013)"; name the publication a Manual. Application can stay mammography, ultrasound and MRI unless a CEM section is added (v2025 has one).
+- **Proposed home:** Breast imaging (BI-RADS) › Applies to
+
+### B2-bi-rads-02 · Quick reference table: BI-RADS 0 row
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "BI-RADS 0 | Incomplete | N/A | Additional imaging needed"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1, row "BI-RADS 0": 5th edition "Category 0: Incomplete — Need Additional Imaging Evaluation and/or Prior Imaging for Comparison" → v2025 two categories "Category 0: Incomplete: Need Additional Imaging Evaluation" and "Category 0: Incomplete: Need Prior Imaging for Comparison" (2024 FDA MQSA amendments); Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): "Category 0: Incomplete – Need Additional Imaging or Prior Imaging for Comparison", management "Recall for additional imaging or need comparison to prior examination(s)", likelihood "N/A"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, table image ‘Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/mammo-1tab-assessment-category.jpg): "0 Incomplete — Need additional imaging or prior examinations for comparison"
+- **Proposed fix:** Give v2025’s two forms, "Incomplete: need additional imaging evaluation" and "Incomplete: need prior imaging for comparison", with the action "additional imaging, or comparison with prior examinations".
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-03 · Quick reference table: BI-RADS 1 to 5 rows (names, likelihood bands, actions)
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "BI-RADS 1 | Negative | Essentially 0% | Routine screening"; "BI-RADS 2 | Benign | Essentially 0% | Routine screening"; "BI-RADS 3 | Probably benign | ≤2% | 6-month short-interval follow-up"; "BI-RADS 4 | Suspicious | 2–95% | Tissue sampling (biopsy)"; "BI-RADS 4A | Low suspicion | >2% to ≤10% | Biopsy"; "BI-RADS 4B | Moderate suspicion | >10% to ≤50% | Biopsy"; "BI-RADS 4C | High suspicion | >50% to <95% | Biopsy"; "BI-RADS 5 | Highly suggestive of malignancy | ≥95% | Biopsy".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): Category 1 "Routine screening" 0%; Category 2 "Routine screening" 0%; Category 3 "Short-interval (6-month) follow-up or continued surveillance (12 months)" ">0% but ≤2%"; Category 4 "Tissue diagnosis" ">2% but <95%"; 4A ">2% to ≤10%"; 4B ">10% to ≤50%"; 4C ">50% to <95%"; Category 5 "Tissue diagnosis" "≥95%"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, table image ‘Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/mammo-1tab-assessment-category.jpg): 1 and 2 "0%", 3 "<2%" with "Short-interval follow-up suggested", 4 "Suspicious abnormality needs tissue diagnosis", 4A "2-10%", 4B "10-50%", 4C "50-95%", 5 "> 95%" (edges: B2-bi-rads-04); section ‘Standard Reporting’, management recommendations: "Category 1-2 continue or resume screening at appropriate interval", "Category 3 recommend follow up", "Category 4-5 biopsy"; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451254 — Table 1, p. 4: biopsy for primary diagnosis of lesions assessed as BI-RADS® Category 4 or 5 (stereotactic/DBT, ultrasound and MRI/CEM columns)
+- **Proposed fix:** Optional: write category 4 as ">2% to <95%" (as the ultrasound summary does) rather than "2–95%".
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-04 · Likelihood band edges at 2% and 95% (quick reference table and category cards)
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Category 3 "≤2%", 4A ">2% to ≤10%", 4C ">50% to <95%", category 5 "≥95%" (the category 3, 4 and 5 cards say the same): a likelihood of exactly 2% is category 3 and exactly 95% is category 5.
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): the same edges as the page (3 ">0% but ≤2%", 4A ">2% to ≤10%", 4C ">50% to <95%", 5 "≥95%"); Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, table image ‘Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/mammo-1tab-assessment-category.jpg): 3 "<2%", 4A "2-10%", 4C "50-95%", 5 "> 95%", which put exactly 2% in 4A and exactly 95% in 4C; section ‘BI-RADS Category 5’ also writes ">95%"; American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26)
+- **Proposed fix:** No change if the manual matches the ultrasound summary. The bands themselves agree in both summaries (B2-bi-rads-03); only these exact edges differ, so the manual has to settle them.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-05 · Quick reference table: BI-RADS 6 row
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "BI-RADS 6 | Known biopsy-proven malignancy | N/A | Surgical management"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1, row "Category 6": 5th edition management "Surgical excision when clinically appropriate" → v2025 "Clinical follow-up with surgeon and/or oncologist, and definitive local therapy (usually surgery) when clinically appropriate", "Revised in recognition of emerging definitive therapies that may not involve surgical excision"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): Category 6 management "Clinical follow-up with surgeon and/or oncologist, and definitive local therapy (usually surgery) when clinically appropriate", likelihood "N/A"; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451254 — Management Recommendations, p. 8: "Malignant results: recommend referral to a surgeon or oncologist for consultation"
+- **Proposed fix:** Action: "Clinical follow-up with surgeon and/or oncologist; definitive local therapy (usually surgery) when clinically appropriate".
+- **Proposed home:** Breast imaging (BI-RADS) › Management
+
+### B2-bi-rads-06 · Category 0 card (definition, common reasons, management)
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Evaluation is incomplete. Additional imaging is necessary before a final category can be assigned." Common reasons: "Callback from screening mammography", "Need for additional views (spot compression, magnification)", "Prior study comparison needed", "Ultrasound or MRI correlation required". "Management: Complete workup before final assessment".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1, row "BI-RADS 0": v2025 splits category 0 into "Need Additional Imaging Evaluation" and "Need Prior Imaging for Comparison"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, ‘BI-RADS Category 0 – Incomplete’: "assigned in a screening context to indicate that the examination is neither negative nor definitively benign … requires a complete diagnostic workup"; section ‘Standard Reporting’: "Category 0 include suggestions for next course of action"; Fienberg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Ultrasound. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451256 — Whole Breast Screening Ultrasound, Clinical Practice Recommendations, p. 4: an asynchronously read screening ultrasound "may be given a BI-RADS® 0, 1, 2"; any BI-RADS 0 is recalled for focused diagnostic ultrasound
+- **Proposed fix:** Present v2025’s two category 0 forms (need additional imaging evaluation; need prior imaging for comparison), say it is a screening assessment, and that the report names the next step.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-07 · Category 1 card
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "No abnormality found. Breast tissue is symmetric. No masses, architectural distortion, or suspicious calcifications." "Management: Routine screening interval"; "Malignancy Risk: Essentially 0%".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’: "BI-RADS Category 1 – Negative. No findings; normal examination."; table image: "No significant findings", "likelihood malignancy 0%"; section ‘Standard Reporting’: "Category 1-2 continue or resume screening at appropriate interval"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): "Category 1: Negative", "Routine screening", "0%"
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-08 · Category 2 card (definition, examples, management)
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Definite benign finding(s). The radiologist may describe a benign finding while still concluding there is no mammographic evidence of malignancy." Examples: "Involuting, calcified fibroadenoma", "Multiple secretory calcifications", "Oil cysts, lipomas, galactoceles, hamartomas", "Simple cysts on ultrasound", "Implants". "Management: Routine screening interval"; "Malignancy Risk: Essentially 0%".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, ‘BI-RADS Category 2 – Benign’: "Examples include calcified fibroadenoma, skin calcifications, surgical clips, and fat-containing masses"; table image: "Definitely benign finding", "0%"; section ‘Masses › Density’: "Most fat-containing masses are benign (lipoma, oilcyst and hamartoma)"; lexicon table image: typically benign calcifications include "Large rod-like" (no "secretory" term); Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): "Category 2: Benign", "Routine screening", "0%"
+- **Proposed fix:** Optional: use the lexicon term "large rod-like" for secretory calcifications. Galactoceles, simple cysts and implants are not named as category 2 examples in the summaries (simple cyst criteria: B2-bi-rads-35).
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-09 · Category 3 card: definition and likelihood
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Finding has high probability of being benign. Not expected to change over the follow-up interval, but the radiologist would prefer to establish stability." "Malignancy Risk: ≤2%".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, table image ‘Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/mammo-1tab-assessment-category.jpg): "Findings with a high probability of being benign", "likelihood malignancy <2%" (edge: B2-bi-rads-04); section ‘Assessment Categories’: "Assigned only after a complete diagnostic imaging evaluation"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): Category 3 ">0% but ≤2%"
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-10 · Category 3 card: follow-up schedule
+
+- **Verdict:** wrong · **management**
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Management: Initial 6-month follow-up, then 12-month × 2 years" (quick reference: "6-month short-interval follow-up").
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, ‘BI-RADS Category 3 – Probably Benign’: "Short-interval follow-up imaging at 6, 12, and 24 months may be appropriate. If findings decrease in size or resolve during surveillance, the assessment may be downgraded to Category 2 or 1. If findings become more suspicious, the assessment should be upgraded, and biopsy is indicated."; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): Category 3 "Short-interval (6-month) follow-up or continued surveillance (12 months)"; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451254 — Table 1, p. 4: biopsy of probably benign (BI-RADS 3) lesions "where there are clinical indications for biopsy, patient preference for biopsy over follow-up, or when short-term imaging follow-up would be difficult or unreasonable"
+- **Proposed fix:** "then 12-month × 2 years" reads as yearly exams at 18 and 30 months, skipping the 12-month exam; write "follow-up imaging at 6, 12 and 24 months; downgrade to 2 or 1 if it shrinks or resolves, biopsy if it becomes more suspicious", and add CAR’s note that biopsy instead of follow-up is reasonable for clinical indications, patient preference or when follow-up would be difficult.
+- **Proposed home:** Breast imaging (BI-RADS) › Management
+
+### B2-bi-rads-11 · Category 3 card: qualifying lesions, mammography
+
+- **Verdict:** outdated · **management**
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Mammography: Non-calcified circumscribed solid mass, focal asymmetry, solitary group of punctate calcifications"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, ‘BI-RADS Category 3 – Probably Benign’: "Assigned only after a complete diagnostic imaging evaluation. Includes: A solitary, noncalcified, circumscribed solid mass; Focal asymmetry without a corresponding ultrasound correlate; A solitary group of round calcifications"; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 2: "Calcifications/typically benign/round (the parenthetical term punctate has been removed …)"
+- **Proposed fix:** Use v2025’s list: a solitary, non-calcified, circumscribed solid mass; a focal asymmetry without an ultrasound correlate; a solitary group of round calcifications, after full diagnostic workup. On the page’s list a focal asymmetry with an ultrasound correlate gets 6-month follow-up; whether the 5th edition had "solitary" and the correlate condition cannot be checked.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-12 · Category 3 card: qualifying lesions, ultrasound
+
+- **Verdict:** wrong · **management**
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Ultrasound: Complicated cyst, clustered microcysts, circumscribed solid mass with benign features"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Special Cases › Clustered microcysts’: "Typically benign (BI-RADS category 2), especially if multiple or associated with fibrocystic changes. BI-RADS 4 (suspicious) if margin is indistinct or a discrete solid component is present; biopsy recommended, particularly for new masses or in post-menopausal patients."; ‘Complicated cyst’: described, no category given; ‘Echogenic Pseudocapsule’: oval or lobulated masses with a circumferential pseudocapsule and no suspicious features "are very likely benign (consider interval growth)", no category given; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 5, ultrasound special cases: simple cyst, clustered microcysts and complicated cyst kept (no category change listed)
+- **Proposed fix:** Take clustered microcysts off the category 3 list: v2025 makes them typically category 2, and category 4 if the margin is indistinct or a solid component is present. Complicated cyst and the benign-looking solid mass as category 3 are not covered by the summaries and need the manual.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-13 · Category 3 card: qualifying lesion, MRI
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "MRI: Non-mass enhancement with kinetics suggestive of benign etiology"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26); American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — pp. 6–8, MRI rows: no category 3 change listed (the kinetic terms are renamed, p. 6); Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Magnetic Resonance Imaging. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451249 — Reporting, p. 3: the report includes "Level of suspicion based on imaging findings" and the BI-RADS classification; no category criteria
+- **Proposed fix:** Cannot be checked without the v2025 MRI section; label it unverified or remove it until it can be read (see the question on B2-bi-rads-37).
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-14 · Category 4 card: definition, management and likelihood
+
+- **Verdict:** wrong
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Finding does not have classic benign morphology. Biopsy should be considered." Box title "Tissue Sampling Recommended"; "Management: Biopsy"; "Malignancy Risk: 4A: >2–10% | 4B: >10–50% | 4C: >50–<95%".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, ‘BI-RADS Category 4 – Suspicious Abnormality’: "There is a suspicion for malignancy sufficient to warrant tissue diagnosis, but the findings are not pathognomonic for cancer."; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): Category 4 and 4A–4C "Tissue diagnosis", 4A ">2% to ≤10%", 4B ">10% to ≤50%", 4C ">50% to <95%"; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451254 — Table 1, p. 4: biopsy for primary diagnosis of lesions assessed as BI-RADS® Category 4 or 5
+- **Proposed fix:** Replace the first two sentences with v2025’s definition: suspicion for malignancy sufficient to warrant tissue diagnosis, but not pathognomonic for cancer. The management line and likelihood bands are right.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-15 · Category 4 card: 4A example "single dilated duct"
+
+- **Verdict:** outdated · **management**
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "4A: Low suspicion — e.g., … single dilated duct"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 3: 5th edition "Solitary dilated duct considered suspicious unless benign etiology is demonstrated" → v2025 "Solitary dilated duct when not associated with suspicious imaging features (e.g., associated mass, architectural distortion, or microcalcifications) and occurring in asymptomatic individuals can be considered benign. If a solitary dilated duct is present on a baseline exam, in a symptomatic woman or is associated with other suspicious imaging features, then additional imaging evaluation leading to possible tissue diagnosis should be considered"; multiple dilated ducts added as "typically a benign finding"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Dilated ducts › Solitary dilated duct’: "While the fifth edition indicated that this finding should be considered a BI-RADS 4A finding, more recent publications, suggest that the malignancy rate is sufficiently low to consider it a benign assessment if there are no associated clinical or additional imaging findings or change over time."
+- **Proposed fix:** Remove it as a 4A example and say a solitary dilated duct without suspicious features in an asymptomatic patient can be assessed as benign; on a baseline exam, with symptoms or with suspicious features it needs further imaging and possibly biopsy.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-16 · Category 4 card: other 4A, 4B and 4C examples
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "4A: Low suspicion — e.g., palpable solitary, well-defined solid mass on US"; "4B: Moderate suspicion — e.g., partially circumscribed mass with ill-defined margin"; "4C: High suspicion — e.g., irregular, hypoechoic mass with angular margins; new cluster of fine pleomorphic calcifications".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Suspicious calcifications’, ‘Risk Stratification’: "Amorphous, coarse heterogeneous, and fine pleomorphic calcifications are associated with a lower risk of malignancy and are typically assigned to BI-RADS category 4B. Fine linear or fine-linear branching calcifications, due to their higher malignancy risk, are assigned to BI-RADS category 4C."; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 3: 5th edition "Table 2. Likelihood of Malignancy as a Function of BI-RADS Descriptors of Calcification Morphology" → v2025 "Table 3. Positive Predictive Value of Malignancy of Breast Calcifications Based on Morphology (table has been updated to include more recent literature)"
+- **Proposed fix:** Fine pleomorphic calcifications are typically 4B in v2025; use fine linear or fine-linear branching calcifications as the 4C calcification example. The three mass examples are not covered by the summaries and need the manual.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-17 · Subcategory guidance tip and the pitfall about subdividing category 4
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Tip "Subcategory Guidance": "Subcategorizing (4A/4B/4C) is recommended as it helps manage patient/clinician expectations for biopsy results." Pitfall: "Forget to subcategorize BI-RADS 4 (4A/4B/4C)".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26); Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, table image ‘Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/mammo-1tab-assessment-category.jpg): lists 4A, 4B and 4C with likelihood bands; says nothing on whether subdivision is recommended or optional; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): lists 4A, 4B and 4C; no statement on whether subdivision is required; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — pp. 1–8: no change to category 4 subdivision listed
+- **Proposed fix:** Whether v2025 recommends or only allows subdivision, and whether it applies to MRI, needs the manual; until then present 4A–4C as available for mammography and ultrasound (both summaries list them) without calling them recommended.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-18 · Category 5 card
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Finding has a high probability (≥95%) of being malignant. Biopsy is required before any treatment." Classic features: "Spiculated high-density mass"; "Segmental/linear distribution of fine-linear or fine-linear branching (casting) calcifications"; "Irregular hypoechoic mass with spiculation, posterior shadowing, and angular margins on ultrasound". "Management: Tissue sampling (needle biopsy prior to definitive surgical management)"; "Malignancy Risk: ≥95%".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, ‘BI-RADS Category 5’: examples "Irregular, spiculated, high-density mass with associated microcalcifications" and "New fine linear branching calcifications in a segmental distribution"; "No single mammographic feature confers a >95% likelihood of malignancy; as with breast ultrasound and MRI, a combination of suspicious imaging features is required for a Category 5 assessment. A non-malignant percutaneous tissue diagnosis is typically considered discordant."; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): Category 5 "Tissue diagnosis", "≥95%"; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451254 — Overview, p. 2: minimally invasive image-guided biopsy is the most common method of diagnosis and is superior to open surgical biopsy; Table 1, p. 4: biopsy for BI-RADS 4 or 5
+- **Proposed fix:** Optional: add v2025’s note that category 5 needs a combination of suspicious features and that a benign needle result is usually discordant (B2-bi-rads-04 covers the ≥95% edge).
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-19 · Category 6 card
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Used for imaging following biopsy that has shown malignancy, performed prior to definitive therapy." Use cases: "Pre-surgical planning imaging", "Monitoring response to neoadjuvant chemotherapy", "Post-biopsy MRI for extent of disease". "Management: Surgical/oncologic management"; "Malignancy Risk: Known malignancy".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’, ‘BI-RADS Category 6’: "Use Category 6 after tissue diagnosis of malignancy but prior to definitive therapy, when no additional mammographic abnormalities (beyond the known cancer) are present, or for second opinion review of previously biopsied malignant findings"; also after attempted complete percutaneous removal, during neoadjuvant chemotherapy, and after excision with positive margins and a residual feature; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1, row "Category 6": management now "Clinical follow-up with surgeon and/or oncologist, and definitive local therapy (usually surgery) when clinically appropriate"; p. 8 (MRI section): "Category 6 may also be used for separate additional close findings (ACFs) that are suspicious but not definitively malignancy when all of the following criteria are met: 1) They are within 2 cm of the biopsy-proven malignancy, 2) They do not increase the total extent by more than 2 cm, and 3) It is felt they would not change clinical management"
+- **Proposed fix:** Use v2025’s management wording; add that category 6 applies when there are no other suspicious findings, and v2025’s MRI rule for additional close findings (all three criteria: within 2 cm, extent not increased by more than 2 cm, management unchanged).
+- **Proposed home:** Breast imaging (BI-RADS) › Management
+
+### B2-bi-rads-20 · Mammography lexicon, masses: shape row
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Shape | Round, oval | Irregular" (benign | suspicious descriptors)
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 2: "Masses/shape/lobulated is returned to the lexicon to allow added nuance in describing mass shape. Lobular (term used in 4th Edition) is changed to lobulated"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Masses › Shape’: "Oval, lobulated, round or irregular"; lobulated "Although usually benign, it is considered slightly more suspicious than an oval mass"; irregular "Highly suspicious for malignancy"
+- **Proposed fix:** Add lobulated (v2025): oval, lobulated, round, irregular.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-21 · Mammography lexicon, masses: margin row
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Margin | Circumscribed | Obscured, microlobulated, indistinct, spiculated"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 2: "Masses/margin/microlobulated is removed as a margin selection to avoid confusion with the shape term lobulated. A microlobulated margin should now be described as indistinct"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Margin’: circumscribed (at least 75% circumscribed, the rest obscured), obscured ("Partially hidden by surrounding dense fibroglandular tissue. Requires further evaluation"), indistinct ("Suspicious"), spiculated ("Highly suggestive of malignancy")
+- **Proposed fix:** Drop microlobulated (now described as indistinct); present obscured as a margin that cannot be assessed and needs further imaging, not as a suspicious feature.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-22 · Mammography lexicon, masses: density row
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Density | Fat-containing, low density | High density"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Masses › Density’: fat-containing ("Most fat-containing masses are benign"), low density, equal density, high density ("High density masses have a high likelihood of malignancy (70%)"); lexicon table image: "Fat-containing, Low, Equal, High"
+- **Proposed fix:** Optional: add "equal" density (the lexicon has four descriptors); the summary does not call low density a benign sign.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-23 · Mammography lexicon, calcifications: skin row
+
+- **Verdict:** wrong
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Skin calcifications | Polygonal, lucent center | BI-RADS 2"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Typically benign calcifications’: "Skin calcifications: Round or oval, lucent-centered (due to dermal location), superficial, and frequently clustered. No further intervention required."
+- **Proposed fix:** Describe them as round or oval, lucent-centred, superficial and often clustered; BI-RADS 2 is right.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-24 · Mammography lexicon, calcifications: vascular row
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Vascular calcifications | Parallel tracks | BI-RADS 2"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Typically benign calcifications’: "Vascular calcifications: Linear or tubular, following the course of vessel walls"; example: "present as parallel calcific tracks"; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 2: "Calcifications/typically benign/vascular are noted to be associated with increased risk of cardiovascular disease according to recent literature (referenced)"
+- **Proposed fix:** Optional: add v2025’s note that vascular calcifications are associated with increased cardiovascular risk.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-25 · Mammography lexicon, calcifications: coarse or popcorn row
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Coarse or popcorn | Large, dense | BI-RADS 2"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 2: "Calcifications/typically benign/coarse (“popcorn-like” has been eliminated by incorporating it into the remaining descriptor category “coarse” …)"; "this category also now includes dystrophic as well, which has been eliminated as a separate descriptor"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Typically benign calcifications’: "Coarse calcifications: Large, irregular, flaky in appearance. Classic for involuting fibroadenomas and dystrophic calcifications. The term “popcorn-like” has been removed."
+- **Proposed fix:** Call it "Coarse" (v2025 dropped "popcorn-like" and folded dystrophic calcifications into coarse); BI-RADS 2 is right.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-26 · Mammography lexicon, calcifications: round/punctate row (term and assessment)
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Round/punctate | Smooth, well-defined, <1 mm | BI-RADS 2–3"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 2: "Calcifications/typically benign/round (the parenthetical term punctate has been removed, since both round and punctate refer to particles that are round in shape …)"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Typically benign calcifications’ (round); ‘BI-RADS Category 3’: includes "A solitary group of round calcifications"
+- **Proposed fix:** Call it "Round" (v2025 removed punctate); BI-RADS 2, or 3 for a solitary group after workup, fits the summary. Size: B2-bi-rads-27.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-27 · Mammography lexicon, calcifications: size given for round calcifications
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Round/punctate | Smooth, well-defined, <1 mm"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Typically benign calcifications’: "Round calcifications: Small (<0.5 mm), round, uniform dots … The term punctate (< 0.5 mm) has been removed given the impractability to measure the size of individual calcifications"; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 2: punctate removed because "it is not practical to measure the size of individual calcifications in the 0.5 mm diameter range"; no size is given for round; American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26)
+- **Proposed fix:** The two summaries disagree on whether v2025 gives round calcifications a size (Radiology Assistant: <0.5 mm; the ACR table gives none and calls sizes near 0.5 mm impractical to measure); the manual has to settle it. Until then, leave the size out.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-28 · Mammography lexicon, calcifications: suspicious morphology rows
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Amorphous | Indistinct, cloudy | BI-RADS 4A"; "Coarse heterogeneous | Irregular, 0.5–1 mm | BI-RADS 4B"; "Fine pleomorphic | Irregular, <0.5 mm | BI-RADS 4B–4C"; "Fine linear / fine linear branching | Casting, thin branching | BI-RADS 4C–5".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Suspicious calcifications’: amorphous "Indistinct, hazy, or ill-defined"; coarse heterogeneous "Irregular in shape, typically 0.5–1.0 mm in size"; fine pleomorphic "Variable in size and shape, generally < 0.5 mm in diameter"; fine linear or fine-linear branching "Thin, irregular lines, often following ductal distributions and occasionally branching"; ‘Risk Stratification’: amorphous, coarse heterogeneous and fine pleomorphic "typically assigned to BI-RADS category 4B", fine linear or fine-linear branching "assigned to BI-RADS category 4C"; ‘BI-RADS Category 5’: no single feature gives category 5; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 3: the 5th edition’s Table 2 (likelihood of malignancy by calcification morphology) is replaced by Table 3 (positive predictive value by morphology, "updated to include more recent literature")
+- **Proposed fix:** Typical assessments per v2025: amorphous, coarse heterogeneous and fine pleomorphic 4B; fine linear or fine-linear branching 4C (5 only with other suspicious features, e.g. new and segmental). The descriptions and sizes are right.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-29 · Mammography lexicon, calcifications: distribution order
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Distribution descriptors (most to least suspicious): Segmental → Linear → Regional → Grouped/Clustered → Diffuse"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Distribution of calcifications’: "Descriptors are organized according to malignancy risk: Diffuse … Regional … Grouped (historically “clustered”) … Linear … Segmental"; lexicon table image in the same order; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1: "Lexicon terms are reordered from least to most suspicious, where practical" (not in the 5th edition); p. 3: the 5th edition’s "Table 3. Likelihood of Malignancy as a Function of BI-RADS Descriptors of Calcification Distribution" removed
+- **Proposed fix:** Most to least suspicious: segmental → linear → grouped → regional → diffuse; "clustered" is the historical name for grouped.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-30 · Mammography lexicon: "Associated Features" tab
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Tab "Associated Features": "Architectural distortion", "Asymmetry (focal, global, developing)", "Intramammary lymph node", "Skin/nipple lesion", "Trabecular thickening", "Axillary adenopathy".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 3: developing asymmetry "has been discontinued"; intramammary and axillary nodes combined into a single Lymph nodes finding; axillary adenopathy "Removed as an associated feature"; architectural distortion and calcifications "recategorized as secondary findings rather than associated features"; multiple dilated ducts added; p. 4: special cases (gynecomastia, implants, mastectomy) reintroduced; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), table image ‘Mammography Lexicon’ (audit-sources/ra-bi-rads-2025-images/mammo-1tab-lexicon-1774431315.png): findings architectural distortion; asymmetry (global asymmetry, asymmetry, focal asymmetry); lymph nodes (intramammary, axillary); skin lesions; dilated ducts; associated features "Skin retraction / Nipple retraction / Skin thickening / Trabecular thickening"; section ‘Asymmetry’: "The term developing asymmetry descriptor has been removed"
+- **Proposed fix:** Follow v2025’s structure: findings (architectural distortion; asymmetry, focal and global asymmetry; lymph nodes, intramammary and axillary; skin lesions; dilated ducts) and associated features (skin retraction, nipple retraction, skin thickening, trabecular thickening); drop "developing".
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-31 · Ultrasound lexicon: shape, orientation and margin rows
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Shape | Oval, round | Irregular"; "Orientation | Parallel (wider than tall) | Not parallel (taller than wide)"; "Margin | Circumscribed | Not circumscribed (indistinct, angular, microlobulated, spiculated)".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 4: lobulated returned to the ultrasound lexicon; "Masses/orientation/not parallel" → "non-parallel"; "Masses/margin/not circumscribed" → "non-circumscribed" (terminology revisions); Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Masses’: shape "Oval, Lobulated, Round, Irregular"; margin circumscribed or non-circumscribed (indistinct, microlobulated, angular, spiculated); ‘Orientation’: parallel ("wider-than-tall") "typically associated with benign lesions", non-parallel ("taller-than-wide") "suspicious for malignancy"
+- **Proposed fix:** Add lobulated; rename "not parallel" to "non-parallel" and "not circumscribed" to "non-circumscribed" (microlobulated stays an ultrasound margin term).
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-32 · Ultrasound lexicon: echo pattern row
+
+- **Verdict:** wrong · **management**
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Echo pattern | Anechoic, hyperechoic, complex, heterogeneous | Hypoechoic" (benign | suspicious descriptors)
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 5: "Masses/echo pattern/complex cystic and solid" → "mixed solid and cystic"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), table image ‘Ultrasound Lexicon’ (audit-sources/ra-bi-rads-2025-images/us-1-tab-lexicon-us-1781090432.png): echo patterns anechoic, hyperechoic, isoechoic, hypoechoic, heterogeneous, mixed solid and cystic; section ‘Anechoic Masses’: echogenicity "should be evaluated in conjunction with other imaging features, as echogenicity alone has limited specificity"; ‘Hyperechoic masses’: "a hyperechoic breast lesion should not automatically be considered benign"; ‘Hypoechoic Masses’: benign and malignant; ‘Mixed solid and cystic masses’: "The important feature is the solid component, and biopsy targeting the solid component is usually required"
+- **Proposed fix:** List v2025’s six echo patterns without a benign/suspicious split (echogenicity alone has limited specificity), and say a mixed solid and cystic mass usually needs biopsy of its solid part; on the page "complex" is a benign descriptor.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-33 · Ultrasound lexicon: posterior features row
+
+- **Verdict:** wrong · **management**
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Posterior features | Enhancement | Shadowing"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 5: "Combined pattern removed from lexicon to reflect that if a mass shows any shadowing it should be characterized as shadowing"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Posterior Features’: "Because both benign and malignant solid masses can demonstrate either attenuation (shadowing) or enhancement, posterior features are mostly of secondary rather than primary predictive value"; posterior enhancement "is not a reassuring feature for solid masses, as both benign and malignant (including high-grade carcinomas) masses may exhibit it"; lexicon table image: "No features - enhancement - shadowing"
+- **Proposed fix:** Do not list posterior enhancement as a benign feature of a solid mass (high-grade cancers show it); descriptors are no posterior features, enhancement and shadowing, and any shadowing counts as shadowing.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-34 · Ultrasound lexicon: vascularity row
+
+- **Verdict:** wrong
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Vascularity | Absent or internal | Marked internal"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 5: "Associated features/vascularity/absent" → "avascular"; "vessels in rim" → "peripheral vascularity" (terminology revisions); Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Vascularity’: "No vascular pattern is specific for any diagnosis; both benign and malignant masses may show increased, minimal, or no vascularity"; descriptors avascular, internal vascularity, peripheral vascularity
+- **Proposed fix:** Use avascular / internal / peripheral vascularity and say no pattern is specific; drop the benign/suspicious split.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-35 · Ultrasound: simple cyst criteria tip
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Tip "Simple Cyst Criteria (BI-RADS 2)": "Anechoic + circumscribed + imperceptible wall + posterior enhancement → Simple cyst, no biopsy needed"
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Anechoic Masses’: anechoic echotexture "consistent with a simple cyst"; ‘Posterior Enhancement’: "it is a criterion for diagnosing simple cysts"; no full criteria list and no category given; American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 5: simple cyst kept as an ultrasound special case (no change listed); American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26)
+- **Proposed fix:** Anechoic and posterior enhancement are confirmed as criteria; "circumscribed", "imperceptible wall" and the category 2 assignment are not in the summaries and need the manual.
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-36 · MRI: kinetic curve terminology (tab and column names)
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Tab "Kinetic Curves"; table column "Initial Phase" (with "Delayed Phase").
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 6: "Kinetic curve assessment" → "Enhancement kinetics (terminology revision)"; "Kinetic curve assessment/Initial phase" → "Enhancement kinetics/early phase (terminology revision)"
+- **Proposed fix:** Rename the tab "Enhancement kinetics" and the column "Early phase".
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-37 · MRI: kinetic curve types and their meaning
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Type 1 (Persistent) | Slow/moderate | Continued increase | Benign"; "Type 2 (Plateau) | Medium/rapid | Plateau | Indeterminate"; "Type 3 (Washout) | Rapid | Decrease | Suspicious".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26); American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 6: only the renaming of kinetic curve assessment and initial phase is listed; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Magnetic Resonance Imaging. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451249 — Technique, Basic Requirements, pp. 2–3: dynamic timing and kinetic data acquisition only; no curve interpretation
+- **Proposed fix:** Cannot be checked: the curve types, the pairing of early-phase speed with each curve, and the benign/suspicious labels need the v2025 MRI section.
+- **Question for the owner:** The v2025 manual cannot be had, and nothing else read covers the MRI lexicon. For the MRI pieces (B2-bi-rads-13, -37, -39 to -42): keep them on the page marked unverified, rewrite them from another source you accept, or remove them until the manual can be read?
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-38 · MRI enhancement descriptors: focus
+
+- **Verdict:** outdated
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Focus: <5 mm, too small to characterize"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 6: "Focus has been eliminated as a finding"
+- **Proposed fix:** Remove focus as a finding (v2025 eliminated it); what v2025 uses for small enhancing findings needs the manual.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-39 · MRI enhancement descriptors: mass and non-mass enhancement definitions
+
+- **Verdict:** source-not-readable
+- **Kind:** teaching · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Mass: 3D space-occupying lesion with or without margin, shape features"; "Non-mass enhancement (NME): Enhancement without a discrete mass; classified by distribution and internal pattern".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26); American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 6, MRI mass changes: lobulated shape returned; margin "irregular" replaced by "indistinct"; "rim enhancement" → "thick rim enhancement"; T2 signal intensity (hyperintense / not hyperintense) added; NME distribution "multiple regions" removed
+- **Proposed fix:** The definitions need the manual; when rebuilt, include v2025’s MRI mass changes (lobulated shape, indistinct margin, thick rim enhancement, T2 signal intensity).
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-40 · MRI: NME distribution and suspicion table
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Focal | Low"; "Linear / ductal | High"; "Segmental | High"; "Regional | Moderate"; "Diffuse | Low (often benign)".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26); American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 6: "Non-mass enhancement (NME)/distribution/multiple regions — Removed as a descriptor"; no other distribution change listed; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Magnetic Resonance Imaging. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451249 — Whole document: no NME descriptors
+- **Proposed fix:** The suspicion levels and the term "ductal" need the manual (v2025 removed "multiple regions", which the page does not list).
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-41 · MRI: background parenchymal enhancement (BPE) categories
+
+- **Verdict:** source-not-readable
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Minimal | <25% of glandular tissue enhances"; "Mild | 25–50% enhances"; "Moderate | 50–75% enhances"; "Marked | >75% enhances".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26); American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 6: "Background parenchymal enhancement (BPE)/minimal (includes no enhancement) (terminology revision)"; p. 7: level of BPE added to the MRI report organization, after amount of fibroglandular tissue; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Magnetic Resonance Imaging. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451249 — Reporting, p. 3: the report includes "assessment of parenchyma and background enhancement"; no categories
+- **Proposed fix:** The percentage bands need the manual; label minimal "(includes no enhancement)" as v2025 does, and note the page’s mild and moderate bands share 50%.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-42 · MRI: BPE note on obscuring lesions and menstrual timing
+
+- **Verdict:** source-not-readable
+- **Kind:** protocol · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Moderate/marked BPE can obscure lesions; consider timing relative to menstrual cycle (days 7–14 preferred)."
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual. Reston, VA: American College of Radiology; 2025. — Not readable (sold by the ACR; the owner cannot get it, 2026-11-26); Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Magnetic Resonance Imaging. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451249 — Technique and Basic Requirements, pp. 2–3: no advice on menstrual-cycle timing
+- **Proposed fix:** CAR 2026 does not address timing; the statement needs the v2025 manual or another source the owner accepts.
+- **Proposed home:** Breast imaging (BI-RADS) › Technique
+
+### B2-bi-rads-43 · Breast density table: categories and descriptions
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Heading "Breast Density Categories (Mammography)": "A | Almost entirely fatty | Lowest sensitivity limitation"; "B | Scattered areas of fibroglandular density | Mild sensitivity limitation"; "C | Heterogeneously dense | May obscure small masses; …"; "D | Extremely dense | Highest sensitivity limitation; …".
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 4: "Breast composition" → "Breast density (terminology revision)"; p. 8 (CEM rows): v2025 density wording "standardized to Mammography terminology and to match FDA requirements": "(A) The breasts are almost entirely fatty (B) There are scattered areas of fibroglandular density (C) The breasts are heterogeneously dense, which may obscure small masses (D) The breasts are extremely dense, which lowers the sensitivity of mammography"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Breast density’: A "Almost entirely fatty: Mammography is highly sensitive in this setting", B "Scattered areas of fibroglandular density", C "Some areas of the breasts are sufficiently dense to obscure small masses", D "which lowers the sensitivity of mammography"; "if breasts differ in density, the higher category is recorded"; Fleming et al. CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451252 — Reporting, Basic Requirements, p. 5: reports include at minimum "Breast density using ACR descriptors"
+- **Proposed fix:** Optional: use v2025’s descriptions (A and B carry no sensitivity statement in v2025) and add that the denser breast sets the category.
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-44 · Breast density table: supplemental screening for C and D
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** C: "supplemental screening may be appropriate"; D: "supplemental screening recommended".
+- **Source:** Hamel C, Avard B, Flegg C, et al. Canadian Association of Radiologists breast disease imaging referral guideline. Can Assoc Radiol J. 2024;75(2):287-295. doi:10.1177/08465371231192391 — B01A, recommendation 4, p. 9: "In females undergoing screening with mammographically confirmed extremely dense breast tissue (i.e., ACR category D), we suggest supplementary imaging (↑)", modality by regional practice and resources; 4.1, p. 10: ACR category C, "we suggest supplementary imaging, depending on capacity constraints (↑)"; Appendix 3A, p. 52: "↑: conditional for"; Fienberg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Ultrasound. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451256 — Whole Breast Screening Ultrasound, p. 4: screening ultrasound is an adjunct to mammography, not a replacement for it or for MRI in high-risk screening
+- **Proposed fix:** Use CAR’s strength: supplemental imaging is suggested (a conditional recommendation) for D, and for C depending on capacity; "recommended" overstates it.
+- **Proposed home:** Breast imaging (BI-RADS) › Management
+
+### B2-bi-rads-45 · "Dense Breast Reporting" warning (US state notification letters)
+
+- **Verdict:** outdated
+- **Kind:** teaching · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Many states require notification letters to patients with heterogeneously dense (C) or extremely dense (D) breasts regarding potential need for supplemental screening."
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1: category 0 wording updated "to reflect 2024 FDA MQSA amendments"; p. 2: "Updates to the 2024 Food and Drug Administration (FDA) breast density requirements are described as is the 2025 FDA alternate standard …"; p. 10: sample lay letters "Updated to reflect new FDA breast density reporting requirements"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), introduction: "Since 2013, breast density reporting laws have been widely enacted, requiring patient notification of breast density"; Hamel C, Avard B, Flegg C, et al. Canadian Association of Radiologists breast disease imaging referral guideline. Can Assoc Radiol J. 2024;75(2):287-295. doi:10.1177/08465371231192391 — B01A recommendations 4 and 4.1, pp. 9–10: Canada’s recommendation is on supplemental imaging; none of the CAR documents read addresses patient notification
+- **Proposed fix:** In the US, density reporting is now a federal FDA (MQSA, 2024) requirement rather than a state-by-state one; for this site, replace the US note with CAR’s supplemental imaging recommendation (B2-bi-rads-44) or remove it.
+- **Question for the owner:** Keep a US density-notification note at all? CAR’s guidelines do not address patient notification, so a Canadian note (provincial notification practice) would need a source you name.
+- **Proposed home:** Breast imaging (BI-RADS) › Other guidelines differ
+
+### B2-bi-rads-46 · Common pitfalls: category 0, 3 and 6 items
+
+- **Verdict:** correct
+- **Kind:** guideline-threshold · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Don’t: "Assign BI-RADS 3 to a screening mammogram without additional workup (category 0 should be assigned first)"; "Use BI-RADS 3 for lesions with >2% malignancy risk features"; "Apply BI-RADS 6 before tissue sampling has confirmed malignancy". Do: "Complete diagnostic workup before assigning BI-RADS 3".
+- **Source:** Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Assessment Categories’: category 0 is assigned in a screening context; category 3 "Assigned only after a complete diagnostic imaging evaluation"; category 6 is used "after tissue diagnosis of malignancy"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Ultrasound. The Radiology Assistant. — Radiology Assistant’s v2025 ultrasound summary (not the manual), section ‘Assessment Categories’, table image ‘BiRads Assessment Categories’ (saved as audit-sources/ra-bi-rads-2025-images/us-1-tab-assessment-categories-1783710111.png): Category 3 ">0% but ≤2%"; Fienberg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Ultrasound. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451256 — Whole Breast Screening Ultrasound, Clinical Practice Recommendations, p. 4: asynchronous screening ultrasound given BI-RADS 0, 1 or 2; with synchronous diagnostic ultrasound, 2, 3, 4 or 5
+- **Proposed home:** Breast imaging (BI-RADS) › Categories
+
+### B2-bi-rads-47 · Common pitfalls: correlate modalities and report density
+
+- **Verdict:** correct
+- **Kind:** troubleshooting · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Do: "Correlate mammography and ultrasound findings"; "Include density assessment in every mammography report".
+- **Source:** Fleming et al. CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451252 — Reporting, Basic Requirements, p. 5: reports include at minimum "Breast density using ACR descriptors"; Fienberg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Ultrasound. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451256 — Specifications of the Examination, p. 3: "The ultrasound should be correlated with any prior breast imaging, including mammographic, sonographic, and MRI studies"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Location Descriptors’, ‘Lesion Correlation Across Imaging Modalities’
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-48 · Common pitfalls: "Describe the most suspicious lesion when multiple are present"
+
+- **Verdict:** wrong
+- **Kind:** troubleshooting · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Do: "Describe the most suspicious lesion when multiple are present".
+- **Source:** Fleming et al. CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451252 — Reporting, Basic Requirements, p. 5: "All areas of clinical or radiologic concern should be described in the report and imaging findings described using BI-RADS® descriptors"; Fienberg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Ultrasound. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451256 — Additional Reporting Inclusions for AWBUS, p. 5: an integrated report gives "a final assessment based on the highest likelihood of malignancy"; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), section ‘Standard Reporting’: findings, then final assessment and management recommendations
+- **Proposed fix:** Write "Describe every significant finding; base the overall assessment on the most suspicious one."
+- **Proposed home:** Breast imaging (BI-RADS) › Reporting
+
+### B2-bi-rads-49 · Related Guidelines links (placeholders)
+
+- **Verdict:** drop
+- **Kind:** teaching · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** "Related Guidelines": "Breast MRI Screening Indications (planned)" and "Breast Biopsy Technique (planned)", both linked to "#".
+- **Source:** Hamel C, Avard B, Flegg C, et al. Canadian Association of Radiologists breast disease imaging referral guideline. Can Assoc Radiol J. 2024;75(2):287-295. doi:10.1177/08465371231192391 — B02, High-risk screening (B02A–B02C): CAR’s current recommendations on who gets screening MRI; Flegg et al. CAR Practice Guidelines on Breast Imaging and Interventions: Breast Intervention and Biopsy Procedures. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451254 — Whole document: CAR’s 2026 guideline on breast intervention, biopsy and radiologic–pathologic correlation
+- **Proposed fix:** Remove the two dead links; both topics are on the gap list with their CAR sources.
+- **Proposed home:** Breast imaging (BI-RADS) › Background
+
+### B2-bi-rads-50 · References list
+
+- **Verdict:** outdated
+- **Kind:** provenance · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** 1. "American College of Radiology. ACR BI-RADS® Atlas, Breast Imaging Reporting and Data System. 5th ed. Reston, VA: American College of Radiology; 2013." 2. "Sickles EA, D’Orsi CJ, Bassett LW, et al. ACR BI-RADS® Mammography. In: ACR BI-RADS® Atlas. 5th ed. 2013." 3. "Mendelson EB, Böhm-Vélez M, Berg WA, et al. ACR BI-RADS® Ultrasound. …" 4. "Morris EA, Comstock CE, Lee CH, et al. ACR BI-RADS® Magnetic Resonance Imaging. …"
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1: the v2025 Manual replaces the 5th edition Atlas; Fleming et al. CAR Practice Guidelines on Breast Imaging and Interventions: Mammography and Digital Breast Tomosynthesis. Can Assoc Radiol J. 2026. doi:10.1177/08465371261451252 — Reference 30, p. 9: "Newell MS, Destounis SV, Leung JWT, DeMartini WB, Lee CH, Eby PR. ACR BI-RADS® v2025 Manual. Reston, VA, American College of Radiology; 2025."
+- **Proposed fix:** Cite the v2025 Manual as CAR does (Newell MS, Destounis SV, Leung JWT, DeMartini WB, Lee CH, Eby PR. ACR BI-RADS® v2025 Manual. ACR; 2025) and CAR’s 2026 breast guidelines for practice; the 5th edition section author lists cannot be checked.
+- **Proposed home:** Breast imaging (BI-RADS) › Background
+
+### B2-bi-rads-51 · Front-page row (shared/data/resources.ts, id bi-rads)
+
+- **Verdict:** outdated
+- **Kind:** listing · **Topic:** Breast imaging (BI-RADS)
+- **The page says:** Title "BI-RADS", version "5th ed.", summary "Assessment categories and descriptor lexicon for mammography, breast ultrasound and MRI."
+- **Source:** American College of Radiology. ACR BI-RADS® v2025 Manual – What's New? Reston, VA: American College of Radiology; November 2025. — p. 1: v2025 replaced the 5th edition; CEM is now an intrinsic section; Schijf L, Smithuis R. BI-RADS v2025 Manual – Mammography. The Radiology Assistant. Published 2026-01-04. — Radiology Assistant’s v2025 mammography summary (not the manual), introduction: summarizes the mammography section of the v2025 Manual
+- **Proposed fix:** "5th ed." truthfully names what the page follows today; change it to "v2025" when the page is rebuilt to v2025. The summary fits.
+- **Proposed home:** Front page row: BI-RADS
+
 ## Guidelines home page
 
 https://dfergs93.github.io/guidelines_manager/
@@ -1364,4 +1825,4 @@ https://dfergs93.github.io/guidelines_manager/
 
 ## Changed after this batch started
 
-- BI-RADS joins batch 2 when the BI-RADS v2025 manual is readable (owner asked 2026-11-25); otherwise it is audited against CAR's 2026 breast guidelines with its BI-RADS pieces source-not-readable.
+- BI-RADS joined on 2026-11-26: the v2025 manual can't be had, so by the owner's ruling it was audited against the ACR's summary of v2025 changes and Radiology Assistant's v2025 mammography and ultrasound summaries, with CAR's 2026 breast guidelines for practice (page at old-site commit 85da968, which differs from 34cf4eb only by the removed footer).
