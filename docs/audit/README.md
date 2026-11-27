@@ -16,9 +16,15 @@ The owner is the clinical authority on every content change.
 - `gaps.json` (`gaps.md`): what the site lacks, with each topic's lead source and priority.
 - `review/`: the review page's source and the data it shows the owner.
 
-`batch-N.rulings.json` holds the owner's rulings as saved on the review page. Where a note
-described the owner's own department or career it is paraphrased (marked "Paraphrased."), so
-the public record states the ruling, not whose practice it is; the review page keeps the original.
+`batch-N.rulings.json` holds the owner's rulings: batch 1's as saved on the review page,
+batch 2's as given in chat (marked "(In chat.)", with `savedAt` times that only order them;
+the latest ruling on a finding wins). Where a note described the owner's own department or
+career it is paraphrased (marked "Paraphrased." or "(In chat, paraphrased.)"), so the public
+record states the ruling, not whose practice it is.
+
+From batch 2 the owner rules on the questions only (2026-11-25). Once every question has the
+owner's ruling, every other finding is kept with its proposed fix ("Kept with the questions
+answered"); a question added later is unanswered until the owner rules on it.
 
 Edit the JSON, then run `npm run audit:render`. The unit tests fail if a record breaks
 the rules below or a generated file is out of date.
@@ -34,7 +40,7 @@ proposed fix, any question for the owner, and its proposed home in the topic lay
 Verdicts:
 - **correct**: matches the lead source.
 - **outdated**: a newer version of the source exists; the differences are listed.
-- **wrong**: contradicts its own source.
+- **wrong**: contradicts its own source or the lead source.
 - **not-lead**: follows a guideline that isn't this topic's lead, and the advice differs.
 - **unsourced**: no published source supports it.
 - **local-practice**: not in a published source; the owner confirms it and it is labelled.
@@ -53,6 +59,10 @@ switched off), each with the owner's OK.
 - Original research papers, for the specific numbers they report.
 - A named textbook edition, for teaching only, never for a threshold.
 - Review articles for teaching; any threshold they give is traced to the paper they cite.
+- One exception, the owner's ruling of 2026-11-26: the BI-RADS v2025 manual can't be had, so
+  the BI-RADS page is checked against the ACR's own summary of the changes and Radiology
+  Assistant's v2025 summaries for mammography and ultrasound. Each such finding names the
+  summary it was checked against.
 
 Websites (Radiopaedia included), summaries and memory may help find a source; they never
 verify one. Every number is compared with the source and its location recorded. Calculators
@@ -60,7 +70,9 @@ are run through their live forms (`npm run audit:calc -- <case file>`), not read
 file is the evidence of its run and is not replaced unless `--force` is given. Batch 1's
 results were run on 2026-11-25 against the old guidelines site at 03cc237 (Fleischner's at
 b29e6ab); all five calculators were switched off afterwards (b29e6ab, and 34cf4eb for
-Fleischner), so those results stand as recorded.
+Fleischner), so those results stand as recorded. Batch 2's were run on 2026-11-25 against
+34cf4eb; its three calculators (PI-RADS, PSA density, TI-RADS) were switched off afterwards
+(85da968), so those results stand as recorded too.
 
 Before the owner sees a batch, an independent reviewer re-checks against the sources
 every finding other than *correct*, and every threshold marked *correct*.
@@ -90,3 +102,18 @@ The owner's lead rulings so far (batch 1, 2026-11-25):
   to (B1-fleischner-24). The owner wants the calculator back, rebuilt with the fixes in
   B1-fleischner-03 to -06 (B1-fleischner-03).
 - None of the old guidelines pages was ever institutionally reviewed (B1-guidelines-site-01).
+
+Batch 2 (2026-11-26 and -27):
+- Contrast media, per topic: CAR/CSACI 2025 for hypersensitivity and premedication (switch
+  agent, no steroid premedication); CAR 2022 for contrast-associated AKI and metformin; CAR
+  2018/2019 for gadolinium in kidney disease; the ACR Manual (2026) for reaction treatment,
+  extravasation, pregnancy, breast-feeding and the thyroid (B2-contrast-safety-01). Local
+  practice: IV hydration is not routinely given (B2-contrast-safety-18).
+- Prostate MRI: PI-RADS v2.1, with CAR's prostate MRI white paper where it says more; the
+  urology biopsy pathway goes under "Other guidelines differ" (B2-pi-rads-08).
+- Thyroid nodules: ACR TI-RADS 2017, adults only (B2-ti-rads-24), with the white paper's
+  ranges (B2-ti-rads-10).
+- Breast: BI-RADS v2025, checked against the ACR's summary of changes and Radiology
+  Assistant's v2025 summaries (above); CAR's 2026 breast guidelines for practice. The MRI
+  pieces stay marked not checked (B2-bi-rads-37). Local practice: breast density is stated
+  in every report (B2-bi-rads-45).

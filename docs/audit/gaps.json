@@ -33,9 +33,9 @@
     "id": "breast-rad-path",
     "topic": "Breast rad-path correlation and follow-up after biopsy",
     "raisedBy": "owner",
-    "lead": "to find",
+    "lead": "CAR 2026 breast guidelines, part V (car-breast-5-2026)",
     "alternatives": [],
-    "car": "unknown",
+    "car": "yes",
     "today": "Only the BI-RADS page.",
     "home": "Breast"
   },
@@ -404,5 +404,145 @@
     "car": "no",
     "today": "Choosing Wisely Canada 2026 recommendations 2 and 4 (abstract only) and the Canadian expert-panel consensus (Digby 2024, CARJ; abstract only) call for standardized reports with follow-up advice for every size band; the page has no reporting guidance.",
     "home": "Incidental pulmonary nodules"
+  },
+  {
+    "id": "prostate-mri-after-treatment-suspected-local-rec",
+    "topic": "Prostate MRI after treatment (suspected local recurrence)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "PI-RADS v2.1 does not apply after treatment (pp. 3, 24) and the page only says prior treatment \"may alter assessment\" (B2-pi-rads-34); nothing on the site covers recurrence reporting (CAR cites PI-RR, ref 23).",
+    "home": "Prostate MRI"
+  },
+  {
+    "id": "prostate-mri-in-active-surveillance",
+    "topic": "Prostate MRI in active surveillance",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "PI-RADS v2.1 does not address progression during surveillance (p. 3); CAR cites the PRECISE recommendations (ref 31); no page covers it.",
+    "home": "Prostate MRI"
+  },
+  {
+    "id": "prostate-mri-image-quality-pi-qual",
+    "topic": "Prostate MRI image quality (PI-QUAL)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "CAR recommends reporting image quality and auditing 10 cases every 6 months (Table 1, recommendations 1–2; Appendix G adapted from PI-QUAL); the page has no image-quality item.",
+    "home": "Prostate MRI"
+  },
+  {
+    "id": "incidental-thyroid-nodules-on-ct-mri-and-pet-ct",
+    "topic": "Incidental thyroid nodules on CT, MRI and PET/CT",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "TI-RADS covers nodules on ultrasound; whether an incidental nodule on other imaging needs an ultrasound is a separate ACR white paper (Hoang et al., JACR 2015;12:143-50, the white paper's ref 9), and the site has no page for it.",
+    "home": "Thyroid nodules"
+  },
+  {
+    "id": "thyroid-nodules-in-children-and-adolescents",
+    "topic": "Thyroid nodules in children and adolescents",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "ACR TI-RADS is for adults (white paper p2); the page sets its line at 14 years and nothing on the site covers younger patients.",
+    "home": "Thyroid nodules"
+  },
+  {
+    "id": "contrast-switching-after-a-hypersensitivity-reac",
+    "topic": "Contrast switching after a hypersensitivity reaction",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "CAR/CSACI 2025 (Rec 3, Figure 1) make switching to a chemically different agent the single best protective measure for ICM and GBCA; the ACR also describes changing agents within a class (p10, PDF p13). The page never mentions it.",
+    "home": "Contrast safety"
+  },
+  {
+    "id": "prior-reaction-to-an-unknown-iodinated-agent",
+    "topic": "Prior reaction to an unknown iodinated agent",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "CAR/CSACI 2025 Rec 4 and Figure 2 (before 2000: give LOCM without premedication; from 2000: by severity), updated by the 2025 CAR/CSACI unknown-agent paper, which is not readable yet.",
+    "home": "Contrast safety"
+  },
+  {
+    "id": "delayed-and-severe-reactions-premedication-aller",
+    "topic": "Delayed and severe reactions: premedication, allergy referral, tryptase",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "CAR/CSACI: no premedication for delayed reactions (p6); allergy referral after severe reactions including SJS/TEN or DRESS (p9); serum tryptase 30–120 minutes after anaphylaxis onset (Rec 11).",
+    "home": "Contrast safety"
+  },
+  {
+    "id": "other-acute-reactions-in-acr-table-3-and-childre",
+    "topic": "Other acute reactions in ACR Table 3, and children (Table 2)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "The page lacks diffuse erythema, hypertensive crisis, pulmonary edema, seizures, hypoglycemia, anxiety and reaction-rebound prevention, and gives adult doses without saying so; children have weight-based doses in ACR Table 2.",
+    "home": "Contrast safety"
+  },
+  {
+    "id": "fasting-before-intravascular-contrast",
+    "topic": "Fasting before intravascular contrast",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "CAR/CSACI Rec 13: patients should not be told to fast unless the examination requires it; the ACR has a fasting chapter (p13, PDF p16).",
+    "home": "Contrast safety"
+  },
+  {
+    "id": "ca-aki-screening-repeat-contrast-and-follow-up-c",
+    "topic": "CA-AKI screening, repeat contrast and follow-up creatinine",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "CAR 2022 Rec 1–2 (screening questions; inpatient eGFR within 7 days; no delay for emergent studies), Rec 7 (repeat contrast within 48 hours only restricted for elective studies in higher-risk patients), Rec 20 (creatinine at 48–72 hours only after IA contrast with eGFR ≤30).",
+    "home": "Contrast safety"
+  },
+  {
+    "id": "gadolinium-retention-and-gbca-hypersensitivity",
+    "topic": "Gadolinium retention and GBCA hypersensitivity",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "ACR–ASNR position statement on gadolinium deposition (p70, PDF p73) and CAR/CSACI Rec 6 and 9 (prior GBCA reaction: no steroids, switch agent); the page covers neither. Whether CAR 2018/2019 cover retention is unknown until they are read.",
+    "home": "Contrast safety"
+  },
+  {
+    "id": "contrast-enhanced-mammography-cem",
+    "topic": "Contrast-enhanced mammography (CEM)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "yes",
+    "today": "Not on the site. BI-RADS v2025 makes CEM an intrinsic section with its own lexicon (what’s-new p. 1 and p. 8) and CAR published a 2026 CEM guideline (part II, cited as ref 1 in car-breast-1-2026, not downloaded); the site has nothing on CEM.",
+    "home": "Breast"
+  },
+  {
+    "id": "breast-screening-risk-density",
+    "topic": "Breast cancer screening by risk and density (who, from what age, how often; supplemental and high-risk MRI screening)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "yes",
+    "today": "Not on the site. The page’s \"Breast MRI Screening Indications (planned)\" link is a placeholder (B2-bi-rads-49) and it only touches density; CAR’s referral guideline (car-breast-referral-2024, B01–B02) gives ages, intervals, density-based supplemental imaging and high-risk screening.",
+    "home": "Breast"
   }
 ]

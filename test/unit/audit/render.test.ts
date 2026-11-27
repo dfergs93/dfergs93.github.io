@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { renderBatch, renderGaps, reviewData } from '../../../scripts/audit/render.ts';
-import { applyRulings } from '../../../scripts/audit/rulings.ts';
+import { applyRulings, keepUnquestioned } from '../../../scripts/audit/rulings.ts';
 import { parseBatch, parseGaps, parseSources } from '../../../scripts/audit/schema.ts';
 
 const sources = parseSources([
@@ -116,5 +116,38 @@ describe('applyRulings', () => {
 
   it('rejects a ruling for a finding that does not exist', () => {
     expect(() => applyRulings(batch, [r('B1-nowhere-01', 'keep', '2026-11-26T10:00:00Z')])).toThrow(/B1-nowhere-01/);
+  });
+});
+
+describe('keepUnquestioned (owner, from batch 2: questions only; the rest kept)', () => {
+  // The fixture's question already has a ruling; take it away to ask afresh.
+  const unruled = (f: (typeof batch.findings)[number]) => {
+    const { ruling: _ruling, ...rest } = f;
+    return { ...rest, question: 'Which version leads?' };
+  };
+  const asked = { ...batch, findings: batch.findings.map((f) => (f.id === 'B1-lung-rads-01' ? unruled(f) : f)) };
+  const answered = applyRulings(asked, [{ id: 'B1-lung-rads-01', decision: 'change', note: 'v2022 leads.', date: '2026-11-27', savedAt: '2026-11-27T10:00:00Z' }]);
+
+  it('keeps every finding without a ruling, with its proposed fix', () => {
+    const out = keepUnquestioned(answered, '2026-11-27');
+    const site = out.findings.find((f) => f.id === 'B1-guidelines-site-01')!;
+    expect(site.ruling).toEqual({ decision: 'keep', note: "Kept with the questions answered (owner's rule from batch 2).", date: '2026-11-27' });
+    expect(site.fix).toBe('Remove the line.');
+  });
+
+  it("leaves the owner's own rulings alone", () => {
+    const out = keepUnquestioned(answered, '2026-11-28');
+    expect(out.findings.find((f) => f.id === 'B1-lung-rads-01')!.ruling).toEqual({ decision: 'change', note: 'v2022 leads.', date: '2026-11-27' });
+  });
+
+  it('refuses while a question is unanswered, naming the finding', () => {
+    expect(() => keepUnquestioned(asked, '2026-11-27')).toThrow(/B1-lung-rads-01/);
+  });
+
+  it('refuses a question added after a finding was kept by default', () => {
+    // A re-check or a reopened batch can put a question on a finding the default already kept.
+    const kept = keepUnquestioned(answered, '2026-11-27');
+    const reopened = { ...kept, findings: kept.findings.map((f) => (f.id === 'B1-guidelines-site-01' ? { ...f, question: 'Local practice?' } : f)) };
+    expect(() => keepUnquestioned(reopened, '2026-11-28')).toThrow(/B1-guidelines-site-01/);
   });
 });

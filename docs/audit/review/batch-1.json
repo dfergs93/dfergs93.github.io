@@ -1015,12 +1015,12 @@
       "piece": "Version history \"Internal\" row and page footer",
       "kind": "provenance",
       "topic": "Lung cancer screening",
-      "says": "Version history \"2024-01-15 | Internal | Initial implementation at institution\"; footer \"Last updated: 2024-01-15 | Maintained by: Radiology QI Committee | Contact: radiology_qi@institution.edu\".",
+      "says": "Version history \"2024-01-15 | Internal | Initial implementation at institution\"; footer \"Last updated: 2024-01-15 | Maintained by: Radiology QI Committee | Contact: <a placeholder address>\".",
       "verdict": "drop",
       "management": false,
       "fix": "Remove both: like the \"Last Institutional Review\" line (B1-guidelines-site-01) they describe an implementation, a committee and a contact that do not exist (placeholder e-mail). The same footer is on the BI-RADS, PI-RADS and contrast safety pages.",
       "home": "Not kept: each topic page states its sources and its sign-off date",
-      "recheckNote": "disagreed — Reviewer: unsourced. The page did not exist before 2026-02-28, so an \"initial implementation at institution\" on 2024-01-15 and a \"last updated\" of the same date cannot be true. \"Radiology QI Committee\" and radiology_qi@institution.edu are template placeholders (no institution is named). Remove. (~/Code/_archive/guidelines_manager git history; docs/pulmonary/lung_rads.md lines 346, 360) Resolution: Stands as drop: the reviewer calls the placeholder history row and footer unsourced and also says remove; drop is the action.",
+      "recheckNote": "disagreed — Reviewer: unsourced. The page did not exist before 2026-02-28, so an \"initial implementation at institution\" on 2024-01-15 and a \"last updated\" of the same date cannot be true. \"Radiology QI Committee\" and <a placeholder address> are template placeholders (no institution is named). Remove. (~/Code/_archive/guidelines_manager git history; docs/pulmonary/lung_rads.md lines 346, 360) Resolution: Stands as drop: the reviewer calls the placeholder history row and footer unsourced and also says remove; drop is the action.",
       "sources": []
     },
     {
