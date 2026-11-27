@@ -951,5 +951,159 @@
     "access": "not-readable",
     "reuse": "unknown",
     "note": "valves/index.md takes its 3DE VCA column from 'Adamo et al EHJ 2025 secondary TR outcomes study'; no such paper was found (PubMed searches on Adamo M with tricuspid/vena contracta, 2024-2026). This is the outcome study that reports 5-grade VCA thresholds for secondary TR. Closed access (Elsevier); no open copy. The PubMed abstract (PMID 41177341) gives: mild <0.43, moderate 0.43-0.67, severe 0.68-0.88, massive 0.89-1.26, torrential >1.26 cm2; VCA >0.65 cm2 tripled risk."
+  },
+  {
+    "id": "crossref-semin-roentgenol-59-1",
+    "title": "Crossref records for Seminars in Roentgenology 2024;59(1), doi 10.1053/j.ro.2023.11.001 and 10.1053/j.ro.2023.11.002",
+    "citation": "Crossref REST API, works 10.1053/j.ro.2023.11.001 (Yang IY, Pogatchnik BP. Computed tomography planning for transcatheter tricuspid valve interventions. Semin Roentgenol. 2024;59(1):87-102) and 10.1053/j.ro.2023.11.002 (Nabipoorashrafi SA, et al. A pictorial review of CT guidance for transcatheter aortic valve replacement. Semin Roentgenol. 2024;59(1):44-56), retrieved 2026-11-27.",
+    "version": "Retrieved 2026-11-27",
+    "year": 2026,
+    "url": "https://api.crossref.org/works/10.1053/j.ro.2023.11.002",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "Bibliographic metadata only, not a clinical source: saved to audit-sources/crossref-semin-roentgenol-59-1-001.json and -002.json. Used only to show that ttvr.md's \"Gogia S, Khalique OK … 2024;59(1):44–56, doi 10.1053/j.ro.2023.11.002\" reference does not exist as cited."
+  },
+  {
+    "id": "aha-tricuspid-statement-2024",
+    "title": "The Tricuspid Valve: A Review of Pathology, Imaging, and Current Treatment Options: A Scientific Statement From the American Heart Association",
+    "citation": "Davidson LJ, Tang GHL, Ho EC, et al. The tricuspid valve: a review of pathology, imaging, and current treatment options: a scientific statement from the American Heart Association. Circulation. 2024;149(22):e1223-e1238. doi:10.1161/CIR.0000000000001232",
+    "version": "2024 (published 2024-05-28)",
+    "year": 2024,
+    "url": "https://doi.org/10.1161/CIR.0000000000001232",
+    "access": "not-readable",
+    "reuse": "unknown",
+    "note": "Found by PubMed search on 2026-11-27 (PMID 38660790); not cited by the pages. The only society statement on tricuspid imaging and treatment newer than Hell 2021. ahajournals.org answered 403 behind a Cloudflare \"Just a moment...\" bot check (not circumvented); no PMC copy. Owner to supply a copy if wanted."
+  },
+  {
+    "id": "watchman-flx-ssed-2025",
+    "title": "Summary of Safety and Effectiveness Data (SSED): WATCHMAN FLX and WATCHMAN FLX Pro Left Atrial Appendage Closure Devices with Delivery System (PMA P130013/S074)",
+    "citation": "US Food and Drug Administration. Summary of Safety and Effectiveness Data: WATCHMAN FLX Left Atrial Appendage (LAA) Closure Technology; WATCHMAN FLX and WATCHMAN FLX Pro LAA Closure Devices with Delivery System (Boston Scientific). PMA P130013/S074, approved July 16, 2025.",
+    "version": "P130013/S074 (FDA approval 2025-07-16)",
+    "year": 2025,
+    "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S074B.pdf",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "FDA PDF (41 pages) downloaded 2026-11-27 to audit-sources/watchman-flx-ssed-2025.pdf with a .txt copy; page numbers are the PDF's own (\"Page n\" footers). Contraindications p. 2; device description p. 3 (FLX in 20–35 mm, FLX Pro adds 40 mm; sizing by CT or TEE before the procedure); Table 1 device sizing p. 4. The newest FDA document with the sizing table; the full current instructions for use are not posted by the FDA."
+  },
+  {
+    "id": "watchman-flx-ifu-2020",
+    "title": "WATCHMAN and WATCHMAN FLX Left Atrial Appendage Closure Device with Delivery System: instructions for use (labeling approved with PMA P130013/S035)",
+    "citation": "Boston Scientific. WATCHMAN Left Atrial Appendage Closure Device with Delivery System, and WATCHMAN FLX Left Atrial Appendage Closure Device with Delivery System: directions for use. Labeling approved by the US FDA with PMA P130013/S035, July 21, 2020.",
+    "version": "Labeling approved 2020-07-21 (P130013/S035); later labeling changes (2022–2025 supplements) are not posted as full instructions",
+    "year": 2020,
+    "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130013S035C.pdf",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "FDA-posted labeling PDF (61 pages) downloaded 2026-11-27 to audit-sources/watchman-flx-ifu-2020.pdf with a .txt copy; locations are PDF pages. PDF pp. 1–30 are the older WATCHMAN instructions (contraindications p. 1; device selection Table 45 and the depth rule p. 26; deployed diameter 80–92%, Table 46, p. 28); pp. 31–61 are the WATCHMAN FLX instructions (contraindications p. 31; 14.0–31.5 mm ostium p. 56; Table 45 and the depth rule p. 57; release criteria p. 58). Sizing tables are TEE-based. The 2025 SSED (watchman-flx-ssed-2025) repeats the FLX ranges unchanged."
+  },
+  {
+    "id": "scai-hrs-laac-2023",
+    "title": "SCAI/HRS Expert Consensus Statement on Transcatheter Left Atrial Appendage Closure",
+    "citation": "Saw J, Holmes DR, Cavalcante JL, et al. SCAI/HRS expert consensus statement on transcatheter left atrial appendage closure. J Soc Cardiovasc Angiogr Interv. 2023;2(3):100577. doi:10.1016/j.jscai.2022.100577 (also JACC Cardiovasc Interv. 2023;16(11):1384-1400 and Heart Rhythm 2023)",
+    "version": "2023",
+    "year": 2023,
+    "url": "https://doi.org/10.1016/j.jscai.2022.100577",
+    "access": "open",
+    "reuse": "reproduce",
+    "note": "Found by PubMed search on 2026-11-27; not cited by the pages. Full text from Europe PMC (PMC11307869, fullTextXML) saved as audit-sources/scai-hrs-laac-2023.xml with a text copy; no page numbers, so locations are section, recommendation number and figure. Endorsed by the ACC and SCCT. CC BY-NC-ND 4.0 (stated in the article's permissions): verbatim, non-commercial, attributed reproduction only."
+  },
+  {
+    "id": "scai-hrs-laao-2025",
+    "title": "2025 SCAI/HRS Clinical Practice Guidelines on Transcatheter Left Atrial Appendage Occlusion",
+    "citation": "Goldsweig AM, Glikson M, Joza J, et al. 2025 SCAI/HRS clinical practice guidelines on transcatheter left atrial appendage occlusion. J Soc Cardiovasc Angiogr Interv. 2025;4(9):103783. doi:10.1016/j.jscai.2025.103783 (also Heart Rhythm 2025)",
+    "version": "2025 (corrigenda 2026)",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.jscai.2025.103783",
+    "access": "open",
+    "reuse": "reproduce",
+    "note": "Found by PubMed search on 2026-11-27; not cited by the pages. Full text from Europe PMC (PMC12485513, fullTextXML) saved as audit-sources/scai-hrs-laao-2025.xml with a text copy; locations are recommendation numbers. GRADE guideline on indications, peri-procedural imaging (TEE or CT before and after), antithrombotic therapy, peri-device leak and device thrombus; no CT measurements or sizing. CC BY-NC-ND 4.0."
+  },
+  {
+    "id": "ase-chamber-quant-2015",
+    "title": "Recommendations for Cardiac Chamber Quantification by Echocardiography in Adults: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging",
+    "citation": "Lang RM, Badano LP, Mor-Avi V, et al. Recommendations for cardiac chamber quantification by echocardiography in adults: an update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr. 2015;28(1):1-39.e14. doi:10.1016/j.echo.2014.10.003",
+    "version": "2015",
+    "year": 2015,
+    "url": "https://doi.org/10.1016/j.echo.2014.10.003",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "Journal PDF (53 pages: pp. 1-39 plus online appendix; printed page = PDF page) from asecho.org's guideline page (www.asecho.org/wp-content/uploads/2025/04/2015_ChamberQuantificationREV.pdf), downloaded 2026-11-27 with a .txt copy. 'Copyright 2015 by the American Society of Echocardiography', so restate and link. Used for valves/index.md's aortic root normal values (Table 14, p. 32)."
+  },
+  {
+    "id": "ase-right-heart-2025",
+    "title": "Guidelines for the Echocardiographic Assessment of the Right Heart in Adults and Special Considerations in Pulmonary Hypertension: Recommendations from the American Society of Echocardiography",
+    "citation": "Mukherjee M, Rudski LG, Addetia K, et al. Guidelines for the echocardiographic assessment of the right heart in adults and special considerations in pulmonary hypertension: recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr. 2025;38(3):141-186. doi:10.1016/j.echo.2025.01.006",
+    "version": "2025 (replaces ASE's 2010 right heart guideline)",
+    "year": 2025,
+    "url": "https://doi.org/10.1016/j.echo.2025.01.006",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "Journal PDF (46 pages, pp. 141-186; printed page = PDF page + 140) from asecho.org (www.asecho.org/wp-content/uploads/2025/03/PIIS0894731725000379.pdf), downloaded 2026-11-27 with a .txt copy. 'Copyright 2025 Published by Elsevier Inc. on behalf of the American Society of Echocardiography', so restate and link. Used for valves/index.md's RVSP formula and RAP estimates (p. 160)."
+  },
+  {
+    "id": "myerson-ar-cmr-2012-abstract",
+    "title": "PubMed abstract: Aortic regurgitation quantification using cardiovascular magnetic resonance: association with clinical outcome",
+    "citation": "Myerson SG, d'Arcy J, Mohiaddin R, et al. Circulation. 2012;126(12):1452-1460. doi:10.1161/CIRCULATIONAHA.111.083600. Abstract, PubMed PMID 22879371.",
+    "version": "2012 (abstract only)",
+    "year": 2012,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22879371/",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "The authors' own abstract of myerson-ar-cmr-2012 (full text not readable), fetched from NCBI E-utilities on 2026-11-27 and saved as audit-sources/myerson-ar-cmr-2012-abstract.txt. Verifies only the numbers the abstract states (coordinator's ruling: abstract only). No copyright line in the PubMed record."
+  },
+  {
+    "id": "malahfji-ar-cmr-2023-abstract",
+    "title": "PubMed abstract: Influence of Cardiac Remodeling on Clinical Outcomes in Patients With Aortic Regurgitation",
+    "citation": "Malahfji M, Crudo V, Kaolawanich Y, et al. J Am Coll Cardiol. 2023;81(19):1885-1898. doi:10.1016/j.jacc.2023.03.001. Abstract, PubMed PMID 36882135.",
+    "version": "2023 (abstract only)",
+    "year": 2023,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36882135/",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "The authors' own abstract of malahfji-ar-cmr-2023 (full text not readable), fetched from NCBI E-utilities on 2026-11-27 and saved as audit-sources/malahfji-ar-cmr-2023-abstract.txt. Abstract only. 'Copyright © 2023 American College of Cardiology Foundation. Published by Elsevier Inc. All rights reserved.'"
+  },
+  {
+    "id": "kammerlander-ar-cmr-2019-abstract",
+    "title": "PubMed abstract: Diagnostic and Prognostic Utility of Cardiac Magnetic Resonance Imaging in Aortic Regurgitation",
+    "citation": "Kammerlander AA, Wiesinger M, Duca F, et al. JACC Cardiovasc Imaging. 2019;12(8 Pt 1):1474-1483. doi:10.1016/j.jcmg.2018.08.036. Abstract, PubMed PMID 30448117.",
+    "version": "2019 (abstract only)",
+    "year": 2019,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30448117/",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "The authors' own abstract of kammerlander-ar-cmr-2019 (full text not readable), fetched from NCBI E-utilities on 2026-11-27 and saved as audit-sources/kammerlander-ar-cmr-2019-abstract.txt. Abstract only. 'Copyright © 2019 American College of Cardiology Foundation ... All rights reserved.'"
+  },
+  {
+    "id": "senapati-ar-fibrosis-2021-abstract",
+    "title": "PubMed abstract: Regional Replacement and Diffuse Interstitial Fibrosis in Aortic Regurgitation: Prognostic Implications From Cardiac Magnetic Resonance",
+    "citation": "Senapati A, Malahfji M, Debs D, et al. JACC Cardiovasc Imaging. 2021;14(11):2170-2182. doi:10.1016/j.jcmg.2021.04.028. Abstract, PubMed PMID 34274265.",
+    "version": "2021 (abstract only)",
+    "year": 2021,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34274265/",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "The authors' own abstract of senapati-ar-fibrosis-2021 (full text not readable), fetched from NCBI E-utilities on 2026-11-27 and saved as audit-sources/senapati-ar-fibrosis-2021-abstract.txt. Abstract only. 'Copyright © 2021 American College of Cardiology Foundation ... All rights reserved.'"
+  },
+  {
+    "id": "hashimoto-ar-cmr-2022-abstract",
+    "title": "PubMed abstract: Association of Left Ventricular Remodeling Assessment by Cardiac Magnetic Resonance With Outcomes in Patients With Chronic Aortic Regurgitation",
+    "citation": "Hashimoto G, Enriquez-Sarano M, Stanberry LI, et al. JAMA Cardiol. 2022;7(9):924-933. doi:10.1001/jamacardio.2022.2108. Abstract, PubMed PMID 35857306.",
+    "version": "2022 (abstract only)",
+    "year": 2022,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/35857306/",
+    "access": "open",
+    "reuse": "unknown",
+    "note": "The authors' own abstract of hashimoto-ar-cmr-2022 (full text not readable here), fetched from NCBI E-utilities on 2026-11-27 and saved as audit-sources/hashimoto-ar-cmr-2022-abstract.txt. Abstract only. No copyright line in the PubMed record."
+  },
+  {
+    "id": "benzoni-tr-vca-2026-abstract",
+    "title": "PubMed abstract: Threshold Values of Vena Contracta Area for Grading Secondary Tricuspid Regurgitation and its Association with Outcomes",
+    "citation": "Benzoni G, Tomaselli M, Radu N, et al. J Am Soc Echocardiogr. 2026;39(2):156-166. doi:10.1016/j.echo.2025.10.015. Abstract, PubMed PMID 41177341.",
+    "version": "2026 (abstract only; online 2025-10-31)",
+    "year": 2026,
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41177341/",
+    "access": "open",
+    "reuse": "restate-and-link",
+    "note": "The authors' own abstract of benzoni-tr-vca-2026 (full text not readable), fetched from NCBI E-utilities on 2026-11-27 and saved as audit-sources/benzoni-tr-vca-2026-abstract.txt. Abstract only. 'Copyright © 2025 American Society of Echocardiography. Published by Elsevier Inc. All rights reserved.'"
   }
 ]

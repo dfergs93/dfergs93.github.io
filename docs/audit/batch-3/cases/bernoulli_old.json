@@ -1,0 +1,479 @@
+{
+  "mode": "type",
+  "calculator": "bernoulli_old",
+  "pageUrl": "https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/",
+  "fields": {
+    "vmax": "bern-vmax",
+    "gradient": "bern-pg"
+  },
+  "outputs": {
+    "vmax": "bern-vmax",
+    "gradient": "bern-pg"
+  },
+  "params": [
+    "vmax",
+    "gradient"
+  ],
+  "cases": [
+    {
+      "id": "v-typical-4-2",
+      "inputs": {
+        "vmax": "4.2"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "70.6 mmHg (4 × 4.2² = 70.56)"
+      }
+    },
+    {
+      "id": "v-severe-4-0",
+      "inputs": {
+        "vmax": "4"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "64.0 mmHg: 4.0 m/s, the severe cut-off (≥4.0 m/s), is 64 mmHg"
+      }
+    },
+    {
+      "id": "v-moderate-3-0",
+      "inputs": {
+        "vmax": "3"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "36.0 mmHg: 3.0 m/s, the lower limit of moderate (3.0–4.0 m/s)"
+      }
+    },
+    {
+      "id": "v-very-severe-5-0",
+      "inputs": {
+        "vmax": "5"
+      },
+      "expected": {
+        "source": {
+          "source": "acc-aha-vhd-2020",
+          "location": "Table 13 Stages of AS, e91 (PDF p. 20)"
+        },
+        "text": "100.0 mmHg: 5 m/s, very severe AS (stage C1: Vmax ≥5 m/s)"
+      }
+    },
+    {
+      "id": "v-mild-2-0",
+      "inputs": {
+        "vmax": "2"
+      },
+      "expected": {
+        "source": {
+          "source": "acc-aha-vhd-2020",
+          "location": "Table 13 Stages of AS, e91 (PDF p. 20)"
+        },
+        "text": "16.0 mmHg: 2.0 m/s, the lower limit of mild AS (stage B, Vmax 2.0–2.9 m/s)"
+      }
+    },
+    {
+      "id": "v-sclerosis-2-5",
+      "inputs": {
+        "vmax": "2.5"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "25.0 mmHg: 2.5 m/s, the top of aortic sclerosis (≤2.5 m/s)"
+      }
+    },
+    {
+      "id": "v-moderate-top-3-9",
+      "inputs": {
+        "vmax": "3.9"
+      },
+      "expected": {
+        "source": {
+          "source": "acc-aha-vhd-2020",
+          "location": "Table 13 Stages of AS, e91 (PDF p. 20)"
+        },
+        "text": "60.8 mmHg (60.84): 3.9 m/s, the top of moderate AS (3.0–3.9 m/s)"
+      }
+    },
+    {
+      "id": "v-mild-top-2-9",
+      "inputs": {
+        "vmax": "2.9"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "33.6 mmHg (33.64): 2.9 m/s, the top of mild (2.6–2.9 m/s)"
+      }
+    },
+    {
+      "id": "v-round-3-99",
+      "inputs": {
+        "vmax": "3.99"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "63.7 mmHg (63.68)"
+      }
+    },
+    {
+      "id": "v-round-3-999",
+      "inputs": {
+        "vmax": "3.999"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "63.97 mmHg, below the 64 mmHg that the 4.0 m/s severe cut-off gives; to 0.1 it reads 64.0"
+      },
+      "note": "Rounding at a cut-off: a velocity just under 4.0 m/s."
+    },
+    {
+      "id": "v-round-4-01",
+      "inputs": {
+        "vmax": "4.01"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "64.3 mmHg (64.32)"
+      }
+    },
+    {
+      "id": "v-round-half-1-25",
+      "inputs": {
+        "vmax": "1.25"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "6.25 mmHg exactly; 6.3 rounded half up to 0.1"
+      }
+    },
+    {
+      "id": "v-field-min-0-1",
+      "inputs": {
+        "vmax": "0.1"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "0.0 mmHg (0.04); 0.1 m/s is the field's min"
+      }
+    },
+    {
+      "id": "v-below-min-0-05",
+      "inputs": {
+        "vmax": "0.05"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "0.0 mmHg (0.01); below the field's min of 0.1 m/s"
+      }
+    },
+    {
+      "id": "v-field-max-10",
+      "inputs": {
+        "vmax": "10"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "400.0 mmHg; 10 m/s is the field's max"
+      }
+    },
+    {
+      "id": "v-above-max-12",
+      "inputs": {
+        "vmax": "12"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "576.0 mmHg by the formula; above the field's max of 10 m/s (not a plausible jet)"
+      }
+    },
+    {
+      "id": "v-zero",
+      "inputs": {
+        "vmax": "0"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "0.0 mmHg (4 × 0²), or nothing filled: 0 is below the field's min of 0.1 m/s"
+      }
+    },
+    {
+      "id": "v-negative",
+      "inputs": {
+        "vmax": "-4"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "Nothing filled: a peak velocity is entered as a speed (the field's min is 0.1 m/s)"
+      }
+    },
+    {
+      "id": "v-empty",
+      "inputs": {
+        "vmax": ""
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "Nothing filled"
+      }
+    },
+    {
+      "id": "g-typical-70-6",
+      "inputs": {
+        "gradient": "70.6"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "4.20 m/s (4.201)"
+      }
+    },
+    {
+      "id": "g-severe-64",
+      "inputs": {
+        "gradient": "64"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "4.00 m/s, the severe cut-off (≥4.0 m/s)"
+      }
+    },
+    {
+      "id": "g-moderate-36",
+      "inputs": {
+        "gradient": "36"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "3.00 m/s, the lower limit of moderate"
+      }
+    },
+    {
+      "id": "g-very-severe-100",
+      "inputs": {
+        "gradient": "100"
+      },
+      "expected": {
+        "source": {
+          "source": "acc-aha-vhd-2020",
+          "location": "Table 13 Stages of AS, e91 (PDF p. 20)"
+        },
+        "text": "5.00 m/s, very severe AS (Vmax ≥5 m/s)"
+      }
+    },
+    {
+      "id": "g-mild-16",
+      "inputs": {
+        "gradient": "16"
+      },
+      "expected": {
+        "source": {
+          "source": "acc-aha-vhd-2020",
+          "location": "Table 13 Stages of AS, e91 (PDF p. 20)"
+        },
+        "text": "2.00 m/s, the lower limit of mild AS (stage B)"
+      }
+    },
+    {
+      "id": "g-round-63-9",
+      "inputs": {
+        "gradient": "63.9"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "3.997 m/s, below the 4.0 m/s severe cut-off; to 0.01 it reads 4.00"
+      },
+      "note": "Rounding at a cut-off: a gradient just under 64 mmHg."
+    },
+    {
+      "id": "g-round-35-9",
+      "inputs": {
+        "gradient": "35.9"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Table 3 Recommendations for grading of AS severity, p. 383 (PDF p. 12)"
+        },
+        "text": "2.996 m/s, below the 3.0 m/s moderate limit; to 0.01 it reads 3.00"
+      },
+      "note": "Rounding at a cut-off."
+    },
+    {
+      "id": "g-round-99-9",
+      "inputs": {
+        "gradient": "99.9"
+      },
+      "expected": {
+        "source": {
+          "source": "acc-aha-vhd-2020",
+          "location": "Table 13 Stages of AS, e91 (PDF p. 20)"
+        },
+        "text": "4.997 m/s, below the 5 m/s very severe limit; to 0.01 it reads 5.00"
+      },
+      "note": "Rounding at a cut-off."
+    },
+    {
+      "id": "g-round-64-1",
+      "inputs": {
+        "gradient": "64.1"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "4.00 m/s (4.003)"
+      }
+    },
+    {
+      "id": "g-round-15-9",
+      "inputs": {
+        "gradient": "15.9"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "1.99 m/s (1.994)"
+      }
+    },
+    {
+      "id": "g-zero",
+      "inputs": {
+        "gradient": "0"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "0.00 m/s; 0 is the field's min"
+      }
+    },
+    {
+      "id": "g-field-max-400",
+      "inputs": {
+        "gradient": "400"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "10.00 m/s; 400 mmHg is the field's max"
+      }
+    },
+    {
+      "id": "g-above-max-500",
+      "inputs": {
+        "gradient": "500"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "11.18 m/s by the formula; above the field's max of 400 mmHg"
+      }
+    },
+    {
+      "id": "g-negative",
+      "inputs": {
+        "gradient": "-1"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "Nothing filled: a negative gradient has no velocity"
+      }
+    },
+    {
+      "id": "g-empty",
+      "inputs": {
+        "gradient": ""
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "Nothing filled"
+      }
+    },
+    {
+      "id": "vmax-text",
+      "inputs": {
+        "vmax": "abc"
+      },
+      "expected": {
+        "source": {
+          "source": "ase-eacvi-as-2017",
+          "location": "Pressure gradient, p. 378 (PDF p. 7): ΔP = 4v²; ΔPmax = 4v²max"
+        },
+        "text": "Not a number: the field refuses it and nothing is converted"
+      },
+      "note": "Added after the runner learned to record a refused input instead of stopping."
+    }
+  ]
+}

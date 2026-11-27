@@ -38,9 +38,12 @@ describe('the calculator case files', () => {
   });
 });
 
-describe('the committed batches', () => {
+// A batch is ruled once its rulings file exists (the owner has answered its questions); before
+// that it is in progress and may still be waiting on its re-check.
+describe('the ruled batches', () => {
   const sources = parseSources(JSON.parse(readFileSync(new URL('sources.json', AUDIT_DIR), 'utf8')));
-  const batches = readdirSync(AUDIT_DIR).filter((p) => /^batch-\d+\.json$/.test(p));
+  const all = readdirSync(AUDIT_DIR);
+  const batches = all.filter((p) => /^batch-\d+\.json$/.test(p) && all.includes(p.replace(/\.json$/, '.rulings.json')));
   const read = (path: string) => JSON.parse(readFileSync(new URL(path, AUDIT_DIR), 'utf8'));
 
   it('exist', () => {
