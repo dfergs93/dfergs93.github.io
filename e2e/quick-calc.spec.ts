@@ -56,6 +56,9 @@ test('Bernoulli fills whichever field was not typed', async ({ page }) => {
   await p.locator('input[name="gradient"]').fill('70.6');
   await expect(p.locator('input[name="vmax"]')).toHaveValue('4.20');
   await expect(p.locator('.quick-headline')).toHaveText('4.20 m/s ↔ 70.6 mmHg');
+  await expect(p.locator('.quick-label')).toHaveText('Peak gradient');
+  await expect(p.locator('.quick-note')).toContainText('mean gradient');
+  await expect(p.getByLabel('Peak gradient')).toHaveValue('70.6');
 });
 
 test('Esc from a field closes it and returns focus; the button opens and closes it', async ({ page }) => {

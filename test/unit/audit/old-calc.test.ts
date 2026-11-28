@@ -175,12 +175,13 @@ describe('runModuleCase', () => {
     const r = runModuleCase(file, file.cases[0]!);
     expect(r.notAccepted).toEqual([]);
     expect(r.recommendation).toBe('4.00 m/s ↔ 64.0 mmHg');
-    expect(r.specifics).toEqual({ gradient: '64.0' });
+    // The module labels the gradient peak since B3-bernoulli-03; the runner records label and note too.
+    expect(r.specifics).toMatchObject({ gradient: '64.0', label: 'Peak gradient' });
   });
 
   it('reports what the module says when it gives no result', () => {
     const file = parseCaseFile({ ...MODULE_FILE, cases: [{ ...MODULE_FILE.cases[0]!, inputs: { vmax: '0' } }] });
-    expect(runModuleCase(file, file.cases[0]!).recommendation).toBe('incomplete: Enter a peak velocity or a pressure gradient.');
+    expect(runModuleCase(file, file.cases[0]!).recommendation).toBe('incomplete: Enter a peak velocity or a peak gradient.');
   });
 
   it("names an input the module can't read as not accepted", () => {
