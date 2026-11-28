@@ -17,7 +17,7 @@ The owner is the clinical authority on every content change.
 - `review/`: the review page's source and the data it shows the owner.
 
 `batch-N.rulings.json` holds the owner's rulings: batch 1's as saved on the review page,
-batch 2's as given in chat (marked "(In chat.)", with `savedAt` times that only order them;
+batches 2 and 3 as given in chat (marked "(In chat.)", with `savedAt` times that only order them;
 the latest ruling on a finding wins). Where a note described the owner's own department or
 career it is paraphrased (marked "Paraphrased." or "(In chat, paraphrased.)"), so the public
 record states the ruling, not whose practice it is.
@@ -72,7 +72,9 @@ results were run on 2026-11-25 against the old guidelines site at 03cc237 (Fleis
 b29e6ab); all five calculators were switched off afterwards (b29e6ab, and 34cf4eb for
 Fleischner), so those results stand as recorded. Batch 2's were run on 2026-11-25 against
 34cf4eb; its three calculators (PI-RADS, PSA density, TI-RADS) were switched off afterwards
-(85da968), so those results stand as recorded too.
+(85da968), so those results stand as recorded too. Batch 3's Bernoulli runs were on 2026-11-27:
+the old cardiac site's page at 84b6118, typed into its form (`"mode": "type"`), and the
+front page's Bernoulli module, run in code (`"mode": "module"`).
 
 Before the owner sees a batch, an independent reviewer re-checks against the sources
 every finding other than *correct*, and every threshold marked *correct*.
@@ -117,3 +119,21 @@ Batch 2 (2026-11-26 and -27):
   Assistant's v2025 summaries (above); CAR's 2026 breast guidelines for practice. The MRI
   pieces stay marked not checked (B2-bi-rads-37). Local practice: breast density is stated
   in every report (B2-bi-rads-45).
+
+Batch 3 (2026-11-27):
+- Valve grading: ACC/AHA 2020 leads severity stages and intervention thresholds, with
+  ESC/EACTS 2025 under "Other guidelines differ"; echo grading follows the ASE/EACVI
+  documents (B3-valve-grading-01). So a Vmax of 2.0–2.5 m/s is mild AS (B3-bernoulli-05),
+  severe AR by CMR is RF ≥ 50% (B3-valve-grading-10), and the calcium score thresholds are
+  ACC/AHA's (B3-valve-grading-06). 3D VCA for severe TR: ASE 2017's > 0.4 cm²
+  (B3-valve-grading-40).
+- Coronary CTA: CAR/CSTR 2024 leads; the CAD-RADS score may sit beside a written conclusion
+  but does not replace it, with SCCT 2026 noted (B3-cardiac-ct-ccta-23).
+- Structural heart CT: CAR/CSTR 2024 part 2 where it gives a number; SCCT 2019 for the rest of
+  TAVR; the SCAI/HRS 2023 consensus for LAAO until Korsholm 2020 is read (B3-laao-ct-01);
+  the ESCR/NASCI 2026 recommendations for TMVR once readable (B3-tmvr-ct-17); Hausleiter
+  2025 counts as expert consensus for TTVR (B3-ttvr-ct-14). The LAAO page gives the
+  measurements, not device sizing (B3-laao-ct-13).
+- Local practice: the LVOT is measured below the annulus (B3-tavr-ct-05); no supplemental
+  oxygen for coronary CTA (B3-cardiac-ct-ccta-14). Nothing else asked about was local
+  practice, so those numbers go.

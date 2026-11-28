@@ -17,6 +17,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Drop "general protocol requirements, acquisition considerations" from the scope line (those sections were removed in April 2026, commit 03b90dd) and add a reference box: CAR/CSTR 2024 Part 1 (lead; adopts CAD-RADS 2.0), CAD-RADS 2.0 (Cury 2022) for categories and modifiers, SCCT 2026 for artifacts and reporting. "CAD-RADS 2.0" is still current.
 - **Proposed home:** Coronary CT angiography › Background
 - **Re-check:** disagreed — Reviewer: correct. pageSays is faithful (nav label confirmed in mkdocs.yml). Naming CAD-RADS 2.0 is right: it is the current version and CAR/CSTR part 1 adopts it (pp. 492, 495). But the page cites nothing at all (no reference to CAD-RADS 2.0, CAR/CSTR 2024 or SCCT), and the scope line promises 'general protocol requirements, acquisition considerations' that the page does not contain (it holds only the CAD-RADS table, troubleshooting and a checklist). Borderline between correct and unsourced: the one named system is real, the citation is missing. (car-cstr-cardiac-ct-1-2024, Reporting Standards, p. 492; cad-rads-2-0, title/abstract, p. 1) Resolution: Stands as wrong, without management: the scope line promises "general protocol requirements, acquisition considerations" the page no longer has (removed April 2026), and the page cites nothing; "CAD-RADS 2.0" itself is right, as the reviewer says.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-02 · CAD-RADS 2.0 table as a whole: columns, plaque burden (P1-P4), stable vs acute chest pain, vessel size
 
@@ -27,6 +28,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Add the P1-P4 plaque-burden category with CAD-RADS Table 2's methods, rename the third column "Interpretation" and add Table 4's investigation and management (stable chest pain), with Table 5's acute chest pain entries or a note that they differ; state that vessels >1.5 mm are graded.
 - **Proposed home:** Coronary CT angiography › Categories
 - **Re-check:** agrees — Under a 'CAD-RADS 2.0' heading the page gives a stenosis-only table: it leaves out the plaque burden category (P1-P4) that defines version 2.0 and that sets the management column for categories 1 and 2 (Table 4), which CAR part 1 also describes (p. 495). The single 'Recommendation' column mixes interpretation (rows 0-2) with next tests (rows 3-4B) and does not say it is the stable chest pain table (Table 4); acute chest pain has different advice (Table 5: admission, cardiology consultation). The >1.5 mm vessel rule and the per-patient, highest-grade rule are missing. The error is omission rather than a contradicted number, so 'wrong' is a judgement. (cad-rads-2-0, section 3.1 and Table 1 p. 3; Table 4 p. 5; Table 5 p. 6; car-cstr-cardiac-ct-1-2024 p. 495)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-03 · CAD-RADS table, row 0
 
@@ -37,6 +39,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Criterion "0% - no plaque or stenosis"; plaque without stenosis (including positively remodelled plaque) is CAD-RADS 1 (Table 4, footnote b). Management: "Reassurance; consider non-atherosclerotic causes of symptoms".
 - **Proposed home:** Coronary CT angiography › Categories
 - **Re-check:** disagreed — Reviewer: correct (management). Matches. The source's wording is 'no plaque or stenosis' (0 requires no plaque, not only no stenosis), which the page shortens to 'No stenosis'. (cad-rads-2-0, Table 4, p. 5) Resolution: Stands as wrong with management: the source's CAD-RADS 0 is "no plaque or stenosis"; the page's "No stenosis" puts plaque without stenosis in 0, where the source puts it in 1 (Table 4, footnote b), with a different recommendation.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-04 · CAD-RADS table, rows 1 and 2
 
@@ -47,6 +50,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Optional: the third column holds the interpretation, not a recommendation; Table 4's entries for these categories are "Further cardiac investigation: None" with risk-factor modification and preventive pharmacotherapy graded by P (see B3-cardiac-ct-ccta-02).
 - **Proposed home:** Coronary CT angiography › Categories
 - **Re-check:** agrees — Bands and interpretations match. Not on the page: CAD-RADS 1 also covers plaque with positive remodelling and no stenosis (footnote b), and management for 1 and 2 depends on P1-P4. (cad-rads-2-0, Table 4, p. 5 (and Table 1, p. 3))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-05 · CAD-RADS table, row 3 recommendation
 
@@ -57,6 +61,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** "Consider functional assessment (CT-FFR, CT perfusion or stress testing); with I+, consider ICA" (Table 4), not "recommended". The 50–69% band is right.
 - **Proposed home:** Coronary CT angiography › Management
 - **Re-check:** agrees — Band and 'Moderate' are right. The source says 'Consider functional assessment' (an option); the page says 'functional testing recommended'. The source keeps 'recommended' for 4B only, so the page overstates the strength. Borderline: the test named is the right one, only the strength of the advice differs. (cad-rads-2-0, Table 4, p. 5; section 3.1.1, p. 3)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-06 · CAD-RADS table, row 4A
 
@@ -67,6 +72,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** "Consider ICA or functional assessment (CT-FFR, CT perfusion, stress testing or invasive FFR)", ICA favoured with >90% stenosis, high-risk plaque or I+ (Table 4, footnote e); add "without left main ≥50% or 3-vessel disease". The 70–99% band is right.
 - **Proposed home:** Coronary CT angiography › Management
 - **Re-check:** agrees — Band (70-99%) and '1-2 vessels' match ('a single vessel or two vessels demonstrating severe stenosis', p. 4). The recommendation is narrowed: the source says consider ICA or functional assessment of any kind; the page gives 'ICA or FFR-CT' only. CAR part 1 adds that CT-FFR 'is currently not widely used in Canada due to lack of availability and reimbursement' (p. 498), so the page names the one functional test least available to its readers. (cad-rads-2-0, Table 4 and footnote c, p. 5; text p. 4; car-cstr-cardiac-ct-1-2024, p. 498)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-07 · CAD-RADS table, row 4B
 
@@ -77,6 +83,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** 4B is left main ≥50% (not 70–99%) or 3-vessel obstructive (≥70%) disease, and the recommendation is "ICA is recommended", not "heart team". As written, a 50–69% left main stenosis falls into row 3.
 - **Proposed home:** Coronary CT angiography › Categories
 - **Re-check:** agrees — The page puts left main under '70-99%'. The source's left main threshold is >=50% (CAR part 1 repeats it: 'left main >=50% or 3-vessel obstructive [>=70%] disease'), so a 50-69% left main stenosis is 4B, not 3, by the source and would be under-called from the page. The recommendation in the source is 'ICA is recommended'; 'heart team' appears nowhere in CAD-RADS 2.0, CAR part 1 or SCCT 2026. (cad-rads-2-0, Table 4, p. 5; text p. 4; car-cstr-cardiac-ct-1-2024, p. 495 and Figure 1 p. 493)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-08 · CAD-RADS table, row 5
 
@@ -87,6 +94,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Optional: fill the empty cell from Table 4 ("Consider ICA, functional and/or viability assessment") and, for acute chest pain, Table 5 ("Expedited ICA and revascularization if suspected acute occlusion").
 - **Proposed home:** Coronary CT angiography › Management
 - **Re-check:** agrees — What the page states is right. The recommendation cell is empty where the source has one: stable, consider ICA, functional and/or viability assessment; acute, hospital admission with cardiology consultation and expedited ICA and revascularization if acute occlusion is suspected. (cad-rads-2-0, Table 4 p. 5; Table 5 p. 6)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-09 · CAD-RADS table, row N
 
@@ -97,6 +105,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** N is a non-diagnostic study: the category only when no interpretable segment has ≥50% stenosis; otherwise grade the worst stenosis and add /N (e.g. 4A/P3/N). Recommendation: "Obstructive CAD cannot be excluded; additional or alternative evaluation may be needed".
 - **Proposed home:** Coronary CT angiography › Categories
 - **Re-check:** agrees — Category N is a non-diagnostic study, not a non-diagnostic segment. A non-diagnostic segment gives category N only when no interpretable segment has a stenosis of 50% or more; otherwise the numeric category stands and N is a modifier (3/P2/N). The page's 'Non-diagnostic segment' would over-assign N, and its recommendation cell is empty (source: additional or alternative evaluation). Borderline: a reader who knows the system would read the row as shorthand. (cad-rads-2-0, Table 4 p. 5; section 3.3.1 Modifier N, p. 11)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-10 · Modifiers line
 
@@ -107,6 +116,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Write the modifiers with slashes after the P category, in CAD-RADS order N, HRP, I (I+, I− or I±), S, G, E (e.g. CAD-RADS 3/P3/HRP/S), and list N as a modifier too; the "+" prefix is not CAD-RADS notation.
 - **Proposed home:** Coronary CT angiography › Reporting
 - **Re-check:** agrees — The five modifiers named and their meanings are right, but the list leaves out modifier N (CAR part 1 lists it too: 'S ..., G ..., and N (non-diagnostic study)'), gives them in a different order from the source's fixed order (N, HRP, I, S, G, E), and writes them with a '+' prefix where CAD-RADS uses a slash (e.g. CAD-RADS 3/P3/HRP/S). I is reported as I+, I- or I+/-, which the page does not say. (cad-rads-2-0, section 3.3 pp. 10-17, order of modifiers p. 17; car-cstr-cardiac-ct-1-2024, p. 495)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-11 · "High-Risk Plaque Features" tip
 
@@ -117,6 +127,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** The four features and both numbers are right; add that HRP is coded only when one plaque shows two or more of them (CAD-RADS p. 13; CAR p. 495), and define spotty calcification (<3 mm, SCCT 2026 p. 463).
 - **Proposed home:** Coronary CT angiography › Categories
 - **Re-check:** disagreed — Reviewer: correct (management). All four features and both numbers match (<30 HU; remodelling index >1.1, which the source text gives as 'greater than 1.1', not >=1.1 as sources-covers.json paraphrases; SCCT 2026 says >10% larger). Missing, and it matters for coding: the HRP modifier needs two or more features in one plaque (CAD-RADS 2.0 and CAR part 1 both say so). (cad-rads-2-0, section 3.3.4 and Figure 15, pp. 13-14; car-cstr-cardiac-ct-1-2024, p. 495; scct-ccta-reporting-2026, section 2.2.2, p. 463) Resolution: Stands as wrong with management: the numbers are right, but without the two-or-more-features rule a single feature is coded HRP, which changes the modifier and the recommendation; omissions that change the category are treated as wrong, as in batches 1–2.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-12 · Troubleshooting, Motion Artifact: "Heart rate too high" row
 
@@ -126,6 +137,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — Patient Preparation p. 491 (PDF p. 4): beta-blockers to a target heart rate by scanner type; Acquisition Protocols p. 491: "If a diagnostic quality study has not been obtained, the examination can be repeated"; Table 2 p. 492 (PDF p. 5): "5 mg intravenous metoprolol given with repeated checks of blood pressure and heart rate up to maximum of 25 mg", "If target heart rate is not reached after oral dose of metoprolol, can give additional intravenous metoprolol on CT table", with contraindications; Table 1 p. 490 (PDF p. 3), CCTA comment: with high heart rates despite beta blockers, widening the acquisition window and possibly retrospective gating; Rajiah PS, Alkadhi H, Andreini D, et al. Interpretation and reporting of coronary computed tomographic angiography (2026 update): an expert consensus document of the Society of Cardiovascular Computed Tomography (SCCT). J Cardiovasc Comput Tomogr. 2026;20(5):459-482. doi:10.1016/j.jcct.2026.08.014 — §2.3.3 p. 472 and Table 4 p. 473: after acquisition, reconstruction in a different phase (often systole at higher heart rates), motion compensation, absolute-millisecond systolic reconstruction, ECG editing
 - **Proposed fix:** Optional: give CAR's limits (IV metoprolol 5 mg doses up to 25 mg; Table 2's contraindications) and, before re-scanning, try other phases or motion correction (SCCT 2026 Table 4).
 - **Proposed home:** Coronary CT angiography › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-13 · Troubleshooting, Motion Artifact: "Irregular rhythm" row
 
@@ -135,6 +147,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — p. 489 (PDF p. 2): retrospective gating costs more dose; 320-row single-rotation scanners "are less susceptible to arrhythmias such as atrial fibrillation"; Table 1 p. 490 (widen the acquisition window, possibly retrospective gating); p. 491: "Retrospective ECG-gating should only be used when functional data is required, or the patient's heart rate cannot be reduced sufficiently"; Rajiah PS, Alkadhi H, Andreini D, et al. Interpretation and reporting of coronary computed tomographic angiography (2026 update): an expert consensus document of the Society of Cardiovascular Computed Tomography (SCCT). J Cardiovasc Comput Tomogr. 2026;20(5):459-482. doi:10.1016/j.jcct.2026.08.014 — §2.3.3 pp. 472-473: multisegment reconstruction among the motion techniques; "Absolute millisecond systolic reconstruction further helps compensate for irregular heartbeats"; interpolation and duplication artifacts from premature beats mitigated with ECG editing; Figure 17 p. 475 (AF, systolic reconstruction at 250 ms)
 - **Proposed fix:** Optional: add ECG editing for ectopic beats and absolute-millisecond systolic reconstruction for AF (SCCT 2026 p. 473), and that a wide-detector single-beat acquisition is less affected by AF (CAR p. 489).
 - **Proposed home:** Coronary CT angiography › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-14 · Troubleshooting, Motion Artifact: "Poor breath-hold" and "Respiratory motion" rows
 
@@ -146,6 +159,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Question for the owner:** Are supplemental oxygen and breath-hold coaching for CCTA your local practice? No readable source states them.
 - **Proposed home:** Coronary CT angiography › Technique
 - **Re-check:** agrees — 'Re-scan' is supported (SCCT 2026 Table 4; CAR part 1: 'If a diagnostic quality study has not been obtained, the examination can be repeated'). Nothing readable speaks to supplemental oxygen, a shorter breath-hold protocol, coaching, or increasing table speed: CAR part 1 has no breath-hold text and SCCT 2026 covers post-acquisition fixes only. The acquisition document that would (scct-ccta-acquisition-2016) is not readable. Could equally be called unsourced; the page cites nothing. (scct-ccta-reporting-2026, section 2.3.3 p. 472 and Table 4 p. 473; car-cstr-cardiac-ct-1-2024, Acquisition Protocols p. 491)
+- **Ruling:** keep (2026-11-27) — (In chat, paraphrased.) Local practice: no supplemental oxygen; it goes. As recommended for the rest: the shorter breath-hold, faster table speed and breath-hold coaching go too (no readable source; not local practice). Re-scan stays (SCCT 2026 Table 4).
 
 ### B3-cardiac-ct-ccta-15 · Troubleshooting, Contrast Issues: "Poor aortic enhancement (<250 HU)" row
 
@@ -156,6 +170,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Optional: give CAR's target (250–300 HU) and injection (5–7 mL/s, 18G, right antecubital; test bolus or bolus tracking), and SCCT's salvage of an acquired scan (low-energy VMI, stronger iterative reconstruction).
 - **Proposed home:** Coronary CT angiography › Technique
 - **Re-check:** agrees — The <250 HU line follows from CAR's 250-300 HU target, and the fixes (re-time with a test bolus, raise the injection rate) match CAR. Causes agree with SCCT 2026 (body size, slow circulation time, injection technique, extravasation). 'Increase contrast volume' is not stated in either document; CAR gives 5-7 mL/s through an 18G cannula. SCCT 2026 adds a rescue the page lacks: low-energy virtual monoenergetic reconstruction. (car-cstr-cardiac-ct-1-2024, Contrast Medium Administration, p. 491; scct-ccta-reporting-2026, section 2.3.2, p. 472)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-16 · Troubleshooting, Contrast Issues: "Right heart opacification inadequate (structural CT)" row
 
@@ -165,6 +180,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — TTVR p. 7 (print p. 508): "The acquisition technique requires different contrast timing to allow evaluation of the right atrium and right ventricle. ECG gating is still essential"; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — Table 1 p. 490 (PDF p. 3): "Ventricular function | Biventricular contrast protocol required (triphasic injection)"; p. 491 (PDF p. 4): triphasic (contrast, diluted contrast, saline) reduces right atrial beam hardening "while maintaining ability to assess the right heart"; Hausleiter J, Stolz L, Lurz P, et al. Transcatheter tricuspid valve replacement. J Am Coll Cardiol. 2025;85(3):265-291. doi:10.1016/j.jacc.2024.10.071 — Cardiac computed tomography, p. 272: "optimized contrast enhancement of the right cardiac chambers (plus jugular veins in case of jugular access)"; delayed abdomen-pelvis phase for femoral access
 - **Proposed fix:** Optional: mend the wording ("longer contrast bolus and a delayed phase") and name CAR's biventricular (triphasic) injection as the planned alternative.
 - **Proposed home:** Structural heart CT planning › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-17 · Troubleshooting, Contrast Issues: "Streak artifact from contrast in SVC" row
 
@@ -174,6 +190,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — p. 491 (PDF p. 4): antecubital vein "preferably on the right to avoid dense contrast in the left innominate vein causing beam-hardening (streak) artifact and obscuring vascular structures such as the aorta"; biphasic (contrast then saline) and triphasic (contrast, diluted contrast, saline) injection; with triphasic "Beam-hardening artifacts related to contrast in the right atrium are reduced"; Rajiah PS, Alkadhi H, Andreini D, et al. Interpretation and reporting of coronary computed tomographic angiography (2026 update): an expert consensus document of the Society of Cardiovascular Computed Tomography (SCCT). J Cardiovasc Comput Tomogr. 2026;20(5):459-482. doi:10.1016/j.jcct.2026.08.014 — §2.3.4 p. 473 and Table 4: beam hardening from dense contrast; higher-level iterative reconstruction or high-energy VMI
 - **Proposed fix:** Optional: CAR's reason for the right arm is dense contrast in the left innominate (brachiocephalic) vein; "delay scan start" is in neither CAR nor SCCT 2026 (a saline chaser and dilution are), and SCCT adds high-energy VMI or stronger iterative reconstruction after the scan.
 - **Proposed home:** Coronary CT angiography › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-18 · Troubleshooting, Contrast Issues: "Contrast extravasation" row
 
@@ -184,6 +201,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** After stopping the injection: examine the limb, elevate it, apply cold compresses, give discharge instructions, and ask for surgical consultation on the ACR's warning signs (not on volume); link the contrast extravasation topic (B2-contrast-safety-30) rather than restate it. "Reschedule" is not in the ACR manual.
 - **Proposed home:** Contrast extravasation › Management
 - **Re-check:** disagreed — Reviewer: correct. Neither CAR/CSTR part 1 nor SCCT 2026 covers managing extravasation (SCCT only names it as a cause of poor enhancement), so this was checked against the ACR manual already in audit-sources; there is no CAR document on it. Stopping the injection and assessing the arm agree with ACR. The row leaves out what ACR asks for next: elevate the limb, cold compresses, discharge instructions, surgical consultation if severe. 'Reschedule' is not in any source (reasonable, unsourced). (acr-contrast-2026, chapter 'Extravasation of Contrast Media' (summary and Questions 3-4, manual pp. 17-18); injection chapter (line 'injection should be discontinued')) Resolution: Stands as wrong with management: "Abort scan; assess extent; reschedule" leaves out the ACR's surgical-consultation signs, so a reader following the row could miss a referral; "reschedule" is in no source. Checked against the ACR manual, as the reviewer did.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-19 · Troubleshooting, Contrast Issues: "Contrast reaction" row
 
@@ -194,6 +212,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** For a prior reaction, follow the batch 2 lead (CAR/CSACI 2025): switch to a chemically different agent, no steroid premedication, optional antihistamine after a mild reaction; allergies to other things are not a reason to premedicate. Keep "have emergency equipment available" (ACR Table 4) and link the contrast topics rather than restate them.
 - **Proposed home:** Prior contrast reaction › Management
 - **Re-check:** disagreed — Reviewer: local-practice (management). The row defers to an institutional protocol, so it is local practice as written, but the one action it names (pre-medicate) is not what CAR's own guidance leads with: CAR/CSACI 2025 says to switch contrast agent, recommends against routine steroid premedication, makes second-generation antihistamines optional after a mild reaction, and says premedication is not recommended after anaphylaxis (use another modality or switch agent). Undecided between local-practice and wrong; an owner question. 'Have emergency equipment available' is uncontroversial. (car-csaci-hypersensitivity-2025, Conclusions/Recommendations 4-10, pp. 9-11 of the article) Resolution: Stands as not-lead with management: the row names one action, premedication, and the owner's batch 2 ruling (B2-contrast-safety-11: CAR/CSACI 2025 leads, switch agent, no steroid premedication) decides it, so it needs no new question.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-20 · Troubleshooting, Image Quality: "Blooming from calcium / stents" row
 
@@ -204,6 +223,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Proposed fix:** Cause: partial-volume averaging (beam hardening is a separate artifact). Remedies per SCCT 2026 Table 4: sharper kernel, thinner sections, wider window, stronger iterative reconstruction, high-energy VMI on multi-energy scanners; "increase kV" is not in SCCT 2026.
 - **Proposed home:** Coronary CT angiography › Technique
 - **Re-check:** agrees — Cause: SCCT 2026 treats blooming (partial volume averaging) and beam hardening as two separate artifacts with separate fixes; the page gives beam hardening as the cause of blooming. CAR part 1 is looser ('beam-hardening and partial volume averaging (blooming artifacts)'), so the sources are not fully aligned. Fixes: sharper kernel and iterative reconstruction match SCCT. 'Increase kV' is in neither document; the nearest is high-energy virtual monoenergetic images on multi-energy CT. SCCT also lists thinner sections and a wider display window, which the page lacks. (scct-ccta-reporting-2026, sections 2.3.4-2.3.5 p. 473 and Table 4 p. 473; car-cstr-cardiac-ct-1-2024, Coronary Artery Stents, p. 495)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-21 · Troubleshooting, Image Quality: "Noise / grainy images" row
 
@@ -213,6 +233,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Source:** Rajiah PS, Alkadhi H, Andreini D, et al. Interpretation and reporting of coronary computed tomographic angiography (2026 update): an expert consensus document of the Society of Cardiovascular Computed Tomography (SCCT). J Cardiovasc Comput Tomogr. 2026;20(5):459-482. doi:10.1016/j.jcct.2026.08.014 — §2.3.1 p. 472: "Noise may result from large body size, suboptimal scan parameters (low tube output or low tube energy for a given body size), or ECG-based tube current modulation ... Noise can be reduced using thicker reconstructions, softer kernels, higher iterative reconstruction levels, or alternative VMI energy levels"; Table 4 p. 473; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — p. 491 (PDF p. 4): "Larger patients require a higher kVp"; iterative and deep-learning reconstruction reduce noise
 - **Proposed fix:** Optional: add the after-scan options (thicker sections, softer kernel, stronger iterative reconstruction, VMI; SCCT 2026 Table 4) and name ECG-based tube current modulation as a cause, which is what widening the full-dose window addresses.
 - **Proposed home:** Coronary CT angiography › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-22 · Troubleshooting, Image Quality: "Mis-registration (coronary snap)" row
 
@@ -222,6 +243,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Source:** Rajiah PS, Alkadhi H, Andreini D, et al. Interpretation and reporting of coronary computed tomographic angiography (2026 update): an expert consensus document of the Society of Cardiovascular Computed Tomography (SCCT). J Cardiovasc Comput Tomogr. 2026;20(5):459-482. doi:10.1016/j.jcct.2026.08.014 — §2.3.3 p. 472: "Transition (stairstep or misalignment) artifacts occur at slab interfaces from different cardiac cycles, typically due to irregular rhythm or incorrect rhythm gating ... Blending or edge-correction algorithms can reduce their appearance ... Suspected pseudolesions may resolve on reconstruction at a different cardiac phase"; p. 473: interpolation and duplication artifacts in retrospectively gated spiral scans mitigated with ECG editing; Figure 16 p. 474; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — Table 1 p. 490 (PDF p. 3): widen the acquisition window or use retrospective gating when heart rates stay high
 - **Proposed fix:** Optional: call it a transition (stair-step, misregistration) artifact, which also occurs in multi-beat step-and-shoot scans, and add ECG editing and edge correction (SCCT 2026 pp. 472-473); "coronary snap" is not a term the sources use.
 - **Proposed home:** Coronary CT angiography › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-23 · Reporting Checklist, "CCTA" tab
 
@@ -233,6 +255,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Question for the owner:** CAR 2024 (Appendix A) says the CAD-RADS score "may be included but should not replace the conclusion"; SCCT 2026 (Table 6) strongly recommends a coronary impression in CAD-RADS 2.0 style. Should the site present CAD-RADS as optional beside a written conclusion (CAR) or as the expected impression (SCCT)?
 - **Proposed home:** Coronary CT angiography › Reporting
 - **Re-check:** disagreed — Reviewer: correct. Each of the four items is in CAR's sample report and SCCT 2026 Table 6 (dominance, per-segment stenosis, CAD-RADS 2.0 impression, extracardiac findings: all 'Strong'). CAR words CAD-RADS as optional ('may be included but should not replace the conclusion'); SCCT 2026 makes a CAD-RADS 2.0 style impression a strong recommendation: a small CAR versus newer-SCCT difference for the owner. The list is short of both sources: image quality, coronary origins/anomalies, plaque type, overall plaque burden, stents and grafts, calcium score, and other cardiac structures are absent. (car-cstr-cardiac-ct-1-2024, Appendix A, p. 498; scct-ccta-reporting-2026, Table 6, p. 478) Resolution: Changed to correct, as the reviewer has it: each item is in CAR's sample report and SCCT 2026 Table 6; the list being short is the fix, and the CAR-versus-SCCT 2026 difference stays the owner's question.
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: CAR/CSTR 2024 leads; the CAD-RADS score may be given beside a written conclusion but does not replace it. SCCT 2026's CAD-RADS-style impression is noted.
 
 ### B3-cardiac-ct-ccta-24 · Reporting Checklist, "Structural / Device Planning" tab
 
@@ -242,6 +265,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — Table 1 p. 490 (PDF p. 3): retrospective ECG-gating for LAA closure, TAVI/TAVR, TMVR, TTVR and TPVR; "Some institutions only perform systolic phase imaging of the aortic annulus"; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — TAVI pp. 5-6 (print pp. 506-507): "Generally, a full cardiac cycle should be acquired", annulus sized in systole, diastolic phases helpful in reverse dynamism; bilateral minimal luminal diameters, calcification, tortuosity, alternative access; valve-in-valve: full cycle not always necessary; TMVR p. 7 (print p. 508): ECG gating, full cycle, delayed abdomen-pelvis imaging for venous access; TTVR p. 7: different contrast timing for the right atrium and ventricle; incidental non-cardiac findings pp. 11-12 (print pp. 512-513)
 - **Proposed fix:** Optional: name the phase (systole for the TAVI annulus, CAR Part 2 p. 5) and the access measures (bilateral minimal luminal diameters, calcification, tortuosity; venous access for TMVR and TTVR); the device pages carry the detail.
 - **Proposed home:** Structural heart CT planning › Reporting
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-cardiac-ct-ccta-25 · Front-page row (shared/data/resources.ts): title, version label and summary
 
@@ -253,6 +277,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/
 - **Question for the owner:** Once the page follows CAR Part 1 for technique, should the front-page label read "CAR/CSTR 2024 · CAD-RADS 2.0" or stay "CAD-RADS 2.0"?
 - **Proposed home:** Front page row: Coronary CT angiography and CAD-RADS
 - **Re-check:** agrees — The row in shared/data/resources.ts is quoted faithfully (id cardiac-ct-ccta, version 'CAD-RADS 2.0'). CAD-RADS 2.0 is the current version and the one CAR part 1 and SCCT 2026 report by, and the summary describes what the page holds. The only caveat is the page's own: its '2.0 categories' omit the P1-P4 plaque burden category (see 02). (car-cstr-cardiac-ct-1-2024, p. 492 and p. 495; cad-rads-2-0, p. 1)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: the front-page label reads "CAR/CSTR 2024 · CAD-RADS 2.0" once the page follows CAR Part 1.
 
 ## TAVR planning CT
 
@@ -265,6 +290,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **The page says:** "Pre-procedural CT is the essential imaging modality for TAVR candidate assessment." (The next sentence, the Protocol Manager link, is the site-wide line the coordinator records.)
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — TAVR/TAVI, Pre-Procedure Planning: Native Aortic Valve, PDF p. 5 (p. 506): "ECG-gated cardiac CT is now considered the gold standard for selection of valve size and determining procedural risk"; Blanke P, Weir-McCall JR, Achenbach S, et al. Computed tomography imaging in the context of transcatheter aortic valve implantation (TAVI)/transcatheter aortic valve replacement (TAVR): an expert consensus document of the Society of Cardiovascular Computed Tomography. J Cardiovasc Comput Tomogr. 2019;13(1):1-20. doi:10.1016/j.jcct.2018.11.008. Co-published in JACC Cardiovasc Imaging. 2019;12(1):1-24. doi:10.1016/j.jcmg.2018.12.003. — Preamble/Introduction: "CT is now the gold standard tool for annular sizing, determination of risk of annular injury and coronary occlusion, and to provide co-planar fluoroscopic angle prediction"; Agricola E, Ancona F, Bartel T, et al. Multimodality imaging for patient selection, procedural guidance, and follow-up of transcatheter interventions for structural heart disease: a consensus document of the EACVI Task Force on Interventional Cardiovascular Imaging: part 1: access routes, transcatheter aortic valve implantation, and transcatheter mitral valve interventions. Eur Heart J Cardiovasc Imaging. 2023;24(9):e209-e268. doi:10.1093/ehjci/jead096 — TAVI, Computed tomography, p. e218: "CT is the first-line imaging technique for planning TAVI"
 - **Proposed home:** TAVR planning CT › Background
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-02 · Aortic Annulus Sizing: imaging plane and phase
 
@@ -275,6 +301,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Describe the annular plane as a double-oblique plane through the three basal hinge points (ESCR calls coronal or single-oblique planes unsuitable), and the phase as the one with the largest, sharply depicted annulus (usually systole).
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: correct (management). The plane (through the three basal hinge points) and the phase (systole, or the phase with the largest annulus) match SCCT and CAR. The quotation is faithful. Wording only: the annular plane is a double-oblique transverse plane, not a "coronal oblique" (Francone: "Standard coronal, sagittal or even single-oblique image reformations are therefore not considered suitable"); CAR adds that diastolic phases can help in reverse dynamism (septal hypertrophy). (scct-tavi-2019 (accepted manuscript, no page numbers), sections "Aortic Annulus: Definitions and measurement techniques" and "Annular dynamism & phase selection"; Table 5. Also car-cstr-cardiac-ct-2-2024, TAVR/TAVI "Pre-Procedure Planning: Native Aortic Valve", p. 506 (PDF 5)) Resolution: Changed to correct, as the reviewer has it: the plane through the three hinge points and the systolic phase match SCCT and CAR; "coronal oblique" is wording, kept as the fix.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-03 · Annulus table: perimeter- and area-derived diameter rows
 
@@ -285,6 +312,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep both formulas (both are right) but give area and perimeter equal standing: area is the sizing measure for balloon-expandable valves, perimeter for self-expanding valves; drop "Primary sizing metric" and "Cross-check".
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** agrees — The two formulas are right (Francone). The roles are not: no source makes perimeter the "primary sizing metric" and area a "cross-check"; which one is used depends on the device (area for balloon-expandable, perimeter for self-expanding), and CAR treats them as equals ("Whether it is a cross sectional area or perimeter derived diameter"). (scct-tavi-2019 (accepted manuscript, no page numbers), section "Sizing considerations"; eacvi-structural-2023, "Aortic annulus sizing", p. e218; francone-escr-tavi-2020, section on annular measurements (text after Fig. 13); car-cstr-cardiac-ct-2-2024, TAVR/TAVI "Pre-Procedure Planning: Native Aortic Valve", p. 506 (PDF 5))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-04 · Annulus table: max/min diameter and annular area rows; first sentence of the "Sizing convention" box
 
@@ -293,6 +321,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **The page says:** "Max / Min diameter | Widest and narrowest annular diameters | Assess eccentricity"; "Annular area | Planimetry | Directly guides device selection"; box: "Area- and perimeter-derived diameters are preferred over simple 2D max/min diameters for device selection."
 - **Source:** Blanke P, Weir-McCall JR, Achenbach S, et al. Computed tomography imaging in the context of transcatheter aortic valve implantation (TAVI)/transcatheter aortic valve replacement (TAVR): an expert consensus document of the Society of Cardiovascular Computed Tomography. J Cardiovasc Comput Tomogr. 2019;13(1):1-20. doi:10.1016/j.jcct.2018.11.008. Co-published in JACC Cardiovasc Imaging. 2019;12(1):1-24. doi:10.1016/j.jcmg.2018.12.003. — Aortic Annulus: Definitions and measurement techniques ("short and long axis dimensions inform on the eccentricity"; "manual caliper measurements should not be used to assess overall annular dimensions instead of contouring tools"); Sizing considerations (diameter-based sizing "can be considered obsolete"); Table 5 (strong); Table 9 ("Optional min and max diameter"); Agricola E, Ancona F, Bartel T, et al. Multimodality imaging for patient selection, procedural guidance, and follow-up of transcatheter interventions for structural heart disease: a consensus document of the EACVI Task Force on Interventional Cardiovascular Imaging: part 1: access routes, transcatheter aortic valve implantation, and transcatheter mitral valve interventions. Eur Heart J Cardiovasc Imaging. 2023;24(9):e209-e268. doi:10.1093/ehjci/jead096 — TAVI, Computed tomography, p. e220: LAX and SAX diameters, area, perimeter and the three derived mean diameters "should all be reported"
 - **Proposed home:** TAVR planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-05 · Annulus table: LVOT diameter row
 
@@ -304,6 +333,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** No readable TAVR document uses an LVOT diameter 3–5 mm below the annulus for CoreValve sizing or for LVOT obstruction risk. Is it local practice to keep (labelled), or should it go?
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: unsourced (management). None of SCCT 2019, CAR part 2, Francone 2020 or EACVI 2023 asks for an LVOT diameter 3–5 mm below the annulus, ties it to CoreValve sizing, or uses it for LVOT obstruction risk in TAVR. The sources size self-expanding valves from the annular perimeter and assess the sub-annular LVOT for calcification (qualitatively), not diameter. (scct-tavi-2019 (accepted manuscript, no page numbers), sections "Landing zone calcium", "Sizing considerations", Table 5 and Table 9; francone-escr-tavi-2020 Table 4; car-cstr-cardiac-ct-2-2024, TAVR/TAVI "Pre-Procedure Planning: Native Aortic Valve", p. 506 (PDF 5)) Resolution: Takes the reviewer's management flag: an unsourced number used for valve sizing could change the device chosen; whether it is local practice is the owner's question.
+- **Ruling:** change (2026-11-27) — (In chat, paraphrased.) Local practice: the LVOT is measured below the annulus. The row stays, labelled local practice.
 
 ### B3-tavr-ct-06 · "Sizing convention" box: eccentricity index
 
@@ -315,6 +345,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Is the eccentricity index with a >0.10 cut-off used locally? No readable guideline states it.
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** agrees — The readable sources mention eccentricity only qualitatively. Neither the formula (max − min)/max nor the ">0.10 = significant" cut-off appears in SCCT 2019, CAR part 2, Francone 2020 or EACVI 2023. (The first sentence of the same box, area/perimeter preferred over 2D diameters, is SCCT Table 5 and is not part of this piece.) (scct-tavi-2019 (accepted manuscript, no page numbers), section "Aortic Annulus: Definitions and measurement techniques"; francone-escr-tavi-2020, text after Fig. 13)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended (not local practice): the >0.10 eccentricity cut-off goes; the short- and long-axis diameters show the eccentricity (SCCT).
 
 ### B3-tavr-ct-07 · Aortic Root table: sinus of Valsalva row
 
@@ -325,6 +356,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Measure each sinus cusp to commissure parallel to the annular plane and report the three (mean if symmetric); drop "typically 27–35 mm" (no source) and say a mean below 30 mm raises the risk of coronary occlusion (CAR, p. 506).
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** agrees — Measuring a width for each of the three sinuses agrees with SCCT and CAR (which specify cusp-to-commissure, a detail the page omits). The "typically 27–35 mm" range is in no readable source: the only sinus number the sources give is the risk cut-off (mean diameter <30 mm), and Francone says the required dimensions are device-specific. (scct-tavi-2019 (accepted manuscript, no page numbers), section "Coronary ostial height and Sinus of Valsalva assessment"; car-cstr-cardiac-ct-2-2024, TAVR/TAVI "Pre-Procedure Planning: Native Aortic Valve", p. 506 (PDF 5); francone-escr-tavi-2020, "Largest dimensions of the aortic sinus and sinotubular junction")
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-08 · Aortic Root table: sinotubular junction row
 
@@ -335,6 +367,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Measure STJ diameter and height; a STJ narrower than the planned valve, especially with a balloon-expandable valve and a low STJ, raises the risk of STJ injury (CAR p. 506; SCCT).
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** agrees — Both the lead (CAR) and SCCT attach the small-STJ concern to balloon-expandable valves (STJ injury), the opposite of the page's "constrains self-expanding devices". The page also asks only for the diameter; both sources ask for STJ diameter and height. (scct-tavi-2019 (accepted manuscript, no page numbers), section "Sinotubular junction"; car-cstr-cardiac-ct-2-2024, TAVR/TAVI "Pre-Procedure Planning: Native Aortic Valve", p. 506 (PDF 5))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-09 · Aortic Root table: ascending aorta row, the stated purpose
 
@@ -345,6 +378,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Replace "Sheath compatibility" with what the documents give: aortopathy and calcification (SCCT), and device choice (ESCR: a balloon-expandable valve can be considered when the ascending aorta is >43 mm).
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: wrong. Measuring the ascending aorta is right, but the stated purpose is not: the sources measure it for aortopathy/aneurysm (and wall calcification for transaortic access or cross-clamping). Sheath compatibility is a matter of the minimal iliofemoral (or alternative access) vessel diameter, not the ascending aortic diameter. (scct-tavi-2019 (accepted manuscript, no page numbers), sections "Ascending aorta", "Aorta" (under Vascular access) and "Vascular access: Overview") Resolution: Changed to wrong, as the reviewer has it: SCCT measures the ascending aorta for aortopathy, so "sheath compatibility" contradicts the source's purpose (sheath fit is the access vessels); no management.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-10 · Aortic Root table: ascending aorta row, 45 mm in a bicuspid valve
 
@@ -355,6 +389,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Say what the 45 mm means: in a bicuspid valve with an indication for valve surgery, concomitant aortic replacement is reasonable at ≥45 mm (ACC/AHA 2020; ESC/EACTS 2025), which can favour SAVR over TAVR; it is not a stand-alone surgical threshold.
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** agrees — Both valve guidelines (lead undecided; they agree here) give ≥45 mm as the size at which the aorta is replaced when a bicuspid patient already needs valve surgery, which is the situation of a TAVR candidate. The page's shorthand drops that condition: 45 mm is the concomitant-surgery threshold, not the stand-alone one (ACC/AHA >5.5 cm, or 5.0–5.5 cm with risk factors; ESC ≥55 mm, 50 mm with risk factors). None of the TAVR CT documents states the number. (acc-aha-vhd-2020, section 5.1.2.1 "Intervention: Replacement of the Aorta" recommendation 3 (COR 2a); esc-eacts-vhd-2025, aortic regurgitation section, p. 28 text and Figure 5 footnote b)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-11 · Aortic Root table: aortoventricular angle row
 
@@ -365,6 +400,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Restate as ESCR does (a steep aortoventricular angle, >70°, can favour a balloon-expandable valve) and drop the paravalvular leak and projection claims unless a source is found.
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** agrees — SCCT 2019, CAR part 2 and EACVI do not list an aortoventricular angle as a planning measurement. Francone mentions it once, as a reason to prefer a balloon-expandable valve when >70°, not as a paravalvular-leak predictor, and its leak statement concerns the apex-to-LVOT angle for transapical access. The fluoroscopic projection comes from the annular plane (SCCT), not from this angle. Partly supported at best; ambiguous. (francone-escr-tavi-2020, section on valve types (text after Table 2) and "Non-endovascular approach"; scct-tavi-2019 (accepted manuscript, no page numbers), "Optimal projection curve")
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-12 · Coronary ostial height: root-table row and the measuring instruction
 
@@ -374,6 +410,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — PDF p. 5 (p. 506): coronary ostial height "as measured perpendicular from the annular plane" should be recorded in all TAVR CTs; Blanke P, Weir-McCall JR, Achenbach S, et al. Computed tomography imaging in the context of transcatheter aortic valve implantation (TAVI)/transcatheter aortic valve replacement (TAVR): an expert consensus document of the Society of Cardiovascular Computed Tomography. J Cardiovasc Comput Tomogr. 2019;13(1):1-20. doi:10.1016/j.jcct.2018.11.008. Co-published in JACC Cardiovasc Imaging. 2019;12(1):1-24. doi:10.1016/j.jcmg.2018.12.003. — Coronary ostial height and Sinus of Valsalva assessment and Figure 7: caliper perpendicular to the annular plane to the lower edge of the LCA and RCA ostia; Table 5 (strong)
 - **Proposed fix:** Add "to the lower edge of the ostium" (SCCT, Figure 7).
 - **Proposed home:** TAVR planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-13 · Coronary Occlusion Risk table
 
@@ -385,6 +422,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Are the 10 and 15 mm bands and the BASILICA prompts local practice? If not, they go in favour of CAR's 12 mm.
 - **Proposed home:** TAVR planning CT › Management
 - **Re-check:** agrees — The lead (CAR), SCCT and EACVI all use a single cut-off, <12 mm, and SCCT warns against grading risk from height alone. The page's three tiers (>15 low, 10–15 moderate, <10 high) appear in no source and put heights of 10–12 mm in "moderate" where the lead calls them low/at risk; the "Action" column (BASILICA by height band) is also unsourced (EACVI names BASILICA only as a technique, with no height trigger). (car-cstr-cardiac-ct-2-2024, TAVR/TAVI "Pre-Procedure Planning: Native Aortic Valve", p. 506 (PDF 5); scct-tavi-2019 (accepted manuscript, no page numbers), section "Coronary ostial height and Sinus of Valsalva assessment"; eacvi-structural-2023 p. e218; francone-escr-tavi-2020, "Minimum distance of the annulus to the left and right ostium of the coronary arteries")
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended (not local practice): the 10 and 15 mm bands and the BASILICA prompts go in favour of CAR's statement (height <12 mm or mean sinus <30 mm raises the risk, read with the rest of the root and the planned valve).
 
 ### B3-tavr-ct-14 · Coronary Occlusion Risk: additional risk factors line
 
@@ -395,6 +433,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Write "mean sinus diameter <30 mm" (SCCT) and point valve-in-valve readers to the valve-to-coronary distance instead of height (B3-tavr-ct-23).
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** agrees — Sinus <30 mm (a mean diameter in SCCT), a narrow/low STJ, bulky calcified leaflets and valve-in-valve are all named as coronary-occlusion risk factors in the sources. "Regardless of height" is the page's gloss: SCCT asks for height and sinus width to be read together, in the context of root size and the planned valve. "Fused" leaflets specifically is not stated. (car-cstr-cardiac-ct-2-2024, TAVR/TAVI "Pre-Procedure Planning: Native Aortic Valve", p. 506 (PDF 5) and ViV paragraph p. 507 (PDF 6); scct-tavi-2019 (accepted manuscript, no page numbers), sections "Coronary ostial height and Sinus of Valsalva assessment" and "Valve-in-valve implantation: Overview"; eacvi-structural-2023 pp. e218, e228)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-15 · Bicuspid Aortic Valve + TAVR box
 
@@ -405,6 +444,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep the Sievers types and the calcium sentence, add SCCT's TAVR-directed classification and raphe calcium grading, and drop "CT calcium scoring ... essential" (a valve calcium score is for uncertain AS severity) and the eccentricity index.
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: correct. The Sievers types and the link between bulky/asymmetric calcification and paravalvular leak and annular rupture match SCCT and EACVI. Two clauses go beyond the sources: "CT calcium scoring ... essential" (the sources ask for a qualitative description of raphe and landing-zone calcium; the calcium score is for uncertain stenosis severity) and "coronary occlusion risk may be higher" (EACVI says only that the coronary ostia may be unusually oriented). The eccentricity index is unsourced (see piece 06). SCCT also prefers the TAVR-directed classification (tricommissural / bicommissural raphe / non-raphe). (scct-tavi-2019 (accepted manuscript, no page numbers), section "Valve morphology: Definition and measurement techniques"; eacvi-structural-2023, "Bicuspid aortic valve", pp. e223–e224) Resolution: Changed to correct, as the reviewer has it: the Sievers types and the calcium-to-leak/rupture link match SCCT and EACVI; the two clauses no source states ("calcium scoring essential", "coronary occlusion risk may be higher") go in the fix.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-16 · Vascular Access table: common femoral and iliofemoral diameters
 
@@ -416,6 +456,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Keep the typical diameters (5.5–6.0 mm, ESCR/EACVI) on the page, or give only the device-specific sheath comparison, as SCCT does?
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: correct (management). The 5.5–6.0 mm, device-dependent floor matches Francone (5.5 mm) and EACVI (6 mm), and transfemoral as the preferred route is in all sources. Note the lead documents (CAR, SCCT) deliberately give no fixed diameter: they ask for bilateral minimal luminal diameters, calcification (>270°, anterior at the puncture site) and tortuosity, and SCCT uses a sheath-to-vessel ratio (≥1.05, more recently ≥1.12) rather than a millimetre cut-off. (francone-escr-tavi-2020, "Access route" (text before Fig. 16) and "Endovascular approach"; eacvi-structural-2023, "Femoral: CT", p. e221; scct-tavi-2019 (accepted manuscript, no page numbers), "Vascular access: Overview") Resolution: Stands as not-lead: the lead documents deliberately give no fixed diameter and judge the vessel against the planned sheath, while the page leads with ESCR/EACVI's 5.5–6.0 mm; which to present is the owner's question.
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: lead with SCCT's comparison of each side's minimal luminal diameter against the planned sheath; 5.5–6 mm given as ESCR/EACVI's typical figures.
 
 ### B3-tavr-ct-17 · Vascular Access table: subclavian/axillary row
 
@@ -426,6 +467,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Drop "≥6.0 mm" (or state it as the planned sheath's requirement), keep "left preferred" (SCCT), and add the carotid route CAR names.
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: unsourced (management). "Left preferred" and "alternative if femoral unfavourable" are right (SCCT, CAR, EACVI). The ≥6.0 mm minimum for the subclavian/axillary artery is in no readable source: EACVI's "at least 6 mm" is written under femoral access ("peripheral vessels"), and SCCT gives no vessel-diameter requirements at all. (scct-tavi-2019 (accepted manuscript, no page numbers), section "Alternate access"; eacvi-structural-2023, "Subclavian", p. e222; francone-escr-tavi-2020 Table 4) Resolution: Takes the reviewer's management flag, as for B3-tavr-ct-05: an unsourced minimum diameter could rule an access route in or out.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-18 · Vascular Access table: transaortic and transapical rows
 
@@ -434,6 +476,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **The page says:** "Transaortic | Direct ascending aorta access | Reserved for prohibitive femoral/subclavian anatomy"; "Transapical | Direct LV apex | Avoided when possible; only if all others unsuitable"
 - **Source:** Agricola E, Ancona F, Bartel T, et al. Multimodality imaging for patient selection, procedural guidance, and follow-up of transcatheter interventions for structural heart disease: a consensus document of the EACVI Task Force on Interventional Cardiovascular Imaging: part 1: access routes, transcatheter aortic valve implantation, and transcatheter mitral valve interventions. Eur Heart J Cardiovasc Imaging. 2023;24(9):e209-e268. doi:10.1093/ehjci/jead096 — Non-femoral access routes, p. e222: transaortic and transapical "require a surgical approach and are therefore less commonly used"; porcelain aorta makes transaortic unsuitable; key point (iv), p. e223: other routes carry higher complexity and risk than transfemoral; Francone M, Budde RPJ, Bremerich J, et al. CT and MR imaging prior to transcatheter aortic valve implantation: standardisation of scanning protocols, measurements and reporting—a consensus document by the European Society of Cardiovascular Radiology (ESCR). Eur Radiol. 2020;30(5):2627-2650. doi:10.1007/s00330-019-06357-8 — Evaluation of the access route and Non-endovascular approach: transfemoral first; transaortic entry about 6 cm above the annulus; transapical needs a normal apex and chest wall
 - **Proposed home:** TAVR planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-19 · Vascular Access: key measurements line (diameter and sheath ratio)
 
@@ -443,6 +486,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Blanke P, Weir-McCall JR, Achenbach S, et al. Computed tomography imaging in the context of transcatheter aortic valve implantation (TAVI)/transcatheter aortic valve replacement (TAVR): an expert consensus document of the Society of Cardiovascular Computed Tomography. J Cardiovasc Comput Tomogr. 2019;13(1):1-20. doi:10.1016/j.jcct.2018.11.008. Co-published in JACC Cardiovasc Imaging. 2019;12(1):1-24. doi:10.1016/j.jcmg.2018.12.003. — Table 7 (strong): minimal luminal diameter of both iliofemoral systems to the puncture site, all >270° calcification, anterior calcification at the puncture site; Quantification of luminal dimensions (perpendicular to the vessel at the tightest point); Overview (sheath-to-artery ratio ≥1.05 / ≥1.12); Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — PDF p. 6 (p. 507): minimal diameters bilaterally, circumferential calcification, tortuosity
 - **Proposed fix:** Give SCCT's ratio thresholds (≥1.05 in early work, ≥1.12 with current sheaths) and add >270° calcification and anterior calcification at the puncture site, which SCCT asks to be reported.
 - **Proposed home:** TAVR planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-20 · Vascular Access: iliofemoral angle
 
@@ -454,6 +498,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Is the >90° iliofemoral angle a local rule? ESCR says no tortuosity cut-off has been established.
 - **Proposed home:** TAVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: unsourced (management). No readable source gives an iliofemoral angle, let alone a 90° cut-off; Francone says outright that no tortuosity cut-off is established, and SCCT and CAR ask for a subjective assessment. The other two "key measurements" on the line (minimal luminal diameter, sheath-to-vessel ratio) are in SCCT. (scct-tavi-2019 (accepted manuscript, no page numbers), section "Tortuosity"; francone-escr-tavi-2020, "Endovascular approach") Resolution: Takes the reviewer's management flag, as for B3-tavr-ct-05 (Francone says no tortuosity cut-off is established); whether it is local practice is the owner's question.
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended (not local practice): the >90° iliofemoral angle goes; tortuosity is described in words, with calcified tortuous segments flagged (SCCT).
 
 ### B3-tavr-ct-21 · Fluoroscopic Projection Planning
 
@@ -463,6 +508,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Blanke P, Weir-McCall JR, Achenbach S, et al. Computed tomography imaging in the context of transcatheter aortic valve implantation (TAVI)/transcatheter aortic valve replacement (TAVR): an expert consensus document of the Society of Cardiovascular Computed Tomography. J Cardiovasc Comput Tomogr. 2019;13(1):1-20. doi:10.1016/j.jcct.2018.11.008. Co-published in JACC Cardiovasc Imaging. 2019;12(1):1-24. doi:10.1016/j.jcmg.2018.12.003. — Optimal projection curve (report LAO/RAO with cranial/caudal; give alternatives when cranial or caudal angulation is >25°; valid only with similar chest position); Table 6 (provide angles, strong; if the patient was not supine, say so and give none, strong); Francone M, Budde RPJ, Bremerich J, et al. CT and MR imaging prior to transcatheter aortic valve implantation: standardisation of scanning protocols, measurements and reporting—a consensus document by the European Society of Cardiovascular Radiology (ESCR). Eur Radiol. 2020;30(5):2627-2650. doi:10.1007/s00330-019-06357-8 — Determination of optimal c-arm angulation: recommended in every report; limited when patient position differs
 - **Proposed fix:** Add SCCT's two caveats: give alternatives when the cranial or caudal angulation exceeds 25°, and give no angles if the patient was not supine on the CT.
 - **Proposed home:** TAVR planning CT › Reporting
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-22 · Post-Procedural CT: leaflet thickening and motion
 
@@ -472,6 +518,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Budde RPJ, Faure ME, Abbara S, et al. Cardiac computed tomography for prosthetic heart valve assessment. An expert consensus document of the Society of Cardiovascular Computed Tomography (SCCT), the American College of Cardiology (ACC), the European Society of Cardiovascular Radiology (ESCR), the North American Society of Cardiovascular Imaging (NASCI), the Radiological Society of North America (RSNA), the Society for Cardiovascular Angiography & Interventions (SCAI) and Society of Thoracic Surgeons (STS). J Cardiovasc Comput Tomogr. 2025;19(4):366-386. doi:10.1016/j.jcct.2025.04.007 — Table 1, p. 367: CT rated above echocardiography for HALT and RELM ("RELM = reduced leaflet motion"); §14, pp. 379–380: HALT definition, graded per leaflet in 4 tiers (25%, 25–50%, 50–75%, >75%), reduced leaflet motion assessed in systole for aortic valves; Blanke P, Weir-McCall JR, Achenbach S, et al. Computed tomography imaging in the context of transcatheter aortic valve implantation (TAVI)/transcatheter aortic valve replacement (TAVR): an expert consensus document of the Society of Cardiovascular Computed Tomography. J Cardiovasc Comput Tomogr. 2019;13(1):1-20. doi:10.1016/j.jcct.2018.11.008. Co-published in JACC Cardiovasc Imaging. 2019;12(1):1-24. doi:10.1016/j.jcmg.2018.12.003. — Post-TAVI/TAVR CT and Table 8: "At present, routine CT imaging following TAVI/TAVR is not recommended" (strong); CT for suspected valve thrombosis, endocarditis or degeneration; full cardiac cycle; describe location, length and thickness; motion present or absent; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — PDF p. 6 (p. 507): ECG-gated full-cycle imaging, tube-current modulation unnecessary, coverage of the heart; report HALT severity and restricted leaflet motion; Agricola E, Ancona F, Bartel T, et al. Multimodality imaging for patient selection, procedural guidance, and follow-up of transcatheter interventions for structural heart disease: a consensus document of the EACVI Task Force on Interventional Cardiovascular Imaging: part 1: access routes, transcatheter aortic valve implantation, and transcatheter mitral valve interventions. Eur Heart J Cardiovasc Imaging. 2023;24(9):e209-e268. doi:10.1093/ehjci/jead096 — CT and nuclear imaging, p. e232: CT "has a higher sensitivity to detect thrombosis than echocardiography"; four-tier HALT grading
 - **Proposed fix:** Add that CT after TAVR is not routine but for suspected valve thrombosis, endocarditis or degeneration (SCCT 2019, Table 8), with full-cycle gated imaging and HALT graded per leaflet in four tiers (SCCT 2025).
 - **Proposed home:** TAVR planning CT › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-23 · Post-Procedural CT: valve-in-valve planning
 
@@ -481,6 +528,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — Pre-Procedure Planning: Valve in Valve, PDF p. 6 (p. 507): make and model of the surgical valve; coronary occlusion if the virtual valve-to-coronary distance (VTC) is <4 mm; a valve-to-STJ distance <3.5 mm "can indicate higher risk"; Blanke P, Weir-McCall JR, Achenbach S, et al. Computed tomography imaging in the context of transcatheter aortic valve implantation (TAVI)/transcatheter aortic valve replacement (TAVR): an expert consensus document of the Society of Cardiovascular Computed Tomography. J Cardiovasc Comput Tomogr. 2019;13(1):1-20. doi:10.1016/j.jcct.2018.11.008. Co-published in JACC Cardiovasc Imaging. 2019;12(1):1-24. doi:10.1016/j.jcmg.2018.12.003. — Valve-in-valve implantation (VTC <4 mm the only independent predictor; assess RCA and left main when the posts reach the ostia; stentless valves read as native; THV sizing from records or the internal ring); Table 8 (strong); Budde RPJ, Faure ME, Abbara S, et al. Cardiac computed tomography for prosthetic heart valve assessment. An expert consensus document of the Society of Cardiovascular Computed Tomography (SCCT), the American College of Cardiology (ACC), the European Society of Cardiovascular Radiology (ESCR), the North American Society of Cardiovascular Imaging (NASCI), the Radiological Society of North America (RSNA), the Society for Cardiovascular Angiography & Interventions (SCAI) and Society of Thoracic Surgeons (STS). J Cardiovasc Comput Tomogr. 2025;19(4):366-386. doi:10.1016/j.jcct.2025.04.007 — §15, p. 380: CT for coronary occlusion risk and sizing before a valve-in-valve procedure, referring to the SCCT TAVI document
 - **Proposed fix:** Add CAR's numbers: a virtual valve-to-coronary distance <4 mm, or a valve-to-STJ distance <3.5 mm when the displaced leaflets could reach the STJ, means a higher risk of coronary obstruction (CAR p. 507; SCCT 2019).
 - **Proposed home:** TAVR planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-24 · References box (citations and roles)
 
@@ -491,6 +539,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Add CAR/CSTR 2024 Part 2 as the lead for the numbers it gives (coronary height, sinus, oversizing, valve-in-valve), keep SCCT 2019 for the rest and the 2012 document as history, and consider SCCT 2025 for post-TAVR CT.
 - **Proposed home:** TAVR planning CT › Applies to
 - **Re-check:** agrees — The three citations (journal, year, pages, DOI) are consistent with the source records; the Blanke entry is the JACC co-publication of the SCCT document and its title is shortened on the page. The roles described are fair. Gaps: the lead Canadian document (CAR/CSTR part 2, 2024) is not cited, nor is the 2025 SCCT prosthetic-valve consensus for HALT; and several numbers on the page (coronary height tiers, eccentricity index, vessel angle) are not in the "primary reference" the box names. I could not check the JACC and 2012 bibliographic details against the papers themselves (the readable SCCT file is the accepted manuscript; 2012 is not readable). (docs/audit/sources.json entries scct-tavi-2019, scct-tavi-2012, francone-escr-tavi-2020; title pages of scct-tavi-2019.docx and francone-escr-tavi-2020.xml; car-cstr-cardiac-ct-2-2024 pp. 505–507)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tavr-ct-25 · Front-page row (shared/data/resources.ts, id tavr-ct)
 
@@ -501,6 +550,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** The page states no version, so "none" is honest today; when it is rebuilt on CAR 2024 and SCCT 2019, the label should name them (owner signs off). The summary fits.
 - **Proposed home:** Front page row: TAVR planning CT
 - **Re-check:** agrees — The row quotes faithfully and the summary names sections the page really has (annulus, root, coronary occlusion risk, vascular access, fluoroscopic projection); it leaves out the post-procedural CT section. version 'none' is defensible because the page states no guideline version in its title or body, though it names SCCT 2019 as its primary reference: an owner call under the file's own rule ("what the linked page itself says today"). (shared/data/resources.ts lines 151–160; tavr.md at commit 84b6118)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ## TMVR planning CT
 
@@ -513,6 +563,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **The page says:** "CT is central to TMVR candidate selection and procedure planning, with neo-LVOT area serving as the gatekeeper measurement for procedural feasibility." (The Protocol Manager link after it is the site-wide line the coordinator records.)
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — Transcatheter Mitral Valve Replacement (TMVR), PDF pp. 6–7 (pp. 507–508): replacement "extensively uses CT for pre-procedure planning"; the neo-LVOT "is essential in prediction of subvalvular left ventricular outflow tract obstruction risk"; Agricola E, Ancona F, Bartel T, et al. Multimodality imaging for patient selection, procedural guidance, and follow-up of transcatheter interventions for structural heart disease: a consensus document of the EACVI Task Force on Interventional Cardiovascular Imaging: part 1: access routes, transcatheter aortic valve implantation, and transcatheter mitral valve interventions. Eur Heart J Cardiovasc Imaging. 2023;24(9):e209-e268. doi:10.1093/ehjci/jead096 — TMVR, Patient selection and pre-procedural planning, p. e262: "CT is mandatory to confirm the suitability and for the procedural planning"; LVOT obstruction "is the most dreaded complication of TMVR"
 - **Proposed home:** TMVR planning CT › Background
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-02 · Acquisition box: gating and cardiac-cycle coverage
 
@@ -522,6 +573,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — PDF p. 7 (p. 508): "CT protocol for TMVR planning is similar to TAVR, requiring ECG gating and full cardiac cycle acquisition. Since vascular access for these procedures is venous, delayed imaging of the abdomen and pelvis to the level of the femoral heads is required."; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — Table 1 "Common Indications and Scan Techniques", p. 490: TMVR marked for retrospective ECG-gating; "Consider no tube current modulation for better quality imaging"
 - **Proposed fix:** Add CAR's other requirement, a delayed (venous) phase of the abdomen and pelvis to the femoral heads because access is venous, and CAR Part 1's advice to consider no tube-current modulation.
 - **Proposed home:** TMVR planning CT › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-03 · Acquisition box: reconstruction interval
 
@@ -532,6 +584,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Check against Pulerwitz 2020 once a copy is read; until then the nearest readable advice is SCCT's for TAVI (≤10% intervals, or 50 ms steps in arrhythmia).
 - **Proposed home:** TMVR planning CT › Technique
 - **Re-check:** agrees — Full-cycle ECG-gated acquisition is confirmed by CAR, but no readable source gives a reconstruction interval; the "5–10% R-R" figure would come from Pulerwitz 2020, which is not readable. CAR also requires delayed venous imaging of the abdomen and pelvis to the femoral heads, which the page's acquisition box omits. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); car-cstr-cardiac-ct-1-2024 Table 1 p. 490)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-04 · Mitral Annulus Sizing: shape and phase (with the acquisition box's "end-systole for annulus")
 
@@ -542,6 +595,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep "saddle-shaped, simplified to a D shape for sizing" (CAR); the phase, and the claim that the annulus is smallest in end-systole, need Blanke 2015 or the ESCR/NASCI 2026 document before they stay.
 - **Proposed home:** TMVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). The shape statement agrees with CAR (saddle-shaped, simplified to a D for sizing). The phase does not appear in any readable source: neither CAR nor EACVI says which phase to size the mitral annulus in, nor that it is "smallest and most reproducible" at end-systole. The page's own references (blanke-tmvr-2015, reid-neo-lvot-2021, pulerwitz-mv-tv-ct-2020) are not readable. The claim that the annulus is smallest at end-systole needs checking against Blanke 2015 in particular, since sizing in the smallest phase would undersize. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7)) Resolution: Stands without management: nothing readable states it or shows it wrong; it is first to check when the owner's copies arrive (the policy for unread pieces since batch 2).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-05 · Mitral Annulus Sizing table
 
@@ -552,6 +606,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Check each definition against Blanke 2015 once read; say whether "the full hinge-point ring" means the saddle or the D-shaped contour CAR describes, and spell out "SAo" and "IVt", which no readable source uses.
 - **Proposed home:** TMVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). The readable sources confirm only that perimeter/area and AP and intercommissural diameters are measured; none gives the page's method for each row. Two rows look doubtful and need the original: "trace the full hinge-point ring" for the perimeter sits uneasily with the D-shaped simplification CAR endorses for sizing, and the "annular height" row ("Septo-aortic horn (SAo) to inferior ventricular (IVt) commissural plane") uses terms found in no readable source. The page's own references (blanke-tmvr-2015, reid-neo-lvot-2021, pulerwitz-mv-tv-ct-2020) are not readable. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); eacvi-structural-2023, mitral annuloplasty planning, p. e242 (area, circumference, AP and intercommissural diameters)) Resolution: Stands without management: nothing readable states it or shows it wrong; it is first to check when the owner's copies arrive (the policy for unread pieces since batch 2).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-06 · "Saddle shape" note
 
@@ -562,6 +617,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Check the anatomy and the sizing preference against Blanke 2015 once read; until then the note can say only that the saddle is simplified to a D shape for sizing (CAR).
 - **Proposed home:** TMVR planning CT › Background
 - **Re-check:** agrees — CAR confirms only that the annulus is saddle-shaped. Where the high and low points lie, and that perimeter/area sizing is preferred because 2D diameters underestimate, are in no readable source. The page's own references (blanke-tmvr-2015, reid-neo-lvot-2021, pulerwitz-mv-tv-ct-2020) are not readable. The "anteroseptal and posterolateral" wording for the peaks should be checked against Blanke 2015. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-07 · Neo-LVOT warning box
 
@@ -572,6 +628,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Label 1.7 cm² as Reid 2021's figure, unverified, until the owner's copy is read; "single most important parameter" is stronger than CAR's "key component" and should follow the source's own wording.
 - **Proposed home:** TMVR planning CT › Categories
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). That the neo-LVOT is a key CT measure for obstruction risk is confirmed by CAR and EACVI ("single most important" is the page's wording; CAR says "a key component"). The ≤1.7 cm² threshold is stated by no readable source (CAR and EACVI give no number); Reid 2021, which the page cites for it, is not readable. Unit conversion 1.7 cm² = 170 mm² is arithmetically right. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); eacvi-structural-2023, "Transcatheter mitral valve replacement: Patient selection and pre-procedural planning", p. e262) Resolution: Stands without management: nothing readable states it or shows it wrong; it is first to check when the owner's copies arrive (the policy for unread pieces since batch 2).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-08 · Neo-LVOT simulation method (steps 1–4)
 
@@ -582,6 +639,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Check the phase and steps against Reid 2021 once read; meanwhile "triangular" conflicts with CAR's Figure 6 ("crescentic"), and in TMVR the device holds the anterior leaflet open (EACVI), so "maximal systolic anterior motion" needs the source's wording.
 - **Proposed home:** TMVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). The readable sources confirm only the principle (a virtual valve is placed and the residual outflow area outlined, bounded behind by the displaced anterior leaflet). The stepwise method, the choice of end-systole and the wording of step 2 ("when the AMVL reaches maximal systolic anterior motion") are in no readable source. The page's own references (blanke-tmvr-2015, reid-neo-lvot-2021, pulerwitz-mv-tv-ct-2020) are not readable. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7) and Figure 6; eacvi-structural-2023, "Transcatheter mitral valve replacement: Patient selection and pre-procedural planning", p. e262 and Figure 53) Resolution: Stands without management: nothing readable states it or shows it wrong; it is first to check when the owner's copies arrive (the policy for unread pieces since batch 2).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-09 · Neo-LVOT area risk table
 
@@ -592,6 +650,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep it labelled unverified until Reid 2021 is read; the 1.7–2.0 cm² band and the mitigation list both need it.
 - **Proposed home:** TMVR planning CT › Management
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). None of the three bands (>2.0, 1.7–2.0, ≤1.7 cm²) or the listed responses (LAMPOON, alcohol septal ablation) appears in a readable source. The page attributes them to Reid 2021, which is not readable; the 1.7–2.0 "intermediate" band and >2.0 "proceed with standard planning" especially need the original. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); eacvi-structural-2023, "Transcatheter mitral valve replacement: Patient selection and pre-procedural planning", p. e262) Resolution: Stands without management: nothing readable states it or shows it wrong; it is first to check when the owner's copies arrive (the policy for unread pieces since batch 2).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-10 · "Risk varies by scenario" table
 
@@ -602,6 +661,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Check against Reid 2021 once read.
 - **Proposed home:** TMVR planning CT › Background
 - **Re-check:** agrees — CAR and EACVI say nothing about risk by procedure type. The page attributes this to Reid 2021 ("risk stratification across clinical scenarios"), which is not readable. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); eacvi-structural-2023, "Transcatheter mitral valve replacement: Patient selection and pre-procedural planning", p. e262)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-11 · Adjacent Structures table: circumflex artery row
 
@@ -610,6 +670,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **The page says:** "Circumflex artery | Distance from annular plane; risk of compression by device"
 - **Source:** Agricola E, Ancona F, Bartel T, et al. Multimodality imaging for patient selection, procedural guidance, and follow-up of transcatheter interventions for structural heart disease: a consensus document of the EACVI Task Force on Interventional Cardiovascular Imaging: part 1: access routes, transcatheter aortic valve implantation, and transcatheter mitral valve interventions. Eur Heart J Cardiovasc Imaging. 2023;24(9):e209-e268. doi:10.1093/ehjci/jead096 — TMVR, Complications, p. e264: "New wall motion abnormalities due to compression on the left circumflex coronary artery"; annuloplasty, pp. e244 and e246: proximity of the circumflex to the annulus is assessed on CT
 - **Proposed home:** TMVR planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-12 · Adjacent Structures table: aortic valve, left atrial appendage and pulmonary vein rows
 
@@ -620,6 +681,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Check against Blanke 2015 once read; if it does not list them, mark the rows local practice or drop them.
 - **Proposed home:** TMVR planning CT › Measurement
 - **Re-check:** agrees — No readable TMVR text lists the aortic valve/aortomitral angle, the left atrial appendage or the pulmonary veins as structures to assess. The aortomitral angle as an obstruction predictor has indirect support in EACVI (written about TAVI); the appendage and pulmonary vein rows have none. The page's own references (blanke-tmvr-2015, reid-neo-lvot-2021, pulerwitz-mv-tv-ct-2020) are not readable. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); eacvi-structural-2023, "Transcatheter mitral valve replacement: Patient selection and pre-procedural planning", p. e262; eacvi-structural-2023 p. e230 (aorto-mitral angle, in the TAVI complications text))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-13 · Transseptal Planning table: fossa ovalis thickness
 
@@ -630,6 +692,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** No readable document gives a fossa thickness; check Blanke 2015 and Pulerwitz 2020 once read, and if neither states <4 mm, drop it or mark it local practice.
 - **Proposed home:** TMVR planning CT › Measurement
 - **Re-check:** agrees — No readable source gives a fossa ovalis thickness limit for transseptal puncture. I cannot tell whether "<4 mm" is in one of the page's unreadable references or in none; if the owner's copies of Blanke 2015, Reid 2021 and Pulerwitz 2020 do not contain it, this becomes unsourced. (eacvi-structural-2023, "Transseptal puncture" anatomy, p. e210; car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-14 · Transseptal Planning table: puncture height above the annulus
 
@@ -640,6 +703,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Say the height is device-specific (EACVI gives it per device, none for TMVR) and keep 3.5–4.5 cm only if Blanke 2015 or the device's instructions state it.
 - **Proposed home:** TMVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). The only puncture heights in a readable source are for edge-to-edge repair (MitraClip ≥4.0 cm, 4–5 cm for prolapse/flail, 3.5–4.0 cm acceptable in secondary MR; PASCAL ≥4.5 cm). The page's 3.5–4.5 cm sits in that range but is given for TMVR, for which no readable source states a height. May be a repair figure carried over; needs the page's own references. (eacvi-structural-2023, mitral TEER "MitraClip procedure: TSP", p. e251, and PASCAL, p. e262) Resolution: Stands without management: nothing readable states it or shows it wrong; it is first to check when the owner's copies arrive (the policy for unread pieces since batch 2).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-15 · Transseptal Planning table: septum-to-annulus angle and left atrial size rows
 
@@ -650,6 +714,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Check against Blanke 2015 once read.
 - **Proposed home:** TMVR planning CT › Measurement
 - **Re-check:** agrees — Qualitative teaching rows with no numbers; nothing in CAR or EACVI contradicts them, but nothing states them either (EACVI notes the only CE-marked device at the time, Tendyne, is transapical). The page's own references (blanke-tmvr-2015, reid-neo-lvot-2021, pulerwitz-mv-tv-ct-2020) are not readable. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); eacvi-structural-2023, "Transcatheter mitral valve replacement: Patient selection and pre-procedural planning", p. e262)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-16 · Fluoroscopic Projection Planning
 
@@ -660,6 +725,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** The idea is supported (EACVI), but the mitral coplanar definition needs Blanke 2015; add the caveat SCCT gives for TAVI, that predicted angles hold only if the patient lay supine on the CT.
 - **Proposed home:** TMVR planning CT › Reporting
 - **Re-check:** agrees — CT prediction of a coplanar fluoroscopic angle is documented for the aortic annulus only; no readable source states it for the mitral annulus. The page cites Blanke 2015 for it ("fluoroscopic angle prediction"), which is not readable. The principle is plausible and the reporting format matches the aortic document. (car-cstr-cardiac-ct-2-2024, "Transcatheter Mitral Valve Replacement (TMVR)", pp. 507–508 (PDF 6–7); eacvi-structural-2023, "Transcatheter mitral valve replacement: Patient selection and pre-procedural planning", p. e262; by analogy scct-tavi-2019 (accepted manuscript, no page numbers), "Optimal projection curve")
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-tmvr-ct-17 · References box (citations and roles)
 
@@ -671,6 +737,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Which document should lead TMVR CT once readable: the ESCR/NASCI 2026 recommendations (newest, radiology societies) or the page's Blanke 2015 and Reid 2021? CAR 2024 gives no numbers.
 - **Proposed home:** TMVR planning CT › Applies to
 - **Re-check:** disagreed — Reviewer: correct. All three citations (authors, journal, year, volume, pages, DOI) agree with the source records, and the titles match. What each paper is said to contain ("≤1.7 cm² threshold", "triphasic contrast", and so on) cannot be checked because none of the three is readable. Gaps: the lead Canadian document (CAR/CSTR part 2, 2024) and EACVI 2023 are not cited, and a newer society document exists (ESCR/NASCI 2026, also not readable). (docs/audit/sources.json entries blanke-tmvr-2015, reid-neo-lvot-2021, pulerwitz-mv-tv-ct-2020; car-cstr-cardiac-ct-2-2024 pp. 507–508; eacvi-structural-2023 p. e262) Resolution: Stands as source-not-readable: the citations match their records, but the papers can't be read and the record allows no other verdict on unread sources; adding CAR/CSTR part 2 and EACVI 2023 stays the fix.
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: the ESCR/NASCI 2026 recommendations lead TMVR CT once a copy can be read; until then Blanke 2015 and Reid 2021.
 
 ### B3-tmvr-ct-18 · Front-page row (shared/data/resources.ts, id tmvr-ct)
 
@@ -681,6 +748,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** The page states no version, so "none" is honest; when it is rebuilt, the label should name the lead chosen in B3-tmvr-ct-17 (owner signs off). The summary fits.
 - **Proposed home:** Front page row: TMVR planning CT
 - **Re-check:** agrees — The row quotes faithfully and the summary names the page's two main sections; the page states no guideline version, so version 'none' fits the file's rule. The summary makes no clinical claim of its own. (shared/data/resources.ts lines 161–170; tmvr.md at commit 84b6118)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ## TTVR planning CT
 
@@ -695,6 +763,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep what the readable sources say (a larger annulus, variable leaflet anatomy, right-heart contrast timing); drop "least standardized" and the "more dynamic, more non-planar" comparison with the mitral annulus unless Hell 2021 (once read) or another readable source supports them.
 - **Proposed home:** TTVR planning CT › Background
 - **Re-check:** agrees — Quotation is faithful. The readable sources support a larger annulus than the mitral and the need for right-heart contrast timing; 'least standardized', 'more dynamic, more non-planar, more anatomically variable' are stated by no readable source (Hell 2021, the page's main reference, is not readable). (hausleiter-ttvr-2025, TTVR Systems, p. 266; car-cstr-cardiac-ct-2-2024, TTVR, p. 508 (PDF 7))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-02 · Acquisition box: gating and reconstruction numbers
 
@@ -705,6 +774,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Optional: say the whole cardiac cycle is covered (retrospective gating, as CAR Part 1 Table 1 marks TTVR, or a triggered or one-beat acquisition across the full cycle, Hausleiter p. 272) and add CAR's "consider no tube current modulation".
 - **Proposed home:** TTVR planning CT › Technique
 - **Re-check:** agrees — Matches Hausleiter word for word in substance (5-10% intervals, ≤1 mm). CAR part 2 (p. 508) gives no numbers and does not conflict. The split-bolus suggestion in the same box is not in a readable source. (hausleiter-ttvr-2025, Cardiac Computed Tomography, p. 272 (PDF 8))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-03 · Acquisition box: right-heart contrast
 
@@ -714,6 +784,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — TTVR section, PDF p. 7 (p. 508): "different contrast timing to allow evaluation of the right atrium and right ventricle"; Hausleiter J, Stolz L, Lurz P, et al. Transcatheter tricuspid valve replacement. J Am Coll Cardiol. 2025;85(3):265-291. doi:10.1016/j.jacc.2024.10.071 — p. 272: "optimized contrast enhancement of the right cardiac chambers (plus jugular veins in case of jugular access). For femoral access devices, a delayed phase acquisition of the abdomen and pelvis for evaluation of the inferior caval, iliac, and femoral veins may improve the prediction of device approach angles and height."; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 1 Coronary CT Angiography (CCTA). Can Assoc Radiol J. 2024;75(3):488-501. doi:10.1177/08465371241233240 — Table 1, PDF p. 3 (p. 490), row "Ventricular function": "Biventricular contrast protocol required (triphasic injection)"; split-bolus is not named for TTVR
 - **Proposed fix:** Add the coverage Hausleiter gives (p. 272): the jugular veins when jugular access is planned, and a delayed abdomen–pelvis phase for the IVC, iliac and femoral veins before transfemoral devices. "Split-bolus" is not named by CAR or Hausleiter (the protocol paper they cite, Pulerwitz 2020, is not readable).
 - **Proposed home:** TTVR planning CT › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-04 · Tricuspid annulus sizing: phase and primary metric
 
@@ -725,6 +796,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Do the implanters you report for ask for a particular phase or metric (for example end-systolic perimeter)? If so the page can state it as local practice; otherwise it should give both phases until Hell 2021 is read.
 - **Proposed home:** TTVR planning CT › Measurement
 - **Re-check:** agrees — No readable source says to size in end-systole or that perimeter is the primary metric. The one readable document measures the annulus in both phases, and its example annulus is larger in diastole, so a systole-only sizing rule is not supported and may undersize; needs Hell 2021 or the device's sizing instructions. 'Dynamic' is consistent with Figure 6. (hausleiter-ttvr-2025, Figure 6, p. 277 (PDF 13) and p. 272; car-cstr-cardiac-ct-2-2024, TTVR, p. 508)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended (no phase or metric asked for locally): the page gives systole and diastole and says the sizing phase and metric are device-specific, until Hell 2021 is read.
 
 ### B3-ttvr-ct-05 · Tricuspid annulus sizing: typical anteroposterior diameter
 
@@ -735,6 +807,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Remove the 40–55 mm range, or cite the study it comes from once read; no readable source gives a typical annulus diameter in TTVR candidates.
 - **Proposed home:** TTVR planning CT › Measurement
 - **Re-check:** agrees — The 40-55 mm 'typical' AP diameter is stated by no readable source; a single figure example does not verify a range. Hell 2021 not readable. (hausleiter-ttvr-2025, Figure 6, p. 277 (one patient only))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-06 · Tricuspid annulus sizing: mediolateral diameter, area and height rows
 
@@ -745,6 +818,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Use Hausleiter's terms (septo-lateral diameter; the commissures are landmarks, so "intercommissural" does not describe the septal-to-lateral line) and keep the area; source the annular height row before keeping it.
 - **Proposed home:** TTVR planning CT › Measurement
 - **Re-check:** agrees — Hausleiter shows septolateral and anteroposterior diameters and annular area being measured, but describes no method (best-fit plane, non-planarity/height). Wording point: the page glosses the septal-to-lateral diameter as 'intercommissural'; in Hausleiter's figure the commissures (SA, SP, AP) are separate landmarks and SL is a septum-to-free-wall diameter, so 'intercommissural' looks like a mislabel. (hausleiter-ttvr-2025, Figure 6 and legend, p. 277)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-07 · Tricuspid annulus sizing: coaptation gap row
 
@@ -754,6 +828,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Hausleiter J, Stolz L, Lurz P, et al. Transcatheter tricuspid valve replacement. J Am Coll Cardiol. 2025;85(3):265-291. doi:10.1016/j.jacc.2024.10.071 — p. 280, Figure 9: septolateral coaptation gap ≤7 mm favourable for edge-to-edge repair (T-TEER), >7 to ≤8.5 mm feasible, >8.5 mm favours replacement; p. 280 text: large central gaps predict suboptimal TR reduction after T-TEER; p. 281 summary: "Large coaptation gap (eg, ≥8.5 mm)" favours TTVR
 - **Proposed fix:** Optional: say the gap decides suitability for edge-to-edge repair versus replacement, with Hausleiter's cut-offs (Figure 9) once traced to the studies it cites.
 - **Proposed home:** TTVR planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-08 · Adjacent structures table
 
@@ -764,6 +839,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Add CIED leads (position and leaflet interaction; Hausleiter pp. 272–273, 282) and the moderator band, RA height and RV length (p. 280); the RCA "compression risk", the coronary sinus row and "severely dilated RV may impair device anchoring" need a readable source.
 - **Proposed home:** TTVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: correct. The structures to assess (RCA, papillary muscles, RA, RV, conduction system) are supported. Not in any readable source: the coronary sinus row, RCA 'compression risk with annuloplasty devices', and 'severely dilated RV may impair device anchoring' (Hausleiter instead says small RA height and RV length can be prohibitive). The page omits CIED leads and the moderator band, which Hausleiter lists. (hausleiter-ttvr-2025, Cardiac Computed Tomography p. 272; TTVR Systems p. 266; Right heart anatomy p. 280) Resolution: Stands as source-not-readable: the core structures are supported (Hausleiter), but the coronary sinus row, RCA compression with annuloplasty and the dilated-RV anchoring line are in no readable source and wait for Hell 2021; the supported part and the omissions are in the fix.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-09 · Vascular access table and access note
 
@@ -774,6 +850,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep transfemoral and transjugular (and transatrial for some devices) and add IVC offset and approach height with the delayed venous phase (Hausleiter pp. 266, 272, 280); the subclavian/axillary route, the IVC filter line and the hepatic veins for caval valves need a readable source.
 - **Proposed home:** TTVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: correct. Transfemoral, transjugular and transatrial rows agree with Hausleiter (which adds jugular vein opacification and iliac/femoral veins). Not in any readable source: the subclavian/axillary venous row, transjugular access for annuloplasty systems, the IVC filter caution and hepatic vein anatomy for caval valve implantation. (hausleiter-ttvr-2025, TTVR Systems p. 266, Table 1 p. 267, Cardiac Computed Tomography p. 272) Resolution: Stands as source-not-readable, as for B3-ttvr-ct-08: the transfemoral, transjugular and transatrial rows are supported; the subclavian/axillary row, IVC filter and hepatic-vein lines wait for Hell 2021.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-10 · Vascular access: sheath sizes
 
@@ -784,6 +861,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** For replacement devices give Hausleiter's range (28–35 F delivery systems, Table 1); the 24 F and 36 F ends need a readable source.
 - **Proposed home:** TTVR planning CT › Measurement
 - **Re-check:** agrees — Hausleiter's transfemoral replacement systems run 28 to 35 F; no readable source gives 24 or 36 Fr. The page's range may be meant to include repair systems, which no readable source sizes. Not contradicted, not verified. (hausleiter-ttvr-2025, Table 1, p. 267 (PDF 3))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-11 · Device class–specific parameters table
 
@@ -794,6 +872,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Name devices rather than trials or procedures (TriClip and PASCAL for edge-to-edge repair, TRILUMINATE and CLASP being their trials; CAVI is the procedure, TricValve a device, Hausleiter Table 4); the replacement row is supported (Hausleiter pp. 272, 280), the repair, annuloplasty and caval rows need a readable source.
 - **Proposed home:** TTVR planning CT › Measurement
 - **Re-check:** disagreed — Reviewer: wrong. The examples are mislabelled: TRILUMINATE and CLASP are trials (of the TriClip and PASCAL systems), not edge-to-edge devices, and CAVI is the abbreviation for the device class itself, not an example of it. The parameters are reasonable: coaptation gap for edge-to-edge and annulus, subvalvular anatomy, RV and access for replacement are in Hausleiter; the annuloplasty and caval rows (and TRICENTO) are in no readable source. (hausleiter-ttvr-2025, trials table and footnote, p. 288; Figure 9, p. 280; Cardiac Computed Tomography p. 272) Resolution: Changed to wrong, as the reviewer has it: Hausleiter Table 4 shows TRILUMINATE and CLASP are trials and CAVI is the class itself, so the examples contradict a readable source; no management (the parameters, not the example names, guide the scan).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-12 · Fluoroscopic projection planning
 
@@ -804,6 +883,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep it marked unverified until Hell 2021 is read, or drop "typically viewed in a right anterior oblique projection".
 - **Proposed home:** TTVR planning CT › Reporting
 - **Re-check:** agrees — Hausleiter mentions CT prediction of device approach angles only; no readable source states that CT predicts the coplanar fluoroscopic angle for the tricuspid annulus or that it is typically viewed in RAO. Hell 2021 not readable. (hausleiter-ttvr-2025, Cardiac Computed Tomography, p. 272)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-13 · References: Hell et al. 2021 row
 
@@ -814,6 +894,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep the citation; check its description against a copy once the owner supplies one, and drop "most widely cited" (unverifiable).
 - **Proposed home:** TTVR planning CT › Background
 - **Re-check:** agrees — The citation on the page matches the record. The paper is not readable, so the description of its contents cannot be checked, and 'most widely cited dedicated review' is a claim no source supports. (docs/audit/sources.json, hell-ttvi-ct-2021 (citation record); paper itself not in audit-sources)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-ttvr-ct-14 · References: Hausleiter et al. 2025 row
 
@@ -825,6 +906,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Hausleiter 2025 is labelled a JACC State-of-the-Art Review but calls itself a consensus document of expert authors (no society endorses it). This audit treated its own statements (such as the CT protocol on p. 272) as expert consensus that can verify, and anything it reports from trials as traceable to those trials. Do you accept that, or should it count as a review (teaching only)?
 - **Proposed home:** TTVR planning CT › Background
 - **Re-check:** agrees — Citation, pages, date and DOI are right. The journal labels it a State-of-the-Art Review whose abstract calls it a consensus document; I treat it as an expert review with consensus recommendations, not a society guideline, so 'international expert consensus' is acceptable but should say review. Its CT section gives the multiphasic protocol, jugular/caval imaging and post-procedure CT; annulus sizing appears only as Figure 6, with no method or thresholds, so 'annulus sizing' and 'jugular/IVC measurements' overstate it. (hausleiter-ttvr-2025, title page and abstract, p. 265; introduction p. 266; pp. 272, 277)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: Hausleiter 2025's own statements count as expert consensus; what it reports from trials is traced to those trials.
 
 ### B3-ttvr-ct-15 · References: "Gogia S, Khalique OK" row
 
@@ -836,6 +918,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Keep the Yang and Pogatchnik paper (closed access; a copy would be needed to check the description) or drop the row?
 - **Proposed home:** TTVR planning CT › Background
 - **Re-check:** agrees — The reference does not exist as cited: the title belongs to Yang and Pogatchnik (Semin Roentgenol 2024;59(1):87-102, doi 10.1053/j.ro.2023.11.001); the page's authors are wrong and its pages and DOI point to a TAVR paper. The Yang paper is not readable, so the description of its content is unchecked. (crossref-semin-roentgenol-59-1 (audit-sources/crossref-semin-roentgenol-59-1-001.json and -002.json))
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: the Gogia/Khalique row goes; it can come back as Yang and Pogatchnik 2024 once a copy is read.
 
 ### B3-ttvr-ct-16 · Front-page row (shared/data/resources.ts, id ttvr-ct)
 
@@ -846,6 +929,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** The page states no version, so "none" is right; the summary matches what the page covers.
 - **Proposed home:** Front page row: TTVR planning CT
 - **Re-check:** agrees — Quotation faithful. The summary describes what the page contains, and 'none' is right: the page cites two reviews and a consensus/review paper, no versioned guideline. (CAR/CSTR 2024 part 2 covers TTVR briefly and is not cited by the page.) (shared/data/resources.ts lines 172-180; ttvr.md)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ## LAAO planning CT
 
@@ -861,6 +945,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** CAR's LAA section gives no measurements or sizing. On the rebuilt page, should the SCAI/HRS 2023 expert consensus (endorsed by SCCT) carry the measurement and thrombus guidance, with EACVI 2025 noted where it differs, or should it wait for Korsholm 2020 (the CT expert recommendations; a copy has been requested)?
 - **Proposed home:** LAAO planning CT › Applies to
 - **Re-check:** agrees — Faithful: the page names no source at all, although it gives device sizing numbers. Readable documents that bear on it: CAR/CSTR 2024 part 2 (brief, no numbers), the EACVI/EHRA 2025 LA/LAA consensus, SCAI/HRS 2023, and the Watchman FLX instructions for use; Korsholm 2020 (the CT planning document) is not readable. (laao.md (whole page); for comparison car-cstr-cardiac-ct-2-2024, LAA closure, p. 509; eacvi-la-laa-2025; watchman-flx-ifu-2020)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: the SCAI/HRS 2023 consensus (endorsed by SCCT) carries the measurement and thrombus guidance now, EACVI 2025 noted where it differs; Korsholm 2020 is checked when a copy arrives.
 
 ### B3-laao-ct-02 · LAA anatomy: morphology definitions and stroke-risk notes
 
@@ -870,6 +955,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Sade LE, Faletra FF, Pontone G, et al. The role of multi-modality imaging for the assessment of left atrium and left atrial appendage: a clinical consensus statement of the European Association of Cardiovascular Imaging (EACVI), European Heart Rhythm Association (EHRA) of the European Society of Cardiology (ESC). Eur Heart J Cardiovasc Imaging. 2025;26(3):385-413. doi:10.1093/ehjci/jeaf014 — p. 386: four types "with possible overlaps": windsock (single central lobe), chicken wing (bended central lobe), cauliflower (short central lobe and several lobes, distal width larger than the proximal part), cactus (central lobe leading to several secondary lobes superiorly and inferiorly); p. 394: CT differentiates the four; Table 8, p. 399: "LAA non-chicken wing morphology" is a CT and TOE marker of cardioembolic risk; p. 404: "a large non-chicken wing (cauliflower in particular) morphology" is a risk factor for thrombus formation
 - **Proposed fix:** Optional: use EACVI's definitions (the cauliflower type has a short central lobe rather than none) and say the types overlap.
 - **Proposed home:** LAAO planning CT › Background
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-03 · LAA anatomy: frequency and closure notes
 
@@ -880,6 +966,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Drop the three notes or source them once Korsholm 2020 is read.
 - **Proposed home:** LAAO planning CT › Background
 - **Re-check:** agrees — The four types and their descriptions match EACVI. The notes in this piece (windsock 'common', cactus 'larger device may be needed', cauliflower 'most challenging' to close) are in no readable source; Korsholm 2020 is not readable. No readable source gives morphology frequencies. (eacvi-la-laa-2025, LAA anatomy p. 386; thrombus risk p. 404)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-04 · Key measurements: ostium maximum diameter
 
@@ -889,6 +976,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Boston Scientific. WATCHMAN Left Atrial Appendage Closure Device with Delivery System, and WATCHMAN FLX Left Atrial Appendage Closure Device with Delivery System: directions for use. Labeling approved by the US FDA with PMA P130013/S035, July 21, 2020. — Watchman FLX instructions, p. 56, "Pre-Procedural Instructions": measure LAA ostium width and depth through multiple views and "Determine the greatest width"; on TEE the ostium runs from the coronary artery (circumflex) marker or the mitral annulus to a point about 2 cm from the tip of the limbus; Saw J, Holmes DR, Cavalcante JL, et al. SCAI/HRS expert consensus statement on transcatheter left atrial appendage closure. J Soc Cardiovasc Angiogr Interv. 2023;2(3):100577. doi:10.1016/j.jscai.2022.100577 (also JACC Cardiovasc Interv. 2023;16(11):1384-1400 and Heart Rhythm 2023) — "Preprocedural imaging", recommendation 3: TEE at 0°, 45°, 90° and 135° "along the axis of the circumflex artery to identify the maximal width of the LAA landing zone"; on CT the landing zone is measured on 3D multiplanar images "at the level of the circumflex artery in the mid-to-late systolic phase"; Sade LE, Faletra FF, Pontone G, et al. The role of multi-modality imaging for the assessment of left atrium and left atrial appendage: a clinical consensus statement of the European Association of Cardiovascular Imaging (EACVI), European Heart Rhythm Association (EHRA) of the European Society of Cardiology (ESC). Eur Heart J Cardiovasc Imaging. 2025;26(3):385-413. doi:10.1093/ehjci/jeaf014 — p. 406: sizing "aims to determine the maximum landing zone diameter at the level of the left circumflex artery"
 - **Proposed fix:** Optional: name the plane (at the level of the circumflex artery) and the phase (mid-to-late systole, SCAI/HRS 2023); the page gives no phase.
 - **Proposed home:** LAAO planning CT › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-05 · Key measurements: minimum diameter, area and LSPV rows
 
@@ -899,6 +987,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Keep "oval" (EACVI p. 386); the use of the minimum diameter and area and the LSPV line need a readable source (Korsholm 2020).
 - **Proposed home:** LAAO planning CT › Measurement
 - **Re-check:** agrees — An oval ostium is supported, so a minimum as well as a maximum diameter is reasonable; ostial area as an alternative sizing measure and the LAA-to-LSPV relationship are not stated by any readable source (Korsholm 2020 not readable). Nothing contradicts these rows. (eacvi-la-laa-2025, LAA anatomy p. 386 and LAA closure p. 406; car-cstr-cardiac-ct-2-2024, LAA closure, p. 509)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-06 · Key measurements: landing zone
 
@@ -909,6 +998,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Define the landing zone as the readable sources do: the maximum diameter at the level of the circumflex artery, measured in mid-to-late systole (SCAI/HRS 2023; EACVI p. 406). If the row was meant for lobe-and-disc devices (Amulet), say so and take that device's definition from its instructions for use (not read).
 - **Proposed home:** LAAO planning CT › Measurement
 - **Re-check:** agrees — The readable sources define the landing zone by a landmark (the level of the circumflex artery) and the Watchman FLX, the only device the page sizes, sits at or just distal to the ostium; none places the landing zone 1-2 cm from the ostium. (The IFU's '2 cm from the tip of the limbus' fixes one end of the ostial line, not a depth.) Measuring 1-2 cm deep would give a different diameter and device size. Device-specific landing zones for other devices would need Korsholm 2020 or their instructions. (eacvi-la-laa-2025, LAA closure, p. 406; scai-hrs-laac-2023, recommendation 3 (preprocedural imaging) and Figure 2; watchman-flx-ifu-2020, FLX release criteria, PDF p. 58)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-07 · Key measurements: LAA depth
 
@@ -919,6 +1009,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Measure depth from the centre of the landing zone to the periapical region of the main lobe (SCAI/HRS 2023, Figure 2); for the Watchman FLX the depth should be about half the labelled device diameter or more (instructions p. 57), not the whole device length.
 - **Proposed home:** LAAO planning CT › Measurement
 - **Re-check:** agrees — For the Watchman FLX, which the page names, the required depth is about half the device diameter, not the device length; the stricter rule belongs to the older Watchman and is stated there against ostium width, not device length. Following the page could rule out a shallow appendage that the FLX accommodates. The 'how' (ostium/landing zone to the tip of the main lobe) agrees with SCAI/HRS. (watchman-flx-ifu-2020, WATCHMAN FLX step 7B, PDF p. 57; older WATCHMAN step 6B, PDF p. 26; scai-hrs-laac-2023, recommendation 3)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-08 · Thrombus protocol: delayed phase timing
 
@@ -929,6 +1020,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Optional: give the range the studies used (30–180 s, EACVI p. 393) rather than one value presented as the standard.
 - **Proposed home:** LAAO planning CT › Technique
 - **Re-check:** agrees — 60 s lies inside the 30-180 s range EACVI reports; no readable source fixes one delay, so 60 s is one acceptable choice rather than a published standard. The page does not say what the 60 s is counted from (EACVI counts from the initial images). (eacvi-la-laa-2025, CCT acquisition, p. 393; car-cstr-cardiac-ct-2-2024, Cardiac Masses, p. 509)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-09 · Thrombus protocol: reading the delayed phase
 
@@ -940,6 +1032,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** When a filling defect persists on the delayed phase, should the report call it thrombus, or "consistent with thrombus" with TOE (or prone imaging) suggested to confirm? That is a reporting choice for your practice.
 - **Proposed home:** LAAO planning CT › Reporting
 - **Re-check:** disagreed — Reviewer: correct (management). The rule (a defect that fills in on the delayed phase is slow flow; one that persists is thrombus) is what the sources describe. Two wording points: 'residual enhancement' should read as filling-in of the early defect, and 'absence of fill-in = thrombus' is stated as certain where EACVI gives a positive predictive value of 92%. (eacvi-la-laa-2025, CCT assessment of morphology, p. 394; car-cstr-cardiac-ct-2-2024, Cardiac Masses, p. 509; scai-hrs-laac-2023, recommendation 3) Resolution: Stands as wrong with management: the rule's direction is right, but "absence of fill-in = thrombus → do NOT proceed" states as certain what EACVI gives a 92% positive predictive value, and leaves out the lead's step for a severely dilated LA (prone imaging, CAR p. 509), so a reader could cancel a procedure on a false positive. How to word the report is the owner's question.
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: complete filling on the delayed phase excludes thrombus; a defect that persists is reported as "consistent with thrombus" (PPV about 92%), with TOE or prone imaging suggested to confirm.
 
 ### B3-laao-ct-10 · Thrombus protocol: action when thrombus is present
 
@@ -949,6 +1042,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Source:** Boston Scientific. WATCHMAN Left Atrial Appendage Closure Device with Delivery System, and WATCHMAN FLX Left Atrial Appendage Closure Device with Delivery System: directions for use. Labeling approved by the US FDA with PMA P130013/S035, July 21, 2020. — Watchman FLX instructions, p. 31, Contraindications: "Do not use the WATCHMAN FLX Device if: Intracardiac thrombus is present."; US Food and Drug Administration. Summary of Safety and Effectiveness Data: WATCHMAN FLX Left Atrial Appendage (LAA) Closure Technology; WATCHMAN FLX and WATCHMAN FLX Pro LAA Closure Devices with Delivery System (Boston Scientific). PMA P130013/S074, approved July 16, 2025. — p. 2, III Contraindications (FLX and FLX Pro): "Intracardiac thrombus is present."; Sade LE, Faletra FF, Pontone G, et al. The role of multi-modality imaging for the assessment of left atrium and left atrial appendage: a clinical consensus statement of the European Association of Cardiovascular Imaging (EACVI), European Heart Rhythm Association (EHRA) of the European Society of Cardiology (ESC). Eur Heart J Cardiovasc Imaging. 2025;26(3):385-413. doi:10.1093/ehjci/jeaf014 — p. 405, "LAA closure": "It is advised to exclude LAA thrombus before percutaneous LAA closure in every patient."; Nguyen ET, Green CR, Adams SJ, et al. CAR and CSTR Cardiac Computed Tomography (CT) Practice Guidelines: Part 2-Non-Coronary Imaging. Can Assoc Radiol J. 2024;75(3):502-517. doi:10.1177/08465371241233228 — LAA closure section, PDF p. 8 (p. 509): pre-procedural imaging is key to identifying contraindications
 - **Proposed home:** LAAO planning CT › Management
 - **Re-check:** agrees — Agrees with the device's contraindication and with EACVI. 'Until resolved' is the natural reading; no readable source describes how resolution is to be shown before closure. (watchman-flx-ifu-2020, WATCHMAN FLX Contraindications, PDF p. 31; watchman-flx-ssed-2025, Contraindications, p. 2; eacvi-la-laa-2025, LAA closure, p. 405)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-11 · Watchman sizing: ostium up to 31.5 mm
 
@@ -959,6 +1053,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Give the full range: Watchman FLX for a maximum ostium of 14.0–31.5 mm (below 14.0 mm the appendage does not accommodate the device), and say the ranges are TEE-based, with CT measuring 2–3 mm larger.
 - **Proposed home:** LAAO planning CT › Management
 - **Re-check:** disagreed — Reviewer: correct (management). The 31.5 mm upper limit is right for the Watchman FLX. Two things missing on a CT page: the lower limit (14.0 mm; below it no FLX fits), and that the instructions' limits are TEE-based while CT measures 2-3 mm larger. (watchman-flx-ifu-2020, WATCHMAN FLX Pre-Procedural Instructions, PDF p. 56, and Table 45, PDF p. 57; watchman-flx-ssed-2025, Table 1, p. 4; eacvi-la-laa-2025, p. 406) Resolution: Stands as wrong with management: without the 14.0 mm lower limit, an ostium too small for any FLX reads as "standard Watchman FLX"; and the limits are TEE-based while CT measures 2–3 mm larger (EACVI p. 406).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-12 · Watchman sizing: ostium over 31.5 mm
 
@@ -969,6 +1064,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** Optional: name the larger device (Watchman FLX Pro 40 mm, maximum ostium 28.0–36.0 mm) and say that above 36 mm another device is needed.
 - **Proposed home:** LAAO planning CT › Management
 - **Re-check:** agrees — Consistent: above 31.5 mm no Watchman FLX fits; the 'larger device' is the FLX Pro 40 mm, which covers ostia up to 36.0 mm (2025 FDA summary). The page could name it and its 36.0 mm limit; above that an alternative is needed. (watchman-flx-ssed-2025, Device Description and Table 1, pp. 3-4; watchman-flx-ifu-2020, Contraindications PDF p. 31)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-laao-ct-13 · Watchman sizing: device size and compression rule
 
@@ -980,6 +1076,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Question for the owner:** Should the page give device sizing at all, or only the measurements, leaving device choice to the implanters and the instructions for use (SCAI/HRS 2023 refers operators to the instructions)?
 - **Proposed home:** LAAO planning CT › Management
 - **Re-check:** disagreed — Reviewer: wrong (management). For the Watchman FLX the table works out to a deployed diameter of 70-90% of the device size, that is 10-30% compression, and a device 2 to 10.5 mm larger than the ostium depending on size; the page's '8-20% compression' is the older Watchman's figure (80-92%), and '+3-6 mm' matches neither device's table (the older one is +2 to +4 mm). The page names the FLX but gives the older device's compression target. Sizing should follow the instructions' table (TEE-based; CT reads 2-3 mm larger per EACVI p. 406). (watchman-flx-ifu-2020, Table 45 WATCHMAN FLX Device Selection, PDF p. 57; older WATCHMAN Tables 45-46, PDF pp. 26 and 28; watchman-flx-ssed-2025, Table 1, p. 4) Resolution: Changed to wrong, as the reviewer has it: the page names the Watchman FLX but gives the older device's compression (80–92%), which contradicts the FLX instructions (Table 45: about 70–90%); "+3–6 mm" matches neither device. Management kept.
+- **Ruling:** change (2026-11-27) — (In chat.) As recommended: the page gives the measurements only and leaves device choice to the implanters and the instructions for use (as SCAI/HRS 2023 does). The 'ostium + 3–6 mm' rule and the 8–20% compression target go, and no device table replaces them.
 
 ### B3-laao-ct-14 · Front-page row (shared/data/resources.ts, id laao-ct)
 
@@ -990,6 +1087,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/cardiac_ct/device_planning/
 - **Proposed fix:** The page states no version, so "none" is right and the summary matches the page; if the sizing section is removed or rewritten (B3-laao-ct-13), update "Watchman sizing".
 - **Proposed home:** Front page row: LAAO planning CT
 - **Re-check:** agrees — Quotation faithful; the summary lists the page's four sections and 'none' is right because the page cites no guideline at all. The row itself makes no clinical claim; the problems are in the page's sizing content. (shared/data/resources.ts lines 142-150; laao.md)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ## Valve grading
 
@@ -1005,6 +1103,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** Which body leads severity stages and intervention thresholds on this page: ACC/AHA 2020 or ESC/EACTS 2025 (where they differ the page would give both)? Echo grading follows the ASE/EACVI documents either way.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — The named guidelines exist and the page's tables broadly follow them, so the line is fair, but 'ASE 2017' is two documents (AS with EACVI; regurgitation with SCMR), ESC/EACTS 2025 has no grading tables, and nothing is cited in full except the two AR reviews. Which of ACC/AHA 2020 and ESC/EACTS 2025 leads for stages and thresholds is an owner question; the page needs a reference list. (acc-aha-vhd-2020 Tables 13/15 (e91, e105); esc-eacts-vhd-2025 section 7 and Recommendation Table 3 (pp. 25-28); ase-eacvi-as-2017 Table 3 p. 383; ase-scmr-regurgitation-2017 Table 11 p. 340)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: ACC/AHA 2020 leads severity stages and intervention thresholds; where ESC/EACTS 2025 differs it goes under "Other guidelines differ". Echo grading follows the ASE/EACVI documents.
 
 ### B3-valve-grading-02 · Aortic stenosis table: mean gradient for mild and moderate
 
@@ -1015,6 +1114,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Mild <20 mmHg; moderate 20–39 mmHg (ACC/AHA; ASE/EACVI writes 20–40). A gradient of 20–24 mmHg is moderate, not mild.
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Both sources put the mild/moderate boundary at 20 mmHg, not 25: mild is <20 and moderate 20–39 (ACC/AHA) or 20–40 (ASE). The page's '<25' and '25–39' would grade a mean gradient of 20–24 mmHg as mild. ESC/EACTS 2025 gives no mild/moderate cut-off. (ase-eacvi-as-2017 Table 3 p. 383; acc-aha-vhd-2020 Table 13 e91 (stage B))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-03 · Aortic stenosis table: Vmax, severe mean gradient, AVA, AVAi and DI (mild to severe)
 
@@ -1025,6 +1125,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: say where the two differ: ASE/EACVI calls Vmax ≤2.5 m/s aortic sclerosis (mild 2.6–2.9) and puts moderate at 3.0–4.0; ACC/AHA writes ≤1.0 cm², ≤0.6 cm²/m² and ≤0.25 for severe.
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Vmax bands are ACC/AHA's (ASE has mild 2.6–2.9 with <=2.5 as sclerosis, and moderate 3.0–4.0); AVA, AVAi and velocity ratio match ASE Table 3; severe mean gradient >=40 matches both. Only nuance: ACC/AHA and ESC write severe AVA '<=1.0' (AVAi '<=0.6') where ASE and the page write '<1.0' ('<0.6'). (acc-aha-vhd-2020 Table 13 e91; ase-eacvi-as-2017 Table 3 p. 383)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-04 · Aortic stenosis table: very severe row
 
@@ -1036,6 +1137,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** AVA <0.6 cm² as 'very severe' is in none of the readable guidelines: is it a local convention to keep and label, or should it go?
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Vmax >=5.0 m/s and mean gradient >=60 mmHg are ACC/AHA's definition and are correct. The AVA '<0.6 cm2' has no support in ACC/AHA 2020, ASE/EACVI 2017 or ESC/EACTS 2025: none gives a valve-area criterion for very severe AS (0.6 appears only as the indexed cut-off, cm2/m2, for severe). The AVA cell should be removed or sourced. (acc-aha-vhd-2020 Table 13 e91 (stage C1) and section 3.2.3 rec 7 e94; not in ase-eacvi-as-2017 or esc-eacts-vhd-2025)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended (not local practice): AVA <0.6 cm² goes from the very severe row; Vmax ≥5.0 m/s or mean gradient ≥60 mmHg (ACC/AHA) stay.
 
 ### B3-valve-grading-05 · Low-flow low-gradient AS tip: classic and paradoxical definitions
 
@@ -1046,6 +1148,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: add SVi <35 mL/m² to the classic definition (ASE/EACVI p. 384; ESC ≤35).
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Both definitions match ACC/AHA stages D2 and D3. Nuances: ASE and ESC also require SVi <35 (ESC '<=35') mL/m2 for the classic reduced-EF form, which the page leaves out; sources write AVA '<=1.0'. ASE notes dobutamine echo is the test for the reduced-EF form and CT calcium score for the preserved-EF form. (acc-aha-vhd-2020 Table 13 e91 (stages D2, D3); ase-eacvi-as-2017 Key Points p. 385-386; esc-eacts-vhd-2025 section 8.2.1 p. 29)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-06 · Low-flow low-gradient AS tip: CT in discordant cases
 
@@ -1057,6 +1160,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** Which calcium-score thresholds should the page give: ACC/AHA 2020 (severe ≥1300 AU women, ≥2000 men) or ASE/EACVI and ESC 2025 (likely ≥1200 / ≥2000, very likely ≥1600 / ≥3000, unlikely <800 / <1600)?
 - **Proposed home:** Valvular heart disease › Technique
 - **Re-check:** disagreed — Reviewer: not-lead (management). The lead (CAR/CSTR part 2), ASE, ACC/AHA and ESC all name the CT aortic valve calcium score as the CT tool for discordant/low-gradient AS (ESC and ASE: severe likely at >=2000 AU men, >=1200 AU women); the page does not mention it. CT planimetry appears only in an ESC figure footnote, with its own 1.2 cm2 cut-off, and CAR warns it overestimates area versus TTE. The line should lead with calcium score. (car-cstr-cardiac-ct-2-2024, Valvular Assessment p. 504-505 (PDF 3-4) and TAVR pre-procedure planning p. 505-506; esc-eacts-vhd-2025 Figure 6 footnote f p. 30; ase-eacvi-as-2017 Table 5 p. 385) Resolution: Changed to not-lead with management, as the reviewer has it: CT planimetry in discordant AS has support only in an ESC footnote, while the lead (CAR/CSTR part 2) says planimetry overestimates the area and, with ASE, ACC/AHA and ESC, names the calcium score.
+- **Ruling:** keep (2026-11-27) — (In chat.) Follows B3-valve-grading-01: the aortic valve calcium score with ACC/AHA 2020's thresholds (severe ≥1300 AU women, ≥2000 AU men); the ASE/EACVI and ESC 2025 graded scale goes under "Other guidelines differ".
 
 ### B3-valve-grading-07 · AVA by continuity equation
 
@@ -1065,6 +1169,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **The page says:** "AVA = (CSA_LVOT × VTI_LVOT) / VTI_AV"
 - **Source:** Baumgartner H, Hung J, Bermejo J, et al. Recommendations on the echocardiographic assessment of aortic valve stenosis: a focused update from the European Association of Cardiovascular Imaging and the American Society of Echocardiography. J Am Soc Echocardiogr. 2017;30(4):372-392. doi:10.1016/j.echo.2017.02.009 — Table 2 'Measures of AS severity', p. 376 (PDF p. 5), continuity equation AVA = (CSA_LVOT × VTI_LVOT)/VTI_AV; derivation in the AVA section
 - **Proposed home:** Valvular heart disease › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-08 · Aortic regurgitation echo table: RF, RVol and EROA, with caption
 
@@ -1075,6 +1180,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: add that ACC/AHA requires LV dilation for chronic severe AR, and that ESC 2025 writes RF >50% for echo.
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — All twelve cells match ASE 2017 Table 11 (the two middle columns there are sub-classes of moderate, which the page labels Moderate and Moderate–Severe). ACC/AHA Table 15 has the same outer limits with a single moderate band (RVol 30–59, RF 30–49, ERO 0.10–0.29) and adds that severe chronic AR requires LV dilation. Caption is accurate. (ase-scmr-regurgitation-2017 Table 11 p. 340; acc-aha-vhd-2020 Table 15 e105)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-09 · Aortic regurgitation echo table: vena contracta
 
@@ -1085,6 +1191,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Moderate 3–6 mm, severe >6 mm: a vena contracta of exactly 6 mm is moderate in all three sources, severe on the page.
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Boundary error: all three sources make severe '>6 mm' and moderate '3–6 mm', so exactly 6 mm is moderate. The page's 'Moderate 3–5.9, Severe >=6' puts 6.0 mm in severe. Mild <3 mm is correct. Fix to '3–6' and '>6'. (ase-scmr-regurgitation-2017 Table 11 p. 340; acc-aha-vhd-2020 Table 15 e105; esc-eacts-vhd-2025 Figure 4 p. 26)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-10 · AR CMR section: opening statement on CMR grades
 
@@ -1096,6 +1203,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** For AR graded by CMR, should the page call RF >40% severe (ESC 2025) or keep the echo cut-off of ≥50% (ASE 2017, ACC/AHA 2020)?
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** disagreed — Reviewer: outdated. The ASE 2017 half is accurate. But ESC/EACTS 2025, which the page says it is based on, does give a CMR-specific criterion for severe AR in Figure 4 (RF >40% by CMR versus >50% by echo), so 'not established in guidelines' is no longer fully true. The page should state the ESC CMR cut-off. 'Accumulating outcome data support lower thresholds' is consistent with the abstracts (Myerson 2012, Hashimoto 2022, Malahfji 2023). (ase-scmr-regurgitation-2017 section 'Thresholds for regurgitation severity' p. 317-318; esc-eacts-vhd-2025 Figure 4 p. 26) Resolution: Changed to outdated, as the reviewer has it (true of ASE 2017, changed by ESC/EACTS 2025 Figure 4); management kept: if ESC leads, an RF of 40–50% by CMR is severe, which the page's line would hide. The owner's lead question (B3-valve-grading-01) decides it.
+- **Ruling:** keep (2026-11-27) — (In chat.) Follows B3-valve-grading-01: severe AR by CMR stays at RF ≥50% (ASE 2017, ACC/AHA 2020); ESC/EACTS 2025's RF >40% goes under "Other guidelines differ".
 
 ### B3-valve-grading-11 · CMR AR outcome table: RF ≥32–35%
 
@@ -1106,6 +1214,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Cite Hashimoto 2022 for ≥32% and its composite endpoint; the 35% end has no readable source until the reviews (or the paper they cite) are supplied.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). The lower end is verified from abstracts: RF >=32% (Hashimoto: death/HF/symptom progression) and RF >33% (Myerson: progression to surgery). No readable source states 35%, and the cited reviews are not readable, so the range as written cannot be confirmed. Safer wording: 'RF >=32–33%' with the two studies named. (hashimoto-ar-cmr-2022-abstract (abstract only); myerson-ar-cmr-2012-abstract (abstract only); Ranard 2023 and Pawar 2026 not in audit-sources) Resolution: Stands without management: the 35% end can't be checked and nothing readable shows it wrong.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-12 · CMR AR outcome table: RF >33% (Myerson)
 
@@ -1116,6 +1225,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: give the citation (Myerson 2012, Circulation 126:1452-60) and say the endpoint was progression to symptoms or other surgical indication.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Matches the abstract exactly (113 patients with echo moderate or severe AR; AUC 0.93). The page gives no full citation: Myerson et al., Circulation 2012;126:1452-60. (myerson-ar-cmr-2012-abstract (abstract only); also quoted in ase-scmr-regurgitation-2017 p. 317)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-13 · CMR AR outcome table: RF ≥43% (Malahfji)
 
@@ -1126,6 +1236,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: give the citation (Malahfji 2023, J Am Coll Cardiol 81:1885-98) and the composite endpoint (symptoms, LVEF <50%, guideline LV-size indication, or death).
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Matches the abstract: multicentre, n=458, asymptomatic, optimal RF 43%. Worth stating the outcome (symptoms, LVEF <50%, guideline indication for surgery, or death) and that the abstract gives a threshold of 43%, not '>=43%' with a hazard ratio. The page cites it through Ranard (ref 1) rather than the paper: J Am Coll Cardiol 2023;81:1885-98. (malahfji-ar-cmr-2023-abstract (abstract only))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-14 · CMR AR outcome table: RVol >38–47 mL
 
@@ -1136,6 +1247,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Cite Malahfji for 47 mL (composite outcome); the 38 mL end and 'predicting AVR' need the review or the paper it cites.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). Only the upper end (47 mL) is verified, and its outcome was a composite (symptoms, LVEF fall, guideline surgical indication, death), not AVR alone. No readable source gives 38 mL or an ROC analysis 'for predicting AVR'; that needs the paper behind the reviews' figure. ASE 2017 p. 317 has no AR RVol outcome threshold that helps. (malahfji-ar-cmr-2023-abstract (abstract only); Ranard 2023 and Pawar 2026 not readable) Resolution: Stands without management, as for B3-valve-grading-11.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-15 · CMR AR outcome table: holodiastolic retrograde flow
 
@@ -1146,6 +1258,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: 'cardiovascular death or HF hospitalisation', and cite Kammerlander 2019 rather than the reviews.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Matches the abstract: HR 2.77 for holodiastolic retrograde flow in the descending aorta on CMR. Small precision points: the endpoint was heart failure hospitalization and cardiovascular death (not all-cause death), and the confidence interval is wide (1.13–6.80). The page cites reviews, not the paper (JACC Cardiovasc Imaging 2019;12:1474-83). (kammerlander-ar-cmr-2019-abstract (abstract only))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-16 · Warning box: CMR vs echo RF discordance
 
@@ -1156,6 +1269,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Trace the '>1/3' figure and the sensitivity/specificity claim to their paper, or drop them; the 32% and 50% figures stand.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Only 'CMR RF >=32% predicts adverse outcomes, lower than echo's severe RF >=50%' is verifiable (Hashimoto abstract; ASE Table 11 for the 50%); '35%' is not. The claims that RF >=50% has 'high specificity but poor sensitivity' for early remodelling, and that '>1/3' of patients with LVESDi <25 mm/m2 had CMR LVESVi >=45 mL/m2, appear in no readable abstract or guideline; they need the full papers (probably Hashimoto 2022 or the reviews). (hashimoto-ar-cmr-2022-abstract (abstract only) for the first sentence; no readable source for the rest)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-17 · CMR LV remodelling table: LVESVi ≥43 mL/m² (Malahfji)
 
@@ -1165,6 +1279,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Source:** Malahfji M, Crudo V, Kaolawanich Y, et al. Influence of cardiac remodeling on clinical outcomes in patients with aortic regurgitation. J Am Coll Cardiol. 2023;81(19):1885-1898. doi:10.1016/j.jacc.2023.03.001 — Abstract only (PubMed 36882135): iLVES volume ≥43 mL/m² HR 2.53 (95% CI 1.75–3.66); Malahfji M, Crudo V, Kaolawanich Y, et al. J Am Coll Cardiol. 2023;81(19):1885-1898. doi:10.1016/j.jacc.2023.03.001. Abstract, PubMed PMID 36882135. — Results, PMID 36882135; Praz F, Borger MA, Lanz J, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J. 2025;46(44):4635-4736. doi:10.1093/eurheartj/ehaf194 (co-published in Eur J Cardiothorac Surg. 2025;67(8):ezaf276. doi:10.1093/ejcts/ezaf276). — Section 7.4, p. 26: 'A volumetric cut-off value of LVESVi ≥43 mL/m² using CMR was recently proposed' (refs 240 Hashimoto, 241 Malahfji)
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — HR 2.53 (CI 1.75–3.66) fits '2–3x higher risk'. ESC/EACTS 2025 mentions the same 43 mL/m2 CMR cut-off as recently proposed (not as a recommendation). (malahfji-ar-cmr-2023-abstract (abstract only); also esc-eacts-vhd-2025 section 7.4 p. 26)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-18 · CMR LV remodelling table: LVESVi ≥45 mL/m²
 
@@ -1175,6 +1290,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** ESC 2025's IIb trigger is LVESVi >45 mL/m² (low surgical risk); cite Hashimoto 2022 for ≥45 and say its population was patients with no or minimal symptoms.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: correct (management). Supported: Hashimoto gives >=45 mL/m2 by CMR as an independent predictor (endpoint also includes NYHA progression; 'with preserved EF' is not stated in the abstract), and ESC/EACTS 2025 has a class IIb recommendation using LVESVi. Precision: ESC writes '>45' (echo or CMR, low surgical risk), not '>=45'; see piece 25. The page cites Pawar 2026 rather than the paper. (hashimoto-ar-cmr-2022-abstract (abstract only); esc-eacts-vhd-2025 Recommendation Table 3 p. 28 and section 7.4 p. 26) Resolution: Stands as wrong, without management: the predictor (Hashimoto, ≥45) is right, but the row calls ≥45 the ESC trigger where ESC writes >45, as in B3-valve-grading-25; at one value it moves only a class IIb "may be considered".
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-19 · CMR LV remodelling table: LVEDVi ≥109 mL/m² (Malahfji)
 
@@ -1184,6 +1300,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Source:** Malahfji M, Crudo V, Kaolawanich Y, et al. Influence of cardiac remodeling on clinical outcomes in patients with aortic regurgitation. J Am Coll Cardiol. 2023;81(19):1885-1898. doi:10.1016/j.jacc.2023.03.001 — Abstract only (PubMed 36882135): indexed LV end-diastolic volume ≥109 mL/m² independently associated with the outcomes; Malahfji M, Crudo V, Kaolawanich Y, et al. J Am Coll Cardiol. 2023;81(19):1885-1898. doi:10.1016/j.jacc.2023.03.001. Abstract, PubMed PMID 36882135. — Results, PMID 36882135
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Matches the abstract. (malahfji-ar-cmr-2023-abstract (abstract only))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-20 · CMR LV remodelling table: LVEDVi >155 mL/m²
 
@@ -1194,6 +1311,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Trace to the paper Pawar cites, or drop the row until it can be checked.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). No readable guideline or abstract states LVEDVi >155 mL/m2 or links it to poor reverse remodelling after AVR. It needs the original study behind the review; until traced it cannot be verified. (no readable source; Pawar 2026 (the page's citation) is not in audit-sources) Resolution: Stands without management, as for B3-valve-grading-11.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-21 · CMR LV remodelling table: CMR-GLS
 
@@ -1204,6 +1322,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Trace to the paper Ranard cites, or drop the row until it can be checked.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). No readable source gives a CMR-GLS cut-off of −16% to −19% in AR. The range reads like a pooling of several studies (some probably echo strain rather than CMR feature tracking); each number needs its own paper. (no readable source; Ranard 2023 (the page's citation) is not in audit-sources) Resolution: Stands without management, as for B3-valve-grading-11.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-22 · CMR LV remodelling table: indexed ECV ≥24 mL/m²
 
@@ -1214,6 +1333,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: cite Senapati 2021 and say the highest risk was RF ≥30% with iECV ≥24 mL/m² (composite of death or AVR).
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — The 24 mL/m2 figure and the association are in the abstract. Precision: the outcome was a composite of death or AVR, and the highest event rate was in patients with both RF >=30% and iECV >=24 mL/m2; 24 was a stratification value in a single-centre study of 177 patients, not a validated cut-off. Cited via Ranard rather than the paper (JACC Cardiovasc Imaging 2021;14:2170-82). (senapati-ar-fibrosis-2021-abstract (abstract only))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-23 · Tip: volumes outperform linear dimensions
 
@@ -1224,6 +1344,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** The LVESDi and ESC statements stand; trace '>1/3' to its paper or drop it.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Two parts verify: LVESDi >25 mm/m2 is the current threshold in both guidelines, and ESC/EACTS 2025 does include LVESVi (>45 mL/m2, class IIb) alongside diameters. The statistic that LVESDi >25 'misses >1/3 of patients with CMR LVESVi >=45' is in no readable abstract or guideline (same unverified figure as piece 16), and is worded here the other way round from the warning box. (acc-aha-vhd-2020 rec 4.3.3 no. 4 e107 and esc-eacts-vhd-2025 Recommendation Table 3 p. 28 for the guideline statements; no readable source for '>1/3')
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-24 · AR intervention table: rows 1–7
 
@@ -1234,6 +1355,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: add 'low surgical risk' to the two ACC/AHA IIb rows; ESC's Class I for concomitant surgery names CABG or ascending-aorta surgery.
 - **Proposed home:** Valvular heart disease › Management
 - **Re-check:** agrees — All seven rows match class and guideline. Left out: ACC/AHA's 2b applies only at low surgical risk and to patients with LVEF >55%; ACC/AHA's LVEF <=55% rec adds 'if no other cause for systolic dysfunction is identified'; ESC's concomitant-surgery wording is 'CABG or surgery of the ascending aorta' (text adds any other cardiac surgery); ESC text also allows discussing surgery for LVEDD >65 mm with progression (no class). Owner question which guideline leads where they differ (LVEF 55 vs 50; class I vs 2a for LVESD). (acc-aha-vhd-2020 section 4.3.3 recs 1-4, 6 e107; esc-eacts-vhd-2025 Recommendation Table 3 p. 28 and Figure 5 p. 27)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-25 · AR intervention table: ESC IIb row
 
@@ -1244,6 +1366,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** "Low surgical risk, asymptomatic: LVESDi >22 mm/m² or LVESVi >45 mL/m² or resting LVEF ≤55% | IIb | ESC/EACTS 2025".
 - **Proposed home:** Valvular heart disease › Management
 - **Re-check:** disagreed — Reviewer: wrong (management). Class IIb, low risk and LVESDi >22 mm/m2 are right. Two differences: ESC's volume trigger is '>45 mL/m2', not '>=45' (>=45 is Hashimoto's study cut-off), and ESC's IIb also includes resting LVEF <=55%, which the page omits, so the table reads as if LVEF <=55% were an ACC/AHA-only trigger. Minor, but it is a recommendation row. (esc-eacts-vhd-2025 Recommendation Table 3 p. 28; Figure 5 p. 27; section 7.4 p. 26) Resolution: Stands as wrong, without management: >45 not ≥45, and ESC's IIb also includes resting LVEF ≤55%; both are a class IIb "may be considered", and which body's triggers the page shows is the owner's lead question.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-26 · Aortic root dilation table: normal values
 
@@ -1255,6 +1378,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** The table is headed 'by CT/CMR' but the only readable normal values are echo (ASE 2015): keep echo values with that label, or source CT/CMR normals?
 - **Proposed home:** Valvular heart disease › Measurement
 - **Re-check:** disagreed — Reviewer: unsourced. The page gives no source and none of the batch's documents gives CT/CMR normal limits. The sinus limits (men <40, women <36 mm) equal ASE's echo mean + 2 SD; the annulus '<25 mm/m2' does not fit ASE (13 ± 1 mm/m2, upper limit about 15 mm/m2) and looks like an error; ascending aorta '<40 mm' is not a limit ASE states (mean + 2 SD is 38 mm men, 35 mm women). (ase-chamber-quant-2015, Table 14 'Aortic root dimensions in normal adults', p. 32 (echo, not CT/CMR)) Resolution: Stands as wrong, without management: the annulus "<25 mm/m²" contradicts ASE 2015 (13 ± 1 mm/m²), and the table labels echo-derived values as CT/CMR normals; the sinus limits match ASE's mean + 2 SD.
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: the table gives ASE 2015's echo values, labelled as echo (annulus about 13 mm/m², ascending aorta 38 mm men, 35 mm women).
 
 ### B3-valve-grading-27 · Aortic root dilation table: surgery thresholds
 
@@ -1265,6 +1389,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** ≥55 mm for root or ascending aorta in everyone (not men only); 50–55 mm with risk factors (BAV, ACC/AHA) or in selected low-risk patients (ESC); ≥45 mm only when aortic valve surgery is already indicated. The Marfan figure needs the aortic guideline.
 - **Proposed home:** Valvular heart disease › Management
 - **Re-check:** agrees — >=55 mm matches both guidelines, but the bracketed thresholds drop their conditions. '>=45 mm in bicuspid' applies only when the patient is already having valve surgery (both guidelines); a bicuspid valve alone is >5.5 cm, or 5.0-5.5 cm with a risk factor (ACC/AHA 2a) or at low surgical risk (2b). '>=50 mm in bicuspid' needs those qualifiers too. The Marfan 50 mm figure and the male-only sign on the sinus row are in neither document (ESC refers root surgery to its 2024 aortic guideline, not in the sources). (acc-aha-vhd-2020, section 5.1.2.1 (bicuspid valve, replacement of the aorta), pp. e110-e111; esc-eacts-vhd-2025, section 7.4, p. 28 and Figure 5 footnote b)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-28 · AR references
 
@@ -1275,6 +1400,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Keep the reviews as further reading but cite the primary papers for the numbers (Myerson 2012, Hashimoto 2022, Malahfji 2023, Kammerlander 2019, Senapati 2021).
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: correct. Both citations exist as written (authors, journal, volume, issue, pages). Neither review is readable in audit-sources, so this confirms the references only, not any number taken from them; both are reviews, not guidelines. (docs/audit/sources.json entries ranard-ar-imaging-2023 and pawar-ar-review-2026; Crossref records for doi 10.1016/j.jacc.2023.08.051 and 10.1016/j.jacc.2025.10.026 (bibliographic check only)) Resolution: Stands as source-not-readable: the reviewer confirmed both references exist as cited (Crossref by DOI), but the reviews themselves can't be read, and the record allows no other verdict on unread sources; citing the primary papers stays the fix.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-29 · Mitral stenosis table
 
@@ -1285,6 +1411,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Use the ACC/AHA stages: severe MS MVA ≤1.5 cm² (PHT ≥150 ms), progressive >1.5 cm²; give mean gradient and PASP as consequences, not grades. An MVA of 1.0–1.5 cm² is severe, not moderate.
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — The table reproduces EAE/ASE 2009 Table 9 exactly, but ASE has withdrawn those values in favour of the AHA/ACC stages. In both ACC/AHA 2020 and ESC/EACTS 2025 severe MS is MVA <=1.5 cm2 (pressure half-time >=150 ms), so the page's 'moderate' 1.0-1.5 cm2 is now severe; neither grades by mean gradient. The page says it is based on ACC/AHA 2020 and ESC 2025 and does not follow them here. (2009 also notes the gradient/PASP rows are supportive only, at heart rate 60-80 in sinus rhythm.) (eae-ase-valve-stenosis-2009, Table 9 p. 17 and ASE's note on p. 1; acc-aha-vhd-2020, Table 16 p. e113; esc-eacts-vhd-2025, section 10, p. 46 and Figure 14)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-30 · Wilkins score tip
 
@@ -1295,6 +1422,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Drop 'MitraClip': the Wilkins score assesses suitability for balloon commissurotomy (PBMV) in rheumatic MS; ≤8 favourable.
 - **Proposed home:** Valvular heart disease › Management
 - **Re-check:** agrees — The four components and the <=8 cut-off for balloon commissurotomy are right (ESC states >8 as unfavourable). 'MitraClip' is wrong: the Wilkins score is for percutaneous mitral balloon commissurotomy in rheumatic mitral stenosis, and no source uses it for edge-to-edge repair. ACC/AHA adds that the score is not absolute (42% with >8 still do well). (eae-ase-valve-stenosis-2009, Table 5 p. 14; esc-eacts-vhd-2025, Figure 14 footnote c, p. 47; acc-aha-vhd-2020, section 7.2.3 supportive text, p. e118)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-31 · Primary MR echo table, with caption
 
@@ -1304,6 +1432,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Source:** Zoghbi WA, Adams D, Bonow RO, et al. Recommendations for noninvasive evaluation of native valvular regurgitation: a report from the American Society of Echocardiography developed in collaboration with the Society for Cardiovascular Magnetic Resonance. J Am Soc Echocardiogr. 2017;30(4):303-371. doi:10.1016/j.echo.2017.01.007 — Table 8 'Grading the severity of chronic MR by echocardiography', p. 332 (PDF p. 30): EROA <0.20, 0.20–0.29, 0.30–0.39, ≥0.40; RVol <30, 30–44, 45–59, ≥60; RF <30, 30–39, 40–49, ≥50; VCW <0.3, intermediate, ≥0.7 cm (>0.8 biplane); Otto CM, Nishimura RA, Bonow RO, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation. 2021;143(5):e72-e227. doi:10.1161/CIR.0000000000000923 (also J Am Coll Cardiol. 2021;77(4):e25-e197). — Table 17 'Stages of Chronic Primary MR', e121 (PDF p. 50): severe VC ≥0.7 cm, RVol ≥60 mL, RF ≥50%, ERO ≥0.40 cm²; Praz F, Borger MA, Lanz J, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J. 2025;46(44):4635-4736. doi:10.1093/eurheartj/ehaf194 (co-published in Eur J Cardiothorac Surg. 2025;67(8):ezaf276. doi:10.1093/ejcts/ezaf276). — Figure 10, p. 39: severe MR VC ≥7 mm (≥8 mm biplane), EROA ≥40 mm², RVol ≥60 mL, RF ≥50%
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — All quantitative cells match ASE 2017 Table 8, and the severe row matches ACC/AHA 2020 and ESC 2025. Small points: ASE has three grades with moderate split in two (the page's 'Moderate-Severe' row is ASE's upper-moderate column); ASE gives moderate vena contracta as 'intermediate' (3-6.9 mm is implied, not printed); ACC/AHA has no four-grade table, only stages, so the caption fits ASE better than ACC/AHA; ASE's table covers secondary MR too with lower values allowed. (ase-scmr-regurgitation-2017, Table 8 p. 332; acc-aha-vhd-2020, Table 17 p. e121; esc-eacts-vhd-2025, Figure 10 p. 39)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-32 · Secondary MR table: ESC/EACVI column
 
@@ -1314,6 +1443,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** ESC 2025: EROA ≥30 mm² and/or RVol ≥45 mL carry prognostic weight in secondary MR; severe is EROA ≥40 mm² (≥30 mm² if the orifice is elliptical) and RVol ≥60 mL (≥45 mL in low flow).
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** disagreed — Reviewer: wrong (management). The ESC/EACTS 2025 guideline the page names gives >=30 mm2 and/or >=45 mL for secondary MR, not >=20 mm2 / >=30 mL. The 0.20 cm2 figure survives only as a prognostic observation in ASE 2017 (which declined to make it a severity cut-off); it reads like an earlier ESC threshold, but no earlier ESC document is in the sources, so 'outdated' could not be confirmed. RVol >=30 mL is in no readable source. (esc-eacts-vhd-2025, section 9.2.2 p. 42 and Figure 10 p. 39; ase-scmr-regurgitation-2017, section on secondary MR p. 334) Resolution: Changed to wrong with management, as the reviewer has it: the ESC guideline the column names gives ≥30 mm² and/or ≥45 mL, and no earlier ESC document in the sources shows the page's ≥20 mm²/≥30 mL, so 'outdated' can't be shown.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-33 · Secondary MR table: ACC/AHA (COAPT) column
 
@@ -1324,6 +1454,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** ACC/AHA's TEER criterion is severe secondary MR (EROA ≥0.40 cm², RVol ≥60 mL, RF ≥50%) plus the COAPT selection criteria (LVEF 20–50%, LVESD ≤70 mm, PASP ≤70 mmHg, symptoms on GDMT).
 - **Proposed home:** Valvular heart disease › Management
 - **Re-check:** agrees — ACC/AHA 2020 states no EROA >=0.30 cm2 or RVol >=30 mL intervention threshold. It defines severe secondary MR as ERO >=0.40 cm2 / RVol >=60 mL / RF >=50% (with the low-flow and PISA caveats) and gives the COAPT selection criteria as LVEF 20-50%, LVESD <=70 mm, PASP <=70 mmHg and symptoms on optimal therapy; its only EROA mention for the trials is the mean values (0.41 vs 0.31 cm2). COAPT's own echo entry criteria are not in a readable source. RVol >=30 mL as an intervention threshold is unsupported anywhere (ESC 2025 says >=45 mL). (acc-aha-vhd-2020, Table 18 p. e128 and section 7.3.4 pp. e129-e130)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-34 · Warning box: primary vs secondary MR thresholds
 
@@ -1334,6 +1465,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Keep the first sentence; replace the rest with ACC/AHA (severe secondary MR = EROA ≥0.40 cm², as for primary) and ESC 2025 (EROA ≥30 mm² / RVol ≥45 mL prognostic; lower severe cut-offs for an elliptical orifice or low flow).
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — First sentence is right (EROA >=0.40 cm2 and RVol >=60 mL are severe primary MR in ASE, ACC/AHA and ESC). The second attributes >=0.20 cm2 to ESC, whose 2025 guideline says >=30 mm2. The third says an EROA of 0.30-0.35 cm2 is the ACC/AHA intervention threshold in secondary MR; ACC/AHA 2020 states no such threshold and keeps >=0.40 cm2 for severe secondary MR. The general teaching (lower values may be significant in secondary MR) is supported by all three; the specific attributions are not. (ase-scmr-regurgitation-2017, Table 8 p. 332; acc-aha-vhd-2020, Tables 17-18 pp. e121, e128; esc-eacts-vhd-2025, section 9.2.2 p. 42)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-35 · CMR assessment of MR: method
 
@@ -1344,6 +1476,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** "LV stroke volume − aortic total forward flow" (not net: with net flow any aortic regurgitant volume is counted as MR); call it the preferred method (ASE/SCMR 2017).
 - **Proposed home:** Valvular heart disease › Measurement
 - **Re-check:** disagreed — Reviewer: correct. Method and reason match ASE/SCMR 2017, which lists LV stroke volume minus aortic phase-contrast forward flow first in its order of preference. ASE calls it the preferred method, not 'the reference standard' (it says regurgitation 'lacks a true gold standard'); the page's 'net forward flow' should read forward flow (if AR is present, forward not net). (ase-scmr-regurgitation-2017, section II.C.2.b p. 315, Figure 8 p. 316, and MR section III.H.2 p. 331) Resolution: Stands as wrong with management: "net" forward flow is not ASE/SCMR's method (aortic forward flow); with aortic regurgitation present, net flow adds the AR volume to the MR, so the grade changes in mixed disease.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-36 · CMR outcome data in primary MR (Myerson) table
 
@@ -1354,6 +1487,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: the outcome is survival free of symptoms or other indications for surgery (not survival), in asymptomatic patients.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Numbers match the paper. To keep the meaning: the endpoint is freedom from symptoms or other indications for surgery (not death), in 109 asymptomatic patients with moderate or severe organic MR on echo, single-research cohort; the paper offers these as proposed cut-offs, and no guideline has adopted them. The RF rows are stated only as 'similar separation'. (myerson-mr-cmr-2016, abstract and Results ('Outcome') manuscript pp. 2 and 11-12)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-37 · Note: CMR RF threshold for MR
 
@@ -1364,6 +1498,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Say that Myerson's MR thresholds (55 mL, 40%) sit close to the echo cut-offs (60 mL, 50%), unlike AR's; drop 'the same direction of discordance seen in AR applies'.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: correct. The numbers are right: Myerson's RF cut-off is 40% and the echo severe threshold is >=50%. The framing is the page's own: the authors call their MR thresholds 'close to' the echo ones and stress that the MR threshold is higher than the AR one, and the general claim that CMR finds significant disease at lower RF than echo is not stated in a readable source. 'Adverse outcomes' means symptoms or surgery. (myerson-mr-cmr-2016, Discussion (manuscript p. 15); ase-scmr-regurgitation-2017, Table 8 p. 332) Resolution: Stands as wrong, without management: the numbers are right, but "the same direction of discordance seen in AR applies" contradicts Myerson, who calls the MR thresholds close to echo's and higher than AR's.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-38 · TR table: mild, moderate and severe rows (VC, EROA, RVol)
 
@@ -1373,6 +1508,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Source:** Zoghbi WA, Adams D, Bonow RO, et al. Recommendations for noninvasive evaluation of native valvular regurgitation: a report from the American Society of Echocardiography developed in collaboration with the Society for Cardiovascular Magnetic Resonance. J Am Soc Echocardiogr. 2017;30(4):303-371. doi:10.1016/j.echo.2017.01.007 — Table 14 'Grading the severity of chronic TR by echocardiography', p. 350 (PDF p. 48): VCW <0.3, 0.3–0.69, ≥0.7 cm; EROA <0.20, 0.20–0.39, ≥0.40 cm²; RVol <30, 30–44, ≥45 mL; Otto CM, Nishimura RA, Bonow RO, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation. 2021;143(5):e72-e227. doi:10.1161/CIR.0000000000000923 (also J Am Coll Cardiol. 2021;77(4):e25-e197). — Table 20 'Stages of TR', e132 (PDF p. 61): severe VC ≥0.7 cm, ERO ≥0.40 cm², RVol ≥45 mL; Praz F, Borger MA, Lanz J, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J. 2025;46(44):4635-4736. doi:10.1093/eurheartj/ehaf194 (co-published in Eur J Cardiothorac Surg. 2025;67(8):ezaf276. doi:10.1093/ejcts/ezaf276). — Figure 15, p. 50: severe TR VC ≥7 mm, EROA ≥40 mm², RVol ≥45 mL/beat, RF ≥50%; Go YY, Dulgheru R, Lancellotti P. The conundrum of tricuspid regurgitation grading. Front Cardiovasc Med. 2018;5:164. doi:10.3389/fcvm.2018.00164 — Table 1 (proposed grading): severe 7–13.9 mm, 40–59 mm², 45–59 mL (upper limits only in the 5-grade proposal)
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Matches Go 2018 Table 1 exactly, and the lower bounds for severe match ASE 2017, ACC/AHA 2020 and ESC 2025 (VC >=7 mm, EROA >=40 mm2, RVol >=45 mL). The upper bounds on 'severe' exist only in the five-grade proposal. ASE notes little data support separating mild from moderate by EROA/RVol. (go-tr-grading-2018, Table 1; ase-scmr-regurgitation-2017, Table 14 p. 350; acc-aha-vhd-2020, Table 20 p. e132; esc-eacts-vhd-2025, Figure 15 p. 50)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-39 · TR table: massive and torrential rows (VC, EROA, RVol)
 
@@ -1383,6 +1519,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: label the two grades as a proposal (Hahn and Zamorano 2017, restated by Go 2018), not guideline grades, and say EROA is by PISA.
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Matches Go 2018 Table 1 (the page writes >=21 where Go prints >21). These are proposed grades ('further data required'), by PISA; ESC 2025 mentions the scheme but prints no cut-offs for it, and ASE 2017 and ACC/AHA 2020 have three grades only. Hahn and Zamorano's original is not readable. (go-tr-grading-2018, Table 1; esc-eacts-vhd-2025, section 11.2 p. 50)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-40 · TR table: 3D vena contracta area column
 
@@ -1394,6 +1531,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** Which 3D VCA cut-off for severe TR should the page use: ASE 2017's >0.4 cm², ESC 2025's ≥0.75 cm², or Benzoni 2026's five grades (secondary TR only)?
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — No 'Adamo et al EHJ 2025' study is among the sources. The massive and torrential cells match Benzoni's JASE 2026 abstract, but mild (<0.20), moderate (0.20-0.40) and the lower bound of severe (0.40) do not: Benzoni gives <0.43, 0.43-0.67 and 0.68-0.88, and ESC 2025 puts severe at 3D VCA >=0.75 cm2. The page's lower rows appear to be the 2D EROA cut-offs copied across; a VCA of 0.45 cm2 would be called severe here and mild by the study. Citation is also wrong. (benzoni-tr-vca-2026-abstract (abstract only); esc-eacts-vhd-2025, Figure 15 p. 50; go-tr-grading-2018, Table 1)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: one scheme, ASE 2017's 3D VCA >0.4 cm² for severe TR; ESC 2025's ≥0.75 cm² and Benzoni 2026's five grades (secondary TR) noted. The unsourced mild and moderate values and the 'Adamo' caption go.
 
 ### B3-valve-grading-41 · TR table caption: sources and endorsements
 
@@ -1404,6 +1542,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Credit the grades to Hahn and Zamorano 2017 (restated by Go 2018); ESC 2025 mentions them as proposed, not endorsed; replace 'Adamo et al EHJ 2025' with the real VCA source (or drop the column); the ACC 2025 pathway is unchecked.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** agrees — Go et al 2018 is right for the VC, EROA and RVol columns (the caption omits RVol); Hahn's proposal is 2017, not 2018. 'Endorsed by ESC/EACTS 2025' overstates it: ESC describes the scheme as proposed and used in studies and gives none of its cut-offs. The ACC 2025 pathway is not readable, so its endorsement cannot be checked. The 'Adamo et al EHJ 2025' attribution for VCA matches no source (the five-grade VCA study is Benzoni, JASE 2026). (go-tr-grading-2018, Table 1 and reference 12; esc-eacts-vhd-2025, section 11.2 p. 50; acc-ecdp-tr-2025 not readable)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-42 · Note on 5-tier TR grading: origin and prognosis
 
@@ -1413,6 +1552,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Source:** Go YY, Dulgheru R, Lancellotti P. The conundrum of tricuspid regurgitation grading. Front Cardiovasc Med. 2018;5:164. doi:10.3389/fcvm.2018.00164 — Abstract and 'Expanding the TR grading': patients in intervention trials had TR up to 2 grades above the severe thresholds; prognosis worsens as TR increases; Praz F, Borger MA, Lanz J, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J. 2025;46(44):4635-4736. doi:10.1093/eurheartj/ehaf194 (co-published in Eur J Cardiothorac Surg. 2025;67(8):ezaf276. doi:10.1093/ejcts/ezaf276). — Section 11.2, p. 49: the five-grade scale 'may be associated with a proportional increase in symptoms and event risk' (refs 694, 695)
 - **Proposed fix:** Optional: soften 'carry independent prognostic weight' to ESC's 'may be associated with a proportional increase in symptoms and event risk'.
 - **Proposed home:** Valvular heart disease › Background
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-43 · Note on 5-tier TR grading: VC >9.2 mm for massive TR
 
@@ -1423,6 +1563,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Drop '(VC >9.2 mm by outcomes analysis)' unless its paper is found; it also conflicts with the table's massive VC of 14–20 mm.
 - **Proposed home:** Valvular heart disease › Background
 - **Re-check:** disagreed — Reviewer: wrong. No document in audit-sources gives a 9.2 mm vena contracta cut-off (it may be in the unreadable ACC 2025 pathway or a paper not collected), and it contradicts the page's own table, where massive TR is VC 14-20 mm and 9.2 mm is still 'severe'. If the figure comes from an outcome study it is an outcome cut-off within severe TR, not the definition of massive. (go-tr-grading-2018, Table 1; no readable source states 9.2 mm) Resolution: Stands as unsourced: no readable document gives 9.2 mm, so there is no source for it to contradict; its clash with the page's own table (massive 14–20 mm) is in the fix.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-44 · Note on 5-tier TR grading: ACC 2025 referral advice
 
@@ -1433,6 +1574,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Check against the ACC 2025 TR pathway once a copy is supplied; until then label it unchecked.
 - **Proposed home:** Valvular heart disease › Management
 - **Re-check:** disagreed — Reviewer: source-not-readable (management). The ACC 2025 Expert Consensus Decision Pathway is not readable, so the referral statement cannot be checked. ESC 2025 recommends Heart Team evaluation before intervention but does not word it as the page does. (acc-ecdp-tr-2025 (not readable); esc-eacts-vhd-2025, section 11 p. 51 for comparison) Resolution: Stands without management: the ACC 2025 pathway can't be read and nothing readable shows the line wrong.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-45 · RVSP estimation from the TR jet
 
@@ -1441,6 +1583,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **The page says:** "RVSP estimation (TR jet): RVSP = 4 × V²TR + RAP"
 - **Source:** Mukherjee M, Rudski LG, Addetia K, et al. Guidelines for the echocardiographic assessment of the right heart in adults and special considerations in pulmonary hypertension: recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr. 2025;38(3):141-186. doi:10.1016/j.echo.2025.01.006 — Right Ventricular Systolic Pressure, p. 160 (PDF p. 20): 'RVSP = [4 × (peak TR velocity)²] + RAP'
 - **Proposed home:** Valvular heart disease › Measurement
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-46 · RAP estimate from the IVC
 
@@ -1451,6 +1594,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Optional: give the criteria (IVC 2.1 cm, 50% collapse with sniff) and cite ASE's 2025 right heart guideline (it replaces the 2010 one).
 - **Proposed home:** Valvular heart disease › Measurement
 - **Re-check:** agrees — 3, 8 and 15 mmHg match ASE's 2025 right heart guideline. ASE's middle category is 'intermediate' (IVC size and collapse discordant), which the page calls 'borderline', and it allows moving the 8 down to 3 or up to 15 using secondary indices. (ase-right-heart-2025, RAP estimation text and Table (RAP, RVSP rows), p. 160)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-47 · Pulmonary regurgitation CMR table: RF
 
@@ -1461,6 +1605,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Proposed fix:** Moderate 20–40%, severe >40%: an RF of exactly 40% is moderate in ASE/SCMR 2017, severe on the page.
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** disagreed — Reviewer: correct (management). Matches, apart from the boundary: ASE prints moderate 20-40% and severe >40%, the page 20-39% and >=40% (ASE's own footnote also uses 'CMR-derived PR fraction >=40%'). ASE adds that there are no CMR-specific thresholds and these are 'one recommendation'. (ase-scmr-regurgitation-2017, Table 16 p. 358 and section VII.E p. 358) Resolution: Changed to correct, as the reviewer has it: ASE/SCMR's own footnote uses "PR fraction ≥40%", so the page's ≥40% follows the source, which is internally inconsistent at exactly 40%.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-48 · Pulmonary regurgitation CMR table: RVol
 
@@ -1472,6 +1617,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** Are the PR RVol bands (<30, 30–44, ≥45 mL, the TR echo values) a local convention to keep and label, or should they go?
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — The lead document says outright that no regurgitant-volume grades exist for PR by CMR. The page's <30 / 30-44 / >=45 mL are the tricuspid (and lower mitral) echo cut-offs carried over; no readable source gives them for the pulmonary valve. (ase-scmr-regurgitation-2017, section VII.E p. 358 and Table 16 footnote)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended (not local practice): the PR RVol column goes.
 
 ### B3-valve-grading-49 · Pulmonary regurgitation note: CMR as reference
 
@@ -1481,6 +1627,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Source:** Zoghbi WA, Adams D, Bonow RO, et al. Recommendations for noninvasive evaluation of native valvular regurgitation: a report from the American Society of Echocardiography developed in collaboration with the Society for Cardiovascular Magnetic Resonance. J Am Soc Echocardiogr. 2017;30(4):303-371. doi:10.1016/j.echo.2017.01.007 — CMR Methods in Evaluating PR, p. 358 (PDF p. 56): CMR is 'currently the best method to quantitate PR' in significant PR and congenital heart disease; direct phase contrast above the pulmonary valve is the preferred method
 - **Proposed fix:** Optional: 4D flow is not in ASE/SCMR 2017; keep it as an alternative, not the reference.
 - **Proposed home:** Valvular heart disease › Technique
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-50 · Pulmonary stenosis table
 
@@ -1490,6 +1637,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Source:** Baumgartner H, Hung J, Bermejo J, et al. Echocardiographic assessment of valve stenosis: EAE/ASE recommendations for clinical practice. J Am Soc Echocardiogr. 2009;22(1):1-23. doi:10.1016/j.echo.2008.11.029 — Table 11 'Grading of pulmonary stenosis', p. 20: peak velocity <3, 3–4, >4 m/s; peak gradient <36, 36–64, >64 mmHg
 - **Proposed home:** Valvular heart disease › Categories
 - **Re-check:** agrees — Matches Table 11 exactly (which restates the 2006 ACC/AHA definitions). ACC/AHA 2020 and ESC 2025 do not grade pulmonary stenosis, so this remains the echo reference. (eae-ase-valve-stenosis-2009, Table 11 p. 20)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-valve-grading-51 · Front-page row (shared/data/resources.ts)
 
@@ -1501,6 +1649,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/valves/
 - **Question for the owner:** Which version label once the lead is chosen (see B3-valve-grading-01)?
 - **Proposed home:** Front page row: Valve grading
 - **Re-check:** agrees — The row is quoted faithfully, but version 'ACC/AHA 2020' is not the version as the page states it: the page names three guidelines, and most of its tables come from ASE/EACVI documents and research papers, not ACC/AHA. The summary's 'each valve' is slightly too wide: there is no tricuspid stenosis section, and pulmonary regurgitation is CMR only. Low stakes; the label is the owner's sign-off. (cardiac_imaging_resources docs/valves/index.md line 7 and section headings; shared/data/resources.ts lines 72-80)
+- **Ruling:** change (2026-11-27) — (In chat.) Follows B3-valve-grading-01: the version label reads "ACC/AHA 2020 · ASE/EACVI"; "each" goes from the summary unless tricuspid stenosis is added.
 
 ## Simplified Bernoulli
 
@@ -1515,6 +1664,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Name a source under each piece. The formula and the aortic tab come from ASE/EACVI 2017 (p. 378, Table 3) with the ACC/AHA 2020 stages (Table 13). The mitral tab comes from ACC/AHA 2020 Table 16, per ASE's note. The pulmonary and tricuspid tabs come from EAE/ASE 2009 Tables 11 and 10. CAR's cardiac CT guideline gives no stenosis grading.
 - **Proposed home:** Simplified Bernoulli › Background
 - **Re-check:** disagreed — Reviewer: correct. The quotation is faithful: title, intro and formula match the source, and the page carries no reference, version or date. The four grading tables name no source; by content they trace to a mix (mitral, pulmonary, tricuspid = EAE/ASE 2009 Tables 9-11; aortic mean-gradient cut-offs of 25/40 match none of the readable sources). The missing provenance is a finding in itself even though the title and formula are right. (ase-eacvi-as-2017, 'Pressure gradient' text, p. 378 (PDF p. 7); page calculators/bernoulli.md read in full) Resolution: Stands as unsourced: the piece is the page's sourcing, and the page names none; the formula's own correctness is B3-bernoulli-02. Same call as B3-laao-ct-01.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-02 · Calculator: the Velocity ↔ Pressure Gradient converter (initBernoulliCalc / calcBernoulli)
 
@@ -1524,6 +1674,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Source:** Baumgartner H, Hung J, Bermejo J, et al. Recommendations on the echocardiographic assessment of aortic valve stenosis: a focused update from the European Association of Cardiovascular Imaging and the American Society of Echocardiography. J Am Soc Echocardiogr. 2017;30(4):372-392. doi:10.1016/j.echo.2017.02.009 — Pressure gradient, p. 378 (PDF p. 7): "DP = 4v²"; "The maximum gradient is calculated from maximum velocity: DPmax = 4v²max"; Baumgartner H, Hung J, Bermejo J, et al. Echocardiographic assessment of valve stenosis: EAE/ASE recommendations for clinical practice. J Am Soc Echocardiogr. 2009;22(1):1-23. doi:10.1016/j.echo.2008.11.029 — Pulmonary stenosis, B.1.1 Pressure gradient, p. 19: "the simplified Bernoulli equation ΔP = 4v²"
 - **Proposed home:** Simplified Bernoulli › Calculator
 - **Re-check:** agrees — Code is 4*v*v to 1 decimal and sqrt(pg/4) to 2 decimals, guarded v>0 and pg>=0; every expected value in the run table is correct arithmetic and every output matches it (checked each row). The min/max attributes are not enforced, as stated. Small slip in the quotation only: the results file has 35 cases, not 34 (29 conversions, 5 no result, plus one recorded 'input not accepted' text case, vmax=abc), so a text case was recorded as refused rather than not run. (ase-eacvi-as-2017, 'Pressure gradient', p. 378 (PDF p. 7); calculators.js calcBernoulli lines 1208-1227; bernoulli_old.results.md)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-03 · Calculator labels: what the converted gradient is (old page and front-page quick calculator)
 
@@ -1534,6 +1685,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Label the field "Peak gradient" on both, and add one line: the mean gradient is traced from the Doppler envelope and can't be converted from a velocity. If the proximal (LVOT) velocity is over 1.5 m/s or Vmax is under 3.0 m/s, use ΔP = 4(Vmax² − Vproximal²) (ASE/EACVI 2017 p. 378).
 - **Proposed home:** Simplified Bernoulli › Calculator
 - **Re-check:** disagreed — Reviewer: correct (management). Nothing the labels say contradicts the source (peak velocity in, 4v² out is the maximum gradient), so not 'wrong'; but the description of the omission is accurate and the source states all three caveats the page leaves out. The hazard is real: the result is a peak gradient shown unlabelled directly above tables graded by mean gradient (mitral, tricuspid, aortic mean column), and both worked examples check (2 m/s -> 16 mmHg; 40 mmHg -> 3.16 m/s). Worth a label fix: 'peak (maximum instantaneous) gradient; does not convert a mean gradient'. (ase-eacvi-as-2017, 'Pressure gradient', p. 378 (PDF p. 7); eae-ase-valve-stenosis-2009 Table 9 p. 17 and Table 10 p. 19 (mean-gradient criteria)) Resolution: Stands as wrong with management: a gradient labelled only "Pressure gradient", directly above tables graded by mean gradient, leads a reader to grade a peak as a mean (2 m/s → 16 mmHg reads as severe mitral stenosis), which the source's own distinction (ΔPmax = 4v²max; a mean can't be derived from a velocity) rules out. Omissions that change the grade are treated as wrong, as in batches 1–2.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-04 · Aortic tab: Normal row
 
@@ -1544,6 +1696,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Keep Vmax <2.0 m/s (ACC/AHA stage A) and drop the area and gradient cells, or correct them. A normal AVA is about 3.0–4.0 cm² (EAE/ASE 2009 p. 10). 2.0 m/s is a peak of 16 mmHg, so '<10' leaves 10–16 mmHg in no row, and no source gives a normal mean gradient.
 - **Proposed home:** Aortic stenosis › Categories
 - **Re-check:** disagreed — Reviewer: unsourced. Only Vmax <2.0 has support (ACC/AHA stage A, 'at risk'). No readable source gives AVA >=2.0, peak gradient <10 or mean gradient <5 as normal; the only stated normal AVA is 3.0-4.0 cm2. The row is also inconsistent with itself and the next row: Vmax <2.0 is a peak gradient <16, yet normal is <10 and mild starts at 16, so 10-16 mmHg has no row. (ase-eacvi-as-2017 Table 3, p. 383 (PDF p. 12); acc-aha-vhd-2020 Table 13, e91; eae-ase-valve-stenosis-2009 p. 10 text) Resolution: Changed to unsourced, as the reviewer has it: only Vmax <2.0 has support; AVA ≥2.0, peak <10 and mean <5 appear in no source, and the row's internal gap (10–16 mmHg) is in the fix. No management.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-05 · Aortic tab: Mild row
 
@@ -1555,6 +1708,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Question for the owner:** For a Vmax of 2.0–2.5 m/s, ACC/AHA 2020 says mild AS (stage B, echo every 3–5 years), while ASE/EACVI 2017 says aortic sclerosis and starts mild at 2.6 m/s. Which should the row follow, or should it show both? This is the same lead question as on the valve-grading page.
 - **Proposed home:** Aortic stenosis › Categories
 - **Re-check:** agrees — Mean gradient <25 is wrong: both sources put mild at <20 mmHg, so a mean gradient of 20-24 mmHg is moderate, not mild as the page reads. Vmax 2.0-2.9 follows ACC/AHA (ASE/EACVI: 2.6-2.9, with <=2.5 sclerosis). AVA 1.6-2.0: the lower edge agrees with >1.5 but no source gives an upper limit of 2.0. Peak gradient 16-36 is in neither table; it is only 4v² of 2.0 and 3.0 m/s. (ase-eacvi-as-2017 Table 3, p. 383 (PDF p. 12); acc-aha-vhd-2020 Table 13, e91 (PDF p. 20))
+- **Ruling:** keep (2026-11-27) — (In chat.) Follows B3-valve-grading-01: a Vmax of 2.0–2.5 m/s is mild AS (ACC/AHA 2020 stage B), with ASE/EACVI 2017's "aortic sclerosis" noted. Mean gradient <20 mmHg and valve area >1.5 cm², as proposed.
 
 ### B3-bernoulli-06 · Aortic tab: Moderate row
 
@@ -1565,6 +1719,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Make the mean gradient 20–39 mmHg (ACC/AHA; ASE/EACVI writes 20–40, with severe at ≥40), so that 40 falls only in Severe, and make the peak gradient 36 to <64. The area and velocity are right.
 - **Proposed home:** Aortic stenosis › Categories
 - **Re-check:** agrees — Mean gradient 25-40 is wrong at the lower end: moderate starts at 20 mmHg in both sources (20-40 ASE/EACVI, 20-39 ACC/AHA). AVA 1.0-1.5 and Vmax 3.0-3.9 are right. Peak gradient 36-64 is derived arithmetic, not in either table. 40 and 64 sit in both Moderate and Severe on the page; ACC/AHA's 20-39 avoids that. (ase-eacvi-as-2017 Table 3, p. 383 (PDF p. 12); acc-aha-vhd-2020 Table 13, e91 (PDF p. 20))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-07 · Aortic tab: Severe row
 
@@ -1574,6 +1729,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Source:** Baumgartner H, Hung J, Bermejo J, et al. Recommendations on the echocardiographic assessment of aortic valve stenosis: a focused update from the European Association of Cardiovascular Imaging and the American Society of Echocardiography. J Am Soc Echocardiogr. 2017;30(4):372-392. doi:10.1016/j.echo.2017.02.009 — Table 3, p. 383 (PDF p. 12): severe peak velocity ≥4.0 m/s, mean gradient ≥40 mmHg, AVA <1.0 cm², indexed AVA <0.6; text, p. 383: any one of AVA <1.0, peak velocity ≥4.0 or mean gradient ≥40 "can be considered to suggest severe AS"; Otto CM, Nishimura RA, Bonow RO, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation. 2021;143(5):e72-e227. doi:10.1161/CIR.0000000000000923 (also J Am Coll Cardiol. 2021;77(4):e25-e197). — Table 13, e91 (PDF p. 20): stages C–D "Aortic Vmax ≥4 m/s or mean ΔP ≥40 mm Hg", "AVA typically is ≤1.0 cm² (or AVAi 0.6 cm²/m²) but not required to define severe AS"; very severe AS "Vmax ≥5 m/s or mean P ≥60 mm Hg"; Praz F, Borger MA, Lanz J, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J. 2025;46(44):4635-4736. doi:10.1093/eurheartj/ehaf194 (co-published in Eur J Cardiothorac Surg. 2025;67(8):ezaf276. doi:10.1093/ejcts/ezaf276). — Section 8.2, p. 29: high-gradient AS "mean gradient ≥40 mmHg, Vmax ≥4.0 m/s, AVA ≤1 cm² (or ≤0.6 cm²/m²)"
 - **Proposed home:** Aortic stenosis › Categories
 - **Re-check:** agrees — Matches ASE/EACVI 2017 exactly (ACC/AHA writes AVA <=1.0 and AVAi <=0.6, an equality difference only). Peak gradient >=64 is not a guideline criterion in either table; it is 4 x 4.0² and is harmless as such. ESC/EACTS 2025 uses the same high-gradient definition (mean >=40 mmHg, Vmax >=4.0 m/s). (ase-eacvi-as-2017 Table 3, p. 383 (PDF p. 12); acc-aha-vhd-2020 Table 13, e91 (PDF p. 20))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-08 · Mitral tab: Normal row
 
@@ -1584,6 +1740,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** A normal MVA is 4.0–5.0 cm² (EAE/ASE 2009 p. 16), and an MVA above 1.5 cm² with rheumatic changes is progressive MS (ACC/AHA stage B). Replace '>2.0' with stage A's description (doming, normal transmitral velocity), or drop the row.
 - **Proposed home:** Mitral stenosis › Categories
 - **Re-check:** disagreed — Reviewer: unsourced (management). No readable source calls an MVA >2.0 cm2 normal; the only stated normal is 4.0-5.0 cm2, and both the 2009 table (mild >1.5) and the ACC/AHA stages (progressive >1.5) are open-ended above 1.5. On the page a rheumatic valve of 2.0-4.0 cm2 reads normal when the sources would call it mild/progressive stenosis (follow-up differs). (eae-ase-valve-stenosis-2009 p. 16 text and Table 9, p. 17; acc-aha-vhd-2020 Table 16, e113) Resolution: Stands as wrong with management: the sources do state what a normal MVA is (4.0–5.0 cm², EAE/ASE 2009 p. 16) and put an MVA over 1.5 cm² with rheumatic changes in progressive MS (ACC/AHA stage B), so calling >2.0 normal contradicts them, not merely lacks a source.
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-09 · Mitral tab: Mild row
 
@@ -1594,6 +1751,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Follow ACC/AHA 2020 Table 16: progressive MS (stage B) is an MVA >1.5 cm² with a half-time <150 ms, and an MVA of 1.5 is already severe. The mean gradient and PAP are not staging criteria; the 2009 gradients held only at 60–80 bpm in sinus rhythm.
 - **Proposed home:** Mitral stenosis › Categories
 - **Re-check:** agrees — The row is the 2009 EAE/ASE mild column (plus an upper limit of 2.0 that no source gives), which ASE itself replaced with the AHA/ACC stages. Under those there is no 'mild': >1.5 cm2 is progressive, and an MVA of exactly 1.5 cm2 is severe (<=1.5), not mild/moderate as on the page. Mean gradient and PAP bands are not severity criteria in ACC/AHA. The page states no version, so 'outdated' is by content (could also be filed as not-lead). (eae-ase-valve-stenosis-2009 Table 9, p. 17 and ASE's notice on p. 1; acc-aha-vhd-2020 Table 16, e113; esc-eacts-vhd-2025 section 10.2)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-10 · Mitral tab: Moderate row
 
@@ -1604,6 +1762,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Severe MS is an MVA ≤1.5 cm² (ACC/AHA 2020 stages C and D; 'clinically severe' in ESC/EACTS 2025), with a half-time ≥150 ms and a PASP >50 mmHg as its consequence. There is no moderate stage, and a mean gradient of 5–10 mmHg is typical of severe MS.
 - **Proposed home:** Mitral stenosis › Categories
 - **Re-check:** agrees — Faithful to the superseded 2009 table, but the lead (ACC/AHA 2020, carrying the 2014 stages) and ESC/EACTS 2025 both call an MVA of 1.0-1.5 cm2 severe, the range in which intervention is considered. The page's 'moderate' label for it is the management-relevant error on this tab. Both candidate lead guidelines agree here, so the ACC-versus-ESC question does not change the verdict. (eae-ase-valve-stenosis-2009 Table 9, p. 17 and ASE's notice p. 1; acc-aha-vhd-2020 Table 16 and footnote, e113; esc-eacts-vhd-2025 section 10.2 (PDF p. 46-47))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-11 · Mitral tab: Severe row
 
@@ -1614,6 +1773,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Make Severe an MVA ≤1.5 cm² (stage C asymptomatic, D symptomatic) with a half-time ≥150 ms and a PASP >50 mmHg as its consequence, and drop the >10 mmHg gradient (Table 16 footnote). An MVA <1.0 cm² now only sets yearly echo follow-up (Table 5).
 - **Proposed home:** Mitral stenosis › Categories
 - **Re-check:** disagreed — Reviewer: outdated (management). Matches the 2009 table, but the severe threshold is now <=1.5 cm2, not <1.0, and a mean gradient >10 is not required (usually >5 to 10 in severe MS, and not a criterion). PASP >50 still agrees. An MVA <1.0 is severe under both, so the row is not false for the values it names; it misplaces the threshold. (eae-ase-valve-stenosis-2009 Table 9, p. 17 and ASE's notice p. 1; acc-aha-vhd-2020 Table 16 and footnote, e113) Resolution: Stands without management: the values the row names are severe under every source; the misplaced threshold that changes management is carried by B3-bernoulli-10 (the moderate row's 1.0–1.5).
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-12 · Pulmonary tab: Normal row and the Mild row's lower limit
 
@@ -1625,6 +1785,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Question for the owner:** Keep 'Normal <10 mmHg' for the pulmonary valve as labelled local practice, or drop it? No audit source gives a normal pulmonary valve gradient.
 - **Proposed home:** Pulmonary stenosis › Categories
 - **Re-check:** agrees — The source has no normal row and no lower limit to mild; 'normal <10' and the 10 mmHg start of mild appear in no readable source (ACC/AHA 2020 and ESC/EACTS 2025 do not grade pulmonary stenosis). (eae-ase-valve-stenosis-2009 Table 11, p. 20 and text p. 20)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended (not local practice): the pulmonary Normal row and the Mild lower limit go; Mild reads <36 mmHg (<3 m/s).
 
 ### B3-bernoulli-13 · Pulmonary tab: Mild, Moderate and Severe rows
 
@@ -1634,6 +1795,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Source:** Baumgartner H, Hung J, Bermejo J, et al. Echocardiographic assessment of valve stenosis: EAE/ASE recommendations for clinical practice. J Am Soc Echocardiogr. 2009;22(1):1-23. doi:10.1016/j.echo.2008.11.029 — Table 11, p. 20: peak gradient mild <36, moderate 36–64, severe >64 mmHg (peak velocity <3, 3–4, >4 m/s), from the 2006 ACC/AHA guideline; text, p. 20: "In determining the need for intervention, no specific Doppler gradients have been agreed on"
 - **Proposed home:** Pulmonary stenosis › Categories
 - **Re-check:** agrees — Moderate 36-64 and severe >64 match exactly; mild's upper limit of 36 matches (its lower limit of 10 is judged under piece 12). 36 mmHg sits in both mild and moderate on the page; the source puts it in moderate. The source attributes these definitions to the 2006 ACC/AHA guideline and adds that no specific Doppler gradient has been agreed for intervention. (eae-ase-valve-stenosis-2009 Table 11 'Grading of pulmonary stenosis', p. 20)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-14 · Tricuspid tab: haemodynamically significant tricuspid stenosis
 
@@ -1644,6 +1806,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Proposed fix:** Use a mean gradient ≥5 mmHg and a valve area ≤1.0 cm² (by continuity), add an inflow VTI >60 cm and T1/2 ≥190 ms, and list RA enlargement ≥moderate and a dilated IVC as supportive (EAE/ASE 2009 Table 10). Add a note that ESC/EACTS 2025 (p. 54) differs at the edge: there, >5 mmHg at a normal heart rate is severe.
 - **Proposed home:** Tricuspid stenosis › Categories
 - **Re-check:** agrees — The page has strict inequalities (>5, <1.0) where the source has >=5 mmHg and <=1 cm2, so the exact cut-off values are significant by the source and not by the page. A small, boundary-only error; the two criteria are otherwise right, and the page omits the VTI and pressure half-time criteria and the caveat that TR makes the continuity area underestimate. The page quotation is faithful. (eae-ase-valve-stenosis-2009 Table 10 'Findings indicative of haemodynamically significant tricuspid stenosis', p. 19)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-15 · Front-page quick calculator (shared/calculators/bernoulli.ts): formula, rounding, limits, citation
 
@@ -1653,6 +1816,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Source:** Baumgartner H, Hung J, Bermejo J, et al. Recommendations on the echocardiographic assessment of aortic valve stenosis: a focused update from the European Association of Cardiovascular Imaging and the American Society of Echocardiography. J Am Soc Echocardiogr. 2017;30(4):372-392. doi:10.1016/j.echo.2017.02.009 — Title page, p. 372 (PDF p. 1): Baumgartner H et al., J Am Soc Echocardiogr 2017;30(4):372–392; Pressure gradient, p. 378 (PDF p. 7): DPmax = 4v²max
 - **Proposed home:** Simplified Bernoulli › Calculator
 - **Re-check:** agrees — Formula, rounding and guards are the same as the old page and every run matches its expected value (39 cases, 4 not accepted); the citation is accurate and does state the formula. Two display points, neither a formula error: the headline can pair a rounded value with a typed one at a cut-off ('4.00 m/s <-> 63.9 mmHg', and 3.999 m/s shown as '4.00 m/s <-> 64.0 mmHg'), which reads as reaching the severe line when it has not; and like the old page it does not say the gradient is the peak gradient (piece 03). (ase-eacvi-as-2017, 'Pressure gradient', p. 378 (PDF p. 7); docs/audit/sources.json entry ase-eacvi-as-2017; shared/calculators/bernoulli.ts; bernoulli_module.results.md)
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ### B3-bernoulli-16 · Front-page row (shared/data/resources.ts, id bernoulli)
 
@@ -1662,6 +1826,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Source:** Baumgartner H, Hung J, Bermejo J, et al. Recommendations on the echocardiographic assessment of aortic valve stenosis: a focused update from the European Association of Cardiovascular Imaging and the American Society of Echocardiography. J Am Soc Echocardiogr. 2017;30(4):372-392. doi:10.1016/j.echo.2017.02.009 — Pressure gradient, p. 378 (PDF p. 7): ΔPmax = 4v²max
 - **Proposed home:** Front page row: Simplified Bernoulli
 - **Re-check:** agrees — The row describes the page accurately: the page states no versioned guideline, and it does carry the converter and four grading tabs. Only the row is judged here; the grading it advertises has the errors recorded in pieces 04-14, so 'with stenosis grading' should be revisited if those tables change or go. (shared/data/resources.ts lines 62-70; calculators/bernoulli.md (no version or reference on the page))
+- **Ruling:** keep (2026-11-27) — Kept with the questions answered (owner's rule from batch 2).
 
 ## Across the site
 
@@ -1675,6 +1840,7 @@ https://dfergs93.github.io/cardiac-imaging-resources/calculators/bernoulli/
 - **Question for the owner:** These pages send readers to the old public protocols site for scan protocols, which the new front page deliberately doesn't link. At the rebuild, should the cardiac CT topics keep that link, or carry the guideline acquisition points themselves?
 - **Proposed home:** Cardiac CT › Technique
 - **Re-check:** agrees — The quotation is faithful on all five pages and the link answered 200 when I fetched it on 2026-11-27; the git history shows the coronary CT page's protocol tables removed on 2026-04-14. A pointer to the institution's own scan protocols is local practice that no guideline verifies; whether it should keep pointing at the old public protocols site is for the owner. (cardiac_ct/index.md line 7; device_planning/tavr.md, tmvr.md, ttvr.md, laao.md line 7 (commit 84b6118); car-cstr-cardiac-ct-1-2024 Table 1, p. 490 covers scan technique in general terms only)
+- **Ruling:** keep (2026-11-27) — (In chat.) As recommended: at the rebuild the cardiac CT topics carry the guideline acquisition points (CAR/CSTR 2024 part 1 Table 1 and part 2) and do not link the old protocols site.
 
 ## Calculator usability
 
