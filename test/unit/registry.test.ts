@@ -127,6 +127,13 @@ describe('the real registry', () => {
     expect(byId('contrast-safety')?.title).toBe('Contrast safety');
   });
 
+  // ACC/AHA 2020 leads the stages, ASE/EACVI the echo grading (B3-valve-grading-01, -51);
+  // the page has no tricuspid stenosis, so its summary doesn't claim every valve.
+  test('valve grading is labelled with both of its leads', () => {
+    expect(byId('valve-grading')?.version).toBe('ACC/AHA 2020 · ASE/EACVI');
+    expect(byId('valve-grading')?.summary).not.toMatch(/\beach valve\b/);
+  });
+
   test("Fleischner's summary names its exclusions", () => {
     const summary = RESOURCES.find((r) => r.id === 'fleischner')?.summary ?? '';
     for (const word of ['35+', 'screening', 'known cancer', 'immunosuppression']) expect(summary).toContain(word);

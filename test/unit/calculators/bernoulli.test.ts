@@ -6,7 +6,19 @@ test.each([
   [4.2, '70.6', '4.20 m/s ↔ 70.6 mmHg'],
   [1.5, '9.0', '1.50 m/s ↔ 9.0 mmHg'],
 ])('a peak velocity of %d m/s fills the gradient with %s mmHg', (vmax, gradient, headline) => {
-  expect(bernoulli.compute({ vmax }, 'vmax')).toEqual({ status: 'ok', headline, details: ['ΔP = 4v²'], fill: { gradient } });
+  expect(bernoulli.compute({ vmax }, 'vmax')).toEqual({ status: 'ok', headline, label: 'Peak gradient', note: MEAN, notes: [PROXIMAL], details: ['ΔP = 4v²'], fill: { gradient } });
+});
+
+// B3-bernoulli-03 (owner's rule: proposed fixes kept): 4v² is the peak gradient only.
+const MEAN = 'The mean gradient is traced from the Doppler envelope; it can’t be worked out from one velocity.';
+const PROXIMAL = 'With a proximal (LVOT) velocity over 1.5 m/s, or a peak velocity under 3.0 m/s, use ΔP = 4(Vmax² − Vproximal²) (ASE/EACVI 2017).';
+
+test('the second field is the peak gradient', () => {
+  expect(bernoulli.groups[0]!.fields.map((f) => f.label)).toEqual(['Peak velocity', 'Peak gradient']);
+});
+
+test('a converted gradient is labelled peak, with the mean-gradient line, either way round', () => {
+  expect(bernoulli.compute({ gradient: 64 }, 'gradient')).toMatchObject({ label: 'Peak gradient', note: MEAN });
 });
 
 test.each([
@@ -30,7 +42,7 @@ test.each([
   [{ gradient: undefined }, 'gradient'],
   [{ vmax: 4 }, undefined],
 ])('%o (changed %s) leaves the other field alone', (values, changed) => {
-  expect(bernoulli.compute(values, changed)).toEqual({ status: 'incomplete', message: 'Enter a peak velocity or a pressure gradient.' });
+  expect(bernoulli.compute(values, changed)).toEqual({ status: 'incomplete', message: 'Enter a peak velocity or a peak gradient.' });
 });
 
 test('cites its source', () => {

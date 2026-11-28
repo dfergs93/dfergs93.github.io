@@ -544,5 +544,185 @@
     "car": "yes",
     "today": "Not on the site. The page’s \"Breast MRI Screening Indications (planned)\" link is a placeholder (B2-bi-rads-49) and it only touches density; CAR’s referral guideline (car-breast-referral-2024, B01–B02) gives ages, intervals, density-based supplemental imaging and high-risk screening.",
     "home": "Breast"
+  },
+  {
+    "id": "cad-rads-2-0-for-acute-chest-pain-table",
+    "topic": "CAD-RADS 2.0 for acute chest pain (Table 5)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. CCTA is a first-line test for acute chest pain at low-to-intermediate pretest probability (CAR Part 1 p. 494); CAD-RADS gives different investigations there (admission, expedited ICA), and the page gives one undifferentiated set.",
+    "home": "Coronary CT angiography"
+  },
+  {
+    "id": "ct-ffr-and-ct-perfusion-the-i-modifier",
+    "topic": "CT-FFR and CT perfusion (the I modifier)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page lists \"+I\" with no cut-offs; CAR Part 1 pp. 495-497 and CAD-RADS Tables 6-7 give CT-FFR >0.80 negative, 0.76-0.80 borderline, ≤0.75 positive, measured 1-2 cm distal to the stenosis.",
+    "home": "Coronary CT angiography"
+  },
+  {
+    "id": "coronary-calcium-score-and-cac-drs",
+    "topic": "Coronary calcium score and CAC-DRS",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. CAR Part 1 pp. 492-494 (Agatston bands 0, 1-100, 101-400, >400; CAC-DRS; repeat intervals after a zero score); a front-page search for 'coronary' finds nothing on it.",
+    "home": "Coronary CT angiography"
+  },
+  {
+    "id": "ccta-patient-preparation-and-acquisition",
+    "topic": "CCTA patient preparation and acquisition",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. Removed from the page in April 2026 (now pointed at the Protocol Manager); CAR Part 1 leads: beta-blocker and nitroglycerin doses and contraindications (Table 2 p. 492), 250-300 HU target and 5-7 mL/s injection, z-coverage (from the apices after CABG), dose 3-5 mSv (p. 491).",
+    "home": "Coronary CT angiography"
+  },
+  {
+    "id": "stents-and-bypass-grafts-on-ccta",
+    "topic": "Stents and bypass grafts on CCTA",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. CAR Part 1 p. 495 (stents >3 mm assessable; CABG coverage) and SCCT 2026 pp. 468-470 (in-stent restenosis grading, graft reporting) have no home on the site.",
+    "home": "Coronary CT angiography"
+  },
+  {
+    "id": "tavr-valve-oversizing",
+    "topic": "TAVR valve oversizing",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. CAR gives 5–15% oversizing as generally preferred (p. 506; EACVI e218: 8–14%, rarely >20%); the page says nothing about oversizing or annular rupture risk (SCCT 2019: >20% oversizing and calcium within 2 mm below the annulus, under the non-coronary cusp).",
+    "home": "TAVR planning"
+  },
+  {
+    "id": "landing-zone-and-sub-annular-calcium",
+    "topic": "Landing-zone and sub-annular calcium",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. SCCT 2019 (Landing zone calcium; Table 5, strong) and ESCR (Table 5) ask for annular and sub-annular calcium graded and located; the page only mentions it inside the bicuspid box.",
+    "home": "TAVR planning"
+  },
+  {
+    "id": "tavr-ct-acquisition",
+    "topic": "TAVR CT acquisition",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. CAR (p. 506: systolic sizing phase, coverage from the subclavian arteries to the lesser trochanter) and SCCT 2019 (Tables 1–3: no nitroglycerin, no routine beta blockade, >250 HU, reconstruction ≤1 mm) are not on the page, which points to the old protocols site instead.",
+    "home": "TAVR planning"
+  },
+  {
+    "id": "aortic-valve-calcium-score",
+    "topic": "Aortic valve calcium score in discordant or low-gradient aortic stenosis",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. SCCT 2019 (Non-contrast cardiac CT: Agatston ≥3000 men / ≥1600 women makes severe AS very likely; <1600 / <800 unlikely) and CAR (p. 507) describe it; it may belong on the valve grading page rather than here.",
+    "home": "TAVR planning"
+  },
+  {
+    "id": "structured-pre-tavr-report",
+    "topic": "Structured pre-TAVR report",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. SCCT 2019 Table 9 lists the report items (incl. image quality and phase, annular area and perimeter, LM and RCA heights, mean sinus, STJ, access findings by femoral-head level); the page has no reporting section.",
+    "home": "TAVR planning"
+  },
+  {
+    "id": "transapical-access-planning-for-tmvr",
+    "topic": "Transapical access planning for TMVR",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. EACVI (Transapical puncture, p. e211) says the transapical entry point is planned on CT (LV apex, coronary arteries, papillary muscles, lung, angle of entry), and the only CE-marked TMVR device in 2023 was transapical (p. e262); the page covers only transseptal planning.",
+    "home": "TMVR planning"
+  },
+  {
+    "id": "follow-up-after-tmvr",
+    "topic": "Follow-up after TMVR",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. EACVI (p. e264: TTE first, CT for specific questions) and SCCT 2025 (prosthetic valves in all positions, incl. leaflet thickening and reduced motion assessed in diastole for mitral valves, §14.2, p. 380) are not reflected; the page stops at planning.",
+    "home": "TMVR planning"
+  },
+  {
+    "id": "post-ttvr-ct-device-position-leaflet-thi",
+    "topic": "Post-TTVR CT (device position, leaflet thickening and valve thrombosis)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page stops at planning. Hausleiter 2025 uses CT after implantation for device position, leaflet morphology and complications (p. 272; Figure 7, p. 278: HALT after Evoque; Figure 10, p. 284: valve thrombosis at 2 months); scct-prosthetic-valves-2025 covers transcatheter valves in all positions (not checked here for the tricuspid).",
+    "home": "TTVR planning"
+  },
+  {
+    "id": "post-laao-ct-peri-device-leak-device-rel",
+    "topic": "Post-LAAO CT (peri-device leak, device-related thrombus, position)",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page has no post-procedure section. CAR Part 2 names post-procedural CT (p. 509); SCAI/HRS 2023 recommends TEE or CT at 45–90 days (recommendation 12) and the 2025 SCAI/HRS guideline suggests TEE or CT after LAAO (recommendation 6.1); EACVI advises TOE surveillance at 45–90 days (pp. 406–407). Korsholm 2024 (the CT position statement) is not readable yet.",
+    "home": "LAAO planning"
+  },
+  {
+    "id": "laao-ct-acquisition-and-the-sizing-phase",
+    "topic": "LAAO CT acquisition and the sizing phase",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page leaves acquisition to the Protocol Manager and names no phase for measurement. CAR Part 1 Table 1 (p. 490) marks retrospective gating for LAA closure; SCAI/HRS 2023 (recommendation 3) gives 0.5–1.5 mm reconstructions, a late-pass delayed scan and mid-to-late systolic measurement; EACVI p. 393 a single arterial phase on ≥64-slice CT with a mandatory delayed scan.",
+    "home": "LAAO planning"
+  },
+  {
+    "id": "sizing-for-lobe-and-disc-devices-amulet",
+    "topic": "Sizing for lobe-and-disc devices (Amulet) and other occluders",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page sizes only the Watchman; the Amulet instructions for use (landing zone and lobe sizing) were not read.",
+    "home": "LAAO planning"
+  },
+  {
+    "id": "tricuspid-stenosis-grading",
+    "topic": "Tricuspid stenosis grading",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The page grades the other three stenoses but not tricuspid stenosis; EAE/ASE 2009 Table 10 (p. 19) gives the findings of significant TS, and the front-page summary claims 'each valve'.",
+    "home": "Valve disease"
+  },
+  {
+    "id": "rvsp-from-the-tricuspid-regurgitant-jet",
+    "topic": "RVSP from the tricuspid regurgitant jet",
+    "raisedBy": "candidate",
+    "lead": "to find",
+    "alternatives": [],
+    "car": "unknown",
+    "today": "Not on the site. The calculators index card for this calculator promises \"TR jet → RVSP estimation\", but the Bernoulli page has none. EAE/ASE 2009 Table 8 (p. 17) gives sPAP = 4v²tricuspid + RA pressure. Whether the converter should offer it, with an RA pressure input, is a stage 3 choice; the valve-grading page's RVSP and RAP lines are audited there.",
+    "home": "Valve disease"
   }
 ]
